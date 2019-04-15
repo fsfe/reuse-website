@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>REUSE Initiative</title>
+    <link>https://reuse.software/</link>
+    <description>Recent content on REUSE Initiative</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://reuse.software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://reuse.software/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/privacy/</guid>
+      <description>Privacy Policy Who we are The reuse.software web site is run by the FSFE e.V. For information about FSFE, see https://fsfe.org/about/legal/imprint.html.
+When this policy refers to &amp;ldquo;we&amp;rdquo;, this means FSFE.
+What we collect and why When you use the website and sign up to receive information, we collect personal data which you have provided, with your consent. We do this so that we know who would like to receive information about us in the future.</description>
+    </item>
+    
+    <item>
+      <title>About REUSE</title>
+      <link>https://reuse.software/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/about/</guid>
+      <description>We’re making managing copyrights and licenses in free and open source software easier. Our best practices are meant to demonstrate how to add copyright and license information to a project in ways which allow for more automation. We know you want to focus on coding, but there are a few simple steps to take to make the copyright and license of your project more easily understood.   Read the practices  View developer docs   The REUSE initiative is a project of the FSFE and you&#39;re welcome to reach out to us on contact@fsfe.</description>
+    </item>
+    
+    <item>
+      <title>REUSE</title>
+      <link>https://reuse.software/sign-confirm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/sign-confirm/</guid>
+      <description>Just one step remaining.. Thank you for signing up to hear more about our work! There&amp;rsquo;s just one step more. In a moment, we will be sending you an email to confirm we have the right address for you. Just click the link in that email, and we&amp;rsquo;re good to go.
+Thanks for taking an interest in our work!</description>
+    </item>
+    
+    <item>
+      <title>REUSE</title>
+      <link>https://reuse.software/sign-success/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/sign-success/</guid>
+      <description>Yay! We made it! We&amp;rsquo;ve gotten your address and made a note of it! We&amp;rsquo;ll be in touch when we have something to share about our work on this project.</description>
+    </item>
+    
+    <item>
+      <title>REUSE For developers</title>
+      <link>https://reuse.software/dev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/dev/</guid>
+      <description>Example repositories These repositories are basic, but each of them is REUSE compliant. We make them available to demonstrate how REUSE works in practice.
+ Simple Hello - the most basic repository, a single source code file and license. Included Hello - a simple repository with included source code under a different license. SPDX Hello - a repository with Git commit hooks which automatically generate a bill of materials after each commit.</description>
+    </item>
+    
+    <item>
+      <title>REUSE For developers</title>
+      <link>https://reuse.software/practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/practices/</guid>
+      <description>     Current version  2.0, released 2017-12-14  Earlier versions  1.2, released 2017-10-27     </description>
+    </item>
+    
+    <item>
+      <title>REUSE Materials</title>
+      <link>https://reuse.software/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/materials/</guid>
+      <description>Feel free to use the material on this page as you see fit. Unless otherwise noted, the material is available under Creative Commons Attribution-ShareAlike 4.0.   Graphical profile The REUSE logotype in a few different formats is available in Git
+Badge Please use the URL https://reuse.software/badge/reuse-compliant.svg when linking to the badge!
+Use it like this:
+ [![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)  Presentations We have a beginners introduction to REUSE, with speakers notes (ODP, PDF).</description>
+    </item>
+    
+    <item>
+      <title>REUSE Practices</title>
+      <link>https://reuse.software/practices/1.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/practices/1.2/</guid>
+      <description>Download the entire best practices as a convenient PDF    Version 1.2 This is version 1.2 of the REUSE practices, released 2017-10-27. It has since been superceded by version 2.0 which you are encouraged to use instead.
+ 1. Provide the exact text of each license used Free and open source software licenses are standardised and have standard texts. Regardless of which license you use, you should include the license text in your project.</description>
+    </item>
+    
+    <item>
+      <title>REUSE Practices</title>
+      <link>https://reuse.software/practices/2.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://reuse.software/practices/2.0/</guid>
+      <description>Download the entire best practices as a convenient PDF    Version 2.0 This is version 2.0 of the REUSE practices, released 2017-12-14.
+ 1. Provide the exact text of each license used Free and open source software licenses are standardised and have standard texts. Regardless of which license you use, you should include the license text in your project.
+You must include all licenses which are used in your project, and you must never change any license texts even if they are very similar to existing ones.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <base href="https://reuse.software">
+    <title>REUSE For developers</title>
+
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="/css/landing-page.css" rel="stylesheet">
+    <link href="/css/share.css" rel="stylesheet">
+
+    
+    <link href="/css/roboto.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <style>
+    .navbar {
+    border-color: #e7e7e7;
+}
+
+.content-section-a,
+footer,
+.navbar {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.navbar a:link,
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar a:hover,
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgb(51, 51, 51);
+}
+
+.content-section-b {
+  background-color: white;
+  color: #333;
+}
+
+body {
+  color: rgb(51, 51, 51);
+}
+
+.header-container h1,
+.header-container h2,
+.header-container h3,
+.header-container h4 {
+  color: rgb(51, 51, 51);
+}
+
+  </style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="page-scroll navbar-brand" href="#intro">REUSE Initiative</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="/about/">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/practices/2.0/">Practices</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/materials/">Materials</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/dev/">For developers</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+</nav>
+
+
+<section id="services">
+   <div class="content-section-b">
+
+      <div class="container">
+
+        <div class="row">
+          <div>
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <div class="intro-header">
+
+<div class="container header-container">
+    <div class="row">
+       <div class="col-md-1"></div>
+       <div class="intro-image col-md-3">
+          <img src="/img/reuse.png" style="width: 60%; margin-top: 4em;" />
+<center> <div style="width: 100%;margin-top: 3em;"><p>
+             </p>
+           </div></center>
+       </div>
+
+<div class="intro-message col-md-6">
+      <h3>Example repositories</h3>
+      <p>These repositories are basic, but each of them is REUSE compliant.
+      We make them available to demonstrate how REUSE works in practice.</p>
+      <ul>
+       <li><a href="https://git.fsfe.org/reuse/simple-hello">Simple Hello</a> - the most basic repository, a single source code file and license.</li>
+       <li><a href="https://git.fsfe.org/reuse/included-hello">Included Hello</a> - a simple repository with included source code under a different license.</li>
+       <li><a href="https://git.fsfe.org/reuse/spdx-hello">SPDX Hello</a> - a repository with Git commit hooks which automatically generate a bill of materials after each commit.</li>
+       <li><a href="https://git.fsfe.org/jonas/curl/src/reuse-compliant">curl</a> - a repository which shows what a REUSE compliant curl repository would look like.</li>
+       <li><a href="https://git.fsfe.org/reuse/reuse">reuse</a> - a repository that is compliant with itself.</li>
+      </ul>
+
+      <h3>Tools</h3>
+      <ul>
+       <li><a href="https://git.fsfe.org/reuse/reuse">reuse</a>, a linter tool to validate whether a repository is REUSE compliant or not, and a compiler tool to generate a project's bill of materials.</li>
+      </ul>
+
+      <h3>Documentation</h3>
+      <p>
+       Aside from the <a href="/practices/">practices</a>, we have some
+       blog posts and similar documents which might be useful for you to
+       understand how the REUSE practices work.. in practice.
+      </p>
+      <ul>
+       <li><a href="http://blog.jonasoberg.net/a-reuse-compliant-curl/">REUSE curl</a>, a guide in making a mid sized project like curl REUSE compliant.</li>
+       <li><a href="http://blog.jonasoberg.net/reuse-templates/">REUSE templates</a>, some information about our REUSE example repositories.</li>
+      </ul>
+    </div>
+</div>
+</div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="copyright text-muted small">Copyright &copy; <a href="https://fsfe.org/">FSFE e.V.</a>. 
+The content of the website, the practices and video, are licensed under Creative Commons Attribution-ShareAlike 4.0. 
+</p>
+              <p class="text-muted small">
+		Built with <a href="http://gohugo.io">Hugo</a> and the
+		<a href="https://github.com/nsomar/github-project-landing-page">Github project Page</a>
+		theme.
+              </p>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/jquery-1.11.0.js"></script>
+
+
+<script src="/js/jquery.easing.min.js"></script>
+
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="js/landing-page.js"></script>
+
+
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.fsfe.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+</body>
+</html>
+

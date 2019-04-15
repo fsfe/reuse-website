@@ -1,0 +1,31 @@
+version: '3'
+services:
+  reuse-spec:
+    container_name: reuse-docs
+    build:
+      context: ./reuse-docs
+    image: reuse-docs
+    volumes:
+      - /srv/reuse/docs/pdf:/home/user/pdf:rw
+
+  reuse-web:
+    container_name: reuse-web
+    build: .
+    image: reuse-web
+    restart: always
+    volumes:
+      - /srv/reuse/docs/pdf:/tmp/pdf:ro
+    environment:
+      - VIRTUAL_HOST=reuse.software
+      - LETSENCRYPT_HOST=reuse.software
+      - LETSENCRYPT_EMAIL=contact@fsfe.org
+
+  # Connect the container which exposes the service to the 'bridge' network as
+  # this is where the reverse proxy is
+  connect-bridge:
+    image: docker:dind
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - reuse-web
+    command: /bin/sh -c 'docker network connect bridge reuse-web'

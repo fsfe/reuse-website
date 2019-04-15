@@ -1,0 +1,16 @@
+pipeline:
+  syntaxcheck:
+    image: monachus/hugo
+    commands:
+        - cd site; hugo
+
+  deploy:
+    commands:
+      # Run docker compose
+      - docker-compose up --build -d
+    image: tmaier/docker-compose
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    when:
+       branch: master
+       event: [push, tag, deployment]

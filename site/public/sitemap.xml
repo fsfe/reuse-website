@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://reuse.software/privacy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/practices/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/sign-confirm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/sign-success/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/dev/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/practices/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/materials/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/practices/1.2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/practices/2.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://reuse.software/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

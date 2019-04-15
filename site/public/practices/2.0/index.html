@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <base href="https://reuse.software">
+    <title>REUSE Practices</title>
+
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="/css/landing-page.css" rel="stylesheet">
+    <link href="/css/share.css" rel="stylesheet">
+
+    
+    <link href="/css/roboto.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <style>
+    .navbar {
+    border-color: #e7e7e7;
+}
+
+.content-section-a,
+footer,
+.navbar {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.navbar a:link,
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar a:hover,
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgb(51, 51, 51);
+}
+
+.content-section-b {
+  background-color: white;
+  color: #333;
+}
+
+body {
+  color: rgb(51, 51, 51);
+}
+
+.header-container h1,
+.header-container h2,
+.header-container h3,
+.header-container h4 {
+  color: rgb(51, 51, 51);
+}
+
+  </style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="page-scroll navbar-brand" href="#intro">REUSE Initiative</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="/about/">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/practices/2.0/">Practices</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/materials/">Materials</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/dev/">For developers</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+</nav>
+
+
+<section id="services">
+   <div class="content-section-b">
+
+      <div class="container">
+
+        <div class="row">
+          <div>
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            
+
+<div class="practices">
+<!--START_HTML-->
+
+<div align="center">
+  <i>Download the entire best practices as a convenient <a href="/reuse-2.0.pdf">PDF</a></i>
+</div>
+
+<!--END_HTML-->
+
+<blockquote>
+<h2 id="version-2-0">Version 2.0</h2>
+
+<p>This is version 2.0 of the REUSE practices, released
+2017-12-14.</p>
+</blockquote>
+
+<h1 id="1-provide-the-exact-text-of-each-license-used">1. Provide the exact text of each license used</h1>
+
+<p>Free and open source software licenses are standardised and have standard
+texts. Regardless of which license you use, you should include the
+license text in your project.</p>
+
+<p>You must include all licenses which are used in your project, and you must
+never change any license texts even if they are very similar to existing ones.</p>
+
+<p>If you are adding a new license file, the easiest way to make sure that you
+provide an unchanged license is by copying it verbatim from <a href="https://github.com/spdx/license-list-data/tree/master/text">this repository of
+licenses</a> maintained
+by the SPDX Workgroup.  The SPDX Workgroup maintains a <a href="https://spdx.org/licenses/">list of commonly-used
+licenses</a>.  Each license has a shorthand name (called an SPDX
+identifier) that can be used to uniquely reference each license.  For instance,
+the GNU GPL version 3 has <code>GPL-3.0</code> as shorthand identifier.</p>
+
+<p>If your project only includes code licensed under a single license, you may
+provide the text of this license in a file in the top level directory of your
+repository with the name <code>LICENSE</code>, <code>LICENCE</code>, <code>COPYING</code> or <code>COPYRIGHT</code> (you may
+attach some suffix to the filename as well, such as <code>LICENSE.txt</code>).</p>
+
+<p>Since many projects include code under different licenses, it&rsquo;s often not
+feasible to include all licenses in the top level, in which case you should
+create a directory at the top level called <code>LICENSES</code> within which you
+include the license text of each license used.</p>
+
+<p>Some licenses, like the BSD 2 Clause license, exist in many variations
+where the only difference is the name of the copyright holder in the license
+text. Your project may end up including multiple versions of the same
+BSD 2 Clause license because some parts may be written by Alice and others
+by Bob, resulting in two different license files.</p>
+
+<p>When you have added all of your license files, they should all match the glob
+<code>{LICENSE*, LICENCE*, COPYING*, COPYRIGHT*, LICENSES/**}</code>.  These are the common
+places to find licenses.  If you place your license elsewhere, it is possible
+that humans and computers alike may overlook it.</p>
+
+<p>In order to be able to reference the license file from your source code, you
+should embed the SPDX identifier (e.g., <code>GPL-3.0</code>, <code>MIT</code>) of each license into
+the corresponding license file.  The easiest way to do this is to simply include
+the name of the license into the filename: The license file for <code>GPL-3.0</code>
+becomes <code>LICENSES/GPL-3.0.txt</code>.</p>
+
+<p>If it is not possible to rename your file (for instance, if you want to have the
+license text under <code>COPYING</code>), then you should add a header to the file in
+tag-value format.  You can add this header either to the license file itself, or
+in a file with the same filename suffixed with <code>.license</code>.  The header must
+include a <code>Valid-License-Identifier</code> tag, the value of which should be the SPDX
+identifier for your license.  The header should terminate with the
+<code>License-Text</code> tag to signal the start of your license.  The header may include
+other tags.</p>
+
+<p>This is an example of an MIT license file, which conveys that all references to
+the SPDX identifier <code>MIT</code> should point to this license file.</p>
+
+<pre><code>Valid-License-Identifier: MIT
+License-Text:
+
+MIT License
+
+Copyright (c) &lt;year&gt; &lt;copyright holders&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the &quot;Software&quot;),
+ etc...
+</code></pre>
+
+<blockquote>
+<p><strong>Note:</strong> Even though the copyright statement in the above example is not in
+accordance to the REUSE spec, we keep the same form as it is in the canonical
+license template, so tools identify it as the same MIT license.</p>
+</blockquote>
+
+<p>While the identifier should be a license in the SPDX license list, it should be
+noted that the license text itself may not necessarily be released under that
+license, nor does the tag claim that.</p>
+
+<p>The license identifier may be repeated if the same license file is used
+with multiple license identifiers.  The example below is for <code>GPL-2.0</code> and
+<code>GPL-2.0+</code>, but please note that it is not mandatory to list <code>GPL-2.0+</code>
+separately.</p>
+
+<pre><code>Valid-License-Identifier: GPL-2.0
+Valid-License-Identifier: GPL-2.0+
+</code></pre>
+
+<p>If the license is not included in the SPDX license list, or the license is a
+modified version of a license included in that list, you should create a custom
+identifier for it in the form <code>LicenseRef-&lt;unique_code&gt;</code>.</p>
+
+<pre><code>Valid-License-Identifier: LicenseRef-MyLicense
+</code></pre>
+
+<p>In the unlikely event your source code includes exceptions, such as the
+<a href="https://spdx.org/licenses/Classpath-exception-2.0.html">Classpath exception 2.0</a>, you may include them in the same place as your licenses, using
+the same header style or the tags <code>SPDX-Exception-Identifier</code> and
+<code>Exception-Text</code> instead. This is an example of a valid exception:</p>
+
+<pre><code>SPDX-Exception-Identifier: Classpath-exception-2.0
+Exception-Text:
+
+ Linking this library statically or dynamically with other modules is
+ making a combined work based on this library. Thus, the terms and
+ conditions of the GNU General Public License cover the whole combination. 
+</code></pre>
+
+<blockquote>
+<h2 id="keep-in-mind">Keep in mind</h2>
+
+<ul>
+<li>Don&rsquo;t change any license texts, use the verbatim form of the license text.</li>
+<li>Don&rsquo;t remove any license texts, include the license texts of all software.</li>
+<li>Include the SPDX identifier in each license file, either by including it in
+the filename or by inserting a header, such that you can refer to the
+license from the source code files.</li>
+</ul>
+</blockquote>
+
+<p><br />
+<br />
+<br /></p>
+
+<h1 id="2-include-a-copyright-notice-and-license-in-each-file">2. Include a copyright notice and license in each file</h1>
+
+<p>Source code files are often reused across multiple projects, taken from their
+origin and repurposed, or otherwise end up in repositories where they are
+separate from its origin. You should therefore ensure that all files in your
+project have a comment header that convey that file&rsquo;s copyright and license
+information: Who are the copyright holders and under which license(s) do they
+release the file?</p>
+
+<p>It is highly recommended that you keep the format of these headers consistent
+across your files.  It is important, however, that you do not remove any
+information from headers in files of which you are not the sole author.</p>
+
+<p>You must convey the license information of your source code file in a
+standardised way, so that computers can interpret it.  You can do this with an
+<code>SPDX-License-Identifier</code> tag followed by an SPDX expression defined by the SPDX
+specifications.</p>
+
+<p>Copyright notices in a comment header should have a consistent format and
+be sorted by year. They should list the actual copyright holder, which may be
+an organisation rather than the author. For example:</p>
+
+<pre><code> /*
+  * © 2017 Alice Commit &lt;alice@example.com&gt;
+  * © 2009-2016 Bob Denver &lt;bob@example.com&gt;
+  * © 2007 Company Example &lt;charlie@example.com&gt;
+  * 
+  * SPDX-License-Identifier: GPL-2.0
+  */
+</code></pre>
+
+<p>Alternatively, if you cannot use the Unicode copyright sign <code>©</code>, you may use
+&ldquo;Copyright&rdquo; as a full word instead. For example:</p>
+
+<pre><code> /*
+  * Copyright 2017 Alice Commit &lt;alice@example.com&gt;
+  * 
+  * SPDX-License-Identifier: GPL-2.0
+  */
+</code></pre>
+
+<p>You should include information about your project&rsquo;s practices in the README or
+similar file.  This could be as simple as linking to these practices.</p>
+
+<p>All source files which are included in the final build of your project
+(verbatim, modified, partially, or in compiled form) must have copyright and
+license information contained within them.  If it is not possible to add a
+header to the file, either because the file is a binary or because the format
+does not support comments, you must provide the information separately in one of
+three ways:</p>
+
+<ul>
+<li>You may include a textfile called <code>FILENAME.license</code> in which you store your
+regular comment header with all the necessary information to convey the
+license information about the file called <code>FILENAME</code>.</li>
+<li>If you have many such files, but each have the same copyright notice and
+license, you may instead use the
+<a href="https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/">DEP-5/copyright</a>
+file format, and place a single copyright notice documenting those files.</li>
+<li>If you have a way of automatically generating an inventory of included files
+in SPDX format (see practice 3), you may use this and do not need to
+separately include a <code>.license</code> file or DEP-5/copyright file.</li>
+</ul>
+
+<p>If you wish to be explicit about the license of an output file, which does
+not exist in the repository but which will be created at build time, you
+may include a <code>.license</code> file without the corresponding binary file.</p>
+
+<p>If your project includes documentation which is not included in the
+final build artefact, you are encouraged but not obliged to include
+license information for these too.</p>
+
+<p>If the source code is licensed under a license such as <code>BSD-2-Clause</code>, where the
+license texts may differ for each different copyright holder, you should
+reference the specific license each time.  Thus for files written by Alice,
+reference to <code>LicenseRef-BSD-2-Clause-Alice</code>, and for files written by Evil
+Corp, reference to <code>LicenseRef-BSD-2-Clause-Evil-Corp</code>, and include both those
+licenses separately in <code>LICENSES</code> (see practice 1).</p>
+
+<p>You may record information about copyright by relying on the underlying
+version control system you&rsquo;re using, but special care must be taken if you
+do. Keep in mind version control systems typically record authorship,
+not copyright.</p>
+
+<p>For a project using the version control system to convey information about
+copyright, you must:</p>
+
+<ul>
+<li>make sure the version control system is publicly accessible and take
+steps<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> to ensure it will remain so,</li>
+<li>provide a link back to the original file in version control from each header,</li>
+<li>ensure that if someone copies the source repository without version
+control system metadata (such as if they make a tar-file of it),
+then the version control system metadata relevant for determining
+copyright must still be included,
+for example in the form of a bill of materials (see later), an
+automatically generated log file or similar,</li>
+<li>make sure the commit metadata reflect the actual copyright
+(this is particularly important if a project accepts code contributed
+through mailing lists, bug trackers, or similar, where the original
+copyright holder is not the one pushing code to version control, or
+where the copyright of the contribution is held by an organisation rather
+than the author, as for example the author&rsquo;s employer.),</li>
+<li>take into account what kind of metadata version control systems store. For example,
+Git stores the committer and author in two different fields.</li>
+</ul>
+
+<p>An appropriate header in this case would be:</p>
+
+<pre><code> /*
+  * This file is part of project X. It's copyrighted by the contributors
+  * recorded in the version control history of the file, available from
+  * its original location http://git.example.com/X/filename.c
+  * 
+  * SPDX-License-Identifier: GPL-3.0
+  */
+</code></pre>
+
+<blockquote>
+<h2 id="keep-in-mind-1">Keep in mind</h2>
+
+<ul>
+<li>Use a consistent style of your headers throughout the project.
+Preferably use the form <code>© Alice Committer &lt;alice@example.com</code>.</li>
+<li>Don&rsquo;t remove existing headers, but only add to them.</li>
+<li>If you depend on a version control system to keep a record of copyright holders
+do make sure to keep your version control system public and that you have
+processes in place to store copyright holders instead of just authors.</li>
+<li>Make references to the SPDX identifier from each source code file.</li>
+<li>Record copyright information in each source code file.</li>
+<li>Include license and copyright information also for files which can not
+include a proper header, either in a separate .license file, or using the
+SPDX or DEP-5/copyright specification.</li>
+</ul>
+</blockquote>
+
+<p><br />
+<br />
+<br /></p>
+
+<h1 id="3-provide-an-inventory-for-included-software">3. Provide an inventory for included software</h1>
+
+<p>Aside from the license files included in the project, and the file level
+copyright information, you may include a bill of materials for your project,
+but you should only do so if this is generated automatically.</p>
+
+<p>A bill of materials can be very complicated and lengthy, making it difficult to
+maintain. If you do not generate it automatically, it&rsquo;s very likely someone
+will forget to update it when making changes. In these cases, it&rsquo;s best not
+to have a bill of materials, but to rely only on the information coupled
+with the source code files.</p>
+
+<p>If you do have a way of automatically creating a bill of materials, and if
+you choose to do so, you should generate it automatically from
+the most reliable information you have about each file in your project.
+This includes copyright information kept in version control systems and
+licenses on files which include a standard header, or which includes
+the header in a separate license file.</p>
+
+<p>You may also choose to include in the bill of materials your output files
+generated when compiling the project, such that you can signal through the
+bill of materials, which license is relevant for the output files depending
+on the included source code.</p>
+
+<p>The bill of materials should be conformant to the SPDX specification and
+included in a file in the top level directory of your repository called
+<code>LICENSE.spdx</code>.</p>
+
+<blockquote>
+<h2 id="keep-in-mind-2">Keep in mind</h2>
+
+<ul>
+<li>Don&rsquo;t create a bill of materials if you can&rsquo;t generate it automatically.</li>
+<li>If you generate one automatically, it&rsquo;s helpful to include one.</li>
+<li>Make your bill of materials conformant to the SPDX specification.</li>
+<li>It doesn&rsquo;t hurt to run your project through ScanCode or FOSSology, to make sure these tools can parse and understand your project&rsquo;s licensing.</li>
+</ul>
+</blockquote>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Establish project governance committed to public access, vet material added to project to protect against vulnerability to takedown, only include material under a free and open source license so it can be copied and archived freely and ensure project is archived by institutions dedicated to long-term preservation of software code, eg. Software Heritage.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="copyright text-muted small">Copyright &copy; <a href="https://fsfe.org/">FSFE e.V.</a>. 
+The content of the website, the practices and video, are licensed under Creative Commons Attribution-ShareAlike 4.0. 
+</p>
+              <p class="text-muted small">
+		Built with <a href="http://gohugo.io">Hugo</a> and the
+		<a href="https://github.com/nsomar/github-project-landing-page">Github project Page</a>
+		theme.
+              </p>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/jquery-1.11.0.js"></script>
+
+
+<script src="/js/jquery.easing.min.js"></script>
+
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="js/landing-page.js"></script>
+
+
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.fsfe.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+</body>
+</html>
+
