@@ -17,9 +17,14 @@ services:
       - /srv/reuse/docs/pdf:/tmp/pdf:ro
     depends_on:
       - reuse-docs
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "5"
     environment:
-      - VIRTUAL_HOST=reuse.software
-      - LETSENCRYPT_HOST=reuse.software
+      - VIRTUAL_HOST=reuse.software,www.reuse.software
+      - LETSENCRYPT_HOST=reuse.software,www.reuse.software
       - LETSENCRYPT_EMAIL=contact@fsfe.org
 
   # Connect the container which exposes the service to the 'bridge' network as
