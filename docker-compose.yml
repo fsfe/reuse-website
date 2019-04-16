@@ -1,12 +1,12 @@
 version: '3'
 services:
-  reuse-spec:
+  reuse-docs:
     container_name: reuse-docs
     build:
       context: ./reuse-docs
     image: reuse-docs
     volumes:
-      - /srv/reuse/docs/pdf:/home/user/pdf:rw
+      - /srv/reuse/docs/pdf:/tmp/pdf:rw
 
   reuse-web:
     container_name: reuse-web
@@ -15,6 +15,8 @@ services:
     restart: always
     volumes:
       - /srv/reuse/docs/pdf:/tmp/pdf:ro
+    depends_on:
+      - reuse-docs
     environment:
       - VIRTUAL_HOST=reuse.software
       - LETSENCRYPT_HOST=reuse.software

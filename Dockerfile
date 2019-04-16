@@ -9,11 +9,10 @@ RUN dpkg -i /tmp/hugo.deb && \
 
 COPY ./site /tmp/reuse-web/
 
-RUN hugo -s /tmp/reuse-web
+# copy markdown files from submodule
+COPY ./reuse-docs/practices /tmp/reuse-web/content/practices
 
-RUN rm -r /var/www/html && \
-    mv /tmp/reuse-web/public /var/www && \
-    mv /var/www/public /var/www/html && \
-    rm -r /tmp/reuse-web
-
-CMD apache2-foreground
+# copy generated PDF files from reuse-docs' shared volume, build website, and run apache
+CMD cp /tmp/pdf/*.pdf /tmp/reuse-web/static/ && \
+    hugo -s /tmp/reuse-web -d /var/www/html && \
+    apache2-foreground
