@@ -18,16 +18,13 @@ title: "REUSE For developers"
       <p>These repositories are basic, but each of them is REUSE compliant.
       We make them available to demonstrate how REUSE works in practice.</p>
       <ul>
-       <li><a href="https://git.fsfe.org/reuse/simple-hello">Simple Hello</a> - the most basic repository, a single source code file and license.</li>
-       <li><a href="https://git.fsfe.org/reuse/included-hello">Included Hello</a> - a simple repository with included source code under a different license.</li>
-       <li><a href="https://git.fsfe.org/reuse/spdx-hello">SPDX Hello</a> - a repository with Git commit hooks which automatically generate a bill of materials after each commit.</li>
-       <li><a href="https://git.fsfe.org/jonas/curl/src/reuse-compliant">curl</a> - a repository which shows what a REUSE compliant curl repository would look like.</li>
-       <li><a href="https://git.fsfe.org/reuse/reuse">reuse</a> - a repository that is compliant with itself.</li>
+       <li><a href="https://github.com/fsfe/reuse-example">reuse-example</a> - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing.</li>
+       <li><a href="https://github.com/fsfe/reuse-tool">reuse-tool</a> - the helper tool itself is compliant.</li>
       </ul>
 
       <h3>Tools</h3>
       <ul>
-       <li><a href="https://git.fsfe.org/reuse/reuse">reuse</a>, a linter tool to validate whether a repository is REUSE compliant or not, and a compiler tool to generate a project's bill of materials.</li>
+       <li><a href="https://github.com/fsfe/reuse-tool">reuse</a>, a linter tool to validate whether a repository is REUSE compliant or not, and a compiler tool to generate a project's bill of materials.</li>
       </ul>
 
       <h3>Documentation</h3>
