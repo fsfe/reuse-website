@@ -12,6 +12,13 @@ for more automation.
 
 ## Install
 
+Before doing anything, run the following command to download the documentation
+as submodule:
+
+```
+git submodule update --init
+```
+
 There's no installation here, but you may try running `hugo` in the
 `site/` directory to generate the website when testing locally.
 Typically, we let our Drone CI build and deploy the website for us.
