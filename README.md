@@ -12,11 +12,13 @@ for more automation.
 
 ## Install
 
-Before doing anything, run the following command to download the documentation
-as submodule:
+Before doing anything, run the following commands to download the documentation
+as submodule, and to synchronise the contents of the submodule into the `site/`
+directory:
 
 ```
 git submodule update --init
+bash sync-docs.sh
 ```
 
 There's no installation here, but you may try running `hugo` in the
