@@ -7,12 +7,10 @@ ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_B
 RUN dpkg -i /tmp/hugo.deb && \
     rm /tmp/hugo.deb
 
-COPY ./site /tmp/reuse-web/
+COPY . /tmp/reuse-website
 
-# copy markdown files from submodule
-COPY ./reuse-docs/practices /tmp/reuse-web/content/practices
+RUN /tmp/reuse-website/sync-docs.sh
 
-# copy generated PDF files from reuse-docs' shared volume, build website, and run apache
-CMD cp /tmp/pdf/*.pdf /tmp/reuse-web/static/ && \
-    hugo -s /tmp/reuse-web -d /var/www/html && \
-    apache2-foreground
+RUN hugo -s /tmp/reuse-website/site -d /var/www/html
+
+CMD apache2-foreground
