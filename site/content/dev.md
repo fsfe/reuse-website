@@ -27,7 +27,7 @@ title: "REUSE For developers"
        <li><a href="https://github.com/fsfe/reuse-tool">reuse</a>, a linter tool to validate whether a repository is REUSE compliant or not, and a compiler tool to generate a project's bill of materials.</li>
       </ul>
 
-      <h3>Documentation</h3>
+      <!--<h3>Documentation</h3>
       <p>
        Aside from the <a href="/practices/">practices</a>, we have some
        blog posts and similar documents which might be useful for you to
@@ -35,7 +35,7 @@ title: "REUSE For developers"
       </p>
       <ul>
        <li><a href="http://blog.jonasoberg.net/a-reuse-compliant-curl/">REUSE curl</a>, a guide in making a mid sized project like curl REUSE compliant.</li>
-       <li><a href="http://blog.jonasoberg.net/reuse-templates/">REUSE templates</a>, some information about our REUSE example repositories.</li>
+       <li><a href="http://blog.jonasoberg.net/reuse-templates/">REUSE templates</a>, some information about our REUSE example repositories.</li>-->
       </ul>
     </div>
 </div>
