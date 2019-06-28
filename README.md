@@ -6,7 +6,7 @@
 
 We're working to make managing copyrights and licenses in free and open
 source software easier. This is the website for a guide of best practices,
-meant to demonstrate how 
+meant to demonstrate how
 to add copyright and license information to a project in ways which allow
 for more automation.
 
@@ -22,9 +22,7 @@ Go to https://reuse.software/ and enjoy :-) If your project follows the reuse
 guidelines, we encourage you to show that in your `README.md` and similar! Just
 copy this badge into your readme:
 
-`
-[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
-`
+`[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)`
 
 ## Contribute
 
@@ -41,7 +39,7 @@ We also accept and appreciate feedback by creating issues in the project
 
 ## License
 
-The theme used for this website is based on [github-project-landing-page](https://github.com/nsomar/github-project-landing-page)  which is licensed under the
+The theme used for this website is based on [github-project-landing-page](https://github.com/nsomar/github-project-landing-page) which is licensed under the
 the [MIT license](https://github.com/nsomar/github-project-landing-page/blob/master/LICENSE.md).
 
 The content of the website, the best practices, are licensed under [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0).
