@@ -27,6 +27,56 @@ title: "REUSE For developers"
        <li><a href="https://github.com/fsfe/reuse-tool">reuse</a>, a linter tool to validate whether a repository is REUSE compliant or not, and a compiler tool to generate a project's bill of materials.</li>
       </ul>
 
+      <h3>Include in CI processes</h3>
+
+      <p>REUSE can be easily integrated in your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.</p>
+
+      <p>The FSFE offers a Docker image which can be used in numerous CI solutions. In the following, you will find a few examples:</p>
+
+      <h4>Drone</h4>
+
+      <p>Include the following snipped in your `.drone.yml` file:</p>
+
+<pre>
+pipeline:
+  reuse:
+    image: fsfe/reuse:latest
+    commands:
+      - reuse lint
+</pre>
+
+      <p>More information about Drone on <a href="https://drone.io">drone.io</a>.</p>
+
+      <h4>GitLab EE</h4>
+
+      <p>Include the following snipped in your `.gitlab-ci.yml` file:</p>
+
+<pre>
+reuse:
+  image: fsfe/reuse:latest
+  script:
+    - reuse lint
+</pre>
+
+      <p>More information about GitLab's EE CI on <a href="https://docs.gitlab.com/ee/">docs.gitlab.com/ee</a>.</p>
+
+      <h4>Travis CI</h4>
+
+      <p>Include the following snipped in your `.travis.yml` file:</p>
+
+<pre>
+language: minimal
+
+services:
+  - docker
+
+before_install:
+- docker pull fsfe/reuse:latest
+- docker run --name reuse -v ${TRAVIS_BUILD_DIR}:/repo fsfe/reuse /bin/sh -c "cd /repo; reuse lint"
+</pre>
+
+      <p>More information on Travis CI on <a href="https://travis-ci.com">travis-ci.com</a>.</p>
+
       <!--<h3>Documentation</h3>
       <p>
        Aside from the <a href="/practices/">practices</a>, we have some
