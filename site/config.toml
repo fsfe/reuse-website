@@ -1,5 +1,5 @@
-baseurl         = "https://reuse.software"
-languageCode    = "en-us"
+baseURL         = "https://reuse.software/"
+languageCode    = "en"
 title           = "REUSE Initiative"
 theme           = "github-project-landing-page"
 
