@@ -1,6 +1,10 @@
+# SPDX-Copyright: Free Software Foundation Europe e.V.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 FROM php:7-apache
 
-ENV HUGO_VERSION 0.54.0
+ENV HUGO_VERSION 0.55.6
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.deb
 
 ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY} /tmp/hugo.deb
