@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>{{ .Title }}</title>
+    <title>
+    {{- if .IsHome -}}
+        {{- .Site.Title -}}
+    {{- else -}}
+        {{- .Title -}} {{ print " | " }} {{- .Site.Title -}}
+    {{- end -}}
+    </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
