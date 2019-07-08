@@ -6,8 +6,12 @@ img#logo {
   padding: 8px 0;
 }
 
-/* PAGE STRUCTURE */
+/* HEADLINES */
 h1 {
   margin: 2em 0 1em 0;
   text-align: center;
 }
+h1 { font-size: 40px; }
+h2 { font-size: 34px; }
+h3 { font-size: 28px; }
+h1, h2, h3, h4, h5, h6 { color: #444; }
