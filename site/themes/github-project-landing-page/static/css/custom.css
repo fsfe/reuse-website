@@ -5,3 +5,9 @@ img#logo {
 .navbar-brand {
   padding: 8px 0;
 }
+
+/* PAGE STRUCTURE */
+h1 {
+  margin: 2em 0 1em 0;
+  text-align: center;
+}
