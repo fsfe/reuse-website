@@ -1,5 +1,5 @@
 ---
-title: "REUSE For developers"
+title: "Help for developers"
 ---
 
 ## Example repositories
