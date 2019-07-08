@@ -15,3 +15,12 @@ h1 { font-size: 40px; }
 h2 { font-size: 34px; }
 h3 { font-size: 28px; }
 h1, h2, h3, h4, h5, h6 { color: #444; }
+
+.noscript {
+  background-color: #fcf8e3;
+  border-bottom: 1px solid #faebcc;
+  color: #8a6d3b;
+  display: block;
+  padding: 6px 12px;
+  text-align: center;
+}
