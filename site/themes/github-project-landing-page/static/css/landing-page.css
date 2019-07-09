@@ -94,21 +94,6 @@
   border-radius: 4px;
 }
 
-.signup blockquote {
-  width: 70%;
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  margin-top: 2em;
-  margin-left: 0%;
-  font-size: 1em;
-  line-height: 2em;
-  color: #333;
-  background-color: lightgrey;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
 .container h3 {
     margin-top: 20px;
     margin-bottom: 10px;

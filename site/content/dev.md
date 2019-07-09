@@ -2,6 +2,8 @@
 title: "Help for developers"
 ---
 
+{{< box-alert >}}The resources below already make use of [REUSE 3.0](https://github.com/fsfe/reuse-docs/tree/v3.0a1) which is in draft stage currently.{{< /box-alert >}}
+
 ## Example repositories
 
 These repositories are basic, but each of them is REUSE compliant. We make them available to demonstrate how REUSE works in practice.
