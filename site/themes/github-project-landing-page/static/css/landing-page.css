@@ -25,12 +25,12 @@
 }
 
 .intro-image p {
-    color: #111;
+    color: #333;
 }
 
 .intro-message {
     margin-top: 100px;
-    color: #111;
+    color: #333;
     text-align: left;
     padding-bottom: 50px;
 }
