@@ -32,6 +32,7 @@
     margin-top: 100px;
     color: #111;
     text-align: left;
+    padding-bottom: 50px;
 }
 
 .intro-message > h3 {
@@ -107,7 +108,6 @@
 .content-section-b {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
 }
 
 .section-heading {

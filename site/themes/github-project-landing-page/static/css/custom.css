@@ -16,16 +16,6 @@ h2 { font-size: 34px; }
 h3 { font-size: 28px; }
 h1, h2, h3, h4, h5, h6 { color: #444; }
 
-/* MISC */
-.noscript {
-  background-color: #fcf8e3;
-  border-bottom: 1px solid #faebcc;
-  color: #8a6d3b;
-  display: block;
-  padding: 6px 12px;
-  text-align: center;
-}
-
 /* SOCIAL BUTTONS */
 .social-links {
   display: block;
@@ -75,4 +65,36 @@ footer a {
 }
 footer a:hover {
   color: #111;
+}
+/* STICK FOOTER BOTTOM */
+@media(min-width: 992px) {
+  div#wrap {
+    min-height: 100%;
+    position: relative;
+  }
+  footer {
+    border-top: 1px solid #e7e7e7;
+    width: 100%;
+    bottom: 0;
+    height: 150px;
+  }
+  body {
+    padding-bottom: 150px;
+  }
+}
+
+/* MISC */
+.noscript {
+  background-color: #fcf8e3;
+  border-bottom: 1px solid #faebcc;
+  color: #8a6d3b;
+  display: block;
+  padding: 6px 12px;
+  text-align: center;
+}
+/* Avoid scrollbar jumps in centering 
+ * see https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
+ */
+div#wrap, nav {
+  margin-left: calc(100vw - 100%);
 }
