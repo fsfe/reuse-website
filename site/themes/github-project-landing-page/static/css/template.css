@@ -1,0 +1,41 @@
+/*
+ * SPDX-Copyright: 2015 Omar Abdelhafith
+ * SPDX-License-Identifier: MIT
+*/
+
+.navbar {
+    border-color: #e7e7e7;
+}
+
+.content-section-a,
+footer,
+.navbar {
+  background-color: #f8f8f8;
+  color: #111;
+}
+
+.navbar a:link,
+.navbar-default .navbar-nav>li>a {
+  color: #333;
+}
+
+.navbar a:hover,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #111;
+}
+
+.content-section-b {
+  background-color: white;
+  color: #111;
+}
+
+body {
+  color: #111;
+}
+
+.header-container h1,
+.header-container h2,
+.header-container h3,
+.header-container h4 {
+  color: #111;
+}

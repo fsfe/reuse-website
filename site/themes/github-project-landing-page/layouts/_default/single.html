@@ -2,20 +2,17 @@
 {{ partial "nav.html" . }}
 
 <section id="services">
-   <div class="content-section-b">
-
-      <div class="container">
-
-        <div class="row">
-          <div>
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            {{ .Content }}
+  <div class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="clearfix"></div>
+          <h1>{{ .Page.Title }}</h1>
+          {{ .Content }}
         </div>
+      </div>
     </div>
-
-</div>
-</div>
-
+  </div>
 </section>
+
 {{ partial "footer.html" . }}

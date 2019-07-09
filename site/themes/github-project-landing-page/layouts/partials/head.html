@@ -7,22 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>{{ .Title }}</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <title>
+    {{- if .IsHome -}}
+        {{- .Site.Title -}}
+    {{- else -}}
+        {{- .Title -}} {{ print " | " }} {{- .Site.Title -}}
+    {{- end -}}
+    </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="/css/landing-page.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
     <link href="/css/share.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/css/roboto.css" rel="stylesheet">
+    <link href="/fonts/roboto.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-    <style>
-    {{ printf "%v" (partial "template.css" . ) | safeCSS  }}
-  </style>
+    <link rel="stylesheet" type="text/css" href="/fonts/fontawesome/css/all.min.css" />
 
 </head>
 <body>
+<div id="wrap">
