@@ -1,4 +1,7 @@
 ---
+# SPDX-Copyright: Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 title: "Materials"
 ---
 
