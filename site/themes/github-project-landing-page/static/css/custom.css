@@ -55,7 +55,9 @@ h1, h2, h3, h4, h5, h6 { color: #444; }
 
 /* FOOTER */
 footer {
+  margin-top: 2em;
   padding: 20px 0;
+  border-top: 1px solid #e7e7e7;
 }
 footer p {
   text-align: center;
@@ -73,7 +75,6 @@ footer a:hover {
     position: relative;
   }
   footer {
-    border-top: 1px solid #e7e7e7;
     width: 100%;
     bottom: 0;
     height: 150px;
@@ -97,4 +98,10 @@ footer a:hover {
  */
 div#wrap, nav {
   margin-left: calc(100vw - 100%);
+}
+@media(min-width:992px) {
+  .vertical-align {
+    display: flex;
+    align-items: center;
+  }
 }

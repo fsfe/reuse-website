@@ -22,17 +22,28 @@
     padding-top: 40px;
     text-align: center;
     color: #f8f8f8;
+    margin-top: 4em;
 }
 
+.intro-image {
+    height: 100%;
+    min-height: 380px;
+    margin-bottom: 1em;
+}
 .intro-image p {
-    color: #333;
+    color: #555;
+    width: 70%;
+    min-width: 200px;
+}
+.intro-image img {
+  width: 60%;
+  min-width: 200px;
 }
 
 .intro-message {
-    margin-top: 100px;
     color: #333;
     text-align: left;
-    padding-bottom: 50px;
+    padding-bottom: 1em;
 }
 
 .intro-message > h3 {
@@ -40,6 +51,17 @@
 
 .intro-message > h1 {
     font-size: 5em;
+}
+.intro-message video {
+  width: 100%;
+}
+@media(min-width:1200px) {
+  .intro-message video {
+    width: 80%;
+  }
+}
+.intro-subtext {
+  color: #333;
 }
 
 .intro-divider {
@@ -180,7 +202,6 @@ p.copyright {
 @media(max-width:1000px) {
     .intro-message {
         padding-bottom: 10%;
-        margin-top: -30px;
     }
 
     .intro-message > h1 {
@@ -208,14 +229,4 @@ p.copyright {
    .intro-message {
         text-align: center;
     }
-}
-
-.intro-image {
-    height: 100%;
-    min-height: 380px;
-    margin-top: 20px;
-}
-
-.github-btn {
-    margin-top: 10px;
 }
