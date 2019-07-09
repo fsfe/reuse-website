@@ -23,3 +23,12 @@ theme           = "github-project-landing-page"
 
     header_link_color="#777"
     header_link_hover_color="rgb(51, 51, 51)"
+
+[params.social]
+  Github        = "search?q=topic%3Areuse+org%3Afsfe&type=Repositories"
+  Git           = "https://git.fsfe.org/reuse"
+  Email         = "https://lists.fsfe.org/mailman/listinfo/reuse"
+  Twitter       = "fsfe"
+  Stackoverflow = ""
+  Mastodon      = "mastodon.social/@fsfe"
+  Diaspora      = ""
