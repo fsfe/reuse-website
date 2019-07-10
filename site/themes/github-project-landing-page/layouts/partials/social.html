@@ -1,31 +1,31 @@
 <div class="social">
   <ul class="social-links">
     {{- with .Site.Params.Social.Git -}}
-      <li><a href="{{- . -}}" title="Git" target="_blank"><i class="fab fa-git"></i></a></li>
+      <li><a href="{{- . -}}" title="Git" target="_blank"><i class="fab fa-git icon"></i></a></li>
     {{ end }}
 
     {{- with .Site.Params.Social.Github -}}
-      <li><a href="https://github.com/{{- . -}}" title="Github" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://github.com/{{- . -}}" title="Github" target="_blank"><i class="icon fab fa-github"></i></a></li>
     {{ end }}
 
     {{- with .Site.Params.Social.Email -}}
-      <li><a href="{{- . -}}" title="Email" target="_blank"><i class="fa fa-envelope"></i></a></li>
+      <li><a href="{{- . -}}" title="Email" target="_blank"><i class="icon fa fa-envelope"></i></a></li>
     {{ end }}
 
     {{- with .Site.Params.Social.Mastodon -}}
-      <li><a href="https://{{- . -}}" title="Mastodon" rel="me" target="_blank"><i class="fab fa-mastodon"></i></a></li>
+      <li><a href="https://{{- . -}}" title="Mastodon" rel="me" target="_blank"><i class="icon fab fa-mastodon"></i></a></li>
     {{ end }}
 
     {{- with .Site.Params.Social.Twitter -}}
-      <li><a href="https://twitter.com/{{- . -}}" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://twitter.com/{{- . -}}" title="Twitter" target="_blank"><i class="icon fab fa-twitter"></i></a></li>
     {{ end }}
 
     {{- with .Site.Params.Social.Diaspora -}}
-      <li><a href="https://{{- . -}}" title="Diaspora" target="_blank"><i class="fab fa-diaspora"></i></a></li>
+      <li><a href="https://{{- . -}}" title="Diaspora" target="_blank"><i class=" icon fab fa-diaspora"></i></a></li>
     {{ end }}
 
     {{- with .Site.Params.Social.Stackoverflow -}}
-      <li><a href="https://stackoverflow.com/{{- . -}}" title="Stackoverflow" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+      <li><a href="https://stackoverflow.com/{{- . -}}" title="Stackoverflow" target="_blank"><i class="fab icon fa-stack-overflow"></i></a></li>
     {{ end }}
 
 
@@ -34,3 +34,8 @@
     {{ end }}
   </ul>
 </div>
+<style>
+.icon:hover{
+color:cornflowerblue
+}
+</style>
