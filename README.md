@@ -1,3 +1,8 @@
+<!--
+  SPDX-Copyright: Free Software Foundation Europe e.V.
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # REUSE
 
 [![Build Status](https://drone.fsfe.org/api/badges/reuse/reuse-spec/status.svg)](https://drone.fsfe.org/reuse/reuse-spec)

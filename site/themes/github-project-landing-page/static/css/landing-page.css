@@ -1,11 +1,12 @@
-/*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ * SPDX-Copyright: 2011-2014 Twitter, Inc.
+ * SPDX-Copyright: 2015 Omar Abdelhafith <o.arrabi@me.com>
+ * SPDX-Copyright: 2019 Free Software Foundation Europe e.V. <https://fsfe.org>
+*/
 
- body,
- html {
+body,
+html {
     width: 100%;
     height: 100%;
     font-size: 17.5px;

@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# SPDX-Copyright: 2015 Omar Abdelhafith <o.arrabi@me.com>
+
 name = "Github project Page"
 license = "MIT"
 licenselink = "https://github.com/nsomar/github-project-landing-page/blob/master/LICENSE.md"

@@ -1,3 +1,7 @@
+# SPDX-Copyright: Free Software Foundation Europe e.V.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 [submodule "reuse-docs"]
 	path = reuse-docs
 	url = https://github.com/fsfe/reuse-docs.git
