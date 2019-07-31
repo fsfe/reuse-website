@@ -23,6 +23,7 @@ footer,
 .navbar a:hover,
 .navbar-default .navbar-nav>li>a:hover {
   color: #111;
+  background-color: #e7e7e7;
 }
 
 .content-section-b {
