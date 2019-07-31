@@ -8,5 +8,7 @@
 
 cd $(dirname $0)
 
-rm -fr site/content/practices
-cp -r reuse-docs/practices site/content/practices
+for f in faq.md spec.md tutorial.md; do
+  rm -f site/content/"$f"
+  cp reuse-docs/"$f" site/content/"$f"
+done
