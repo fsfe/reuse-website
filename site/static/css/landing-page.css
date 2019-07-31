@@ -82,6 +82,9 @@ html {
     width: 900px;
     line-height: 1.5em;
 }
+.container.index {
+    width: 1170px;
+}
 
 .header-container {
     width: 100%;
@@ -143,51 +146,10 @@ html {
     border-top: 3px solid #e7e7e7;
 }
 
-.contact {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/contact-bg.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.contact h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
-}
-
-.contact ul {
-    margin-bottom: 0;
-}
-
-.contact-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
 @media(max-width:1199px) {
-    ul.contact-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    .contact h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
-
-    ul.contact-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.contact-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
+    .container.index {
+       width: 80%;
+   }
 }
 
 footer {
@@ -207,16 +169,6 @@ p.copyright {
 
     .intro-message > h1 {
         font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
     }
 
     .intro-divider {

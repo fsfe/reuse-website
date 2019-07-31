@@ -6,6 +6,7 @@ baseURL         = "https://reuse.software/"
 languageCode    = "en"
 title           = "REUSE Initiative"
 theme           = "github-project-landing-page"
+sectionPagesMenu = "main"
 
 #[permalinks]
 #        page = "/:title/"
@@ -36,3 +37,25 @@ theme           = "github-project-landing-page"
   Stackoverflow = ""
   Mastodon      = "mastodon.social/@fsfe"
   Diaspora      = ""
+
+[menu]
+[[menu.main]]
+  name = "Get Started"
+  identifier = "tutorial"
+  weight = 100
+  url = "/tutorial/"
+[[menu.main]]
+  name = "FAQ"
+  identifier = "faq"
+  weight = 200
+  url = "/faq/"
+[[menu.main]]
+  name = "Tools"
+  identifier = "tools"
+  weight = 300
+  url = "/dev/"
+[[menu.main]]
+  name = "Materials"
+  identifier = "materials"
+  weight = 400
+  url = "/materials/"

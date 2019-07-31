@@ -88,6 +88,39 @@ footer a:hover {
   }
 }
 
+/* TABLE OF CONTENTS */
+/* hide h3 and below */
+nav#TableOfContents ul > li > ul > li > ul > li {
+  display: none;
+}
+/* +/- sign depending on accordion state */
+div#toc a h4.panel-title:before {
+    float: right !important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f068";
+    padding-right: 5px;
+    font-weight: 900;
+}
+div#toc a.collapsed h4.panel-title:before {
+    float: right !important;
+    content: "\f067";
+}
+div#toc .panel-title,
+div#toc a:hover,
+div#toc a:active,
+div#toc a:focus {
+    text-decoration:none;
+    color: #444;
+}
+/* Paddings, improve link clicks */
+.panel-heading {
+  padding: 0
+}
+div#toc .panel-title {
+  padding: 10px 15px;
+}
+
+
 /* MISC */
 .noscript {
   background-color: #fcf8e3;
@@ -100,7 +133,7 @@ footer a:hover {
 /* Avoid scrollbar jumps in centering 
  * see https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
  */
-div#wrap, nav {
+div#wrap {
   margin-left: calc(100vw - 100%);
 }
 @media(min-width:992px) {
@@ -109,3 +142,23 @@ div#wrap, nav {
     align-items: center;
   }
 }
+/* Scroll to top arrow */
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+#scroll-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 22px;
+}
+

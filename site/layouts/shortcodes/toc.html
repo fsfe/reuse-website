@@ -1,0 +1,18 @@
+<!--
+  SPDX-License-Identifier: MIT
+  SPDX-Copyright: 2019 Free Software Foundation Europe e.V. <https://fsfe.org>
+-->
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default" id="toc">
+    <div class="panel-heading" role="tab" id="headingOne">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <h4 class="panel-title">Table of Contents</h4>
+        </a>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        {{ .Page.TableOfContents }}
+      </div>
+    </div>
+  </div>
+</div>
