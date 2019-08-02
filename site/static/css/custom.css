@@ -12,11 +12,11 @@ img#logo {
 
 /* HEADLINES */
 h1 {
-  margin: 2em 0 1em 0;
+  margin: 1em 0 1em 0;
   text-align: center;
 }
 h1 { font-size: 40px; }
-h2 { font-size: 34px; }
+h2 { font-size: 34px; padding-top: 15px;}
 h3 { font-size: 28px; }
 h1, h2, h3, h4, h5, h6 { color: #444; }
 
@@ -55,6 +55,60 @@ h1, h2, h3, h4, h5, h6 { color: #444; }
 }
 .social-links li a:hover i {
   transform: scale(1);
+}
+
+/* LANDING PAGE */
+h1.title {
+  margin-top: 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 46px;
+  color: #4D4D4D;
+}
+.intro {
+  font-size:20px;
+}
+.reuse-step {
+  padding: 15px 0;
+  line-height: 2em;
+}
+.reuse-step-no {
+  font-size: 2em;
+  font-weight: 700;
+}
+.reuse-step-text {
+  font-size: 1.5em;
+  font-weight: 400;
+  overflow: hidden; /* do not wrap on small screens */
+  color: #444;
+}
+.reuse-logo img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reuse-tops .icon {
+  text-align: center;
+}
+.reuse-tops .fas {
+  font-size: 70px;
+  color: #3394CE;
+  color: #4D4D4D;
+}
+
+@media(max-width: 992px) {
+  .reuse-step-no {
+    float: left;
+  }
+}
+@media(max-width: 768px) {
+  div.reuse-tops {
+    margin-top:40px;
+  } 
+
 }
 
 /* FOOTER */
@@ -136,7 +190,7 @@ div#toc .panel-title {
 div#wrap {
   margin-left: calc(100vw - 100%);
 }
-@media(min-width:992px) {
+@media(min-width:750px) {
   .vertical-align {
     display: flex;
     align-items: center;
