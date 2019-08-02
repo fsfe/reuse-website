@@ -82,6 +82,9 @@ html {
     width: 900px;
     line-height: 1.5em;
 }
+.container.index {
+    width: 1170px;
+}
 
 .header-container {
     width: 100%;
@@ -170,6 +173,9 @@ html {
         float: left;
         margin-top: 15px;
     }
+    .container.index {
+       width: 80%;
+   }
 }
 
 @media(max-width:767px) {
