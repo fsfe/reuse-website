@@ -79,11 +79,11 @@ html {
 }
 
 .container {
-    width: 900px;
+    max-width: 900px;
     line-height: 1.5em;
 }
 .container.index {
-    width: 1170px;
+    max-width: 1170px;
 }
 
 .header-container {
@@ -132,7 +132,7 @@ html {
 }
 
 .content-section-b {
-    padding: 50px 0;
+    padding: 100px 0 50px 0;
     border-top: 1px solid #e7e7e7;
 }
 
@@ -176,7 +176,7 @@ p.copyright {
     }
 
     .container {
-       width: 80%;
+       width: 95%;
    }
 
    .intro-message {

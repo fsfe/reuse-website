@@ -12,7 +12,7 @@ img#logo {
 
 /* HEADLINES */
 h1 {
-  margin: 2em 0 1em 0;
+  margin: 1em 0 1em 0;
   text-align: center;
 }
 h1 { font-size: 40px; }
@@ -55,6 +55,34 @@ h1, h2, h3, h4, h5, h6 { color: #444; }
 }
 .social-links li a:hover i {
   transform: scale(1);
+}
+
+/* LANDING PAGE */
+.reuse-step {
+  padding: 15px 0;
+  line-height: 2em;
+}
+.reuse-step-no {
+  font-size: 2em;
+  font-weight: 700;
+}
+.reuse-step-text {
+  font-size: 1.5em;
+  font-weight: 400;
+  overflow: hidden; /* do not wrap on small screens */
+  color: #444;
+}
+.reuse-logo img {
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media(max-width: 992px) {
+  .reuse-step-no {
+    float: left;
+  }
 }
 
 /* FOOTER */
