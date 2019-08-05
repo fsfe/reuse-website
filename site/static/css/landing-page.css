@@ -56,11 +56,7 @@ html {
 .intro-message video {
   width: 100%;
 }
-@media(min-width:1200px) {
-  .intro-message video {
-    width: 80%;
-  }
-}
+
 .intro-subtext {
   color: #333;
 }
@@ -80,7 +76,7 @@ html {
 
 .container {
     max-width: 900px;
-    line-height: 1.5em;
+    line-height: 28px;
 }
 .container.index {
     max-width: 1170px;
@@ -163,10 +159,6 @@ p.copyright {
 
 
 @media(max-width:1000px) {
-    .intro-message {
-        padding-bottom: 10%;
-    }
-
     .intro-message > h1 {
         font-size: 3em;
     }
@@ -182,4 +174,13 @@ p.copyright {
    .intro-message {
         text-align: center;
     }
+}
+
+@media(min-width:787px) {
+  .intro-divider {
+    margin: 30px auto;
+  }
+  .intro-message video {
+    width: 70%;
+  }
 }

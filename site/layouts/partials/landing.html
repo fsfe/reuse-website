@@ -6,13 +6,14 @@
 
 <div class="content-section-b">
   <div class="container">
-<!--
-    <h1 style="letter-spacing: 3px;"><strong>REUSE</strong> <span style="font-weight:300;">SOFTWARE</span></h1>
--->
-    <p class="lead">
-      The <strong>REUSE</strong> initiative makes licensing easy for humans and machines alike. We solve a fundamental issue Free Software licensing has at the very source: what license is a file licensed under, and who owns copyright? Adopting our principles is as easy as one-two-three!
+
+    <h1 class="title"><strong>REUSE</strong> SOFTWARE</h1>
+
+    <p class="lead intro">
+      We make licensing easy for humans and machines alike. We solve a fundamental issue Free Software licensing has at the very source: what license is a file licensed under, and who owns copyright? <strong>Adopting our principles is as easy as one-two-three</strong>!
     </p>
 
+    <!-- STEPS -->
     <div class="row vertical-align">
       <div class="reuse-logo col-md-4">
         <img src="/img/reuse.png" alt="Logo of the REUSE initiative" style="width: 100%;"/>
@@ -45,8 +46,48 @@
             <p>Confirm REUSE compliance</p>
           </div>
         </div>
-          
       </div>
     </div>
-  </div>
+
+    <hr class="intro-divider">
+
+    <div class="intro-message">
+      <center>
+        <video controls="controls" poster="/img/poster.jpg" crossorigin="crossorigin">
+          <source src="https://download.fsfe.org/videos/reuse/reuse_software_en_desktop.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' media="screen and (min-device-width:1000px)" />
+          <source src="https://download.fsfe.org/videos/reuse/reuse_software_en_desktop.webm" type='video/webm; codecs="vp9, opus"' media="screen and (min-device-width:1000px)" />
+          <source src="https://download.fsfe.org/videos/reuse/reuse_software_en_mobile.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' media="screen and (max-device-width:999px)" />
+          <source src="https://download.fsfe.org/videos/reuse/reuse_software_en_mobile.webm" type='video/webm; codecs="vp9, opus"' media="screen and (max-device-width:999px)" />
+        </video>
+      </center>
+    </div>
+
+    <p>Copyright and licensing is difficult, especially when reusing software from different projects that are released under various different licenses. The REUSE Initiative was started by the <a href="https://fsfe.org">Free Software Foundation Europe</a> (FSFE) to provide a set of recommendations to make licensing your Free Software projects easier. Not only do these recommendations make it easier for you to declare the licenses under which your works are released, but they also make it easier for a computer to understand how your project is licensed.</p>
+
+    <!-- Developers -->
+    <div class="reuse-tops row vertical-align">
+      <div class="icon col-sm-2"><i class="fas fa-code"></i></div>
+      <div class="col-sm-10">
+        <h3>For developers</h3>
+        <p>The license of your project sets the terms under which others can reuse your software. That is why you should make sure that it is clear for everyone which parts of your software are under which license. REUSE safeguards your intentions and assists you in this process. Have a look at our <a href="/dev">tools section</a> to learn about the tool, inclusion in CI/CD processes and more.</p>
+      </div>
+    </div>
+    <!-- Reusers -->
+    <div class="reuse-tops row vertical-align">
+      <div class="icon col-sm-2"><i class="fas fa-recycle"></i></div>
+      <div class="col-sm-10">
+        <h3>Reusing made simple</h3>
+        <p>Free Software enables you to build on top of others' work and therefore innovate quickly. But the more external components you use, the harder it is to keep an overview of copyright holders and their licensing choices. With REUSE, each file holds the necessary information, and your repo transparently contains all used licenses.</p>
+      </div>
+    </div>
+    <!-- Legal experts -->
+    <div class="reuse-tops row vertical-align">
+      <div class="icon col-sm-2"><i class="fas fa-balance-scale"></i></div>
+      <div class="col-sm-10">
+        <h3>License compliance</h3>
+        <p>There are many tools to support license compliance for software, many using databases and fuzzy heuristics. A REUSE compliant project makes legal experts' and compliance officers' jobs much easier. Creating a bill of materials can be achieved with just one simple command. REUSE <a href="/comparison">does not replace other tools</a>, it is a long-awaited addition.</p>
+      </div>
+    </div>
+
+  </div> <!-- /container -->
 </div>
