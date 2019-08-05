@@ -83,6 +83,7 @@ h1.title {
   color: #444;
 }
 .reuse-logo img {
+  width: 100%;
   max-width: 300px;
   display: block;
   margin-left: auto;
