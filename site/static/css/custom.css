@@ -9,6 +9,10 @@ img#logo {
 .navbar-brand {
   padding: 8px 0;
 }
+.nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 /* HEADLINES */
 h1 {
