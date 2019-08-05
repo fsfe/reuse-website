@@ -50,8 +50,8 @@ sectionPagesMenu = "main"
   weight = 200
   url = "/faq/"
 [[menu.main]]
-  name = "Tools"
-  identifier = "tools"
+  name = "Developers"
+  identifier = "developers"
   weight = 300
   url = "/dev/"
 [[menu.main]]

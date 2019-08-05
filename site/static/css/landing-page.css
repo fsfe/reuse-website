@@ -56,11 +56,7 @@ html {
 .intro-message video {
   width: 100%;
 }
-@media(min-width:1200px) {
-  .intro-message video {
-    width: 80%;
-  }
-}
+
 .intro-subtext {
   color: #333;
 }
@@ -79,8 +75,11 @@ html {
 }
 
 .container {
-    width: 900px;
-    line-height: 1.5em;
+    max-width: 900px;
+    line-height: 28px;
+}
+.container.index {
+    max-width: 1170px;
 }
 
 .header-container {
@@ -129,7 +128,7 @@ html {
 }
 
 .content-section-b {
-    padding: 50px 0;
+    padding: 100px 0 50px 0;
     border-top: 1px solid #e7e7e7;
 }
 
@@ -143,51 +142,10 @@ html {
     border-top: 3px solid #e7e7e7;
 }
 
-.contact {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/contact-bg.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.contact h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
-}
-
-.contact ul {
-    margin-bottom: 0;
-}
-
-.contact-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
 @media(max-width:1199px) {
-    ul.contact-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    .contact h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
-
-    ul.contact-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.contact-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
+    .container.index {
+       width: 80%;
+   }
 }
 
 footer {
@@ -201,22 +159,8 @@ p.copyright {
 
 
 @media(max-width:1000px) {
-    .intro-message {
-        padding-bottom: 10%;
-    }
-
     .intro-message > h1 {
         font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
     }
 
     .intro-divider {
@@ -224,10 +168,19 @@ p.copyright {
     }
 
     .container {
-       width: 80%;
+       width: 95%;
    }
 
    .intro-message {
         text-align: center;
     }
+}
+
+@media(min-width:787px) {
+  .intro-divider {
+    margin: 30px auto;
+  }
+  .intro-message video {
+    width: 70%;
+  }
 }
