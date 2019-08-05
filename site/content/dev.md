@@ -5,18 +5,32 @@
 title: "Help for developers"
 ---
 
-## Example repositories
+Licensing should be easy for developers. We provide several tools and services to allow you to concentrate on coding.
 
-These repositories are basic, but each of them is REUSE compliant. We make them available to demonstrate how REUSE works in practice.
 
-- [reuse-example](https://github.com/fsfe/reuse-example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing.
-- [reuse-tool](https://github.com/fsfe/reuse-tool) - the helper tool itself is compliant.
+## Helper Tool {#tool}
 
-## Tools
+The [REUSE helper tool](https://git.fsfe.org/reuse/tool) assists with achieving and confirming REUSE compliance. It downloads the full license texts, adds copyright and license information to file headers, and contains a linter to identify problems. Eventually, you can generate a software bill of materials.
 
-- [reuse](https://github.com/fsfe/reuse-tool), a linter tool to validate whether a repository is REUSE compliant or not, and a compiler tool to generate a project's bill of materials.
+Read the [documentation](https://reuse.readthedocs.io) to learn more about the tool. You will also find a [tool section in our FAQ](/faq/#tool) for the most pressing questions.
 
-## Include in CI processes
+
+## Example repositories {#repos}
+
+How does a REUSE compliant project look like? The following repositories are basic, but each of them is REUSE compliant. We make them available to demonstrate how REUSE works in practice.
+
+- [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).
+- [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant.
+
+Compliant projects may use the REUSE badge. You can use the URL `https://reuse.software/badge/reuse-compliant.svg` as image source when including the badge in your project. Please link it to `https://reuse.software` so people can learn about its meaning.
+
+[![REUSE compliant](/badge/reuse-compliant.svg)](https://reuse.software)
+
+Here is a snippet that you can use for your README.md file:
+
+`[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software)`
+
+## Inclusion in CI/CD workflows {#ci}
 
 REUSE can be easily integrated in your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.</p>
 
