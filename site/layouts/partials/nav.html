@@ -33,3 +33,7 @@
     </div>
     <!-- /.container -->
 </nav>
+{{- $slug := replace (.File.TranslationBaseName | lower) " " "_" -}}
+{{ if not $slug }}{{ $slug = "index" }}{{ end }}
+<div class="content-section-b">
+  <div class="container page-{{ $slug }}">
