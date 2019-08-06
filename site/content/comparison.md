@@ -5,7 +5,7 @@
 title: "Comparison of license compliance projects"
 ---
 
-It is easy to get confused by the multitude of initiatives and tools that help with software license compliance. Provided below is a short and incomplete overview of some noteworthy projects. 
+It is easy to get confused by the multitude of initiatives and tools that help with software license compliance. Provided below is a short and incomplete overview of some noteworthy projects.
 
 REUSE does not intend to replace, but rather complement them. We try to solve unclear and missing license and copyright information at the very source. We empower developers to take care of a proper licensing of their project.
 
