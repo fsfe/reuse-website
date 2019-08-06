@@ -17,7 +17,7 @@ Read the [documentation](https://reuse.readthedocs.io) to learn more about the t
 
 ## Example repositories {#repos}
 
-How does a REUSE compliant project look like? The following repositories are basic, but each of them is REUSE compliant. We make them available to demonstrate how REUSE works in practice.
+What does a REUSE-compliant project look like? The following repositories are basic, but each of them is REUSE-compliant. We make them available to demonstrate how REUSE works in practice.
 
 - [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).
 - [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant.
@@ -32,9 +32,9 @@ Here is a snippet that you can use for your README.md file:
 
 ## Inclusion in CI/CD workflows {#ci}
 
-REUSE can be easily integrated in your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.</p>
+REUSE can be easily integrated into your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.
 
-The FSFE offers a Docker image which can be used in numerous CI solutions. In the following, you will find a few examples:</p>
+The FSFE offers a Docker image which can be used in numerous CI solutions. Find a few examples below:
 
 ### Drone
 
@@ -50,7 +50,7 @@ pipeline:
 
 More information about Drone on [drone.io](https://drone.io).
 
-### GitLab EE
+### GitLab
 
 Include the following snipped in your `.gitlab-ci.yml` file:
 
@@ -61,7 +61,7 @@ reuse:
     - reuse lint
 ```
 
-More information about GitLab's EE CI on [docs.gitlab.com/ee](https://docs.gitlab.com/ee/).
+More information about GitLab's CI on [docs.gitlab.com](https://docs.gitlab.com/ce/ci/quick_start/).
 
 ### Travis CI
 

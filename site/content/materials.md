@@ -5,7 +5,7 @@
 title: "Materials"
 ---
 
-Here, you will find further material by the REUSE Initiative. Feel free to use the material on this page as you see fit. Unless otherwise noted, the material is available under CC-BY-SA-4.0.
+Provided here are some further REUSE materials. Feel free to use the material on this page as you see fit. Unless otherwise noted, the material is available under CC-BY-SA-4.0.
 
 ## Comparison of license compliance projects
 
