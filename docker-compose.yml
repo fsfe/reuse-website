@@ -10,8 +10,6 @@ services:
     build: .
     image: reuse-web
     restart: always
-    volumes:
-      - /srv/reuse/docs/pdf:/tmp/pdf:ro
     logging:
       driver: json-file
       options:
