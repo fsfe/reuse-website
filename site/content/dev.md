@@ -50,7 +50,7 @@ pipeline:
 
 More information about Drone on [drone.io](https://drone.io).
 
-### GitLab EE
+### GitLab
 
 Include the following snipped in your `.gitlab-ci.yml` file:
 
@@ -61,7 +61,7 @@ reuse:
     - reuse lint
 ```
 
-More information about GitLab's EE CI on [docs.gitlab.com/ee](https://docs.gitlab.com/ee/).
+More information about GitLab's CI on [docs.gitlab.com](https://docs.gitlab.com/ce/ci/quick_start/).
 
 ### Travis CI
 
