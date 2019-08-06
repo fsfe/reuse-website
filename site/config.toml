@@ -4,7 +4,7 @@
 
 baseURL         = "https://reuse.software/"
 languageCode    = "en"
-title           = "REUSE Initiative"
+title           = "REUSE"
 theme           = "github-project-landing-page"
 sectionPagesMenu = "main"
 
