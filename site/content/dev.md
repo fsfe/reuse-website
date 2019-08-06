@@ -32,7 +32,7 @@ Here is a snippet that you can use for your README.md file:
 
 ## Inclusion in CI/CD workflows {#ci}
 
-REUSE can be easily integrated in your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.</p>
+REUSE can be easily integrated into your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.</p>
 
 The FSFE offers a Docker image which can be used in numerous CI solutions. In the following, you will find a few examples:</p>
 
