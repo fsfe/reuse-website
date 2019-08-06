@@ -34,7 +34,7 @@ Here is a snippet that you can use for your README.md file:
 
 REUSE can be easily integrated into your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.
 
-The FSFE offers a Docker image which can be used in numerous CI solutions. In the following, you will find a few examples:
+The FSFE offers a Docker image which can be used in numerous CI solutions. Find a few examples below:
 
 ### Drone
 
