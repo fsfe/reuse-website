@@ -17,7 +17,7 @@ Read the [documentation](https://reuse.readthedocs.io) to learn more about the t
 
 ## Example repositories {#repos}
 
-What does a REUSE compliant project look like? The following repositories are basic, but each of them is REUSE compliant. We make them available to demonstrate how REUSE works in practice.
+What does a REUSE compliant project look like? The following repositories are basic, but each of them is REUSE-compliant. We make them available to demonstrate how REUSE works in practice.
 
 - [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).
 - [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant.
