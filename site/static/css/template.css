@@ -1,6 +1,6 @@
 /*
- * SPDX-Copyright: 2015 Omar Abdelhafith <o.arrabi@me.com>
- * SPDX-Copyright: 2019 Free Software Foundation Europe e.V. <https://fsfe.org>
+ * SPDX-FileCopyrightText: 2015 Omar Abdelhafith <o.arrabi@me.com>
+ * SPDX-FileCopyrightText: 2019 Free Software Foundation Europe e.V. <https://fsfe.org>
  * SPDX-License-Identifier: MIT
 */
 
@@ -23,6 +23,7 @@ footer,
 .navbar a:hover,
 .navbar-default .navbar-nav>li>a:hover {
   color: #111;
+  background-color: #e7e7e7;
 }
 
 .content-section-b {

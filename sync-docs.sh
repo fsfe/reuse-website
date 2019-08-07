@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-Copyright: Free Software Foundation Europe e.V.
+# SPDX-FileCopyrightText: Free Software Foundation Europe e.V.
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
@@ -8,5 +8,7 @@
 
 cd $(dirname $0)
 
-rm -fr site/content/practices
-cp -r reuse-docs/practices site/content/practices
+for f in faq.md spec.md tutorial.md; do
+  rm -f site/content/"$f"
+  cp reuse-docs/"$f" site/content/"$f"
+done

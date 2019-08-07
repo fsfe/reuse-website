@@ -1,0 +1,223 @@
+/*
+ * SPDX-License-Identifier: MIT
+ * SPDX-FileCopyrightText: 2019 Free Software Foundation Europe e.V. <https://fsfe.org>
+*/
+/* NAVBAR */
+img#logo {
+  height: 100%;
+}
+.navbar-brand {
+  padding: 8px 0;
+}
+
+/* HEADLINES */
+h1:first-of-type {
+  margin: 1em 0 1em 0;
+  text-align: center;
+  font-size: 40px;
+}
+h1 { font-size: 40px; }
+.page-faq h1:first-of-type { font-size: 40px; }
+.page-faq h1 { font-size: 34px; }
+h2 { font-size: 34px; padding-top: 15px;}
+.page-faq h2 { font-size: 28px; }
+h3 { font-size: 28px; }
+.page-faq h3 { font-size: 24px; }
+h1, h2, h3, h4, h5, h6 { color: #444; }
+
+/* SOCIAL BUTTONS */
+.social-links {
+  display: block;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  animation: fade 1s ease 1s both;
+}
+.social-links li {
+  display: inline-block;
+  padding: 5px;
+  padding-top: 0;
+  text-align: center;
+}
+.social-links li a {
+  font-size: 20px;
+  color: #666;
+  padding: 10px;
+  padding-bottom: 4px;
+  transition: all .4s ease;
+}
+.social-links li a:hover {
+  color: #000;
+}
+/* Scale social icons with hovering */
+.social-links li a {
+  font-size: 26px;
+}
+.social-links li a i {
+  transform: scale(0.8);
+  transition: transform .3s;
+}
+.social-links li a:hover i {
+  transform: scale(1);
+}
+
+/* LANDING PAGE */
+h1.title {
+  margin-top: 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 46px;
+  color: #4D4D4D;
+}
+.intro {
+  font-size:20px;
+}
+.reuse-step {
+  padding: 15px 0;
+  line-height: 2em;
+}
+.reuse-step-no {
+  font-size: 2em;
+  font-weight: 700;
+}
+.reuse-step-text {
+  font-size: 1.5em;
+  font-weight: 400;
+  overflow: hidden; /* do not wrap on small screens */
+  color: #444;
+}
+.reuse-logo img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reuse-tops .icon {
+  text-align: center;
+}
+.reuse-tops .fas {
+  font-size: 70px;
+  color: #3394CE;
+  color: #4D4D4D;
+}
+
+@media(max-width: 992px) {
+  .reuse-step-no {
+    float: left;
+  }
+}
+@media(max-width: 768px) {
+  div.reuse-tops {
+    margin-top:40px;
+  } 
+
+}
+
+/* FOOTER */
+footer {
+  margin-top: 2em;
+  padding: 20px 0;
+  border-top: 1px solid #e7e7e7;
+}
+footer p {
+  text-align: center;
+}
+footer a {
+  color: #444;
+}
+footer a:hover {
+  color: #111;
+}
+/* STICK FOOTER BOTTOM */
+@media(min-width: 992px) {
+  div#wrap {
+    min-height: 100%;
+    position: relative;
+  }
+  footer {
+    width: 100%;
+    bottom: 0;
+    height: 150px;
+  }
+  body {
+    padding-bottom: 150px;
+  }
+}
+
+/* TABLE OF CONTENTS */
+/* hide h3 and below */
+nav#TableOfContents ul > li > ul > li > ul > li {
+  display: none;
+}
+/* +/- sign depending on accordion state */
+div#toc a h4.panel-title:before {
+    float: right !important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f068";
+    padding-right: 5px;
+    font-weight: 900;
+}
+div#toc a.collapsed h4.panel-title:before {
+    float: right !important;
+    content: "\f067";
+}
+div#toc .panel-title,
+div#toc a:hover,
+div#toc a:active,
+div#toc a:focus {
+    text-decoration:none;
+    color: #444;
+}
+/* Paddings, improve link clicks */
+.panel-heading {
+  padding: 0
+}
+div#toc .panel-title {
+  padding: 10px 15px;
+}
+
+
+/* MISC */
+.noscript {
+  background-color: #fcf8e3;
+  border-bottom: 1px solid #faebcc;
+  color: #8a6d3b;
+  display: block;
+  padding: 6px 12px;
+  text-align: center;
+}
+/* Avoid scrollbar jumps in centering 
+ * see https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
+ */
+div#wrap {
+  margin-left: calc(100vw - 100%);
+}
+@media(min-width:750px) {
+  .vertical-align {
+    display: flex;
+    align-items: center;
+  }
+}
+/* Scroll to top arrow */
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+#scroll-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 22px;
+}
+

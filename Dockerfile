@@ -1,4 +1,4 @@
-# SPDX-Copyright: Free Software Foundation Europe e.V.
+# SPDX-FileCopyrightText: Free Software Foundation Europe e.V.
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -16,5 +16,7 @@ COPY . /tmp/reuse-website
 RUN /tmp/reuse-website/sync-docs.sh
 
 RUN hugo -s /tmp/reuse-website/site -d /var/www/html
+
+COPY 000-default.conf /etc/apache2/sites-enabled/
 
 CMD apache2-foreground

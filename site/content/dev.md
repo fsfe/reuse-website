@@ -1,28 +1,40 @@
 ---
-# SPDX-Copyright: Free Software Foundation Europe e.V.
+# SPDX-FileCopyrightText: Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 title: "Help for developers"
 ---
 
-{{< box-alert >}}The resources below already make use of [REUSE 3.0](https://github.com/fsfe/reuse-docs/tree/v3.0a1) which is in draft stage currently.{{< /box-alert >}}
+Licensing should be easy for developers. We provide several tools and services to allow you to concentrate on coding.
 
-## Example repositories
 
-These repositories are basic, but each of them is REUSE compliant. We make them available to demonstrate how REUSE works in practice.
+## Helper Tool {#tool}
 
-- [reuse-example](https://github.com/fsfe/reuse-example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing.
-- [reuse-tool](https://github.com/fsfe/reuse-tool) - the helper tool itself is compliant.
+The [REUSE helper tool](https://git.fsfe.org/reuse/tool) assists with achieving and confirming REUSE compliance. It downloads the full license texts, adds copyright and license information to file headers, and contains a linter to identify problems. Eventually, you can generate a software bill of materials.
 
-## Tools
+Read the [documentation](https://reuse.readthedocs.io) to learn more about the tool. You will also find a [tool section in our FAQ](/faq/#tool) for the most pressing questions.
 
-- [reuse](https://github.com/fsfe/reuse-tool), a linter tool to validate whether a repository is REUSE compliant or not, and a compiler tool to generate a project's bill of materials.
 
-## Include in CI processes
+## Example repositories {#repos}
 
-REUSE can be easily integrated in your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.</p>
+What does a REUSE-compliant project look like? The following repositories are basic, but each of them is REUSE-compliant. We make them available to demonstrate how REUSE works in practice.
 
-The FSFE offers a Docker image which can be used in numerous CI solutions. In the following, you will find a few examples:</p>
+- [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).
+- [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant.
+
+Compliant projects may use the REUSE badge. You can use the URL `https://reuse.software/badge/reuse-compliant.svg` as image source when including the badge in your project. Please link it to `https://reuse.software` so people can learn about its meaning.
+
+[![REUSE compliant](/badge/reuse-compliant.svg)](https://reuse.software)
+
+Here is a snippet that you can use for your README.md file:
+
+`[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software)`
+
+## Inclusion in CI/CD workflows {#ci}
+
+REUSE can be easily integrated into your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance.
+
+The FSFE offers a Docker image which can be used in numerous CI solutions. Find a few examples below:
 
 ### Drone
 
@@ -38,7 +50,7 @@ pipeline:
 
 More information about Drone on [drone.io](https://drone.io).
 
-### GitLab EE
+### GitLab
 
 Include the following snipped in your `.gitlab-ci.yml` file:
 
@@ -49,7 +61,7 @@ reuse:
     - reuse lint
 ```
 
-More information about GitLab's EE CI on [docs.gitlab.com/ee](https://docs.gitlab.com/ee/).
+More information about GitLab's CI on [docs.gitlab.com](https://docs.gitlab.com/ce/ci/quick_start/).
 
 ### Travis CI
 

@@ -1,5 +1,7 @@
-# SPDX-Copyright: 2019 Free Software Foundation Europe e.V.
+# SPDX-FileCopyrightText: 2019 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC0-1.0
 
 site/public/
-site/content/practices
+site/content/faq.md
+site/content/spec.md
+site/content/tutorial.md

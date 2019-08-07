@@ -1,7 +1,7 @@
 <!--
   SPDX-License-Identifier: MIT
-  SPDX-Copyright: 2015 Omar Abdelhafith <o.arrabi@me.com>
-  SPDX-Copyright: 2019 Free Software Foundation Europe e.V. <https://fsfe.org>
+  SPDX-FileCopyrightText: 2015 Omar Abdelhafith <o.arrabi@me.com>
+  SPDX-FileCopyrightText: 2019 Free Software Foundation Europe e.V. <https://fsfe.org>
 -->
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -22,18 +22,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="/practices/2.0/">Practices</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/materials/">Materials</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/dev/">For developers</a>
-                </li>
+              {{- $rel := .RelPermalink -}}
+              {{- range .Site.Menus.main -}}
+                <!-- if RelPermalink = this menu item, mark it -->
+                <li class="{{if eq $rel .URL}}active{{end}}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{- end -}}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
 </nav>
+{{- $slug := "" -}}
+{{- with .File -}}{{ $slug = replace (.TranslationBaseName | lower) " " "_" }}{{ end }}
+{{- if not $slug -}}{{ $slug = "index" }}{{ end }}
+<div class="content-section-b">
+  <div class="container page-{{ $slug }}">

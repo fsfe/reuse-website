@@ -1,0 +1,14 @@
+<!--
+  SPDX-License-Identifier: MIT
+  SPDX-FileCopyrightText: 2015 Omar Abdelhafith <o.arrabi@me.com>
+  SPDX-FileCopyrightText: 2019 Free Software Foundation Europe e.V. <https://fsfe.org>
+-->
+
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+<div class="row">
+  <div class="clearfix"></div>
+  <h1>{{ .Page.Title }}</h1>
+  {{ .Content }}
+</div>
+{{ partial "footer.html" . }}
