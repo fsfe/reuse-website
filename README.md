@@ -5,15 +5,17 @@
 
 # REUSE
 
-[![Build Status](https://drone.fsfe.org/api/badges/reuse/reuse-spec/status.svg)](https://drone.fsfe.org/reuse/reuse-spec)
+[![Build Status](https://drone.fsfe.org/api/badges/reuse/website/status.svg)](https://drone.fsfe.org/reuse/website)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
+[![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software)
 
 We're working to make managing copyrights and licenses in free and open
-source software easier. This is the website for a guide of best practices,
-meant to demonstrate how
-to add copyright and license information to a project in ways which allow
-for more automation.
+source software easier. This is the website for a guide of best
+practices, meant to demonstrate how to add copyright and license
+information to a project in ways which allow for more automation.
+
+The specification, FAQ, and tutorial are located in a [separate "docs"
+repository](https://github.com/fsfe/reuse-docs).
 
 ## Install
 
@@ -26,30 +28,26 @@ git submodule update --init
 bash sync-docs.sh
 ```
 
-There's no installation here, but you may try running `hugo` in the
-`site/` directory to generate the website when testing locally.
-Typically, we let our Drone CI build and deploy the website for us.
+There's no installation here, but to test the website locally, run
+`hugo server` inside the `site/` directory. Typically, we let our Drone
+CI build and deploy the website for us.
 
 ## Usage
 
-Go to https://reuse.software/ and enjoy :-) If your project follows the reuse
-guidelines, we encourage you to show that in your `README.md` and similar! Just
-copy this badge into your readme:
-
-`[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)`
+Go to https://reuse.software/ and enjoy :-) If your project follows the
+reuse guidelines, we encourage you to show that in your `README.md` and
+similar! You will find this and more developer tools
+[here](https://reuse.software/dev/).
 
 ## Contribute
 
-We'd love to get feedback on these practices, ideally in the form
-of pull requests which we can discuss around. To be able to contribute
-in this way, you need an account on `git.fsfe.org`, which you can
-get by going to our [account creation page](https://fsfe.org/fellowship/ams/index.php?ams=register). This will sign you up for a volunteer account with the FSFE.
+We welcome your pull requests and issue reports. Please be aware that
+this repository does not contain the specification, tutorial, and FAQ,
+so please direct your inquiry to [reuse
+docs](https://github.com/fsfe/reuse-docs).
 
-Once you've registered, your account needs to be activated. Just shoot a mail to <contact@fsfe.org> or directly to <jonas@fsfe.org> saying you've registered and would like to be activated. As soon as your account is activated, you can set a username and proceed to login to `git.fsfe.org`.
-
-We also accept and appreciate feedback by creating issues in the project
-(requires the same account creation), or by sending e-mail to, again,
-<contact@fsfe.org> or <jonas@fsfe.org>.
+Generally, we invite you to contact and join the [REUSE mailing
+list](https://lists.fsfe.org/mailman/listinfo/reuse).
 
 ## License
 
@@ -57,3 +55,7 @@ The theme used for this website is based on [github-project-landing-page](https:
 the [MIT license](https://github.com/nsomar/github-project-landing-page/blob/master/LICENSE.md).
 
 The content of the website, the best practices, are licensed under [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0).
+
+Please find the exact licenses and copyright holders in all file
+headers, accompanying `.license` files, and the DEP-5 file in
+`.reuse/dep5`.
