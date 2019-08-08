@@ -8,6 +8,11 @@ pipeline:
     commands:
         - cd site; hugo
 
+  reuse:
+    image: fsfe/reuse:latest
+    commands:
+      - reuse lint
+
   deploy:
     commands:
       # Run docker compose
