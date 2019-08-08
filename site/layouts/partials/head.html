@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <title>
     {{- if .IsHome -}}
-        {{- .Site.Title -}}
+        {{- .Site.Title -}} {{ print " - " }} {{- .Site.Params.Subtitle -}}
     {{- else -}}
         {{- .Title -}} {{ print " | " }} {{- .Site.Title -}}
     {{- end -}}
