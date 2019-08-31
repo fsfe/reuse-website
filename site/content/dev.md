@@ -22,13 +22,47 @@ What does a REUSE-compliant project look like? The following repositories are ba
 - [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).
 - [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant.
 
-Compliant projects may use the REUSE badge. You can use the URL `https://reuse.software/badge/reuse-compliant.svg` as image source when including the badge in your project. Please link it to `https://reuse.software` so people can learn about its meaning.
+## REUSE badge {#badge}
 
-[![REUSE compliant](/badge/reuse-compliant.svg)](https://reuse.software)
+If your project is compliant with REUSE, you may want to show it off with the
+REUSE badge. There are two types of badges for you to choose from: A static and
+dynamic badge.
+
+The static badge is a direct link to
+`https://reuse.software/badge/reuse-compliant.svg` as image source. This badge
+will show that your project is compliant without performing checks of any kind.
+This works as an honour system.
 
 Here is a snippet that you can use for your README.md file:
 
-`[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software)`
+`[![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software)`
+
+[![REUSE compliant](/badge/reuse-compliant.svg)](https://reuse.software)
+
+Alternatively, you may use a dynamic badge, which changes depending on whether
+your project is compliant or not. To get started with the dynamic badge, you
+must first register your project at <https://api.reuse.software/register/>. Once
+you have done this, you can use `https://api.reuse.software/badge/<url>` as
+image source.
+
+Here is a snippet example for the helper tool:
+
+`[![REUSE](https://api.reuse.software/badge/git.fsfe.org/reuse/tool)](https://reuse.software)`
+
+This snippet will display one of the following badges, depending on whether the
+tool is compliant or not, or whether the API still needs to figure it out:
+
+![compliant](/badge/reuse-compliant.svg)
+![non-compliant](/badge/reuse-non-compliant.svg)
+![checking](/badge/reuse-checking.svg)
+
+<!-- FIXME: That documentation is currently not user-friendly at all. Once good
+documentation exists, link to that instead. -->
+
+The API can also be used to implement your own badge system. For more
+information on the dynamic badge API, please read the documentation at
+<https://git.fsfe.org/reuse/api>.
+
 
 ## Inclusion in CI/CD workflows {#ci}
 
