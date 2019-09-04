@@ -1,0 +1,42 @@
+RewriteEngine On
+RewriteBase /
+
+# Old URLs
+RewriteRule ^practices/?.*$ /spec [L,R=301]
+
+
+# Tweaks
+Header set X-Frame-Options SAMEORIGIN
+
+
+# CACHING
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access 1 week"
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+    <filesmatch "\.(ico|flv|gif|swf|eot|woff|otf|ttf|svg)$">
+        Header set Cache-Control "max-age=604800, public"
+    </filesmatch>
+    <filesmatch "\.(jpg|jpeg|png)$">
+        Header set Cache-Control "max-age=604800, public"
+    </filesmatch>
+    # css and js should use private for proxy caching https://developers.google.com/speed/docs/best-practices/caching#LeverageProxyCaching
+    <filesmatch "\.(css)$">
+        Header set Cache-Control "max-age=604800, private"
+    </filesmatch>
+    <filesmatch "\.(js)$">
+        Header set Cache-Control "max-age=604800, private"
+    </filesmatch>
+    <filesMatch "\.(x?html?|php)$">
+        Header set Cache-Control "max-age=600, private, must-revalidate"
+    </filesMatch>
+    # Disable caching of SVG files (badge)
+    <filesmatch "\.(svg)$">
+        ExpiresActive On
+        ExpiresDefault A10
+        Header set Cache-Control "no-cache"
+    </filesmatch>
+</IfModule>
