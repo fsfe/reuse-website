@@ -6,20 +6,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-    <title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="author" content="Free Software Foundation Europe">
+    <meta name="keywords" content="reuse, free software, open source, foss, floss, license, licensing, copyright, git, tool, automate, easy, git">
+
+    <!-- set title -->
+    {{ $title := "" }}
     {{- if .IsHome -}}
-        {{- .Site.Title -}} {{ print " - " }} {{- .Site.Params.Subtitle -}}
+        {{- $title = (print .Site.Title " - " .Site.Params.Subtitle) -}}
     {{- else -}}
-        {{- .Title -}} {{ print " | " }} {{- .Site.Title -}}
+        {{- $title = (print .Title " | " .Site.Title) -}}
     {{- end -}}
-    </title>
+
+    {{ "<!-- Open Graph meta-data (e.g. Facebook) -->" | safeHTML }}
+    <meta property="og:title" content="{{ $title }}"/>
+    <meta property="og:url" content="{{ .Permalink }}"/>
+    <meta property="og:image" content="{{ "/img/reuse.png" | absURL }}"/>
+    <meta property="og:description" content="{{ .Site.Params.description }}"/>
+    <meta property="og:locale" content="en"/>
+
+    {{ "<!-- Twitter meta-data -->" | safeHTML }}
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@fsfe"/>
+    <meta name="twitter:title" content="{{ $title }}"/>
+    <meta name="twitter:description" content="{{ .Site.Params.description }}"/>
+    <meta name="twitter:image" content="{{ "/img/reuse.png" | absURL }}"/>
+    <meta name="twitter:creator" content="@fsfe"/>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <title>{{ $title }}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">

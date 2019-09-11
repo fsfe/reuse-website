@@ -15,7 +15,7 @@ sectionPagesMenu = "main"
 
 [params]
     subtitle = "Make licensing easy for everyone"
-    description = "Best practices on adding license information in ways which not only humans can read, but computers as well. Machine readable copyright and license information, simply put!"
+    description = "We make licensing easy for humans and machines alike. REUSE solves a fundamental issue that Free Software licensing has at the very source. Adopting our recommendations is as easy as one-two-three!"
 
     first_color="#f8f8f8"
     first_border_color="#e7e7e7"
