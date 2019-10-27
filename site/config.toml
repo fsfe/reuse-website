@@ -65,3 +65,8 @@ sectionPagesMenu = "main"
   identifier = "materials"
   weight = 900
   url = "/materials/"
+[[menu.main]]
+  name = "API"
+  identifier = "api"
+  weight = 1000
+  url = "https://api.reuse.software"

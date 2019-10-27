@@ -7,6 +7,8 @@ title: "Help for developers"
 
 Licensing should be easy for developers. We provide several tools and services to allow you to concentrate on coding.
 
+Contents: [Helper tool](#tool), [example repositories](#repos), [REUSE API](#api), [CI/CD workflows](#ci)
+
 
 ## Helper Tool {#tool}
 
@@ -20,15 +22,20 @@ Read the [documentation](https://reuse.readthedocs.io) to learn more about the t
 What does a REUSE-compliant project look like? The following repositories are basic, but each of them is REUSE-compliant. We make them available to demonstrate how REUSE works in practice.
 
 - [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).
-- [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant.
+- [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant, just like [all other REUSE repositories](https://git.fsfe.org/reuse/).
 
-Compliant projects may use the REUSE badge. You can use the URL `https://reuse.software/badge/reuse-compliant.svg` as image source when including the badge in your project. Please link it to `https://reuse.software` so people can learn about its meaning.
+Consider registering yout project with the [REUSE API](#api) to include a dynamic compliance badge.
 
-[![REUSE compliant](/badge/reuse-compliant.svg)](https://reuse.software)
 
-Here is a snippet that you can use for your README.md file:
+## API {#api}
 
-`[![reuse compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software)`
+The [REUSE API](https://api.reuse.software) helps you to continuously check and display compliance with the REUSE guidelines. You can include a badge indicating the live status in your README file, and parse the output using the generated JSON file.
+
+This is how the badge will look like for a REUSE compliant project. You can click on the badge to see more information: [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
+
+The API is the perfect tool for everyone who wants to show that their repository follows best practices in providing licensing and copyright information. It allows third-party services to integrate the live REUSE status, and offers a simple alternative for people who do not want to install the [REUSE helper tool](#tool) for a first quick check.
+
+As everything else in REUSE, the API is [publicly available](https://git.fsfe.org/reuse/api) under Free Software licenses.
 
 ## Inclusion in CI/CD workflows {#ci}
 
