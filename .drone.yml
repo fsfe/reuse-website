@@ -1,25 +1,46 @@
+---
 # SPDX-FileCopyrightText: Free Software Foundation Europe e.V.
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
+kind: pipeline
+type: docker
+name: default
 
-pipeline:
-  syntaxcheck:
-    image: monachus/hugo
-    commands:
-        - cd site; hugo
+steps:
+- name: submodules
+  image: alpine/git
+  commands:
+  - git submodule update --recursive --remote
 
-  reuse:
-    image: fsfe/reuse:latest
-    commands:
-      - reuse lint
+steps:
+- name: syntaxcheck
+  image: monachus/hugo
+  commands:
+  - cd site; hugo
 
-  deploy:
-    commands:
-      # Run docker compose
-      - docker-compose up --build -d
-    image: tmaier/docker-compose
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    when:
-       branch: master
-       event: [push, tag, deployment]
+- name: reuse
+  image: fsfe/reuse:latest
+  commands:
+  - reuse lint
+
+- name: deploy
+  image: tmaier/docker-compose
+  commands:
+  - docker-compose up --build -d
+  volumes:
+  - name: docker-socket
+    path: /var/run/docker.sock
+  when:
+    branch:
+    - master
+    event:
+    - push
+    - tag
+    - deployment
+
+volumes:
+- name: docker-socket
+  host:
+    path: /var/run/docker.sock
+
+...
