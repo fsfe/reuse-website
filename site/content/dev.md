@@ -46,7 +46,7 @@ The FSFE offers a Docker image which can be used in numerous CI solutions. Find 
 
 ### Drone
 
-Include the following snipped in your `.drone.yml` file:
+Include the following snippet in your `.drone.yml` file:
 
 ```
 pipeline:
@@ -58,9 +58,24 @@ pipeline:
 
 More information about Drone on [drone.io](https://drone.io).
 
+### GitHub
+
+Include the following snippet in your `.github/workflows/*.yml` file:
+
+```
+steps:
+...
+- name: Check REUSE compliance
+        uses: docker://fsfe/reuse
+        with:
+          args: reuse lint
+```
+
+More information about GitHub Actions on [help.github.com](https://help.github.com/en/actions/automating-your-workflow-with-github-actions).
+
 ### GitLab
 
-Include the following snipped in your `.gitlab-ci.yml` file:
+Include the following snippet in your `.gitlab-ci.yml` file:
 
 ```
 reuse:
@@ -73,7 +88,7 @@ More information about GitLab's CI on [docs.gitlab.com](https://docs.gitlab.com/
 
 ### Travis CI
 
-Include the following snipped in your `.travis.yml` file:
+Include the following snippet in your `.travis.yml` file:
 
 ```
 language: minimal
