@@ -8,6 +8,10 @@ title           = "REUSE"
 theme           = "github-project-landing-page"
 sectionPagesMenu = "main"
 
+[markup.highlight]
+codeFences = true
+style = "emacs"
+
 #[permalinks]
 #        page = "/:title/"
 #        about = "/:filename/"

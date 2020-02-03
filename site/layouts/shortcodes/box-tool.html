@@ -1,0 +1,19 @@
+<!--
+  SPDX-License-Identifier: MIT
+  SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V. <https://fsfe.org>
+-->
+{{- $id := md5 .Inner -}}
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default" id="toc">
+    <div class="panel-heading" role="tab" id="headingOne">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ $id }}" aria-expanded="false" aria-controls="collapseOne">
+          <h4 class="panel-title">Tool instructions for this step</h4>
+        </a>
+    </div>
+    <div id="{{ $id }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+          {{ .Inner | markdownify }}
+      </div>
+    </div>
+  </div>
+</div>
