@@ -7,7 +7,7 @@
 
 [![Build Status](https://drone.fsfe.org/api/badges/reuse/website/status.svg)](https://drone.fsfe.org/reuse/website)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software)
+[![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/website)](https://api.reuse.software/info/git.fsfe.org/reuse/website)
 
 We're working to make managing copyrights and licenses in free and open
 source software easier. This is the website for a guide of best
