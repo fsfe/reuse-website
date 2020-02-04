@@ -12,7 +12,7 @@ steps:
   - git submodule update --init
 
 - name: syntaxcheck
-  image: monachus/hugo
+  image: monachus/hugo:v0.63.1
   commands:
   - cd site; hugo
 
