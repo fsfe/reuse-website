@@ -98,7 +98,7 @@ services:
 
 before_install:
 - docker pull fsfe/reuse:latest
-- docker run --name reuse -v ${TRAVIS_BUILD_DIR}:/repo fsfe/reuse /bin/sh -c "cd /repo; reuse lint"
+- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse reuse lint
 ```
 
 More information on Travis CI on [travis-ci.com](https://travis-ci.com).
