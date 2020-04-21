@@ -1,5 +1,6 @@
 ---
-# SPDX-FileCopyrightText: Free Software Foundation Europe e.V.
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-FileCopyrightText: © 2020 Liferay, Inc. <https://liferay.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 title: "Help for developers"
@@ -36,6 +37,21 @@ This is how the badge will look like for a REUSE compliant project. You can clic
 The API is the perfect tool for everyone who wants to show that their repository follows best practices in providing licensing and copyright information. It allows third-party services to integrate the live REUSE status, and offers a simple alternative for people who do not want to install the [REUSE helper tool](#tool) for a first quick check.
 
 As everything else in REUSE, the API is [publicly available](https://git.fsfe.org/reuse/api) under Free Software licenses.
+
+
+## Pre-commit hook {#pre-commit-hook}
+
+You can automatically run `reuse lint` on every commit as a pre-commit hook for Git. This uses [pre-commit](https://pre-commit.com/). Once you [have it installed](https://pre-commit.com/#install), add this to the `.pre-commit-config.yaml` in your repository:
+
+```yaml
+repos:
+-   repo: https://github.com/fsfe/reuse-tool
+    rev: latest
+    hooks:
+    - id: reuse
+```
+
+Then run `pre-commit install`. Now, every time you commit, `reuse lint` is run in the background, and will prevent your commit from going through if there was an error.
 
 
 ## Inclusion in CI/CD workflows {#ci}
