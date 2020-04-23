@@ -81,10 +81,10 @@ Include the following snippet in your `.github/workflows/*.yml` file:
 ```
 steps:
 ...
-- name: Check REUSE compliance
-        uses: docker://fsfe/reuse
-        with:
-          args: reuse lint
+  - name: Check REUSE compliance
+    uses: docker://fsfe/reuse:latest
+    with:
+      args: lint
 ```
 
 More information about GitHub Actions on [help.github.com](https://help.github.com/en/actions/automating-your-workflow-with-github-actions).
@@ -114,7 +114,7 @@ services:
 
 before_install:
 - docker pull fsfe/reuse:latest
-- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse reuse lint
+- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint
 ```
 
 More information on Travis CI on [travis-ci.com](https://travis-ci.com).
