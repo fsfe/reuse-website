@@ -95,7 +95,9 @@ Include the following snippet in your `.gitlab-ci.yml` file:
 
 ```
 reuse:
-  image: fsfe/reuse:latest
+  image:
+    name: fsfe/reuse:latest
+    entrypoint: [""]
   script:
     - reuse lint
 ```
