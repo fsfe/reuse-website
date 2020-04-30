@@ -35,6 +35,6 @@
 </nav>
 {{- $slug := "" -}}
 {{- with .File -}}{{ $slug = replace (.TranslationBaseName | lower) " " "_" }}{{ end }}
-{{- if not $slug -}}{{ $slug = "index" }}{{ end }}
+{{- if or (not $slug) (eq $slug "_index") -}}{{ $slug = "index" }}{{ end }}
 <div class="content-section-b">
   <div class="container page-{{ $slug }}">
