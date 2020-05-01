@@ -43,6 +43,12 @@ style = "emacs"
   Mastodon      = "mastodon.social/@fsfe"
   Diaspora      = ""
 
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+[languages]
+[languages.en]
+  weight = 1
+
 [menu]
 [[menu.main]]
   name = "Get Started"

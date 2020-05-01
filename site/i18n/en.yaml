@@ -1,0 +1,10 @@
+table_of_contents:
+  other: "Table of Contents"
+toggle_navigation:
+  other: "Toggle navigation"
+warning:
+  other: "Warning:"
+noscript_warning:
+  other: "Some interactive features will not work with JavaScript disabled."
+tool_instructions:
+  other: "Tool instructions for this step"

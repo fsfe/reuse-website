@@ -49,6 +49,12 @@ docs](https://github.com/fsfe/reuse-docs).
 Generally, we invite you to contact and join the [REUSE mailing
 list](https://lists.fsfe.org/mailman/listinfo/reuse).
 
+### Translation
+
+The website "chrome" strings are localized using the standard,
+built-in [Hugo i18n](https://gohugo.io/content-management/multilingual/)
+support.  Those files are in _data/_.
+
 ## License
 
 The theme used for this website is based on [github-project-landing-page](https://github.com/nsomar/github-project-landing-page) which is licensed under the
