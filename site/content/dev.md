@@ -65,27 +65,16 @@ The FSFE offers a Docker image which can be used in numerous CI solutions. Find 
 Include the following snippet in your `.drone.yml` file:
 
 ```
-pipeline:
-  reuse:
-    image: fsfe/reuse:latest
-    commands:
-      - reuse lint
+steps:
+- name: reuse
+  image: fsfe/reuse:latest
 ```
 
 More information about Drone on [drone.io](https://drone.io).
 
 ### GitHub
 
-Include the following snippet in your `.github/workflows/*.yml` file:
-
-```
-steps:
-...
-  - name: Check REUSE compliance
-    uses: docker://fsfe/reuse:latest
-    with:
-      args: lint
-```
+GitHub users can integrate the REUSE action in their workflow, available in the [action marketplace](https://github.com/marketplace/actions/reuse-compliance-check).
 
 More information about GitHub Actions on [help.github.com](https://help.github.com/en/actions/automating-your-workflow-with-github-actions).
 
