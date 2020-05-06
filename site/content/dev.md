@@ -74,7 +74,7 @@ More information about Drone on [drone.io](https://drone.io).
 
 ### GitHub
 
-GitHub users can integrate the REUSE action in their workflow, available in the [action marketplace](https://github.com/marketplace/actions/reuse-compliance-check).
+GitHub users can integrate the REUSE action in their workflow. Visit the [action's marketplace page](https://github.com/marketplace/actions/reuse-compliance-check) for usage instructions.
 
 More information about GitHub Actions on [help.github.com](https://help.github.com/en/actions/automating-your-workflow-with-github-actions).
 
