@@ -221,3 +221,22 @@ div#wrap {
   font-size: 22px;
 }
 
+/* Header links */
+.header-link {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  fill: currentColor;
+  transition: color .15s ease-in;
+}
+
+.header-link .fa {
+  visibility: hidden;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.header-link:hover .fa, h2:hover .header-link .fa, h3:hover .header-link .fa {
+  visibility: visible;
+  text-decoration: none;
+}
