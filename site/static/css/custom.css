@@ -140,7 +140,7 @@ footer a:hover {
   footer {
     width: 100%;
     bottom: 0;
-    height: 150px;
+    height: auto;
   }
   body {
     padding-bottom: 150px;
@@ -179,6 +179,26 @@ div#toc .panel-title {
   padding: 10px 15px;
 }
 
+/* SUPPORTERS TABLE */
+table.supporters {
+  table-layout: fixed;
+}
+
+/* ORGANISATIONS SECTION IN FOOTER */
+.orgs ul {
+  display: block;
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.orgs ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.orgs ul li img {
+  max-height: 50px;
+}
 
 /* MISC */
 .noscript {
@@ -249,4 +269,9 @@ h2::before, h3::before, h4::before, h5::before, h6::before {
   height: 50px;
   content: "";
   display: block;
+}
+
+/* vertically center */
+.vcenter {
+  vertical-align: middle !important;
 }

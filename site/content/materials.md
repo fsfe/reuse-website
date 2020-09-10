@@ -11,6 +11,8 @@ Provided here are some further REUSE materials. Feel free to use the material on
 
 Just like Free Software, the REUSE project is based on its community and the people who support and adopt it. Become part of it by joining the [mailing list](https://lists.fsfe.org/mailman/listinfo/reuse) to get to know other users, and influence the way REUSE evolves.
 
+If you seek direct contact with the REUSE coordinators, please feel free to approach [Max Mehl](https://fsfe.org/about/people/mehl/).
+
 ## Comparison of license compliance projects
 
 We have compiled a short and incomplete [comparison of REUSE and other projects](/comparison) in the area of Free Software license compliance.

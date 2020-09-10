@@ -1,0 +1,17 @@
+<!--
+  SPDX-License-Identifier: MIT
+  SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V. <https://fsfe.org>
+-->
+{{ $orgs := where (getJSON "data/organisations.json") "sponsor" true }}
+<div class="table-responsive">
+  <table class="table table-striped supporters">
+    <tbody>
+      {{ range sort $orgs "sponsor_order" "asc" }}
+        <tr>
+          <td><img src="/img/organisations/{{ .img }}" width="{{ .sponsor_width }}"></td>
+          <td class="vcenter">{{ .name }}</td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>

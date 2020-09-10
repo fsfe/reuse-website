@@ -73,8 +73,13 @@ defaultContentLanguageInSubdir = true
 [[menu.main]]
   name = "Materials"
   identifier = "materials"
-  weight = 900
+  weight = 500
   url = "/materials/"
+[[menu.main]]
+  name = "Supporters"
+  identifier = "supporters"
+  weight = 900
+  url = "/supporters/"
 [[menu.main]]
   name = "API"
   identifier = "api"
