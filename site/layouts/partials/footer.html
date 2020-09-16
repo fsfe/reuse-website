@@ -9,16 +9,22 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-              {{ partial "social.html" . }}
-                <p class="copyright text-muted small">Copyright &copy; {{ now.Format "2006"}} <a href="https://fsfe.org/">Free Software Foundation Europe e.V.</a> – <a href="https://fsfe.org/about/legal/imprint.en.html">Imprint & Privacy</a>, <a href="https://fsfe.org/about/transparency-commitment.html">Transparency Committment</a></p>
-                <p class="text-muted small">Unless stated otherwise, the content of the website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>.
-              </p>
-            </div>
-            <div class="col-md-4">
-            </div>
+      <div class="row">
+        <div class="col-md-12">
+          {{ partial "social.html" . }}
         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          {{ partial "footer-orgs.html" . }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="copyright text-muted small">Copyright &copy; {{ now.Format "2006"}} <a href="https://fsfe.org/">Free Software Foundation Europe e.V.</a> – <a href="https://fsfe.org/about/legal/imprint.en.html">Imprint & Privacy</a>, <a href="https://fsfe.org/about/transparency-commitment.html">Transparency Committment</a></p>
+          <p class="text-muted small">Unless stated otherwise, the content of the website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>.</p>
+        </div>
+      </div>
     </div>
 </footer>
 <a class="page-scroll" href="#page-top" title="Scroll to top">

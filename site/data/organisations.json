@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Siemens",
+    "img": "siemens.png",
+    "sponsor": true,
+    "sponsor_order": "1",
+    "sponsor_width": "300px",
+    "footer": true,
+    "footer_order": "4",
+    "width_footer": "200px"
+  },
+  {
+    "name": "SAP",
+    "img": "sap.png",
+    "sponsor": true,
+    "sponsor_order": "41",
+    "sponsor_width": "100px",
+    "footer": false
+  },
+  {
+    "name": "KDE",
+    "img": "kde.png",
+    "sponsor": false,
+    "footer": false,
+    "footer_order": "1"
+  },
+  {
+    "name": "Next Generation Internet Zero",
+    "img": "ngi0.png",
+    "sponsor": false,
+    "footer": true,
+    "footer_order": "3",
+    "width_footer": "150px"
+  },
+  {
+    "name": "Linux Kernel",
+    "img": "linux.png",
+    "sponsor": false,
+    "footer": true,
+    "footer_order": "2"
+  }
+]
