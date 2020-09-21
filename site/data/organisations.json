@@ -21,7 +21,7 @@
     "name": "KDE",
     "img": "kde.png",
     "sponsor": false,
-    "footer": false,
+    "footer": true,
     "footer_order": "1"
   },
   {
