@@ -112,7 +112,7 @@ h1.title {
 @media(max-width: 768px) {
   div.reuse-tops {
     margin-top:40px;
-  } 
+  }
 
 }
 
@@ -209,7 +209,7 @@ table.supporters {
   padding: 6px 12px;
   text-align: center;
 }
-/* Avoid scrollbar jumps in centering 
+/* Avoid scrollbar jumps in centering
  * see https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
  */
 div#wrap {
@@ -269,6 +269,11 @@ h2::before, h3::before, h4::before, h5::before, h6::before {
   height: 50px;
   content: "";
   display: block;
+}
+/* Make links in paragraphs above headlines clickable again */
+p {
+  position: relative;
+  z-index: 1;
 }
 
 /* vertically center */
