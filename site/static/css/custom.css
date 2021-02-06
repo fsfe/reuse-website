@@ -148,10 +148,21 @@ footer a:hover {
 }
 
 /* TABLE OF CONTENTS */
-/* hide h3 and below */
-nav#TableOfContents ul > li > ul > li > ul > li {
-  display: none;
+/* improve placing, and move level look up by one */
+div#toc nav#TableOfContents > ul {
+  padding-left: 0px;
+  list-style-type: none;
 }
+div#toc nav#TableOfContents > ul > li > a {
+  font-weight: 700;
+}
+div#toc nav#TableOfContents > ul > li > ul {
+  list-style-type: disc;
+}
+div#toc nav#TableOfContents > ul > li > ul > li > ul {
+  list-style-type: circle;
+}
+
 /* +/- sign depending on accordion state */
 div#toc a h4.panel-title:before {
     float: right !important;
