@@ -11,15 +11,21 @@ steps:
   commands:
   - git submodule update --init
 
-- name: syntaxcheck
-  image: monachus/hugo:v0.63.1
-  commands:
-  - cd site; hugo
-
 - name: reuse
   image: fsfe/reuse:latest
   commands:
   - reuse lint
+
+- name: sync-docs
+  image: alpine:3
+  commands:
+  - sh sync-docs.sh
+
+- name: hugo
+  image: plugins/hugo
+  settings:
+    source: site
+    validate: true
 
 - name: deploy
   image: docker/compose:1.24.0
