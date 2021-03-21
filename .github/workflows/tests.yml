@@ -27,7 +27,7 @@ jobs:
       with:
         hugo-version: 'latest'
     - name: Build
-      run: hugo --minify
+      run: hugo -s site/
 
     - name: Build Dockerfile
       run: |
