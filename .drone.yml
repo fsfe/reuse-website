@@ -6,27 +6,32 @@ kind: pipeline
 name: default
 
 steps:
+# Clone submodules (reuse docs)
 - name: submodules
   image: alpine/git
   commands:
   - git submodule update --init
 
+# Check for REUSE compliance
 - name: reuse
   image: fsfe/reuse:latest
   commands:
   - reuse lint
 
+# Copy reuse docs files to reuse website
 - name: sync-docs
   image: alpine:3
   commands:
   - sh sync-docs.sh
 
+# Build hugo
 - name: hugo
   image: plugins/hugo
   settings:
     source: site
     validate: true
 
+# Build and deploy Docker
 - name: deploy
   image: docker/compose:1.24.0
   commands:
