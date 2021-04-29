@@ -17,6 +17,7 @@ services:
         max-file: "5"
     environment:
       - VIRTUAL_HOST=reuse.software,www.reuse.software
+      - VIRTUAL_PORT=8080
       - LETSENCRYPT_HOST=reuse.software,www.reuse.software
       - LETSENCRYPT_EMAIL=contact@fsfe.org
 
