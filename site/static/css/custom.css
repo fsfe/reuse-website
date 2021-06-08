@@ -291,3 +291,8 @@ p {
 .vcenter {
   vertical-align: middle !important;
 }
+
+/* FORMS */
+label {
+  font-weight: 400;
+}
