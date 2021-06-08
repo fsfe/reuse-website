@@ -6,7 +6,6 @@ baseURL         = "https://reuse.software/"
 languageCode    = "en"
 title           = "REUSE"
 theme           = "github-project-landing-page"
-sectionPagesMenu = "main"
 
 [markup]
 [markup.tableOfContents]

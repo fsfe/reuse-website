@@ -1,5 +1,5 @@
 <form class="form-horizontal" action="https://forms.fsfe.org/email" method="POST" >
-  <input type="hidden" name="appid" value="group-projects" />
+  <input type="hidden" name="appid" value="reuse-booster" />
 
   <div class="form-group">
     <label for="name" class="col-sm-5 control-label">
@@ -20,11 +20,11 @@
   </div>
 
   <div class="form-group">
-    <label for="project-name" class="col-sm-5 control-label">
+    <label for="project_name" class="col-sm-5 control-label">
       Name of the project that wants to adopt REUSE *
     </label>
     <div class="col-sm-7">
-      <input type="text" class="form-control" id="project-name" name="project-name" required="required" />
+      <input type="text" class="form-control" id="project_name" name="project_name" required="required" />
     </div>
   </div>
 
@@ -59,8 +59,8 @@
   <div class="form-group">
     <label for="contacts" class="col-sm-5 control-label">
       Please indicate 1-2 additional contact persons including their email
-      addresses of the project. These will be our main contacts during the
-      project phase (one per line). *
+      addresses of the project. You and they will be our main contacts during
+      the project phase (one per line). *
     </label>
     <div class="col-sm-7">
       <textarea class="form-control" id="contacts" name="contacts" rows="5" required="required"></textarea>
@@ -110,7 +110,7 @@
     <div class="checkbox col-sm-5"></div>
     <div class="checkbox col-sm-7">
       <label>
-        <input type="checkbox" name="privacy" value="yes" required="required">
+        <input type="checkbox" name="privacy" value="y" required="required">
         I have understood and accept the <a
         href="https://fsfe.org/about/legal/imprint.en.html#id-privacy-policy">FSFE's
         privacy policy</a>.
@@ -122,7 +122,7 @@
     <div class="checkbox col-sm-5"></div>
     <div class="checkbox col-sm-7">
       <label>
-        <input type="checkbox" name="obligatory" value="yes" required="required">
+        <input type="checkbox" name="obligatory" value="y" required="required">
         I confirm the project's willingness to make it REUSE compliant. I
         understand that the FSFE will provide guidance to the registered and
         accepted project, not a ready solution nor a guarantee.

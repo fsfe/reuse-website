@@ -60,7 +60,7 @@ few weeks after the closing of the registration deadline.
 
 ## Enter project details
 
-To register your project, please fill our the fields below. This will greatly
+To register your project, please fill in the fields below. This will greatly
 help us getting a first overview of your project, understanding its complexity
 and the context of its licensing and copyright situation.
 
