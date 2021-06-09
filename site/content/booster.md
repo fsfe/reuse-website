@@ -28,7 +28,7 @@ Zero (NGI0) project](https://fsfe.org/activities/ngi/).
 
 Equipped with this experience, we will support the accepted projects to
 implement copyright and licensing best practices that will help them as well as
-their users and re-users. Here is what you get:
+their users and re-users. Here is what you'll get:
 
 1. The projects' contact persons will be invited to a kick-off workshop
    in which the whole process is explained and the most frequently
