@@ -95,15 +95,19 @@ h1.title {
   margin-right: auto;
 }
 
+/* Icon-Text grid */
+.reuse-tops {
+  margin-bottom: 15px;
+}
 .reuse-tops .icon {
   text-align: center;
 }
-.reuse-tops .fas {
+.reuse-tops .fas,
+.reuse-tops .far {
   font-size: 70px;
   color: #3394CE;
   color: #4D4D4D;
 }
-
 @media(max-width: 992px) {
   .reuse-step-no {
     float: left;
@@ -113,7 +117,6 @@ h1.title {
   div.reuse-tops {
     margin-top:40px;
   }
-
 }
 
 /* FOOTER */
