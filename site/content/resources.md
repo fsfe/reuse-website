@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
-title: "Materials"
+title: "Resources"
 ---
 
 Provided here are some further REUSE materials. Feel free to use the material on this page as you see fit. Unless otherwise noted, the material is available under CC-BY-SA-4.0.

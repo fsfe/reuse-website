@@ -76,10 +76,10 @@ defaultContentLanguageInSubdir = true
   weight = 300
   url = "/spec/"
 [[menu.main]]
-  name = "Materials"
-  identifier = "materials"
+  name = "Resources"
+  identifier = "resources"
   weight = 500
-  url = "/materials/"
+  url = "/resources/"
 [[menu.main]]
   name = "Supporters"
   identifier = "supporters"
