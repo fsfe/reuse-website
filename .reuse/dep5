@@ -11,9 +11,17 @@ Files: site/static/fonts/roboto/*
 Copyright: 2018 Google
 License: Apache-2.0
 
+Files: site/static/fonts/fontawesome/css/*
+Copyright: Font Awesome <https://fontawesome.com>
+License: MIT
+
 Files: site/static/fonts/fontawesome/webfonts/*
-Copyright: 2018 Font Awesome
+Copyright: Font Awesome <https://fontawesome.com>
 License: OFL-1.1
+
+Files: site/static/fonts/fontawesome/webfonts/*.svg
+Copyright: Font Awesome <https://fontawesome.com>
+License: CC-BY-4.0
 
 Files: site/static/img/*
 Copyright: 2019 Free Software Foundation Europe <https://fsfe.org>
