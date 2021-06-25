@@ -6,7 +6,7 @@
 # This script synchronises all markdown directories from the reuse-docs
 # submodule into the site directory.
 
-cd $(dirname $0)
+cd "$(dirname "$0")" || exit
 
 for f in faq.md spec.md tutorial.md; do
   rm -f site/content/"$f"
