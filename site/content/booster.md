@@ -56,7 +56,7 @@ support in this round. We will inform all projects about their status a
 few weeks after the closing of the registration deadline.
 
 **Registration opening**: 09 June 2021, 00:00 UTC\
-**Registration closing**: 08 July 2021, 23:59 UTC
+**Registration closing**: 14 July 2021, 23:59 UTC
 
 ## Enter project details
 
