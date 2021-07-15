@@ -46,24 +46,8 @@ their users and re-users. Here is what you'll get:
 
 ## Registration {#registration}
 
-If you are interested in getting help by our team, please register below
-by filling out the form. The provided information will help us to
-identify potential challenges as early as possible.
+Registration for the first round has been open between 8 June and 14 July 2021.
+We are currently helping the selected projects.
 
-Please note that our resources are not infinite. Depending on the number
-of requests, we might have to limit the number of projects we can
-support in this round. We will inform all projects about their status a
-few weeks after the closing of the registration deadline.
-
-**Registration opening**: 09 June 2021, 00:00 UTC\
-**Registration closing**: 14 July 2021, 23:59 UTC
-
-## Enter project details
-
-To register your project, please fill in the fields below. This will greatly
-help us getting a first overview of your project, understanding its complexity
-and the context of its licensing and copyright situation.
-
-Fields marked with \* are mandatory.
-
-{{< booster-form >}}
+If you need help with becoming REUSE compliant, please join the [community
+mailing list](/resources/#contact) and just ask. We are happy to assist!
