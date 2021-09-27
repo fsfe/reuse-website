@@ -6,51 +6,54 @@ kind: pipeline
 name: default
 
 steps:
-# Clone submodules (reuse docs)
-- name: submodules
-  image: alpine/git
-  commands:
-  - git submodule update --init
+  # Clone submodules (reuse docs)
+  - name: submodules
+    image: alpine/git
+    commands:
+      - git submodule update --init
 
-# Check for REUSE compliance
-- name: reuse
-  image: fsfe/reuse:latest
-  commands:
-  - reuse lint
+  # Check for REUSE compliance
+  - name: reuse
+    image: fsfe/reuse:latest
+    commands:
+      - reuse lint
 
-# Copy reuse docs files to reuse website
-- name: sync-docs
-  image: alpine:3
-  commands:
-  - sh sync-docs.sh
+  # Copy reuse docs files to reuse website
+  - name: sync-docs
+    image: alpine:3
+    commands:
+      - sh sync-docs.sh
 
-# Build hugo
-- name: hugo
-  image: plugins/hugo
-  settings:
-    source: site
-    validate: true
+  # Build hugo
+  - name: hugo
+    image: plugins/hugo
+    settings:
+      source: site
+      validate: true
 
-# Build and deploy Docker
-- name: deploy
-  image: docker/compose:1.29.1
-  commands:
-  - docker-compose -p reuse-website up --build -d
-  volumes:
-  - name: dockersock
-    path: /var/run/docker.sock
-  when:
-    branch:
-    - master
-    event:
-    - push
-    - tag
-    - deployment
+  # Build and deploy Docker
+  - name: deploy
+    image: docker/compose:1.29.2
+    environment:
+      XDG_RUNTIME_DIR: "/run/user/1001"
+      DOCKER_HOST: "unix:///run/user/1001/docker.sock"
+    commands:
+      - docker-compose -p reuse-website up --build -d
+    volumes:
+      - name: dockersock
+        path: /run/user/1001/docker.sock
+    when:
+      branch:
+        - master
+      event:
+        - push
+        - tag
+        - deployment
 
+node:
+  cont2: noris
 
 volumes:
-- name: dockersock
-  host:
-    path: /var/run/docker.sock
-
-...
+  - name: dockersock
+    host:
+      path: /run/user/1001/docker.sock

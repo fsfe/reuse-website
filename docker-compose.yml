@@ -2,9 +2,8 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-version: '3'
+version: "3"
 services:
-
   reuse-web:
     container_name: reuse-web
     build: .
@@ -26,7 +25,7 @@ services:
   connect-bridge:
     image: docker:dind
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /run/user/1001/docker.sock:/var/run/docker.sock
     depends_on:
       - reuse-web
     command: /bin/sh -c 'docker network connect bridge reuse-web'
