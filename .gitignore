@@ -2,6 +2,11 @@
 # SPDX-License-Identifier: CC0-1.0
 
 site/public/
+# Docs from submodule
 site/content/faq.md
 site/content/spec.md
 site/content/tutorial.md
+# Translations from submodule
+site/content/*/faq.md
+site/content/*/spec.md
+site/content/*/tutorial.md
