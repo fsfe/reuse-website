@@ -1,7 +1,10 @@
 # SPDX-FileCopyrightText: 2019 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC0-1.0
 
+# Hugo build files
 site/public/
+site/.hugo_build.lock
+
 # Docs from submodule
 site/content/faq.md
 site/content/spec.md
