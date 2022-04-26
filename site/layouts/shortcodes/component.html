@@ -1,0 +1,11 @@
+<!--
+  SPDX-License-Identifier: MIT
+  SPDX-FileCopyrightText: 2021 Free Software Foundation Europe e.V. <https://fsfe.org>
+-->
+<div class="reuse-tops row vertical-align">
+  <div class="icon col-sm-2"><i class="{{.Get "fa"}}"></i></div>
+  <div class="col-sm-10">
+    <h3{{with .Get "id"}} id="{{.}}"{{end}}>{{with .Get "link"}}<a href="{{.}}">{{end}}{{.Get "headline" | markdownify}}{{with .Get "link"}}</a>{{end}}</h3>
+    <p>{{ .Inner | markdownify }}</p>
+  </div>
+</div>

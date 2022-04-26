@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-FileCopyrightText: Free Software Foundation Europe e.V.
 # SPDX-FileCopyrightText: 2020 Hans-Christoph Steiner <hans@eds.org>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
@@ -9,7 +9,7 @@
 
 basedir=$(cd `dirname $0`; pwd)
 
-cd $basedir/reuse-docs
+cd $basedir/reuse-docs || exit
 po4a po/po4a.conf
 
 # Only select relevant content files from reuse-docs

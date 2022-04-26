@@ -6,40 +6,59 @@ kind: pipeline
 name: default
 
 steps:
-- name: submodules
-  image: alpine/git
-  commands:
-  - git submodule update --init
+  # Clone submodules (reuse docs)
+  - name: submodules
+    image: alpine/git
+    commands:
+      - git submodule update --init
 
-- name: syntaxcheck
-  image: monachus/hugo:v0.63.1
-  commands:
-  - cd site; hugo
+  # Check for REUSE compliance
+  - name: reuse
+    image: fsfe/reuse:latest
+    commands:
+      - reuse lint
 
-- name: reuse
-  image: fsfe/reuse:latest
-  commands:
-  - reuse lint
+  # Copy reuse docs files to reuse website
+  - name: sync-docs
+    image: alpine:3
+    commands:
+      - sh sync-docs.sh
 
-- name: deploy
-  image: docker/compose:1.24.0
-  commands:
-  - docker-compose up --build -d
-  volumes:
-  - name: dockersock
-    path: /var/run/docker.sock
-  when:
-    branch:
-    - master
-    event:
-    - push
-    - tag
-    - deployment
+  # Build hugo
+  - name: hugo
+    image: plugins/hugo
+    settings:
+      source: site
+      validate: true
 
+  # Build and deploy Docker
+  - name: deploy
+    image: docker/compose:1.29.2
+    environment:
+      XDG_RUNTIME_DIR: "/run/user/1001"
+      DOCKER_HOST: "unix:///run/user/1001/docker.sock"
+    commands:
+      - docker-compose -p reuse-website up --build -d
+    volumes:
+      - name: dockersock
+        path: /run/user/1001/docker.sock
+    when:
+      branch:
+        - master
+      event:
+        - push
+        - tag
+        - deployment
+
+node:
+  cont2: noris
 
 volumes:
-- name: dockersock
-  host:
-    path: /var/run/docker.sock
+  - name: dockersock
+    host:
+      path: /run/user/1001/docker.sock
+---
+kind: signature
+hmac: 2cd6ddbff1d3f96a1989bbe2da6a8729493b533e25703417682fde741dad2dfb
 
 ...

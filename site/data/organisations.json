@@ -12,9 +12,17 @@
   {
     "name": "SAP",
     "img": "sap.png",
-    "sponsor": true,
+    "sponsor": false,
     "sponsor_order": "41",
     "sponsor_width": "100px",
+    "footer": false
+  },
+  {
+    "name": "Huawei",
+    "img": "huawei.png",
+    "sponsor": true,
+    "sponsor_order": "31",
+    "sponsor_width": "200px",
     "footer": false
   },
   {

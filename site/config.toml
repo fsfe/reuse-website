@@ -6,11 +6,16 @@ baseURL         = "https://reuse.software/"
 languageCode    = "en"
 title           = "REUSE"
 theme           = "github-project-landing-page"
-sectionPagesMenu = "main"
+
+[markup]
+[markup.tableOfContents]
+  endLevel = 3
+  ordered = false
+  startLevel = 1
 
 [markup.highlight]
-codeFences = true
-style = "emacs"
+  codeFences = true
+  style = "emacs"
 
 #[permalinks]
 #        page = "/:title/"
@@ -71,10 +76,10 @@ defaultContentLanguageInSubdir = true
   weight = 300
   url = "/spec/"
 [[menu.main]]
-  name = "Materials"
-  identifier = "materials"
+  name = "Resources"
+  identifier = "resources"
   weight = 500
-  url = "/materials/"
+  url = "/resources/"
 [[menu.main]]
   name = "Supporters"
   identifier = "supporters"

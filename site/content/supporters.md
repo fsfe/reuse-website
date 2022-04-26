@@ -19,6 +19,6 @@ information largely improve internal compliance processes, we are happy
 if corporate actors contribute back to REUSE.
 
 If your company is interested in becoming a REUSE sponsor, [please
-approach us](/materials/#contact).
+approach us](/resources/#contact).
 
 {{< supporters >}}

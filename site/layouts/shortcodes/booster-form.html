@@ -1,0 +1,143 @@
+<!--
+  SPDX-License-Identifier: MIT
+  SPDX-FileCopyrightText: 2021 Free Software Foundation Europe e.V. <https://fsfe.org>
+-->
+<form class="form-horizontal" action="https://forms.fsfe.org/email" method="POST" >
+  <input type="hidden" name="appid" value="reuse-booster" />
+
+  <div class="form-group">
+    <label for="name" class="col-sm-5 control-label">
+      My name *
+    </label>
+    <div class="col-sm-7">
+      <input type="text" class="form-control" id="name" name="name" required="required" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="confirm" class="col-sm-5 control-label">
+      My email address *
+    </label>
+    <div class="col-sm-7">
+      <input type="email" class="form-control" id="confirm" name="confirm" required="required" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="project_name" class="col-sm-5 control-label">
+      Name of the project that wants to adopt REUSE *
+    </label>
+    <div class="col-sm-7">
+      <input type="text" class="form-control" id="project_name" name="project_name" required="required" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="url" class="col-sm-5 control-label">
+      URL of the project's repository *
+    </label>
+    <div class="col-sm-7">
+      <input type="text" class="form-control" id="url" name="url" required="required" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="description" class="col-sm-5 control-label">
+      Description of the project (max. 1.000 characters) *
+    </label>
+    <div class="col-sm-7">
+      <textarea class="form-control" id="description" name="description" rows="5" required="required"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="repos" class="col-sm-5 control-label">
+      If your project consists of multiple repositories, please enter the URLs
+      to them below (one per line)
+    </label>
+    <div class="col-sm-7">
+      <textarea class="form-control" id="repos" name="repos" rows="5"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="contacts" class="col-sm-5 control-label">
+      Please indicate 1-2 additional contact persons including their email
+      addresses of the project. You and they will be our main contacts during
+      the project phase (one per line).
+    </label>
+    <div class="col-sm-7">
+      <textarea class="form-control" id="contacts" name="contacts" rows="5"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="licenses" class="col-sm-5 control-label">
+      Which Free Software licenses are used in your project? *
+    </label>
+    <div class="col-sm-7">
+      <textarea class="form-control" id="licenses" name="licenses" rows="5" required="required"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="proprietary" class="col-sm-5 control-label">
+      Does the project use or depend on proprietary components? If so, please
+      list them.
+    </label>
+    <div class="col-sm-7">
+      <textarea class="form-control" id="proprietary" name="proprietary" rows="5"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="history" class="col-sm-5 control-label">
+      Please provide us with a brief summary of the project's history (max. 1000
+      characters). *
+    </label>
+    <div class="col-sm-7">
+      <textarea class="form-control" id="history" name="history" rows="5" required="required"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="reason" class="col-sm-5 control-label">
+      Why do you want to make your project REUSE compliant (max. 1000
+      characters)? *
+    </label>
+    <div class="col-sm-7">
+      <textarea class="form-control" id="reason" name="reason" rows="5" required="required"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="checkbox col-sm-5"></div>
+    <div class="checkbox col-sm-7">
+      <label>
+        <input type="checkbox" name="privacy" value="y" required="required">
+        I have understood and accept the <a
+        href="https://fsfe.org/about/legal/imprint.en.html#id-privacy-policy">FSFE's
+        privacy policy</a>.
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="checkbox col-sm-5"></div>
+    <div class="checkbox col-sm-7">
+      <label>
+        <input type="checkbox" name="obligatory" value="y" required="required">
+        I confirm the project's willingness to make it REUSE compliant. I
+        understand that the FSFE will provide guidance to the registered and
+        accepted project, not a ready solution nor a guarantee.
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-5 col-sm-7">
+      <button type="submit" class="btn btn-primary btn-lg">Register Project</button>
+    </div>
+  </div>
+
+</form>

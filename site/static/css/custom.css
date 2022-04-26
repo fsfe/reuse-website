@@ -95,15 +95,19 @@ h1.title {
   margin-right: auto;
 }
 
+/* Icon-Text grid */
+.reuse-tops {
+  margin-bottom: 15px;
+}
 .reuse-tops .icon {
   text-align: center;
 }
-.reuse-tops .fas {
+.reuse-tops .fas,
+.reuse-tops .far {
   font-size: 70px;
   color: #3394CE;
   color: #4D4D4D;
 }
-
 @media(max-width: 992px) {
   .reuse-step-no {
     float: left;
@@ -112,8 +116,7 @@ h1.title {
 @media(max-width: 768px) {
   div.reuse-tops {
     margin-top:40px;
-  } 
-
+  }
 }
 
 /* FOOTER */
@@ -148,10 +151,21 @@ footer a:hover {
 }
 
 /* TABLE OF CONTENTS */
-/* hide h3 and below */
-nav#TableOfContents ul > li > ul > li > ul > li {
-  display: none;
+/* improve placing, and move level look up by one */
+div#toc nav#TableOfContents > ul {
+  padding-left: 0px;
+  list-style-type: none;
 }
+div#toc nav#TableOfContents > ul > li > a {
+  font-weight: 700;
+}
+div#toc nav#TableOfContents > ul > li > ul {
+  list-style-type: disc;
+}
+div#toc nav#TableOfContents > ul > li > ul > li > ul {
+  list-style-type: circle;
+}
+
 /* +/- sign depending on accordion state */
 div#toc a h4.panel-title:before {
     float: right !important;
@@ -209,7 +223,7 @@ table.supporters {
   padding: 6px 12px;
   text-align: center;
 }
-/* Avoid scrollbar jumps in centering 
+/* Avoid scrollbar jumps in centering
  * see https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar/
  */
 div#wrap {
@@ -270,8 +284,18 @@ h2::before, h3::before, h4::before, h5::before, h6::before {
   content: "";
   display: block;
 }
+/* Make links in paragraphs above headlines clickable again */
+p {
+  position: relative;
+  z-index: 1;
+}
 
 /* vertically center */
 .vcenter {
   vertical-align: middle !important;
+}
+
+/* FORMS */
+label {
+  font-weight: 400;
 }
