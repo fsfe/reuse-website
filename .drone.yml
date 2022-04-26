@@ -18,11 +18,12 @@ steps:
     commands:
       - reuse lint
 
-  # Copy reuse docs files to reuse website
+  # Build and copy reuse docs files to reuse website
   - name: sync-docs
     image: alpine:3
     commands:
-      - sh sync-docs.sh
+      - apk add bash perl-yaml-tiny po4a
+      - bash sync-docs.sh
 
   # Build hugo
   - name: hugo
@@ -59,6 +60,6 @@ volumes:
       path: /run/user/1001/docker.sock
 ---
 kind: signature
-hmac: 2cd6ddbff1d3f96a1989bbe2da6a8729493b533e25703417682fde741dad2dfb
+hmac: 4b092bfd2f48121e6516175ecb46421a98a0c22c711cde580a1e3c448ecd3484
 
 ...
