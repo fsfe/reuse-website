@@ -7,8 +7,6 @@ languageCode    = "en"
 title           = "REUSE"
 theme           = "github-project-landing-page"
 
-refLinksErrorLevel = "WARNING"
-
 [markup]
 [markup.tableOfContents]
   endLevel = 3
