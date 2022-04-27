@@ -10,6 +10,8 @@
 basedir=$(cd "$(dirname "$0")" || exit; pwd)
 
 cd "$basedir"/reuse-docs || exit
+
+# Generate translations from .po files
 po4a po/po4a.conf
 
 # Only select relevant content files from reuse-docs
@@ -31,3 +33,7 @@ for f in faq.md spec.md tutorial.md; do
       cp "$tf" "$basedir"/site/content/"$locale"/"$f"
   done
 done
+
+# Make permissions of newly generated folders the same as the already existing files
+uidgid=$(stat -c '%u:%g' "$basedir")
+chown -R "$uidgid" "$basedir"

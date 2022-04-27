@@ -48,11 +48,39 @@ theme           = "github-project-landing-page"
   Mastodon      = "mastodon.social/@fsfe"
   Diaspora      = ""
 
+# Languages
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 [languages]
 [languages.en]
   weight = 1
+  languageName = "English"
+[languages.fr]
+  weight = 2
+  languageName = "Français"
+
+# EN content
+[[module.mounts]]
+source = 'content'
+target = 'content'
+lang = 'en'
+
+# FR content
+[[module.mounts]]
+source = 'content/fr'
+target = 'content'
+lang = 'fr'
+
+#------------------------------------------------------------------------------
+# Fill in the missing translations
+#------------------------------------------------------------------------------
+
+# Missing FR translations
+[[module.mounts]]
+source = 'content'
+target = 'content'
+lang = 'fr'
+
 
 [menu]
 [[menu.main]]
