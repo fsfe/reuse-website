@@ -9,6 +9,7 @@
 <div class="content">
   <div class="clearfix"></div>
   <h1>{{ .Page.Title }}</h1>
+  {{ partial "translation.html" . }}
   {{ .Content }}
 </div>
 {{ partial "footer.html" . }}

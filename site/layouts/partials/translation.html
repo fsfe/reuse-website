@@ -1,0 +1,24 @@
+{{ if not (eq .Language.Lang "en") }}
+  <div class="alert alert-warning">
+    <p>
+      You are reading an inofficial translation of the <a href="{{ slicestr .RelPermalink 3}}">original page.</a>
+    </p>
+  </div>
+{{ else }}
+  {{ if .IsTranslated }}
+  <div class="alert alert-success">
+    <p>
+      Inofficial translations:
+
+      {{/* Maximum index of translations (number - 1) */}}
+      {{ $index_max := (sub (len .Translations) 1) }}
+
+      {{ range $key, $value := .Translations }}
+        {{/* Prepend an "and" if last and not first item. Comma if not first and not last. Otherwise empty */}}
+        {{- if and ($key) (ne $key $index_max) }}, {{ else if and ($key) (eq $key $index_max) }} and {{ end -}}
+        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+      {{- end }}
+    </p>
+  </div>
+  {{ end }}
+{{ end }}
