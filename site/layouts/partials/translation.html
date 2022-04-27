@@ -17,7 +17,7 @@
       {{ range $key, $value := .Translations }}
         {{/* Prepend an "and" if last and not first item. Comma if not first and not last. Otherwise empty */}}
         {{- if and ($key) (ne $key $index_max) }}, {{ else if and ($key) (eq $key $index_max) }} and {{ end -}}
-        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
       {{- end }}
     </p>
   </div>
