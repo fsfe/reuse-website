@@ -1,7 +1,8 @@
 {{ if not (eq .Language.Lang "en") }}
   <div class="alert alert-warning">
     <p>
-      You are reading an inofficial translation of the <a href="{{ slicestr .RelPermalink 3}}">original page.</a>
+      You are reading an inofficial translation of the <a href="{{ relref .
+      (dict "path" .File.Path "lang" "en") }}">original page</a>.
     </p>
   </div>
 {{ else }}
