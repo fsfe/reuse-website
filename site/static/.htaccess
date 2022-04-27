@@ -9,6 +9,10 @@ RewriteBase /
 RewriteRule ^practices/?.*$ /spec [L,R=301]
 RewriteRule ^materials/?.*$ /resources/ [L,R=301]
 
+# redirect all requests to non-existing translations to EN
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^[a-z-]*/(.+) $1 [L,R=301]
 
 # Tweaks
 Header set X-Frame-Options SAMEORIGIN
