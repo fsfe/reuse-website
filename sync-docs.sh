@@ -19,7 +19,7 @@ for f in faq.md spec.md tutorial.md; do
   # remove potentially existing files with the same name
   rm -f "$basedir"/site/content/"$f"
   # copy EN base files
-  cp "$basedir"/reuse-docs/"$f" "$basedir"/site/content/"$f"
+  cp "$basedir"/reuse-docs/"$f" "$basedir"/site/content/en/"$f"
   # check for translated files in subfolders
   for tf in "$basedir"/reuse-docs/*/"$f"; do
       test -e "$tf" || continue
