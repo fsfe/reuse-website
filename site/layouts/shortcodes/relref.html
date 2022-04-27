@@ -1,0 +1,16 @@
+{{- /*
+  Return the translated link if it exists, otherwise link to English page
+  This substitutes the default relref shortcode.
+*/ -}}
+{{- $url := "" }}
+{{- if .IsNamedParams }}
+  {{- $url = .Get "path" }}
+{{- else }}
+  {{- $url = .Get 0 }}
+{{- end }}
+
+{{- if .Site.GetPage $url }}
+  {{- relref . .Params }}
+{{- else }}
+  {{- relref . (dict "path" $url "lang" "en") }}
+{{- end -}}
