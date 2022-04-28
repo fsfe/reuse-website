@@ -14,6 +14,15 @@
   "warning": {
     "other": "Warning:"
   },
+  "trans_inofficial": {
+    "other": "You are reading an inofficial translation of the [original page](%s)."
+  },
+  "trans_available": {
+    "other": "Inofficial translations:"
+  },
+  "and": {
+    "other": "and"
+  },
   "index_intro": {
     "other": "We make licensing easy for humans and machines alike. We solve a fundamental issue that Free Software licensing has at the very source: what license is a file licensed under, and who owns the copyright? **Adopting our recommendations is as easy as one-two-three**!"
   },

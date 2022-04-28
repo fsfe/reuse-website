@@ -1,22 +1,21 @@
 {{ if not (eq .Language.Lang "en") }}
   <div class="alert alert-warning">
     <p>
-      You are reading an inofficial translation of the <a href="{{ relref .
-      (dict "path" .File.Path "lang" "en") }}">original page</a>.
+      {{ replace (i18n "trans_inofficial") "%s" (relref . (dict "path" .File.Path "lang" "en")) | markdownify }}
     </p>
   </div>
 {{ else }}
   {{ if .IsTranslated }}
   <div class="alert alert-success">
     <p>
-      Inofficial translations:
+      {{ i18n "trans_available" }}
 
       {{/* Maximum index of translations (number - 1) */}}
       {{ $index_max := (sub (len .Translations) 1) }}
 
       {{ range $key, $value := .Translations }}
         {{/* Prepend an "and" if last and not first item. Comma if not first and not last. Otherwise empty */}}
-        {{- if and ($key) (ne $key $index_max) }}, {{ else if and ($key) (eq $key $index_max) }} and {{ end -}}
+        {{- if and ($key) (ne $key $index_max) }}, {{ else if and ($key) (eq $key $index_max) }} {{ i18n "and" }} {{ end -}}
         <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
       {{- end }}
     </p>
