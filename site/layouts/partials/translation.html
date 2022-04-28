@@ -1,24 +1,31 @@
-{{ if not (eq .Language.Lang "en") }}
+{{- $filepath := "/" }}
+{{- with .File.Path }}{{ $filepath = . }}{{ end }}
+{{- if not (eq .Language.Lang "en") }}
   <div class="alert alert-warning">
     <p>
-      {{ replace (i18n "trans_inofficial") "%s" (relref . (dict "path" .File.Path "lang" "en")) | markdownify }}
+      {{ replace (i18n "trans_inofficial") "%s" (relref . (dict "path" $filepath "lang" "en")) | markdownify }}
     </p>
   </div>
-{{ else }}
-  {{ if .IsTranslated }}
-  <div class="alert alert-success">
-    <p>
-      {{ i18n "trans_available" }}
+{{- else }}
+  {{- if .IsTranslated }}
+    {{/*  Only show for non-index pages.
+          TODO: somehow find out if a translated index has been fully translated
+    */}}
+    {{- if not (eq $filepath "/") }}
+    <div class="alert alert-success">
+      <p>
+        {{ i18n "trans_available" }}
 
-      {{/* Maximum index of translations (number - 1) */}}
-      {{ $index_max := (sub (len .Translations) 1) }}
+        {{- /* Maximum index of translations (number - 1) */ -}}
+        {{- $index_max := (sub (len .Translations) 1) }}
 
-      {{ range $key, $value := .Translations }}
-        {{/* Prepend an "and" if last and not first item. Comma if not first and not last. Otherwise empty */}}
-        {{- if and ($key) (ne $key $index_max) }}, {{ else if and ($key) (eq $key $index_max) }} {{ i18n "and" }} {{ end -}}
-        <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
-      {{- end }}
-    </p>
-  </div>
-  {{ end }}
-{{ end }}
+        {{- range $key, $value := .Translations }}
+          {{/* Prepend an "and" if last and not first item. Comma if not first and not last. Otherwise empty */}}
+          {{- if and ($key) (ne $key $index_max) }}, {{ else if and ($key) (eq $key $index_max) }} {{ i18n "and" }} {{ end -}}
+          <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+        {{- end }}
+      </p>
+    </div>
+    {{- end }}
+  {{- end }}
+{{- end }}
