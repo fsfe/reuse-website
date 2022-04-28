@@ -25,7 +25,7 @@
               {{- $rel := .RelPermalink -}}
               {{- range .Site.Menus.main -}}
                 <!-- if RelPermalink = this menu item, mark it -->
-                <li class="{{if eq $rel .URL}}active{{end}}"><a href="{{ .URL }}">{{ i18n (delimit (slice "menu_" .Identifier) "") }}</a></li>
+                <li class="{{if strings.HasSuffix $rel .URL }}active{{end}}"><a href="{{ .URL }}">{{ i18n (delimit (slice "menu_" .Identifier) "") }}</a></li>
               {{- end -}}
             </ul>
         </div>
