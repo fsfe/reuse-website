@@ -23,6 +23,27 @@
   "and": {
     "other": "and"
   },
+  "menu_tutorial": {
+    "other": "Get Started"
+  },
+  "menu_faq": {
+    "other": "FAQ"
+  },
+  "menu_dev": {
+    "other": "Developers"
+  },
+  "menu_spec": {
+    "other": "Specification"
+  },
+  "menu_resources": {
+    "other": "Resources"
+  },
+  "menu_supporters": {
+    "other": "Supporters"
+  },
+  "menu_api": {
+    "other": "API"
+  },
   "index_intro": {
     "other": "We make licensing easy for humans and machines alike. We solve a fundamental issue that Free Software licensing has at the very source: what license is a file licensed under, and who owns the copyright? **Adopting our recommendations is as easy as one-two-three**!"
   },
