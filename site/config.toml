@@ -48,45 +48,50 @@ theme           = "github-project-landing-page"
   Mastodon      = "mastodon.social/@fsfe"
   Diaspora      = ""
 
+# Languages
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 [languages]
 [languages.en]
   weight = 1
+  languageName = "English"
+  contentDir = "content/en"
+[languages.fr]
+  weight = 2
+  languageName = "Français"
+  contentDir = "content/fr"
+[languages.uk]
+  weight = 3
+  languageName = "Українська"
+  contentDir = "content/uk"
+
 
 [menu]
 [[menu.main]]
-  name = "Get Started"
   identifier = "tutorial"
   weight = 100
   url = "/tutorial/"
 [[menu.main]]
-  name = "FAQ"
   identifier = "faq"
   weight = 200
   url = "/faq/"
 [[menu.main]]
-  name = "Developers"
   identifier = "dev"
   weight = 300
   url = "/dev/"
 [[menu.main]]
-  name = "Specification"
   identifier = "spec"
   weight = 300
   url = "/spec/"
 [[menu.main]]
-  name = "Resources"
   identifier = "resources"
   weight = 500
   url = "/resources/"
 [[menu.main]]
-  name = "Supporters"
   identifier = "supporters"
   weight = 900
   url = "/supporters/"
 [[menu.main]]
-  name = "API"
   identifier = "api"
   weight = 1000
   url = "https://api.reuse.software"
