@@ -23,7 +23,7 @@
         {{- /* Maximum index of translations (number - 1) */ -}}
         {{- $index_max := (sub (len .Translations) 1) }}
 
-        {{- range $key, $value := .Translations }}
+        {{ range $key, $value := .Translations -}}
           {{/* Prepend an "and" if last and not first item. Comma if not first and not last. Otherwise empty */}}
           {{- if and ($key) (ne $key $index_max) }}, {{ else if and ($key) (eq $key $index_max) }} {{ i18n "and" }} {{ end -}}
           <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
