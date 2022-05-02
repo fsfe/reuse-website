@@ -6,20 +6,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-05-03 13:16+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. type: YAML Front Matter: title
 #: content/en/comparison.md
 #, no-wrap
 msgid "Comparison of license compliance projects"
-msgstr ""
+msgstr "Порівняння проєктів ліцензійної відповідності"
 
 #. type: Plain text
 #: content/en/comparison.md
@@ -61,7 +66,7 @@ msgstr ""
 #: content/en/dev.md
 #, no-wrap
 msgid "Help for developers"
-msgstr ""
+msgstr "Довідка для розробників"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -79,7 +84,7 @@ msgstr ""
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Helper Tool {#tool}"
-msgstr ""
+msgstr "Допоміжний засіб {#tool}"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -97,7 +102,7 @@ msgstr ""
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Example repositories {#repos}"
-msgstr ""
+msgstr "Приклад репозиторіїв {#repos}"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -121,7 +126,7 @@ msgstr ""
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "API {#api}"
-msgstr ""
+msgstr "API {#api}"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -151,7 +156,7 @@ msgstr ""
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Pre-commit hook {#pre-commit-hook}"
-msgstr ""
+msgstr "Pre-commit hook {#pre-commit-hook}"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -169,6 +174,11 @@ msgid ""
 "    hooks:\n"
 "    - id: reuse\n"
 msgstr ""
+"repos:\n"
+"-   repo: https://github.com/fsfe/reuse-tool\n"
+"    rev: latest\n"
+"    hooks:\n"
+"    - id: reuse\n"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -180,7 +190,7 @@ msgstr ""
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Inclusion in CI/CD workflows {#ci}"
-msgstr ""
+msgstr "Включення в робочі процеси CI/CD {#ci}"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -198,13 +208,13 @@ msgstr ""
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Drone"
-msgstr ""
+msgstr "Drone"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Include the following snippet in your `.drone.yml` file:"
-msgstr ""
+msgstr "Додайте цей фрагмент у файл `.drone.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
@@ -214,18 +224,21 @@ msgid ""
 "- name: reuse\n"
 "  image: fsfe/reuse:latest\n"
 msgstr ""
+"steps:\n"
+"- name: reuse\n"
+"  image: fsfe/reuse:latest\n"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "More information about Drone on [drone.io](https://drone.io)."
-msgstr ""
+msgstr "Докладніше про Drone на [drone.io](https://drone.io)."
 
 #. type: Title ###
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -238,18 +251,20 @@ msgstr ""
 #, markdown-text
 msgid "More information about GitHub Actions on [help.github.com](https://help.github.com/en/actions/automating-your-workflow-with-github-actions)."
 msgstr ""
+"Докладніше про GitHub Actions на [help.github.com](https://help.github.com/"
+"en/actions/automating-your-workflow-with-github-actions)."
 
 #. type: Title ###
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "GitLab"
-msgstr ""
+msgstr "GitLab"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Include the following snippet in your `.gitlab-ci.yml` file:"
-msgstr ""
+msgstr "Додайте цей фрагмент у файл `.gitlab-ci.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
@@ -262,24 +277,32 @@ msgid ""
 "  script:\n"
 "    - reuse lint\n"
 msgstr ""
+"reuse:\n"
+"  image:\n"
+"    name: fsfe/reuse:latest\n"
+"    entrypoint: [\"\"]\n"
+"  script:\n"
+"    - reuse lint\n"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "More information about GitLab's CI on [docs.gitlab.com](https://docs.gitlab.com/ce/ci/quick_start/)."
 msgstr ""
+"Докладніше про CI GitLab на [docs.gitlab.com](https://docs.gitlab.com/ce/ci/"
+"quick_start/)."
 
 #. type: Title ###
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Travis CI"
-msgstr ""
+msgstr "Travis CI"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Include the following snippet in your `.travis.yml` file:"
-msgstr ""
+msgstr "Додайте цей фрагмент у файл `.travis.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
@@ -294,18 +317,26 @@ msgid ""
 "- docker pull fsfe/reuse:latest\n"
 "- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 msgstr ""
+"language: minimal\n"
+"\n"
+"services:\n"
+"  - docker\n"
+"\n"
+"before_install:\n"
+"- docker pull fsfe/reuse:latest\n"
+"- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "More information on Travis CI on [travis-ci.com](https://travis-ci.com)."
-msgstr ""
+msgstr "Докладніше про Travis CI на [travis-ci.com](https://travis-ci.com)."
 
 #. type: YAML Front Matter: title
 #: content/en/resources.md
 #, no-wrap
 msgid "Resources"
-msgstr ""
+msgstr "Ресурси"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -389,7 +420,7 @@ msgstr ""
 #: content/en/supporters.md
 #, no-wrap
 msgid "Supporters"
-msgstr ""
+msgstr "Прихильники"
 
 #. type: Plain text
 #: content/en/supporters.md
@@ -401,7 +432,7 @@ msgstr ""
 #: content/en/supporters.md
 #, markdown-text, no-wrap
 msgid "Corporate Sponsors"
-msgstr ""
+msgstr "Корпоративні спонсори"
 
 #. type: Plain text
 #: content/en/supporters.md
@@ -419,4 +450,4 @@ msgstr ""
 #: content/en/supporters.md
 #, markdown-text, no-wrap
 msgid "{{< supporters >}}\n"
-msgstr ""
+msgstr "{{< supporters >}}\n"
