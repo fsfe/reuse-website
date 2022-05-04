@@ -25,6 +25,13 @@ steps:
       - apk add bash perl-yaml-tiny po4a
       - bash sync-docs.sh
 
+  # Create translations for markdown via PO files
+  - name: po4a
+    image: alpine:3
+    commands:
+      - apk add perl-yaml-tiny po4a
+      - cd site && po4a po/po4a.conf
+
   # Build hugo
   - name: hugo
     image: plugins/hugo
@@ -60,6 +67,6 @@ volumes:
       path: /run/user/1001/docker.sock
 ---
 kind: signature
-hmac: 4b092bfd2f48121e6516175ecb46421a98a0c22c711cde580a1e3c448ecd3484
+hmac: bfa7a2616521bf482485d2ada01d402b532ff4e838c3f2c0e7bf537df8f59e05
 
 ...
