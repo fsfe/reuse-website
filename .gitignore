@@ -13,3 +13,6 @@ site/content/tutorial.md
 site/content/*/faq.md
 site/content/*/spec.md
 site/content/*/tutorial.md
+
+# Translation status file created by check_translations.py
+site/i18n/.status

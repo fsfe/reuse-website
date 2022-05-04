@@ -30,7 +30,7 @@ COPY site/public/ /app/
 FROM alpine:3 as dev-prep
 
 # Dependencies
-RUN apk --no-cache add bash perl-yaml-tiny po4a hugo
+RUN apk --no-cache add bash perl-yaml-tiny po4a hugo python3
 
 COPY . /app
 
@@ -41,6 +41,9 @@ RUN bash sync-docs.sh
 
 # Run po4a for reuse-website po strings
 RUN cd site/ && po4a po/po4a.conf
+
+# Create .status file for important i18n translation strings
+RUN python3 check_translations.py site/i18n
 
 # Build hugo
 RUN hugo -s site

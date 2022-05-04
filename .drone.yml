@@ -32,6 +32,12 @@ steps:
       - apk add perl-yaml-tiny po4a
       - cd site && po4a po/po4a.conf
 
+  # Create .status file for important i18n translation strings
+  - name: check_translations
+    image: python:3.10-alpine
+    commands:
+      - python3 check_translations.py site/i18n
+
   # Build hugo
   - name: hugo
     image: plugins/hugo
