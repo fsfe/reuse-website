@@ -27,7 +27,7 @@ COPY site/public/ /app/
 # Development Preparation: run sync-docs, po4a and hugo
 # =============================================================================
 
-FROM alpine:3 as dev-prep
+FROM alpine:edge as dev-prep
 
 # Dependencies
 RUN apk --no-cache add bash perl-yaml-tiny po4a hugo python3
