@@ -14,30 +14,28 @@
 {{- else }}
   {{- if .IsTranslated }}
     {{ $index_translated := os.ReadFile "i18n/.status" }}
-    {{/*  BUILD DICT/MAP OF AVAILABLE TRANSLATIONS  */}}
+    {{- /*  BUILD DICT/MAP OF AVAILABLE TRANSLATIONS  */ -}}
     {{- /* Maximum index of translations (number - 1) */ -}}
-    {{- $index_max := (sub (len .Translations) 1) }}
     {{- $trans := dict }}
-    {{ range $index, $value := .Translations -}}
+    {{- range $index, $value := .Translations -}}
       {{- /*  If on index page, skip translations not being in i18n/.status  */}}
       {{- if and (eq $filepath "/") (not (in $index_translated .Lang)) }}
         {{- continue }}
       {{- end }}
-        {{/* Prepend an "and" if last and not first item. Comma if not first and not last. Otherwise empty */}}
-        {{- $sep := "" }}
-        {{- if and ($index) (ne $index $index_max) }}{{ $sep = ", "}}{{ else if and ($index) (eq $index $index_max) }}{{ $sep = (printf " %s " (i18n "and")) }}{{ end -}}
-        {{- $trans = merge $trans (dict .Lang (dict "name" .Language.LanguageName "link" .RelPermalink "sep" $sep)) }}
-      {{- end }}
-    {{/*  Only show for index pages for which some common strings are translated */}}
+      {{- $trans = merge $trans (dict .Language.LanguageName .RelPermalink) }}
+    {{- end }}
+    {{ if $trans }}
     <div class="alert alert-success">
-      <p>
-        {{ i18n "trans_available" }}
-        {{- /* Output available translation dict $trans */ -}}
-        {{- $index_max := (len $trans) }}
-        {{ range $lang, $map := $trans }}
-          {{- $map.sep }}<a href="{{ $map.link }}">{{ $map.name }}</a>
-        {{- end }}
-      </p>
+      <div id="translist">
+        <p>{{ i18n "trans_available" }}</p>
+          {{- /* Output available translation dict $trans */}}
+          <ul>
+          {{- range $lang, $link := $trans }}
+            <li><a href="{{ $link }}">{{ $lang }}</a></li>
+          {{- end }}
+          </ul>
+      </div>
     </div>
+    {{ end }}
   {{- end }}
 {{- end }}
