@@ -15,15 +15,6 @@ RUN sed -i -r 's/#LoadModule expires_module/LoadModule expires_module/' /opt/bit
 
 
 # =============================================================================
-# Production (use the site built in hugo step in .drone.yml)
-# =============================================================================
-
-FROM webserver-prep as production
-
-COPY site/public/ /app/
-
-
-# =============================================================================
 # Development Preparation: run sync-docs, po4a and hugo
 # =============================================================================
 
@@ -50,9 +41,18 @@ RUN hugo -s site
 
 
 # =============================================================================
-# Production (use the site built in dev-prep)
+# Development (use the site built in dev-prep)
 # =============================================================================
 
 FROM webserver-prep as development
 
 COPY --from=dev-prep /app/site/public/ /app/
+
+
+# =============================================================================
+# Production (use the site built in hugo step in .drone.yml)
+# =============================================================================
+
+FROM webserver-prep as production
+
+COPY site/public/ /app/
