@@ -22,14 +22,14 @@ steps:
   - name: sync-docs
     image: alpine:3
     commands:
-      - apk add bash perl-yaml-tiny po4a
+      - apk add bash perl-yaml-tiny po4a diffutils
       - bash sync-docs.sh
 
   # Create translations for markdown via PO files
   - name: po4a
     image: alpine:3
     commands:
-      - apk add perl-yaml-tiny po4a
+      - apk add perl-yaml-tiny po4a diffutils
       - cd site && po4a po/po4a.conf
 
   # Create .status file for important i18n translation strings
@@ -43,8 +43,8 @@ steps:
     image: plugins/hugo
     settings:
       source: site
-      validate: true
-      hugo_version: 0.98
+      hugo_version: 0.98.0
+      validate: false
 
   # Build and deploy Docker
   - name: deploy
@@ -74,6 +74,6 @@ volumes:
       path: /run/user/1001/docker.sock
 ---
 kind: signature
-hmac: e891f29795a9dac8f825dcbd7b46e612cfdc1fb9d191084af91ed8b9b5d2fd90
+hmac: 37bfb517b21fdef90bb5349e29e2e32719cca073df3a806c76f8e025d7cd2f09
 
 ...
