@@ -52,6 +52,8 @@ steps:
     environment:
       XDG_RUNTIME_DIR: "/run/user/1001"
       DOCKER_HOST: "unix:///run/user/1001/docker.sock"
+      # Use BuildKit to skip "development" step in Dockerfiles
+      DOCKER_BUILDKIT: 1
     commands:
       - docker-compose -p reuse-website up --build -d
     volumes:
@@ -74,6 +76,6 @@ volumes:
       path: /run/user/1001/docker.sock
 ---
 kind: signature
-hmac: 37bfb517b21fdef90bb5349e29e2e32719cca073df3a806c76f8e025d7cd2f09
+hmac: a9dfdb834b2beab5429aba1bc9f7cf2b7ae7e88a16816e9e284919e862fe447c
 
 ...
