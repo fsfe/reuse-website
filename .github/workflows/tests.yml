@@ -9,26 +9,19 @@ on: [push, pull_request]
 jobs:
   reuse:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
     - uses: actions/checkout@v2
     - name: REUSE Compliance Check
       uses: fsfe/reuse-action@v1
 
   build:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
     - uses: actions/checkout@v2
       with:
         submodules: true
 
-    # Hugo build
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-    - name: Build
-      run: hugo -s site/
-
+    # Build website incl. all translations
     - name: Build Dockerfile
       run: |
-        docker build -t reuse-web .
+        docker build -t reuse-web --target development .

@@ -2,34 +2,42 @@
     SPDX-License-Identifier: MIT
     SPDX-FileCopyrightText: 2022 Free Software Foundation Europe e.V. <https://fsfe.org>
   --> */ -}}
+{{- /*  Set path of current page correctly  */}}
 {{- $filepath := "/" }}
 {{- with .File.Path }}{{ $filepath = . }}{{ end }}
-{{- if not (eq .Language.Lang "en") }}
+{{- /*  Read file containing complete index translations  */}}
+{{- $index_translated := "" }}
+{{- if os.FileExists "i18n/.status" }}{{ $index_translated = os.ReadFile "i18n/.status" }}{{ end }}
+{{- if not (eq .Language.Lang "en") }} {{/* NOT ENGLISH */}}
   <div class="alert alert-warning">
     <p>
       {{ replace (i18n "trans_inofficial") "%s" (relref . (dict "path" $filepath "lang" "en")) | markdownify }}
     </p>
   </div>
-{{- else }}
+{{- else }} {{/* ENGLISH */}}
   {{- if .IsTranslated }}
-    {{/*  Only show for non-index pages.
-          TODO: somehow find out if a translated index has been fully translated
-    */}}
-    {{- if not (eq $filepath "/") }}
-    <div class="alert alert-success">
-      <p>
-        {{ i18n "trans_available" }}
-
-        {{- /* Maximum index of translations (number - 1) */ -}}
-        {{- $index_max := (sub (len .Translations) 1) }}
-
-        {{ range $key, $value := .Translations -}}
-          {{/* Prepend an "and" if last and not first item. Comma if not first and not last. Otherwise empty */}}
-          {{- if and ($key) (ne $key $index_max) }}, {{ else if and ($key) (eq $key $index_max) }} {{ i18n "and" }} {{ end -}}
-          <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
-        {{- end }}
-      </p>
-    </div>
+    {{- /*  BUILD DICT/MAP OF AVAILABLE TRANSLATIONS  */ -}}
+    {{- /* Maximum index of translations (number - 1) */ -}}
+    {{- $trans := dict }}
+    {{- range $index, $value := .Translations -}}
+      {{- /*  If on index page, skip translations not being in i18n/.status  */}}
+      {{- if and (eq $filepath "/") (not (in $index_translated .Lang)) }}
+        {{- continue }}
+      {{- end }}
+      {{- $trans = merge $trans (dict .Language.LanguageName .RelPermalink) }}
     {{- end }}
+    {{ if $trans }}
+    <div class="alert alert-success">
+      <div id="translist">
+        <p>{{ i18n "trans_available" }}</p>
+          {{- /* Output available translation dict $trans */}}
+          <ul>
+          {{- range $lang, $link := $trans }}
+            <li><a href="{{ $link }}">{{ $lang }}</a></li>
+          {{- end }}
+          </ul>
+      </div>
+    </div>
+    {{ end }}
   {{- end }}
 {{- end }}
