@@ -1,0 +1,80 @@
+{
+    "trans_inofficial": {
+        "other": "Sie lesen eine inoffizielle Übersetzung der [Originalseite](%s)."
+    },
+    "toggle_navigation": {
+        "other": "Navigation ein-/ausklappen"
+    },
+    "index_step1": {
+        "other": "Lizenzen wählen und bereitstellen"
+    },
+    "noscript_warning": {
+        "other": "Einige interaktive Funktionen funktionieren nicht, wenn JavaScript deaktiviert ist."
+    },
+    "table_of_contents": {
+        "other": "Inhaltsverzeichnis"
+    },
+    "trans_available": {
+        "other": "Inoffizielle Übersetzungen sind verfügbar in:"
+    },
+    "menu_dev": {
+        "other": "Entwicklung"
+    },
+    "menu_supporters": {
+        "other": "Unterstützer"
+    },
+    "tool_instructions": {
+        "other": "Tool-Anleitung für diesen Schritt"
+    },
+    "menu_spec": {
+        "other": "Spezifikation"
+    },
+    "index_dev_text": {
+        "other": "Die Lizenz eines Projekts legt die Bedingungen fest, unter denen andere eine Software weiterverwenden können. Deshalb sollten Entwicklerinnen und Entwickler dafür sorgen, dass für alle klar ist, welche Teile ihrer Software unter welche Lizenz fallen. REUSE schützt diese Absichten und unterstützt bei diesem Prozess. Unsere [Sektion für Developer](dev/) enthält mehr Informationen über das Tool, die Einbindung in CI/CD-Prozesse und weitere Automatisierungen."
+    },
+    "index_legal_head": {
+        "other": "Lizenz-Compliance"
+    },
+    "warning": {
+        "other": "Warnung:"
+    },
+    "and": {
+        "other": "und"
+    },
+    "menu_tutorial": {
+        "other": "Erste Schritte"
+    },
+    "menu_faq": {
+        "other": "FAQ"
+    },
+    "index_step2": {
+        "other": "Urheberrechts- und Lizenzinformationen für jede Datei hinzufügen"
+    },
+    "menu_resources": {
+        "other": "Ressourcen"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_dev_head": {
+        "other": "Für Entwickelnde"
+    },
+    "index_reuse_text": {
+        "other": "Freie Software ermöglicht es, auf der Arbeit anderer aufzubauen und somit schnell innovativ zu sein. Aber je mehr externe Komponenten verwendet werden, desto schwieriger ist es, den Überblick über die Urheberrechtsinhaber und ihre Lizenzierungsentscheidungen zu behalten. Mit REUSE enthält jede Datei die notwendigen Informationen, und ein Repository enthält transparent alle verwendeten Lizenzen."
+    },
+    "index_intro": {
+        "other": "Wir machen Lizenzierung für Menschen und Maschinen gleichermaßen einfach. Wir lösen ein grundlegendes Problem der Lizenzierung Freier Software direkt an der Quelle: Welche Lizenz hat eine Datei, und wer besitzt das Urheberrecht? **Unsere Empfehlungen sind so einfach wie eins-zwei-drei**!"
+    },
+    "index_step3": {
+        "other": "REUSE-Konformität bestätigen"
+    },
+    "index_rationale": {
+        "other": "Urheberrecht und Lizenzierung sind schwierig, besonders wenn man Software aus verschiedenen Projekten wiederverwendet, die unter verschiedenen Lizenzen veröffentlicht wurden. REUSE wurde von der [Free Software Foundation Europe](https://fsfe.org) (FSFE) ins Leben gerufen, um eine Reihe von Empfehlungen zu geben, die die Lizenzierung von Freie-Software-Projekte erleichtern. Diese Empfehlungen machen es nicht nur für die Ersteller der Software einfacher, die Lizenzen anzugeben, unter denen ihre Werke veröffentlicht werden, sondern sie machen es auch für einen Computer einfacher, zu verstehen, wie ein Projekt einer Drittpartei lizenziert ist."
+    },
+    "index_reuse_head": {
+        "other": "Wiederverwendung leicht gemacht"
+    },
+    "index_legal_text": {
+        "other": "Es gibt viele Tools, die bei der Einhaltung von Lizenzbestimmungen für Software unterstützen, viele davon nutzen Datenbanken und Fuzzy-Heuristiken. Ein REUSE-konformes Projekt erleichtert die Arbeit von Rechtsexpertinnen und Compliance-Beauftragten erheblich. Die Erstellung einer Stückliste (Software Bill of Materials) ist mit einem einfachen Kommdando möglich. REUSE [ersetzt nicht andere Werkzeuge](comparison/), sondern ist eine lang erwartete Ergänzung."
+    }
+}
