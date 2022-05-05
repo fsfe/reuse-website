@@ -2,18 +2,20 @@
     SPDX-License-Identifier: MIT
     SPDX-FileCopyrightText: 2022 Free Software Foundation Europe e.V. <https://fsfe.org>
   --> */ -}}
+{{- /*  Set path of current page correctly  */}}
 {{- $filepath := "/" }}
-{{- $index_translated := os.ReadFile "i18n/.status" }}
 {{- with .File.Path }}{{ $filepath = . }}{{ end }}
-{{- if not (eq .Language.Lang "en") }}
+{{- /*  Read file containing complete index translations  */}}
+{{- $index_translated := "" }}
+{{- if os.FileExists "i18n/.status" }}{{ $index_translated = os.ReadFile "i18n/.status" }}{{ end }}
+{{- if not (eq .Language.Lang "en") }} {{/* NOT ENGLISH */}}
   <div class="alert alert-warning">
     <p>
       {{ replace (i18n "trans_inofficial") "%s" (relref . (dict "path" $filepath "lang" "en")) | markdownify }}
     </p>
   </div>
-{{- else }}
+{{- else }} {{/* ENGLISH */}}
   {{- if .IsTranslated }}
-    {{ $index_translated := os.ReadFile "i18n/.status" }}
     {{- /*  BUILD DICT/MAP OF AVAILABLE TRANSLATIONS  */ -}}
     {{- /* Maximum index of translations (number - 1) */ -}}
     {{- $trans := dict }}
