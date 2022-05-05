@@ -1,0 +1,80 @@
+{
+    "trans_available": {
+        "other": "Neoficiální překlady jsou k dispozici v:"
+    },
+    "menu_resources": {
+        "other": "Zdroje"
+    },
+    "tool_instructions": {
+        "other": "Pokyny pro tento krok"
+    },
+    "toggle_navigation": {
+        "other": "Přepnout navigaci"
+    },
+    "noscript_warning": {
+        "other": "Některé interaktivní funkce nebudou fungovat s vypnutým JavaScriptem."
+    },
+    "table_of_contents": {
+        "other": "Obsah"
+    },
+    "warning": {
+        "other": "Upozornění:"
+    },
+    "trans_inofficial": {
+        "other": "Čtete neoficiální překlad [originální stránky](%s)."
+    },
+    "and": {
+        "other": "a"
+    },
+    "menu_tutorial": {
+        "other": "Začínáme"
+    },
+    "index_step1": {
+        "other": "Vyberte a poskytněte licence"
+    },
+    "index_dev_head": {
+        "other": "Pro vývojáře"
+    },
+    "menu_faq": {
+        "other": "Časté dotazy"
+    },
+    "menu_dev": {
+        "other": "Vývojáři"
+    },
+    "menu_spec": {
+        "other": "Specifikace"
+    },
+    "menu_supporters": {
+        "other": "Podporovatelé"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_step2": {
+        "other": "Přidejte ke každému souboru informace o autorských právech a licencích"
+    },
+    "index_step3": {
+        "other": "Potvrďte soulad s předpisy REUSE"
+    },
+    "index_intro": {
+        "other": "Licencování usnadňujeme lidem i strojům. Řešíme základní problém, který má licencování svobodného softwaru u samého zdroje: pod jakou licencí je soubor licencován a kdo vlastní autorská práva? **Přijetí našich doporučení je snadné jako jedna-dvě-tři**!"
+    },
+    "index_rationale": {
+        "other": "Autorská práva a licence jsou obtížné, zejména při opětovném použití softwaru z různých projektů, které jsou vydávány pod různými licencemi. Projekt REUSE byl založen organizací [Free Software Foundation Europe](https://fsfe.org) (FSFE) s cílem poskytnout soubor doporučení pro usnadnění licencování projektů svobodného softwaru. Tato doporučení vám nejen usnadňují deklarování licencí, pod kterými jsou vaše díla vydávána, ale také usnadňují počítači pochopit, jak je váš projekt licencován."
+    },
+    "index_legal_text": {
+        "other": "Existuje mnoho nástrojů, které vám pomohou s dodržováním licencí pro software, mnohé z nich využívají databáze a fuzzy heuristiku. Projekt, který je v souladu s předpisy REUSE, výrazně usnadňuje práci právním expertům a pracovníkům odpovědným za dodržování předpisů. Vytvoření kusovníku lze dosáhnout jediným jednoduchým příkazem. REUSE [nenahrazuje jiné nástroje](porovnání/), je to dlouho očekávaný doplněk."
+    },
+    "index_reuse_head": {
+        "other": "Znovupoužití je jednoduché"
+    },
+    "index_dev_text": {
+        "other": "Licence vašeho projektu určuje podmínky, za kterých mohou váš software znovu použít ostatní. Proto byste se měli ujistit, že je všem jasné, které části vašeho softwaru podléhají které licenci. REUSE chrání vaše záměry a pomáhá vám v tomto procesu. Podívejte se do naší sekce [nástroje](dev/), kde se dozvíte informace o nástroji, začlenění do procesů CI/CD a další informace."
+    },
+    "index_reuse_text": {
+        "other": "Svobodný software umožňuje stavět na práci jiných, a proto rychle inovovat. Čím více externích komponent však používáte, tím těžší je udržet si přehled o držitelích autorských práv a jejich licenčních rozhodnutích. S REUSE obsahuje každý soubor potřebné informace a vaše repo transparentně obsahuje všechny použité licence."
+    },
+    "index_legal_head": {
+        "other": "Soulad s licencí"
+    }
+}
