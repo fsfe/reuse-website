@@ -13,13 +13,13 @@
     <meta name="author" content="Free Software Foundation Europe">
     <meta name="keywords" content="reuse, free software, open source, foss, floss, license, licensing, copyright, git, tool, automate, easy, git">
 
-    <!-- set title -->
-    {{ $title := "" }}
-    {{- if .IsHome -}}
-        {{- $title = (print .Site.Title " - " .Site.Params.Subtitle) -}}
-    {{- else -}}
-        {{- $title = (print .Title " | " .Site.Title) -}}
-    {{- end -}}
+    {{- /*  set title  */}}
+    {{- $title := "" }}
+    {{- if .IsHome }}
+        {{- $title = (print .Site.Title " - " .Site.Params.Subtitle) }}
+    {{- else }}
+        {{- $title = (print .Title " | " .Site.Title) }}
+    {{- end }}
 
     {{ "<!-- Open Graph meta-data (e.g. Facebook) -->" | safeHTML }}
     <meta property="og:title" content="{{ $title }}"/>
@@ -36,23 +36,26 @@
     <meta name="twitter:image" content="{{ "/img/reuse.png" | absURL }}"/>
     <meta name="twitter:creator" content="@fsfe"/>
 
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-
     <title>{{ $title }}</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    {{- /*  Hash to force reload of static files for each new build  */}}
+    {{- $buildhash := (md5 hugo.BuildDate) }}
 
-    <!-- Custom CSS -->
-    <link href="/css/landing-page.css" rel="stylesheet">
-    <link href="/css/template.css" rel="stylesheet">
-    <link href="/css/share.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/img/favicon.png?v={{ $buildhash }}">
 
-    <!-- Custom Fonts -->
-    <link href="/fonts/roboto/roboto.css" rel="stylesheet">
+    {{- /*  Bootstrap Core CSS  */}}
+    <link href="/css/bootstrap.min.css?v={{ $buildhash }}" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/fonts/fontawesome/css/all.min.css" />
+    {{- /*  Custom CSS  */}}
+    <link href="/css/landing-page.css?v={{ $buildhash }}" rel="stylesheet">
+    <link href="/css/template.css?v={{ $buildhash }}" rel="stylesheet">
+    <link href="/css/share.css?v={{ $buildhash }}" rel="stylesheet">
+    <link href="/css/custom.css?v={{ $buildhash }}" rel="stylesheet">
+
+    {{- /*  Custom Fonts  */}}
+    <link href="/fonts/roboto/roboto.css?v={{ $buildhash }}" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/fonts/fontawesome/css/all.min.css?v={{ $buildhash }}" />
 
 </head>
 <body id="page-top">
