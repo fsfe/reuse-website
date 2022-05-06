@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-05-03 13:16+0000\n"
+"PO-Revision-Date: 2022-05-06 21:15+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/uk/>\n"
@@ -31,18 +31,29 @@ msgstr "Порівняння проєктів ліцензійної відпо�
 #, markdown-text
 msgid "It is easy to get confused by the multitude of initiatives and tools that help with software license compliance. Provided below is a short and incomplete overview of some noteworthy projects."
 msgstr ""
+"Легко заплутатися в безлічі ініціатив та інструментів, які допомагають "
+"дотримуватися ліцензії на програмне забезпечення. Далі наведено короткий і "
+"неповний огляд деяких помітних проєктів."
 
 #. type: Plain text
 #: content/en/comparison.md
 #, markdown-text
 msgid "REUSE does not intend to replace, but rather complement them. We try to solve unclear and missing license and copyright information at the very source. We empower developers to ensure proper and exhaustive licensing of their project."
 msgstr ""
+"REUSE не має наміру замінювати, а скоріше доповнювати їх. Ми намагаємося "
+"допомогти пояснити незрозумілу та відсутню інформацію про ліцензію та "
+"авторські права в самому джерелі. Ми надаємо розробникам можливість "
+"забезпечити належне та вичерпне ліцензування свого проєкту."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 #, markdown-text
 msgid "[**SPDX**](https://spdx.org) is the rock upon which REUSE is built. SPDX defines a standardized way to share copyright and licensing information between projects and people. Read more in [our FAQ](/faq/#what-is-spdx)."
 msgstr ""
+"[**SPDX**](https://spdx.org) — це фундамент, на якому побудовано REUSE. SPDX "
+"визначає стандартизований спосіб обміну відомостями про авторські права та "
+"ліцензування між проєктами та людьми. Докладніше читайте в [наших поширених "
+"запитаннях](/faq/#what-is-spdx)."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
@@ -73,12 +84,16 @@ msgstr "Довідка для розробників"
 #, markdown-text
 msgid "Licensing should be easy for developers. We provide several tools and services to allow you to concentrate on coding."
 msgstr ""
+"Ліцензування має бути простим для розробників. Ми надаємо кілька "
+"інструментів і послуг, які дозволять вам зосередитися на написанні коду."
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Contents: [Helper tool](#tool), [example repositories](#repos), [REUSE API](#api), [CI/CD workflows](#ci)"
 msgstr ""
+"Зміст: [Допоміжний інструмент](#tool), [приклади репозиторіїв](#repos), ["
+"REUSE API](#api), [Робочі процеси CI/CD](#ci)"
 
 #. type: Title ##
 #: content/en/dev.md
