@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-05-06 21:15+0000\n"
+"PO-Revision-Date: 2022-05-07 22:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/uk/>\n"
@@ -112,6 +112,9 @@ msgstr ""
 #, markdown-text
 msgid "Read the [documentation](https://reuse.readthedocs.io) to learn more about the tool. You will also find a [tool section in our FAQ](/faq/#tool) for the most pressing questions."
 msgstr ""
+"Прочитайте [документацію](https://reuse.readthedocs.io), щоб дізнатися "
+"більше про інструмент. Ви також знайдете [розділ інструменту в нашому ЧаПі](/"
+"faq/#tool) з найактуальнішими питаннями."
 
 #. type: Title ##
 #: content/en/dev.md
@@ -136,6 +139,8 @@ msgstr ""
 #, markdown-text
 msgid "Consider registering your project with the [REUSE API](#api) to include a dynamic compliance badge."
 msgstr ""
+"Подумайте про реєстрацію проєкту в [REUSE API](#api), щоб додати відзнаку "
+"динамічної відповідності."
 
 #. type: Title ##
 #: content/en/dev.md
@@ -166,6 +171,8 @@ msgstr ""
 #, markdown-text
 msgid "As everything else in REUSE, the API is [publicly available](https://git.fsfe.org/reuse/api) under Free Software licenses."
 msgstr ""
+"Як і все інше в REUSE, API [загальнодоступний](https://git.fsfe.org/reuse/"
+"api) під ліцензіями вільного програмного забезпечення."
 
 #. type: Title ##
 #: content/en/dev.md
@@ -218,6 +225,8 @@ msgstr ""
 #, markdown-text
 msgid "The FSFE offers a Docker image which can be used in numerous CI solutions. Find a few examples below:"
 msgstr ""
+"FSFE пропонує образ Docker, який можна використовувати в багатьох рішеннях "
+"CI. Знайдіть кілька прикладів нижче:"
 
 #. type: Title ###
 #: content/en/dev.md
@@ -460,6 +469,8 @@ msgstr ""
 #, markdown-text
 msgid "If your company is interested in becoming a REUSE sponsor, [please approach us](/resources/#contact)."
 msgstr ""
+"Якщо ваша компанія зацікавлена стати спонсором REUSE, [будь ласка, "
+"зверніться до нас](/resources/#contact)."
 
 #. type: Plain text
 #: content/en/supporters.md
