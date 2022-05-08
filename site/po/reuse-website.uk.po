@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-05-07 22:16+0000\n"
+"PO-Revision-Date: 2022-05-09 21:18+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/uk/>\n"
@@ -60,18 +60,38 @@ msgstr ""
 #, markdown-text
 msgid "[**ClearlyDefined**](https://clearlydefined.io) collects and displays meta and security information about a large number of projects distributed on different package registries. It also motivates developers and curators to extend data about a project's licensing and copyright situation. REUSE in comparison concentrates on fixing the problem at the file level for individual projects, which in turn will ease ClearlyDefined's efforts."
 msgstr ""
+"[**ClearlyDefined**](https://clearlydefined.io) збирає та показує метадані "
+"та інформацію про безпеку великої кількості проєктів, розподілених у різних "
+"реєстрах пакетів. Це також мотивує розробників і кураторів розширювати дані "
+"про ліцензування проєкту та ситуацію з авторськими правами. REUSE у "
+"порівнянні зосереджено на розв'язанні проблем на рівні файлу для окремих "
+"проєктів, що, своєю чергою, полегшить зусилля ClearlyDefined."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 #, markdown-text
 msgid "[**OpenChain**](https://www.openchainproject.org) focuses on making Free Software license compliance more transparent, predictable, and understandable for participants in the software supply chain. OpenChain recommends REUSE as one component to increase clarity of the licensing and copyright situation, but has higher requirements to achieve full conformance."
 msgstr ""
+"[**OpenChain**](https://www.openchainproject.org) зосереджується на тому, "
+"щоб зробити відповідність ліцензії на вільне програмне забезпечення "
+"прозорішою, передбачуванішою та зрозумілішою для учасників ланцюга "
+"постачання програмного забезпечення. OpenChain рекомендує REUSE як один з "
+"компонентів для спрощення зрозумілості ситуації з ліцензуванням та "
+"авторським правом, але вимогливіший для досягнення повної відповідності."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 #, markdown-text
 msgid "[**FOSSology**](https://www.fossology.org) is a toolkit for Free Software compliance, stores information in a database, and includes license, copyright and export scanners. It is more complex than REUSE and its helper tool and rather optimized for compliance officers and lawyers. REUSE instead intends to have all licensing and copyright information stored in or next to the source files to safeguard this information when reused elsewhere."
 msgstr ""
+"[**FOSSology**](https://www.fossology.org) — це інструментарій для "
+"дотримання відповідності вільному програмному забезпеченню, зберігає дані в "
+"базі даних і включає ліцензійні, авторські права та експортні сканери. Він "
+"складніший, ніж REUSE та його допоміжний засіб, і скоріше оптимізований для "
+"роботи спостерігачів за відповідністю та юристів. Натомість REUSE ставить на "
+"меті, щоб всі дані про ліцензування та авторські права зберігалася у "
+"вихідних файлах або поруч із ними, щоб захистити ці дані за повторного "
+"використання в іншому місці."
 
 #. type: YAML Front Matter: title
 #: content/en/dev.md
@@ -269,6 +289,9 @@ msgstr "GitHub"
 #, markdown-text
 msgid "GitHub users can integrate the REUSE action in their workflow. Visit the [action's marketplace page](https://github.com/marketplace/actions/reuse-compliance-check) for usage instructions."
 msgstr ""
+"Користувачі GitHub можуть інтегрувати дію REUSE у свій робочий процес. "
+"Перейдіть на [сторінку маркету дій](https://github.com/marketplace/actions/"
+"reuse-compliance-check), щоб отримати настанови щодо використання."
 
 #. type: Plain text
 #: content/en/dev.md
