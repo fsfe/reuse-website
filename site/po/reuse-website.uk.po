@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-05-09 21:18+0000\n"
+"PO-Revision-Date: 2022-05-10 15:19+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/uk/>\n"
@@ -126,6 +126,11 @@ msgstr "Допоміжний засіб {#tool}"
 #, markdown-text
 msgid "The [REUSE helper tool](https://git.fsfe.org/reuse/tool) assists with achieving and confirming REUSE compliance. It downloads the full license texts, adds copyright and license information to file headers, and contains a linter to identify problems. Eventually, you can generate a software bill of materials."
 msgstr ""
+"[Допоміжний засіб REUSE](https://git.fsfe.org/reuse/tool) спрощує досягнення "
+"та підтвердження відповідності REUSE. Він завантажує повні тексти ліцензій, "
+"додає відомості про авторські права та ліцензію до заголовків файлів і "
+"містить лінтер для виявлення проблем. Зрештою, ви можете створити програмний "
+"проєкт матеріалів."
 
 #. type: Plain text
 #: content/en/dev.md
@@ -147,12 +152,21 @@ msgstr "Приклад репозиторіїв {#repos}"
 #, markdown-text
 msgid "What does a REUSE-compliant project look like? The following repositories are basic, but each of them is REUSE-compliant. We make them available to demonstrate how REUSE works in practice."
 msgstr ""
+"Як виглядає проєкт, сумісний з REUSE? Ці репозиторії базові, але кожен з них "
+"відповідає REUSE. Ми робимо їх доступними, щоб продемонструвати, як REUSE "
+"працює на практиці."
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "- [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).  - [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant, just like [all other REUSE repositories](https://git.fsfe.org/reuse/)."
 msgstr ""
+"- [reuse-example](https://git.fsfe.org/reuse/example) — репозиторій, "
+"сумісний з REUSE, що показує кілька методів додавання відомостей про "
+"авторські права та ліцензування. Включає невідповідну гілку для тестування. "
+"Цей проєкт — це основа для [нашого підручника](/tutorial).  - [reuse-"
+"tool](https://git.fsfe.org/reuse/tool) — допоміжний інструмент сам сумісний, "
+"як і [всі інші репозиторії REUSE](https://git.fsfe.org/reuse/)."
 
 #. type: Plain text
 #: content/en/dev.md
