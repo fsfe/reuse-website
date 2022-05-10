@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-05-10 15:19+0000\n"
+"PO-Revision-Date: 2022-05-11 18:19+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/uk/>\n"
@@ -187,18 +187,31 @@ msgstr "API {#api}"
 #, markdown-text
 msgid "The [REUSE API](https://api.reuse.software) helps you to continuously check and display compliance with the REUSE guidelines. You can include a badge indicating the live status in your README file, and parse the output using the generated JSON file."
 msgstr ""
+"[REUSE API](https://api.reuse.software) допомагає вам постійно перевіряти та "
+"показувати відповідність настановам REUSE. Ви можете включити відзнаку, що "
+"вказує на поточний стан, у свій файл README і проаналізувати вихідні дані за "
+"допомогою згенерованого файлу JSON."
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "This is how the badge will look like for a REUSE compliant project. You can click on the badge to see more information: [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)"
 msgstr ""
+"Ось який вигляд матиме відзнака для проєкту, сумісного з REUSE. Ви можете "
+"натиснути на неї, щоб побачити більше відомостей: [![ Стан REUSE](https://api"
+".reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/"
+"info/git.fsfe.org/reuse/api)"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "The API is the perfect tool for everyone who wants to show that their repository follows best practices in providing licensing and copyright information. It allows third-party services to integrate the live REUSE status, and offers a simple alternative for people who do not want to install the [REUSE helper tool](#tool) for a first quick check."
 msgstr ""
+"API — це ідеальний засіб для всіх, хто хоче показати, що їхній репозиторій "
+"дотримується найкращих практик у наданні відомостей про ліцензування та "
+"авторські права. Він дає змогу стороннім службам інтегрувати стан REUSE "
+"наживо і пропонує просту альтернативу для людей, які не хочуть встановлювати "
+"допоміжний [засіб REUSE](#tool) для першої швидкої перевірки."
 
 #. type: Plain text
 #: content/en/dev.md
@@ -219,6 +232,10 @@ msgstr "Pre-commit hook {#pre-commit-hook}"
 #, markdown-text
 msgid "You can automatically run `reuse lint` on every commit as a pre-commit hook for Git. This uses [pre-commit](https://pre-commit.com/). Once you [have it installed](https://pre-commit.com/#install), add this to the `.pre-commit-config.yaml` in your repository:"
 msgstr ""
+"Ви можете автоматично запускати `reuse lint` під час кожного коміту як хук "
+"передкоміту для Git. Для цього використовується [pre-commit](https://pre-"
+"commit.com/). Після того, як ви [встановите його](https://pre-commit.com/"
+"#install), додайте `.pre-commit-config.yaml` до вашого репозиторію:"
 
 #. type: Fenced code block (yaml)
 #: content/en/dev.md
@@ -241,6 +258,9 @@ msgstr ""
 #, markdown-text
 msgid "Then run `pre-commit install`. Now, every time you commit, `reuse lint` is run in the background, and will prevent your commit from going through if there was an error."
 msgstr ""
+"Потім запустіть `pre-commit install`. Тепер за кожного коміту `reuse lint` "
+"запускається у фоновому режимі, і не дозволить вашому коміту виконатися, "
+"якщо сталася помилка."
 
 #. type: Title ##
 #: content/en/dev.md
@@ -253,6 +273,8 @@ msgstr "Включення в робочі процеси CI/CD {#ci}"
 #, markdown-text
 msgid "REUSE can be easily integrated into your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance."
 msgstr ""
+"REUSE можна легко інтегрувати у ваші наявні процеси CI/CD, щоб постійно "
+"тестувати ваш репозиторій та його зміни на відповідність вимогам REUSE."
 
 #. type: Plain text
 #: content/en/dev.md
@@ -404,6 +426,9 @@ msgstr "Ресурси"
 #, markdown-text
 msgid "You have already explored parts of the REUSE universe and would like to go one step further? Read more background, get in touch with the community and help us spread the word!"
 msgstr ""
+"Ви вже досліджували частини всесвіту REUSE і хотіли б зробити наступний "
+"крок? Прочитайте більше інформації, зв’яжіться зі спільнотою та допоможіть "
+"нам поширити інформацію!"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -415,6 +440,15 @@ msgid ""
 "  list](https://lists.fsfe.org/mailman/listinfo/reuse) to get to know other\n"
 "  users, and influence the way REUSE evolves.\n"
 msgstr ""
+"{{< component fa=\"fas fa-users\" headline=\"Долучайтеся\" id=\"contact\" >}}"
+"\n"
+"  Так само як і вільне програмне забезпечення, проєкт REUSE існує завдяки "
+"спільноті й\n"
+"  людям, які підтримують і застосовують його. Станьте його частиною, "
+"приєднавшись до\n"
+"  [ списку розсилання](https://lists.fsfe.org/mailman/listinfo/reuse), щоб "
+"познайомитися з іншими\n"
+"  користувачами та впливати на розвиток REUSE.\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -424,6 +458,9 @@ msgid ""
 "  Mehl](https://fsfe.org/about/people/mehl/).\n"
 "{{< /component >}}\n"
 msgstr ""
+"  Якщо ви хочете зв'язатися безпосередньо з координаторами REUSE,\n"
+"зверніться до [Max Mehl](https://fsfe.org/about/people/mehl/).\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -437,6 +474,17 @@ msgid ""
 "  the understanding about licensing and copyright.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-rocket\" headline=\"REUSE Booster\">}}\n"
+"  Щоб допомогти ще більшій кількості проєктів перейняти найкращі практики "
+"REUSE, ми ініціювали\n"
+"  [REUSE Booster](/booster/). Це програма, в якій можуть зареєструватися "
+"проєкти вільного\n"
+"  програмного забезпечення для отримання допомоги експертів з ліцензування "
+"FSFE.\n"
+"  Семінарами, індивідуальними оцінками та доступною прямою допомогою, ми "
+"поліпшуємо\n"
+"  розуміння ліцензування та авторського права.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -450,6 +498,14 @@ msgid ""
 "  the most important discussions.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-info-circle\" headline=\"Останні новини\">}}\n"
+"  REUSE швидко розвивається завдяки своїй активній спільноті. Читайте\n"
+"  [останні офіційні новини](https://fsfe.org/tags/tagged-reuse.html).\n"
+"  Обов'язково підпишіться на [список\n"
+"  розсилання](https://lists.fsfe.org/mailman/listinfo/reuse), щоб бути в "
+"курсі\n"
+"  найважливіших обговорень.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -462,6 +518,12 @@ msgid ""
 "  projects](/comparison) we collaborate with and their specifics.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-exchange-alt\" headline=\"Схожі ініціативи\">}}\n"
+"  Існує багато ініціатив, які працюють над відповідності ліцензій вільного\n"
+"  програмного забезпечення. REUSE допомагає у цій роботі, але не замінює\n"
+"  засоби й найкращі практики перевірки відповідності. Перегляньте [інші\n"
+"  проєкти](/comparison), з якими ми співпрацюємо, та їхні особливості.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
