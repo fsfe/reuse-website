@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-05-11 18:19+0000\n"
+"PO-Revision-Date: 2022-05-17 07:18+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.1\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #. type: YAML Front Matter: title
 #: content/en/comparison.md
@@ -538,6 +538,17 @@ msgid ""
 "  server](https://download.fsfe.org/videos/reuse/).\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"far fa-comments\" headline=\"Поширення інформації\">}}\n"
+"  Чим більше проєктів розуміють і застосовують REUSE, тим простіше повторне\n"
+"  користування програмним забезпеченням для всіх. Не соромтеся "
+"користуватися\n"
+"  готовим матеріалом для поширення інформації. [REUSE graphics](https://git."
+"fsfe.org/reuse/reuse-ci/)\n"
+"  може використовуватися за ліцензією Creative Commons. Різні версії та "
+"формати\n"
+"  файлів відео REUSE безпосередньо [доступні на нашому сервері\n"
+"  завантаження](https://download.fsfe.org/videos/reuse/).\n"
+"{{< /component >}}\n"
 
 #. type: YAML Front Matter: title
 #: content/en/supporters.md
@@ -550,6 +561,11 @@ msgstr "Прихильники"
 #, markdown-text
 msgid "We are grateful for everyone who supports REUSE. The ever-growing ecosystem of specification, documentation, helper tool, API and a lot more demands time and funds. Thanks to volunteers, cooperating organisations and projects, as well as corporate sponsors, REUSE can constantly evolve and improve."
 msgstr ""
+"Ми вдячні всім, хто підтримує REUSE. Постійно розширювана екосистема "
+"специфікацій, документації, допоміжного засобу, API та інше вимагає часу та "
+"коштів. Завдяки волонтерам, організаціям і проєктам, які з нами "
+"співпрацюють, а також корпоративним спонсорам, REUSE може постійно "
+"розвиватися і вдосконалюватися."
 
 #. type: Title ##
 #: content/en/supporters.md
@@ -562,6 +578,10 @@ msgstr "Корпоративні спонсори"
 #, markdown-text
 msgid "We kindly invite companies to adopt and support REUSE. As standardised and simple best practices for declaring copyright and licensing information largely improve internal compliance processes, we are happy if corporate actors contribute back to REUSE."
 msgstr ""
+"Ми запрошуємо компанії приймати та підтримувати REUSE. Оскільки "
+"стандартизовані та прості найкращі методи зазначення даних про авторські "
+"права та ліцензування значно покращують внутрішні процеси дотримання вимог, "
+"ми раді, якщо корпоративні суб’єкти зроблять свій внесок у REUSE."
 
 #. type: Plain text
 #: content/en/supporters.md
