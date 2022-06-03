@@ -1,0 +1,80 @@
+{
+    "noscript_warning": {
+        "other": "Algunas funciones interactivas no funcionarán con JavaScript desactivado."
+    },
+    "table_of_contents": {
+        "other": "Índice de contenidos"
+    },
+    "toggle_navigation": {
+        "other": "Alternar la navegación"
+    },
+    "tool_instructions": {
+        "other": "Instrucciones para este paso"
+    },
+    "warning": {
+        "other": "Atención:"
+    },
+    "trans_inofficial": {
+        "other": "Está leyendo una traducción no oficial de la [página original](%s)."
+    },
+    "trans_available": {
+        "other": "Las traducciones oficiales están disponibles en:"
+    },
+    "and": {
+        "other": "y"
+    },
+    "menu_tutorial": {
+        "other": "Empezar"
+    },
+    "menu_faq": {
+        "other": "FAQ"
+    },
+    "menu_dev": {
+        "other": "Desarrolladores"
+    },
+    "menu_resources": {
+        "other": "Recursos"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_step1": {
+        "other": "Elegir y proporcionar licencias"
+    },
+    "index_step2": {
+        "other": "Agregar información de derechos de autor y licencias a cada archivo"
+    },
+    "index_step3": {
+        "other": "Confirmar el cumplimiento de REUSE"
+    },
+    "menu_supporters": {
+        "other": "Partidarios"
+    },
+    "index_intro": {
+        "other": "Facilitamos la obtención de licencias tanto para humanos como para máquinas. Resolvemos un problema fundamental que las licencias de Software Libre tienen en su origen: ¿bajo qué licencia se licencia un archivo y quién posee los derechos de autor? **¡Adoptar nuestras recomendaciones es tan fácil como uno-dos-tres**!"
+    },
+    "menu_spec": {
+        "other": "Especificación"
+    },
+    "index_dev_head": {
+        "other": "Para desarrolladores"
+    },
+    "index_dev_text": {
+        "other": "La licencia de su proyecto establece los términos bajo los cuales otros pueden reutilizar su software. Es por eso que debe asegurarse de que quede claro para todos qué partes de su software están bajo qué licencia. REUSE salvaguarda sus intenciones y le ayuda en este proceso. Eche un vistazo a nuestra [sección de herramientas](dev/) para obtener más información sobre la herramienta, la inclusión en los procesos de CI/CD y más."
+    },
+    "index_reuse_head": {
+        "other": "Reutilización simplificada"
+    },
+    "index_reuse_text": {
+        "other": "El Software Libre le permite construir sobre el trabajo de otros y, por lo tanto, innovar rápidamente. Pero cuantos más componentes externos utilice, más difícil será mantener una visión general de los titulares de los derechos de autor y sus opciones de licencia. Con REUSE, cada archivo contiene la información necesaria y su repositorio contiene de forma transparente todas las licencias usadas."
+    },
+    "index_legal_head": {
+        "other": "Cumplimiento de licencia"
+    },
+    "index_rationale": {
+        "other": "Los derechos de autor y las licencias son difíciles, especialmente cuando se reutiliza software de diferentes proyectos que están publicadas bajo varias licencias diferentes. REUSE lo inició la [Free Software Foundation Europe](https://fsfe.org) (FSFE) para proporcionar un conjunto de recomendaciones para facilitar la obtención de licencias de sus proyectos de software libre. Estas recomendaciones no solo le facilitan declarar las licencias bajo las cuales se publican sus obras, sino que también facilitan que un ordenador entienda cómo se licencia su proyecto."
+    },
+    "index_legal_text": {
+        "other": "Hay muchas herramientas que le ayudan a cumplir con las licencias de software, muchas de ellas utilizan bases de datos y heurísticas difusas. Un proyecto compatible con REUSE facilita mucho el trabajo de los expertos legales y de los funcionarios. La creación de una lista de materiales se puede lograr con solo un comando simple. REUSE [no reemplaza otras herramientas](comparison/), es una adición muy esperada."
+    }
+}

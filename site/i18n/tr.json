@@ -1,0 +1,80 @@
+{
+    "trans_inofficial": {
+        "other": "Şu anda [orijinal sayfa](%s)'nin resmi olmayan bir çevirisini okumaktasınız."
+    },
+    "and": {
+        "other": "ve"
+    },
+    "index_step3": {
+        "other": "REUSE uygunluğunu onaylayın"
+    },
+    "index_rationale": {
+        "other": "Telif hakkı ve lisanslama, özellikle çeşitli farklı lisanslar altında yayınlanan farklı projelerden yazılımı yeniden kullanırken zordur. REUSE, [Free Software Foundation Europe] (https://fsfe.org) (FSFE) tarafından Özgür Yazılım projelerinizin lisanslanmasını kolaylaştırmak için bir dizi öneri sağlamak amacıyla başlatılmıştır. Bu öneriler yalnızca çalışmalarınızın hangi lisanslar altında yayınlandığını beyan etmenizi kolaylaştırmakla kalmaz, aynı zamanda bir bilgisayarın projenizin nasıl lisanslandığını anlamasını da kolaylaştırır."
+    },
+    "index_dev_text": {
+        "other": "Projenizin lisansı, başkalarının yazılımınızı hangi şartlar altında yeniden kullanabileceğini belirler. Bu nedenle, yazılımınızın hangi bölümlerinin hangi lisans altında olduğunun herkes için açık olduğundan emin olmalısınız. REUSE niyetinizi korur ve bu süreçte size yardımcı olur. Araç, CI/CD süreçlerine dahil etme ve daha fazlası hakkında bilgi edinmek için [araçlar bölümümüze](dev/) bir göz atın."
+    },
+    "noscript_warning": {
+        "other": "Bazı etkileşimli özellikler JavaScript devre dışı bırakıldığında çalışmayacaktır."
+    },
+    "menu_dev": {
+        "other": "Geliştiriciler"
+    },
+    "menu_spec": {
+        "other": "Şartname"
+    },
+    "menu_resources": {
+        "other": "Kaynaklar"
+    },
+    "menu_supporters": {
+        "other": "Destekçiler"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_step1": {
+        "other": "Lisansları seçin ve sağlayın"
+    },
+    "index_legal_text": {
+        "other": "Yazılım lisans uyumluluğu konusunda size yardımcı olacak, birçoğu veri tabanları ve bulanık sezgisel yöntemler kullanan birçok araç bulunmaktadır. REUSE uyumlu bir proje, hukuk uzmanlarının ve uyumluluk görevlilerinin işlerini çok daha kolaylaştırır. Bir malzeme listesi oluşturmak tek bir basit komutla gerçekleştirilebilir. REUSE [diğer araçların yerini almaz] (karşılaştırma/), uzun zamandır beklenen bir eklentidir."
+    },
+    "table_of_contents": {
+        "other": "İçindekiler"
+    },
+    "warning": {
+        "other": "Uyarı:"
+    },
+    "menu_tutorial": {
+        "other": "Başlayın"
+    },
+    "menu_faq": {
+        "other": "SSS"
+    },
+    "index_step2": {
+        "other": "Her dosyaya telif hakkı ve lisans bilgilerini ekleyin"
+    },
+    "index_dev_head": {
+        "other": "Geliştiriciler için"
+    },
+    "index_reuse_head": {
+        "other": "Yeniden kullanım basitleştirildi"
+    },
+    "index_reuse_text": {
+        "other": "Özgür Yazılım, başkalarının çalışmalarının üzerine inşa etmenize ve dolayısıyla hızlı bir şekilde yenilik yapmanıza olanak tanır. Ancak ne kadar çok harici bileşen kullanırsanız, telif hakkı sahiplerini ve lisanslama seçeneklerini gözden geçirmek o kadar zorlaşır. REUSE ile her dosya gerekli bilgileri içerir ve reponuz şeffaf bir şekilde kullanılan tüm lisansları içerir."
+    },
+    "index_legal_head": {
+        "other": "Lisans uyumluluğu"
+    },
+    "toggle_navigation": {
+        "other": "Gezintiyi aç/kapat"
+    },
+    "tool_instructions": {
+        "other": "Bu adım için alet talimatları"
+    },
+    "index_intro": {
+        "other": "Lisanslamayı hem insanlar hem de makineler için kolaylaştırıyoruz. Özgür Yazılım lisanslamasının en temel sorununu kaynağında çözüyoruz: bir dosya hangi lisans altında lisanslanmıştır ve telif hakkı kime aittir? **Önerilerimizi benimsemek bir-iki-üç** kadar kolay!"
+    },
+    "trans_available": {
+        "other": "Resmi olmayan çeviriler şurada mevcuttur:"
+    }
+}
