@@ -1,1 +1,80 @@
-{}
+{
+    "menu_dev": {
+        "other": "Développeurs"
+    },
+    "index_reuse_head": {
+        "other": "La réutilisation en toute simplicité"
+    },
+    "noscript_warning": {
+        "other": "Certaines fonctions interactives ne fonctionneront pas si JavaScript est désactivé."
+    },
+    "table_of_contents": {
+        "other": "Table des matières"
+    },
+    "toggle_navigation": {
+        "other": "Développer/masquer la navigation"
+    },
+    "tool_instructions": {
+        "other": "Instructions relatives aux outils pour cette étape"
+    },
+    "warning": {
+        "other": "Avertissement :"
+    },
+    "trans_inofficial": {
+        "other": "Vous lisez une traduction non officielle de la [original page](%s)."
+    },
+    "trans_available": {
+        "other": "Des traductions non officielles sont disponibles en :"
+    },
+    "and": {
+        "other": "et"
+    },
+    "menu_tutorial": {
+        "other": "Premiers pas"
+    },
+    "menu_faq": {
+        "other": "FAQ"
+    },
+    "menu_spec": {
+        "other": "Spécification"
+    },
+    "menu_supporters": {
+        "other": "Soutiens"
+    },
+    "index_step1": {
+        "other": "Choisir et fournir des licences"
+    },
+    "index_step3": {
+        "other": "Confirmer la conformité de REUSE"
+    },
+    "index_dev_head": {
+        "other": "Pour les développeurs"
+    },
+    "index_dev_text": {
+        "other": "La licence de votre projet définit les conditions dans lesquelles les autres peuvent réutiliser votre logiciel. C'est pourquoi vous devez vous assurer qu'il est clair pour tout le monde quelles parties de votre logiciel sont sous quelle licence. REUSE protège vos intentions et vous aide dans ce processus. Jetez un coup d'œil à notre [section outils] (dev/) pour en savoir plus sur l'outil, l'inclusion dans les processus CI/CD, et plus encore."
+    },
+    "index_reuse_text": {
+        "other": "Les logiciels libres vous permettent de construire sur le travail des autres et donc d'innover rapidement. Mais plus vous utilisez de composants externes, plus il est difficile de garder une vue d'ensemble des détenteurs de droits d'auteur et de leurs choix de licence. Avec REUSE, chaque fichier contient les informations nécessaires, et votre dépôt contient de manière transparente toutes les licences utilisées."
+    },
+    "index_legal_text": {
+        "other": "Il existe de nombreux outils qui vous aident à assurer la conformité des licences pour les logiciels, dont beaucoup utilisent des bases de données et des heuristiques floues. Un projet conforme à REUSE facilite grandement le travail des experts juridiques et des responsables de la conformité. La création d'une nomenclature peut être réalisée avec une seule commande simple. REUSE [ne remplace pas les autres outils] (comparaison/), c'est un complément attendu depuis longtemps."
+    },
+    "menu_resources": {
+        "other": "Ressources"
+    },
+    "index_rationale": {
+        "other": "Les droits d'auteur et les licences sont difficiles, surtout lorsqu'il s'agit de réutiliser des logiciels provenant de différents projets et publiés sous différentes licences. REUSE a été lancé par la [Free Software Foundation Europe] (https://fsfe.org) (FSFE) pour fournir un ensemble de recommandations visant à faciliter l'octroi de licences pour vos projets de logiciels libres. Non seulement ces recommandations vous permettent de déclarer plus facilement les licences sous lesquelles vos travaux sont publiés, mais elles permettent également à un ordinateur de comprendre plus facilement comment votre projet est licencié."
+    },
+    "index_legal_head": {
+        "other": "Conformité des licences"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_intro": {
+        "other": "Nous rendons la concession de licences facile pour les humains comme pour les machines. Nous résolvons un problème fondamental que les licences de logiciels libres ont à la racine : sous quelle licence un fichier est-il licencié, et qui détient le droit d'auteur ? **L'adoption de nos recommandations est simple comme bonjour** !"
+    },
+    "index_step2": {
+        "other": "Ajouter des informations sur les droits d'auteur et les licences à chaque fichier"
+    }
+}
