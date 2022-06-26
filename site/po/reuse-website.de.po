@@ -6,14 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-06-27 14:20+0000\n"
+"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #. type: YAML Front Matter: title
 #: content/en/comparison.md
@@ -26,6 +30,10 @@ msgstr ""
 #, markdown-text
 msgid "It is easy to get confused by the multitude of initiatives and tools that help with software license compliance. Provided below is a short and incomplete overview of some noteworthy projects."
 msgstr ""
+"Die Vielzahl von Initiativen und Werkzeugen, die bei der Einhaltung von "
+"Softwarelizenzen helfen, kann leicht verwirrend sein. Im Folgenden finden "
+"Sie einen kurzen und unvollständigen Überblick über einige bemerkenswerte "
+"Projekte."
 
 #. type: Plain text
 #: content/en/comparison.md
@@ -38,6 +46,10 @@ msgstr ""
 #, markdown-text
 msgid "[**SPDX**](https://spdx.org) is the rock upon which REUSE is built. SPDX defines a standardized way to share copyright and licensing information between projects and people. Read more in [our FAQ](/faq/#what-is-spdx)."
 msgstr ""
+"[**SPDX**](https://spdx.org) ist der Felsen, auf dem REUSE aufgebaut ist. "
+"SPDX definiert ein standardisiertes Verfahren zum Austausch von "
+"Urheberrechts- und Lizenzinformationen zwischen Projekten und Personen. "
+"Lesen Sie mehr in [unserer FAQ](/faq/#what-is-spdx)."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
