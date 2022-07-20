@@ -6,145 +6,226 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2020-08-19 14:34+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-07-23 09:57+0000\n"
+"Last-Translator: eulalio <eulalio@disroot.org>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #. type: YAML Front Matter: title
 #: content/en/comparison.md
 #, no-wrap
 msgid "Comparison of license compliance projects"
-msgstr ""
+msgstr "Comparación de proyectos de cumplimiento de licencias"
 
 #. type: Plain text
 #: content/en/comparison.md
 msgid "It is easy to get confused by the multitude of initiatives and tools that help with software license compliance. Provided below is a short and incomplete overview of some noteworthy projects."
 msgstr ""
+"Es fácil confundirse con la multitud de iniciativas y herramientas que "
+"ayudan con el cumplimiento de las licencias de software. A continuación se "
+"proporciona una descripción breve e incompleta de algunos proyectos dignos "
+"de mención."
 
 #. type: Plain text
 #: content/en/comparison.md
 msgid "REUSE does not intend to replace, but rather complement them. We try to solve unclear and missing license and copyright information at the very source. We empower developers to ensure proper and exhaustive licensing of their project."
 msgstr ""
+"REUSE no pretende sustituirlos, sino complementarlos. Tratamos de resolver "
+"información poco clara y nula de licencias y copyright en la misma fuente. "
+"Capacitamos a los desarrolladores para asegurarse una licencia adecuada y "
+"exhaustiva de su proyecto."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 msgid "[**SPDX**](https://spdx.org) is the rock upon which REUSE is built. SPDX defines a standardized way to share copyright and licensing information between projects and people. Read more in [our FAQ](/faq/#what-is-spdx)."
 msgstr ""
+"[**SPDX**](https://spdx.org) es la base sobre la que se apoya REUSE. SPDX "
+"define una forma estandarizada de compartir información de derechos de autor "
+"y licencias entre proyectos y personas. Más información en [FAQ](/faq/#what-"
+"is-spdx)."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 msgid "[**ClearlyDefined**](https://clearlydefined.io) collects and displays meta and security information about a large number of projects distributed on different package registries. It also motivates developers and curators to extend data about a project's licensing and copyright situation. REUSE in comparison concentrates on fixing the problem at the file level for individual projects, which in turn will ease ClearlyDefined's efforts."
 msgstr ""
+"[**ClearlyDefined**](https://clearlydefined.io) recopila y muestra metadatos "
+"e información de seguridad sobre una gran cantidad de proyectos distribuidos "
+"en diferentes registros de paquetes. También motiva a los desarrolladores y "
+"conservadores a ampliar los datos sobre la situación de las licencias y los "
+"derechos de autor de un proyecto. REUSE, en comparación, se concentra en "
+"solucionar el problema a nivel de archivo para proyectos individuales, lo "
+"que a su vez facilitará los esfuerzos de ClearlyDefined."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 msgid "[**OpenChain**](https://www.openchainproject.org) focuses on making Free Software license compliance more transparent, predictable, and understandable for participants in the software supply chain. OpenChain recommends REUSE as one component to increase clarity of the licensing and copyright situation, but has higher requirements to achieve full conformance."
 msgstr ""
+"[**OpenChain**](https://www.openchainproject.org) se enfoca en hacer que el "
+"cumplimiento de las licencias de Software Libre sea más transparente, "
+"predecible y comprensible para los participantes en la cadena de suministro "
+"de software. OpenChain recomienda REUSE como un componente para aumentar la "
+"claridad de la situación de las licencias y los derechos de autor, pero "
+"tiene requisitos más estrictos para lograr la conformidad total."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 msgid "[**FOSSology**](https://www.fossology.org) is a toolkit for Free Software compliance, stores information in a database, and includes license, copyright and export scanners. It is more complex than REUSE and its helper tool and rather optimized for compliance officers and lawyers. REUSE instead intends to have all licensing and copyright information stored in or next to the source files to safeguard this information when reused elsewhere."
 msgstr ""
+"[**FOSSology**](https://www.fossology.org) es un conjunto de herramientas "
+"para el cumplimiento del Software Libre, almacena información en una base de "
+"datos e incluye escáneres de licencias, derechos de autor y exportación. Es "
+"más complejo que REUSE y su herramienta de ayuda y está más bien optimizado "
+"para los agentes de la ley y abogados. REUSE, en cambio, intentatener toda "
+"la información de licencias y derechos de autor almacenada en o junto a los "
+"archivos de origen para salvaguardar esta información cuando se reutilice en "
+"otro lugar."
 
 #. type: YAML Front Matter: title
 #: content/en/dev.md
 #, no-wrap
 msgid "Help for developers"
-msgstr ""
+msgstr "Ayuda para desarrolladores"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "Licensing should be easy for developers. We provide several tools and services to allow you to concentrate on coding."
 msgstr ""
+"La creación de licencias debería ser fácil para los desarrolladores. "
+"Ofrecemos varias herramientas y servicios que le permiten concentrarse en la "
+"codificación."
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "Contents: [Helper tool](#tool), [example repositories](#repos), [REUSE API](#api), [CI/CD workflows](#ci)"
 msgstr ""
+"Contenido: [herramienta auxiliar](#tool), [repositorios de ejemplo](#repos), "
+"[REUSE API](#api), [flujos de trabajo de CI/CD](#ci)"
 
 #. type: Title ##
 #: content/en/dev.md
 #, no-wrap
 msgid "Helper Tool {#tool}"
-msgstr ""
+msgstr "Herramienta de Ayuda {#tool}"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "The [REUSE helper tool](https://git.fsfe.org/reuse/tool) assists with achieving and confirming REUSE compliance. It downloads the full license texts, adds copyright and license information to file headers, and contains a linter to identify problems. Eventually, you can generate a software bill of materials."
 msgstr ""
+"La [herramienta de ayuda REUSE] (https://git.fsfe.org/reuse/tool) ayuda a "
+"lograr y confirmar el cumplimiento de REUSE. Descarga los textos completos "
+"de la licencia, agrega información de derechos de autor y licencia a los "
+"encabezados de los archivos y contiene un filtro para identificar problemas. "
+"Eventualmente, puede generar una lista de materiales de software."
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "Read the [documentation](https://reuse.readthedocs.io) to learn more about the tool. You will also find a [tool section in our FAQ](/faq/#tool) for the most pressing questions."
 msgstr ""
+"Lea la [documentación](https://reuse.readthedocs.io) para tener más "
+"información sobre la herramienta. También encontrará una [sección de "
+"herramientas en nuestras FAQ](/faq/#tool) para las dudas más urgentes."
 
 #. type: Title ##
 #: content/en/dev.md
 #, no-wrap
 msgid "Example repositories {#repos}"
-msgstr ""
+msgstr "Ejemplos de repositorios {#repos}"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "What does a REUSE-compliant project look like? The following repositories are basic, but each of them is REUSE-compliant. We make them available to demonstrate how REUSE works in practice."
 msgstr ""
+"¿Cómo es un proyecto compatible con REUSE? Los siguientes repositorios son "
+"básicos, pero cada uno de ellos es compatible con REUSE. Los ponemos a su "
+"disposición para demostrar cómo funciona REUSE en la práctica."
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "- [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).  - [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant, just like [all other REUSE repositories](https://git.fsfe.org/reuse/)."
 msgstr ""
+"- [reuse-example](https://git.fsfe.org/reuse/example) - un repositorio "
+"compatible con REUSE que muestra algunos métodos para agregar información de "
+"derechos de autor y licencias. Incluye una rama no conforme para pruebas. "
+"Este proyecto es la base de [nuestro tutorial](/tutorial).  - [reuse-"
+"tool](https://git.fsfe.org/reuse/tool) - la herramienta auxiliar en sí es "
+"compatible, al igual que [todos los demás repositorios REUSE](https://git."
+"fsfe.org/reuse/ )."
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "Consider registering your project with the [REUSE API](#api) to include a dynamic compliance badge."
 msgstr ""
+"Considere registrar su proyecto con [REUSE API](#api) para incluir una "
+"insignia de cumplimiento dinámico."
 
 #. type: Title ##
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "API {#api}"
-msgstr ""
+msgstr "API {#api}"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "The [REUSE API](https://api.reuse.software) helps you to continuously check and display compliance with the REUSE guidelines. You can include a badge indicating the live status in your README file, and parse the output using the generated JSON file."
 msgstr ""
+"La [API de REUSE](https://api.reuse.software) ayuda a verificar y mostrar "
+"continuamente el cumplimiento de las pautas de REUSE. Puede incluir una "
+"insignia que indique el estado atual en su archivo README, y analizar la "
+"salida utilizando el archivo JSON generado."
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "This is how the badge will look like for a REUSE compliant project. You can click on the badge to see more information: [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)"
 msgstr ""
+"Así es como se verá la insignia para un proyecto compatible con REUSE. Puede "
+"hacer clic en la insignia para ver más información: [![REUSE "
+"status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)] (https://"
+"api.reuse. software/info/git.fsfe.org/reuse/api)"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "The API is the perfect tool for everyone who wants to show that their repository follows best practices in providing licensing and copyright information. It allows third-party services to integrate the live REUSE status, and offers a simple alternative for people who do not want to install the [REUSE helper tool](#tool) for a first quick check."
 msgstr ""
+"La API es la herramienta perfecta para todos los que quieran mostrar que su "
+"repositorio sigue las mejores prácticas para proporcionar información sobre "
+"licencias y derechos de autor. Permite que los servicios de terceros "
+"integren el estado de REUSE en vivo y ofrece una alternativa simple para las "
+"personas que no desean instalar la [herramienta auxiliar REUSE](#tool) para "
+"una primera comprobación rápida."
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "As everything else in REUSE, the API is [publicly available](https://git.fsfe.org/reuse/api) under Free Software licenses."
 msgstr ""
+"Como todo en REUSE, la API está [disponible públicamente](https://git.fsfe."
+"org/reuse/api) bajo licencias de Software Libre."
 
 #. type: Title ##
 #: content/en/dev.md
 #, no-wrap
 msgid "Pre-commit hook {#pre-commit-hook}"
-msgstr ""
+msgstr "Enlace de acuerdo previo {#pre-commit-hook}"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "You can automatically run `reuse lint` on every commit as a pre-commit hook for Git. This uses [pre-commit](https://pre-commit.com/). Once you [have it installed](https://pre-commit.com/#install), add this to the `.pre-commit-config.yaml` in your repository:"
 msgstr ""
+"Puede ejecutar automáticamente `reuse lint` en cada confirmación como un "
+"enlace previo a la confirmación para Git. Esto usa [precommit](https://pre-"
+"commit.com/). Una vez que [lo haya instalado] (https://pre-commit.com/"
+"#install), agregue esto a `.pre-commit-config.yaml` en su repositorio:"
 
 #. type: Fenced code block (yaml)
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "repos:\n"
 "-   repo: https://github.com/fsfe/reuse-tool\n"
@@ -152,33 +233,46 @@ msgid ""
 "    hooks:\n"
 "    - id: reuse\n"
 msgstr ""
+"repos:\n"
+"-   repo: https://github.com/fsfe/reuse-tool\n"
+"    rev: v1.0.0\n"
+"    hooks:\n"
+"    - id: reuse\n"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "Then run `pre-commit install`. Now, every time you commit, `reuse lint` is run in the background, and will prevent your commit from going through if there was an error."
 msgstr ""
+"Luego ejecute `pre-commit install`. Ahora, cada vez que escriba, `reuse lint`"
+" se ejecuta en segundo plano y evitará que se realice la confirmación si "
+"hubo un error."
 
 #. type: Title ##
 #: content/en/dev.md
 #, no-wrap
 msgid "Inclusion in CI/CD workflows {#ci}"
-msgstr ""
+msgstr "Inclusión en flujos de trabajo de CI/CD {#ci}"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "REUSE can be easily integrated into your existing CI/CD processes to continuously test your repository and its changes for REUSE compliance."
 msgstr ""
+"REUSE se puede integrar fácilmente en sus procesos de CI/CD existentes para "
+"probar continuamente su repositorio y sus cambios para el cumplimiento de "
+"REUSE."
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "The FSFE offers a Docker image which can be used in numerous CI solutions. Find a few examples below:"
 msgstr ""
+"La FSFE ofrece una imagen de Docker que se puede utilizar en numerosas "
+"soluciones de CI. Vea algunos ejemplos a continuación:"
 
 #. type: Title ###
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Drone"
-msgstr ""
+msgstr "Drone"
 
 #. type: Plain text
 #: content/en/dev.md
