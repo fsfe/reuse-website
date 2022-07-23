@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-07-23 09:57+0000\n"
+"PO-Revision-Date: 2022-07-25 11:22+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -277,52 +277,60 @@ msgstr "Drone"
 #. type: Plain text
 #: content/en/dev.md
 msgid "Include the following snippet in your `.drone.yml` file:"
-msgstr ""
+msgstr "Incluya el siguiente snippet en su archivo `.drone.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "steps:\n"
 "- name: reuse\n"
 "  image: fsfe/reuse:latest\n"
 msgstr ""
+"steps:\n"
+"- name: reuse\n"
+"  image: fsfe/reuse:latest\n"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "More information about Drone on [drone.io](https://drone.io)."
-msgstr ""
+msgstr "Más información sobre Drone en [drone.io](https://drone.io)."
 
 #. type: Title ###
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "GitHub users can integrate the REUSE action in their workflow. Visit the [action's marketplace page](https://github.com/marketplace/actions/reuse-compliance-check) for usage instructions."
 msgstr ""
+"Los usuarios de GitHub pueden integrar la acción REUSE en su flujo de "
+"trabajo. Visite la [página marketplace](https://github.com/marketplace/"
+"actions/reuse-compliance-check) para instrucciones de uso."
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "More information about GitHub Actions on [help.github.com](https://help.github.com/en/actions/automating-your-workflow-with-github-actions)."
 msgstr ""
+"Más información sobre GitHub Actions en [help.github.com](https://help.github"
+".com/en/actions/automating-your-workflow-with-github-actions)."
 
 #. type: Title ###
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "GitLab"
-msgstr ""
+msgstr "GitLab"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "Include the following snippet in your `.gitlab-ci.yml` file:"
-msgstr ""
+msgstr "Incluya el siguiente snippet en su archivo `.gitlab-ci.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "reuse:\n"
 "  image:\n"
@@ -331,26 +339,34 @@ msgid ""
 "  script:\n"
 "    - reuse lint\n"
 msgstr ""
+"reuse:\n"
+"  image:\n"
+"    name: fsfe/reuse:latest\n"
+"    entrypoint: [\"\"]\n"
+"  script:\n"
+"    - reuse lint\n"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "More information about GitLab's CI on [docs.gitlab.com](https://docs.gitlab.com/ce/ci/quick_start/)."
 msgstr ""
+"Más información sobre el CI de GitLab en [docs.gitlab.com](https://docs."
+"gitlab.com/ce/ci/quick_start/)."
 
 #. type: Title ###
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Travis CI"
-msgstr ""
+msgstr "Travis CI"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "Include the following snippet in your `.travis.yml` file:"
-msgstr ""
+msgstr "Incluya el siguiente snippet en su archivo `.travis.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "language: minimal\n"
 "\n"
@@ -361,22 +377,34 @@ msgid ""
 "- docker pull fsfe/reuse:latest\n"
 "- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 msgstr ""
+"language: minimal\n"
+"\n"
+"services:\n"
+"  - docker\n"
+"\n"
+"before_install:\n"
+"- docker pull fsfe/reuse:latest\n"
+"- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 
 #. type: Plain text
 #: content/en/dev.md
 msgid "More information on Travis CI on [travis-ci.com](https://travis-ci.com)."
 msgstr ""
+"Más información sobre Travis CI en [travis-ci.com](https://travis-ci.com)."
 
 #. type: YAML Front Matter: title
 #: content/en/resources.md
 #, no-wrap
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #. type: Plain text
 #: content/en/resources.md
 msgid "You have already explored parts of the REUSE universe and would like to go one step further? Read more background, get in touch with the community and help us spread the word!"
 msgstr ""
+"¿Ya ha explorado partes del universo REUSE y le gustaría dar un paso más? "
+"Lea más antecedentes, póngase en contacto con la comunidad y ayúdenos a "
+"correr la voz."
 
 #. type: Plain text
 #: content/en/resources.md
@@ -388,6 +416,14 @@ msgid ""
 "  list](https://lists.fsfe.org/mailman/listinfo/reuse) to get to know other\n"
 "  users, and influence the way REUSE evolves.\n"
 msgstr ""
+"{{< component fa=\"fas fa-users\" headline=\"Ponte en contacto\" id=\"contact"
+"\" >}}\n"
+"  Al igual que el Software Libre, el proyecto REUSE se basa en su comunidad "
+"y en las\n"
+"  personas que lo apoyan y lo adoptan. Forma parte de ella uniéndote a la ["
+"mailing\n"
+"  list](https://lists.fsfe.org/mailman/listinfo/reuse) para conocer a otros\n"
+"   usuarios e influir en la forma en que evoluciona REUSE.\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -397,6 +433,10 @@ msgid ""
 "  Mehl](https://fsfe.org/about/people/mehl/).\n"
 "{{< /component >}}\n"
 msgstr ""
+"  Si deseas contactar directamente con los coordinadores de REUSE, visite ["
+"Max\n"
+"  Mehl](https://fsfe.org/about/people/mehl/).\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -479,9 +519,9 @@ msgstr ""
 
 #. type: Plain text
 #: content/en/supporters.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "{{< supporters >}}\n"
-msgstr ""
+msgstr "{{< supporters >}}\n"
 
 #, no-wrap
 #~ msgid "What is SPDX? {#what-is-spdx}"
