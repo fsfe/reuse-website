@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-07-25 11:22+0000\n"
+"PO-Revision-Date: 2022-07-27 12:19+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -450,6 +450,16 @@ msgid ""
 "  the understanding about licensing and copyright.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-rocket\" headline=\"REUSE Booster\">}}\n"
+"  Para ayudar a que aún más proyectos adopten las mejores prácticas REUSE, "
+"hemos iniciado\n"
+"  [REUSE Booster](/booster/). Este es un programa en el que los proyectos de "
+"Software\n"
+"  Libre pueden registrarse para recibir ayuda de los expertos en licencias "
+"de la FSFE. Con\n"
+"  talleres, evaluaciones individuales y asistencia directa impulsamos\n"
+"  la comprensión sobre licencias y derechos de autor.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -463,6 +473,15 @@ msgid ""
 "  the most important discussions.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-info-circle\" headline=\"Latest news\">}}\n"
+"  REUSE evoluciona rápidamente gracias a su comunidad activa. Echa un "
+"vistazo a las\n"
+"  [últimas noticias oficiales](https://fsfe.org/tags/tagged-reuse.html). "
+"Asegúrese\n"
+"  también de suscribirse al [mailing\n"
+"  list](https://lists.fsfe.org/mailman/listinfo/reuse) para estar al día\n"
+"  con las discusiones más importantes.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -475,6 +494,16 @@ msgid ""
 "  projects](/comparison) we collaborate with and their specifics.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-exchange-alt\" headline=\"Similar initiatives\">}}"
+"\n"
+"  Hay muchas iniciativas trabajando en licenciamiento y compliance de "
+"Software Libre.\n"
+"   REUSE contribuye a este esfuerzo pero no reemplaza las herramientas y "
+"las\n"
+"  mejores prácticas en otros lugares de la cadena de cumplimiento. Echa un "
+"vistazo a los[otros\n"
+"  proyectos](/comparison) con los que colaboramos y sus detalles.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -489,33 +518,57 @@ msgid ""
 "  server](https://download.fsfe.org/videos/reuse/).\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"far fa-comments\" headline=\"Spread the word\">}}\n"
+"  Cuantos más proyectos entiendan y adopten REUSE, más fácil será el uso y "
+"la reutilización\n"
+"  del software para todos. Por favor, siéntase libre de usar material listo "
+"para correr\n"
+"  la voz. Los [gráficos REUSE](https://git.fsfe.org/reuse/reuse-ci/) se "
+"pueden usar\n"
+"  bajo una licencia Creative Commons. Las diferentes versiones y formatos\n"
+"  de archivo del video REUSE están directamente [disponibles en nuestro "
+"servidor\n"
+"  de descarga](https://download.fsfe.org/videos/reuse/).\n"
+"{{< /component >}}\n"
 
 #. type: YAML Front Matter: title
 #: content/en/supporters.md
 #, no-wrap
 msgid "Supporters"
-msgstr ""
+msgstr "Seguidores"
 
 #. type: Plain text
 #: content/en/supporters.md
 msgid "We are grateful for everyone who supports REUSE. The ever-growing ecosystem of specification, documentation, helper tool, API and a lot more demands time and funds. Thanks to volunteers, cooperating organisations and projects, as well as corporate sponsors, REUSE can constantly evolve and improve."
 msgstr ""
+"Agradecenos a todos los que apoyan REUSE. El ecosistema en constante "
+"crecimiento de especificaciones, documentación, herramientas auxiliares, API "
+"y mucho más exige tiempo y dinero. Gracias a voluntarios, organizaciones y "
+"proyectos cooperantes, así como patrocinadores corporativos, REUSE puede "
+"evolucionar y mejorar constantemente."
 
 #. type: Title ##
 #: content/en/supporters.md
 #, no-wrap
 msgid "Corporate Sponsors"
-msgstr ""
+msgstr "Patrocinadores Corporativos"
 
 #. type: Plain text
 #: content/en/supporters.md
 msgid "We kindly invite companies to adopt and support REUSE. As standardised and simple best practices for declaring copyright and licensing information largely improve internal compliance processes, we are happy if corporate actors contribute back to REUSE."
 msgstr ""
+"Invitamos amablemente a las empresas a adoptar y apoyar REUSE. Como las "
+"mejores prácticas estandarizadas y simples para declarar la información de "
+"derechos de autor y licencias mejoran en gran medida los procesos de "
+"cumplimiento interno, nos complace que los actores corporativos contribuyan "
+"a REUSE."
 
 #. type: Plain text
 #: content/en/supporters.md
 msgid "If your company is interested in becoming a REUSE sponsor, [please approach us](/resources/#contact)."
 msgstr ""
+"Si su empresa está interesada en convertirse en patrocinador de REUSE, [por "
+"favor visítenos](/resources/#contact)."
 
 #. type: Plain text
 #: content/en/supporters.md
