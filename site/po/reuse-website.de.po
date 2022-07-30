@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-06-27 14:20+0000\n"
+"PO-Revision-Date: 2022-07-31 14:18+0000\n"
 "Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/de/>\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #. type: YAML Front Matter: title
 #: content/en/comparison.md
 #, no-wrap
 msgid "Comparison of license compliance projects"
-msgstr ""
+msgstr "Vergleich von Lizenzkonformitätsprojekten"
 
 #. type: Plain text
 #: content/en/comparison.md
@@ -40,6 +40,10 @@ msgstr ""
 #, markdown-text
 msgid "REUSE does not intend to replace, but rather complement them. We try to solve unclear and missing license and copyright information at the very source. We empower developers to ensure proper and exhaustive licensing of their project."
 msgstr ""
+"REUSE möchte diese nicht ersetzen, sondern ergänzen. Wir versuchen, unklare "
+"und fehlende Lizenz- und Urheberrechtsinformationen direkt an der Quelle zu "
+"klären. Wir ermöglichen Entwicklern eine ordentliche und umfassende "
+"Lizenzierung ihres Projekts."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
@@ -56,72 +60,116 @@ msgstr ""
 #, markdown-text
 msgid "[**ClearlyDefined**](https://clearlydefined.io) collects and displays meta and security information about a large number of projects distributed on different package registries. It also motivates developers and curators to extend data about a project's licensing and copyright situation. REUSE in comparison concentrates on fixing the problem at the file level for individual projects, which in turn will ease ClearlyDefined's efforts."
 msgstr ""
+"[**ClearlyDefined**](https://clearlydefined.io) sammelt und listet Meta- und "
+"Sicherheitsinformationen von vielen Projekten von unterschiedlichen "
+"Paketregistern. Es motiviert auch Entwickler und Kuratoren, die Angaben über "
+"Lizenz- und Urheberrechtssituation eines Projekts zu erweitern. REUSE "
+"hingegen konzentriert sich darauf, das Problem auf Dateiebene für einzelne "
+"Projekte zu beheben, was wiederum die Arbeit von ClearlyDefined erleichtern "
+"wird."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 #, markdown-text
 msgid "[**OpenChain**](https://www.openchainproject.org) focuses on making Free Software license compliance more transparent, predictable, and understandable for participants in the software supply chain. OpenChain recommends REUSE as one component to increase clarity of the licensing and copyright situation, but has higher requirements to achieve full conformance."
 msgstr ""
+"[**OpenChain**](https://www.openchainproject.org) konzentriert sich darauf, "
+"die Einhaltung von Lizenzen für Freie Software transparenter, vorhersehbarer "
+"und verständlicher für die Teilnehmer der Software-Lieferkette zu machen. "
+"OpenChain empfiehlt REUSE als eine Komponente zur Verbesserung der Klarheit "
+"der Lizenz- und Urheberrechtssituation, stellt jedoch höhere Anforderungen, "
+"um eine vollständige Konformität zu erreichen."
 
 #. type: Bullet: '* '
 #: content/en/comparison.md
 #, markdown-text
 msgid "[**FOSSology**](https://www.fossology.org) is a toolkit for Free Software compliance, stores information in a database, and includes license, copyright and export scanners. It is more complex than REUSE and its helper tool and rather optimized for compliance officers and lawyers. REUSE instead intends to have all licensing and copyright information stored in or next to the source files to safeguard this information when reused elsewhere."
 msgstr ""
+"[**FOSSology**](https://www.fossology.org) ist ein Toolkit für die "
+"Regelkonformität Freier Software, speichert Informationen in einer Datenbank "
+"und umfasst Lizenz-, Copyright- und Export-Scanner. Es ist komplexer als "
+"REUSE und sein Hilfswerkzeug und mehr für Konformitätsbeauftragte und "
+"Anwälte konzipiert. REUSE beabsichtigt stattdessen, dass alle Lizenz- und "
+"Urheberrechtsinformationen in oder bei den Quelldateien gespeichert werden, "
+"um diese Informationen zu schützen, wenn sie an anderer Stelle "
+"wiederverwendet werden."
 
 #. type: YAML Front Matter: title
 #: content/en/dev.md
 #, no-wrap
 msgid "Help for developers"
-msgstr ""
+msgstr "Hilfe für Entwickler"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Licensing should be easy for developers. We provide several tools and services to allow you to concentrate on coding."
 msgstr ""
+"Lizenzierung sollte für Entwickler einfach sein. Wir bieten mehrere "
+"Werkzeuge und Dienste an, damit Sie sich auf das Programmieren konzentrieren "
+"können."
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Contents: [Helper tool](#tool), [example repositories](#repos), [REUSE API](#api), [CI/CD workflows](#ci)"
 msgstr ""
+"Inhalte: [Hilfswerkzeug](#tool), [Beispiel-Repositories](#repos), [REUSE "
+"API](#api), [CI/CD-Workflows](#ci)"
 
 #. type: Title ##
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Helper Tool {#tool}"
-msgstr ""
+msgstr "Hilfswerkzeug {#tool}"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "The [REUSE helper tool](https://git.fsfe.org/reuse/tool) assists with achieving and confirming REUSE compliance. It downloads the full license texts, adds copyright and license information to file headers, and contains a linter to identify problems. Eventually, you can generate a software bill of materials."
 msgstr ""
+"Das [REUSE-Hilfswerkzeug](https://git.fsfe.org/reuse/tool) hilft beim "
+"Erzielen und Bestätigen der REUSE-Konformität. Es lädt die vollständigen "
+"Lizenztexte herunter, fügt Dateiköpfen Urheberrechts- und "
+"Lizenzinformationen hinzu und enthält einen Linter, um Probleme zu erkennen. "
+"Anschließend können Sie eine Software-Stückliste erstellen."
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Read the [documentation](https://reuse.readthedocs.io) to learn more about the tool. You will also find a [tool section in our FAQ](/faq/#tool) for the most pressing questions."
 msgstr ""
+"Lesen Sie die [Dokumentation](https://reuse.readthedocs.io), um mehr über "
+"das Werkzeug zu erfahren. Sie finden auch einen [Werkzeug-Abschnitt in "
+"unserer FAQ](/faq/#tool) für die dringendsten Fragen."
 
 #. type: Title ##
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Example repositories {#repos}"
-msgstr ""
+msgstr "Beispiel-Repositories {#repos}"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "What does a REUSE-compliant project look like? The following repositories are basic, but each of them is REUSE-compliant. We make them available to demonstrate how REUSE works in practice."
 msgstr ""
+"Wie sieht ein REUSE-konformes Projekt aus? Die folgenden Repositories sind "
+"einfach, aber jedes von ihnen ist REUSE-kompatibel. Wir stellen sie zur "
+"Verfügung, um zu zeigen, wie REUSE in der Praxis funktioniert."
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "- [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant repository showing a few methods to add copyright and licensing information. Includes a non-compliant branch for testing. This project is the basis for [our tutorial](/tutorial).  - [reuse-tool](https://git.fsfe.org/reuse/tool) - the helper tool itself is compliant, just like [all other REUSE repositories](https://git.fsfe.org/reuse/)."
 msgstr ""
+"- [reuse-example](https://git.fsfe.org/reuse/example) - ein REUSE-konformes "
+"Repository, das einige Methoden zum Hinzufügen von Urheberrechts- und "
+"Lizenzierungsinformationen zeigt. Enthält einen unkonformen Branch zum "
+"Testen. Dieses Projekt ist die Grundlage für [unser Tutorial](/tutorial).  - "
+"[reuse-tool](https://git.fsfe.org/reuse/tool) - das Hilfswerkzeug selbst ist "
+"REUSE-konform, genau wie [alle anderen REUSE-Repositories](https://git.fsfe."
+"org/reuse/)."
 
 #. type: Plain text
 #: content/en/dev.md
@@ -133,7 +181,7 @@ msgstr ""
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "API {#api}"
-msgstr ""
+msgstr "API {#api}"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -205,18 +253,20 @@ msgstr ""
 #, markdown-text
 msgid "The FSFE offers a Docker image which can be used in numerous CI solutions. Find a few examples below:"
 msgstr ""
+"Die FSFE bietet ein Docker-Image an, das in verschiedenen CI-Lösungen "
+"verwendet werden kann. Einige Beispiele finden Sie unten:"
 
 #. type: Title ###
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Drone"
-msgstr ""
+msgstr "Drone"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Include the following snippet in your `.drone.yml` file:"
-msgstr ""
+msgstr "Fügen Sie folgenden Ausschnitt in Ihre `.drone.yml`-Datei ein:"
 
 #. type: Fenced code block
 #: content/en/dev.md
@@ -231,37 +281,43 @@ msgstr ""
 #: content/en/dev.md
 #, markdown-text
 msgid "More information about Drone on [drone.io](https://drone.io)."
-msgstr ""
+msgstr "Weitere Informationen über Drone auf [drone.io](https://drone.io)."
 
 #. type: Title ###
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "GitHub users can integrate the REUSE action in their workflow. Visit the [action's marketplace page](https://github.com/marketplace/actions/reuse-compliance-check) for usage instructions."
 msgstr ""
+"GitHub-Nutzende können die REUSE-Action in ihren Workflow integrieren. "
+"Besuchen Sie die [Marketplace-Seite der Action](https://github.com/"
+"marketplace/actions/reuse-compliance-check) für Gebrauchsanweisungen."
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "More information about GitHub Actions on [help.github.com](https://help.github.com/en/actions/automating-your-workflow-with-github-actions)."
 msgstr ""
+"Weitere Informationen zu GitHub-Actions finden Sie unter [help.github."
+"com](https://help.github.com/en/actions/automating-your-workflow-with-github-"
+"actions)."
 
 #. type: Title ###
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "GitLab"
-msgstr ""
+msgstr "GitLab"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Include the following snippet in your `.gitlab-ci.yml` file:"
-msgstr ""
+msgstr "Fügen Sie folgenden Ausschnitt in Ihre `.gitlab-ci.yml`-Datei ein:"
 
 #. type: Fenced code block
 #: content/en/dev.md
@@ -280,18 +336,20 @@ msgstr ""
 #, markdown-text
 msgid "More information about GitLab's CI on [docs.gitlab.com](https://docs.gitlab.com/ce/ci/quick_start/)."
 msgstr ""
+"Weitere Informationen zu GitLabs CI finden Sie unter [docs.gitlab."
+"com](https://docs.gitlab.com/ce/ci/quick_start/)."
 
 #. type: Title ###
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Travis CI"
-msgstr ""
+msgstr "Travis CI"
 
 #. type: Plain text
 #: content/en/dev.md
 #, markdown-text
 msgid "Include the following snippet in your `.travis.yml` file:"
-msgstr ""
+msgstr "Fügen Sie folgenden Ausschnitt in Ihre `.travis.yml`-Datei ein:"
 
 #. type: Fenced code block
 #: content/en/dev.md
@@ -312,18 +370,23 @@ msgstr ""
 #, markdown-text
 msgid "More information on Travis CI on [travis-ci.com](https://travis-ci.com)."
 msgstr ""
+"Weitere Informationen zu Travis CI unter [travis-ci.com](https://travis-ci."
+"com)."
 
 #. type: YAML Front Matter: title
 #: content/en/resources.md
 #, no-wrap
 msgid "Resources"
-msgstr ""
+msgstr "Ressourcen"
 
 #. type: Plain text
 #: content/en/resources.md
 #, markdown-text
 msgid "You have already explored parts of the REUSE universe and would like to go one step further? Read more background, get in touch with the community and help us spread the word!"
 msgstr ""
+"Sie haben bereits Teile des REUSE-Universums erkundet und möchten einen "
+"Schritt weiter gehen? Lesen Sie mehr über die Hintergründe, treten Sie mit "
+"der Community in Kontakt und helfen Sie uns, das Thema zu verbreiten!"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -344,6 +407,10 @@ msgid ""
 "  Mehl](https://fsfe.org/about/people/mehl/).\n"
 "{{< /component >}}\n"
 msgstr ""
+"  Wenn Sie die REUSE-Koordinatoren direkt kontaktieren möchten, wenden Sie "
+"sich bitte an [Max\n"
+"  Mehl](https://fsfe.org/about/people/mehl/).\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -401,31 +468,43 @@ msgstr ""
 #: content/en/supporters.md
 #, no-wrap
 msgid "Supporters"
-msgstr ""
+msgstr "Unterstützer"
 
 #. type: Plain text
 #: content/en/supporters.md
 #, markdown-text
 msgid "We are grateful for everyone who supports REUSE. The ever-growing ecosystem of specification, documentation, helper tool, API and a lot more demands time and funds. Thanks to volunteers, cooperating organisations and projects, as well as corporate sponsors, REUSE can constantly evolve and improve."
 msgstr ""
+"Wir sind dankbar für alle, die REUSE unterstützen. Das ständig wachsende "
+"Ökosystem aus Spezifikationen, Dokumentation, Hilfswerkzeugen, API und "
+"vielem mehr erfordert Zeit und Geld. Dank Freiwilligen, kooperierenden "
+"Organisationen und Projekten sowie Unternehmenssponsoren kann sich REUSE "
+"ständig weiterentwickeln und verbessern."
 
 #. type: Title ##
 #: content/en/supporters.md
 #, markdown-text, no-wrap
 msgid "Corporate Sponsors"
-msgstr ""
+msgstr "Unternehmenssponsoren"
 
 #. type: Plain text
 #: content/en/supporters.md
 #, markdown-text
 msgid "We kindly invite companies to adopt and support REUSE. As standardised and simple best practices for declaring copyright and licensing information largely improve internal compliance processes, we are happy if corporate actors contribute back to REUSE."
 msgstr ""
+"Wir laden Unternehmen herzlich ein, REUSE zu übernehmen und zu unterstützen. "
+"Da standardisierte und einfache Best Practices für die Angabe von "
+"Urheberrechts- und Lizenzierungsinformationen die internen "
+"Konformitätsprozesse erheblich verbessern, freuen wir uns, wenn Unternehmen "
+"einen Beitrag zu REUSE leisten."
 
 #. type: Plain text
 #: content/en/supporters.md
 #, markdown-text
 msgid "If your company is interested in becoming a REUSE sponsor, [please approach us](/resources/#contact)."
 msgstr ""
+"Wenn Ihr Unternehmen daran interessiert ist, ein REUSE-Sponsor zu werden, ["
+"wenden Sie sich bitte an uns](/resources/#contact)."
 
 #. type: Plain text
 #: content/en/supporters.md
