@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-07-31 14:18+0000\n"
+"PO-Revision-Date: 2022-08-28 13:23+0000\n"
 "Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #. type: YAML Front Matter: title
 #: content/en/comparison.md
@@ -206,12 +206,14 @@ msgstr ""
 #, markdown-text
 msgid "As everything else in REUSE, the API is [publicly available](https://git.fsfe.org/reuse/api) under Free Software licenses."
 msgstr ""
+"Wie alles andere in REUSE ist auch die API [öffentlich verfügbar](https://git"
+".fsfe.org/reuse/api) unter Freie-Software-Lizenzen."
 
 #. type: Title ##
 #: content/en/dev.md
 #, markdown-text, no-wrap
 msgid "Pre-commit hook {#pre-commit-hook}"
-msgstr ""
+msgstr "Pre-Commit-Hook {#pre-commit-hook}"
 
 #. type: Plain text
 #: content/en/dev.md
