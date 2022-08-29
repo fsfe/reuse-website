@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-07-31 14:18+0000\n"
+"PO-Revision-Date: 2022-08-30 10:18+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #. type: YAML Front Matter: title
 #: content/en/comparison.md
@@ -225,7 +225,7 @@ msgstr ""
 
 #. type: Fenced code block (yaml)
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "repos:\n"
 "-   repo: https://github.com/fsfe/reuse-tool\n"
@@ -233,10 +233,10 @@ msgid ""
 "    hooks:\n"
 "    - id: reuse\n"
 msgstr ""
-"repos:\n"
-"-   repo: https://github.com/fsfe/reuse-tool\n"
-"    rev: v1.0.0\n"
-"    hooks:\n"
+"repos: \n"
+"-   repo: https://github.com/fsfe/reuse-tool \n"
+"    rev: v1.0.0 \n"
+"    hooks: \n"
 "    - id: reuse\n"
 
 #. type: Plain text
@@ -281,14 +281,14 @@ msgstr "Incluya el siguiente snippet en su archivo `.drone.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "steps:\n"
 "- name: reuse\n"
 "  image: fsfe/reuse:latest\n"
 msgstr ""
-"steps:\n"
-"- name: reuse\n"
+"steps: \n"
+"- name: reuse \n"
 "  image: fsfe/reuse:latest\n"
 
 #. type: Plain text
