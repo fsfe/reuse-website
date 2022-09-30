@@ -1,0 +1,18 @@
+# Terms of usage
+
+You may use the FSFE logo as part of the logo of your local FSFE group or FSFE
+team and to promote activities your group or team organizes. For example, if
+your local FSFE group runs a booth, you may use the logo.
+
+Furthermore, at events not organized by the FSFE directly or a local FSFE group,
+speakers representing the FSFE may use the logo to clearly show the affiliation
+of the speaker. That does not mean you can use the logo in a way that makes it
+seem as if the FSFE is endorsing the event.
+
+Generally, the logo of the FSFE must never be used in a way that could be
+understood as endorsing certain activities, home pages, products or entities not
+organized by an FSFE team or local group, unless you get prior consent from the
+FSFE. If in doubt, please contact <contact@fsfe.org> if you wish to know whether
+your intended usage is suitable and whether you can use it in a certain context.
+
+Also see: https://fsfe.org/about/graphics/
