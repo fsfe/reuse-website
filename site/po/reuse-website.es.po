@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2022-04-29 13:55+0200\n"
-"PO-Revision-Date: 2022-08-30 10:18+0000\n"
-"Last-Translator: eulalio <eulalio@disroot.org>\n"
+"PO-Revision-Date: 2022-10-10 17:59+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: YAML Front Matter: title
 #: content/en/comparison.md
@@ -168,9 +168,9 @@ msgstr ""
 
 #. type: Title ##
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "API {#api}"
-msgstr "API {#api}"
+msgstr "APLICACIÓN {#aplicación}"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -270,9 +270,9 @@ msgstr ""
 
 #. type: Title ###
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Drone"
-msgstr "Drone"
+msgstr "Teledirigido"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -298,7 +298,7 @@ msgstr "Más información sobre Drone en [drone.io](https://drone.io)."
 
 #. type: Title ###
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "GitHub"
 msgstr "GitHub"
 
@@ -319,7 +319,7 @@ msgstr ""
 
 #. type: Title ###
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "GitLab"
 msgstr "GitLab"
 
@@ -330,7 +330,7 @@ msgstr "Incluya el siguiente snippet en su archivo `.gitlab-ci.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "reuse:\n"
 "  image:\n"
@@ -339,12 +339,12 @@ msgid ""
 "  script:\n"
 "    - reuse lint\n"
 msgstr ""
-"reuse:\n"
-"  image:\n"
-"    name: fsfe/reuse:latest\n"
-"    entrypoint: [\"\"]\n"
+"reutilización:\n"
+"  imagen:\n"
+"    nombre: fsfe/reutilizar:último\n"
+"    punto de entrada: [\"\"]\n"
 "  script:\n"
-"    - reuse lint\n"
+"    - reutilizar lint\n"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -355,9 +355,9 @@ msgstr ""
 
 #. type: Title ###
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Travis CI"
-msgstr "Travis CI"
+msgstr "Travis integración continua"
 
 #. type: Plain text
 #: content/en/dev.md
@@ -366,7 +366,7 @@ msgstr "Incluya el siguiente snippet en su archivo `.travis.yml`:"
 
 #. type: Fenced code block
 #: content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "language: minimal\n"
 "\n"
@@ -377,12 +377,12 @@ msgid ""
 "- docker pull fsfe/reuse:latest\n"
 "- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 msgstr ""
-"language: minimal\n"
+"idioma: mínimo\n"
 "\n"
-"services:\n"
+"servicios:\n"
 "  - docker\n"
 "\n"
-"before_install:\n"
+"antes_de_la_instalación:\n"
 "- docker pull fsfe/reuse:latest\n"
 "- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 
@@ -402,9 +402,9 @@ msgstr "Recursos"
 #: content/en/resources.md
 msgid "You have already explored parts of the REUSE universe and would like to go one step further? Read more background, get in touch with the community and help us spread the word!"
 msgstr ""
-"¿Ya ha explorado partes del universo REUSE y le gustaría dar un paso más? "
-"Lea más al respecto, póngase en contacto con la comunidad y ayúdenos a "
-"correr la voz."
+"¿Ya ha explorado partes del universo REUSE y le gustaría ir un paso más "
+"allá? ¡Lea más antecedentes, póngase en contacto con la comunidad y ayúdenos "
+"a correr la voz!"
 
 #. type: Plain text
 #: content/en/resources.md
@@ -572,9 +572,9 @@ msgstr ""
 
 #. type: Plain text
 #: content/en/supporters.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "{{< supporters >}}\n"
-msgstr "{{< supporters >}}\n"
+msgstr "{{< partidarios >}}\n"
 
 #, no-wrap
 #~ msgid "What is SPDX? {#what-is-spdx}"
