@@ -61,7 +61,7 @@ steps:
         path: /run/user/1001/docker.sock
     when:
       branch:
-        - master
+        - main
       event:
         - push
         - tag
