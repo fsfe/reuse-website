@@ -24,8 +24,8 @@ spread the word!
  Software projects the opportunity to reach out to us and receive help 
  by the FSFE’s licensing experts. Our REUSE Booster team is also 
  actively reaching out to projects. With individual assessments and 
- direct technical assistance, we boost the understanding about 
- licensing and copyright. 
+ direct technical assistance, we boost the communication of 
+ licensing and copyright information. 
 {{< /component >}}
 
 {{< component fa="fas fa-info-circle" headline="Latest news">}}

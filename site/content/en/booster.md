@@ -26,25 +26,23 @@ number of Free Software projects to resolve legal issues and become REUSE
 compliant, for example as a consortium member of the [Next Generation Internet
 Zero (NGI0) project](https://fsfe.org/activities/ngi/).
 
-Equipped with this experience, we will support the accepted projects to
-implement copyright and licensing best practices that will help them as well as
-their users and re-users.
+Equipped with this experience, we will keep supporting projects to 
+implement copyright and licensing best practices that will help them as 
+well as their users and re-users. 
 
-Our REUSE booster team is actively approaching projects to guide them 
-in the journey of making their projects REUSE compliant by first having 
-a clear understanding of their workflow and policies. REUSE Booster 
-seeks to create a closer interaction between owner/maintainer of 
-projects and our REUSE booster team, in which the ultimate goal is to 
-help with the implementation of REUSE specifications in the smoothest 
-way possible.
+Our REUSE Booster team is actively approaching projects to guide them 
+in the journey of making their projects REUSE compliant. With 
+individual assesments and direct assistance, we aim to boost the 
+displaying of unambiguous and perfectly human- and machine-readable 
+licensing and copyright information.
 
 If you are interested in implementing REUSE in your project, and you are 
-seeking support by our REUSE booster team, don't hesitate to reach us
-throughout our [mailing list](https://lists.fsfe.org/mailman/listinfo/reuse)
+seeking the support of our REUSE Booster team, don't hesitate to reach us
+through our [mailing list](https://lists.fsfe.org/mailman/listinfo/reuse).
 
 As result of our close interaction and support in the framework of 
-REUSE Booster, projects such as [curl](https://github.com/curl/curl), 
-[GNUHealth](https://hg.savannah.gnu.org/hgweb/health-hmis-client/) and 
+REUSE Booster, projects such as [curl](https://curl.se/), 
+[GNU Health](https://gnuhealth.org/) and 
 [cosmoscout-vr](https://github.com/cosmoscout/cosmoscout-vr) from DLR 
 (German Aerospace Center), among others, have become REUSE compliant. 
 We will be happy to help you joining them! 
