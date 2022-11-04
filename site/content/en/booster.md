@@ -28,26 +28,23 @@ Zero (NGI0) project](https://fsfe.org/activities/ngi/).
 
 Equipped with this experience, we will support the accepted projects to
 implement copyright and licensing best practices that will help them as well as
-their users and re-users. Here is what you'll get:
+their users and re-users.
 
-1. The projects' contact persons will be invited to a kick-off workshop
-   in which the whole process is explained and the most frequently
-   questions will be handled.
-2. You will receive an evaluation made by our team that identifies
-   potential challenges in your project, and recommendations how to
-   solve them.
-3. With the above and a concise information bundle, you should be able to
-   make your repositories REUSE compliant.
-4. If you run into troubles, you can reach out to the REUSE team at any
-   stage.
-5. As soon as your repository is REUSE compliant, we will give you
-   practical guidance on how to maintain this status and inform your
-   contributors of your best practices.
+Our REUSE booster team is actively approaching projects to guide them 
+in the journey of making their projects REUSE compliant by first having 
+a clear understanding of their workflow and policies. REUSE Booster 
+seeks to create a closer interaction between owner/maintainer of 
+projects and our REUSE booster team, in which the ultimate goal is to 
+help with the implementation of REUSE specifications in the smoothest 
+way possible.
 
-## Registration {#registration}
+If you are interested in implementing REUSE in your project, and you are 
+seeking support by our REUSE booster team, don't hesitate to reach us
+throughout our [mailing list](https://lists.fsfe.org/mailman/listinfo/reuse)
 
-Registration for the first round has been open between 8 June and 14 July 2021.
-We are currently helping the selected projects.
-
-If you need help with becoming REUSE compliant, please join the [community
-mailing list](/resources/#contact) and just ask. We are happy to assist!
+As result of our close interaction and support in the framework of 
+REUSE Booster, projects such as [curl](https://github.com/curl/curl), 
+[GNUHealth](https://hg.savannah.gnu.org/hgweb/health-hmis-client/) and 
+[cosmoscout-vr](https://github.com/cosmoscout/cosmoscout-vr) from DLR 
+(German Aerospace Center), among others, have become REUSE compliant. 
+We will be happy to help you joining them! 

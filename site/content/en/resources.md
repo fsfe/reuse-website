@@ -10,21 +10,22 @@ step further? Read more background, get in touch with the community and help us
 spread the word!
 
 {{< component fa="fas fa-users" headline="Get in touch" id="contact" >}}
-  Just like Free Software, the REUSE project is based on its community and the
-  people who support and adopt it. Become part of it by joining the [mailing
-  list](https://lists.fsfe.org/mailman/listinfo/reuse) to get to know other
-  users, and influence the way REUSE evolves.
-
-  If you wish to contact the REUSE coordinators directly, please approach [Max
-  Mehl](https://fsfe.org/about/people/mehl/).
+ Just like Free Software, the REUSE project is based on its community 
+ and the people who support and adopt it. Become part of it by joining 
+ the [mailing list](https://lists.fsfe.org/mailman/listinfo/reuse) to 
+ get to know other users, and influence the way REUSE evolves. 
+ Likewise, you can directly contact the REUSE coordinators throughout 
+ our mailing list.
 {{< /component >}}
 
 {{< component fa="fas fa-rocket" headline="REUSE Booster">}}
-  To help even more projects adopt the REUSE best practices, we have initiated
-  [REUSE Booster](/booster/). This is a program for which Free Software
-  projects can register to receive help by the FSFE's licensing experts. With
-  workshops, individual assessments and available direct assistance, we boost
-  the understanding about licensing and copyright.
+ To help even more projects adopt the REUSE best practices, we have 
+ initiated [REUSE Booster](/booster/): a program that gives Free 
+ Software projects the opportunity to reach out to us and receive help 
+ by the FSFE’s licensing experts. Our REUSE Booster team is also 
+ actively reaching out to projects. With individual assessments and 
+ direct technical assistance, we boost the understanding about 
+ licensing and copyright. 
 {{< /component >}}
 
 {{< component fa="fas fa-info-circle" headline="Latest news">}}
