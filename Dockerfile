@@ -18,7 +18,7 @@ RUN sed -i -r 's/#LoadModule expires_module/LoadModule expires_module/' /opt/bit
 # Development Preparation: run sync-docs, po4a and hugo
 # =============================================================================
 
-FROM alpine:edge as dev-prep
+FROM alpine:3 as dev-prep
 
 # Dependencies
 RUN apk --no-cache add bash perl-yaml-tiny po4a hugo python3 diffutils
