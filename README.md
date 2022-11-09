@@ -5,7 +5,7 @@
 
 # REUSE website
 
-[![Build Status](https://drone.fsfe.org/api/badges/reuse/website/status.svg)](https://drone.fsfe.org/reuse/website)
+[![Build Status](https://drone.fsfe.org/api/badges/reuse/website/status.svg?ref=refs/heads/main)](https://drone.fsfe.org/reuse/website)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/website)](https://api.reuse.software/info/git.fsfe.org/reuse/website)
 
