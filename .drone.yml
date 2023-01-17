@@ -27,7 +27,7 @@ steps:
 
   # Create translations for markdown via PO files
   - name: po4a
-    image: alpine:3
+    image: alpine:3.16
     commands:
       - apk add perl-yaml-tiny po4a diffutils
       - cd site && po4a po/po4a.conf
