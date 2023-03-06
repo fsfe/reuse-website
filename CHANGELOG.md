@@ -24,6 +24,8 @@ The versions follow [semantic versioning](https://semver.org).
 
 ### Added
 
+- Definition for Commentable and Uncommentable Files. (#123, thanks @Jayman2000)
+
 - Introduce support of in-line snippet comments using
   `SPDX-SnippetBegin`/`SPDX-SnippetEnd`. (#107)
 
@@ -49,6 +51,9 @@ The versions follow [semantic versioning](https://semver.org).
 - URLs to currently applicable SPDX specification. (#49)
 
 ### Changed
+
+- Allow `.license` files for commentable files, but strongly recommend adding
+  copyright/licensing information in header. (#123, thanks @Jayman2000)
 
 - Bump referenced SPDX version to 2.3, and update links. (#103) (#107)
 
