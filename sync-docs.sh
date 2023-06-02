@@ -34,6 +34,12 @@ for f in faq.md spec.md tutorial.md; do
   done
 done
 
+# Define variable
+lint_schema_version="1.0.0"
+lint_schema="$basedir"/reuse-docs/"$lint_schema_version"_lint_schema.json
+# Copy this file to
+cp "$lint_schema" "$basedir"/site/static
+
 # Make permissions of newly generated folders the same as the already existing files
 uidgid=$(stat -c '%u:%g' "$basedir")
 chown -R "$uidgid" "$basedir"
