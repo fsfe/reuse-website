@@ -7,6 +7,10 @@ Files: reuse-docs/*
 Copyright: 2019 Free Software Foundation Europe <https://fsfe.org>
 License: CC-BY-SA-4.0
 
+Files: site/static/schemas/*
+Copyright: 2023 Free Software Foundation Europe <https://fsfe.org>
+License: CC0-1.0
+
 Files: site/static/fonts/roboto/*
 Copyright: 2018 Google
 License: Apache-2.0

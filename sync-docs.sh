@@ -38,7 +38,7 @@ done
 lint_schema_version="1.0.0"
 lint_schema="$basedir"/reuse-docs/"$lint_schema_version"_lint_schema.json
 # Copy this file to
-cp "$lint_schema" "$basedir"/site/static
+cp "$lint_schema" "$basedir"/site/static/schemas
 
 # Make permissions of newly generated folders the same as the already existing files
 uidgid=$(stat -c '%u:%g' "$basedir")
