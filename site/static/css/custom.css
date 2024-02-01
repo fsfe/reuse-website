@@ -10,6 +10,79 @@ img#logo {
   padding: 8px 0;
 }
 
+/* The navbar is too wide with all the navbar items. */
+/* https://stackoverflow.com/questions/19827605/how-to-change-bootstrap-navbar-collapse-breakpoin/* t *\/ */
+/* SPDX-SnippetBegin */
+/* SPDX-SnippetCopyrightText: 2016 Carol Skell */
+/* SPDX-License-Identifier: CC-BY-SA-3.0 */
+@media (max-width: 900px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+/* SPDX-SnippetEnd */
+
+
+/* "Initiative by" info text on start */
+.infotext.desktop {
+  display: none;
+}
+.infotext {
+  margin-top: 20px;
+}
+.infotext img {
+  max-height: 42px;
+  width: unset !important;
+  vertical-align: bottom;
+  display: inline !important;
+  margin: 0 !important;
+}
+@media (min-width:900px) {
+  .infotext.mobile {
+    display: none;
+  }
+  .infotext.desktop {
+    display: block;
+  }
+  .infotext {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    margin: 0;
+  }
+}
+
 /* HEADLINES */
 h1:first-of-type {
   margin: 1em 0 1em 0;
