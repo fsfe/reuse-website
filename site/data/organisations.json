@@ -46,5 +46,13 @@
     "sponsor": false,
     "footer": true,
     "footer_order": "2"
+  },
+  {
+    "name": "Liferay",
+    "img": "liferay.png",
+    "sponsor": true,
+    "sponsor_order": "2",
+    "sponsor_width": "300px",
+    "footer": false
   }
 ]
