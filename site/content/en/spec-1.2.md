@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: 2017 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
+# REUSE-IgnoreStart
+
 title: "REUSE Practices – Version 1.2"
 subtitle: "2017-10-27"
 ---

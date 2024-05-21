@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: 2019 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
+# REUSE-IgnoreStart
+
 title: "REUSE Specification – Version 3.0"
 subtitle: "2019-08-07"
 aliases: ["/spec"]

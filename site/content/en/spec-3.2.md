@@ -2,6 +2,8 @@
 # SPDX-FileCopyrightText: 2019 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
+# REUSE-IgnoreStart
+
 title: "REUSE Specification – Version 3.2 (UNRELEASED)"
 subtitle: "YYYY-MM-DD"
 ---
