@@ -141,6 +141,8 @@ In order to make the tool ignore a specific section containing strings that may
 falsely be detected as copyright or license statements, you can wrap it within
 the two comments `REUSE-IgnoreStart` and `REUSE-IgnoreEnd`.
 
+<!-- REUSE-IgnoreStart -->
+
 Please note that this must not be used to ignore valid copyright and licensing
 information by yourself or a third party. The ignore blocks must only be used
 for marking blocks that may trigger false-positive detections and errors.
@@ -177,6 +179,8 @@ echo "SPDX-FileCopyrightText: $(date +'%Y') John Doe" > file.txt
 echo "SPDX-License-Identifier: MIT" >> file.txt
 # REUSE-IgnoreEnd
 ```
+
+<!-- REUSE-IgnoreStart -->
 
 ## Do you support a version control system other than Git? {#no-git}
 
