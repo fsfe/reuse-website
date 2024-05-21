@@ -15,7 +15,7 @@ RUN sed -i -r 's/#LoadModule expires_module/LoadModule expires_module/' /opt/bit
 
 
 # =============================================================================
-# Development Preparation: run sync-docs, po4a and hugo
+# Development Preparation: run po4a and hugo
 # =============================================================================
 
 FROM alpine:3.16 as dev-prep
@@ -26,9 +26,6 @@ RUN apk --no-cache add bash perl-yaml-tiny po4a hugo python3 diffutils
 COPY . /app
 
 WORKDIR /app/
-
-# sync and translate docs (from their own po files)
-RUN bash sync-docs.sh
 
 # Run po4a for reuse-website po strings
 RUN cd site/ && po4a po/po4a.conf

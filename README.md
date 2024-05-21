@@ -21,15 +21,6 @@ Most interesting files are located in `site/content/en/`, specifically:
 
 ## Install
 
-Before doing anything, run the following commands to download the documentation
-as submodule, and to synchronise the contents of the submodule into the `site/`
-directory:
-
-```
-git submodule update --init
-bash sync-docs.sh
-```
-
 There's no installation here, but to test the website locally, run
 `hugo server` inside the `site/` directory. Typically, we let our Drone
 CI build and deploy the website for us.

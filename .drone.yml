@@ -18,13 +18,6 @@ steps:
     commands:
       - reuse lint
 
-  # Build and copy reuse docs files to reuse website
-  - name: sync-docs
-    image: alpine:3
-    commands:
-      - apk add bash perl-yaml-tiny po4a diffutils
-      - bash sync-docs.sh
-
   # Create translations for markdown via PO files
   - name: po4a
     image: alpine:3.16
