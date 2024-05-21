@@ -6,12 +6,6 @@ kind: pipeline
 name: default
 
 steps:
-  # Clone submodules (reuse docs)
-  - name: submodules
-    image: alpine/git
-    commands:
-      - git submodule update --init
-
   # Check for REUSE compliance
   - name: reuse
     image: fsfe/reuse:latest
