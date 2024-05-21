@@ -1,11 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: reuse-docs
+Upstream-Name: reuse-website
 Upstream-Contact: Free Software Foundation Europe <https://fsfe.org>
 Source: https://github.com/fsfe/reuse-website
-
-Files: reuse-docs/*
-Copyright: 2019 Free Software Foundation Europe <https://fsfe.org>
-License: CC-BY-SA-4.0
 
 Files: site/static/fonts/roboto/*
 Copyright: 2018 Google

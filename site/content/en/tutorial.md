@@ -304,7 +304,7 @@ describes REUSE and the methods to become compliant.
 If none of the links above were able to answer your question, please contact us
 by:
 
-- opening an issue on [reuse-docs](https://github.com/fsfe/reuse-docs) for
+- opening an issue on [reuse-website](https://github.com/fsfe/reuse-website) for
   questions on the tutorial, FAQ or specification;
 
 - opening an issue on [reuse-tool](https://github.com/fsfe/reuse-tool) for
