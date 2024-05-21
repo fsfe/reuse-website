@@ -9,10 +9,6 @@ site/.hugo_build.lock
 site/content/*/*
 # But do not ignore other files in English content folder
 !site/content/en/*
-# However, ignore docs from submodule
-site/content/en/faq.md
-site/content/en/spec.md
-site/content/en/tutorial.md
 
 # Translation status file created by check_translations.py
 site/i18n/.status
