@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2017 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
-title: "REUSE Specification – Version 2.0"
+title: "REUSE Practices – Version 2.0"
 subtitle: "2017-11-15"
 ---
 
