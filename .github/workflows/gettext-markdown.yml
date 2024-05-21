@@ -17,8 +17,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - name: Install gettext and wlc
-        run: sudo apt-get install -y gettext wlc
+      - name: Install gettext, po4a and wlc
+        run: sudo apt-get install -y gettext po4a wlc
       - name: Lock Weblate
         run: |
           wlc --url https://hosted.weblate.org/api/ --key ${{secrets.WEBLATE_KEY }} lock fsfe/reuse-website-markdown
