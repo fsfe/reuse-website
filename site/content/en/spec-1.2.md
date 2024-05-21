@@ -6,7 +6,7 @@ title: "REUSE Practices – Version 1.2"
 subtitle: "2017-10-27"
 ---
 
-# 1. Provide the exact text of each license used
+## 1. Provide the exact text of each license used
 
 Free and open source software licenses are standardised and have standard
 texts. Regardless of which license you use, you should include the
@@ -34,7 +34,7 @@ BSD 2 Clause license because some parts may be written by Alice and others
 by Bob, resulting in two different license files, even if the only
 difference is the copyright holder.
 
-> ## Keep in mind
+> ### Keep in mind
 >  
 > * Don't change any license texts, use the verbatim form of the license text.
 > * Don't remove any license texts, include the license texts of all software.
@@ -48,7 +48,7 @@ difference is the copyright holder.
 <br />
 <br />
 
-# 2. Include a copyright notice and license in each file
+## 2. Include a copyright notice and license in each file
 
 You should ensure all files in your project have a license header, and
 that all license headers files have the same format. Even if your project has a
@@ -137,7 +137,7 @@ An appropriate header in this case would be:
 ~~~~~~~
 
 
-> ## Keep in mind
+> ### Keep in mind
 > 
 > * Use a consistent style of your headers throughout the project.
 > * Don't remove existing headers, but only add to them.
@@ -152,7 +152,8 @@ An appropriate header in this case would be:
 <br />
 <br />
 
-# 3. Provide an inventory for included software
+## 3. Provide an inventory for included software
+
 Aside from the license files included in the project, and the file level
 copyright information, you may include a bill of material for your project,
 but you should only do so if this is generated automatically.
@@ -179,7 +180,7 @@ The bill of material should be conformant to the SPDX specification and
 included in a file in the top level directory of your repository called
 `LICENSE.spdx`.
 
-> ## Keep in mind
+> ### Keep in mind
 >
 > * Don't create a bill of material if you can't generate it automatically.
 > * If you generate one automatically, it's helpful to include one.

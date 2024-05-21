@@ -6,7 +6,7 @@ title: "REUSE Practices – Version 2.0"
 subtitle: "2017-11-15"
 ---
 
-# 1. Provide the exact text of each license used
+## 1. Provide the exact text of each license used
 
 Free and open source software licenses are standardised and have standard
 texts. Regardless of which license you use, you should include the
@@ -112,7 +112,7 @@ Exception-Text:
 ```
 
 
-> ## Keep in mind
+> ### Keep in mind
 >  
 > * Don't change any license texts, use the verbatim form of the license text.
 > * Don't remove any license texts, include the license texts of all software.
@@ -126,7 +126,7 @@ Exception-Text:
 <br />
 <br />
 
-# 2. Include a copyright notice and license in each file
+## 2. Include a copyright notice and license in each file
 
 Source code files are often reused across multiple projects, taken from their
 origin and repurposed, or otherwise end up in repositories where they are
@@ -230,7 +230,7 @@ An appropriate header in this case would be:
 ~~~~~~~
 
 
-> ## Keep in mind
+> ### Keep in mind
 > 
 > * Use a consistent style of your headers throughout the project.
 > * Don't remove existing headers, but only add to them.
@@ -248,7 +248,8 @@ An appropriate header in this case would be:
 <br />
 <br />
 
-# 3. Provide an inventory for included software
+## 3. Provide an inventory for included software
+
 Aside from the license files included in the project, and the file level
 copyright information, you may include a bill of materials for your project,
 but you should only do so if this is generated automatically.
@@ -275,7 +276,7 @@ The bill of materials should be conformant to the SPDX specification and
 included in a file in the top level directory of your repository called
 `LICENSE.spdx`.
 
-> ## Keep in mind
+> ### Keep in mind
 >
 > * Don't create a bill of materials if you can't generate it automatically.
 > * If you generate one automatically, it's helpful to include one.
