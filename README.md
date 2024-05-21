@@ -14,19 +14,12 @@ source software easier. This is the website for a guide of best
 practices, meant to demonstrate how to add copyright and license
 information to a project in ways which allow for more automation.
 
-The specification, FAQ, and tutorial are located in a [separate "docs"
-repository](https://github.com/fsfe/reuse-docs).
+Most interesting files are located in `site/content/en/`, specifically:
+
+- `site/content/en/spec-*.md` --- Versions of the specifications.
+- `site/content/en/faq.md` --- Frequently asked questions.
 
 ## Install
-
-Before doing anything, run the following commands to download the documentation
-as submodule, and to synchronise the contents of the submodule into the `site/`
-directory:
-
-```
-git submodule update --init
-bash sync-docs.sh
-```
 
 There's no installation here, but to test the website locally, run
 `hugo server` inside the `site/` directory. Typically, we let our Drone
@@ -57,7 +50,7 @@ support.  Those files are in _data/_.
 
 Translation happens by conversion Markdown into _gettext_ using
 [po4a](https://po4a.org).  To generate the _.md_ files from the
-_gettext .po_ files, run: `po4a po/po4a.conf`.  This also regenerates
+_gettext .po_ files, run: `po4a po4a.conf`.  This also regenerates
 the _.pot_ file, which is the _gettext_ translation template, and
 syncs changes to the _.po_ files.
 

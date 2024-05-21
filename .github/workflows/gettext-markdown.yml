@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: 2023 Carmen Bianca BAKKER <carmenbianca@fsfe.org>
+# SPDX-FileCopyrightText: 2024 Free Software Foundation Europe e.V. <https://fsfe.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+name: Update .pot file
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "site/content/**.md"
+
+jobs:
+  create-pot:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install gettext and wlc
+        run: sudo apt-get install -y gettext wlc
+      - name: Lock Weblate
+        run: |
+          wlc --url https://hosted.weblate.org/api/ --key ${{secrets.WEBLATE_KEY }} lock fsfe/reuse-website-markdown
+      - name: Push changes from Weblate to upstream repository
+        run: |
+          wlc --url https://hosted.weblate.org/api/ --key ${{secrets.WEBLATE_KEY }} push fsfe/reuse-website-markdown
+      - name: Pull Weblate translations
+        run: git pull origin main
+      - name: Create .pot file
+        run: |
+          po4a --no-translations po4a.conf
+      # Normally, POT-Creation-Date changes in two locations. Check if the diff
+      # includes more than just those two lines.
+      - name: Check if sufficient lines were changed
+        id: diff
+        run:
+          echo "changed=$(git diff -U0 | grep '^[+|-][^+|-]' | grep -Ev
+          '^[+-]("POT-Creation-Date|#:)' | wc -l)" >> $GITHUB_OUTPUT
+      - name: Commit and push updated reuse.pot
+        if: ${{ steps.diff.outputs.changed != '0' }}
+        run: |
+          git config --global user.name "fsfe-system"
+          git config --global user.email "<>"
+          git add site/po/reuse-website.pot site/po/*.po
+          git commit -m "Update reuse-website.pot"
+          git push origin main
+      - name: Unlock Weblate
+        run: |
+          wlc --url https://hosted.weblate.org/api/ --key ${{ secrets.WEBLATE_KEY }} pull fsfe/reuse-website-markdown
+          wlc --url https://hosted.weblate.org/api/ --key ${{ secrets.WEBLATE_KEY }} unlock fsfe/reuse-website-markdown
