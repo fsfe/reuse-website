@@ -23,7 +23,7 @@ steps:
     image: alpine:3.16
     commands:
       - apk add perl-yaml-tiny po4a diffutils
-      - cd site && po4a po/po4a.conf
+      - po4a po4a.conf
 
   # Create .status file for important i18n translation strings
   - name: check_translations

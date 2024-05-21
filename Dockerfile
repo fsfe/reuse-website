@@ -28,7 +28,7 @@ COPY . /app
 WORKDIR /app/
 
 # Run po4a for reuse-website po strings
-RUN cd site/ && po4a po/po4a.conf
+RUN po4a po4a.conf
 
 # Create .status file for important i18n translation strings
 RUN python3 check_translations.py site/i18n
