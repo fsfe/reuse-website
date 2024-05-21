@@ -14,8 +14,10 @@ source software easier. This is the website for a guide of best
 practices, meant to demonstrate how to add copyright and license
 information to a project in ways which allow for more automation.
 
-The specification, FAQ, and tutorial are located in a [separate "docs"
-repository](https://github.com/fsfe/reuse-docs).
+Most interesting files are located in `site/content/en/`, specifically:
+
+- `site/content/en/spec-*.md` --- Versions of the specifications.
+- `site/content/en/faq.md` --- Frequently asked questions.
 
 ## Install
 
