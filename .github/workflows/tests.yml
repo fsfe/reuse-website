@@ -21,8 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      with:
-        submodules: true
 
     # Build website incl. all translations
     - name: Build Dockerfile
