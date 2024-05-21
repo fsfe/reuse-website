@@ -20,6 +20,8 @@ following sections:
 
 The versions follow [semantic versioning](https://semver.org).
 
+This is the change log for the REUSE Specification.
+
 <!--
 ## Unreleased - YYYY-MM-DD
 
