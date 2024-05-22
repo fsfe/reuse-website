@@ -17,8 +17,9 @@ nothing here is legal advice.
 
 ## I am short on time. Can you give me the quickest possible summary? {#quick-summary}
 
-We want to improve the way that people license their software projects. We
-propose three steps to achieve this:
+We want to improve the way that people license their software projects such that
+it is **easy, comprehensive, unambiguous, and machine-readable**. We propose
+three steps to achieve this:
 
 ### 1. Choose and provide licenses {#step-1}
 
@@ -43,6 +44,45 @@ Then, for all files, edit the header to contain the following:
 
 Use the [REUSE tool](https://github.com/fsfe/reuse-tool) to automate some of
 these steps, and to check whether you did everything correctly.
+
+## What is SPDX? {#what-is-spdx}
+
+SPDX stands for [Software Package Data Exchange](https://spdx.org/). It is a
+project by the [Linux Foundation](https://www.linuxfoundation.org/) and the rock
+upon which REUSE is built. SPDX defines a standardized way to share copyright
+and licensing information between projects and people. Most importantly for
+REUSE, SPDX maintains the [SPDX License List](https://spdx.org/licenses/), which
+defines standardized identifiers for a lot of licenses.
+
+# Why REUSE
+
+## Do I really need to include the license and copyright headers in all files? Why should I care? {#why-care}
+
+Big projects with complex copyright and licensing stand the most to gain from
+REUSE by shaping order out of chaos and disambiguating unclear licensing.
+Putting a header in every single file is a necessary evil to obtain that order
+and clarity. This metadata needs to be somewhere, and we are opined that it
+should be as close to the data as possible---as a header in each file.
+
+But even smaller projects or projects with simple licensing benefit from REUSE.
+For good or for ill, copyright is a cornerstone of the Free Software movement.
+It is what enables sharing, and in the case of copyleft, it enables us to keep
+software Free. Getting licensing right is important, or else people won't be
+able to use your software, and REUSE is a simple component in helping you with
+this.
+
+Furthermore, even if your project is simple _now_, it may not always be so. If
+you copy some code from another project that is differently licensed, you are
+often obliged to attribute correctly and/or provide the accompanying license
+text. By implementing REUSE early, it is a lot easier to discern your code from
+third-party code and correctly keep track of these things.
+
+Lastly, implementing REUSE is a small service to others. As a software engineer,
+it can be frustrating when you find some code that is purpose-built for the
+problem you are trying to solve, but you are unable to figure out the licensing
+of that code, effectively making it impossible to, well, reuse that code. REUSE
+helps you help other developers in reusing your code, which is one of the great
+boons of Free Software.
 
 ## I'm used to doing things differently; can't I just keep doing what I have always been doing? {#tradition}
 
@@ -87,19 +127,6 @@ not support these in REUSE for practical reasons:
 
 This question is also related to [why we cannot use version control to record
 copyright](#vcs-copyright).
-
-<!-- ## Do I really need to include the license and copyright headers in all files? Why should I care? {#why-care}
-
-TODO -->
-
-## What is SPDX? {#what-is-spdx}
-
-SPDX stands for [Software Package Data Exchange](https://spdx.org/). It is a
-project by the [Linux Foundation](https://www.linuxfoundation.org/) and the rock
-upon which REUSE is built. SPDX defines a standardized way to share copyright
-and licensing information between projects and people. Most importantly for
-REUSE, SPDX maintains the [SPDX License List](https://spdx.org/licenses/), which
-defines standardized identifiers for a lot of licenses.
 
 # The tool {#tool}
 
