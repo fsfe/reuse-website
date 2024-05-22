@@ -161,9 +161,11 @@ command](https://reuse.readthedocs.io/en/stable/man/reuse-lint.html).
 ## More information
 
 This tutorial was a lightning-quick introduction to REUSE. Not all use-cases are
-covered here, especially [how to annotate uncommentable files](#TODO) and [how
-to bulk-annotate files](#TODO). In order to learn about these and more practical
-use-cases, see the [TODO](#TODO).
+covered here, especially [how to annotate uncommentable files]({{< relref
+"faq.md#uncommentable-file" >}}) and [how to bulk-annotate files]({{< relref
+"faq.md#bulk-license" >}}). In order to learn about these and more practical
+use-cases, see the ['How do I ...' section in the Frequently Asked
+Questions]({{< relref "faq.md#howto" >}}).
 
 Other sources for more information:
 
