@@ -4,8 +4,9 @@
 
 # REUSE-IgnoreStart
 
-title: "REUSE Specification – Version 3.2 (UNRELEASED)"
+title: "REUSE Specification – Version 3.2"
 subtitle: "YYYY-MM-DD"
+aliases: ["/spec"]
 ---
 
 This specification defines a standardised method for declaring copyright and
