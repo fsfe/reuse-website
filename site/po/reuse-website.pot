@@ -2252,7 +2252,7 @@ msgstr ""
 #: site/content/en/tutorial.md
 #, markdown-text
 msgid ""
-"The `reuse addheader` command helps with adding licensing and copyright "
+"The `reuse annotate` command helps with adding licensing and copyright "
 "information to your files. For the task above, the following command would "
 "do the job:"
 msgstr ""
@@ -2261,7 +2261,7 @@ msgstr ""
 #: site/content/en/tutorial.md
 #, no-wrap
 msgid ""
-"reuse addheader --copyright=\"Jane Doe <jane@example.com>\" "
+"reuse annotate --copyright=\"Jane Doe <jane@example.com>\" "
 "--license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
 msgstr ""
 
@@ -2270,7 +2270,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Please see the [tool's documentation about "
-"addheader](https://reuse.readthedocs.io/en/stable/usage.html#addheader)  for "
+"annotate](https://reuse.readthedocs.io/en/stable/usage.html#annotate)  for "
 "more options like comment styles and templates"
 msgstr ""
 
@@ -2313,7 +2313,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "If it does not, or if you would like to enforce this, add the "
-"`--force-dot-license` argument to the addheader command. So the command for "
+"`--force-dot-license` argument to the annotate command. So the command for "
 "the above task may look like this:"
 msgstr ""
 
@@ -2321,7 +2321,7 @@ msgstr ""
 #: site/content/en/tutorial.md
 #, no-wrap
 msgid ""
-"reuse addheader --copyright=\"Jane Doe <jane@example.com>\" "
+"reuse annotate --copyright=\"Jane Doe <jane@example.com>\" "
 "--license=\"GPL-3.0-or-later\" --force-dot-license img/cat.jpg img/dog.jpg\n"
 msgstr ""
 
@@ -2370,7 +2370,7 @@ msgstr ""
 msgid ""
 "The tool as of now does not provide a way to replace existing "
 "REUSE-compliant copyright and licensing information. A run of the "
-"`addheader` command would not replace but extend the `.license` files with "
+"`annotate` command would not replace but extend the `.license` files with "
 "two additional lines stating the copyright of Max Mehl and the CC-BY-4.0 "
 "license. So you would have to update these manually."
 msgstr ""
@@ -2458,7 +2458,7 @@ msgstr ""
 #: site/content/en/tutorial.md
 #, markdown-text
 msgid ""
-"As before, a combination of the `addheader` and `download` commands will "
+"As before, a combination of the `annotate` and `download` commands will "
 "fulfil the above step:"
 msgstr ""
 
@@ -2466,7 +2466,7 @@ msgstr ""
 #: site/content/en/tutorial.md
 #, no-wrap
 msgid ""
-"reuse addheader --copyright=\"Jane Doe <jane@example.com>\" "
+"reuse annotate --copyright=\"Jane Doe <jane@example.com>\" "
 "--license=\"CC0-1.0\" .gitignore\n"
 "\n"
 "reuse download --all\n"
