@@ -299,11 +299,14 @@ that it is expected to disappear from a future iteration of this specification.
 The DEP5 file MUST be named `dep5` and stored in the `.reuse/` directory in the
 root of the Project (i.e. `.reuse/dep5`).
 
+The `Files` tag MUST be followed by one or more paths to which the paragraph's
+Licensing Information is applied.
+
 The `License` tag MUST be followed by a valid SPDX License Expression describing
 the licensing of the associated files.
 
-The `Copyright` tag MUST be followed by a Copyright Notice. The prefix of the
-Copyright Notice MAY be omitted.
+The `Copyright` tag MUST be followed by one or more Copyright Notices. The
+prefixes of the Copyright Notices MAY be omitted.
 
 An example of a DEP5 file:
 
