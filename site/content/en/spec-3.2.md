@@ -268,7 +268,10 @@ to zero or more Covered Files. It has the following keys:
   table's Covered Files.
 
 You MAY include other keys and tables to convey additional information. Their
-semantics are not defined by this specification.
+semantics are not defined by this specification. If you wish to include other
+keys, you are RECOMMENDED to use existing SPDX tags. For example, you could use
+`SPDX-FileComment` in an `[[annotations]]` table to add context to what you're
+doing, or `SPDX-FileContributor` to credit additional contributors.
 
 Although the keys to associate Licensing Information with the Covered File are
 OPTIONAL, the complete Licensing Information MUST still be associated with the
