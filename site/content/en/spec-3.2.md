@@ -309,9 +309,6 @@ An example of a DEP5 file:
 
 ```
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Project
-Upstream-Contact: Jane Doe <jane@example.com>
-Source: https://example.com/jane/project
 
 Files: po/*.po po/*.pot
 Copyright: 2019 Translation Company
