@@ -37,23 +37,8 @@ These are the definitions for some of the terms used in this specification:
 - Copyright Notice --- a line of text that conveys copyright of a copyright
   holder. Its format is defined in the [Format of Copyright
   Notices](#format-of-copyright-notices) section.
-- Covered File --- any file in a Project, except for
-    - The License Files stored in the `LICENSES/` directory.
-    - `COPYING` and `LICENSE`, with or without file extensions.
-    - The files belonging to the Project's version control system (example:
-      `.git/`).
-    - The files ignored by the version control system (example: files listed in
-      `.gitignore`).
-    - Submodules of the Project's version control system and Meson subprojects.
-      Each submodule and Meson subproject is understood as a separate Project.
-    - The files in the `.reuse/` directory in the root of the Project. This
-      directory MUST contain only files relevant for the operation of the REUSE
-      Tool.
-    - Symlinks and files with no data (zero-byte).
-    - SPDX documents in their various formats as defined in the [SPDX
-      Specification, Clause
-      4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/#44-standard-data-format-requirements)
-      (example: `sbom.spdx.json`).
+- Covered File --- a file which must contain Licensing Information, as defined
+  in [Covered and ignored Files](#covered-and-ignored-files).
 - Commentable File --- a plain text file that can contain comments.
 - Snippet --- a portion of text in a Commentable File to which different
   Licensing Information applies.
@@ -75,6 +60,28 @@ These are the definitions for some of the terms used in this specification:
   and `License` tags.
 - TOML --- A configuration file format as available at
   <https://toml.io/en/v1.0.0>.
+
+## Covered and ignored Files
+
+Covered Files are any file which must contain Licensing Information. This is
+equal to all files in a project, with the exception of:
+
+- The License Files stored in the `LICENSES/` directory.
+- `COPYING` and `LICENSE`, with or without file extensions.
+- The files belonging to the Project's version control system (example:
+  `.git/`).
+- The files ignored by the version control system (example: files listed in
+  `.gitignore`).
+- Submodules of the Project's version control system and Meson subprojects. Each
+  submodule and Meson subproject is understood as a separate Project.
+- The files in the `.reuse/` directory in the root of the Project. This
+  directory MUST contain only files relevant for the operation of the REUSE
+  Tool.
+- Symlinks and files with no data (zero-byte).
+- SPDX documents in their various formats as defined in the [SPDX Specification,
+  Clause
+  4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/#44-standard-data-format-requirements)
+  (example: `sbom.spdx.json`).
 
 ## License Files
 
