@@ -30,7 +30,8 @@ These are the definitions for some of the terms used in this specification:
 - Project --- any unit of content that can be associated with a distribution of
   software. Typically, a Project is composed of one or more files. Also
   sometimes called a package.
-- License File --- a file containing the text of a license.
+- License File --- a file containing the text of a license, as defined in
+  [License Files](#license-files).
 - Licensing Information --- the information that lists the copyright holders of
   a file or work, and describes under which licenses the file or work is made
   available.
