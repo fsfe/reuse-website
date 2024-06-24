@@ -3952,7 +3952,7 @@ msgstr ""
 "archivos. También se denomina a veces paquete."
 
 #. type: Bullet: '- '
-#: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
+#: site/content/en/spec-3.0.md
 #, fuzzy
 #| msgid "- License File --- a file containing the text of a license."
 msgid "License File --- a file containing the text of a license."
@@ -4465,6 +4465,16 @@ msgstr ""
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 #, fuzzy
+#| msgid "- License File --- a file containing the text of a license."
+msgid ""
+"License File --- a file containing the text of a license, as defined in "
+"[License Files](#license-files)."
+msgstr ""
+"- Archivo de licencia --- un archivo que contiene el texto de una licencia."
+
+#. type: Bullet: '- '
+#: site/content/en/spec-3.2.md
+#, fuzzy
 #| msgid ""
 #| "Copyright and Licensing Information --- the information that lists the "
 #| "copyright holders of a file or work, and describes under which licenses "
@@ -4561,10 +4571,10 @@ msgstr ""
 #| "`Copyright` and `License` tags."
 msgid ""
 "DEP5 --- Machine-readable `debian/copyright` file, Version 1.0; as available "
-"at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/>. "
-"Where the REUSE Specification and DEP5 state different things, the REUSE "
-"Specification takes precedence. Specifically in the case of the `Copyright` "
-"and `License` tags."
+"at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/> and "
+"further defined in [DEP5 (deprecated)](#dep5-deprecated). Where the REUSE "
+"Specification and DEP5 state different things, the REUSE Specification takes "
+"precedence."
 msgstr ""
 "DEP5 --- [Machine-readable `debian/copyright` file, Version 1.0](https://www."
 "debian.org/doc/packaging-manuals/copyright-format/1.0/).  Cuando la "
