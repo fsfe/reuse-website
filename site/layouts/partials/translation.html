@@ -4,7 +4,7 @@
   --> */ -}}
 {{- /*  Set path of current page correctly  */}}
 {{- $filepath := "/" }}
-{{- with .File.Path }}{{ $filepath = . }}{{ end }}
+{{- with .File }}{{- with .Path }}{{ $filepath = . }}{{ end }}{{ end }}
 {{- /*  Read file containing complete index translations  */}}
 {{- $index_translated := "" }}
 {{- if os.FileExists "i18n/.status" }}{{ $index_translated = os.ReadFile "i18n/.status" }}{{ end }}
