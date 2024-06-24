@@ -70,10 +70,10 @@ These are the definitions for some of the terms used in this specification:
 - SPDX License List --- a list of commonly found licenses and exceptions; as
   available on <https://spdx.org/licenses/>.
 - DEP5 --- Machine-readable `debian/copyright` file, Version 1.0; as available
-  at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/>. Where
-  the REUSE Specification and DEP5 state different things, the REUSE
-  Specification takes precedence. Specifically in the case of the `Copyright`
-  and `License` tags.
+  at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/> and
+  further defined in [DEP5 (deprecated)](#dep5-deprecated). Where the REUSE
+  Specification and DEP5 state different things, the REUSE Specification takes
+  precedence.
 - TOML --- A configuration file format as available at
   <https://toml.io/en/v1.0.0>.
 
