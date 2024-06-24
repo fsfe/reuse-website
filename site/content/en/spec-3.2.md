@@ -30,7 +30,8 @@ These are the definitions for some of the terms used in this specification:
 - Project --- any unit of content that can be associated with a distribution of
   software. Typically, a Project is composed of one or more files. Also
   sometimes called a package.
-- License File --- a file containing the text of a license.
+- License File --- a file containing the text of a license, as defined in
+  [License Files](#license-files).
 - Licensing Information --- the information that lists the copyright holders of
   a file or work, and describes under which licenses the file or work is made
   available.
@@ -54,10 +55,10 @@ These are the definitions for some of the terms used in this specification:
 - SPDX License List --- a list of commonly found licenses and exceptions; as
   available on <https://spdx.org/licenses/>.
 - DEP5 --- Machine-readable `debian/copyright` file, Version 1.0; as available
-  at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/>. Where
-  the REUSE Specification and DEP5 state different things, the REUSE
-  Specification takes precedence. Specifically in the case of the `Copyright`
-  and `License` tags.
+  at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/> and
+  further defined in [DEP5 (deprecated)](#dep5-deprecated). Where the REUSE
+  Specification and DEP5 state different things, the REUSE Specification takes
+  precedence.
 - TOML --- A configuration file format as available at
   <https://toml.io/en/v1.0.0>.
 
