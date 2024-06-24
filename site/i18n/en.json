@@ -79,5 +79,8 @@
   },
   "index_legal_text": {
     "other": "There are many tools that aid you in license compliance for software, many using databases and fuzzy heuristics. A REUSE-compliant project makes the jobs of legal experts and compliance officers much easier. Creating a bill of materials can be achieved with just one simple command. REUSE [does not replace other tools](comparison/), it is a long-awaited addition."
+  },
+  "all_specifications": {
+    "other": "All versions of the specification can be found at <{{ .specifications }}>."
   }
 }
