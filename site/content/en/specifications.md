@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2024 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
-title: "REUSE Specification"
+title: "REUSE Specifications"
 ---
 
 These are the versions of the specification, listed from new to old:

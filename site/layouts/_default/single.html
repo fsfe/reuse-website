@@ -8,6 +8,11 @@
 {{ partial "nav.html" . }}
 <div class="content">
   <div class="clearfix"></div>
+  {{- $filepath := "/" }}
+  {{- with .File }}{{- with .Path }}{{ $filepath = . }}{{ end }}{{ end }}
+  {{ if hasPrefix $filepath "spec-" }}
+    {{ partial "specifications.html" . }}
+  {{ end }}
   <h1>{{ .Page.Title }}</h1>
   {{ if .Params.subtitle }}<h2 class="subtitle">{{ .Params.subtitle }}</h2>{{ end }}
   {{ partial "translation.html" . }}
