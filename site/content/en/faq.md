@@ -842,4 +842,7 @@ automatically convert a `.reuse/dep5` file to a semantically equivalent
 - `REUSE.toml` can be placed anywhere relative to the files, and can nest. This
   is a big help for monorepos or monorepo-like projects.
 
+For compatibility, `.reuse/dep5` will remain supported in spite of its
+deprecation for a considerable length of time; at least until 2029.
+
 <!-- REUSE-IgnoreEnd -->
