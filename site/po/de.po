@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-05-21 16:32+0000\n"
+"POT-Creation-Date: 2024-06-24 09:52+0000\n"
 "PO-Revision-Date: 2022-08-30 10:18+0000\n"
 "Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/fsfe/reuse-"
@@ -3676,7 +3676,7 @@ msgstr ""
 msgid "The License Files."
 msgstr ""
 
-#. type: Bullet: '    - '
+#. type: Bullet: '- '
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
 msgid ""
 "The files belonging to the Project's version control system (example: `.git/"
@@ -3690,7 +3690,7 @@ msgid ""
 "gitignore`)."
 msgstr ""
 
-#. type: Bullet: '    - '
+#. type: Bullet: '- '
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
 msgid ""
 "The files in the `.reuse/` directory in the root of the Project. This "
@@ -3929,44 +3929,9 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-msgid "Covered File --- any file in a Project, except for"
-msgstr ""
-
-#. type: Bullet: '    - '
-#: site/content/en/spec-3.2.md
-msgid "The License Files stored in the `LICENSES/` directory."
-msgstr ""
-
-#. type: Bullet: '    - '
-#: site/content/en/spec-3.2.md
-msgid "`COPYING` and `LICENSE`, with or without file extensions."
-msgstr ""
-
-#. type: Bullet: '    - '
-#: site/content/en/spec-3.2.md
 msgid ""
-"The files ignored by the version control system (example: files listed in `."
-"gitignore`)."
-msgstr ""
-
-#. type: Bullet: '    - '
-#: site/content/en/spec-3.2.md
-msgid ""
-"Submodules of the Project's version control system and Meson subprojects.  "
-"Each submodule and Meson subproject is understood as a separate Project."
-msgstr ""
-
-#. type: Bullet: '    - '
-#: site/content/en/spec-3.2.md
-msgid "Symlinks and files with no data (zero-byte)."
-msgstr ""
-
-#. type: Bullet: '    - '
-#: site/content/en/spec-3.2.md
-msgid ""
-"SPDX documents in their various formats as defined in the [SPDX "
-"Specification, Clause 4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/"
-"#44-standard-data-format-requirements)  (example: `sbom.spdx.json`)."
+"Covered File --- a file which must contain Licensing Information, as defined "
+"in [Covered and ignored Files](#covered-and-ignored-files)."
 msgstr ""
 
 #. type: Bullet: '- '
@@ -4025,6 +3990,56 @@ msgstr ""
 msgid ""
 "TOML --- A configuration file format as available at <https://toml.io/en/"
 "v1.0.0>."
+msgstr ""
+
+#. type: Title ##
+#: site/content/en/spec-3.2.md
+#, no-wrap
+msgid "Covered and ignored Files"
+msgstr ""
+
+#. type: Plain text
+#: site/content/en/spec-3.2.md
+msgid ""
+"Covered Files are any file which must contain Licensing Information. This is "
+"equal to all files in a project, with the exception of:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: site/content/en/spec-3.2.md
+msgid "The License Files stored in the `LICENSES/` directory."
+msgstr ""
+
+#. type: Bullet: '- '
+#: site/content/en/spec-3.2.md
+msgid "`COPYING` and `LICENSE`, with or without file extensions."
+msgstr ""
+
+#. type: Bullet: '- '
+#: site/content/en/spec-3.2.md
+msgid ""
+"The files ignored by the version control system (example: files listed in `."
+"gitignore`)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: site/content/en/spec-3.2.md
+msgid ""
+"Submodules of the Project's version control system and Meson subprojects. "
+"Each submodule and Meson subproject is understood as a separate Project."
+msgstr ""
+
+#. type: Bullet: '- '
+#: site/content/en/spec-3.2.md
+msgid "Symlinks and files with no data (zero-byte)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: site/content/en/spec-3.2.md
+msgid ""
+"SPDX documents in their various formats as defined in the [SPDX "
+"Specification, Clause 4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/"
+"#44-standard-data-format-requirements)  (example: `sbom.spdx.json`)."
 msgstr ""
 
 #. type: Title ##
@@ -4389,7 +4404,11 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 msgid ""
 "You MAY include other keys and tables to convey additional information. "
-"Their semantics are not defined by this specification."
+"Their semantics are not defined by this specification. If you wish to "
+"include other keys, you are RECOMMENDED to use existing SPDX tags. For "
+"example, you could use `SPDX-FileComment` in an `[[annotations]]` table to "
+"add context to what you're doing, or `SPDX-FileContributor` to credit "
+"additional contributors."
 msgstr ""
 
 #. type: Plain text
