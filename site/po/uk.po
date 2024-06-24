@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-06-24 09:52+0000\n"
+"POT-Creation-Date: 2024-06-24 09:53+0000\n"
 "PO-Revision-Date: 2022-05-17 07:18+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/reuse-"
@@ -5101,11 +5101,18 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
+msgid ""
+"The `Files` tag MUST be followed by one or more paths to which the "
+"paragraph's Licensing Information is applied."
+msgstr ""
+
+#. type: Plain text
+#: site/content/en/spec-3.2.md
 #, fuzzy
 #| msgid "The `Copyright` tag MUST be followed by a copyright notice."
 msgid ""
-"The `Copyright` tag MUST be followed by a Copyright Notice. The prefix of "
-"the Copyright Notice MAY be omitted."
+"The `Copyright` tag MUST be followed by one or more Copyright Notices. The "
+"prefixes of the Copyright Notices MAY be omitted."
 msgstr ""
 "За тегом `Copyright` ПОВИННЕ слідувати повідомлення про авторські права."
 

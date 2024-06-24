@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-06-24 09:52+0000\n"
+"POT-Creation-Date: 2024-06-24 09:53+0000\n"
 "PO-Revision-Date: 2022-01-11 09:55+0000\n"
 "Last-Translator: Imre Kristoffer Eilertsen <imreeil42@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/fsfe/"
@@ -4109,8 +4109,15 @@ msgstr ""
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid ""
-"The `Copyright` tag MUST be followed by a Copyright Notice. The prefix of "
-"the Copyright Notice MAY be omitted."
+"The `Files` tag MUST be followed by one or more paths to which the "
+"paragraph's Licensing Information is applied."
+msgstr ""
+
+#. type: Plain text
+#: site/content/en/spec-3.2.md
+msgid ""
+"The `Copyright` tag MUST be followed by one or more Copyright Notices. The "
+"prefixes of the Copyright Notices MAY be omitted."
 msgstr ""
 
 #. type: Fenced code block
