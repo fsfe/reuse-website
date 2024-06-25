@@ -269,8 +269,8 @@ licensed code is adopted. By keeping all licenses in a single directory, it is
 easy for a user of your program to find all the licenses they need to comply
 with in the blink of an eye.
 
-However, you can keep your `LICENSE`/`COPYING` file if you want. See [this
-question](#tradition).
+However, in addition to that, you can keep your `LICENSE`/`COPYING` file if you
+want. See [this question](#tradition).
 
 ## Should I put comment headers in my license files? {#header-in-license}
 
