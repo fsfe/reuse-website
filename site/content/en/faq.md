@@ -772,9 +772,9 @@ comprehensive, and more unambiguous than it would have been if we tried to
 maintain compatibility with traditions of old.
 
 Nothing prevents you from adding long legal blurbs to your headers or putting a
-`COPYING` file in the root of your directory __anyway_ though. These things can
+`COPYING` file in the root of your directory _anyway_ though. These things can
 be done to your liking. Some other aspects of REUSE are unavoidable, however.
-REUSE maintains that __every single file should contain licensing information_,
+REUSE maintains that _every single file should contain licensing information_,
 so that even the tiniest of files have licensing metadata. These things are
 simply inherent to the goal of REUSE, and we hope that these eccentricities will
 soon become commonplace, such that they would no longer seem so peculiar
