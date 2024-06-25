@@ -32,7 +32,9 @@ empower developers to ensure proper and exhaustive licensing of their project.
   copyright and export scanners. It is more complex than REUSE and its tool, and
   rather optimized for compliance officers and lawyers. REUSE instead intends to
   have all licensing and copyright information stored in or next to the source
-  files to safeguard this information when reused elsewhere.
+  files to safeguard this information when reused elsewhere. Projects that are
+  REUSE-compliant have their licensing information detected much more easily by
+  FOSSology (specifically its `Ojo` agent).
 - [**ORT**](https://oss-review-toolkit.org/), the OSS Review Toolkit, is a set
   of tools that complement existing compliance projects. Its scanner tool runs
   the license scanner of your choice on the source code of projects and their
