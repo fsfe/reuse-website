@@ -162,9 +162,10 @@ command](https://reuse.readthedocs.io/en/stable/man/reuse-lint.html).
 
 This tutorial was a lightning-quick introduction to REUSE. Not all use-cases are
 covered here, especially [how to annotate uncommentable files]({{< relref
-"faq.md#uncommentable-file" >}}) and [how to bulk-annotate files]({{< relref
-"faq.md#bulk-license" >}}). In order to learn about these and more practical
-use-cases, see the ['How do I ...' section in the Frequently Asked
+"faq.md#uncommentable-file" >}}), [how to bulk-annotate files]({{< relref
+"faq.md#bulk-license" >}}), and [how to use a license not on the SPDX list]({{<
+relref "faq.md#custom-license" >}}). In order to learn about these and more
+practical use-cases, see the ['How do I ...' section in the Frequently Asked
 Questions]({{< relref "faq.md#howto" >}}).
 
 Other sources for more information:
