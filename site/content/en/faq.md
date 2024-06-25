@@ -212,6 +212,9 @@ Exceptions are treated almost identically to licenses. In order to combine a
 license with an exception, you mark a file with the following tag:
 `SPDX-License-Identifier: GPL-3.0-or-later WITH GCC-exception-3.1`.
 
+You can find a list of common exceptions at [SPDX License
+Exceptions](https://spdx.org/licenses/exceptions-index.html).
+
 ## How does license compatibility work? {#license-compatibility}
 
 Free Software licenses are all different. Many licenses are compatible, meaning
