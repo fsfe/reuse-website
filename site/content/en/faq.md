@@ -178,10 +178,11 @@ changes under the same license as the original. A well-known copyleft license is
 the [GNU General Public License version
 3](https://www.gnu.org/licenses/gpl-3.0.html).
 
-A permissive license does not have this requirement. It is possible for someone
-to take a permissively licensed piece of software, make changes to it, and keep
-the changed version proprietary. A well-known permissive license is the [Apache
-License, version 2](https://www.apache.org/licenses/LICENSE-2.0.html).
+A permissive license gives you the same Free Software rights, but does not
+include this condition. It is possible for someone to take a permissively
+licensed piece of software, make changes to it, and keep the changed version
+proprietary. A well-known permissive license is the [Apache License, version
+2](https://www.apache.org/licenses/LICENSE-2.0.html).
 
 ## Which license should I choose? {#which-license}
 
