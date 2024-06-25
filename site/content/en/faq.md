@@ -172,9 +172,10 @@ There are two broad categories of Free Software licenses; copyleft and
 permissive licenses.
 
 A copyleft license give you the right to use, study, share, and improve a piece
-of software under the condition that, if you make any changes to the program,
-you must re-release those changes under the same license as the original. A
-well-known copyleft license is the [GNU General Public License version
+of software under one strict condition. If you make any changes to the program
+and share your version of the program with someone else, you must share your
+changes under the same license as the original. A well-known copyleft license is
+the [GNU General Public License version
 3](https://www.gnu.org/licenses/gpl-3.0.html).
 
 A permissive license does not have this requirement. It is possible for someone
