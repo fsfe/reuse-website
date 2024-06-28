@@ -130,6 +130,8 @@ associate Licensing Information with a file in the following ways:
 REUSE.toml and DEP5 are mutually exclusive. You MUST NOT use both
 simultaneously.
 
+Comment headers are the RECOMMENDED method.
+
 Additionally, you can associate Licensing Information with Snippets inside of
 files.
 
