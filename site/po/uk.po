@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-06-24 09:53+0000\n"
-"PO-Revision-Date: 2024-06-29 10:09+0000\n"
+"PO-Revision-Date: 2024-07-01 07:09+0000\n"
 "Last-Translator: Hotripak <hotr1pak@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/uk/>\n"
@@ -3566,6 +3566,19 @@ msgid ""
 "> * Make references to the license text and the SPDX identifier from each source code file.\n"
 "> * Include license and copyright information also for files which can not include a proper header, either in a separate .license file, or using the DEP-5/copyright specification.\n"
 msgstr ""
+"> ### Майте на увазі\n"
+"> \n"
+"> * Використовуйте єдиний стиль заголовків протягом усього проєкту.\n"
+"> * Не видаляйте існуючі заголовки, а лише додавайте їх.\n"
+"> * Розгляньте можливість використання систем контролю версій для ведення "
+"обліку власників авторських прав.\n"
+"> * Якщо ви використовуєте систему контролю версій, робіть її "
+"загальнодоступною.\n"
+"> * Зробіть посилання на текст ліцензії та ідентифікатор SPDX у кожному "
+"файлі вихідного коду.\n"
+"> * Включіть інформацію про ліцензію та авторські права також для файлів, "
+"які не можуть містити належного заголовка, або в окремому файлі .license, "
+"або використовуючи специфікацію DEP-5/copyright.\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3576,12 +3589,19 @@ msgid ""
 "archived freely and ensure project is archived by institutions dedicated to "
 "long-term preservation of software code, eg. Software Heritage."
 msgstr ""
+"[^3]: Встановіть управління проєктом, орієнтоване на публічний доступ, "
+"перевіряйте матеріали, що додаються до проєкту, щоб захистити їх від "
+"вразливості до вилучення, включайте лише матеріали під вільною та відкритою "
+"ліцензією, щоб їх можна було вільно копіювати та архівувати, а також "
+"забезпечте архівування проєкту в установах, що займаються довгостроковим "
+"збереженням програмного коду, наприклад, у Software Heritage."
 
 #. type: Title ##
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 #, no-wrap
 msgid "3. Provide an inventory for included software"
 msgstr ""
+"3. Надайте інвентаризацію програмного забезпечення, що входить до комплекту"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3590,6 +3610,10 @@ msgid ""
 "copyright information, you may include a bill of material for your project, "
 "but you should only do so if this is generated automatically."
 msgstr ""
+"Окрім файлів ліцензій, включених до проєкту, та інформації про авторські "
+"права на рівні файлів, ви можете включити до проєкту специфікацію "
+"матеріалів, але це слід робити лише у тому випадку, якщо вона згенерована "
+"автоматично."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3600,6 +3624,11 @@ msgid ""
 "best not to have a bill of material, but to rely only on the information "
 "coupled with the source code files."
 msgstr ""
+"Специфікація матеріалів може бути дуже складною і довгою, що ускладнює її "
+"ведення. Якщо ви не генеруєте його автоматично, дуже ймовірно, що хтось "
+"забуде оновити його при внесенні змін. У таких випадках, краще не мати "
+"специфікацію матеріалів, а покладатися лише на інформацію в поєднанні з "
+"файлами вихідного коду."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3611,6 +3640,12 @@ msgid ""
 "on files which include a standard header, or which includes the header in a "
 "separate license file."
 msgstr ""
+"Якщо у вас є можливість автоматично створювати специфікацію матеріалів, і "
+"якщо ви вирішите це зробити, вам слід генерувати її автоматично на основі "
+"найбільш достовірної інформації про кожен файл у вашому проєкті.  Сюди "
+"входить інформація про авторське право, що зберігається в системах контролю "
+"версій, а також ліцензії на файли, які містять стандартний заголовок або "
+"заголовок в окремому файлі ліцензії."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3620,6 +3655,10 @@ msgid ""
 "bill of material, which license is relevant for the output files depending "
 "on the included source code."
 msgstr ""
+"Ви також можете включити до переліку матеріалів ваші вихідні файли, "
+"згенеровані під час компіляції проєкту, щоб за допомогою переліку матеріалів "
+"ви могли вказати, яка ліцензія застосовується до вихідних файлів, залежно "
+"від включеного вихідного коду."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3628,6 +3667,8 @@ msgid ""
 "included in a file in the top level directory of your repository called "
 "`LICENSE.spdx`."
 msgstr ""
+"Перелік матеріалів має відповідати специфікації SPDX і міститися у файлі в "
+"каталозі верхнього рівня вашого сховища під назвою `LICENSE.spdx`."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3640,13 +3681,22 @@ msgid ""
 "> * Make your bill of material conformant to the SPDX specification.\n"
 "> * It doesn't hurt to run your project through ScanCode or FOSSology, to make sure these tools can parse and understand your project's licensing.\n"
 msgstr ""
+"> ### Майте на увазі\n"
+">\n"
+"> * Не створюйте специфікацію матеріалів, якщо ви не можете згенерувати її "
+"автоматично.\n"
+"> * Якщо ви генеруєте його автоматично, корисно додати його.\n"
+"> * Приведіть свою специфікацію матеріалів у відповідність до специфікації "
+"SPDX.\n"
+"> * Не завадить прогнати ваш проєкт через ScanCode або FOSSology, щоб "
+"переконатися, що ці інструменти можуть проаналізувати і зрозуміти "
+"ліцензування вашого проєкту.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-2.0.md
-#, fuzzy, no-wrap
-#| msgid "REUSE Specification – Version 3.0"
+#, no-wrap
 msgid "REUSE Practices – Version 2.0"
-msgstr "Специфікація REUSE – версія 3.0"
+msgstr "Практики REUSE - версія 2.0"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3655,6 +3705,9 @@ msgid ""
 "texts. Regardless of which license you use, you should include the license "
 "text in your project."
 msgstr ""
+"Ліцензії на вільне та відкрите програмне забезпечення стандартизовані та "
+"мають стандартні тексти. Незалежно від того, яку ліцензію ви використовуєте, "
+"ви повинні включити текст ліцензії у свій проєкт."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3667,6 +3720,13 @@ msgid ""
 "uniquely reference each license.  For instance, the GNU GPL version 3 has "
 "`GPL-3.0` as shorthand identifier."
 msgstr ""
+"Найпростіший спосіб переконатися, що ви надаєте незмінну ліцензію, - "
+"дослівно скопіювати її з [цього сховища ліцензій].(https://github.com/spdx/"
+"license-list) підтримується робочою групою SPDX.  Робоча група SPDX "
+"підтримує [список загальновживаних ліцензій][spdx-licenses].  Кожна ліцензія "
+"має скорочену назву (так званий ідентифікатор SPDX), яку можна "
+"використовувати для унікального посилання на кожну ліцензію.  Наприклад, GNU "
+"GPL версії 3 має `GPL-3.0` як скорочений ідентифікатор."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3676,6 +3736,10 @@ msgid ""
 "your repository with the name `LICENSE`, `LICENCE`, `COPYING` or `COPYRIGHT` "
 "(you may attach some suffix to the filename as well, such as `LICENSE.txt`)."
 msgstr ""
+"Якщо ваш проєкт містить лише код, ліцензований за однією ліцензією, ви "
+"можете надати текст цієї ліцензії у файлі у каталозі верхнього рівня вашого "
+"сховища з назвою `LICENSE`, `LICENCE`, `COPYING` або `COPYRIGHT` (ви також "
+"можете додати до назви файлу якийсь суфікс, наприклад, `LICENSE.txt`)."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3686,6 +3750,11 @@ msgid ""
 "license because some parts may be written by Alice and others by Bob, "
 "resulting in two different license files."
 msgstr ""
+"Деякі ліцензії, такі як ліцензія BSD 2 Clause, існують у багатьох варіаціях, "
+"де єдиною відмінністю є ім'я власника авторських прав у тексті ліцензії. Ваш "
+"проєкт може містити декілька версій однієї і тієї ж ліцензії BSD 2 Clause, "
+"оскільки деякі частини можуть бути написані Алісою, а інші - Бобом, що "
+"призведе до появи двох різних файлів ліцензії."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3695,6 +3764,10 @@ msgid ""
 "the common places to find licenses.  If you place your license elsewhere, it "
 "is possible that humans and computers alike may overlook it."
 msgstr ""
+"Коли ви додасте всі файли ліцензій, вони мають відповідати глобусу `{LICENSE*"
+", LICENCE*, COPYING*, COPYRIGHT*, LICENSES/**}`.  Це найпоширеніші місця, де "
+"можна знайти ліцензії.  Якщо ви розмістите ліцензію в іншому місці, можливо, "
+"що люди та комп'ютери не помітять її."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3705,6 +3778,11 @@ msgid ""
 "simply include the name of the license into the filename: The license file "
 "for `GPL-3.0` becomes `LICENSES/GPL-3.0.txt`."
 msgstr ""
+"Щоб мати змогу посилатися на файл ліцензії з вашого вихідного тексту, вам "
+"слід вставити ідентифікатор SPDX (наприклад, `GPL-3.0`, `MIT`) кожної "
+"ліцензії у відповідний файл ліцензії.  Найпростіший спосіб зробити це - "
+"просто включити назву ліцензії до назви файлу: файл ліцензії для `GPL-3.0` "
+"стане `LICENSES/GPL-3.0.txt`."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3718,6 +3796,14 @@ msgid ""
 "with the `License-Text` tag to signal the start of your license.  The header "
 "may include other tags."
 msgstr ""
+"Якщо перейменування файлу неможливе (наприклад, якщо ви хочете, щоб текст "
+"ліцензії містився під `COPYING`), вам слід додати до файлу заголовок у "
+"форматі тегу-значення.  Ви можете додати цей заголовок або до самого файлу "
+"ліцензії, або до файлу з такою самою назвою з суфіксом `.license`.  "
+"Заголовок повинен містити тег `Valid-License-Identifier`, значенням якого "
+"має бути SPDX-ідентифікатор вашої ліцензії.  Заголовок повинен закінчуватися "
+"тегом `License-Text`, щоб сигналізувати про початок вашої ліцензії.  "
+"Заголовок може містити інші теги."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3725,6 +3811,8 @@ msgid ""
 "This is an example of an MIT license file, which conveys that all references "
 "to the SPDX identifier `MIT` should point to this license file."
 msgstr ""
+"Це приклад файлу ліцензії MIT, який показує, що всі посилання на "
+"ідентифікатор SPDX `MIT` повинні вказувати на цей файл ліцензії."
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -3741,6 +3829,17 @@ msgid ""
 "copy of this software and associated documentation files (the \"Software\"),\n"
 " etc...\n"
 msgstr ""
+"Valid-License-Identifier: MIT\n"
+"License-Text:\n"
+"\n"
+"Ліцензія MIT\n"
+"\n"
+"Авторське право (c) <year> <copyright holders>\n"
+"\n"
+"Цим надається безплатний дозвіл будь-якій особі, яка отримує\n"
+"копію цього програмного забезпечення та пов'язаних з ним файлів документації "
+"(\"Програмне забезпечення\"),\n"
+" тощо...\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3749,6 +3848,9 @@ msgid ""
 "be noted that the license text itself may not necessarily be released under "
 "that license, nor does the tag claim that."
 msgstr ""
+"Хоча ідентифікатором має бути ліцензія зі списку ліцензій SPDX, слід "
+"зазначити, що сам текст ліцензії не обов'язково може бути випущений під цією "
+"ліцензією, і тег цього не стверджує."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3758,6 +3860,10 @@ msgid ""
 "`GPL-2.0+`, but please note that it is not mandatory to list `GPL-2.0+` "
 "separately."
 msgstr ""
+"Ідентифікатор ліцензії може повторюватися, якщо один і той самий файл "
+"ліцензії використовується з декількома ідентифікаторами ліцензії.  Наведений "
+"нижче приклад стосується `GPL-2.0` і `GPL-2.0+`, але зверніть увагу, що "
+"вказувати `GPL-2.0+` окремо не обов'язково."
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -3766,6 +3872,8 @@ msgid ""
 "Valid-License-Identifier: GPL-2.0\n"
 "Valid-License-Identifier: GPL-2.0+\n"
 msgstr ""
+"Valid-License-Identifier: GPL-2.0\n"
+" Valid-License-Identifier: GPL-2.0+\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3775,12 +3883,16 @@ msgid ""
 "modified version of a license included in that list, you should create a custom\n"
 "identifier for it in the form `LicenseRef-<unique_code>`.\n"
 msgstr ""
+"Якщо ліцензія не включена до списку ліцензій SPDX, або ліцензія є\n"
+"модифікованою версією ліцензії, що входить до цього списку, вам слід "
+"створити власний\n"
+"ідентифікатор для неї у вигляді `LicenseRef-<унікальний_код>`.\n"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
 #, no-wrap
 msgid "Valid-License-Identifier: LicenseRef-MyLicense\n"
-msgstr ""
+msgstr "Valid-License-Identifier: LicenseRef-MyLicense\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3791,6 +3903,11 @@ msgid ""
 "same header style or the tags `SPDX-Exception-Identifier` and `Exception-"
 "Text` instead. This is an example of a valid exception:"
 msgstr ""
+"У малоймовірному випадку, якщо ваш вихідний код містить винятки, такі як ["
+"Classpath exception 2.0](https://spdx.org/licenses/Classpath-exception-2.0."
+"html), ви можете включити їх у те саме місце, що й ваші ліцензії, "
+"використовуючи той самий стиль заголовка або теги `SPDX-Exception-Identifier`"
+" та `Exception-Text` замість них. Це приклад правильного винятку:"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -3803,6 +3920,13 @@ msgid ""
 " making a combined work based on this library. Thus, the terms and\n"
 " conditions of the GNU General Public License cover the whole combination. \n"
 msgstr ""
+"SPDX-Exception-Identifier: Classpath-exception-2.0\n"
+"Exception-Text:\n"
+"\n"
+" Зв'язування цієї бібліотеки статично або динамічно з іншими модулями - це\n"
+" створення комбінованої роботи на основі цієї бібліотеки. Таким чином, "
+"терміни та\n"
+" та умови Загальної публічної ліцензії GNU поширюються на всю комбінацію. \n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3814,11 +3938,19 @@ msgid ""
 ">   the filename or by inserting a header, such that you can refer to the\n"
 ">   license from the source code files.\n"
 msgstr ""
+"> * Не змінюйте текст ліцензії, використовуйте дослівну форму тексту "
+"ліцензії.\n"
+"> * Не видаляйте жодних текстів ліцензій, додайте тексти ліцензій до всього "
+"програмного забезпечення.\n"
+"> * Включіть ідентифікатор SPDX до кожного файлу ліцензії, або включивши "
+"його до\n"
+">   імені файлу або вставивши заголовок, щоб ви могли посилатися на файл\n"
+">   ліцензії з файлів вихідного коду.\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
 msgid "[spdx-licenses]: https://spdx.org/licenses/"
-msgstr ""
+msgstr "[spdx-licenses]: https://spdx.org/licenses/"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3830,6 +3962,12 @@ msgid ""
 "license information: Who are the copyright holders and under which "
 "license(s) do they release the file?"
 msgstr ""
+"Файли вихідного коду часто повторно використовуються в декількох проєктах, "
+"беруться зі свого джерела і перепризначаються, або іншим чином потрапляють у "
+"сховища, де вони відокремлені від свого джерела. Тому вам слід переконатися, "
+"що всі файли у вашому проєкті мають заголовок коментаря, який містить "
+"інформацію про авторські права та ліцензію на цей файл: Хто є власниками "
+"авторських прав і за якою ліцензією (ліцензіями) вони випускають файл?"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3839,6 +3977,9 @@ msgid ""
 "remove any information from headers in files of which you are not the sole "
 "author."
 msgstr ""
+"Вкрай рекомендовано дотримуватися однакового формату цих заголовків у всіх "
+"ваших файлах.  Однак важливо, щоб ви не видаляли жодної інформації із "
+"заголовків файлів, якщо ви не є їхнім єдиним автором."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3848,6 +3989,10 @@ msgid ""
 "an `SPDX-License-Identifier` tag followed by an SPDX expression defined by "
 "the SPDX specifications."
 msgstr ""
+"Ви повинні передавати інформацію про ліцензію вашого файлу вихідного коду у "
+"стандартизований спосіб, щоб комп'ютери могли її інтерпретувати.  Ви можете "
+"зробити це за допомогою тегу `SPDX-License-Identifier`, за яким слідує вираз "
+"SPDX, визначений специфікаціями SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3856,6 +4001,10 @@ msgid ""
 "sorted by year. They should list the actual copyright holder, which may be "
 "an organisation rather than the author. For example:"
 msgstr ""
+"Повідомлення про авторські права в заголовку коментаря повинні мати "
+"однаковий формат і бути відсортовані за роками. Вони повинні вказувати "
+"фактичного власника авторських прав, яким може бути організація, а не автор. "
+"Наприклад:"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -3869,6 +4018,13 @@ msgid ""
 "  * SPDX-License-Identifier: GPL-2.0\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  * Авторське право (c) 2017 Аліса Комміт <alice@example.com>\n"
+"  * Авторське право (c) 2009-2016 Боб Денвер <bob@example.com>\n"
+"  * Авторське право (c) 2007 Приклад Компанії <charlie@example.com>\n"
+"  * \n"
+"  * SPDX-License-Identifier: GPL-2.0\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3876,6 +4032,8 @@ msgid ""
 "You should include information about your project's practices in the README "
 "or similar file.  This could be as simple as linking to these practices."
 msgstr ""
+"Ви повинні включити інформацію про практику вашого проєкту в файл README або "
+"подібний до нього.  Це може бути просто посилання на ці практики."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3887,6 +4045,12 @@ msgid ""
 "format does not support comments, you must provide the information "
 "separately in one of three ways:"
 msgstr ""
+"Усі вихідні файли, які включаються у фінальну збірку вашого проєкту ("
+"дослівно, змінені, частково або у скомпільованому вигляді), повинні мати "
+"інформацію про авторське право та ліцензію, що міститься у них.  Якщо "
+"неможливо додати заголовок до файлу, або через те, що файл є бінарним, або "
+"через те, що формат не підтримує коментарі, ви повинні надати інформацію "
+"окремо одним з трьох способів:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -3895,6 +4059,9 @@ msgid ""
 "regular comment header with all the necessary information to convey the "
 "license information about the file called `FILENAME`."
 msgstr ""
+"Ви можете включити текстовий файл з назвою `FILENAME.license`, у якому ви "
+"зберігаєте ваш звичайний заголовок коментаря з усією необхідною інформацією "
+"для передачі ліцензійної інформації про файл з назвою `FILENAME`."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -3904,6 +4071,11 @@ msgid ""
 "doc/packaging-manuals/copyright-format/1.0/)  file format, and place a "
 "single copyright notice documenting those files."
 msgstr ""
+"Якщо у вас багато таких файлів, але кожен з них має однакове повідомлення "
+"про авторські права та ліцензію, ви можете замість цього використовувати ["
+"DEP-5/copyright](https://www.debian.org/doc/packaging-manuals/"
+"copyright-format/1.0/)  файловий формат, і розмістити єдине повідомлення про "
+"авторське право, що документує ці файли."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -3912,6 +4084,9 @@ msgid ""
 "in SPDX format (see practice 3), you may use this and do not need to "
 "separately include a `.license` file or DEP-5/copyright file."
 msgstr ""
+"Якщо у вас є спосіб автоматичного створення інвентаризації включених файлів "
+"у форматі SPDX (див. практику 3), ви можете скористатися ним і не включати "
+"окремо файл `.license` або файл DEP-5/копірайту."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3920,6 +4095,9 @@ msgid ""
 "build artefact, you are encouraged but not obliged to include license "
 "information for these too."
 msgstr ""
+"Якщо ваш проєкт містить документацію, яка не входить до остаточного "
+"артефакту збірки, ви можете, але не зобов'язані додавати інформацію про "
+"ліцензію і для неї."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3931,6 +4109,13 @@ msgid ""
 "Corp, reference to `LicenseRef-BSD-2-Clause-Evil-Corp`, and include both "
 "those licenses separately in `LICENSES` (see practice 1)."
 msgstr ""
+"Якщо вихідний код ліцензовано за такою ліцензією, як `BSD-2-Clause`, де "
+"тексти ліцензії можуть відрізнятися для кожного окремого власника авторських "
+"прав, вам слід щоразу посилатися на конкретну ліцензію.  Таким чином, для "
+"файлів, написаних Alice, посилайтеся на `LicenseRef-BSD-2-Clause-Alice`, а "
+"для файлів, написаних Evil Corp, посилайтеся на `LicenseRef-BSD-2-Clause-"
+"Evil-Corp`, і включіть обидві ці ліцензії окремо в `LICENSES` (див. практику "
+"1)."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -3938,6 +4123,8 @@ msgid ""
 "make sure the version control system is publicly accessible and take "
 "steps[^1] to ensure it will remain so,"
 msgstr ""
+"переконайтеся, що система контролю версій є загальнодоступною, і зробіть "
+"кроки[^1], щоб вона залишалася такою і надалі,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -3948,6 +4135,11 @@ msgid ""
 "included, for example in the form of a bill of materials (see later), an "
 "automatically generated log file or similar,"
 msgstr ""
+"переконайтеся, що якщо хтось копіює вихідний репозиторій без метаданих "
+"системи контролю версій (наприклад, якщо вони створюють tar-файл), то "
+"метадані системи контролю версій, важливі для визначення авторських прав, "
+"все одно мають бути включені, наприклад, у вигляді специфікації (див. далі), "
+"автоматично згенерованого файлу журналу або подібного,"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -3961,6 +4153,13 @@ msgid ""
 "  * SPDX-License-Identifier: GPL-3.0\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  * Цей файл є частиною проєкту X. Він захищений авторським правом авторів\n"
+"  * записані в історії контролю версій файлу, яка доступна за адресою\n"
+"  * його первісне розташування http://git.example.com/X/filename.c\n"
+"  * \n"
+"  * SPDX-License-Identifier: GPL-3.0\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3978,6 +4177,22 @@ msgid ""
 ">   include a proper header, either in a separate .license file, or using the\n"
 ">   DEP-5/copyright specification.\n"
 msgstr ""
+"> ### Майте на увазі\n"
+"> \n"
+"> * Використовуйте єдиний стиль заголовків протягом усього проєкту.\n"
+"> * Не видаляйте існуючі заголовки, а лише додавайте їх.\n"
+"> * Розгляньте можливість використання систем контролю версій для ведення "
+"обліку власників авторських прав.\n"
+"> * Якщо ви використовуєте систему контролю версій, робіть її "
+"загальнодоступною.\n"
+"> * Зробіть посилання на ідентифікатор SPDX у кожному файлі вихідного коду.\n"
+"> * Записуйте інформацію про авторські права в кожному файлі вихідного коду."
+"\n"
+"> * Включіть інформацію про ліцензію та авторське право також для файлів, "
+"які не можуть\n"
+">   включати відповідний заголовок або в окремому файлі .license, або за "
+"допомогою\n"
+">   специфікації DEP-5/копірайт.\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3988,6 +4203,12 @@ msgid ""
 "archived freely and ensure project is archived by institutions dedicated to "
 "long-term preservation of software code, eg. Software Heritage."
 msgstr ""
+"[^1]: Встановіть управління проєктом, орієнтоване на публічний доступ, "
+"перевіряйте матеріали, що додаються до проєкту, щоб захистити їх від "
+"вразливості до вилучення, включайте лише матеріали під вільною та відкритою "
+"ліцензією, щоб їх можна було вільно копіювати та архівувати, а також "
+"забезпечте архівування проєкту в установах, що займаються довгостроковим "
+"збереженням програмного коду, наприклад, у Software Heritage."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -3996,6 +4217,10 @@ msgid ""
 "copyright information, you may include a bill of materials for your project, "
 "but you should only do so if this is generated automatically."
 msgstr ""
+"Окрім ліцензійних файлів, включених до проєкту, та інформації про авторські "
+"права на рівні файлів, ви можете додати специфікацію матеріалів для вашого "
+"проєкту, але це слід робити лише у тому випадку, якщо вона згенерована "
+"автоматично."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4006,6 +4231,11 @@ msgid ""
 "best not to have a bill of materials, but to rely only on the information "
 "coupled with the source code files."
 msgstr ""
+"Перелік матеріалів може бути дуже складним і довгим, що ускладнює його "
+"ведення. Якщо ви не генеруєте його автоматично, дуже ймовірно, що хтось "
+"забуде оновити його при внесенні змін. У таких випадках краще не мати "
+"специфікацію матеріалів, а покладатися лише на інформацію в поєднанні з "
+"файлами вихідного коду."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4017,6 +4247,12 @@ msgid ""
 "on files which include a standard header, or which includes the header in a "
 "separate license file."
 msgstr ""
+"Якщо у вас є спосіб автоматичного створення специфікації матеріалів, і якщо "
+"ви вирішите це зробити, вам слід генерувати її автоматично на основі "
+"найбільш достовірної інформації про кожен файл у вашому проєкті.  Сюди "
+"входить інформація про авторське право, що зберігається в системах контролю "
+"версій, а також ліцензії на файли, які містять стандартний заголовок або "
+"заголовок в окремому файлі ліцензії."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4026,6 +4262,10 @@ msgid ""
 "bill of materials, which license is relevant for the output files depending "
 "on the included source code."
 msgstr ""
+"Ви також можете включити до переліку матеріалів ваші вихідні файли, "
+"згенеровані під час компіляції проєкту, щоб за допомогою переліку матеріалів "
+"ви могли вказати, яка ліцензія застосовна до вихідних файлів залежно від "
+"включеного вихідного коду."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4034,6 +4274,8 @@ msgid ""
 "included in a file in the top level directory of your repository called "
 "`LICENSE.spdx`."
 msgstr ""
+"Перелік матеріалів повинен відповідати специфікації SPDX і міститися у файлі "
+"в каталозі верхнього рівня вашого сховища під назвою `LICENSE.spdx`."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4046,6 +4288,16 @@ msgid ""
 "> * Make your bill of materials conformant to the SPDX specification.\n"
 "> * It doesn't hurt to run your project through ScanCode or FOSSology, to make sure these tools can parse and understand your project's licensing.\n"
 msgstr ""
+"> ### Майте на увазі\n"
+">\n"
+"> * Не створюйте специфікацію матеріалів, якщо ви не можете згенерувати її "
+"автоматично.\n"
+"> * Якщо ви генеруєте його автоматично, корисно додати його.\n"
+"> * Приведіть свою специфікацію матеріалів у відповідність до специфікації "
+"SPDX.\n"
+"> * Не завадить прогнати ваш проєкт через ScanCode або FOSSology, щоб "
+"переконатися, що ці інструменти можуть проаналізувати і зрозуміти "
+"ліцензування вашого проєкту.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-3.0.md
@@ -4114,10 +4366,8 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid "- License File --- a file containing the text of a license."
 msgid "License File --- a file containing the text of a license."
-msgstr "- Файл ліцензії --- файл, що містить текст ліцензії."
+msgstr "Файл ліцензії --- файл, що містить текст ліцензії."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
@@ -4141,24 +4391,19 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "SPDX License Identifier --- SPDX short-form identifier, as defined in "
-#| "SPDX Specification. See also <https://spdx.org/ids> for a short "
-#| "introduction and examples."
 msgid ""
 "SPDX Identifier --- SPDX short-form identifier, as defined in SPDX "
 "Specification. See also <https://spdx.org/ids> for a short introduction and "
 "examples."
 msgstr ""
-"Ідентифікатор ліцензії SPDX — ідентифікатор короткої форми SPDX, як "
-"визначено у специфікації SPDX. Перегляньте також <https://spdx.org/ids> для "
-"швидкого ознайомлення та прикладів."
+"Ідентифікатор SPDX --- Короткий ідентифікатор SPDX, як визначено у "
+"Специфікації SPDX. Див. також <https://spdx.org/ids> для короткого вступу та "
+"прикладів."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
 msgid "SPDX License Expression --- as defined in SPDX Specification."
-msgstr ""
+msgstr "Вираз ліцензії SPDX --- як визначено у специфікації SPDX."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -4208,41 +4453,25 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "Each License File MUST be placed in the `LICENSES/` directory in the root "
-#| "of the Project. The name of the License File MUST be the SPDX License "
-#| "Identifier of the license followed by an appropriate file extension "
-#| "(example: `LICENSES/GPL-3.0-or-later.txt`). The License File MUST be in "
-#| "plain text format."
 msgid ""
 "Each License File MUST be placed in the `LICENSES/` directory in the root of "
 "the Project. The name of the License File MUST be the SPDX identifier of the "
 "license followed by an appropriate file extension (example: `LICENSES/"
 "GPL-3.0-or-later.txt`). The License File MUST be in plain text format."
 msgstr ""
-"Кожен файл ліцензії повинен бути розміщений у каталозі `LICENSES/` у "
-"кореневому каталозі проєкту. Назва файлу ліцензії ПОВИННА бути "
-"ідентифікатором ліцензії SPDX, а потім відповідним розширенням файлу "
-"(наприклад: `LICENSES/GPL-3.0-or-later.txt`). Файл ліцензії ПОВИНЕН бути у "
-"звичайному текстовому форматі."
+"Кожен файл ліцензії ПОВИНЕН бути розміщений у каталозі `LICENSES/` у корені "
+"проєкту. Ім'я файлу ліцензії МАЄ бути SPDX-ідентифікатором ліцензії, за яким "
+"слідує відповідне розширення файлу (наприклад: `LICENSES/GPL-3.0-or-later."
+"txt`). Файл ліцензії ПОВИНЕН бути у форматі звичайного тексту."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "If a license does not exist in the SPDX License List, its SPDX License "
-#| "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
-#| "Specification, Section 6 available at <https://spdx.org/spdx-"
-#| "specification-21-web-version#h.1v1yuxt>."
 msgid ""
 "If a license does not exist in the SPDX License List, its SPDX Identifier "
 "MUST be `LicenseRef-[idstring]` as defined by the SPDX Specification."
 msgstr ""
-"Якщо ліцензії немає у списку ліцензій SPDX, її ідентифікатор ліцензії SPDX "
-"ПОВИНЕН бути `LicenseRef-[idstring]`, як визначено специфікацією SPDX, у "
-"розділі 6, доступному на <https://spdx.org/spdx-specification-21-web-"
-"version#h.1v1yuxt>."
+"Якщо ліцензія не існує у списку ліцензій SPDX, її SPDX-ідентифікатор МАЄ "
+"бути `LicenseRef-[idstring]`, як визначено у специфікації SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -4281,10 +4510,8 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid "- The License Files."
 msgid "The License Files."
-msgstr "- Файли ліцензій."
+msgstr "Файли ліцензії."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -4357,29 +4584,26 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "The comment header MUST contain one or more `SPDX-FileCopyrightText` "
-#| "tags, and one or more `SPDX-License-Identifier` tags. A tag is followed "
-#| "by a colon, followed by a text value, and terminated by a newline."
 msgid ""
 "The comment header MUST contain one or more `SPDX-FileCopyrightText` tags, "
 "and one or more `SPDX-License-Information` tags. A tag is followed by a "
 "colon, followed by a text value, and terminated by a newline."
 msgstr ""
-"Заголовок коментаря ПОВИНЕН містити один або кілька тегів `SPDX-"
-"FileCopyrightText`` і один або кілька тегів `SPDX-License-Identifier`. Після "
-"тегу слід додати двокрапку, далі текстове значення і завершити переходом на "
-"новий рядок."
+"Заголовок коментаря ПОВИНЕН містити один або більше тегів `SPDX-"
+"FileCopyrightText` та один або більше тегів `SPDX-License-Information`. "
+"Після тегу ставиться двокрапка, за якою йде текстове значення, і "
+"завершується тег новим рядком."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
-#| msgid "The `SPDX-FileCopyrightText` tag MUST be followed by a copyright notice."
+#, no-wrap
 msgid ""
 "The `SPDX-FileCopyrightText` tag MUST be followed by a copyright notice as described\n"
 "in <!-- FIXME: Refer to an internal section -->.\n"
-msgstr "Тег `SPDX-FileCopyrightText` ПОВИНЕН стояти перед повідомленням про авторські права."
+msgstr ""
+"Тег `SPDX-FileCopyrightText` ПОВИНЕН супроводжуватися повідомленням про "
+"авторські права, як описано\n"
+"у <!-- FIXME: Refer to an internal section -->.\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -4463,12 +4687,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
-#| msgid "The `Copyright` tag MUST be followed by a copyright notice."
+#, no-wrap
 msgid ""
 "The `Copyright` tag MUST be followed by a copyright notice as described in <!--\n"
 "FIXME: Refer to an internal section -->.\n"
-msgstr "За тегом `Copyright` ПОВИННЕ слідувати повідомлення про авторські права."
+msgstr ""
+"Тег `Copyright` ПОВИНЕН супроводжуватися повідомленням про авторські права, "
+"як описано в <!--\n"
+"FIXME: Refer to an internal section -->.\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -4555,21 +4781,12 @@ msgstr "Приклади правильних повідомлень про ав
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "REUSE Specification – Version 3.0"
+#, no-wrap
 msgid "REUSE Specification – Version 3.2 (UNRELEASED)"
-msgstr "Специфікація REUSE – версія 3.0"
+msgstr "Специфікація REUSE - версія 3.2 (НЕВИПУЩЕНА)"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "This specification defines a standardized method for declaring copyright "
-#| "and licensing for software projects. The goal of the specification is to "
-#| "have unambiguous, human- and machine-readable copyright and licensing "
-#| "information for each individual file in a project. Ideally this "
-#| "information is embedded into every file, so that the information is "
-#| "preserved when the file is copied and reused by third parties."
 msgid ""
 "This specification defines a standardised method for declaring copyright and "
 "licensing for software projects. The goal of the specification is to have "
@@ -4578,63 +4795,50 @@ msgid ""
 "information is embedded into every file, so that the information is "
 "preserved when the file is copied and reused by third parties."
 msgstr ""
-"Ця специфікація визначає стандартизований метод оголошення авторських прав і "
-"ліцензування для програмних проєктів. Мета специфікації полягає в тому, щоб "
-"мати однозначну, людино- і машинозчитувану інформацію про авторські права та "
+"Ця специфікація визначає стандартизований метод декларування авторських прав "
+"та ліцензування програмних проєктів. Мета специфікації - отримати вичерпну, "
+"однозначну, зрозумілу для людини і машини інформацію про авторські права та "
 "ліцензування для кожного окремого файлу в проєкті. В ідеалі ця інформація "
-"вбудована в кожен файл, так що інформація зберігається при копіюванні файлу "
-"і повторному їх використанні третіми особами."
+"вбудовується в кожен файл, щоб інформація зберігалася при копіюванні та "
+"повторному використанні файлу третіми особами."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "For the revision history of this specification, please see [the change "
-#| "log](https://git.fsfe.org/reuse/docs/src/branch/master/CHANGELOG.md)."
 msgid ""
 "For the revision history of this specification, please see [the change log]"
 "(https://git.fsfe.org/reuse/docs/src/branch/stable/CHANGELOG.md)."
 msgstr ""
-"Історію редакцій цієї специфікації перегляньте у [журналі змін](https://git."
-"fsfe.org/reuse/docs/src/branch/master/CHANGELOG.md)."
+"Історію змін до цієї специфікації можна переглянути у [журналі "
+"змін](https://git.fsfe.org/reuse/docs/src/branch/stable/CHANGELOG.md)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "REUSE Tool --- helper tool for compliance with this Specification; "
-#| "available at <https://github.com/fsfe/reuse-tool>."
 msgid ""
 "REUSE Tool --- helper tool for compliance with this specification; available "
 "at <https://github.com/fsfe/reuse-tool>."
 msgstr ""
-"Інструмент REUSE — допоміжний інструмент для дотримання цієї специфікації; "
-"доступний на <https://github.com/fsfe/reuse-tool>."
+"REUSE Tool --- допоміжний інструмент для дотримання цієї специфікації; "
+"доступний за адресою <https://github.com/fsfe/reuse-tool>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "- License File --- a file containing the text of a license."
 msgid ""
 "License File --- a file containing the text of a license, as defined in "
 "[License Files](#license-files)."
-msgstr "- Файл ліцензії --- файл, що містить текст ліцензії."
+msgstr ""
+"Файл ліцензії --- файл, що містить текст ліцензії, як визначено у [Файли "
+"ліцензій](#license-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Copyright and Licensing Information --- the information that lists the "
-#| "copyright holders of a file or work, and describes under which licenses "
-#| "the file or work is made available."
 msgid ""
 "Licensing Information --- the information that lists the copyright holders "
 "of a file or work, and describes under which licenses the file or work is "
 "made available."
 msgstr ""
-"Інформація про авторське право та ліцензування — інформація, в якій "
-"перелічено власників авторських прав на файл або роботу, і описано, за якими "
-"ліцензіями доступні файл або робота."
+"Інформація про ліцензування - інформація, яка містить перелік власників "
+"авторських прав на файл або твір, а також описує, за якими ліцензіями файл "
+"або твір доступний."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4643,6 +4847,9 @@ msgid ""
 "holder. Its format is defined in the [Format of Copyright Notices](#format-"
 "of-copyright-notices) section."
 msgstr ""
+"Повідомлення про авторські права --- рядок тексту, який повідомляє про "
+"авторські права правовласника. Його формат визначено у розділі [Формат "
+"сповіщень про авторські права](#format-of-copyright-notices)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4650,11 +4857,15 @@ msgid ""
 "Covered File --- a file which must contain Licensing Information, as defined "
 "in [Covered and ignored Files](#covered-and-ignored-files)."
 msgstr ""
+"Покритий файл --- файл, який повинен містити Ліцензійну інформацію, як "
+"визначено в [Покриті та ігноровані файли] (#covered-and-ignored-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "Commentable File --- a plain text file that can contain comments."
 msgstr ""
+"Файл, що коментується --- звичайний текстовий файл, який може містити "
+"коментарі."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4662,6 +4873,8 @@ msgid ""
 "Snippet --- a portion of text in a Commentable File to which different "
 "Licensing Information applies."
 msgstr ""
+"Уривок --- частина тексту в коментованому файлі, до якої застосовується інша "
+"інформація про ліцензування."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4669,19 +4882,17 @@ msgid ""
 "Uncommentable File --- either a plain text file that cannot contain comments "
 "or a file that is not a plain text file."
 msgstr ""
+"Файл, що не коментується --- або звичайний текстовий файл, який не може "
+"містити коментарів, або файл, який не є звичайним текстовим файлом."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "SPDX Specification --- SPDX specification, version 2.1; as available on "
-#| "<https://spdx.org/specifications>."
 msgid ""
 "SPDX Specification --- SPDX specification, version 2.3; as available at "
 "<https://spdx.org/specifications>."
 msgstr ""
-"Специфікація SPDX — специфікація SPDX, версія 2.1; доступна на <https://spdx."
-"org/specifications>."
+"Специфікація SPDX --- Специфікація SPDX, версія 2.3; доступна на "
+"<https://spdx.org/specifications>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4696,27 +4907,15 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "- SPDX License Expression --- as defined in SPDX Specification, Appendix "
-#| "IV, at <https://spdx.org/spdx-specification-21-web-version#h."
-#| "jxpfx0ykyb60>."
 msgid ""
 "SPDX License Expression --- as defined in SPDX Specification, Annex D, at "
 "<https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/>."
 msgstr ""
-"- Вираз ліцензії SPDX — як визначено в специфікації SPDX, Додаток IV, за "
-"адресою <https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60>."
+"Вираз ліцензії SPDX --- як визначено у Специфікації SPDX, Додаток D, за "
+"адресою <https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "DEP5 --- [Machine-readable `debian/copyright` file, Version 1.0](https://"
-#| "www.debian.org/doc/packaging-manuals/copyright-format/1.0/).  Where the "
-#| "REUSE Specification and DEP5 state different things, the REUSE "
-#| "Specification takes precedence. Specifically in the case of the "
-#| "`Copyright` and `License` tags."
 msgid ""
 "DEP5 --- Machine-readable `debian/copyright` file, Version 1.0; as available "
 "at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/> and "
@@ -4724,10 +4923,11 @@ msgid ""
 "Specification and DEP5 state different things, the REUSE Specification takes "
 "precedence."
 msgstr ""
-"DEP5 — [Машинозчитуваний `debian/copyright`, версія 1.0](https://www.debian."
-"org/doc/packaging-manuals/copyright-format/1.0/).  Якщо специфікація REUSE "
-"та DEP5 мають розбіжності, специфікація REUSE має пріоритет. Зокрема, у "
-"випадку з тегами `Copyright` і `License`."
+"DEP5 --- Машиночитаний файл `debian/copyright`, версія 1.0; доступний на "
+"<https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/> і "
+"додатково описаний у [DEP5 (застарілий)](#dep5-deprecated). Якщо "
+"специфікація REUSE та DEP5 стверджують різні речі, специфікація REUSE має "
+"перевагу."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4735,12 +4935,14 @@ msgid ""
 "TOML --- A configuration file format as available at <https://toml.io/en/"
 "v1.0.0>."
 msgstr ""
+"TOML --- Формат файлу конфігурації, доступний за адресою <https://toml.io/en/"
+"v1.0.0>."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Covered and ignored Files"
-msgstr ""
+msgstr "Покриті та ігноровані файли"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4748,31 +4950,27 @@ msgid ""
 "Covered Files are any file which must contain Licensing Information. This is "
 "equal to all files in a project, with the exception of:"
 msgstr ""
+"Покриті файли - це будь-який файл, який повинен містити Ліцензійну "
+"інформацію. Це значення дорівнює всім файлам у проєкті, за винятком:"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "You should always include all licenses in the `LICENSES/` directory."
 msgid "The License Files stored in the `LICENSES/` directory."
-msgstr "Ви завжди повинні включати всі ліцензії в каталог `LICENSES/`."
+msgstr "Файли ліцензії зберігаються у каталозі `LICENSES/`."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "`COPYING` and `LICENSE`, with or without file extensions."
-msgstr ""
+msgstr "`КОПІЮВАННЯ` та `ЛІЦЕНЗІЯ`, з розширеннями файлів або без них."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The files ignored by the version control system (example: Files listed in "
-#| "`.gitignore`)."
 msgid ""
 "The files ignored by the version control system (example: files listed in `."
 "gitignore`)."
 msgstr ""
-"Файли, проігноровані системою контролю версій (наприклад: Файли, перелічені "
-"в `.gitignore`)."
+"Файли, які ігноруються системою контролю версій (наприклад, файли, "
+"перелічені у `.gitignore`)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4780,11 +4978,13 @@ msgid ""
 "Submodules of the Project's version control system and Meson subprojects. "
 "Each submodule and Meson subproject is understood as a separate Project."
 msgstr ""
+"Підмодулі системи управління версіями проєкту та підпроєктів Meson. Кожен "
+"субмодуль і підпроєкт Meson розглядається як окремий проєкт."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "Symlinks and files with no data (zero-byte)."
-msgstr ""
+msgstr "Символічні посилання та файли без даних (нульовий байт)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4793,26 +4993,24 @@ msgid ""
 "Specification, Clause 4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/"
 "#44-standard-data-format-requirements)  (example: `sbom.spdx.json`)."
 msgstr ""
+"Документи SPDX у різних форматах, визначених у [Специфікація SPDX, Пункт 4.4]"
+" (https://spdx.github.io/spdx-spec/v2.3/conformance/#44-standard-data-format-"
+"requirements) (приклад: `sbom.spdx.json`)."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "License files"
+#, no-wrap
 msgid "License Files"
-msgstr "Файли ліцензій"
+msgstr "Файли ліцензії"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "A Project MUST include a License File for every license under which files "
-#| "in the Project are licensed."
 msgid ""
 "A Project MUST include a License File for every license under which Covered "
 "Files are licensed."
 msgstr ""
-"Проєкт ПОВИНЕН включати файл ліцензії для кожної ліцензії, за якою "
-"ліцензуються файли в Проєкті."
+"Проєкт ОБОВ'ЯЗКОВО повинен містити Ліцензійний файл для кожної ліцензії, за "
+"якою ліцензуються Покриті файли."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4831,36 +5029,27 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "If a license does not exist in the SPDX License List, its SPDX License "
-#| "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
-#| "Specification, Section 6 available at <https://spdx.org/spdx-"
-#| "specification-21-web-version#h.1v1yuxt>."
 msgid ""
 "If a license does not exist in the SPDX License List, its SPDX License "
 "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
 "Specification, Clause 10 available at <https://spdx.github.io/spdx-spec/v2.3/"
 "other-licensing-information-detected/>."
 msgstr ""
-"Якщо ліцензії немає у списку ліцензій SPDX, її ідентифікатор ліцензії SPDX "
-"ПОВИНЕН бути `LicenseRef-[idstring]`, як визначено специфікацією SPDX, у "
-"розділі 6, доступному на <https://spdx.org/spdx-specification-21-web-"
-"version#h.1v1yuxt>."
+"Якщо ліцензія не існує у списку ліцензій SPDX, її ідентифікатор ліцензії "
+"SPDX МАЄ бути `LicenseRef-[idstring]`, як визначено у Специфікації SPDX, "
+"Пункт 10, доступній за адресою <https://spdx.github.io/spdx-spec/v2.3/"
+"other-licensing-information-detected/>."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "A Project MUST NOT include License Files for licenses under which none of "
-#| "the files in the Project are licensed."
 msgid ""
 "A Project MUST NOT include License Files for licenses under which none of "
 "the files in the Project are licensed. The `LICENSES/` directory MUST NOT "
 "include any other files."
 msgstr ""
-"Проєкт НЕ ПОВИНЕН містити файли ліцензій для ліцензій, за якими не "
-"ліцензований жоден із файлів у проєкті."
+"Проєкт НЕ МОЖЕ включати ліцензійні файли для ліцензій, за якими жоден з "
+"файлів у проєкті не є ліцензованим. Каталог `LICENSES/` НЕ ПОВИНЕН містити "
+"жодних інших файлів."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4870,6 +5059,10 @@ msgid ""
 "Information associated with any Covered File, there MUST exist a License "
 "File as defined in this section."
 msgstr ""
+"Щоб уникнути сумнівів, на практиці це означає, що для кожної ліцензії та "
+"винятку, які є частиною будь-якого Виразу ліцензії SPDX в будь-якій "
+"Ліцензійній інформації, пов'язаній з будь-яким Покритим файлом, ПОВИНЕН "
+"існувати Ліцензійний файл, як визначено в цьому розділі."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4880,38 +5073,39 @@ msgid ""
 "a summary of your licensing, or anything else. These files are ignored by "
 "the REUSE Tool."
 msgstr ""
+"You MAY include a `COPYING` or `LICENSE` file (with or without file "
+"extensions)  in your project for compliance with other standards, "
+"conventions, or tools.  Ці файли МОЖУТЬ містити копію тексту ліцензії, "
+"коротку інформацію про ваше ліцензування або щось інше. Ці файли ігноруються "
+"інструментом REUSE."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "Change licensing information"
+#, no-wrap
 msgid "Licensing Information"
-msgstr "Змінити відомості про ліцензування"
+msgstr "Інформація про ліцензування"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Each file in the Project MUST have Copyright and Licensing Information "
-#| "associated with it, except the following files:"
 msgid ""
 "Each Covered File MUST have Licensing Information associated with it. You "
 "can associate Licensing Information with a file in the following ways:"
 msgstr ""
-"Кожен файл у проєкті ПОВИНЕН містити відомості про авторські права та "
-"ліцензування, пов’язану з ним, за винятком таких файлів:"
+"Кожен Покритий файл ПОВИНЕН мати пов'язану з ним інформацію про "
+"ліцензування. Ви можете пов'язати інформацію про ліцензування з файлом "
+"наступними способами:"
 
 #. type: Title ###
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "REUSE.toml"
-msgstr ""
+msgstr "REUSE.toml"
 
 #. type: Title ###
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "DEP5 (deprecated)"
-msgstr ""
+msgstr "DEP5 (застарілий)"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4919,19 +5113,17 @@ msgid ""
 "REUSE.toml and DEP5 are mutually exclusive. You MUST NOT use both "
 "simultaneously."
 msgstr ""
+"REUSE.toml і DEP5 взаємовиключні. Ви НЕ МОЖЕТЕ використовувати обидва "
+"одночасно."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "There are two ways to associate Copyright and Licensing Information with "
-#| "a file."
 msgid ""
 "Additionally, you can associate Licensing Information with Snippets inside "
 "of files."
 msgstr ""
-"Існує два способи пов'язування відомостей про авторські права та "
-"ліцензування з файлом."
+"Крім того, ви можете пов'язати інформацію про ліцензування з фрагментами "
+"всередині файлів."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4941,6 +5133,10 @@ msgid ""
 "more explicit and their associated Licensing Information is more resistant "
 "to being moved or copied."
 msgstr ""
+"Там, де це можливо, ви ПОВИННІ намагатися використовувати заголовки "
+"коментарів для передачі інформації про ліцензування файлу. Порівняно з "
+"іншими методами, заголовки коментарів є більш чіткими, а пов'язана з ними "
+"інформація про ліцензування є більш стійкою до переміщення або копіювання."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4950,27 +5146,25 @@ msgid ""
 "be as close to the top of the top of the file as possible in a comment "
 "header. The Commentable File SHOULD use UTF-8 encoding."
 msgstr ""
+"Щоб реалізувати цей метод, файл, що коментується, ПОВИНЕН оголосити "
+"інформацію про ліцензування файлу у заголовку коментаря. Інформація про "
+"ліцензування ПОВИННА бути якомога ближче до верхньої частини файлу в "
+"заголовку коментаря. Файл, що коментується, ПОВИНЕН використовувати "
+"кодування UTF-8."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "If a file is not a plain text file or does not permit the inclusion of "
-#| "comments, the comment header that declares the file's Copyright and "
-#| "Licensing Information SHOULD be in an adjacent file of the same name with "
-#| "the additional extension `.license` (example: `cat.jpg.license` if the "
-#| "original file is `cat.jpg`)."
 msgid ""
 "For Uncommentable Files, the comment header that declares the file's "
 "Licensing Information MUST be in an adjacent text file of the same name with "
 "the additional extension `.license` (example: `cat.jpg.license` if the "
 "original file is `cat.jpg`). The adjacent file SHOULD use UTF-8 encoding."
 msgstr ""
-"Якщо файл не є звичайним текстовим файлом або не дозволяє включати "
-"коментарі, заголовок коментаря, який оголошує відомості про авторські права "
-"та ліцензування файлу, ПОВИНЕН бути в суміжному файлі з тією самою назвою з "
-"додатковим розширенням `.license`. (приклад: `cat.jpg.license`, якщо "
-"джерельний файл — `cat.jpg`)."
+"Для файлів, що не коментуються, заголовок коментаря, який оголошує "
+"інформацію про ліцензування файлу, ПОВИНЕН бути в сусідньому текстовому "
+"файлі з тим самим ім'ям і додатковим розширенням `.license` (наприклад: `cat."
+"jpg.license`, якщо вихідний файл має ім'я `cat.jpg`). Суміжний файл ПОВИНЕН "
+"використовувати кодування UTF-8."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4978,60 +5172,44 @@ msgid ""
 "`.license` files MAY be used with Commentable Files, but it is still "
 "RECOMMENDED that comment headers be put inside Commentable Files."
 msgstr ""
+"Файли `.license` МОЖНА використовувати з файлами, що коментуються, але все ж "
+"таки РЕКОМЕНДОВАНО розміщувати заголовки коментарів всередині файлів, що "
+"коментуються."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The comment header MUST contain one or more `SPDX-FileCopyrightText` "
-#| "tags, and one or more `SPDX-License-Identifier` tags. A tag is followed "
-#| "by a colon, followed by a text value, and terminated by a newline."
 msgid ""
 "The comment header MUST contain one or more Copyright Notices and one or "
 "more `SPDX-License-Identifier` tag-value pairs. A tag is followed by a "
 "colon, followed by a text value, and terminated by a newline."
 msgstr ""
-"Заголовок коментаря ПОВИНЕН містити один або кілька тегів `SPDX-"
-"FileCopyrightText`` і один або кілька тегів `SPDX-License-Identifier`. Після "
-"тегу слід додати двокрапку, далі текстове значення і завершити переходом на "
-"новий рядок."
+"Заголовок коментаря ПОВИНЕН містити одне або декілька повідомлень про "
+"авторські права та одну або декілька пар тегів-значень `SPDX-License-"
+"Identifier`. Після тегу ставиться двокрапка, за якою йде текстове значення, "
+"і завершується тег новим рядком."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The `SPDX-License-Identifier` tag MUST be followed by a valid SPDX "
-#| "License Expression describing the licensing of the file (example: `SPDX-"
-#| "License-Identifier: GPL-3.0-or-later OR Apache-2.0`). If separate "
-#| "sections of the file are licensed differently, a different `SPDX-License-"
-#| "Identifier` tag MUST be included for each section."
 msgid ""
 "The `SPDX-License-Identifier` tag MUST be followed by a valid SPDX License "
 "Expression describing the licensing of the file (example: `SPDX-License-"
 "Identifier: GPL-3.0-or-later OR Apache-2.0`)."
 msgstr ""
-"Тег `SPDX-License-Identifier` ПОВИНЕН супроводжуватися дійсним виразом "
-"ліцензії SPDX, що описує ліцензування файлу (наприклад: `SPDX-License-"
-"Identifier: GPL-3.0-or-later OR Apache-2.0`). Якщо окремі розділи файлу "
-"ліцензуються по-різному, для кожного розділу ПОВИНЕН бути включено свій тег "
-"`SPDX-License-Identifier`."
+"За тегом `SPDX-License-Identifier` ПОВИНЕН слідувати дійсний вираз ліцензії "
+"SPDX, що описує ліцензування файлу (наприклад: `SPDX-License-Identifier: "
+"GPL-3.0-or-later OR Apache-2.0`)."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2016, 2018-2019 Jane Doe <jane@example.com>\n"
-#| "# SPDX-FileCopyrightText: 2019 Example Company\n"
-#| "#\n"
-#| "# SPDX-License-Identifier: GPL-3.0-or-later\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2016, 2018-2019 Jane Doe <jane@example.com>\n"
 "# SPDX-FileCopyrightText: 2019 Example Organisation\n"
 "#\n"
 "# SPDX-License-Identifier: GPL-3.0-or-later\n"
 msgstr ""
-"# SPDX-FileCopyrightText: 2016, 2018-2019 Jane Doe <jane@example.com>\n"
-"# SPDX-FileCopyrightText: 2019 Example Company\n"
+"# SPDX-FileCopyrightText: 2016, 2018-2019 Джейн Доу <jane@example.com>\n"
+"# SPDX-FileCopyrightText: 2019 Приклад Організації\n"
 "#\n"
 "# SPDX-License-Identifier: GPL-3.0-or-later\n"
 
@@ -5039,7 +5217,7 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "In-line Snippet comments"
-msgstr ""
+msgstr "Вбудовані коментарі до сніппетів"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5051,11 +5229,19 @@ msgid ""
 "that Copyright Notices inside of Snippets MUST be prefixed with `SPDX-"
 "SnippetCopyrightText`."
 msgstr ""
+"Іноді інформація про ліцензування стосується лише певного фрагмента, а не "
+"всього коментованого файлу. У цих випадках для цього фрагмента ПОВИННІ "
+"використовуватися теги фрагментів SPDX (як визначено у [Специфікація SPDX, "
+"Додаток H] (https://spdx.github.io/spdx-spec/v2.3/file-tags/#h3-snippet-tags-"
+"format)).    Це означає, що повідомлення про авторські права всередині "
+"фрагментів МАЮТЬ мати префікс `SPDX-SnippetCopyrightText`."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "Like with comment headers, the SPDX snippet tags SHOULD be commented."
 msgstr ""
+"Як і у випадку із заголовками коментарів, теги фрагментів SPDX ПОВИННІ бути "
+"прокоментовані."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5063,14 +5249,12 @@ msgid ""
 "A Snippet SHOULD contain both a Copyright Notice and an SPDX License "
 "Expression."
 msgstr ""
+"Фрагмент ПОВИНЕН містити як повідомлення про авторські права, так і вираз "
+"ліцензії SPDX."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-#| "#\n"
-#| "# SPDX-License-Identifier: CC0-1.0\n"
+#, no-wrap
 msgid ""
 "# SPDX-SnippetBegin\n"
 "# SPDX-SnippetCopyrightText: 2022 Jane Doe <jane@example.com>\n"
@@ -5080,15 +5264,19 @@ msgid ""
 "\n"
 "# SPDX-SnippetEnd\n"
 msgstr ""
-"# SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-"#\n"
-"# SPDX-License-Identifier: CC0-1.0\n"
+"# SPDX-SnippetBegin\n"
+"# SPDX-SnippetCopyrightText: 2022 Джейн Доу <jane@example.com>\n"
+"# SPDX-License-Identifier: MIT\n"
+"\n"
+"print(\"Hello, world!\")\n"
+"\n"
+"# SPDX-SnippetEnd\n"
 
 #. type: Title ####
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Ignore block"
-msgstr ""
+msgstr "Ігнорувати блок"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5100,13 +5288,18 @@ msgid ""
 "ignores all Licensing Information between these comments. This technique "
 "MUST NOT be used to ignore valid Licensing Information."
 msgstr ""
+"Якщо інформацію про ліцензування оголошено у файлі без опису власне ліцензії "
+"або авторських прав на файл або фрагмент (наприклад, як частину команди "
+"виводу або документації), такі випадки ПОВИННІ бути поміщені між двома "
+"коментарями: `REUSE-IgnoreStart` і `REUSE-IgnoreEnd`. Після цього інструмент "
+"REUSE ігнорує всю інформацію про ліцензування між цими коментарями. Цей "
+"метод НЕ МОЖНА використовувати для ігнорування дійсних відомостей про "
+"ліцензування."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "An example of a DEP5 file:"
 msgid "An example for an ignored block:"
-msgstr "Приклад файлу DEP5:"
+msgstr "Приклад для ігнорованого блоку:"
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
@@ -5121,25 +5314,28 @@ msgid ""
 "echo \"SPDX-License-Identifier: MIT\" > file.txt\n"
 "# REUSE-IgnoreEnd\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2021 Джейн Доу\n"
+"#\n"
+"# SPDX-License-Identifier: GPL-3.0-or-later\n"
+"\n"
+"# REUSE-IgnoreStart\n"
+"echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
+"echo \"SPDX-License-Identifier: MIT\" > file.txt\n"
+"# REUSE-IgnoreEnd\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Alternatively, Copyright and Licensing Information MAY be associated with "
-#| "a file through a DEP5 file. The intended use case of this method is large "
-#| "directories where including a comment header in each file (or in `."
-#| "license` companion files) is impossible or undesirable."
 msgid ""
 "Licensing Information MAY be associated with a file through a `REUSE.toml` "
 "file, which MUST be a valid TOML file. The intended use case of this method "
 "is large directories where including a comment header in each file (or in `."
 "license` companion files) is impossible or undesirable."
 msgstr ""
-"Крім того, відомості про авторські права та ліцензування МОЖУТЬ бути "
-"пов'язані з файлом через файл DEP5. Передбачуваний випадок використання "
-"цього методу — великі каталоги, до яких включення заголовка коментаря в "
-"кожен файл (або в супутні файли `.license`) неможливе або небажане."
+"Інформація про ліцензування МОЖЕ бути пов'язана з файлом через файл `REUSE."
+"toml`, який ПОВИНЕН бути дійсним файлом TOML. Передбачуваним випадком "
+"використання цього методу є великі каталоги, де включення заголовка "
+"коментаря до кожного файлу (або до супутніх файлів `.license`) є неможливим "
+"або небажаним."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5148,6 +5344,9 @@ msgid ""
 "that are within its directory or deeper. You MAY have multiple `REUSE.toml` "
 "files in different directories."
 msgstr ""
+"Файл `REUSE.toml` МОЖЕ бути розташований у будь-якому каталозі і може "
+"охоплювати файли, що знаходяться у цьому каталозі або глибше. У вас МОЖЕ "
+"бути декілька файлів `REUSE.toml` у різних каталогах."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5156,6 +5355,9 @@ msgid ""
 "schema version of the file. This specification describes version 1 of `REUSE."
 "toml`."
 msgstr ""
+"Ключ `version` (ОБОВ'ЯЗКОВИЙ) ПОВИНЕН мати цілочисельне значення, що "
+"представляє версію схеми файлу. Ця специфікація описує версію 1 файлу `REUSE."
+"toml`."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5163,6 +5365,8 @@ msgid ""
 "Each `[[annotations]]` table represents an association of Licensing "
 "Information to zero or more Covered Files. It has the following keys:"
 msgstr ""
+"Кожна таблиця `[[annotations]]` представляє зв'язок Ліцензійної інформації з "
+"нулем або більшою кількістю Охоплених файлів. Він має наступні ключі:"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5175,11 +5379,20 @@ msgid ""
 "MAY use globbing to match several Covered Files in a single expression. "
 "These are the globbing and matching rules:"
 msgstr ""
+"`path` (НЕОБХІДНО), рядок або список рядків, що представляють шляхи. Шлях "
+"ОБОВ'ЯЗКОВО має використовувати пряму похилу риску як роздільник шляху. Шлях "
+"ПОВИНЕН розпізнавати один або декілька покритих файлів відносно каталогу "
+"файлу `REUSE.toml`. Шлях, який призводить до неіснуючого або непокритого "
+"файлу, ігнорується. Шлях ПОВИНЕН вказувати на місце в каталозі файлу `REUSE."
+"toml` або глибше. Шлях МОЖЕ використовувати глобування для зіставлення "
+"кількох охоплених файлів в одному виразі. Це правила глобування та "
+"зіставлення:"
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
 msgid "`*` matches everything except forward slashes (i.e. path separators)."
 msgstr ""
+"`*` відповідає всьому, крім прямих скісних рисок (тобто роздільників шляхів)."
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5187,6 +5400,8 @@ msgid ""
 "`**` and `**/` match everything including forward slashes (i.e. path "
 "separators)."
 msgstr ""
+"`**` та `**/` збігається з усім, включно з прямими слешами (тобто "
+"роздільниками шляхів)."
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5196,6 +5411,11 @@ msgid ""
 "to include a backslash verbatim, use `\\\\\\\\`. `\\\\` followed by any "
 "other character is functionally equal to just typing that character."
 msgstr ""
+"Щоб уникнути зірочки і включити текст дослівно, додайте до нього префікс `\\"
+"\\`.  Ви не можете додавати до нього `\\`, тому що це недійсний TOML. Щоб "
+"дослівно вказати зворотну косу риску, використовуйте `\\\\\\\\`. `\\\\`, за "
+"яким слідує будь-який інший символ, функціонально дорівнює простому введенню "
+"цього символу."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5206,6 +5426,11 @@ msgid ""
 "both contain Licensing Information for the same Covered File. Available "
 "values are:"
 msgstr ""
+"`precedence` (НЕОБОВ'ЯЗКОВО), буквений рядок. Він визначає порядок "
+"пріоритету Ліцензійної інформації між файлом `REUSE.toml` і Покритими "
+"файлами в таблиці, а також між декількома файлами `REUSE.toml`, якщо вони "
+"обидва містять Ліцензійну інформацію для одного і того ж Покритого файлу. "
+"Доступні значення такі:"
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5220,6 +5445,15 @@ msgid ""
 "precedence is applied, and `closest` is ignored. This is effectively a "
 "fallback."
 msgstr ""
+"`closest`, значення за замовчуванням, якщо `precedence` не визначено. Це "
+"інструкція для асоціювання Ліцензійної інформації всередині Покритих файлів ("
+"або сусіднього файлу `.license`), якщо така є. Якщо такої інформації про "
+"ліцензування не знайдено, то асоціюється інформація про ліцензування "
+"всередині таблиці найближчого `REUSE.toml`, що охоплює Файл. Цей алгоритм "
+"застосовується окремо для авторських прав і для ліцензування. Якщо таблиця "
+"для цього ж файлу у ближчому файлі `REUSE.toml` має пріоритет `override`, то "
+"застосовується цей пріоритет, а `closest` ігнорується. Це фактично запасний "
+"варіант."
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5228,6 +5462,9 @@ msgid ""
 "Information defined in the table with the table's Covered Files.  "
 "Subsequently, the `closest` logic is also applied."
 msgstr ""
+"`aggregate`. Це вказівка завжди пов'язувати Ліцензійну інформацію, визначену "
+"в таблиці, із зазначеними в таблиці Покритими файлами.  Згодом, також "
+"застосовується логіка `closest`."
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5237,6 +5474,10 @@ msgid ""
 "Licensing Information that is closer to the Files. The table in the `REUSE."
 "toml` that is the closest to the root of the Project is authoritative."
 msgstr ""
+"`override`. Це вказівка пов'язувати Ліцензійну інформацію, визначену в "
+"таблиці, із зазначеними в ній Файлами та ігнорувати будь-яку іншу Ліцензійну "
+"інформацію, яка знаходиться ближче до Файлів. Таблиця в `REUSE.toml`, яка "
+"знаходиться найближче до кореня проєкту, є авторитетною."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5245,20 +5486,21 @@ msgid ""
 "string MUST be a Copyright Notice to be associated with the table's Covered "
 "Files.  The prefix of the Copyright Notice MAY be omitted."
 msgstr ""
+"`SPDX-FileCopyrightText` (НЕОБОВ'ЯЗКОВО), рядок або список рядків. Кожен "
+"рядок ПОВИНЕН бути повідомленням про авторські права, щоб бути пов'язаним з "
+"Покритими файлами таблиці.  Префікс Повідомлення про авторські права МОЖЕ "
+"бути опущений."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The `License` tag MUST be followed by a valid SPDX License Expression "
-#| "describing the licensing of the associated files."
 msgid ""
 "`SPDX-License-Identifier` (OPTIONAL), a string or list of strings. Each "
 "string MUST be a valid SPDX License Expression describing the licensing of "
 "the table's Covered Files."
 msgstr ""
-"За тегом `License` ПОВИНЕН слідувати дійсний вираз ліцензії SPDX, що описує "
-"ліцензування пов’язаних файлів."
+"`SPDX-License-Identifier` (НЕОБОВ'ЯЗКОВО), рядок або список рядків. Кожен "
+"рядок ПОВИНЕН бути дійсним виразом ліцензії SPDX, що описує ліцензування "
+"вкладених файлів таблиці."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5270,6 +5512,12 @@ msgid ""
 "add context to what you're doing, or `SPDX-FileContributor` to credit "
 "additional contributors."
 msgstr ""
+"Ви МОЖЕТЕ включити інші ключі та таблиці для передачі додаткової інформації. "
+"Їх семантика не визначена цією специфікацією. Якщо ви бажаєте додати інші "
+"ключі, РЕКОМЕНДОВАНО використовувати наявні теги SPDX. Наприклад, ви можете "
+"використовувати `SPDX-FileComment` у таблиці `[[annotations]]`, щоб додати "
+"контекст до того, що ви робите, або `SPDX-FileContributor`, щоб зарахувати "
+"додаткових дописувачів."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5278,6 +5526,9 @@ msgid ""
 "are OPTIONAL, the complete Licensing Information MUST still be associated "
 "with the File in some fashion."
 msgstr ""
+"Хоча ключі для асоціювання Ліцензійної інформації з Покритим файлом є "
+"НЕОБОВ'ЯЗКОВИМИ, повна Ліцензійна інформація ПОВИННА бути асоційована з "
+"Файлом певним чином."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5286,13 +5537,14 @@ msgid ""
 "same `REUSE.toml` file, then exclusively the last matching table in the file "
 "is used for that Covered File."
 msgstr ""
+"Якщо покритий файл охоплюється кількома таблицями `[[annotations]]` в одному "
+"файлі `REUSE.toml`, то для цього покритого файлу використовується виключно "
+"остання відповідна таблиця у файлі."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "An example of a DEP5 file:"
 msgid "An example of a `REUSE.toml` file:"
-msgstr "Приклад файлу DEP5:"
+msgstr "Приклад файлу `REUSE.tml`:"
 
 #. type: Fenced code block (toml)
 #: site/content/en/spec-3.2.md
@@ -5306,6 +5558,13 @@ msgid ""
 "SPDX-FileCopyrightText = \"2019 Translation Company\"\n"
 "SPDX-License-Identifier = \"GPL-3.0-or-later\"\n"
 msgstr ""
+"version = 1\n"
+"\n"
+"[[annotations]]\n"
+"path = [\"po/*.po\", \"po/*.pot\"]\n"
+"precedence = \"aggregate\"\n"
+"SPDX-FileCopyrightText = \"2019 Перекладацька компанія\"\n"
+"SPDX-License-Identifier = \"GPL-3.0-or-later\"\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5315,6 +5574,10 @@ msgid ""
 "meaning that it is expected to disappear from a future iteration of this "
 "specification."
 msgstr ""
+"Інформація про ліцензування МОЖЕ бути пов'язана з файлом за допомогою файлу "
+"DEP5, але ви ПОВИННІ створити замість нього файл `REUSE.toml`. Файл DEP5 є "
+"застарілим, тобто очікується, що він зникне з майбутніх ітерацій цієї "
+"специфікації."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5322,29 +5585,22 @@ msgid ""
 "The `Files` tag MUST be followed by one or more paths to which the "
 "paragraph's Licensing Information is applied."
 msgstr ""
+"Після тегу `Files` ОБОВ'ЯЗКОВО слідує один або декілька шляхів, до яких "
+"застосовується інформація про ліцензування параграфа."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "The `Copyright` tag MUST be followed by a copyright notice."
 msgid ""
 "The `Copyright` tag MUST be followed by one or more Copyright Notices. The "
 "prefixes of the Copyright Notices MAY be omitted."
 msgstr ""
-"За тегом `Copyright` ПОВИННЕ слідувати повідомлення про авторські права."
+"За тегом `Copyright` ОБОВ'ЯЗКОВО має слідувати одне або декілька повідомлень "
+"про авторське право. Префікси в повідомленнях про авторське право МОЖНА "
+"опускати."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-#| "Upstream-Name: Project\n"
-#| "Upstream-Contact: Jane Doe <jane@example.com>\n"
-#| "Source: https://example.com/jane/project\n"
-#| "\n"
-#| "Files: po/*\n"
-#| "Copyright: 2019 Translation Company\n"
-#| "License: GPL-3.0-or-later\n"
+#, no-wrap
 msgid ""
 "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
 "\n"
@@ -5352,20 +5608,17 @@ msgid ""
 "Copyright: 2019 Translation Company\n"
 "License: GPL-3.0-or-later\n"
 msgstr ""
-"Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-"Upstream-Name: Project\n"
-"Upstream-Contact: Jane Doe <jane@example.com>\n"
-"Source: https://example.com/jane/project\n"
+"Формат: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
 "\n"
-"Files: po/*\n"
-"Copyright: 2019 Translation Company\n"
-"License: GPL-3.0-or-later\n"
+"Файли: po/*.po po/*.pot\n"
+"Авторське право: 2019 Перекладацька Компанія\n"
+"Ліцензія: GPL-3.0-or-later\n"
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Order of precedence"
-msgstr ""
+msgstr "Порядок черговості"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5376,6 +5629,11 @@ msgid ""
 "ignored. For all intents and purposes, this counts as the `.license` file's "
 "Licensing Information being inside the Commentable File."
 msgstr ""
+"Якщо файл, що коментується, містить інформацію про ліцензування, але також "
+"має суміжний файл `.license`, то інформація про ліцензування, визначена у "
+"файлі `.license`, має пріоритет, а вміст файлу, що коментується, "
+"ігнорується. Для всіх цілей, це вважається, що Ліцензійна інформація файлу `."
+"license` міститься у файлі, що коментується."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5386,6 +5644,11 @@ msgid ""
 "section for that file in `.reuse/dep5` do not agree with each other, then "
 "both SPDX License Expressions will apply to the file."
 msgstr ""
+"Ліцензійна інформація, визначена у файлі `.reuse/dep5`, об'єднується з "
+"Ліцензійною інформацією, що міститься у Покритих файлах. Для ясності, це "
+"означає, що якщо вирази ліцензії SPDX у заголовку коментаря до файлу і в "
+"розділі для цього файлу в `.reuse/dep5` не узгоджуються один з одним, то до "
+"файлу застосовуватимуться обидва вирази ліцензії SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5393,13 +5656,14 @@ msgid ""
 "The order of precedence for `REUSE.toml` files is described in the "
 "respective section, and is managed using the `precedence` key."
 msgstr ""
+"Порядок пріоритету для файлів `REUSE.toml` описано у відповідному розділі, і "
+"ним можна керувати за допомогою ключа `precedence`."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "Format of copyright notices"
+#, no-wrap
 msgid "Format of Copyright Notices"
-msgstr "Формат повідомлень про авторські права"
+msgstr "Формат повідомлень про авторське право"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5407,21 +5671,23 @@ msgid ""
 "A Copyright Notice MUST start with a tag, word or symbol (collectively: "
 "prefixes) from the following list:"
 msgstr ""
+"Повідомлення про авторське право ПОВИННО починатися з тегу, слова або "
+"символу (разом: префікси) з наведеного нижче списку:"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "`SPDX-FileCopyrightText` (or `SPDX-SnippetCopyrightText` in Snippets)"
-msgstr ""
+msgstr "`SPDX-FileCopyrightText` (або `SPDX-SnippetCopyrightText` в Уривках)"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "Copyright"
-msgstr ""
+msgstr "Авторське право"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "©"
-msgstr ""
+msgstr "©"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5429,58 +5695,51 @@ msgid ""
 "It is RECOMMENDED to use the `SPDX-FileCopyrightText` tag. You MAY add "
 "'(C)', '(c)' or '©' after the prefix."
 msgstr ""
+"РЕКОМЕНДОВАНО використовувати тег `SPDX-FileCopyrightText`. Ви МОЖЕТЕ "
+"додавати '(C)', '(c)' або '©' після префікса."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "In Commentable Files, a Copyright Notice is terminated by a newline."
 msgstr ""
+"У файлах, що коментуються, повідомлення про авторське право закінчується "
+"новим рядком."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The copyright notice MUST contain the name of the copyright holder. The "
-#| "copyright notice SHOULD contain the year of publication and the contact "
-#| "address of the copyright holder. The order of these items SHOULD be: "
-#| "year, name, contact address."
 msgid ""
 "The Copyright Notice MUST contain the name of the copyright holder. The "
 "copyright notice SHOULD contain the year of publication and the contact "
 "address of the copyright holder. The order of these items SHOULD be: year, "
 "name, contact address."
 msgstr ""
-"Повідомлення про авторські права ПОВИННО містити ім'я власника авторських "
-"прав. Повідомлення про авторські права ПОВИННО містити рік публікації та "
-"контактну адресу власника авторських прав. Порядок цих повинен бути таким: "
-"рік, ім'я, контактна адреса."
+"Повідомлення про авторське право ОБОВ'ЯЗКОВО має містити ім'я власника "
+"авторських прав. Повідомлення про авторське право ПОВИННО містити рік "
+"публікації та контактну адресу правовласника. Порядок цих пунктів ПОВИНЕН "
+"бути таким: рік, ім'я, контактна адреса."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The copyright holder MAY be an individual, list of individuals, group, "
-#| "legal entity, or any other descriptor by which one can easily identify "
-#| "the copyright holder(s)."
 msgid ""
 "The copyright holder SHOULD be an individual, list of individuals, group, "
 "legal entity, or any other descriptor by which one can easily identify the "
 "copyright holder(s)."
 msgstr ""
-"Власником авторських прав МОЖЕ бути фізична особа, список осіб, група, "
-"юридична особа або будь-який інший дескриптор, за яким можна легко "
-"ідентифікувати власника(ів) авторських прав."
+"Власник авторських прав ПОВИНЕН бути фізичною особою, списком осіб, групою "
+"осіб, юридичною особою або будь-яким іншим дескриптором, за допомогою якого "
+"можна легко ідентифікувати власника(ів) авторських прав."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "You MAY add any further information to the Copyright Notice."
 msgstr ""
+"Ви МОЖЕТЕ додати будь-яку додаткову інформацію до Повідомлення про авторське "
+"право."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "Examples of valid copyright notices:"
 msgid "Examples of valid Copyright Notices:"
-msgstr "Приклади правильних повідомлень про авторські права:"
+msgstr "Приклади дійсних повідомлень про авторське право:"
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
@@ -5495,6 +5754,16 @@ msgid ""
 "Copyright 2016, 2018-2019 Joe Anybody\n"
 "Copyright (c) Alice, some rights reserved\n"
 msgstr ""
+"SPDX-FileCopyrightText: 2019 Джейн Доу <jane@example.com>\n"
+"SPDX-FileCopyrightText: © 2019 Джейн Доу <john@example.com>\n"
+"SPDX-FileCopyrightText: Учасники проєкту Приклад <https://project.example."
+"com>\n"
+"SPDX-FileCopyrightText: 2023 Аліса Хак та (інші) учасники Проєкту X "
+"<https://git.example.com/alicehack/projectx/CONTRIBUTORS.md>\n"
+"SPDX-SnippetCopyrightText: (C) Приклад кооперативу <info@coop.example.com>\n"
+"© Приклад Корпорації <https://corp.example.com>\n"
+"Авторське право 2016, 2018-2019 Джо Будь-хто\n"
+"Авторське право (c) Аліса, деякі права захищені\n"
 
 #~ msgid ""
 #~ "Currently we do not, but please [get in touch](https://github.com/fsfe/"
