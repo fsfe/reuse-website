@@ -46,7 +46,7 @@ You can automatically run `reuse lint` on every commit as a pre-commit hook for 
 ```yaml
 repos:
 -   repo: https://github.com/fsfe/reuse-tool
-    rev: v1.0.0
+    rev: v2.1.0
     hooks:
     - id: reuse
 ```
