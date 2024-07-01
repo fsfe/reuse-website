@@ -79,5 +79,8 @@
     },
     "index_initiative_by": {
         "other": "Ініціатива від"
+    },
+    "all_specifications": {
+        "other": "Всі версії специфікації можна знайти за адресою <{{ .specifications }}>."
     }
 }
