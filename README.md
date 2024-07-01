@@ -44,15 +44,17 @@ list](https://lists.fsfe.org/mailman/listinfo/reuse).
 
 ### Translation
 
-The website "chrome" strings are localized using the standard,
-built-in [Hugo i18n](https://gohugo.io/content-management/multilingual/)
-support.  Those files are in _data/_.
+The website "chrome" strings are localized using the standard, built-in [Hugo
+i18n](https://gohugo.io/content-management/multilingual/) support. The Weblate
+project for these strings is [REUSE Website
+Strings](https://hosted.weblate.org/projects/fsfe/reuse-website-strings/).
 
 Translation happens by conversion Markdown into _gettext_ using
-[po4a](https://po4a.org).  To generate the _.md_ files from the
-_gettext .po_ files, run: `po4a po4a.conf`.  This also regenerates
-the _.pot_ file, which is the _gettext_ translation template, and
-syncs changes to the _.po_ files.
+[po4a](https://po4a.org). To generate the _.md_ files from the _gettext .po_
+files, run: `po4a po4a.conf`. This also regenerates the _.pot_ file, which is
+the _gettext_ translation template, and syncs changes to the _.po_ files. The
+Weblate project for these strings is [REUSE Website
+Markdown](https://hosted.weblate.org/projects/fsfe/reuse-website-markdown/).
 
 ## License
 
