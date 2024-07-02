@@ -6,7 +6,6 @@
 
 title: "REUSE Specification – Version 3.0"
 subtitle: "2019-08-07"
-aliases: ["/spec"]
 ---
 
 This specification defines a standardized method for declaring copyright and
