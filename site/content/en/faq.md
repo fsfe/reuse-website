@@ -217,9 +217,10 @@ Exceptions](https://spdx.org/licenses/exceptions-index.html).
 
 ## How does license compatibility work? {#license-compatibility}
 
-Free Software licenses are all different. Many licenses are compatible, meaning
-that you can use code from multiple licenses in the same project and still be
-able to respect the terms of each license simultaneously.
+Free Software licenses often differ in detail, but always give you the right to
+use, study, share, and improve the software. Many licenses are compatible,
+meaning that you can use code from multiple licenses in the same project and
+still be able to respect the terms of each license simultaneously.
 
 Some licenses are [less permissive than others](#copyleft-permissive-license),
 meaning that a combined work containing code under both licenses must
