@@ -410,7 +410,7 @@ path = [
     "poetry.lock",
     "requirements.txt"
 ]
-SPDX-FileCopyrightText = "Nobody"
+SPDX-FileCopyrightText = "NONE"
 SPDX-License-Identifier = "CC0-1.0"
 ```
 
@@ -470,6 +470,11 @@ If the work was licensed differently from your project, you should [verify
 whether the licenses are compatible](#license-compatibility), and add the new
 licenses to your project.
 
+## ... copy a work published under a pseudonym or nickname? {#copy-pseudonym}
+
+You can list the pseudonym as the copyright holder. Some projects do not allow
+pseudonymous contributions.
+
 ## ... copy a work that has no copyright notice or license? {#no-copyright-license}
 
 Before you proceed, always first make sure that you can find the copyright and
@@ -480,6 +485,10 @@ If you can find no copyright notice, you can try to add it yourself by divining
 the copyright holder from the author. See [this
 question](#copyright-holder-author) for more information on the distinction.
 When in doubt, contact the author for clarification.
+
+It may be that the author wishes to remain anonymous, which is their right. You
+can write [`NONE` or `NOASSERTION` as the copyright
+holder](https://spdx.github.io/spdx-spec/v2.3/file-information/#88-copyright-text-field).
 
 If the work has no license, then that means that you do not have the right to
 copy it. If you believe that this is a mistake and the author clearly meant for
@@ -560,7 +569,7 @@ You have two options:
    [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) license or
    another similar public domain dedication.
 
-You may choose to use a copyright tag such as `SPDX-FileCopyrightText: Nobody`
+You may choose to use a copyright tag such as `SPDX-FileCopyrightText: NONE`
 to assert that there is no copyright holder.
 
 The reason that these files _must_ be licensed is because reasonable minds can
