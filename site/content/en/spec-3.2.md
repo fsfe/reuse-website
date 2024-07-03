@@ -5,7 +5,7 @@
 # REUSE-IgnoreStart
 
 title: "REUSE Specification – Version 3.2"
-subtitle: "YYYY-MM-DD"
+subtitle: "2024-07-03"
 aliases: ["/spec"]
 ---
 
