@@ -66,7 +66,7 @@ installed](https://pre-commit.com/#install), add this to the
 ```yaml
 repos:
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v4.0.1
+    rev: v4.0.2
     hooks:
       - id: reuse
 ```
