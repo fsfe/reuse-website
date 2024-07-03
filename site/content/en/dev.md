@@ -66,7 +66,7 @@ installed](https://pre-commit.com/#install), add this to the
 ```yaml
 repos:
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v3.1.0
+    rev: v4.0.0
     hooks:
       - id: reuse
 ```
@@ -109,7 +109,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: REUSE Compliance Check
-        uses: fsfe/reuse-action@v3
+        uses: fsfe/reuse-action@v4
 ```
 
 Visit the [action's marketplace
