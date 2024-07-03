@@ -58,7 +58,7 @@ This is the change log for the REUSE Specification.
   contains more than one license and/or exception.
 - URLs to currently applicable SPDX specification.
 - Define an order or precedence.
-- REUSE.toml definition added.
+- `REUSE.toml` definition added.
 
 ### Changed
 
