@@ -7,7 +7,7 @@ title: "REUSE Specifications"
 
 These are the versions of the specification, listed from new to old:
 
-<!-- - [Version 3.2]({{< relref "spec-3.2.md" >}}). -->
+- [Version 3.2]({{< relref "spec-3.2.md" >}}).
 - [Version 3.0]({{< relref "spec-3.0.md" >}}).
 
 Historically, the specification was less formal, and titled 'REUSE Practices':

@@ -38,45 +38,44 @@ This is the change log for the REUSE Specification.
 ### Security
 -->
 
-## 3.2 - YYYY-MM-DD
+## 3.2 - 2024-07-03
 
 ### Added
 
-- Definition for Commentable and Uncommentable Files. (#123, thanks @Jayman2000)
+- Definition for Commentable and Uncommentable Files. Thanks @Jayman2000.
 - Introduce support of in-line snippet comments using
-  `SPDX-SnippetBegin`/`SPDX-SnippetEnd`. (#107)
-- Specify encoding of `.license` files to UTF-8. (#106, thanks @kirelagin for
-  the helpful background information)
+  `SPDX-SnippetBegin`/`SPDX-SnippetEnd`.
+- Specify encoding of `.license` files to UTF-8. Thanks @kirelagin.
 - Introduce `REUSE-IgnoreStart`/`REUSE-IgnoreEnd` to make the REUSE helper tool
   not consider the enclosed content for detecting copyright and licensing
-  information. (#104)
+  information.
 - Definition for Covered File and clarify for which file copyright and licensing
-  information is required. (#85, thanks @Jayman2000)
-- Remove SPDX documents from list of Covered Files. (#103)
-- Remove symlinks and zero-byte files from list of Covered Files. (#101)
-- Remove submodules and Meson subprojects from list of Covered Files. (#99)
+  information is required. Tanks @Jayman2000.
+- Remove SPDX documents from list of Covered Files.
+- Remove symlinks and zero-byte files from list of Covered Files.
+- Remove submodules and Meson subprojects from list of Covered Files.
 - Clarify which license text files are needed if a SPDX license expression
-  contains more than one license and/or exception. (#96)
-- URLs to currently applicable SPDX specification. (#49)
-- Define an order or precedence. (formerly #131, overhauled in #133)
-- REUSE.toml definition added. (#133)
+  contains more than one license and/or exception.
+- URLs to currently applicable SPDX specification.
+- Define an order or precedence.
+- `REUSE.toml` definition added.
 
 ### Changed
 
 - Allow `.license` files for commentable files, but strongly recommend adding
-  copyright/licensing information in header. (#123, thanks @Jayman2000)
-- Bump referenced SPDX version to 2.3, and update links. (#103) (#107)
+  copyright/licensing information in header. Thanks @Jayman2000.
+- Bump referenced SPDX version to 2.3, and update links.
 
 ### Deprecated
 
-- DEP5 deprecated. (#133)
+- DEP5 deprecated.
 
 ### Fixed
 
 - Minor typos and grammar mistakes. Thanks @jlovejoy and @Jayman2000!
-- Improved definition of Copyright Notices. (#133)
+- Improved definition of Copyright Notices.
 - `COPYING` and `LICENSE` are now marked as ignored, when they were already
-  ignored by the tool since its inception. (#133)
+  ignored by the tool since its inception.
 
 ## 3.1 - 2023-06-21 [YANKED]
 

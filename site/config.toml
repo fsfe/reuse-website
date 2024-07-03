@@ -7,6 +7,10 @@ languageCode    = "en"
 title           = "REUSE"
 theme           = "github-project-landing-page"
 
+# TODO: Get rid of this. The reason this is here is because a translated page
+# can reference an untranslated page.
+refLinksErrorLevel = "warning"
+
 [markup]
 [markup.tableOfContents]
   endLevel = 3

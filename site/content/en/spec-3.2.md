@@ -4,8 +4,9 @@
 
 # REUSE-IgnoreStart
 
-title: "REUSE Specification – Version 3.2 (UNRELEASED)"
-subtitle: "YYYY-MM-DD"
+title: "REUSE Specification – Version 3.2"
+subtitle: "2024-07-03"
+aliases: ["/spec"]
 ---
 
 This specification defines a standardised method for declaring copyright and
@@ -128,6 +129,8 @@ associate Licensing Information with a file in the following ways:
 
 REUSE.toml and DEP5 are mutually exclusive. You MUST NOT use both
 simultaneously.
+
+Comment headers are the RECOMMENDED method.
 
 Additionally, you can associate Licensing Information with Snippets inside of
 files.
@@ -299,6 +302,12 @@ path = ["po/*.po", "po/*.pot"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2019 Translation Company"
 SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "tests/resources/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2019 Jane Doe"
+SPDX-License-Identifier = "CC0-1.0"
 ```
 
 ### DEP5 (deprecated)
@@ -327,6 +336,10 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Files: po/*.po po/*.pot
 Copyright: 2019 Translation Company
 License: GPL-3.0-or-later
+
+Files: tests/resources/*
+Copyright: 2019 Jane Doe
+License: CC0-1.0
 ```
 
 ## Order of precedence
