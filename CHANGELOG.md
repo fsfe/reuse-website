@@ -38,7 +38,7 @@ This is the change log for the REUSE Specification.
 ### Security
 -->
 
-## 3.2 - YYYY-MM-DD
+## 3.2 - 2024-07-03
 
 ### Added
 
