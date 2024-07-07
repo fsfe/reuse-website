@@ -3,54 +3,67 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-07-03 16:58+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-07-08 06:09+0000\n"
+"Last-Translator: Anthony Loiseau <anthony@loiseau.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  reuse-docs.fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
-"#-#-#-#-#  reuse-website.fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Comparison of license compliance projects"
-msgstr ""
+msgstr "Comparaison des projets de vérification de licence"
 
 #. type: Plain text
 #: site/content/en/comparison.md
+#, fuzzy
 msgid ""
 "It is easy to get confused by the multitude of initiatives and tools that "
 "help with software license compliance. Provided below is a short and "
 "incomplete overview of some noteworthy projects."
 msgstr ""
+"Il est facile de se perdre dans la multitude des initiatives et outils "
+"d'aide à la conformité des licences logicielles. La liste ci-dessous est un "
+"aperçu court et incomplet des projets les plus notables."
 
 #. type: Plain text
 #: site/content/en/comparison.md
+#, fuzzy
 msgid ""
 "REUSE does not intend to replace, but rather complement them. We try to "
 "solve unclear and missing license and copyright information at the very "
 "source. We empower developers to ensure proper and exhaustive licensing of "
 "their project."
 msgstr ""
+"REUSE n'a pas pour vocation de les remplacer, mais plutôt d'être "
+"complémentaire. Nous essayons de solutionner les informations de licences et "
+"de droits d'auteur manquantes ou non claires. Nous donnons plus de moyens "
+"aux développeurs pour assurer une gestion de licence propre et exhaustive de "
+"leurs projets."
 
 #. type: Bullet: '- '
 #: site/content/en/comparison.md
+#, fuzzy
 msgid ""
 "[**SPDX**](https://spdx.org) is the rock upon which REUSE is built. SPDX "
 "defines a standardized way to share copyright and licensing information "
 "between projects and people. Read more in [our FAQ](/faq/#what-is-spdx)."
 msgstr ""
+"[**SPDX**](https://spdx.org) est le rocher sur lequel REUSE est bâtit. SPDX "
+"définie un standard pour échanger les informations de droits d'auteur et de "
+"licence entre les projets et les personnes. Plus d'information dans [notre "
+"FAQ](/faq/#what-is-spdx)."
 
 #. type: Bullet: '- '
 #: site/content/en/comparison.md
@@ -109,16 +122,20 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Help for developers"
-msgstr ""
+msgstr "Aide pour les développeurs"
 
 #. type: Plain text
 #: site/content/en/dev.md
+#, fuzzy
 msgid ""
 "Licensing should be easy for developers. We provide several tools and "
 "services to allow you to concentrate on coding."
 msgstr ""
+"La gestion des licences devrait être simple pour les développeurs. Nous "
+"fournissons différents outils et services pour vous permettre de vous "
+"concentrer sur le codage."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -136,21 +153,32 @@ msgstr "L'outil {#tool}"
 
 #. type: Plain text
 #: site/content/en/dev.md
+#, fuzzy
 msgid ""
 "The [REUSE tool](https://github.com/fsfe/reuse-tool) assists with achieving "
 "and confirming REUSE compliance. It downloads the full license texts, adds "
 "copyright and license information to file headers, and contains a linter to "
 "identify problems. Eventually, you can generate a software bill of materials."
 msgstr ""
+"L'[outil REUSE](https://github.com/fsfe/reuse-tool) aide à atteindre et à "
+"confirmer la conformité REUSE. Il télécharge les textes complets de licence, "
+"ajoute les informations de droits d'auteur et de licences dans les entêtes "
+"des fichiers, et contient un linter pour identifier les problèmes. Il permet "
+"enfin de générer une nomenclature logicielle."
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Read the [documentation](https://reuse.readthedocs.io) to learn more about the\n"
 "tool. You will also find a ['How do I ...' in our FAQ]({{< relref \"faq.md#howto\"\n"
 ">}}) to learn about various tool interactions.\n"
 msgstr ""
+"Lisez la [documentation](https://reuse.readthedocs.io) pour en apprendre "
+"davantage\n"
+"sur l'outil. Vous trouverez aussi des ['Comment puis-je ...' dans notre "
+"FAQ]({{< relref \"faq.md#howto\"\n"
+">}}) pour découvrir des possibilités variées d'interaction avec l'outil.\n"
 
 #. type: Title ##
 #: site/content/en/dev.md
@@ -160,27 +188,40 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
+#, fuzzy
 msgid ""
 "What does a REUSE-compliant project look like? The following repositories "
 "are basic, but each of them is REUSE-compliant. We make them available to "
 "demonstrate how REUSE works in practice."
 msgstr ""
+"A quoi ressemble un projet conforme à REUSE ? Les dépôts suivants sont "
+"simples mais conformes à REUSE. Nous les rendons disponibles pour vous "
+"montrer comment REUSE fonctionne en pratique."
 
 #. type: Bullet: '- '
 #: site/content/en/dev.md
+#, fuzzy
 msgid ""
 "[reuse-tutorial-example](https://codeberg.org/fsfe/reuse-tutorial-example) - "
 "a REUSE-compliant repository that matches the example in [the tutorial]({{< "
 "relref \"tutorial.md\" >}}). Includes a non-compliant branch for testing."
 msgstr ""
+"[reuse-tutorial-example](https://codeberg.org/fsfe/reuse-tutorial-example) - "
+"un dépôt conforme à REUSE qui correspond à l'exemple [du tutorial]({{< "
+"relref \"tutorial.md\" >}}). Il contient une branche non confirme pour les "
+"tests."
 
 #. type: Bullet: '- '
 #: site/content/en/dev.md
+#, fuzzy
 msgid ""
 "[reuse-tool](https://github.com/fsfe/reuse-tool) - the helper tool itself is "
 "compliant, just like [all other REUSE repositories](https://git.fsfe.org/"
 "reuse/)."
 msgstr ""
+"[reuse-tool](https://github.com/fsfe/reuse-tool) - l'utilitaire reuse est "
+"lui-même conforme, tout comme [tous les autres dépôts REUSE](https://git.fsfe"
+".org/reuse/)."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -1373,13 +1414,10 @@ msgid ""
 "says \"Copyright (c) [year] [copyright holder]\". Please see [this question]"
 "(#license-templates) about how to deal with those licenses."
 msgstr ""
-"<!-- TODO: la section liée doit encore être écrite.\n"
-"Certaines licences, telles que le MIT et la famille de licences BSD, ont une "
-"ligne qui dit\n"
-"\"Copyright (c) [année] [détenteur du droit d'auteur]\". Veuillez voir "
-"[cette question](#mit-bsd)\n"
-"sur la façon de gérer ces licences.\n"
-"-->\n"
+"Certaines licences, tel que la famille de licences MIT et BSD, ont une ligne "
+"indiquant \"Copyright (c) [année] [détenteur du droit d'auteur]\". Veuillez "
+"regarder [cette question](#license-templates) liée à la gestion de ces "
+"licences."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2311,8 +2349,7 @@ msgid ""
 msgstr ""
 "Si tout le code du fichier est concédé sous une licence ou une autre (par "
 "exemple, tout le code est sous GPL-2.0 uniquement, mais une fonction est "
-"sous MIT), utilisez des balises séparées `SPDX-License-Identifier: GPL-2.0 -"
-"only` et `SPDX-License-Identifier: MIT `."
+"sous MIT), utilisez des [fragments](#partial-license)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2843,10 +2880,10 @@ msgid ""
 "before just executing the tool's commands."
 msgstr ""
 "Pour chacune de ces étapes, vous apprendrez d'abord à les réaliser "
-"manuellement. Cependant, l'[outil d'aide REUSE](https://github.com/fsfe/"
-"reuse-tool) vous assiste dans la plupart des tâches, et les commandes "
-"nécessaires seront également répertoriées dans les cases réductibles. Nous "
-"vous recommandons de comprendre d'abord le principe de base avant d'exécuter "
+"manuellement. Cependant, l'[utilitaire REUSE](https://github.com/fsfe/reuse-"
+"tool) vous assiste dans la plupart des tâches, et les commandes nécessaires "
+"seront également répertoriées dans les cases réductibles. Nous vous "
+"recommandons de comprendre d'abord le principe de base avant d'exécuter "
 "simplement les commandes de l'outil."
 
 #. type: Plain text
@@ -4208,7 +4245,7 @@ msgid ""
 "REUSE Tool --- helper tool for compliance with this Specification; available "
 "at <https://github.com/fsfe/reuse-tool>."
 msgstr ""
-"Outil REUSE --- outil d'aide pour la conformité à cette spécification ; "
+"Outil REUSE --- outil d'aide pour la conformité à cette spécification ; "
 "disponible sur <https://github.com/fsfe/reuse-tool>."
 
 #. type: Title ##
