@@ -38,6 +38,20 @@ This is the change log for the REUSE Specification.
 ### Security
 -->
 
+## 3.3 - YYYY-MM-DD
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
 ## 3.2 - 2024-07-03
 
 ### Added
