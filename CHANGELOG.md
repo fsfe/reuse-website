@@ -44,6 +44,10 @@ This is the change log for the REUSE Specification.
 
 ### Changed
 
+- Also allow `COPYING` and `LICENSE` files to have a suffix with a dash (e.g.
+  `LICENSE-MIT`).
+- The `LICENSE` file may also be spelt `LICENCE`.
+
 ### Deprecated
 
 ### Removed
