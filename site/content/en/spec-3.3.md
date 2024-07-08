@@ -68,7 +68,9 @@ Covered Files are any file which must contain Licensing Information. This is
 equal to all files in a project, with the exception of:
 
 - The License Files stored in the `LICENSES/` directory.
-- `COPYING` and `LICENSE`, with or without file extensions.
+- `COPYING`, `LICENSE`, and `LICENCE`. These MAY also contain a dash or dot
+  separator followed by additional metadata, like `LICENSE-MIT`, `COPYING.GPL`,
+  or `LICENCE.md`. These files SHOULD be in the root of the Project.
 - The files belonging to the Project's version control system (example:
   `.git/`).
 - The files ignored by the version control system (example: files listed in
@@ -113,10 +115,10 @@ exception that is part of any SPDX License Expression in any Licensing
 Information associated with any Covered File, there MUST exist a License File as
 defined in this section.
 
-You MAY include a `COPYING` or `LICENSE` file (with or without file extensions)
-in your project for compliance with other standards, conventions, or tools.
-These files MAY contain a copy of the license text, a summary of your licensing,
-or anything else. These files are ignored by the REUSE Tool.
+You MAY include `COPYING` or `LICENSE` files in your project for compliance with
+other standards, conventions, or tools. These files MAY contain a copy of the
+license text, a summary of your licensing, or anything else. These files are
+ignored by the REUSE Tool.
 
 ## Licensing Information
 
