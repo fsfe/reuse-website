@@ -21,10 +21,10 @@
         "other": "Avertissement :"
     },
     "trans_inofficial": {
-        "other": "Vous lisez une traduction non officielle de la [original page](%s)."
+        "other": "Vous lisez une traduction non officielle de [original page](%s)."
     },
     "trans_available": {
-        "other": "Des traductions non officielles sont disponibles en :"
+        "other": "Des traductions non officielles sont disponibles en :"
     },
     "and": {
         "other": "et"
@@ -76,5 +76,11 @@
     },
     "index_step2": {
         "other": "Ajouter des informations sur les droits d'auteur et les licences à chaque fichier"
+    },
+    "index_initiative_by": {
+        "other": "Une initiative de"
+    },
+    "all_specifications": {
+        "other": "Toutes les versions de spécification peuvent être trouvées à <{{ .specifications }}>."
     }
 }
