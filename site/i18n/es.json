@@ -18,7 +18,7 @@
         "other": "Está leyendo una traducción no oficial de la [página original](%s)."
     },
     "trans_available": {
-        "other": "Las traducciones oficiales están disponibles en:"
+        "other": "Hay traducciones no oficiales disponibles en:"
     },
     "and": {
         "other": "y"
@@ -27,7 +27,7 @@
         "other": "Empezar"
     },
     "menu_faq": {
-        "other": "FAQ"
+        "other": "PREGUNTAS FRECUENTES"
     },
     "menu_dev": {
         "other": "Desarrolladores"
@@ -72,9 +72,15 @@
         "other": "Cumplimiento de licencia"
     },
     "index_rationale": {
-        "other": "Los derechos de autor y las licencias son difíciles, especialmente cuando se reutiliza software de diferentes proyectos que están publicadas bajo varias licencias diferentes. REUSE lo inició la [Free Software Foundation Europe](https://fsfe.org) (FSFE) para proporcionar un conjunto de recomendaciones para facilitar la obtención de licencias de sus proyectos de software libre. Estas recomendaciones no solo le facilitan declarar las licencias bajo las cuales se publican sus obras, sino que también facilitan que un ordenador entienda cómo se licencia su proyecto."
+        "other": "Los derechos de autor y las licencias son difíciles, especialmente cuando se reutiliza software de diferentes proyectos que se publican bajo diferentes licencias. REUSE fue iniciado por la [Free Software Foundation Europe](https://fsfe.org) (FSFE) para proporcionar un conjunto de recomendaciones para hacer que las licencias de sus proyectos de Software Libre sean **fáciles, completas, inequívocas y legibles por máquina**."
     },
     "index_legal_text": {
         "other": "Hay muchas herramientas que le ayudan a cumplir con las licencias de software, muchas de ellas utilizan bases de datos y heurísticas difusas. Un proyecto compatible con REUSE facilita mucho el trabajo de los expertos legales y de los funcionarios. La creación de una lista de materiales se puede lograr con solo un comando simple. REUSE [no reemplaza otras herramientas](comparison/), es una adición muy esperada."
+    },
+    "all_specifications": {
+        "other": "Todas las versiones de la especificación pueden encontrarse en <{{ .specifications }}>."
+    },
+    "index_initiative_by": {
+        "other": "Una iniciativa del"
     }
 }
