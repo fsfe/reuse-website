@@ -46,7 +46,7 @@ refLinksErrorLevel = "warning"
 [params.social]
   Github        = "search?q=topic%3Areuse+org%3Afsfe&type=Repositories"
   Git           = "https://git.fsfe.org/reuse"
-  Email         = "https://lists.fsfe.org/mailman/listinfo/reuse"
+  Email         = "https://lists.fsfe.org/postorius/lists/reuse.lists.fsfe.org/"
   Twitter       = "fsfe"
   Stackoverflow = ""
   Mastodon      = "mastodon.social/@fsfe"
