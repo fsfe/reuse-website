@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-07-08 12:05+0000\n"
+"POT-Creation-Date: 2024-08-02 08:24+0000\n"
 "PO-Revision-Date: 2024-07-09 00:29+0000\n"
 "Last-Translator: Hotripak <hotr1pak@gmail.com>\n"
-"Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
-"reuse-website-markdown/uk/>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/reuse-"
+"website-markdown/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5192,12 +5192,16 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
+#, fuzzy
+#| msgid ""
+#| "For the revision history of this specification, please see [the change "
+#| "log](https://git.fsfe.org/reuse/docs/src/branch/master/CHANGELOG.md)."
 msgid ""
 "For the revision history of this specification, please see [the change log]"
-"(https://git.fsfe.org/reuse/docs/src/branch/stable/CHANGELOG.md)."
+"(https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 msgstr ""
-"Історію змін до цієї специфікації можна переглянути у [журналі змін](https://"
-"git.fsfe.org/reuse/docs/src/branch/stable/CHANGELOG.md)."
+"Історію редакцій цієї специфікації перегляньте у [журналі змін](https://git."
+"fsfe.org/reuse/docs/src/branch/master/CHANGELOG.md)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -6153,6 +6157,13 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 msgid "Examples of valid Copyright Notices:"
 msgstr "Приклади дійсних повідомлень про авторське право:"
+
+#~ msgid ""
+#~ "For the revision history of this specification, please see [the change "
+#~ "log](https://git.fsfe.org/reuse/docs/src/branch/stable/CHANGELOG.md)."
+#~ msgstr ""
+#~ "Історію змін до цієї специфікації можна переглянути у [журналі змін]"
+#~ "(https://git.fsfe.org/reuse/docs/src/branch/stable/CHANGELOG.md)."
 
 #, no-wrap
 #~ msgid "Helper Tool {#tool}"

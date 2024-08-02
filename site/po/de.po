@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-07-08 12:05+0000\n"
+"POT-Creation-Date: 2024-08-02 08:24+0000\n"
 "PO-Revision-Date: 2022-08-30 10:18+0000\n"
 "Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/fsfe/reuse-"
@@ -4272,7 +4272,7 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 msgid ""
 "For the revision history of this specification, please see [the change log]"
-"(https://git.fsfe.org/reuse/docs/src/branch/stable/CHANGELOG.md)."
+"(https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 msgstr ""
 
 #. type: Bullet: '- '

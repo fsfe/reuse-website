@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-07-08 12:05+0000\n"
+"POT-Creation-Date: 2024-08-02 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4245,7 +4245,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "For the revision history of this specification, please see [the change "
-"log](https://git.fsfe.org/reuse/docs/src/branch/stable/CHANGELOG.md)."
+"log](https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 msgstr ""
 
 #. type: Bullet: '- '
