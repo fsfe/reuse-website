@@ -44,6 +44,8 @@ This is the change log for the REUSE Specification.
 
 ### Changed
 
+- `REUSE.toml` files must not be ignored by VCS.
+
 ### Deprecated
 
 ### Removed
