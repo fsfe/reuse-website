@@ -60,7 +60,7 @@
         "other": "Licencování usnadňujeme lidem i strojům. Řešíme základní problém, který má licencování svobodného softwaru u samého zdroje: pod jakou licencí je soubor licencován a kdo vlastní autorská práva? **Přijetí našich doporučení je snadné jako jedna-dvě-tři**!"
     },
     "index_rationale": {
-        "other": "Autorská práva a licence jsou obtížné, zejména při opětovném použití softwaru z různých projektů, které jsou vydávány pod různými licencemi. Projekt REUSE byl založen organizací [Free Software Foundation Europe](https://fsfe.org) (FSFE) s cílem poskytnout soubor doporučení pro usnadnění licencování projektů svobodného softwaru. Tato doporučení vám nejen usnadňují deklarování licencí, pod kterými jsou vaše díla vydávána, ale také usnadňují počítači pochopit, jak je váš projekt licencován."
+        "other": "Autorská práva a licence jsou složité, zejména při opětovném použití softwaru z různých projektů, které jsou vydávány pod různými licencemi. Projekt REUSE zahájila nadace [Free Software Foundation Europe](https://fsfe.org) (FSFE), aby poskytla soubor doporučení pro **snadné, komplexní, jednoznačné a strojově čitelné** licencování projektů svobodného softwaru."
     },
     "index_legal_text": {
         "other": "Existuje mnoho nástrojů, které vám pomohou s dodržováním licencí pro software, mnohé z nich využívají databáze a fuzzy heuristiku. Projekt, který je v souladu s předpisy REUSE, výrazně usnadňuje práci právním expertům a pracovníkům odpovědným za dodržování předpisů. Vytvoření kusovníku lze dosáhnout jediným jednoduchým příkazem. REUSE [nenahrazuje jiné nástroje](comparison/), je to dlouho očekávaný doplněk."
@@ -76,5 +76,11 @@
     },
     "index_legal_head": {
         "other": "Soulad s licencí"
+    },
+    "all_specifications": {
+        "other": "Všechny verze specifikace naleznete na adrese <{{ .specifications }}>."
+    },
+    "index_initiative_by": {
+        "other": "Iniciativa společnosti"
     }
 }
