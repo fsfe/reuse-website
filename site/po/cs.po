@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-08-02 08:24+0000\n"
-"PO-Revision-Date: 2024-08-18 22:09+0000\n"
+"PO-Revision-Date: 2024-08-19 23:09+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/cs/>\n"
@@ -189,7 +189,7 @@ msgstr ""
 "dosahování a potvrzování souladu s nařízením REUSE. Stahuje úplné licenční "
 "texty, přidává do hlaviček souborů informace o autorských právech a licenci "
 "a obsahuje liner pro identifikaci problémů. Nakonec lze vygenerovat "
-"softwarový kusovník."
+"softwarovou soupisku."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -581,7 +581,7 @@ msgstr ""
 " a lidech, kteří jej podporují a přijímají. Staňte se její součástí tím, že "
 "se připojíte k \n"
 " [mailing listu](https://lists.fsfe.org/mailman/listinfo/reuse), abyste se \n"
-" seznámili s ostatními uživateli a ovlivnili vývoj projektu REUSE.  \n"
+" seznámili s ostatními uživateli a ovlivnili vývoj projektu REUSE. \n"
 " Stejně tak se můžete obrátit přímo na koordinátory projektu REUSE "
 "prostřednictvím \n"
 " naší poštovní konference.\n"
@@ -1018,8 +1018,8 @@ msgstr ""
 "Obecně doporučujeme používat `SPDX-FileCopyrightText: [rok] [copyright\n"
 "držitel] <[kontaktní adresa]>`. Můžete se rozhodnout vypustit položky kromě "
 "autorských práv\n"
-"držitele autorských práv, které musí být uvedeny vždy. Doporučujeme uvést "
-"všechny položky.\n"
+"držitele autorských práv, které musí být uvedeny vždy. \n"
+"Doporučujeme uvést všechny položky.\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1744,7 +1744,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... create a software bill of materials {#bill-of-materials}"
-msgstr "... vytvořit softwarový kusovník {#bill-of-materials}"
+msgstr "... vytvořit softwarovou soupisku {#bill-of-materials}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3370,16 +3370,18 @@ msgid ""
 "reuse-annotate.html) helps with adding licensing and copyright information "
 "to your files. For the task above, the following command will do the job:"
 msgstr ""
-"[The `reuse annotate` command](https://reuse.readthedocs.io/en/stable/man/"
-"reuse-annotate.html) helps with adding licensing and copyright information "
-"to your files. For the task above, the following command will do the job:"
+"[Příkaz `reuse annotate`](https://reuse.readthedocs.io/en/stable/man/reuse-"
+"annotate.html) pomáhá s přidáváním informací o licencích a autorských "
+"právech k vašim souborům. U výše uvedené úlohy provede tuto úlohu "
+"následující příkaz:"
 
 #. type: Fenced code block (bash)
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid "reuse addheader --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
+#, no-wrap
 msgid "reuse annotate --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
-msgstr "reuse addheader --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
+msgstr ""
+"reuse annotate --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-3."
+"0-or-later\" src/main.c Makefile README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3388,20 +3390,13 @@ msgid ""
 "licensing information to each file, your project tree will now look like "
 "this:"
 msgstr ""
+"Po přidání licence do vašeho úložiště a přidání informací o autorských "
+"právech a licencích do každého souboru bude váš strom projektu nyní vypadat "
+"takto:"
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "project/\n"
-#| "├── img/\n"
-#| "│   ├── cat.jpg\n"
-#| "│   └── dog.jpg\n"
-#| "├── src/\n"
-#| "│   └── main.c\n"
-#| "├── .gitignore\n"
-#| "├── Makefile\n"
-#| "└── README.md\n"
+#, no-wrap
 msgid ""
 "project/\n"
 "├── LICENSES/\n"
@@ -3412,51 +3407,29 @@ msgid ""
 "└── README.md\n"
 msgstr ""
 "project/\n"
-"├── img/\n"
-"│   ├── cat.jpg\n"
-"│   └── dog.jpg\n"
+"├── LICENSES/\n"
+"│   └── GPL-3.0-or-later.txt\n"
 "├── src/\n"
 "│   └── main.c\n"
-"├── .gitignore\n"
 "├── Makefile\n"
 "└── README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "Follow the [installation instructions](https://github.com/fsfe/reuse-"
-#| "tool#install) available for multiple platforms. Now go to the project "
-#| "directory and run the linter."
 msgid ""
 "To ensure that you did not miss anything, you should confirm REUSE "
 "compliance with the REUSE tool. Follow the [installation instructions]"
 "(https://reuse.readthedocs.io/en/latest/readme.html#install)  available for "
 "multiple platforms, then go to the project directory and run the linter."
 msgstr ""
-"Postupujte podle [instalačních pokynů](https://github.com/fsfe/reuse-"
-"tool#install), které jsou k dispozici pro více platforem. Nyní přejděte do "
-"adresáře projektu a spusťte linter."
+"Abyste měli jistotu, že vám nic neunikne, měli byste potvrdit shodu REUSE "
+"pomocí nástroje REUSE. Postupujte podle [pokynů k instalaci](https://reuse."
+"readthedocs.io/en/latest/readme.html#install) dostupných pro více platforem, "
+"poté přejděte do adresáře projektu a spusťte linter."
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "$ cd path/to/project/\n"
-#| "$ reuse lint\n"
-#| "# SUMMARY\n"
-#| "\n"
-#| "* Bad licenses:\n"
-#| "* Deprecated licenses:\n"
-#| "* Licenses without file extension:\n"
-#| "* Missing licenses:\n"
-#| "* Unused licenses:\n"
-#| "* Used licenses: CC-BY-4.0, CC0-1.0, GPL-3.0-or-later\n"
-#| "* Read errors: 0\n"
-#| "* Files with copyright information: 6 / 6\n"
-#| "* Files with license information: 6 / 6\n"
-#| "\n"
-#| "Congratulations! Your project is compliant with version 3.0 of the REUSE Specification :-)\n"
+#, no-wrap
 msgid ""
 "$ reuse lint\n"
 "\n"
@@ -3474,47 +3447,40 @@ msgid ""
 "\n"
 "Congratulations! Your project is compliant with version 3.2 of the REUSE Specification :-)\n"
 msgstr ""
-"$ cd path/to/project/\n"
 "$ reuse lint\n"
-"# SUMMARY\n"
 "\n"
-"* Špatné licence:\n"
-"* Zastaralé licence:\n"
-"* Licence bez přípony souboru:\n"
-"* Chybějící licence:\n"
-"* Nepoužité licence:\n"
-"* Použité licence: CC-BY-4.0, CC0-1.0, GPL-3.0-nebo pozdější\n"
-"* Chyby při čtení: 0\n"
-"* Soubory s informacemi o autorských právech: 6 / 6\n"
-"* Soubory s informacemi o licenci: 6 / 6\n"
+"# SHRNUTÍ\n"
 "\n"
-"Gratulujeme! Váš projekt je v souladu s verzí 3.0 specifikace REUSE :-)\n"
+"*Špatné licence: 0\n"
+"* Zastaralé licence: 0\n"
+"* Licence bez přípony souboru: 0\n"
+"* Chybějící licence: 0\n"
+"* Nepoužité licence: 0\n"
+"* Použité licence: GPL-3.0 nebo novější\n"
+"* Chyby čtení: 0\n"
+"* Soubory s informacemi o autorských právech: 3/3\n"
+"* Soubory s informacemi o licenci: 3/3\n"
+"\n"
+"Gratulujeme! Váš projekt je v souladu s verzí 3.2 specifikace REUSE :-)\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "As you can see in the last line, the tool confirms that your project is "
-#| "compliant with REUSE now! To learn what the different sections mean, "
-#| "please have a look at the [documentation of the lint command](https://"
-#| "reuse.readthedocs.io/en/stable/usage.html#lint)."
 msgid ""
 "As you can see in the last line, the tool confirms that your project is "
 "compliant with REUSE now! To learn what the different criteria mean, please "
 "have a look at the [documentation of the lint command](https://reuse."
 "readthedocs.io/en/stable/man/reuse-lint.html)."
 msgstr ""
-"Jak vidíte na posledním řádku, nástroj potvrdí, že váš projekt je nyní v "
-"souladu s REUSE! Chcete-li se dozvědět, co jednotlivé sekce znamenají, "
-"podívejte se do [dokumentace příkazu lint](https://reuse.readthedocs.io/en/"
-"stable/usage.html#lint)."
+"Jak můžete vidět na posledním řádku, nástroj potvrzuje, že váš projekt je "
+"nyní v souladu s REUSE! Chcete-li zjistit, co znamenají různá kritéria, "
+"podívejte se prosím na [dokumentaci příkazu lint](https://reuse.readthedocs."
+"io/en/stable/man/reuse-lint.html)."
 
 #. type: Title ##
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid "Change licensing information"
+#, no-wrap
 msgid "More information"
-msgstr "Změna licenčních informací"
+msgstr "Více informací"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3528,25 +3494,31 @@ msgid ""
 "practical use-cases, see the ['How do I ...' section in the Frequently Asked\n"
 "Questions]({{< relref \"faq.md#howto\" >}}).\n"
 msgstr ""
+"Tento tutoriál byl bleskově rychlým úvodem do REUSE. Nejsou zde pokryty \n"
+"všechny případy použití, zejména [jak komentovat nekomentovatelné soubory]\n"
+"({{< relref \"faq.md#uncommentable-file\" >}}), [jak hromadně anotovat "
+"soubory]\n"
+"({{< relref \" faq.md#bulk-license\" >}}) a [jak používat licenci, která "
+"není na seznamu SPDX]\n"
+"({{< relref \"faq.md#custom-license\" >}}). Chcete-li se dozvědět o těchto a "
+"praktičtějších \n"
+"případech použití, podívejte se do části ['Jak mohu ...' v části Často "
+"kladené \n"
+"otázky] ({{< relref \"faq.md#howto\" >}}).\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
 msgid "Other sources for more information:"
-msgstr ""
+msgstr "Další zdroje pro více informací:"
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "- Our [Frequently Asked Questions](https://reuse.software/faq) covers "
-#| "common questions as well as extraordinary cases and will constantly be "
-#| "updated."
 msgid ""
 "Our [Frequently Asked Questions](https://reuse.software/faq) covers common "
 "questions as well as extraordinary cases and will constantly be updated."
 msgstr ""
-"- Naše [Často kladené otázky](https://reuse.software/faq) se týkají běžných "
-"otázek i mimořádných případů a budou průběžně aktualizovány."
+"Naše [Často kladené otázky](https://reuse.software/faq) pokrývají běžné "
+"otázky i mimořádné případy a budou neustále aktualizovány."
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3799,6 +3771,9 @@ msgid ""
 "sorted by year. They should list the actual copyright holder, which may be "
 "an organisation rather than the author. For example:"
 msgstr ""
+"Upozornění na autorská práva v záhlaví licence by měla mít konzistentní "
+"formát a měla by být seřazena podle roku. Měli by uvádět skutečného držitele "
+"autorských práv, kterým může být spíše organizace než autor. Například:"
 
 #. type: Fenced code block
 #: site/content/en/spec-1.2.md
@@ -3813,6 +3788,14 @@ msgid ""
 "  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  * Copyright (c) 2017 Alice Commit <alice@example.com>\n"
+"  * Copyright (c) 2009-2016 Bob Denver <bob@example.com>\n"
+"  * Copyright (c) 2007 Company Example <charlie@example.com>\n"
+"  * \n"
+"  * SPDX-License-Identifier: BSD-2-Clause\n"
+"  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3823,6 +3806,11 @@ msgid ""
 "referenced from the individual source file. The tag can be repeated if "
 "multiple license files are relevant."
 msgstr ""
+"Značka `License-Filename` musí být trvalá adresa URL nebo název souboru v "
+"úložišti, kde je k dispozici skutečný text licence. To je přesnější než "
+"identifikátor licence SPDX a zajišťuje, že se na úplný text licence vždy "
+"odkazuje z jednotlivého zdrojového souboru. Značku lze opakovat, pokud je "
+"relevantních více licenčních souborů."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3830,6 +3818,8 @@ msgid ""
 "You should include information about your project's practices in the README "
 "or similar file."
 msgstr ""
+"Informace o postupech projektu byste měli uvést v souboru README nebo "
+"podobném souboru."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3837,6 +3827,9 @@ msgid ""
 "If your project includes binaries or source code files in which comments can "
 "not be placed, you should provide them separately in one of two ways:"
 msgstr ""
+"Pokud váš projekt obsahuje binární soubory nebo zdrojové kódy, do kterých "
+"nelze vkládat komentáře, měli byste je poskytnout samostatně jedním ze dvou "
+"způsobů:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3846,6 +3839,10 @@ msgid ""
 "which includes a copyright header according to the format you customarily "
 "use for headers."
 msgstr ""
+"Pokud máte soubory s různými upozorněními na autorská práva a licencemi, "
+"měli byste pro každý soubor s názvem `FILENAME` zahrnout textový soubor "
+"`FILENAME.license`, který obsahuje hlavičku o autorských právech v souladu s "
+"formátem, který obvykle používáte pro hlavičky."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3855,6 +3852,10 @@ msgid ""
 "doc/packaging-manuals/copyright-format/1.0/) file format, and place a single "
 "copyright file documenting those files."
 msgstr ""
+"Pokud máte mnoho takových souborů, ale každý z nich má stejnou poznámku o "
+"autorských právech a licenci, můžete místo toho použít formát souboru [DEP-5/"
+"copyright](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/"
+") a umístit jediný soubor s autorskými právy dokumentující tyto soubory."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3863,6 +3864,9 @@ msgid ""
 "not exist in the repository but which will be created at build time, you may "
 "include a `.license` file without the corresponding binary file."
 msgstr ""
+"Pokud si přejete explicitně uvést licenci výstupního souboru, který v "
+"úložišti neexistuje, ale který bude vytvořen v době sestavení, můžete "
+"připojit soubor `.license` bez odpovídajícího binárního souboru."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3872,6 +3876,10 @@ msgid ""
 "do. Keep in mind version control systems typically record authorship, not "
 "copyright."
 msgstr ""
+"Informace o autorských právech můžete zaznamenávat na základě systému správy "
+"verzí, který používáte, ale je třeba dbát zvláštní opatrnosti. Mějte na "
+"paměti, že systémy pro správu verzí obvykle zaznamenávají autorství, nikoli "
+"autorská práva."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3879,6 +3887,8 @@ msgid ""
 "For a project using the version control system to convey information about "
 "copyright, you must:"
 msgstr ""
+"Pro projekt využívající systém správy verzí k přenosu informací o autorských "
+"právech musíte:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3886,12 +3896,15 @@ msgid ""
 "make sure the version control system is publicly accessible and take "
 "steps[^3] to ensure it will remain so,"
 msgstr ""
+"ujistěte se, že je systém správy verzí veřejně přístupný a podnikněte "
+"kroky[^3], aby tomu tak zůstalo,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 msgid ""
 "provide a link back to the original file in version control from each header,"
 msgstr ""
+"poskytnout odkaz zpět na původní soubor ve správě verzí z každé hlavičky,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3902,6 +3915,11 @@ msgid ""
 "included, for example in the form of a bill of material (see later), an "
 "automatically generated log file or similar,"
 msgstr ""
+"zajistit, že pokud někdo zkopíruje zdrojový repozitář bez metadat systému "
+"správy verzí (například když z toho vytvoří soubor tar), pak metadata "
+"systému správy verzí relevantní pro určení autorských práv musí být stále "
+"zahrnuta, například ve formě soupisky (viz dále), automaticky generovaný "
+"soubor protokolu nebo podobně,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3912,11 +3930,16 @@ msgid ""
 "the one pushing code to version control, or where the copyright is held by "
 "an organisation rather than the author.)"
 msgstr ""
+"ujistěte se, že předložená metadata odrážejí skutečná autorská práva (to je "
+"zvláště důležité, pokud projekt přijímá kód přidaný prostřednictvím e-"
+"mailových konferencí, sledovačů chyb nebo podobně, kde původní držitel "
+"autorských práv není tím, kdo posílá kód do kontroly verzí, nebo kde jsou "
+"autorská práva v držení organizace, nikoli autora.)"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 msgid "An appropriate header in this case would be:"
-msgstr ""
+msgstr "Vhodné záhlaví by v tomto případě bylo:"
 
 #. type: Fenced code block
 #: site/content/en/spec-1.2.md
@@ -3931,6 +3954,15 @@ msgid ""
 "  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
 "  */\n"
 msgstr ""
+" /*\n"
+" * Tento soubor je součástí projektu X. Je chráněn autorskými právy "
+"přispěvatelů\n"
+" * zaznamenané v historii správy verzí souboru, dostupné z\n"
+" * jeho původní umístění http://git.example.com/X/název souboru.c\n"
+" *\n"
+" * SPDX-License-Identifier: BSD-2-Clause\n"
+" * Název licenčního souboru: LICENSES/BSD-2-Clause_Charlie.txt\n"
+" */\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3945,6 +3977,18 @@ msgid ""
 "> * Make references to the license text and the SPDX identifier from each source code file.\n"
 "> * Include license and copyright information also for files which can not include a proper header, either in a separate .license file, or using the DEP-5/copyright specification.\n"
 msgstr ""
+"> ### Mějte na paměti\n"
+">\n"
+"> * Používejte konzistentní styl záhlaví v celém projektu.\n"
+"> * Neodstraňujte existující záhlaví, ale pouze k nim přidávejte.\n"
+"> * Zvažte použití systémů pro správu verzí k vedení záznamů o držitelích "
+"autorských práv.\n"
+"> * Udržujte svůj systém správy verzí veřejný, pokud jej používáte.\n"
+"> * Uveďte odkazy na text licence a identifikátor SPDX z každého souboru "
+"zdrojového kódu.\n"
+"> * Zahrňte informace o licenci a autorských právech také pro soubory, které "
+"nemohou obsahovat správné záhlaví, buď v samostatném souboru .licence, nebo "
+"pomocí specifikace DEP-5/copyright.\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3955,12 +3999,18 @@ msgid ""
 "archived freely and ensure project is archived by institutions dedicated to "
 "long-term preservation of software code, eg. Software Heritage."
 msgstr ""
+"[^3]: Zaveďte správu projektu, která se zavazuje k veřejnému přístupu, do "
+"projektu se přidává materiál veterináře, aby se chránil před zranitelností "
+"při zastavení šíření, zahrňte materiál pouze pod svobodnou licencí s "
+"otevřeným zdrojovým kódem, aby jej bylo možné volně kopírovat a archivovat a "
+"zajistit, aby byl projekt archivován institucemi věnované dlouhodobému "
+"uchování softwarového kódu, např. Softwarové dědictví."
 
 #. type: Title ##
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 #, no-wrap
 msgid "3. Provide an inventory for included software"
-msgstr ""
+msgstr "3. Poskytněte soupis dodaného softwaru"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3969,6 +4019,9 @@ msgid ""
 "copyright information, you may include a bill of material for your project, "
 "but you should only do so if this is generated automatically."
 msgstr ""
+"Kromě licenčních souborů zahrnutých v projektu a informací o autorských "
+"právech na úrovni souboru můžete zahrnout soupisku pro svůj projekt, ale "
+"měli byste tak učinit pouze v případě, že je generována automaticky."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3979,6 +4032,11 @@ msgid ""
 "best not to have a bill of material, but to rely only on the information "
 "coupled with the source code files."
 msgstr ""
+"Soupiska může být velmi komplikovaná a zdlouhavá, což ztěžuje její údržbu. "
+"Pokud ji nevygenerujete automaticky, je velmi pravděpodobné, že ji někdo při "
+"provádění změn zapomene aktualizovat. V těchto případech je nejlepší nemít "
+"soupisku, ale spoléhat se pouze na informace spojené se soubory zdrojového "
+"kódu."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3990,6 +4048,12 @@ msgid ""
 "on files which include a standard header, or which includes the header in a "
 "separate license file."
 msgstr ""
+"Pokud máte způsob, jak automaticky vytvořit soupisku, a pokud se tak "
+"rozhodnete, měli byste ji vygenerovat automaticky z nejspolehlivějších "
+"informací, které máte o každém souboru ve svém projektu. To zahrnuje "
+"informace o autorských právech uchovávané v systémech správy verzí a licence "
+"na soubory, které obsahují standardní záhlaví nebo které obsahují záhlaví v "
+"samostatném licenčním souboru."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3999,6 +4063,10 @@ msgid ""
 "bill of material, which license is relevant for the output files depending "
 "on the included source code."
 msgstr ""
+"Můžete se také rozhodnout zahrnout do soupisky své výstupní soubory "
+"vygenerované při kompilaci projektu, abyste mohli prostřednictvím soupisky "
+"uvést, která licence je relevantní pro výstupní soubory v závislosti na "
+"zahrnutém zdrojovém kódu."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -4007,6 +4075,9 @@ msgid ""
 "included in a file in the top level directory of your repository called "
 "`LICENSE.spdx`."
 msgstr ""
+"Soupis materiálů by měl být v souladu se specifikací SPDX a měl by být "
+"obsažen v souboru v adresáři nejvyšší úrovně vašeho úložiště s názvem "
+"`LICENSE.spdx`."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -4019,13 +4090,20 @@ msgid ""
 "> * Make your bill of material conformant to the SPDX specification.\n"
 "> * It doesn't hurt to run your project through ScanCode or FOSSology, to make sure these tools can parse and understand your project's licensing.\n"
 msgstr ""
+"> ### Mějte na paměti\n"
+">\n"
+"> * Nevytvářejte kusovník, pokud jej nemůžete vygenerovat automaticky.\n"
+"> * Pokud jej generujete automaticky, je užitečné jej přiložit.\n"
+"> * Vytvořte kusovník v souladu se specifikací SPDX.\n"
+"> * Není na škodu projít projekt programem ScanCode nebo FOSSology, abyste "
+"se ujistili, že tyto nástroje dokáží analyzovat a pochopit licencování "
+"vašeho projektu.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-2.0.md
-#, fuzzy, no-wrap
-#| msgid "REUSE Specification – Version 3.0"
+#, no-wrap
 msgid "REUSE Practices – Version 2.0"
-msgstr "Specifikace REUSE - verze 3.0"
+msgstr "Postupy REUSE - verze 2.0"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4034,6 +4112,9 @@ msgid ""
 "texts. Regardless of which license you use, you should include the license "
 "text in your project."
 msgstr ""
+"Licence svobodného a otevřeného softwaru jsou standardizované a mají "
+"standardní texty. Bez ohledu na to, jakou licenci používáte, měli byste text "
+"licence do svého projektu zahrnout."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4046,6 +4127,13 @@ msgid ""
 "uniquely reference each license.  For instance, the GNU GPL version 3 has "
 "`GPL-3.0` as shorthand identifier."
 msgstr ""
+"Nejjednodušší způsob, jak zajistit, že poskytnete nezměněnou licenci, je "
+"její doslovné zkopírování z [tohoto úložiště licencí](https://github.com/"
+"spdx/license-list) spravovaného SPDX Workgroup. SPDX Workgroup spravuje ["
+"seznam běžně používaných licencí][licence spdx]. Každá licence má zkrácený "
+"název (tzv. identifikátor SPDX), který lze použít k jedinečnému odkazování "
+"na každou licenci. Například GNU GPL verze 3 má `GPL-3.0` jako zkrácený "
+"identifikátor."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4055,6 +4143,10 @@ msgid ""
 "your repository with the name `LICENSE`, `LICENCE`, `COPYING` or `COPYRIGHT` "
 "(you may attach some suffix to the filename as well, such as `LICENSE.txt`)."
 msgstr ""
+"Pokud váš projekt obsahuje pouze kód licencovaný pod jedinou licencí, můžete "
+"poskytnout text této licence v souboru v adresáři nejvyšší úrovně vašeho "
+"úložiště s názvem `LICENSE`, `LICENCE`, `COPYING` nebo `COPYRIGHT` ( k názvu "
+"souboru můžete také připojit nějakou příponu, například `LICENSE.txt`)."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4065,6 +4157,11 @@ msgid ""
 "license because some parts may be written by Alice and others by Bob, "
 "resulting in two different license files."
 msgstr ""
+"Některé licence, jako je licence BSD 2 Clause, existují v mnoha variantách, "
+"kde jediným rozdílem je jméno držitele autorských práv v textu licence. Váš "
+"projekt může skončit včetně několika verzí stejné licence BSD 2 Clause, "
+"protože některé části mohou být napsány Alice a jiné Bobem, což má za "
+"následek dva různé licenční soubory."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4074,6 +4171,10 @@ msgid ""
 "the common places to find licenses.  If you place your license elsewhere, it "
 "is possible that humans and computers alike may overlook it."
 msgstr ""
+"Když přidáte všechny své licenční soubory, měly by všechny odpovídat globu "
+"`{LICENSE*, LICENCE*, COPYING*, COPYRIGHT*, LICENSES/**}`. Toto jsou běžná "
+"místa k nalezení licencí. Pokud umístíte svou licenci jinam, je možné, že ji "
+"lidé i počítače přehlédnou."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4084,6 +4185,11 @@ msgid ""
 "simply include the name of the license into the filename: The license file "
 "for `GPL-3.0` becomes `LICENSES/GPL-3.0.txt`."
 msgstr ""
+"Abyste mohli odkazovat na licenční soubor ze zdrojového kódu, měli byste do "
+"odpovídajícího licenčního souboru vložit identifikátor SPDX (např. `GPL-3.0`"
+", `MIT`) každé licence. Nejjednodušší způsob, jak toho dosáhnout, je "
+"jednoduše zahrnout název licence do názvu souboru: Licenční soubor pro `GPL-3"
+".0` se změní na `LICENSES/GPL-3.0.txt`."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4097,6 +4203,14 @@ msgid ""
 "with the `License-Text` tag to signal the start of your license.  The header "
 "may include other tags."
 msgstr ""
+"Pokud není možné soubor přejmenovat (například pokud chcete mít text licence "
+"pod `KOPÍROVÁNÍ`), měli byste do souboru přidat záhlaví ve formátu tag-"
+"value. Tuto hlavičku můžete přidat buď do samotného licenčního souboru, nebo "
+"do souboru se stejným názvem souboru s příponou `.license`. Záhlaví musí "
+"obsahovat značku `Valid-License-Identifier`, jejíž hodnota by měla být "
+"identifikátor SPDX pro vaši licenci. Hlavička by měla končit značkou "
+"`License-Text`, která signalizuje začátek vaší licence. Záhlaví může "
+"obsahovat další značky."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4104,6 +4218,8 @@ msgid ""
 "This is an example of an MIT license file, which conveys that all references "
 "to the SPDX identifier `MIT` should point to this license file."
 msgstr ""
+"Toto je příklad licenčního souboru MIT, který znamená, že všechny odkazy na "
+"identifikátor SPDX `MIT` by měly směřovat na tento licenční soubor."
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -4120,6 +4236,17 @@ msgid ""
 "copy of this software and associated documentation files (the \"Software\"),\n"
 " etc...\n"
 msgstr ""
+"Identifikátor platné licence: MIT\n"
+"Text licence:\n"
+"\n"
+"Licence MIT\n"
+"\n"
+"Copyright (c) <rok> <držitelé autorských práv>\n"
+"\n"
+"Povolení se tímto uděluje bezplatně každé osobě, která získá a\n"
+"kopii tohoto softwaru a souvisejících souborů dokumentace (dále jen "
+"„Software“),\n"
+" atd...\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4128,6 +4255,9 @@ msgid ""
 "be noted that the license text itself may not necessarily be released under "
 "that license, nor does the tag claim that."
 msgstr ""
+"I když by identifikátorem měla být licence v seznamu licencí SPDX, je třeba "
+"poznamenat, že samotný text licence nemusí být nutně uvolněn pod touto "
+"licencí, ani to tag netvrdí."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4137,6 +4267,10 @@ msgid ""
 "`GPL-2.0+`, but please note that it is not mandatory to list `GPL-2.0+` "
 "separately."
 msgstr ""
+"Identifikátor licence se může opakovat, pokud je stejný licenční soubor "
+"použit s více licenčními identifikátory. Níže uvedený příklad je pro `GPL-2."
+"0` a `GPL-2.0+`, ale upozorňujeme, že není povinné uvádět `GPL-2.0+` "
+"samostatně."
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -4145,6 +4279,8 @@ msgid ""
 "Valid-License-Identifier: GPL-2.0\n"
 "Valid-License-Identifier: GPL-2.0+\n"
 msgstr ""
+"Valid-License-Identifier: GPL-2.0\n"
+"Valid-License-Identifier: GPL-2.0+\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4154,12 +4290,16 @@ msgid ""
 "modified version of a license included in that list, you should create a custom\n"
 "identifier for it in the form `LicenseRef-<unique_code>`.\n"
 msgstr ""
+"Pokud licence není zahrnuta v seznamu licencí SPDX nebo je licence \n"
+"upravenou verzí licence obsažené v tomto seznamu, měli byste pro ni vytvořit "
+"\n"
+"vlastní identifikátor ve tvaru `LicenseRef-<unikátní_kód>`.\n"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
 #, no-wrap
 msgid "Valid-License-Identifier: LicenseRef-MyLicense\n"
-msgstr ""
+msgstr "Valid-License-Identifier: LicenseRef-MyLicense\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4170,6 +4310,11 @@ msgid ""
 "same header style or the tags `SPDX-Exception-Identifier` and `Exception-"
 "Text` instead. This is an example of a valid exception:"
 msgstr ""
+"V nepravděpodobném případě, že váš zdrojový kód obsahuje výjimky, jako je ["
+"výjimka Classpath 2.0](https://spdx.org/licenses/Classpath-exception-2.0."
+"html), můžete je zahrnout na stejné místo jako vaše licence, místo toho "
+"použijte stejný styl záhlaví nebo značky `SPDX-Exception-Identifier` a "
+"`Exception-Text`. Toto je příklad platné výjimky:"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -4182,6 +4327,12 @@ msgid ""
 " making a combined work based on this library. Thus, the terms and\n"
 " conditions of the GNU General Public License cover the whole combination. \n"
 msgstr ""
+"SPDX-Exception-Identifier: Classpath-exception-2.0\n"
+"Exception-Text:\n"
+"\n"
+" Statické nebo dynamické propojení této knihovny s jinými moduly \n"
+"vytváří kombinované dílo založené na této knihovně. Podmínky \n"
+"GNU General Public License tedy pokrývají celou kombinaci. \n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4193,11 +4344,17 @@ msgid ""
 ">   the filename or by inserting a header, such that you can refer to the\n"
 ">   license from the source code files.\n"
 msgstr ""
+"> * Neměňte žádné licenční texty, použijte doslovnou formu textu licence.\n"
+"> * Neodstraňujte žádné licenční texty, zahrňte licenční texty veškerého "
+"softwaru.\n"
+"> * Zahrňte identifikátor SPDX do každého licenčního souboru, buď jeho \n"
+">   zahrnutím do názvu souboru, nebo vložením záhlaví, \n"
+">   abyste mohli odkazovat na licenci ze souborů zdrojového kódu.\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
 msgid "[spdx-licenses]: https://spdx.org/licenses/"
-msgstr ""
+msgstr "[spdx-licenses]: https://spdx.org/licenses/"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4209,6 +4366,12 @@ msgid ""
 "license information: Who are the copyright holders and under which "
 "license(s) do they release the file?"
 msgstr ""
+"Soubory zdrojového kódu jsou často znovu použity ve více projektech, "
+"převzaty z jejich původu a znovu použít, nebo jinak skončí v úložištích, kde "
+"jsou oddělené od svého původu. Měli byste se proto ujistit, že všechny "
+"soubory ve vašem projektu mají záhlaví komentáře, které obsahuje informace o "
+"autorských právech a licenci k danému souboru: Kdo jsou držitelé autorských "
+"práv a na základě jaké licence (licencí) soubor uvolňují?"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4218,6 +4381,9 @@ msgid ""
 "remove any information from headers in files of which you are not the sole "
 "author."
 msgstr ""
+"Důrazně doporučujeme, abyste formát těchto záhlaví zachovali ve všech "
+"souborech konzistentní. Je však důležité, abyste neodstranili žádné "
+"informace ze záhlaví v souborech, jejichž jediným autorem nejste."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4227,6 +4393,10 @@ msgid ""
 "an `SPDX-License-Identifier` tag followed by an SPDX expression defined by "
 "the SPDX specifications."
 msgstr ""
+"Licenční informace vašeho souboru zdrojového kódu musíte předat "
+"standardizovaným způsobem, aby je počítače mohly interpretovat. Můžete to "
+"udělat pomocí značky `SPDX-License-Identifier` následované výrazem SPDX "
+"definovaným specifikacemi SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4235,6 +4405,9 @@ msgid ""
 "sorted by year. They should list the actual copyright holder, which may be "
 "an organisation rather than the author. For example:"
 msgstr ""
+"Upozornění na autorská práva v záhlaví komentáře by měla mít konzistentní "
+"formát a měla by být seřazena podle roku. Měli by uvádět skutečného držitele "
+"autorských práv, kterým může být spíše organizace než autor. Například:"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -4248,6 +4421,13 @@ msgid ""
 "  * SPDX-License-Identifier: GPL-2.0\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  * Copyright (c) 2017 Alice Commit <alice@example.com>\n"
+"  * Copyright (c) 2009-2016 Bob Denver <bob@example.com>\n"
+"  * Copyright (c) 2007 Company Example <charlie@example.com>\n"
+"  * \n"
+"  * SPDX-License-Identifier: GPL-2.0\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4255,6 +4435,9 @@ msgid ""
 "You should include information about your project's practices in the README "
 "or similar file.  This could be as simple as linking to these practices."
 msgstr ""
+"Informace o postupech vašeho projektu byste měli zahrnout do souboru README "
+"nebo podobného souboru. To by mohlo být stejně jednoduché jako propojení s "
+"těmito praktikami."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4266,6 +4449,12 @@ msgid ""
 "format does not support comments, you must provide the information "
 "separately in one of three ways:"
 msgstr ""
+"Všechny zdrojové soubory, které jsou součástí konečného sestavení vašeho "
+"projektu (doslovně, upravené, částečně nebo v kompilované podobě), musí "
+"obsahovat informace o autorských právech a licenci. Pokud není možné k "
+"souboru přidat záhlaví, ať už proto, že soubor je binární nebo protože "
+"formát nepodporuje komentáře, musíte informace poskytnout samostatně jedním "
+"ze tří způsobů:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4274,6 +4463,9 @@ msgid ""
 "regular comment header with all the necessary information to convey the "
 "license information about the file called `FILENAME`."
 msgstr ""
+"Můžete zahrnout textový soubor nazvaný `FILENAME.license`, do kterého "
+"uložíte pravidelnou hlavičku komentáře se všemi nezbytnými informacemi pro "
+"předání licenčních informací o souboru s názvem `FILENAME`."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4283,6 +4475,10 @@ msgid ""
 "doc/packaging-manuals/copyright-format/1.0/)  file format, and place a "
 "single copyright notice documenting those files."
 msgstr ""
+"Pokud máte mnoho takových souborů, ale každý má stejnou doložku o autorských "
+"právech a licenci, můžete místo toho použít [DEP-5/copyright](https://www."
+"debian.org/doc/packaging-manuals/copyright-format/ 1.0/) a umístěte jednu "
+"poznámku o autorských právech dokumentující tyto soubory."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4291,6 +4487,9 @@ msgid ""
 "in SPDX format (see practice 3), you may use this and do not need to "
 "separately include a `.license` file or DEP-5/copyright file."
 msgstr ""
+"Pokud máte způsob automatického generování soupisu zahrnutých souborů ve "
+"formátu SPDX (viz cvičení 3), můžete použít tento a nemusíte samostatně "
+"přidávat soubor `.license` nebo soubor DEP-5/copyright."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4299,6 +4498,9 @@ msgid ""
 "build artefact, you are encouraged but not obliged to include license "
 "information for these too."
 msgstr ""
+"Pokud váš projekt obsahuje dokumentaci, která není zahrnuta v konečném "
+"artefaktu stavby, doporučujeme, ale nejste povinni zahrnout licenční "
+"informace také pro ně."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4310,6 +4512,12 @@ msgid ""
 "Corp, reference to `LicenseRef-BSD-2-Clause-Evil-Corp`, and include both "
 "those licenses separately in `LICENSES` (see practice 1)."
 msgstr ""
+"Pokud je zdrojový kód licencován na základě licence, jako je `BSD-2-Clause`, "
+"kde se licenční texty mohou u jednotlivých držitelů autorských práv lišit, "
+"měli byste pokaždé uvést konkrétní licenci. Tedy pro soubory napsané Alice "
+"odkaz na `LicenseRef-BSD-2-Clause-Alice` a pro soubory napsané společností "
+"Evil Corp odkaz na `LicenseRef-BSD-2-Clause-Evil-Corp` a zahrnují obě tyto "
+"licence samostatně v „LICENCÍCH“ (viz cvičení 1)."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4317,6 +4525,8 @@ msgid ""
 "make sure the version control system is publicly accessible and take "
 "steps[^1] to ensure it will remain so,"
 msgstr ""
+"ujistěte se, že je systém správy verzí veřejně přístupný a podnikněte "
+"kroky[^1], aby tomu tak zůstalo,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4327,6 +4537,11 @@ msgid ""
 "included, for example in the form of a bill of materials (see later), an "
 "automatically generated log file or similar,"
 msgstr ""
+"zajistit, že pokud někdo zkopíruje zdrojový repozitář bez metadat systému "
+"správy verzí (například když z toho vytvoří soubor tar), pak metadata "
+"systému správy verzí relevantní pro určení autorských práv musí být stále "
+"zahrnuta, například ve formě účtu materiálů (viz dále), automaticky "
+"generovaný soubor protokolu nebo podobně,"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -4340,6 +4555,14 @@ msgid ""
 "  * SPDX-License-Identifier: GPL-3.0\n"
 "  */\n"
 msgstr ""
+" /*\n"
+" * Tento soubor je součástí projektu X. Je chráněn autorskými právy "
+"přispěvatelů\n"
+" * zaznamenané v historii správy verzí souboru, dostupné z\n"
+" * jeho původní umístění http://git.example.com/X/název souboru.c\n"
+" *\n"
+" * SPDX-License-Identifier: GPL-3.0\n"
+" */\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4357,6 +4580,21 @@ msgid ""
 ">   include a proper header, either in a separate .license file, or using the\n"
 ">   DEP-5/copyright specification.\n"
 msgstr ""
+"> ### Mějte na paměti\n"
+">\n"
+"> * Používejte konzistentní styl záhlaví v celém projektu.\n"
+"> * Neodstraňujte existující záhlaví, ale pouze k nim přidávejte.\n"
+"> * Zvažte použití systémů pro správu verzí k vedení záznamů o držitelích "
+"autorských práv.\n"
+"> * Udržujte svůj systém správy verzí veřejný, pokud jej používáte.\n"
+"> * Uveďte odkazy na identifikátor SPDX z každého souboru zdrojového kódu.\n"
+"> * Zaznamenejte informace o autorských právech do každého souboru "
+"zdrojového kódu.\n"
+"> * Zahrňte informace o licenci a autorských právech také pro soubory, které "
+"nemohou\n"
+"> zahrnout správnou hlavičku, buď v samostatném souboru .licence, nebo "
+"pomocí\n"
+"> DEP-5/specifikace autorských práv.\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4367,6 +4605,12 @@ msgid ""
 "archived freely and ensure project is archived by institutions dedicated to "
 "long-term preservation of software code, eg. Software Heritage."
 msgstr ""
+"[^1]: Zaveďte správu projektu, která se zavazuje k veřejnému přístupu, "
+"prověřujte materiál přidaný do projektu za účelem ochrany před zranitelností "
+"vůči zastavení šíření, zahrňte materiál pouze pod svobodnou a open source "
+"licencí, aby jej bylo možné volně kopírovat a archivovat a zajistit, aby byl "
+"projekt archivován institucemi věnované dlouhodobému uchování softwarového "
+"kódu, např. Softwarové dědictví."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4375,6 +4619,9 @@ msgid ""
 "copyright information, you may include a bill of materials for your project, "
 "but you should only do so if this is generated automatically."
 msgstr ""
+"Kromě licenčních souborů zahrnutých v projektu a informací o autorských "
+"právech na úrovni souboru můžete zahrnout soupisku pro svůj projekt, ale "
+"měli byste tak učinit pouze v případě, že je generována automaticky."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4385,6 +4632,11 @@ msgid ""
 "best not to have a bill of materials, but to rely only on the information "
 "coupled with the source code files."
 msgstr ""
+"Soupiska může být velmi komplikovaná a zdlouhavá, což ztěžuje její údržbu. "
+"Pokud ji nevygenerujete automaticky, je velmi pravděpodobné, že ji někdo při "
+"provádění změn zapomene aktualizovat. V těchto případech je nejlepší nemít "
+"soupisku, ale spoléhat se pouze na informace spojené se soubory zdrojového "
+"kódu."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4396,6 +4648,12 @@ msgid ""
 "on files which include a standard header, or which includes the header in a "
 "separate license file."
 msgstr ""
+"Pokud máte způsob, jak automaticky vytvořit soupisku, a pokud se tak "
+"rozhodnete, měli byste ji vygenerovat automaticky z nejspolehlivějších "
+"informací, které máte o každém souboru ve svém projektu. To zahrnuje "
+"informace o autorských právech uchovávané v systémech správy verzí a licence "
+"na soubory, které obsahují standardní záhlaví nebo které obsahují záhlaví v "
+"samostatném licenčním souboru."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4405,6 +4663,10 @@ msgid ""
 "bill of materials, which license is relevant for the output files depending "
 "on the included source code."
 msgstr ""
+"Můžete se také rozhodnout zahrnout do soupisky své výstupní soubory "
+"vygenerované při kompilaci projektu, abyste mohli prostřednictvím soupisky "
+"uvést, která licence je relevantní pro výstupní soubory v závislosti na "
+"zahrnutém zdrojovém kódu."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4413,6 +4675,8 @@ msgid ""
 "included in a file in the top level directory of your repository called "
 "`LICENSE.spdx`."
 msgstr ""
+"Soupiska by měla odpovídat specifikaci SPDX a měla by být součástí souboru v "
+"adresáři nejvyšší úrovně vašeho úložiště s názvem `LICENSE.spdx`."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4425,6 +4689,14 @@ msgid ""
 "> * Make your bill of materials conformant to the SPDX specification.\n"
 "> * It doesn't hurt to run your project through ScanCode or FOSSology, to make sure these tools can parse and understand your project's licensing.\n"
 msgstr ""
+"> ### Mějte na paměti\n"
+">\n"
+"> * Nevytvářejte soupisku, pokud jej nemůžete vygenerovat automaticky.\n"
+"> * Pokud ji generujete automaticky, je užitečné ji zahrnout.\n"
+"> * Udělejte svou soupisku v souladu se specifikací SPDX.\n"
+"> * Není na škodu spustit svůj projekt prostřednictvím ScanCode nebo "
+"FOSSology, abyste se ujistili, že tyto nástroje mohou analyzovat a porozumět "
+"licencování vašeho projektu.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-3.0.md
@@ -4492,10 +4764,8 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid "- License File --- a file containing the text of a license."
 msgid "License File --- a file containing the text of a license."
-msgstr "- Licenční soubor --- soubor obsahující text licence."
+msgstr "Licenční soubor --- soubor obsahující text licence."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
@@ -4519,24 +4789,18 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "SPDX License Identifier --- SPDX short-form identifier, as defined in "
-#| "SPDX Specification. See also <https://spdx.org/ids> for a short "
-#| "introduction and examples."
 msgid ""
 "SPDX Identifier --- SPDX short-form identifier, as defined in SPDX "
 "Specification. See also <https://spdx.org/ids> for a short introduction and "
 "examples."
 msgstr ""
-"Identifikátor licence SPDX --- Zkrácený identifikátor SPDX, jak je definován "
-"ve specifikaci SPDX. Viz také <https://spdx.org/ids>, kde najdete krátký "
-"úvod a příklady."
+"Identifikátor SPDX --- Krátký identifikátor SPDX, jak je definován ve "
+"specifikaci SPDX. Viz také <https://spdx.org/ids> pro krátký úvod a příklady."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
 msgid "SPDX License Expression --- as defined in SPDX Specification."
-msgstr ""
+msgstr "SPDX License Expression --- jak je definováno ve specifikaci SPDX."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -4586,13 +4850,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "Each License File MUST be placed in the `LICENSES/` directory in the root "
-#| "of the Project. The name of the License File MUST be the SPDX License "
-#| "Identifier of the license followed by an appropriate file extension "
-#| "(example: `LICENSES/GPL-3.0-or-later.txt`). The License File MUST be in "
-#| "plain text format."
 msgid ""
 "Each License File MUST be placed in the `LICENSES/` directory in the root of "
 "the Project. The name of the License File MUST be the SPDX identifier of the "
@@ -4600,26 +4857,18 @@ msgid ""
 "GPL-3.0-or-later.txt`). The License File MUST be in plain text format."
 msgstr ""
 "Každý licenční soubor MUSÍ být umístěn v adresáři `LICENSES/` v kořenovém "
-"adresáři projektu. Název licenčního souboru MUSÍ být identifikátor licence "
-"SPDX, za kterým následuje příslušná přípona souboru (například: `LICENSES/"
-"GPL-3.0-or-later.txt`). Licenční soubor MUSÍ být v prostém textovém formátu."
+"adresáři projektu. Název licenčního souboru MUSÍ být SPDX identifikátor "
+"licence následovaný příslušnou příponou souboru (příklad: `LICENSES/GPL-3.0"
+"-or-later.txt`). Licenční soubor MUSÍ být ve formátu prostého textu."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "If a license does not exist in the SPDX License List, its SPDX License "
-#| "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
-#| "Specification, Section 6 available at <https://spdx.org/spdx-"
-#| "specification-21-web-version#h.1v1yuxt>."
 msgid ""
 "If a license does not exist in the SPDX License List, its SPDX Identifier "
 "MUST be `LicenseRef-[idstring]` as defined by the SPDX Specification."
 msgstr ""
-"Pokud licence v seznamu licencí SPDX neexistuje, její identifikátor licence "
-"SPDX MUSÍ být `LicenseRef-[idstring]`, jak je definováno ve specifikaci "
-"SPDX, část 6, která je k dispozici na adrese <https://spdx.org/spdx-"
-"specification-21-web-version#h.1v1yuxt>."
+"Pokud licence v seznamu licencí SPDX neexistuje, její identifikátor SPDX "
+"MUSÍ být `LicenseRef-[idstring]`, jak je definováno ve specifikaci SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -4658,10 +4907,8 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid "- The License Files."
 msgid "The License Files."
-msgstr "- Licenční soubory."
+msgstr "Licenční soubory."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -4733,29 +4980,26 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "The comment header MUST contain one or more `SPDX-FileCopyrightText` "
-#| "tags, and one or more `SPDX-License-Identifier` tags. A tag is followed "
-#| "by a colon, followed by a text value, and terminated by a newline."
 msgid ""
 "The comment header MUST contain one or more `SPDX-FileCopyrightText` tags, "
 "and one or more `SPDX-License-Information` tags. A tag is followed by a "
 "colon, followed by a text value, and terminated by a newline."
 msgstr ""
 "Záhlaví komentáře MUSÍ obsahovat jednu nebo více značek `SPDX-"
-"FileCopyrightText` a jednu nebo více značek `SPDX-License-Identifier`. Za "
+"FileCopyrightText` a jednu nebo více značek `SPDX-License-Information`. Za "
 "značkou následuje dvojtečka, za ní textová hodnota a je ukončena novým "
 "řádkem."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
-#| msgid "The `SPDX-FileCopyrightText` tag MUST be followed by a copyright notice."
+#, no-wrap
 msgid ""
 "The `SPDX-FileCopyrightText` tag MUST be followed by a copyright notice as described\n"
 "in <!-- FIXME: Refer to an internal section -->.\n"
-msgstr "Za značkou `SPDX-FileCopyrightText` MUSÍ následovat upozornění na autorská práva."
+msgstr ""
+"Za tagem `SPDX-FileCopyrightText` MUSÍ následovat upozornění na autorská "
+"práva, jak je popsáno\n"
+"v <!-- FIXME: Viz interní část -->.\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -4839,12 +5083,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
-#| msgid "The `Copyright` tag MUST be followed by a copyright notice."
+#, no-wrap
 msgid ""
 "The `Copyright` tag MUST be followed by a copyright notice as described in <!--\n"
 "FIXME: Refer to an internal section -->.\n"
-msgstr "Za značkou `Copyright` MUSÍ následovat upozornění na autorská práva."
+msgstr ""
+"Za značkou „Copyright“ MUSÍ následovat upozornění o autorských právech, jak "
+"je popsáno v <!--\n"
+"FIXME: Viz interní sekce -->.\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -4948,21 +5194,12 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "REUSE Specification – Version 3.0"
+#, no-wrap
 msgid "REUSE Specification – Version 3.2"
-msgstr "Specifikace REUSE - verze 3.0"
+msgstr "Specifikace REUSE - verze 3.2"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "This specification defines a standardized method for declaring copyright "
-#| "and licensing for software projects. The goal of the specification is to "
-#| "have unambiguous, human- and machine-readable copyright and licensing "
-#| "information for each individual file in a project. Ideally this "
-#| "information is embedded into every file, so that the information is "
-#| "preserved when the file is copied and reused by third parties."
 msgid ""
 "This specification defines a standardised method for declaring copyright and "
 "licensing for software projects. The goal of the specification is to have "
@@ -4972,62 +5209,49 @@ msgid ""
 "preserved when the file is copied and reused by third parties."
 msgstr ""
 "Tato specifikace definuje standardizovanou metodu pro deklarování autorských "
-"práv a licencí pro softwarové projekty. Cílem specifikace je jednoznačné, "
-"lidsky i strojově čitelné informace o autorských právech a licencích pro "
-"každý jednotlivý soubor v projektu. V ideálním případě jsou tyto informace "
-"vloženy do každého souboru, aby byly zachovány i při kopírování a dalším "
-"použití souboru třetími stranami."
+"práv a licencování softwarových projektů. Cílem specifikace je mít "
+"komplexní, jednoznačné, člověkem i strojově čitelné informace o autorských "
+"právech a licencích pro každý jednotlivý soubor v projektu. V ideálním "
+"případě jsou tyto informace vloženy do každého souboru, takže informace jsou "
+"zachovány, když je soubor zkopírován a znovu použit třetími stranami."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "For the revision history of this specification, please see [the change "
-#| "log](https://git.fsfe.org/reuse/docs/src/branch/master/CHANGELOG.md)."
 msgid ""
 "For the revision history of this specification, please see [the change log]"
 "(https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 msgstr ""
-"Historie revizí této specifikace je uvedena v [change log](https://git.fsfe."
-"org/reuse/docs/src/branch/master/CHANGELOG.md)."
+"Historii revizí této specifikace naleznete v [protokolu změn] (https://github"
+".com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "REUSE Tool --- helper tool for compliance with this Specification; "
-#| "available at <https://github.com/fsfe/reuse-tool>."
 msgid ""
 "REUSE Tool --- helper tool for compliance with this specification; available "
 "at <https://github.com/fsfe/reuse-tool>."
 msgstr ""
-"REUSE Tool --- pomocný nástroj pro dodržování této specifikace; k dispozici "
-"na adrese <https://github.com/fsfe/reuse-tool>."
+"REUSE Tool --- pomocný nástroj pro shodu s touto specifikací; k dispozici na "
+"<https://github.com/fsfe/reuse-tool>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "- License File --- a file containing the text of a license."
 msgid ""
 "License File --- a file containing the text of a license, as defined in "
 "[License Files](#license-files)."
-msgstr "- Licenční soubor --- soubor obsahující text licence."
+msgstr ""
+"Licenční soubor --- soubor obsahující text licence, jak je definováno v ["
+"Licenční soubory] (#license-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Copyright and Licensing Information --- the information that lists the "
-#| "copyright holders of a file or work, and describes under which licenses "
-#| "the file or work is made available."
 msgid ""
 "Licensing Information --- the information that lists the copyright holders "
 "of a file or work, and describes under which licenses the file or work is "
 "made available."
 msgstr ""
-"Informace o autorských právech a licencích --- informace, které uvádějí "
-"držitele autorských práv k souboru nebo dílu a popisují, pod jakými "
-"licencemi je soubor nebo dílo zpřístupněno."
+"Licenční informace --- informace, které obsahují seznam držitelů autorských "
+"práv k souboru nebo dílu a popisují, pod jakými licencemi je soubor nebo "
+"dílo zpřístupněno."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5036,6 +5260,9 @@ msgid ""
 "holder. Its format is defined in the [Format of Copyright Notices](#format-"
 "of-copyright-notices) section."
 msgstr ""
+"Copyright Notice --- řádek textu, který vyjadřuje autorská práva držitele "
+"autorských práv. Jeho formát je definován v části [Format of Copyright "
+"Notices](#format-of-copyright-notices)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5043,11 +5270,15 @@ msgid ""
 "Covered File --- a file which must contain Licensing Information, as defined "
 "in [Covered and ignored Files](#covered-and-ignored-files)."
 msgstr ""
+"Covered File --- soubor, který musí obsahovat licenční informace, jak je "
+"definováno v [Covered and ignored Files] (#covered-and-ignored-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "Commentable File --- a plain text file that can contain comments."
 msgstr ""
+"Komentovatelný soubor --- prostý textový soubor, který může obsahovat "
+"komentáře."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5055,6 +5286,8 @@ msgid ""
 "Snippet --- a portion of text in a Commentable File to which different "
 "Licensing Information applies."
 msgstr ""
+"Úryvek --- část textu v komentovatelném souboru, na který se vztahují různé "
+"licenční informace."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5062,19 +5295,17 @@ msgid ""
 "Uncommentable File --- either a plain text file that cannot contain comments "
 "or a file that is not a plain text file."
 msgstr ""
+"Nekomentovatelný soubor --- buď prostý textový soubor, který nemůže "
+"obsahovat komentáře, nebo soubor, který není prostým textovým souborem."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "SPDX Specification --- SPDX specification, version 2.1; as available on "
-#| "<https://spdx.org/specifications>."
 msgid ""
 "SPDX Specification --- SPDX specification, version 2.3; as available at "
 "<https://spdx.org/specifications>."
 msgstr ""
-"Specifikace SPDX --- Specifikace SPDX, verze 2.1; k dispozici na <https://"
-"spdx.org/specifications>."
+"Specifikace SPDX --- Specifikace SPDX, verze 2.3; jak je k dispozici na "
+"<https://spdx.org/specifications>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5089,28 +5320,15 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "- SPDX License Expression --- as defined in SPDX Specification, Appendix "
-#| "IV, at <https://spdx.org/spdx-specification-21-web-version#h."
-#| "jxpfx0ykyb60>."
 msgid ""
 "SPDX License Expression --- as defined in SPDX Specification, Annex D, at "
 "<https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/>."
 msgstr ""
-"- Vyjádření licence SPDX --- podle definice ve specifikaci SPDX, dodatek IV, "
-"na adrese <https://spdx.org/spdx-specification-21-web-version#h."
-"jxpfx0ykyb60>."
+"SPDX License Expression --- jak je definováno ve specifikaci SPDX, Příloha "
+"D, na <https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "DEP5 --- [Machine-readable `debian/copyright` file, Version 1.0](https://"
-#| "www.debian.org/doc/packaging-manuals/copyright-format/1.0/).  Where the "
-#| "REUSE Specification and DEP5 state different things, the REUSE "
-#| "Specification takes precedence. Specifically in the case of the "
-#| "`Copyright` and `License` tags."
 msgid ""
 "DEP5 --- Machine-readable `debian/copyright` file, Version 1.0; as available "
 "at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/> and "
@@ -5118,10 +5336,10 @@ msgid ""
 "Specification and DEP5 state different things, the REUSE Specification takes "
 "precedence."
 msgstr ""
-"DEP5 --- [Strojově čitelný soubor `debian/copyright`, verze 1.0](https://www."
-"debian.org/doc/packaging-manuals/copyright-format/1.0/).  Pokud specifikace "
-"REUSE a DEP5 uvádějí různé věci, má přednost specifikace REUSE. Konkrétně v "
-"případě značek `Copyright` a `License`."
+"DEP5 --- Strojově čitelný soubor `debian/copyright`, verze 1.0; jak je k "
+"dispozici na <https://www.debian.org/doc/packaging-manuals/copyright-format/1"
+".0/> a dále definované v [DEP5 (zastaralé)] (#dep5-deprecated). Kde "
+"specifikace REUSE a DEP5 uvádějí různé věci, má přednost specifikace REUSE."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5129,12 +5347,14 @@ msgid ""
 "TOML --- A configuration file format as available at <https://toml.io/en/"
 "v1.0.0>."
 msgstr ""
+"TOML --- Formát konfiguračního souboru dostupný na <https://toml.io/en/v1.0."
+"0>."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Covered and ignored Files"
-msgstr ""
+msgstr "Zakryté a ignorované soubory"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5142,31 +5362,27 @@ msgid ""
 "Covered Files are any file which must contain Licensing Information. This is "
 "equal to all files in a project, with the exception of:"
 msgstr ""
+"Zakryté soubory jsou všechny soubory, které musí obsahovat licenční "
+"informace. To se rovná všem souborům v projektu, s výjimkou:"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "You should always include all licenses in the `LICENSES/` directory."
 msgid "The License Files stored in the `LICENSES/` directory."
-msgstr "Všechny licence byste měli vždy zahrnout do adresáře `LICENSES/`."
+msgstr "Licenční soubory uložené v adresáři `LICENSES/`."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "`COPYING` and `LICENSE`, with or without file extensions."
-msgstr ""
+msgstr "`KOPÍROVÁNÍ` a `LICENCE` s příponami souborů nebo bez nich."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The files ignored by the version control system (example: Files listed in "
-#| "`.gitignore`)."
 msgid ""
 "The files ignored by the version control system (example: files listed in `."
 "gitignore`)."
 msgstr ""
-"Soubory ignorované systémem správy verzí (příklad: Soubory uvedené v souboru "
-"`.gitignore`)."
+"Soubory ignorované systémem správy verzí (příklad: soubory uvedené v `."
+"gitignore`)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5174,11 +5390,13 @@ msgid ""
 "Submodules of the Project's version control system and Meson subprojects. "
 "Each submodule and Meson subproject is understood as a separate Project."
 msgstr ""
+"Submoduly systému správy verzí projektu a podprojekty Meson. Každý dílčí "
+"modul a dílčí projekt Meson je chápán jako samostatný Projekt."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "Symlinks and files with no data (zero-byte)."
-msgstr ""
+msgstr "Symbolické odkazy a soubory bez dat (nulový bajt)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5187,26 +5405,24 @@ msgid ""
 "Specification, Clause 4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/"
 "#44-standard-data-format-requirements)  (example: `sbom.spdx.json`)."
 msgstr ""
+"Dokumenty SPDX v různých formátech, jak je definováno ve [Specifikaci SPDX, "
+"článek 4.4] (https://spdx.github.io/spdx-spec/v2.3/conformance/#44-standard-"
+"data-format-requirements) ( příklad: `sbom.spdx.json`)."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "License files"
+#, no-wrap
 msgid "License Files"
 msgstr "Licenční soubory"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "A Project MUST include a License File for every license under which files "
-#| "in the Project are licensed."
 msgid ""
 "A Project MUST include a License File for every license under which Covered "
 "Files are licensed."
 msgstr ""
-"Projekt MUSÍ obsahovat licenční soubor pro každou licenci, pod kterou jsou "
-"soubory v projektu licencovány."
+"Projekt MUSÍ obsahovat Licenční soubor pro každou licenci, pod kterou jsou "
+"licencovány Zahrnuté soubory."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5224,12 +5440,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "If a license does not exist in the SPDX License List, its SPDX License "
-#| "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
-#| "Specification, Section 6 available at <https://spdx.org/spdx-"
-#| "specification-21-web-version#h.1v1yuxt>."
 msgid ""
 "If a license does not exist in the SPDX License List, its SPDX License "
 "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
@@ -5238,22 +5448,19 @@ msgid ""
 msgstr ""
 "Pokud licence v seznamu licencí SPDX neexistuje, její identifikátor licence "
 "SPDX MUSÍ být `LicenseRef-[idstring]`, jak je definováno ve specifikaci "
-"SPDX, část 6, která je k dispozici na adrese <https://spdx.org/spdx-"
-"specification-21-web-version#h.1v1yuxt>."
+"SPDX, článek 10 dostupný na <https://spdx.github.io/spdx-spec /v2.3/"
+"other-licensing-information-detected/>."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "A Project MUST NOT include License Files for licenses under which none of "
-#| "the files in the Project are licensed."
 msgid ""
 "A Project MUST NOT include License Files for licenses under which none of "
 "the files in the Project are licensed. The `LICENSES/` directory MUST NOT "
 "include any other files."
 msgstr ""
-"Projekt NESMÍ obsahovat licenční soubory pro licence, pod kterými není "
-"licencován žádný ze souborů v projektu."
+"Projekt NESMÍ obsahovat licenční soubory pro licence, na jejichž základě "
+"není licencován žádný ze souborů v projektu. Adresář `LICENSES/` NESMÍ "
+"obsahovat žádné další soubory."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5263,6 +5470,10 @@ msgid ""
 "Information associated with any Covered File, there MUST exist a License "
 "File as defined in this section."
 msgstr ""
+"Aby se předešlo pochybnostem, v praxi to znamená, že pro každou licenci a "
+"výjimku, která je součástí jakéhokoli licenčního vyjádření SPDX v jakýchkoli "
+"licenčních informacích spojených s jakýmkoli krytým souborem, MUSÍ existovat "
+"licenční soubor, jak je definován v této části."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5273,63 +5484,57 @@ msgid ""
 "a summary of your licensing, or anything else. These files are ignored by "
 "the REUSE Tool."
 msgstr ""
+"Do svého projektu MŮŽETE zahrnout soubor `KOPÍROVÁNÍ` nebo `LICENCE` (s "
+"příponami souborů nebo bez nich), aby byly v souladu s jinými standardy, "
+"konvencemi nebo nástroji. Tyto soubory MOHOU obsahovat kopii textu licence, "
+"shrnutí vaší licence nebo cokoli jiného. Tyto soubory jsou nástrojem REUSE "
+"ignorovány."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "Change licensing information"
+#, no-wrap
 msgid "Licensing Information"
-msgstr "Změna licenčních informací"
+msgstr "Licenční informace"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Each file in the Project MUST have Copyright and Licensing Information "
-#| "associated with it, except the following files:"
 msgid ""
 "Each Covered File MUST have Licensing Information associated with it. You "
 "can associate Licensing Information with a file in the following ways:"
 msgstr ""
-"Ke každému souboru v projektu MUSÍ být přiřazeny informace o autorských "
-"právech a licencích, s výjimkou následujících souborů:"
+"Každý krytý soubor MUSÍ mít přidružené licenční informace. Licenční "
+"informace můžete k souboru přidružit následujícími způsoby:"
 
 #. type: Title ###
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "REUSE.toml"
-msgstr ""
+msgstr "REUSE.toml"
 
 #. type: Title ###
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "DEP5 (deprecated)"
-msgstr ""
+msgstr "DEP5 (zastaralé)"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid ""
 "REUSE.toml and DEP5 are mutually exclusive. You MUST NOT use both "
 "simultaneously."
-msgstr ""
+msgstr "REUSE.toml a DEP5 se vzájemně vylučují. NESMÍTE používat oba současně."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "Comment headers are the RECOMMENDED method."
-msgstr ""
+msgstr "Záhlaví komentářů jsou DOPORUČENÁ metoda."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "There are two ways to associate Copyright and Licensing Information with "
-#| "a file."
 msgid ""
 "Additionally, you can associate Licensing Information with Snippets inside "
 "of files."
-msgstr ""
-"Informace o autorských právech a licencích lze k souboru přiřadit dvěma "
-"způsoby."
+msgstr "Kromě toho můžete přiřadit licenční informace k úryvkům uvnitř souborů."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5339,6 +5544,10 @@ msgid ""
 "more explicit and their associated Licensing Information is more resistant "
 "to being moved or copied."
 msgstr ""
+"Kdykoli je to možné, MĚLI byste se pokoušet používat záhlaví komentářů k "
+"přenosu licenčních informací souboru. Ve srovnání s jinými metodami jsou "
+"záhlaví komentářů explicitnější a související licenční informace jsou "
+"odolnější vůči přesunutí nebo kopírování."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5348,27 +5557,23 @@ msgid ""
 "be as close to the top of the top of the file as possible in a comment "
 "header. The Commentable File SHOULD use UTF-8 encoding."
 msgstr ""
+"Chcete-li implementovat tuto metodu, soubor s možností komentáře MUSÍ "
+"deklarovat licenční informace souboru v záhlaví komentáře. Licenční "
+"informace BY MĚLY být v záhlaví komentáře co nejblíže k horní části souboru. "
+"Komentovatelný soubor BY MĚL používat kódování UTF-8."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "If a file is not a plain text file or does not permit the inclusion of "
-#| "comments, the comment header that declares the file's Copyright and "
-#| "Licensing Information SHOULD be in an adjacent file of the same name with "
-#| "the additional extension `.license` (example: `cat.jpg.license` if the "
-#| "original file is `cat.jpg`)."
 msgid ""
 "For Uncommentable Files, the comment header that declares the file's "
 "Licensing Information MUST be in an adjacent text file of the same name with "
 "the additional extension `.license` (example: `cat.jpg.license` if the "
 "original file is `cat.jpg`). The adjacent file SHOULD use UTF-8 encoding."
 msgstr ""
-"Pokud soubor není prostým textovým souborem nebo neumožňuje vkládání "
-"komentářů, záhlaví komentáře, které deklaruje autorská práva a licenční "
-"informace souboru, MUSÍ být v sousedním souboru stejného jména s dodatečnou "
-"příponou `.license` (příklad: `cat.jpg.license`, pokud je původní soubor "
-"`cat.jpg`)."
+"U nekomentovatelných souborů MUSÍ být záhlaví komentáře, které deklaruje "
+"licenční informace souboru, v sousedním textovém souboru se stejným názvem s "
+"dodatečnou příponou `.license` (příklad: `cat.jpg.license`, pokud je původní "
+"soubor `cat. jpg\"). Sousední soubor BY MĚL používat kódování UTF-8."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5376,52 +5581,36 @@ msgid ""
 "`.license` files MAY be used with Commentable Files, but it is still "
 "RECOMMENDED that comment headers be put inside Commentable Files."
 msgstr ""
+"Soubory `.license` MOHOU být používány s komentovatelnými soubory, ale "
+"přesto se DOPORUČUJE, aby záhlaví komentářů bylo umístěno do "
+"komentovatelných souborů."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The comment header MUST contain one or more `SPDX-FileCopyrightText` "
-#| "tags, and one or more `SPDX-License-Identifier` tags. A tag is followed "
-#| "by a colon, followed by a text value, and terminated by a newline."
 msgid ""
 "The comment header MUST contain one or more Copyright Notices and one or "
 "more `SPDX-License-Identifier` tag-value pairs. A tag is followed by a "
 "colon, followed by a text value, and terminated by a newline."
 msgstr ""
-"Záhlaví komentáře MUSÍ obsahovat jednu nebo více značek `SPDX-"
-"FileCopyrightText` a jednu nebo více značek `SPDX-License-Identifier`. Za "
+"Záhlaví komentáře MUSÍ obsahovat jedno nebo více oznámení o autorských "
+"právech a jeden nebo více párů značka-hodnota `SPDX-License-Identifier`. Za "
 "značkou následuje dvojtečka, za ní textová hodnota a je ukončena novým "
 "řádkem."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The `SPDX-License-Identifier` tag MUST be followed by a valid SPDX "
-#| "License Expression describing the licensing of the file (example: `SPDX-"
-#| "License-Identifier: GPL-3.0-or-later OR Apache-2.0`). If separate "
-#| "sections of the file are licensed differently, a different `SPDX-License-"
-#| "Identifier` tag MUST be included for each section."
 msgid ""
 "The `SPDX-License-Identifier` tag MUST be followed by a valid SPDX License "
 "Expression describing the licensing of the file (example: `SPDX-License-"
 "Identifier: GPL-3.0-or-later OR Apache-2.0`)."
 msgstr ""
-"Za značkou `SPDX-License-Identifier` MUSÍ následovat platné vyjádření "
-"licence SPDX popisující licencování souboru (příklad: `SPDX-License-"
-"Identifier: GPL-3.0-or-later OR Apache-2.0`). Pokud jsou jednotlivé části "
-"souboru licencovány odlišně, MUSÍ být pro každou část uveden jiný tag `SPDX-"
-"License-Identifier`."
+"Za značkou `SPDX-License-Identifier` MUSÍ následovat platný licenční výraz "
+"SPDX popisující licencování souboru (příklad: `SPDX-License-Identifier: GPL-3"
+".0-nebo-novější NEBO Apache-2.0`)."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2016, 2018-2019 Jane Doe <jane@example.com>\n"
-#| "# SPDX-FileCopyrightText: 2019 Example Company\n"
-#| "#\n"
-#| "# SPDX-License-Identifier: GPL-3.0-or-later\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2016, 2018-2019 Jane Doe <jane@example.com>\n"
 "# SPDX-FileCopyrightText: 2019 Example Organisation\n"
@@ -5437,7 +5626,7 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "In-line Snippet comments"
-msgstr ""
+msgstr "Vložené komentáře úryvků"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5449,11 +5638,18 @@ msgid ""
 "that Copyright Notices inside of Snippets MUST be prefixed with `SPDX-"
 "SnippetCopyrightText`."
 msgstr ""
+"Někdy se licenční informace vztahuje pouze na určitý úryvek namísto celého "
+"komentovatelného souboru. V těchto případech MUSÍ být pro daný úryvek "
+"použity značky úryvků SPDX (jak je definováno ve [Specifikaci SPDX, příloha "
+"H](https://spdx.github.io/spdx-spec/v2.3/file-tags/#h3-snippet -tags-format))"
+". To znamená, že oznámení o autorských právech uvnitř úryvků MUSÍ mít "
+"předponu `SPDX-SnippetCopyrightText`."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "Like with comment headers, the SPDX snippet tags SHOULD be commented."
 msgstr ""
+"Stejně jako u hlaviček komentářů, značky úryvků SPDX BY MĚLY být komentovány."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5461,14 +5657,12 @@ msgid ""
 "A Snippet SHOULD contain both a Copyright Notice and an SPDX License "
 "Expression."
 msgstr ""
+"Úryvek BY MĚL obsahovat oznámení o autorských právech i licenční vyjádření "
+"SPDX."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-#| "#\n"
-#| "# SPDX-License-Identifier: CC0-1.0\n"
+#, no-wrap
 msgid ""
 "# SPDX-SnippetBegin\n"
 "# SPDX-SnippetCopyrightText: 2022 Jane Doe <jane@example.com>\n"
@@ -5478,15 +5672,19 @@ msgid ""
 "\n"
 "# SPDX-SnippetEnd\n"
 msgstr ""
-"# SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-"#\n"
-"# SPDX-License-Identifier: CC0-1.0\n"
+"# SPDX-SnippetBegin\n"
+"# SPDX-SnippetCopyrightText: 2022 Jane Doe <jane@example.com>\n"
+"# SPDX-License-Identifier: MIT\n"
+"\n"
+"print(\"Hello, world!\")\n"
+"\n"
+"# SPDX-SnippetEnd\n"
 
 #. type: Title ####
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Ignore block"
-msgstr ""
+msgstr "Ignorovat blok"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5498,13 +5696,17 @@ msgid ""
 "ignores all Licensing Information between these comments. This technique "
 "MUST NOT be used to ignore valid Licensing Information."
 msgstr ""
+"Pokud jsou licenční informace deklarovány v souboru bez popisu skutečné "
+"licence nebo autorských práv k souboru nebo úryvku (například: jako součást "
+"výstupního příkazu nebo dokumentace), tyto výskyty BY MĚLY být vloženy mezi "
+"dva komentáře: `REUSE-IgnoreStart` a `REUSE-IgnoreEnd`. Nástroj REUSE pak "
+"ignoruje všechny licenční informace mezi těmito komentáři. Tato technika "
+"NESMÍ být použita k ignorování platných licenčních informací."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "An example of a DEP5 file:"
 msgid "An example for an ignored block:"
-msgstr "Příklad souboru DEP5:"
+msgstr "Příklad ignorovaného bloku:"
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
@@ -5519,25 +5721,28 @@ msgid ""
 "echo \"SPDX-License-Identifier: MIT\" > file.txt\n"
 "# REUSE-IgnoreEnd\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2021 Jane Doe\n"
+"#\n"
+"# SPDX-License-Identifier: GPL-3.0-or-later\n"
+"\n"
+"# REUSE-IgnoreStart\n"
+"echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
+"echo \"SPDX-License-Identifier: MIT\" > file.txt\n"
+"# REUSE-IgnoreEnd\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Alternatively, Copyright and Licensing Information MAY be associated with "
-#| "a file through a DEP5 file. The intended use case of this method is large "
-#| "directories where including a comment header in each file (or in `."
-#| "license` companion files) is impossible or undesirable."
 msgid ""
 "Licensing Information MAY be associated with a file through a `REUSE.toml` "
 "file, which MUST be a valid TOML file. The intended use case of this method "
 "is large directories where including a comment header in each file (or in `."
 "license` companion files) is impossible or undesirable."
 msgstr ""
-"Informace o autorských právech a licencích mohou být k souboru přiřazeny "
-"také prostřednictvím souboru DEP5. Předpokládaným případem použití této "
-"metody jsou rozsáhlé adresáře, kde je zahrnutí záhlaví komentáře do každého "
-"souboru (nebo do doprovodných souborů `.license`) nemožné nebo nežádoucí."
+"Licenční informace MOHOU být přidruženy k souboru prostřednictvím souboru "
+"`REUSE.toml`, který MUSÍ být platným souborem TOML. Zamýšleným případem "
+"použití této metody jsou velké adresáře, kde je zahrnutí záhlaví komentáře "
+"do každého souboru (nebo do doprovodných souborů `.license`) nemožné nebo "
+"nežádoucí."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5546,6 +5751,9 @@ msgid ""
 "that are within its directory or deeper. You MAY have multiple `REUSE.toml` "
 "files in different directories."
 msgstr ""
+"Soubor `REUSE.toml` MŮŽE být umístěn v libovolném adresáři a může pokrývat "
+"soubory, které jsou v jeho adresáři nebo hlouběji. MŮŽETE mít více souborů "
+"`REUSE.toml` v různých adresářích."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5554,6 +5762,8 @@ msgid ""
 "schema version of the file. This specification describes version 1 of `REUSE."
 "toml`."
 msgstr ""
+"Klíč `version` (POVINNÝ) MUSÍ mít celočíselnou hodnotu představující verzi "
+"schématu souboru. Tato specifikace popisuje verzi 1 souboru `REUSE.toml`."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5561,6 +5771,8 @@ msgid ""
 "Each `[[annotations]]` table represents an association of Licensing "
 "Information to zero or more Covered Files. It has the following keys:"
 msgstr ""
+"Každá tabulka `[[annotations]]` představuje přidružení licenčních informací "
+"k žádnému nebo více krytým souborům. Má následující klíče:"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5573,18 +5785,25 @@ msgid ""
 "MAY use globbing to match several Covered Files in a single expression. "
 "These are the globbing and matching rules:"
 msgstr ""
+"`cesta` (VYŽADOVÁNO), řetězec nebo seznam řetězců představujících cesty. "
+"Cesta MUSÍ používat lomítka jako oddělovače cest. Cesta BY MĚLA odpovídat "
+"jednomu nebo více krytým souborům vzhledem k adresáři souboru `REUSE.toml`. "
+"Cesta, která se převede na neexistující nebo nezakrytý soubor, je "
+"ignorována. Cesta MUSÍ ukazovat na umístění v adresáři souboru `REUSE.toml` "
+"nebo hlouběji. Cesta MŮŽE používat globbing ke shodě s několika krytými "
+"soubory v jediném výrazu. Toto jsou pravidla pro globování a párování:"
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
 msgid "`*` matches everything except forward slashes (i.e. path separators)."
-msgstr ""
+msgstr "`*` odpovídá všemu kromě lomítek (tj. oddělovačů cest)."
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
 msgid ""
 "`**` and `**/` match everything including forward slashes (i.e. path "
 "separators)."
-msgstr ""
+msgstr "`**` a `**/` odpovídají všemu včetně lomítek (tj. oddělovačů cest)."
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5594,6 +5813,10 @@ msgid ""
 "to include a backslash verbatim, use `\\\\\\\\`. `\\\\` followed by any "
 "other character is functionally equal to just typing that character."
 msgstr ""
+"Chcete-li uniknout hvězdičce a zahrnout ji doslovně, předponu `\\\\`. "
+"Nemůžete mu předponu `\\`, protože to je neplatný TOML. Chcete-li doslovně "
+"zahrnout zpětné lomítko, použijte `\\\\\\\\`. `\\\\` následovaný jakýmkoli "
+"jiným znakem je funkčně stejný jako pouhé psaní tohoto znaku."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5604,6 +5827,10 @@ msgid ""
 "both contain Licensing Information for the same Covered File. Available "
 "values are:"
 msgstr ""
+"`precedence` (VOLITELNÉ), doslovný řetězec. Určuje pořadí priority pro "
+"licenční informace mezi souborem `REUSE.toml` a krytými soubory v tabulce a "
+"mezi více soubory `REUSE.toml`, pokud oba obsahují licenční informace pro "
+"stejný krytý soubor. Dostupné hodnoty jsou:"
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5618,6 +5845,15 @@ msgid ""
 "precedence is applied, and `closest` is ignored. This is effectively a "
 "fallback."
 msgstr ""
+"`closest`, výchozí hodnota, když `precedence` není definována. Toto je "
+"instrukce pro přidružení licenčních informací uvnitř zahrnutých souborů ("
+"nebo jejich přilehlého souboru `.license`), pokud je k dispozici. Pokud "
+"nejsou žádné takové licenční informace nalezeny, jsou přidruženy licenční "
+"informace v tabulce nejbližšího souboru `REUSE.toml`, který pokrývá soubor. "
+"Tento algoritmus se používá samostatně pro autorská práva a pro licencování. "
+"Pokud má tabulka pro stejný soubor v bližším souboru `REUSE.toml` prioritu "
+"`override`, pak se tato přednost použije a `closest` se ignoruje. To je v "
+"podstatě záložní."
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5626,6 +5862,9 @@ msgid ""
 "Information defined in the table with the table's Covered Files.  "
 "Subsequently, the `closest` logic is also applied."
 msgstr ""
+"\"aggregate\". Toto je instrukce, abyste vždy přiřadili licenční informace "
+"definované v tabulce k pokrytým souborům tabulky. Následně je také "
+"aplikována „nejbližší“ logika."
 
 #. type: Bullet: '  - '
 #: site/content/en/spec-3.2.md
@@ -5635,6 +5874,10 @@ msgid ""
 "Licensing Information that is closer to the Files. The table in the `REUSE."
 "toml` that is the closest to the root of the Project is authoritative."
 msgstr ""
+"`override`. Toto je instrukce pro přidružení licenčních informací "
+"definovaných v tabulce se zahrnutými soubory tabulky a ignorování jakýchkoli "
+"dalších licenčních informací, které jsou blíže souborům. Směrodatná je "
+"tabulka v `REUSE.toml`, která je nejblíže kořenu projektu."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5643,20 +5886,21 @@ msgid ""
 "string MUST be a Copyright Notice to be associated with the table's Covered "
 "Files.  The prefix of the Copyright Notice MAY be omitted."
 msgstr ""
+"`SPDX-FileCopyrightText` (VOLITELNÉ), řetězec nebo seznam řetězců. Každý "
+"řetězec MUSÍ být oznámením o autorských právech, aby mohl být spojen s "
+"krytými soubory tabulky. Předpona Oznámení o autorských právech MŮŽE být "
+"vynechána."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The `License` tag MUST be followed by a valid SPDX License Expression "
-#| "describing the licensing of the associated files."
 msgid ""
 "`SPDX-License-Identifier` (OPTIONAL), a string or list of strings. Each "
 "string MUST be a valid SPDX License Expression describing the licensing of "
 "the table's Covered Files."
 msgstr ""
-"Za značkou `License` MUSÍ následovat platné vyjádření licence SPDX "
-"popisující licencování přidružených souborů."
+"`SPDX-License-Identifier` (VOLITELNÉ), řetězec nebo seznam řetězců. Každý "
+"řetězec MUSÍ být platným licenčním výrazem SPDX popisujícím licencování "
+"zahrnutých souborů tabulky."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5668,6 +5912,11 @@ msgid ""
 "add context to what you're doing, or `SPDX-FileContributor` to credit "
 "additional contributors."
 msgstr ""
+"MŮŽETE zahrnout další klíče a tabulky k předání dalších informací. Jejich "
+"sémantika není touto specifikací definována. Pokud si přejete zahrnout další "
+"klíče, DOPORUČUJEME použít stávající značky SPDX. Můžete například použít "
+"`SPDX-FileComment` v tabulce `[[annotations]]` k přidání kontextu k tomu, co "
+"děláte, nebo `SPDX-FileContributor` k připsání dalších přispěvatelů."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5676,6 +5925,9 @@ msgid ""
 "are OPTIONAL, the complete Licensing Information MUST still be associated "
 "with the File in some fashion."
 msgstr ""
+"Přestože klíče pro přidružení licenčních informací k zahrnutému souboru jsou "
+"VOLITELNÉ, úplné licenční informace MUSÍ být stále nějakým způsobem spojeny "
+"se souborem."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5684,13 +5936,14 @@ msgid ""
 "same `REUSE.toml` file, then exclusively the last matching table in the file "
 "is used for that Covered File."
 msgstr ""
+"Pokud je krytý soubor pokryt více tabulkami `[[annotations]]` ve stejném "
+"souboru `REUSE.toml`, pak se pro tento krytý soubor použije výhradně "
+"poslední odpovídající tabulka v souboru."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "An example of a DEP5 file:"
 msgid "An example of a `REUSE.toml` file:"
-msgstr "Příklad souboru DEP5:"
+msgstr "Příklad souboru `REUSE.toml`:"
 
 #. type: Fenced code block (toml)
 #: site/content/en/spec-3.2.md
@@ -5710,6 +5963,19 @@ msgid ""
 "SPDX-FileCopyrightText = \"2019 Jane Doe\"\n"
 "SPDX-License-Identifier = \"CC0-1.0\"\n"
 msgstr ""
+"version = 1\n"
+"\n"
+"[[annotations]]\n"
+"path = [\"po/*.po\", \"po/*.pot\"]\n"
+"precedence = \"aggregate\"\n"
+"SPDX-FileCopyrightText = \"2019 Translation Company\"\n"
+"SPDX-License-Identifier = \"GPL-3.0-or-later\"\n"
+"\n"
+"[[annotations]]\n"
+"path = \"tests/resources/**\"\n"
+"precedence = \"override\"\n"
+"SPDX-FileCopyrightText = \"2019 Jane Doe\"\n"
+"SPDX-License-Identifier = \"CC0-1.0\"\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5719,6 +5985,10 @@ msgid ""
 "meaning that it is expected to disappear from a future iteration of this "
 "specification."
 msgstr ""
+"Licenční informace MOHOU být přidruženy k souboru prostřednictvím souboru "
+"DEP5, ale místo toho MĚLI byste vytvořit soubor `REUSE.toml`. Soubor DEP5 je "
+"zastaralý, což znamená, že se očekává, že zmizí z budoucí iterace této "
+"specifikace."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5726,28 +5996,21 @@ msgid ""
 "The `Files` tag MUST be followed by one or more paths to which the "
 "paragraph's Licensing Information is applied."
 msgstr ""
+"Za tagem `Files` MUSÍ následovat jedna nebo více cest, na které se vztahují "
+"licenční informace odstavce."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "The `Copyright` tag MUST be followed by a copyright notice."
 msgid ""
 "The `Copyright` tag MUST be followed by one or more Copyright Notices. The "
 "prefixes of the Copyright Notices MAY be omitted."
-msgstr "Za značkou `Copyright` MUSÍ následovat upozornění na autorská práva."
+msgstr ""
+"Za tagem „Copyright“ MUSÍ následovat jedno nebo více oznámení o autorských "
+"právech. Předpony oznámení o autorských právech MOHOU být vynechány."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-#| "Upstream-Name: Project\n"
-#| "Upstream-Contact: Jane Doe <jane@example.com>\n"
-#| "Source: https://example.com/jane/project\n"
-#| "\n"
-#| "Files: po/*\n"
-#| "Copyright: 2019 Translation Company\n"
-#| "License: GPL-3.0-or-later\n"
+#, no-wrap
 msgid ""
 "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
 "\n"
@@ -5759,20 +6022,21 @@ msgid ""
 "Copyright: 2019 Jane Doe\n"
 "License: CC0-1.0\n"
 msgstr ""
-"Formát: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-"Upstream-Name: Projekt\n"
-"Upstream-Contact: Jane Doe <jane@example.com>\n"
-"Zdroj: https://example.com/jane/project\n"
+"Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
 "\n"
-"Soubory: po/*\n"
-"Autorská práva: 2019 Překladatelská společnost\n"
-"Licence: GPL-3.0-or-later\n"
+"Files: po/*.po po/*.pot\n"
+"Copyright: 2019 Translation Company\n"
+"License: GPL-3.0-or-later\n"
+"\n"
+"Files: tests/resources/*\n"
+"Copyright: 2019 Jane Doe\n"
+"License: CC0-1.0\n"
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Order of precedence"
-msgstr ""
+msgstr "Pořadí přednosti"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5783,6 +6047,11 @@ msgid ""
 "ignored. For all intents and purposes, this counts as the `.license` file's "
 "Licensing Information being inside the Commentable File."
 msgstr ""
+"Pokud soubor s možností komentáře obsahuje licenční informace, ale má také "
+"sousední soubor `.license`, pak mají přednost licenční informace definované "
+"v souboru `.license` a obsah souboru s komentářem je ignorován. Pro všechny "
+"záměry a účely se to počítá jako licenční informace souboru `.license` "
+"obsažené v souboru s komentářem."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5793,6 +6062,11 @@ msgid ""
 "section for that file in `.reuse/dep5` do not agree with each other, then "
 "both SPDX License Expressions will apply to the file."
 msgstr ""
+"Licenční informace definované v `.reuse/dep5` jsou agregovány s licenčními "
+"informacemi, které se nacházejí v zahrnutých souborech. Pro jasnost to "
+"znamená, že pokud licenční výrazy SPDX v hlavičce komentáře souboru a v "
+"sekci pro tento soubor v `.reuse/dep5` vzájemně nesouhlasí, pak se na soubor "
+"budou vztahovat oba licenční výrazy SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5800,11 +6074,12 @@ msgid ""
 "The order of precedence for `REUSE.toml` files is described in the "
 "respective section, and is managed using the `precedence` key."
 msgstr ""
+"Pořadí priority pro soubory `REUSE.toml` je popsáno v příslušné části a je "
+"spravováno pomocí klíče `precedence`."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "Format of copyright notices"
+#, no-wrap
 msgid "Format of Copyright Notices"
 msgstr "Formát oznámení o autorských právech"
 
@@ -5814,21 +6089,23 @@ msgid ""
 "A Copyright Notice MUST start with a tag, word or symbol (collectively: "
 "prefixes) from the following list:"
 msgstr ""
+"Upozornění na autorská práva MUSÍ začínat značkou, slovem nebo symbolem "
+"(souhrnně: předpony) z následujícího seznamu:"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "`SPDX-FileCopyrightText` (or `SPDX-SnippetCopyrightText` in Snippets)"
-msgstr ""
+msgstr "`SPDX-FileCopyrightText` (nebo `SPDX-SnippetCopyrightText` ve Snippets)"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "©"
-msgstr ""
+msgstr "©"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5836,20 +6113,18 @@ msgid ""
 "It is RECOMMENDED to use the `SPDX-FileCopyrightText` tag. You MAY add "
 "'(C)', '(c)' or '©' after the prefix."
 msgstr ""
+"DOPORUČUJEME používat značku `SPDX-FileCopyrightText`. Za předponu MŮŽETE "
+"přidat '(C)', '(c)' nebo '©'."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "In Commentable Files, a Copyright Notice is terminated by a newline."
 msgstr ""
+"V souborech s komentářem je oznámení o autorských právech ukončeno novým "
+"řádkem."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The copyright notice MUST contain the name of the copyright holder. The "
-#| "copyright notice SHOULD contain the year of publication and the contact "
-#| "address of the copyright holder. The order of these items SHOULD be: "
-#| "year, name, contact address."
 msgid ""
 "The Copyright Notice MUST contain the name of the copyright holder. The "
 "copyright notice SHOULD contain the year of publication and the contact "
@@ -5857,37 +6132,31 @@ msgid ""
 "name, contact address."
 msgstr ""
 "Oznámení o autorských právech MUSÍ obsahovat jméno držitele autorských práv. "
-"Oznámení o autorských právech MUSÍ obsahovat rok vydání a kontaktní adresu "
-"držitele autorských práv. Pořadí těchto položek MUSÍ být následující: rok, "
+"Upozornění o autorských právech BY MĚLO obsahovat rok vydání a kontaktní "
+"adresu držitele autorských práv. Pořadí těchto položek BY MĚLO být: rok, "
 "jméno, kontaktní adresa."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The copyright holder MAY be an individual, list of individuals, group, "
-#| "legal entity, or any other descriptor by which one can easily identify "
-#| "the copyright holder(s)."
 msgid ""
 "The copyright holder SHOULD be an individual, list of individuals, group, "
 "legal entity, or any other descriptor by which one can easily identify the "
 "copyright holder(s)."
 msgstr ""
-"Držitelem autorských práv MŮŽE být fyzická osoba, seznam fyzických osob, "
-"skupina, právnická osoba nebo jakýkoli jiný deskriptor, podle kterého lze "
-"snadno identifikovat držitele autorských práv."
+"Držitel autorských práv BY MĚL být jednotlivec, seznam jednotlivců, skupina, "
+"právnická osoba nebo jakýkoli jiný deskriptor, podle kterého lze snadno "
+"identifikovat držitele autorských práv."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "You MAY add any further information to the Copyright Notice."
 msgstr ""
+"Do Oznámení o autorských právech MŮŽETE přidat jakékoli další informace."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "Examples of valid copyright notices:"
 msgid "Examples of valid Copyright Notices:"
-msgstr "Příklady platných upozornění na autorská práva:"
+msgstr "Příklady platných oznámení o autorských právech:"
 
 #, fuzzy
 #~| msgid ""
