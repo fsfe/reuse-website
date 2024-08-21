@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-08-02 08:24+0000\n"
-"PO-Revision-Date: 2024-08-19 23:09+0000\n"
+"PO-Revision-Date: 2024-08-22 00:09+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/uk/>\n"
@@ -1417,9 +1417,9 @@ msgid ""
 "license), meaning that a combined work containing code under both licenses "
 "must effectively respect the terms of the least permissive license."
 msgstr ""
-"Деякі ліцензії є [менш дозвільними, ніж інші] (#copyleft-permissive-"
-"license), що означає, що комбінований твір, який містить код під обома "
-"ліцензіями, повинен ефективно дотримуватися умов найменш дозвільної ліцензії."
+"Деякі ліцензії є [менш дозвільними, ніж інші](#copyleft-permissive-license), "
+"що означає, що робота, яка поєднує код під обома ліцензіями, повинен "
+"ефективно дотримуватися умов найменш дозвільної ліцензії."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1433,13 +1433,13 @@ msgid ""
 "purposes, these two licenses cannot be respected simultaneously, and they "
 "are considered incompatible."
 msgstr ""
-"Деякі ліцензії мають взаємовиключні вимоги. Наприклад, ліцензія [CC-BY-"
-"NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/) має пункт, який "
-"забороняє використовувати твір з комерційною метою, а [GPL-3.0- або новіша]"
-"(https://www.gnu.org/licenses/gpl-3.0.html) має пункт, який говорить, що ви "
-"не можете накладати додаткові обмеження, яких немає в ліцензії GPL. Оскільки "
-"в ліцензії GPL немає пункту про комерційні цілі, цих двох ліцензій не можна "
-"дотримуватися одночасно, і вони вважаються несумісними."
+"Деякі ліцензії мають взаємозаперечні вимоги. Наприклад, ліцензія [CC-BY-NC-4."
+"0](https://creativecommons.org/licenses/by-nc/4.0/) має пункт, який "
+"забороняє використовувати роботу з комерційною метою, а [GPL-3.0- або "
+"новіша](https://www.gnu.org/licenses/gpl-3.0.html) має пункт, який говорить, "
+"що ви не можете накладати додаткові обмеження, яких немає в ліцензії GPL. "
+"Оскільки в ліцензії GPL немає пункту про комерційні цілі, цих двох ліцензій "
+"не можна дотримуватися одночасно, і вони вважаються несумісними."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1448,7 +1448,7 @@ msgid ""
 "depends on what you want. Integrating work that is licensed differently may "
 "mean having to respect license terms which you do not want to respect."
 msgstr ""
-"Які саме ліцензії сумісні - це складне питання, і воно також залежить від "
+"Які саме ліцензії сумісні — це складне питання, і воно також залежить від "
 "того, чого ви хочете. Інтеграція роботи, яка має іншу ліцензію, може "
 "означати необхідність дотримуватися умов ліцензії, яких ви не бажаєте "
 "дотримуватися."
@@ -1460,9 +1460,9 @@ msgid ""
 "org/licenses/license-compatibility.html) and [GNU's license list](https://"
 "www.gnu.org/licenses/license-list.html) may help you work out compatibility."
 msgstr ""
-"Зокрема, щодо GNU GPL, [ця стаття GNU] (https://www.gnu.org/licenses/license-"
-"compatibility.html) і [список ліцензій GNU] (https://www.gnu.org/licenses/"
-"license-list.html) можуть допомогти вам вирішити питання сумісності."
+"Зокрема, щодо GNU GPL, [ця стаття GNU](https://www.gnu.org/licenses/license-"
+"compatibility.html) і [список ліцензій GNU](https://www.gnu.org/licenses/"
+"license-list.html) можуть допомогти вам розв'язати питання сумісності."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1472,8 +1472,8 @@ msgid ""
 "licensing metadata, not to check whether that metadata is correct or valid. "
 "You need different tools and processes for that."
 msgstr ""
-"Важливо зазначити, що REUSE не допоможе вам вирішити питання сумісності "
-"ліцензій. Мета REUSE - допомогти вам всебічно декларувати ваші метадані "
+"Важливо зазначити, що REUSE не допоможе вам розв'язати питання сумісності "
+"ліцензій. Мета REUSE — допомогти вам всебічно декларувати ваші метадані "
 "ліцензування, а не перевіряти, чи є ці метадані правильними або дійсними. "
 "Для цього потрібні різні інструменти та процеси."
 
@@ -1510,7 +1510,7 @@ msgid ""
 msgstr ""
 "Крім того, багато сайтів хостингу пакунків очікують, що ви вкажете "
 "інформацію про ліцензування вашого пакунка. Наприклад, [файл pyproject.toml "
-"інструменту REUSE] (https://github.com/fsfe/reuse-tool/blob/main/pyproject."
+"інструменту REUSE](https://github.com/fsfe/reuse-tool/blob/main/pyproject."
 "toml) декларує всі ліцензії, які він використовує, у форматі, очікуваному "
 "інфраструктурою пакунків Python."
 
@@ -1518,7 +1518,9 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "I only have a single license file. Should I still create a LICENSES directory? {#single-license}"
-msgstr "У мене є лише один файл ліцензії. Чи все одно потрібно створювати каталог LICENSES? {#single-license}"
+msgstr ""
+"У мене лише один файл ліцензії. Чи все одно потрібно створювати каталог "
+"LICENSES? {#single-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1539,8 +1541,8 @@ msgid ""
 "However, in addition to that, you can keep your `LICENSE`/`COPYING` file if "
 "you want. See [this question](#tradition)."
 msgstr ""
-"Однак, на додаток до цього, ви можете зберегти свій файл `LICENSE`/"
-"`COPYING`, якщо хочете. Див. [дане питання](#tradition)."
+"Однак, на додаток до цього, ви можете зберегти свій файл `LICENSE`/`COPYING`"
+", якщо хочете. Перегляньте [це питання](#tradition)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1591,7 +1593,8 @@ msgid ""
 msgstr ""
 "Існує багато причин, чому ви не повинні змінювати тексти ліцензії, але якщо "
 "ви все ж таки змінюєте тексти, ви повинні використовувати інший "
-"ідентифікатор SPDX для цієї ліцензії.  Див. [дане питання](#custom-license)."
+"ідентифікатор SPDX для цієї ліцензії.  Перегляньте [це питання](#custom-"
+"license)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1724,8 +1727,8 @@ msgid ""
 "<https://reuse.readthedocs.io/en/stable/readme.html#install>. The short of "
 "it is:"
 msgstr ""
-"Дивіться інструкції зі встановлення та супровідну документацію на <https://"
-"reuse.readthedocs.io/en/stable/readme.html#install>. Коротше кажучи:"
+"Дивіться інструкції зі встановлення та супровідну документацію на "
+"<https://reuse.readthedocs.io/en/stable/readme.html#install>. Коротко кажучи:"
 
 #. type: Fenced code block
 #: site/content/en/faq.md
@@ -1900,8 +1903,7 @@ msgstr ""
 "]\n"
 "SPDX-License-Identifier = \"CC-BY-4.0\"\n"
 "\n"
-"# A recursive glob of all files and directories in tests/resources/,\n"
-"# та інформація REUSE цих файлів буде перевизначена.\n"
+"# A recursive glob of al\tизначена.\n"
 "[[annotations]]\n"
 "path = \"tests/resources/**\"\n"
 "precedence = \"override\"\n"
@@ -1923,8 +1925,8 @@ msgid ""
 "The [REUSE Specification](/spec) documents more thoroughly how `REUSE.toml` "
 "can be used."
 msgstr ""
-"У [REUSE Specification](/spec) більш детально описано, як можна "
-"використовувати `REUSE.toml`."
+"У [REUSE Specification](/spec) докладніше описано, як можна використовувати "
+"`REUSE.toml`."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1951,8 +1953,8 @@ msgid ""
 "Use [the `REUSE-IgnoreStart` and `REUSE-IgnoreEnd` tags](#exclude-lines)  "
 "inside of the file."
 msgstr ""
-"Використовуйте [теги `REUSE-IgnoreStart` і `REUSE-IgnoreEnd`] (#exclude-"
-"рядки) всередині файлу."
+"Використовуйте [теги `REUSE-IgnoreStart` і `REUSE-IgnoreEnd`](#exclude-рядки)"
+" всередині файлу."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -2064,7 +2066,7 @@ msgid ""
 "new licenses to your project."
 msgstr ""
 "Якщо твір має іншу ліцензію, ніж ваш проєкт, вам слід [перевірити сумісність "
-"ліцензій] (#license-compatibility) і додати нові ліцензії до вашого проєкту."
+"ліцензій](#license-compatibility) і додати нові ліцензії до вашого проєкту."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2085,7 +2087,9 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... copy a work that has no copyright notice or license? {#no-copyright-license}"
-msgstr "... копіювати твір, який не має повідомлення про авторське право або ліцензії? {#no-copyright-license}"
+msgstr ""
+"... копіювати роботу, яка не має повідомлення про авторське право або "
+"ліцензію? {#no-copyright-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2107,10 +2111,9 @@ msgid ""
 "doubt, contact the author for clarification."
 msgstr ""
 "Якщо ви не знайшли повідомлення про авторські права, ви можете спробувати "
-"додати його самостійно, вирахувавши правовласника з автора. Дивіться [це "
-"питання](#copyright-holder-author) для отримання додаткової інформації про "
-"цю різницю.  У разі виникнення сумнівів, зверніться до автора за "
-"роз'ясненнями."
+"додати його самостійно, відділивши правовласника від автора. Перегляньте [це "
+"питання](#copyright-holder-author), щоб дізнатися подробиці про цю різницю.  "
+"У разі виникнення сумнівів, зверніться до автора за роз'ясненнями."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2120,7 +2123,7 @@ msgid ""
 "github.io/spdx-spec/v2.3/file-information/#88-copyright-text-field)."
 msgstr ""
 "Можливо, автор бажає залишитися анонімним, що є його правом. Ви можете "
-"написати [`NONE` або `NOASSERTION` як правовласник] (https://spdx.github.io/"
+"написати [`NONE` або `NOASSERTION` як правовласник](https://spdx.github.io/"
 "spdx-spec/v2.3/file-information/#88-copyright-text-field)."
 
 #. type: Plain text
@@ -2248,7 +2251,7 @@ msgstr ""
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "This is how the section can be ignored:"
-msgstr "Таким чином, розділ можна проігнорувати:"
+msgstr "Розділ можна проігнорувати так:"
 
 #. type: Fenced code block (bash)
 #: site/content/en/faq.md
@@ -2795,11 +2798,11 @@ msgid ""
 "component in helping you with this."
 msgstr ""
 "Але навіть менші проєкти або проєкти з простим ліцензуванням отримують "
-"вигоду від REUSE.  Добре це чи погано, але ліцензування є наріжним каменем "
+"вигоду від REUSE.  Добре це чи погано, але ліцензування — це наріжний камінь "
 "руху за вільне програмне забезпечення.  Це те, що уможливлює спільне "
-"використання, а у випадку копілефту - дозволяє нам зберігати програмне "
+"використання, а у випадку копілефту — дозволяє нам зберігати програмне "
 "забезпечення вільним. Правильне ліцензування дуже важливе, інакше люди не "
-"зможуть користуватися вашим програмним забезпеченням, і REUSE - це простий "
+"зможуть користуватися вашим програмним забезпеченням, і REUSE — це простий "
 "компонент, який допоможе вам у цьому."
 
 #. type: Plain text
@@ -2811,9 +2814,9 @@ msgid ""
 "license text. By implementing REUSE early, it is a lot easier to discern "
 "your code from third-party code and correctly keep track of these things."
 msgstr ""
-"Більше того, навіть якщо ваш проєкт є простим _тепер_, він не завжди може "
-"бути таким. Якщо ви копіюєте якийсь код з іншого проєкту, що має іншу "
-"ліцензію, ви часто зобов'язані правильно вказувати авторство та/або надавати "
+"Щобільше, навіть якщо ваш проєкт простий _тепер_, він не завжди може бути "
+"таким. Якщо ви копіюєте якийсь код з іншого проєкту, що має іншу ліцензію, "
+"ви часто зобов'язані правильно вказувати авторство та/або надавати "
 "супровідний текст ліцензії. Впровадивши REUSE на ранній стадії, набагато "
 "легше відрізнити свій код від коду сторонніх розробників і правильно "
 "відстежувати ці речі."
@@ -2828,9 +2831,9 @@ msgid ""
 "reuse that code. REUSE helps you help other developers in reusing your code, "
 "which is one of the great boons of Free Software."
 msgstr ""
-"Нарешті, впровадження REUSE - це маленька послуга для інших. Інженера-"
+"Зрештою, впровадження REUSE — це маленька послуга для інших. Інженера-"
 "програміста може розчаровувати, коли ви знаходите якийсь код, спеціально "
-"створений для проблеми, яку ви намагаєтеся вирішити, але не можете "
+"створений для проблеми, яку ви намагаєтеся усунути, але не можете "
 "розібратися з ліцензуванням цього коду, що фактично унеможливлює повторне "
 "використання цього коду. REUSE допоможе вам допомогти іншим розробникам "
 "повторно використовувати ваш код, що є однією з найбільших переваг вільного "
@@ -2840,7 +2843,9 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "I'm used to doing things differently; can't I just keep doing what I have always been doing? {#tradition}"
-msgstr "Я звик робити все по-іншому; хіба я не можу продовжувати робити те, що робив завжди? {#tradition}"
+msgstr ""
+"Для мене звично робити все інакше; хіба я не можу продовжувати робити те, що "
+"й завжди? {#tradition}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2891,8 +2896,8 @@ msgstr ""
 "або розміщувати файл `copying` у корені вашого каталогу в будь-якому "
 "випадку. Ці речі можна робити на свій смак. Однак деякі інші аспекти REUSE "
 "неминучі.  REUSE вважає, що _кожен файл повинен містити інформацію про "
-"ліцензування_, так що навіть найменші файли мають метадані про ліцензування. "
-"Ці речі просто притаманні меті REUSE, і ми сподіваємося, що незабаром ці "
+"ліцензування_, тож навіть найменші файли мають метадані про ліцензування. Ці "
+"речі просто притаманні меті REUSE, і ми сподіваємося, що незабаром ці "
 "дивацтва стануть звичними, такими, що вже не здаватимуться такими особливими."
 
 #. type: Title ##
@@ -2967,7 +2972,7 @@ msgid ""
 "control typically only records authorship, which makes it unsuitable for the "
 "task of recording copyright."
 msgstr ""
-"В [іншому питанні] (#copyright-holder-author) ми розрізняємо власників "
+"В [іншому питанні](#copyright-holder-author) ми розрізняємо власників "
 "авторських прав та авторів, які не завжди збігаються. Контроль версій "
 "зазвичай фіксує лише авторство, що робить його непридатним для фіксації "
 "авторських прав."
@@ -2993,8 +2998,8 @@ msgid ""
 msgstr ""
 "Ще одна проблема з контролем версій полягає в тому, що команда `blame`, яка "
 "зазвичай (неправильно) використовується для пошуку авторства по рядках, "
-"показує лише автора останнього комміту в цьому рядку, навіть якщо це було "
-"щось банальне, наприклад, виправлення помилки або переміщення блоку коду в "
+"показує лише автора останнього коміту в цьому рядку, навіть якщо це було "
+"щось буденне, наприклад, виправлення помилки або переміщення блоку коду в "
 "інше місце."
 
 #. type: Title ##
@@ -3013,7 +3018,7 @@ msgid ""
 msgstr ""
 "Наразі REUSE використовує [`REUSE.toml` для файлів масових ліцензій](#bulk-"
 "license). Але до версії 3.2 специфікації REUSE використовував `.reuse/dep5`, "
-"майже дослівну копію [DEP5/`debian/copyright`] (https://www.debian.org/doc/"
+"майже дослівну копію [DEP5/`debian/copyright`](https://www.debian.org/doc/"
 "packaging-manuals/copyright-format/1.0/)."
 
 #. type: Plain text
@@ -3024,8 +3029,8 @@ msgid ""
 "automatically convert a `.reuse/dep5` file to a semantically equivalent "
 "`REUSE.toml` file."
 msgstr ""
-"У версії 3.2 `.reuse/dep5` застаріло, але все ще підтримується, хоча і є "
-"взаємовиключним з `REUSE.toml`. Ви можете використовувати `reuse convert-"
+"У версії 3.2 `.reuse/dep5` застарів, але досі підтримується, хоча і є "
+"взаємозаперечним з `REUSE.toml`. Ви можете використовувати `reuse convert-"
 "dep5` для автоматичного перетворення файлу `.reuse/dep5` у семантично "
 "еквівалентний файл `REUSE.toml`."
 
@@ -3203,8 +3208,8 @@ msgstr ""
 "Для кожного з цих кроків ви спочатку дізнаєтеся, як виконати їх вручну.  "
 "Втім, [інструмент REUSE] (https://github.com/fsfe/reuse-tool) допоможе вам у "
 "виконанні більшості завдань, а необхідні команди також будуть перераховані у "
-"розбірних боксах. Ми рекомендуємо спочатку зрозуміти основний принцип, перш "
-"ніж просто виконувати команди інструменту."
+"розгортуваних блоках. Ми рекомендуємо спочатку зрозуміти основний принцип, "
+"перш ніж просто виконувати команди інструменту."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -5222,7 +5227,7 @@ msgid ""
 "License File --- a file containing the text of a license, as defined in "
 "[License Files](#license-files)."
 msgstr ""
-"Файл ліцензії --- файл, що містить текст ліцензії, як визначено у [Файли "
+"Файл ліцензії --- файл, що містить текст ліцензії, як визначено у [Файлах "
 "ліцензій](#license-files)."
 
 #. type: Bullet: '- '
@@ -6098,7 +6103,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "`SPDX-FileCopyrightText` (or `SPDX-SnippetCopyrightText` in Snippets)"
-msgstr "`SPDX-FileCopyrightText` (або `SPDX-SnippetCopyrightText` в Уривках)"
+msgstr "`SPDX-FileCopyrightText` (або `SPDX-SnippetCopyrightText` у Фрагментах)"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
