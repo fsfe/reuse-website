@@ -6,7 +6,6 @@
 
 title: "REUSE Specification – Version 3.3 (UNRELEASED)"
 subtitle: "YYYY-MM-DD"
-# aliases: ["/spec"]
 ---
 
 This specification defines a standardised method for declaring copyright and
