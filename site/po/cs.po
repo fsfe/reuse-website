@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-08-22 15:11+0000\n"
-"PO-Revision-Date: 2024-08-19 23:09+0000\n"
+"PO-Revision-Date: 2024-08-23 12:24+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/fsfe/reuse-website-"
-"markdown/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.7.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -5128,7 +5128,7 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "/spec"
-msgstr ""
+msgstr "/spec"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-3.2.md
