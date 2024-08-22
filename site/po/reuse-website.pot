@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-08-02 08:24+0000\n"
+"POT-Creation-Date: 2024-08-22 15:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4220,6 +4220,12 @@ msgid ""
 "© Example Corporation <https://corp.example.com>\n"
 "Copyright 2016, 2018-2019 Joe Anybody\n"
 "Copyright (c) Alice\n"
+msgstr ""
+
+#. type: Yaml Front Matter Array Element: aliases
+#: site/content/en/spec-3.2.md
+#, no-wrap
+msgid "/spec"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
