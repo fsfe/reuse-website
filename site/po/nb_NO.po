@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-08-22 15:11+0000\n"
+"POT-Creation-Date: 2024-08-23 12:24+0000\n"
 "PO-Revision-Date: 2022-01-11 09:55+0000\n"
 "Last-Translator: Imre Kristoffer Eilertsen <imreeil42@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/fsfe/"
@@ -3814,12 +3814,6 @@ msgid ""
 "© Example Corporation <https://corp.example.com>\n"
 "Copyright 2016, 2018-2019 Joe Anybody\n"
 "Copyright (c) Alice\n"
-msgstr ""
-
-#. type: Yaml Front Matter Array Element: aliases
-#: site/content/en/spec-3.2.md
-#, no-wrap
-msgid "/spec"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title

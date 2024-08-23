@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-08-22 15:11+0000\n"
+"POT-Creation-Date: 2024-08-23 12:24+0000\n"
 "PO-Revision-Date: 2022-08-26 07:15+0000\n"
 "Last-Translator: Hugel <qihu@nfschina.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -3825,12 +3825,6 @@ msgid ""
 "© Example Corporation <https://corp.example.com>\n"
 "Copyright 2016, 2018-2019 Joe Anybody\n"
 "Copyright (c) Alice\n"
-msgstr ""
-
-#. type: Yaml Front Matter Array Element: aliases
-#: site/content/en/spec-3.2.md
-#, no-wrap
-msgid "/spec"
 msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title

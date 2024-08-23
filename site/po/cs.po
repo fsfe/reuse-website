@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-08-22 15:11+0000\n"
+"POT-Creation-Date: 2024-08-23 12:24+0000\n"
 "PO-Revision-Date: 2024-08-23 12:24+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/fsfe/"
-"reuse-website-markdown/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/fsfe/reuse-website-"
+"markdown/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5124,12 +5124,6 @@ msgstr ""
 "Copyright 2016, 2018-2019 Joe Anybody\n"
 "Copyright (c) Alice\n"
 
-#. type: Yaml Front Matter Array Element: aliases
-#: site/content/en/spec-3.2.md
-#, no-wrap
-msgid "/spec"
-msgstr "/spec"
-
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-3.2.md
 #, no-wrap
@@ -6097,6 +6091,10 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 msgid "Examples of valid Copyright Notices:"
 msgstr "Příklady platných oznámení o autorských právech:"
+
+#, no-wrap
+#~ msgid "/spec"
+#~ msgstr "/spec"
 
 #, fuzzy
 #~| msgid ""
