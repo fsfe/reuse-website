@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-08-23 12:24+0000\n"
-"PO-Revision-Date: 2024-08-23 12:24+0000\n"
+"PO-Revision-Date: 2024-08-25 06:09+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/fsfe/reuse-website-"
-"markdown/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2262,7 +2262,9 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... deal with uncopyrightable files? {#uncopyrightable}"
-msgstr "... se zabývat soubory, na které se nevztahují autorská práva? {#uncopyrightable}"
+msgstr ""
+"... zabývat se soubory, na které se nevztahují autorská práva? "
+"{#uncopyrightable}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3198,11 +3200,11 @@ msgid ""
 "Identifier. The SPDX License Identifier for your chosen license is `GPL-3.0-"
 "or-later`."
 msgstr ""
-"Najděte svou licenci v [Seznamu licencí SPDX] (https://spdx.org/licenses/). "
+"Najděte svou licenci v [Seznamu licencí SPDX](https://spdx.org/licenses/). "
 "SPDX je otevřený standard pro sdělování informací o licencích a autorských "
 "právech. Každá licence je jednoznačně identifikována krátkým identifikátorem "
-"licence SPDX. Identifikátor licence SPDX pro vámi vybranou licenci je "
-"`GPL-3.0-nebo-novější`."
+"licence SPDX. Identifikátor licence SPDX pro vámi vybranou licenci je `GPL-3."
+"0-nebo-novější`."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -5153,8 +5155,8 @@ msgid ""
 "For the revision history of this specification, please see [the change log]"
 "(https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 msgstr ""
-"Historii revizí této specifikace naleznete v [protokolu změn] (https://"
-"github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
+"Historii revizí této specifikace naleznete v [protokolu změn](https://github."
+"com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5171,8 +5173,8 @@ msgid ""
 "License File --- a file containing the text of a license, as defined in "
 "[License Files](#license-files)."
 msgstr ""
-"Licenční soubor --- soubor obsahující text licence, jak je definováno v "
-"[Licenční soubory] (#license-files)."
+"Licenční soubor --- soubor obsahující text licence, jak je definováno v ["
+"Licenční soubory](#license-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5203,7 +5205,7 @@ msgid ""
 "in [Covered and ignored Files](#covered-and-ignored-files)."
 msgstr ""
 "Covered File --- soubor, který musí obsahovat licenční informace, jak je "
-"definováno v [Covered and ignored Files] (#covered-and-ignored-files)."
+"definováno v [Covered and ignored Files](#covered-and-ignored-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5269,8 +5271,8 @@ msgid ""
 "precedence."
 msgstr ""
 "DEP5 --- Strojově čitelný soubor `debian/copyright`, verze 1.0; jak je k "
-"dispozici na <https://www.debian.org/doc/packaging-manuals/copyright-"
-"format/1.0/> a dále definované v [DEP5 (zastaralé)] (#dep5-deprecated). Kde "
+"dispozici na <https://www.debian.org/doc/packaging-manuals/copyright-format/1"
+".0/> a dále definované v [DEP5 (zastaralé)](#dep5-deprecated). Kde "
 "specifikace REUSE a DEP5 uvádějí různé věci, má přednost specifikace REUSE."
 
 #. type: Bullet: '- '
@@ -5338,7 +5340,7 @@ msgid ""
 "#44-standard-data-format-requirements)  (example: `sbom.spdx.json`)."
 msgstr ""
 "Dokumenty SPDX v různých formátech, jak je definováno ve [Specifikaci SPDX, "
-"článek 4.4] (https://spdx.github.io/spdx-spec/v2.3/conformance/#44-standard-"
+"článek 4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/#44-standard-"
 "data-format-requirements) ( příklad: `sbom.spdx.json`)."
 
 #. type: Title ##
@@ -5574,9 +5576,9 @@ msgstr ""
 "Někdy se licenční informace vztahuje pouze na určitý úryvek namísto celého "
 "komentovatelného souboru. V těchto případech MUSÍ být pro daný úryvek "
 "použity značky úryvků SPDX (jak je definováno ve [Specifikaci SPDX, příloha "
-"H](https://spdx.github.io/spdx-spec/v2.3/file-tags/#h3-snippet -tags-"
-"format)). To znamená, že oznámení o autorských právech uvnitř úryvků MUSÍ "
-"mít předponu `SPDX-SnippetCopyrightText`."
+"H](https://spdx.github.io/spdx-spec/v2.3/file-tags/#h3-snippet-tags-format))"
+". To znamená, že oznámení o autorských právech uvnitř úryvků MUSÍ mít "
+"předponu `SPDX-SnippetCopyrightText`."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
