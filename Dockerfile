@@ -6,7 +6,9 @@
 # Configure webserver
 # =============================================================================
 
-FROM bitnami/apache:2.4 as webserver-prep
+# TODO: Switch back to 2.4. <https://github.com/bitnami/containers/issues/71316>
+# currently makes 2.4.62 unviable.
+FROM bitnami/apache:2.4.61 as webserver-prep
 
 COPY reuse.software.conf /vhosts/
 
