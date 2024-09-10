@@ -46,6 +46,9 @@ This is the change log for the REUSE Specification.
 
 - `REUSE.toml` files ignored by VCS are not searching for licensing information.
 - `REUSE.toml` is no longer a Covered File.
+- Also allow `COPYING` and `LICENSE` files to have a suffix with a dash or dot
+  (e.g. `LICENSE-MIT` or `COPYING.GPL`).
+- The `LICENSE` file may also be spelt `LICENCE`.
 
 ### Deprecated
 
