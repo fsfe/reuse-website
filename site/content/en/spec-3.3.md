@@ -229,6 +229,8 @@ A `REUSE.toml` file MAY be located in any directory, and can cover files that ar
 within its directory or deeper. You MAY have multiple `REUSE.toml` files in
 different directories.
 
+Any `REUSE.toml` file ignored by VCS is not searched for Licensing Information.
+
 The `version` key (REQUIRED) MUST have an integer value representing the schema
 version of the file. This specification describes version 1 of `REUSE.toml`.
 
