@@ -75,6 +75,7 @@ equal to all files in a project, with the exception of:
   `.gitignore`).
 - Submodules of the Project's version control system and Meson subprojects. Each
   submodule and Meson subproject is understood as a separate Project.
+- `REUSE.toml` files.
 - The files in the `.reuse/` directory in the root of the Project. This
   directory MUST contain only files relevant for the operation of the REUSE
   Tool.
