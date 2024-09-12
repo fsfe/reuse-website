@@ -1,7 +1,7 @@
 ---
 # SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
 # SPDX-FileCopyrightText: © 2020 Liferay, Inc. <https://liferay.com>
-# SPDX-License-Identifier: CC-BY-SA-4.0
+# SPDX-License-Identifier: CC-BY-SA-4.0 AND CC0-1.0
 
 title: "Help for developers"
 ---
@@ -64,6 +64,8 @@ installed](https://pre-commit.com/#install), add this to the
 `.pre-commit-config.yaml` in your repository:
 
 ```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
 repos:
   - repo: https://github.com/fsfe/reuse-tool
     rev: v4.0.3
@@ -86,6 +88,8 @@ The FSFE offers a Docker image which can be used in numerous CI solutions. Find 
 Include the following snippet in your `.drone.yml` file:
 
 ```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
 steps:
   - name: reuse
     image: fsfe/reuse:latest
@@ -99,6 +103,8 @@ GitHub users can integrate the REUSE action in their workflow. Include the
 following file as `.github/workflows/reuse.yaml`:
 
 ```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
 name: REUSE Compliance Check
 
 on: [push, pull_request]
@@ -124,6 +130,8 @@ More information about GitHub Actions on
 Include the following snippet in your `.gitlab-ci.yml` file:
 
 ```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
 reuse:
   image:
     name: fsfe/reuse:latest
@@ -140,6 +148,8 @@ More information about GitLab's CI on
 Include the following snippet in your `.travis.yml` file:
 
 ```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
 language: minimal
 
 services:
