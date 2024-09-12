@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-08-23 12:24+0000\n"
+"POT-Creation-Date: 2024-09-12 09:39+0000\n"
 "PO-Revision-Date: 2022-08-26 07:15+0000\n"
 "Last-Translator: Hugel <qihu@nfschina.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -247,6 +247,8 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
 "repos:\n"
 "  - repo: https://github.com/fsfe/reuse-tool\n"
 "    rev: v4.0.3\n"
@@ -297,6 +299,8 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
 "steps:\n"
 "  - name: reuse\n"
 "    image: fsfe/reuse:latest\n"
@@ -324,6 +328,8 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
 "name: REUSE Compliance Check\n"
 "\n"
 "on: [push, pull_request]\n"
@@ -366,6 +372,8 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
 "reuse:\n"
 "  image:\n"
 "    name: fsfe/reuse:latest\n"
@@ -396,6 +404,8 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
 "language: minimal\n"
 "\n"
 "services:\n"
