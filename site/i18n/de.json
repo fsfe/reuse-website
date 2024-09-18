@@ -69,12 +69,18 @@
         "other": "REUSE-Konformität bestätigen"
     },
     "index_rationale": {
-        "other": "Urheberrecht und Lizenzierung sind schwierig, besonders wenn man Software aus verschiedenen Projekten wiederverwendet, die unter verschiedenen Lizenzen veröffentlicht wurden. REUSE wurde von der [Free Software Foundation Europe](https://fsfe.org) (FSFE) ins Leben gerufen, um eine Reihe von Empfehlungen zu geben, die die Lizenzierung von Freie-Software-Projekte erleichtern. Diese Empfehlungen machen es nicht nur für die Ersteller der Software einfacher, die Lizenzen anzugeben, unter denen ihre Werke veröffentlicht werden, sondern sie machen es auch für einen Computer einfacher, zu verstehen, wie ein Projekt einer Drittpartei lizenziert ist."
+        "other": "Urheberrecht und Lizenzierung sind schwierig, besonders wenn man Software aus verschiedenen Projekten wiederverwendet, die unter verschiedenen Lizenzen veröffentlicht wurden. REUSE wurde von der [Free Software Foundation Europe](https://fsfe.org) (FSFE) ins Leben gerufen, um eine Reihe von Empfehlungen zu geben, die die Lizenzierung von Freie-Software-Projekten **einfach, umfassend, eindeutig und maschinenlesbar** machen."
     },
     "index_reuse_head": {
         "other": "Wiederverwendung leicht gemacht"
     },
     "index_legal_text": {
         "other": "Es gibt viele Tools, die bei der Einhaltung von Lizenzbestimmungen für Software unterstützen, viele davon nutzen Datenbanken und Fuzzy-Heuristiken. Ein REUSE-konformes Projekt erleichtert die Arbeit von Rechtsexpertinnen und Compliance-Beauftragten erheblich. Die Erstellung einer Stückliste (Software Bill of Materials) ist mit einem einfachen Kommdando möglich. REUSE [ersetzt nicht andere Werkzeuge](comparison/), sondern ist eine lang erwartete Ergänzung."
+    },
+    "index_initiative_by": {
+        "other": "Eine Initiative von"
+    },
+    "all_specifications": {
+        "other": "Alle Versionen der Spezifikaton können unter <{{ .specifications }}> gefunden werden."
     }
 }
