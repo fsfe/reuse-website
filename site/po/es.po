@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-06 09:15+0000\n"
+"PO-Revision-Date: 2024-10-07 16:16+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -905,17 +905,14 @@ msgstr "Tengo poco tiempo. ¿Puedes hacerme un resumen lo más rápido posible? 
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "We want to improve the way that people license their software projects. "
-#| "We propose three steps to achieve this:"
 msgid ""
 "We want to improve the way that people license their software projects such "
 "that it is **easy, comprehensive, unambiguous, and machine-readable**. We "
 "propose three steps to achieve this:"
 msgstr ""
-"Queremos mejorar la forma en que la gente licencia sus proyectos de "
-"software. Proponemos tres pasos para lograrlo:"
+"Queremos mejorar la forma en que la gente licencia sus proyectos de software "
+"de modo que sea **fácil, completo, inequívoco y máquina lectora**. "
+"Proponemos tres pasos para lograrlo:"
 
 #. type: Title ##
 #: site/content/en/faq.md site/content/en/tutorial.md
@@ -1023,7 +1020,7 @@ msgstr ""
 #, fuzzy, no-wrap
 #| msgid "What is copyright? {#what-is-copyright}"
 msgid "Copyright {#copyright}"
-msgstr "¿Qué son los derechos de autor? {#what-is-copyright}"
+msgstr "Copyright {#copyright}"
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1033,12 +1030,6 @@ msgstr "¿Qué son los derechos de autor? {#what-is-copyright}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Copyright is a legal construct that grants someone exclusive rights over "
-#| "a creative work. The most important exclusive right is in the name: The "
-#| "right to produce copies. Only the copyright holder is allowed to give new "
-#| "copies of their work to people."
 msgid ""
 "Copyright is a legal construct that grants someone exclusive rights over a "
 "creative work. The most important exclusive right is in the name: The right "
@@ -1050,7 +1041,9 @@ msgstr ""
 "derechos exclusivos sobre un trabajo creativo. El derecho exclusivo más "
 "importante está en el nombre: El derecho a producir copias Copyright. Solo "
 "el titular de los derechos de autor puede repartir nuevas copias de su "
-"trabajo."
+"trabajo. No necesita hacer nada para obtener derechos de autor. Tan pronto "
+"como haces un trabajo creativo, instantáneamente obtienes derechos de autor "
+"sobre él."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1058,6 +1051,8 @@ msgid ""
 "Usually the author is the copyright holder, but often copyright is "
 "transferred to the author's employer."
 msgstr ""
+"Por lo general, el autor es el titular de los derechos de autor, pero a "
+"menudo los derechos de autor se transfieren al empleador del autor."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1076,6 +1071,8 @@ msgid ""
 "If you want others to be able to freely use, study and share your code, you "
 "must release it under a license."
 msgstr ""
+"Si desea que otros puedan usar, estudiar y compartir libremente su código, "
+"debe publicarlo bajo una licencia."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1137,6 +1134,16 @@ msgid ""
 "Copyright 2016, 2018-2019 Joe Anybody\n"
 "Copyright (c) Alice, some rights reserved\n"
 msgstr ""
+"SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
+"SPDX-FileCopyrightText: © 2019 John Doe <john@example.com>\n"
+"SPDX-FileCopyrightText: Colaboradores del Proyecto de Ejemplo "
+"<https://project.example.com>\n"
+"SPDX-FileCopyrightText: 2023 Alice Hack y (otros) colaboradores del Proyecto "
+"X <https://git.example.com/alicehack/projectx/CONTRIBUTORS.md>\n"
+"SPDX-SnippetCopyrightText: (C) Example Cooperative <info@coop.example.com>\n"
+"© Example Corporation <https://corp.example.com>\n"
+"Copyright 2016, 2018-2019 Joe Anybody\n"
+"Copyright (c) Alice, algunos derechos reservados\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1361,6 +1368,12 @@ msgid ""
 "copyleft license is the [GNU General Public License version 3](https://www."
 "gnu.org/licenses/gpl-3.0.html)."
 msgstr ""
+"Una licencia copyleft le otorga el derecho de usar, estudiar, compartir y "
+"mejorar una trabajo de software bajo una condición estricta. Si realiza "
+"algún cambio en el programa y comparte su versión del programa con otra "
+"persona, debe compartir sus cambios bajo la misma licencia que el original. "
+"Una licencia copyleft bien conocida es la [Licencia Pública General GNU "
+"versión 3](https://www.gnu.org/licenses/gpl-3.0.html)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1371,6 +1384,11 @@ msgid ""
 "proprietary. A well-known permissive license is the [Apache License, version "
 "2](https://www.apache.org/licenses/LICENSE-2.0.html)."
 msgstr ""
+"Una licencia permisiva le otorga los mismos derechos de Software Libre, pero "
+"no incluye esta condición. Es posible que alguien tome un trabajo de "
+"software con licencia permisiva, le haga cambios y mantenga propietaria la "
+"versión modificada. Una licencia permisiva bien conocida es la [Licencia "
+"Apache, versión 2](https://www.apache.org/licenses/LICENSE-2.0.html)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1465,12 +1483,14 @@ msgid ""
 "You can find a list of common exceptions at [SPDX License Exceptions]"
 "(https://spdx.org/licenses/exceptions-index.html)."
 msgstr ""
+"Puede encontrar una lista de excepciones comunes en [Excepciones de licencia "
+"SPDX](https://spdx.org/licenses/exceptions-index.html)."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "How does license compatibility work? {#license-compatibility}"
-msgstr ""
+msgstr "¿Cómo funciona la compatibilidad de licencias? {#license-compatibility}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1481,6 +1501,11 @@ msgid ""
 "project and still be able to respect the terms of each license "
 "simultaneously."
 msgstr ""
+"Las licencias de Software Libre a menudo difieren en detalles, pero siempre "
+"le otorgan el derecho de usar, estudiar, compartir y mejorar el software. "
+"Muchas licencias son compatibles, lo que significa que puede usar código de "
+"varias licencias en el mismo proyecto y aún así poder respetar los términos "
+"de cada licencia simultáneamente."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1489,6 +1514,10 @@ msgid ""
 "license), meaning that a combined work containing code under both licenses "
 "must effectively respect the terms of the least permissive license."
 msgstr ""
+"Algunas licencias son [menos permisivas que otras] (#licencia-permisiva-"
+"copyleft), lo que significa que una obra combinada que contenga código bajo "
+"ambas licencias debe respetar efectivamente los términos de la licencia "
+"menos permisiva."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1502,6 +1531,14 @@ msgid ""
 "purposes, these two licenses cannot be respected simultaneously, and they "
 "are considered incompatible."
 msgstr ""
+"Algunas licencias tienen requisitos mutuamente excluyentes. Por ejemplo, la "
+"licencia [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/) "
+"tiene una cláusula que prohíbe que una obra se utilice con fines "
+"comerciales, y la [GPL-3.0-o posterior](https://www.gnu.org/licenses/gpl-3.0."
+"html) tiene una cláusula que dice que no puede imponer restricciones "
+"adicionales que no estén en la licencia GPL. Debido a que la licencia GPL no "
+"tiene cláusula sobre fines comerciales, estas dos licencias no pueden "
+"respetarse simultáneamente y se consideran incompatibles."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1510,6 +1547,10 @@ msgid ""
 "depends on what you want. Integrating work that is licensed differently may "
 "mean having to respect license terms which you do not want to respect."
 msgstr ""
+"Exactamente qué licencias son compatibles es una pregunta difícil, y también "
+"depende de lo que desee. Integrar trabajos que tienen licencias diferentes "
+"puede significar tener que respetar los términos de la licencia que no desea "
+"respetar."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1518,6 +1559,10 @@ msgid ""
 "org/licenses/license-compatibility.html) and [GNU's license list](https://"
 "www.gnu.org/licenses/license-list.html) may help you work out compatibility."
 msgstr ""
+"Concretamente en lo que respecta a la GPL de GNU, [este artículo de "
+"GNU](https://www.gnu.org/licenses/license-compatibility.html) y [Lista de "
+"licencias GNU](https://www.gnu.org/licenses/license-list.html) pueden "
+"ayudarlo a determinar la compatibilidad."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1527,6 +1572,11 @@ msgid ""
 "licensing metadata, not to check whether that metadata is correct or valid. "
 "You need different tools and processes for that."
 msgstr ""
+"Es importante tener en cuenta que REUSE no ayuda a resolver la "
+"compatibilidad de licencias. El objetivo de REUSE es ayudarlo a declarar "
+"exhaustivamente sus metadatos de licencias, no a verificar si esos metadatos "
+"son correctos o válidos. Necesitas diferentes herramientas y procesos para "
+"eso."
 
 #. type: Title ##
 #: site/content/en/faq.md
