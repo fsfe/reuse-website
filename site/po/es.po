@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-07 16:16+0000\n"
-"Last-Translator: eulalio <eulalio@disroot.org>\n"
+"PO-Revision-Date: 2024-10-09 17:15+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
 "Language: es\n"
@@ -191,37 +191,30 @@ msgstr "La herramienta REUSE {#tool}"
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid ""
-#| "The [REUSE helper tool](https://git.fsfe.org/reuse/tool) assists with "
-#| "achieving and confirming REUSE compliance. It downloads the full license "
-#| "texts, adds copyright and license information to file headers, and "
-#| "contains a linter to identify problems. Eventually, you can generate a "
-#| "software bill of materials."
 msgid ""
 "The [REUSE tool](https://github.com/fsfe/reuse-tool) assists with achieving "
 "and confirming REUSE compliance. It downloads the full license texts, adds "
 "copyright and license information to file headers, and contains a linter to "
 "identify problems. Eventually, you can generate a software bill of materials."
 msgstr ""
-"La [herramienta de ayuda REUSE] (https://git.fsfe.org/reuse/tool) ayuda a "
-"lograr y confirmar el cumplimiento de REUSE. Descarga los textos completos "
-"de la licencia, agrega información de derechos de autor y licencia a los "
-"encabezados de los archivos y contiene un filtro para identificar problemas. "
-"Eventualmente, puede generar una lista de materiales de software."
+"La [herramienta REUSE](https://github.com/fsfe/reuse-tool) ayuda a lograr y "
+"confirmar el cumplimiento de REUSE. Descarga los textos completos de la "
+"licencia, añade información sobre derechos de autor y licencias a las "
+"cabeceras de los archivos, y contiene un filtro para identificar problemas. "
+"Eventualmente, puede generar una lista de materiales del software."
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid "Read the [documentation](https://reuse.readthedocs.io) to learn more about the tool. You will also find a [tool section in our FAQ](/faq/#tool) for the most pressing questions."
+#, no-wrap
 msgid ""
 "Read the [documentation](https://reuse.readthedocs.io) to learn more about the\n"
 "tool. You will also find a ['How do I ...' in our FAQ]({{< relref \"faq.md#howto\"\n"
 ">}}) to learn about various tool interactions.\n"
 msgstr ""
-"Lea la [documentación](https://reuse.readthedocs.io) para tener más "
-"información sobre la herramienta. También encontrará una [sección de "
-"herramientas en nuestras FAQ](/faq/#tool) para las dudas más urgentes.\n"
+"Lea la [documentación](https://reuse.readthedocs.io) para saber más sobre la "
+"herramienta. También encontrará un ['¿Cómo hago ...' en nuestra PREGUNTAS "
+"FRECUENTES]({{< relref \"faq.md#howto\" >}}) para aprender sobre las "
+"diversas interacciones de la herramienta.\n"
 
 #. type: Title ##
 #: site/content/en/dev.md
@@ -306,13 +299,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid ""
-#| "The API is the perfect tool for everyone who wants to show that their "
-#| "repository follows best practices in providing licensing and copyright "
-#| "information. It allows third-party services to integrate the live REUSE "
-#| "status, and offers a simple alternative for people who do not want to "
-#| "install the [REUSE helper tool](#tool) for a first quick check."
 msgid ""
 "The API is the perfect tool for everyone who wants to show that their "
 "repository follows best practices in providing licensing and copyright "
@@ -320,12 +306,12 @@ msgid ""
 "status, and offers a simple alternative for people who do not want to "
 "install the [REUSE tool](#tool)  for a first quick check."
 msgstr ""
-"La API es la herramienta perfecta para todos los que quieran mostrar que su "
-"repositorio sigue las mejores prácticas para proporcionar información sobre "
-"licencias y derechos de autor. Permite que los servicios de terceros "
-"integren el estado de REUSE en vivo y ofrece una alternativa simple para las "
-"personas que no desean instalar la [herramienta auxiliar REUSE](#tool) para "
-"una primera comprobación rápida."
+"La API es la herramienta perfecta para todos los que quieren demostrar que "
+"su repositorio sigue las mejores prácticas en el suministro de información "
+"sobre licencias y derechos de autor. Permite a los servicios de terceros "
+"integrar el estado REUSE en vivo, y ofrece una alternativa sencilla para las "
+"personas que no quieren instalar la [herramienta REUSE](#tool) para una "
+"primera comprobación rápida."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -357,13 +343,7 @@ msgstr ""
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "repos:\n"
-#| "-   repo: https://github.com/fsfe/reuse-tool\n"
-#| "    rev: v1.0.0\n"
-#| "    hooks:\n"
-#| "    - id: reuse\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
@@ -373,11 +353,13 @@ msgid ""
 "    hooks:\n"
 "      - id: reuse\n"
 msgstr ""
-"repos: \n"
-"-   repo: https://github.com/fsfe/reuse-tool \n"
-"    rev: v1.0.0 \n"
-"    hooks: \n"
-"    - id: reuse\n"
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"repos:\n"
+"  - repo: https://github.com/fsfe/reuse-tool\n"
+"    rev: v4.0.3\n"
+"    hooks:\n"
+"      - id: reuse\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -428,7 +410,7 @@ msgstr "Incluya el siguiente snippet en su archivo `.drone.yml`:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
@@ -505,16 +487,12 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid ""
-#| "More information about GitLab's CI on [docs.gitlab.com](https://docs."
-#| "gitlab.com/ce/ci/quick_start/)."
 msgid ""
 "More information about GitHub Actions on [docs.github.com](https://docs."
 "github.com/en/actions/)."
 msgstr ""
-"Más información sobre el CI de GitLab en [docs.gitlab.com](https://docs."
-"gitlab.com/ce/ci/quick_start/)."
+"Más información sobre las acciones de GitHub en [docs.github."
+"com](https://docs.github.com/en/actions/)."
 
 #. type: Title ###
 #: site/content/en/dev.md
@@ -529,14 +507,7 @@ msgstr "Incluya el siguiente snippet en su archivo `.gitlab-ci.yml`:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "reuse:\n"
-#| "  image:\n"
-#| "    name: fsfe/reuse:latest\n"
-#| "    entrypoint: [\"\"]\n"
-#| "  script:\n"
-#| "    - reuse lint\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
@@ -547,12 +518,14 @@ msgid ""
 "  script:\n"
 "    - reuse lint\n"
 msgstr ""
-"reutilización:\n"
-"  imagen:\n"
-"    nombre: fsfe/reutilizar:último\n"
-"    punto de entrada: [\"\"]\n"
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"reuse:\n"
+"  image:\n"
+"    name: fsfe/reuse:latest\n"
+"    entrypoint: [\"\"]\n"
 "  script:\n"
-"    - reutilizar lint\n"
+"    - reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
