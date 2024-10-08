@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
 "PO-Revision-Date: 2024-10-09 17:15+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
 "Language: es\n"
@@ -1811,6 +1811,9 @@ msgid ""
 "<https://reuse.readthedocs.io/en/stable/readme.html#install>. The short of "
 "it is:"
 msgstr ""
+"Ver las instrucciones de instalación y la documentación de la herramienta "
+"adjunta en <https://reuse.readthedocs.io/en/stable/readme.html#install>. En "
+"resumen, es:"
 
 #. type: Fenced code block
 #: site/content/en/faq.md
@@ -1830,10 +1833,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "I am a lawyer and want a bill of materials {#bill-of-materials}"
+#, no-wrap
 msgid "... create a software bill of materials {#bill-of-materials}"
-msgstr "Soy abogado y quiero una lista de materiales {#bill-of-materials}"
+msgstr "crear una lista de materiales {#bill-of-materials}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1848,10 +1850,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "2. Add copyright and licensing information to each file {#step-2}"
+#, no-wrap
 msgid "... add copyright and licensing information to an uncommentable file? {#uncommentable-file}"
-msgstr "2. Añada la información sobre derechos de autor y licencias a cada archivo {#paso-2}"
+msgstr ""
+"... ¿agregar información de derechos de autor y licencias a un archivo no "
+"comentado? {#archivo no comentado}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1860,17 +1863,14 @@ msgid ""
 "cannot be commented with a REUSE header, but they should still have "
 "copyright and licensing information."
 msgstr ""
+"Los archivos binarios, como imágenes o vídeos, o ciertos archivos de texto, "
+"como JSON, no se pueden comentar con un encabezado de REUSE, pero aún deben "
+"tener información de derechos de autor y licencias."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "There are two ways to associate Copyright and Licensing Information with "
-#| "a file."
 msgid "There are two ways of associating information with such a file:"
-msgstr ""
-"Hay dos formas de asociar la información de Derechos de Autor y Licencias "
-"con un archivo."
+msgstr "Hay dos formas de asociar la información con dicho archivo."
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -1880,6 +1880,10 @@ msgid ""
 "contents of the original file are subsequently ignored, which may be handy "
 "in some cases."
 msgstr ""
+"Se agrega un archivo con el sufijo `.licencia '(por ejemplo, ' "
+"cat.jpg.licencia `para un archivo llamado ' cat.jpg') y se escribe el "
+"encabezado del comentario en ese archivo. Posteriormente, se ignora el "
+"contenido del archivo original, lo que puede resultar útil en algunos casos."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -1887,13 +1891,14 @@ msgid ""
 "License the file via [`REUSE.toml`](#bulk-license), a REUSE configuration "
 "file."
 msgstr ""
+"Licencia el archivo a través de ['REUSE.toml`](#bulk-license), un archivo de "
+"configuración de REUSE."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Can I bulk-license whole directories? {#bulk-license}"
+#, no-wrap
 msgid "... bulk-license whole directories? {#bulk-license}"
-msgstr "¿Puedo obtener licencias masivas de directorios completos? {#bulk-license}"
+msgstr "¿... licencias masivas de directorios completos? {#bulk-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1902,6 +1907,9 @@ msgid ""
 "are some scenarios where it is undesirable or impossible to add a REUSE "
 "header to every single file in a directory. For example:"
 msgstr ""
+"Siempre que sea posible, debe agregar encabezados de REUSE a cada archivo. "
+"Sin embargo, hay algunos escenarios en los que no es deseable o posible "
+"agregar un encabezado de REUSE a cada archivo en un directorio. Por ejemplo:"
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
