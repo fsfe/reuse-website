@@ -56,6 +56,10 @@ This is the change log for the REUSE Specification.
 
 ### Fixed
 
+- Clarified that snippet tags must be closed. This was technically already the
+  case with a certain reading of the SPDX specification, but it has now been
+  made explicit.
+
 ### Security
 
 ## 3.2 - 2024-07-03
