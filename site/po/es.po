@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-09 17:15+0000\n"
+"PO-Revision-Date: 2024-10-11 16:16+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -2103,7 +2103,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... copy a work published under a pseudonym or nickname? {#copy-pseudonym}"
-msgstr ""
+msgstr "... ¿copiar una obra publicada con seudónimo o apodo? {#copy-pseudonym}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2111,6 +2111,8 @@ msgid ""
 "You can list the pseudonym as the copyright holder. Some projects do not "
 "allow pseudonymous contributions."
 msgstr ""
+"Puede enumerar el seudónimo como titular de los derechos de autor. Algunos "
+"proyectos no permiten contribuciones seudónimas."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2138,6 +2140,11 @@ msgid ""
 "(#copyright-holder-author) for more information on the distinction.  When in "
 "doubt, contact the author for clarification."
 msgstr ""
+"Si no puede encontrar ningún aviso de derechos de autor, puede intentar "
+"agregarlo usted mismo adivinando al titular de los derechos de autor del "
+"autor. Ver [esta pregunta] (#copyright-holder-author) para obtener más "
+"información sobre la distinción.  En caso de duda, comuníquese con el autor "
+"para obtener una aclaración."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2146,6 +2153,10 @@ msgid ""
 "You can write [`NONE` or `NOASSERTION` as the copyright holder](https://spdx."
 "github.io/spdx-spec/v2.3/file-information/#88-copyright-text-field)."
 msgstr ""
+"Puede ser que el autor desee permanecer en el anonimato, lo cual es su "
+"derecho. Puede escribir [`NONE` o `NOASSERTION` como titular de los derechos "
+"de autor](https://spdx.github.io/spdx-spec/v2.3/file-information/#88"
+"-copyright-text-field)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2171,17 +2182,14 @@ msgstr "¿Cómo puedo excluir un archivo de las pruebas de conformidad de REUSE?
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If the file is a build artifact and you use Git, simply make sure that "
-#| "the file is covered by your `.gitignore` file."
 msgid ""
 "If the file is a build artifact and you use Git, simply make sure that the "
 "file is covered by your `.gitignore` file. The same goes for other VCS "
 "ignore mechanisms."
 msgstr ""
 "Si el archivo es un artefacto hecho y usas Git, simplemente asegúrate de que "
-"el archivo está cubierto por tu archivo `.gitignore`."
+"el archivo está cubierto por tu archivo `.gitignore`. Lo mismo ocurre con "
+"otros VC que ignoran los mecanismos."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2197,12 +2205,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If you really want to exclude a file, consider using the [CC0](https://"
-#| "creativecommons.org/publicdomain/zero/1.0/) license for this file. By "
-#| "doing this, you put the file in the public domain, or your country's "
-#| "equivalent."
 msgid ""
 "If you really want to exclude a file, consider using the [CC0-1.0](https://"
 "creativecommons.org/publicdomain/zero/1.0/) license for this file. By doing "
@@ -2210,9 +2212,10 @@ msgid ""
 "(https://fsfe.org/freesoftware/legal/faq.html#public-domain)."
 msgstr ""
 "Si realmente quiere excluir un archivo, mire la posibilidad de utilizar la "
-"licencia [CC0](https://creativecommons.org/publicdomain/zero/1.0/) para este "
-"archivo. Así, el archivo pasa a ser de dominio público, o el equivalente de "
-"su país."
+"licencia [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) para "
+"este archivo. Así, el archivo pasa a ser de [dominio público, o el "
+"equivalente de su país](https://fsfe.org/freesoftware/legal/faq.html#public-"
+"domain)."
 
 #. type: Plain text
 #: site/content/en/faq.md
