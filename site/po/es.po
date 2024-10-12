@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-11 16:16+0000\n"
+"PO-Revision-Date: 2024-10-13 17:15+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -2291,6 +2291,14 @@ msgid ""
 "echo \"SPDX-License-Identifier: MIT\" >> file.txt\n"
 "# REUSE-IgnoreEnd\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2021 Jane Doe\n"
+"#\n"
+"# SPDX-License-Identifier: GPL-3.0-o-posterior\n"
+"\n"
+"# REUSE-IgnoreStart\n"
+"echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
+"echo \"SPDX-License-Identifier: MIT\" >> file.txt\n"
+"# REUSE-IgnoreEnd\n"
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2308,45 +2316,39 @@ msgid ""
 "Because we [do not allow excluding files](#exclude-file), some information "
 "must be recorded for such files."
 msgstr ""
+"Es posible que algunos archivos, como los generados por código o los "
+"archivos de configuración que no contienen expresión creativa, no tengan "
+"derechos de autor. Sin embargo, REUSE exige información de licencias para "
+"cada archivo, por lo que aquí hay un conflicto. Debido a que [no permitimos "
+"excluir archivos](#exclude-file), se debe registrar cierta información para "
+"dichos archivos."
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "You have two options:"
-msgstr ""
+msgstr "Tienes dos opciones:"
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "There are two things that you can do with such a file to make sure that "
-#| "its copyright and licensing is recorded. The first option is to simply "
-#| "use your regular copyright and license header for this file. There is "
-#| "nothing that stops you from claiming copyright over your own works. "
-#| "However, a court would still likely find such files uncopyrightable."
 msgid ""
 "Simply use your regular copyright and license for this file. There is "
 "nothing that stops you from \"claiming\" copyright over your own works, even "
 "if a court might hypothetically find such files uncopyrightable."
 msgstr ""
-"Hay dos cosas que puedes hacer con un archivo para asegurarte de que sus "
-"derechos de autor y licencias están registrados. La primera opción es "
-"simplemente usar tu cabecera regular de copyright y licencia para este "
-"archivo. No hay nada que te impida reclamar derechos de autor sobre tus "
+"Simplemente use la cabecera regular de copyright y licencia para este "
+"archivo. No hay nada que impida \"reclamar\" derechos de autor sobre tus "
 "propios trabajos. Sin embargo, es probable que un tribunal encuentre esos "
 "archivos sin derechos."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "The alternative is to waive your copyright by using the [CC0-1.0](https://"
-#| "creativecommons.org/publicdomain/zero/1.0/) license."
 msgid ""
 "Waive your copyright using the [CC0-1.0](https://creativecommons.org/"
 "publicdomain/zero/1.0/) license or another similar public domain dedication."
 msgstr ""
 "La alternativa es renunciar a tus derechos de autor utilizando la licencia "
-"[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/)."
+"[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) u otra "
+"dedicación de dominio público similar."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2354,6 +2356,9 @@ msgid ""
 "You may choose to use a copyright tag such as `SPDX-FileCopyrightText: NONE` "
 "to assert that there is no copyright holder."
 msgstr ""
+"Puede optar por utilizar una etiqueta de derechos de autor como `SPDX-"
+"FileCopyrightText: NONE` para afirmar que no hay un titular de derechos de "
+"autor."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2364,14 +2369,15 @@ msgid ""
 "may disagree and believe that the file in question falls under copyright, "
 "effectively disallowing them from using it if there is no license."
 msgstr ""
+"La razón por la que estos archivos _deben_ tener licencia es porque las "
+"mentes razonables pueden diferir sobre el umbral de originalidad. Puede "
+"considerar un archivo tan insignificante que no merece información sobre "
+"licencias, pero downstream puede estar en desacuerdo y creer que el archivo "
+"en cuestión está sujeto a derechos de autor, lo que efectivamente les impide "
+"usarlo si no hay licencia."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "It is important to note that you can only do this for your own works. If "
-#| "the file was authored by someone else, you must declare their copyright "
-#| "and license in the header."
 msgid ""
 "It is important to note that you can only apply licenses to your own works. "
 "If the file was authored by someone else, you should declare their copyright "
@@ -2380,13 +2386,16 @@ msgid ""
 msgstr ""
 "Es importante señalar que solo puedes hacer esto con tus propios trabajos. "
 "Si el autor del archivo fue otra persona, debe declarar su copyright y "
-"licencia en el encabezado."
+"licencia en el encabezado. Si no existe tal información, debe comunicarse "
+"con el autor."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... separately declare the copyright and license of a part of a file? {#partial-license}"
 msgstr ""
+"... ¿declarar por separado los derechos de autor y la licencia de una parte "
+"de un archivo? {#partial-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2514,14 +2523,18 @@ msgid ""
 "In this example, the header in files covered by this custom license may look "
 "like the following:"
 msgstr ""
+"En este ejemplo, el encabezado de los archivos cubiertos por esta licencia "
+"personalizada puede tener el siguiente aspecto:"
 
 #. type: Fenced code block
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# SPDX-License-Identifier: LicenseRef-MyLicense\n"
 "# SPDX-FileCopyrightText: 2017 Jane Doe <jane@example.com>\n"
 msgstr ""
+"# SPDX-License-Identifier: LicenseRef-MyLicense\n"
+"# SPDX-FileCopyrightText: 2017 Jane Doe <jane@example.com>\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2529,6 +2542,9 @@ msgid ""
 "This may also be necessary when dealing with multiple different variants of "
 "[customisable license text files like MIT or BSD](#license-templates)."
 msgstr ""
+"Esto puede ser necesario también cuando se trata de múltiples variantes "
+"diferentes de [archivos de texto de licencia personalizables como MIT o BSD"
+"](#license-templates)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2536,13 +2552,14 @@ msgid ""
 "Please note: It is strongly advised to [use established and approved "
 "licenses](#which-license)."
 msgstr ""
+"Tenga en cuenta: Se recomienda encarecidamente [utilizar licencias "
+"establecidas y aprobadas](#which-license)."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I use a custom exception? {#custom-exception}"
+#, no-wrap
 msgid "... use a custom license exception? {#custom-exception}"
-msgstr "¿Cómo utilizo una excepción personalizada? {#custom-exception}"
+msgstr "... ¿Cómo utilizo una excepción personalizada? {#custom-exception}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2555,10 +2572,10 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I properly declare multi-licensing? {#multi-licensing}"
+#, no-wrap
 msgid "... properly declare multi-licensing? {#multi-licensing}"
-msgstr "¿Cómo declaro correctamente las licencias múltiples? {#multi-licensing}"
+msgstr ""
+"... ¿Cómo declaro correctamente las licencias múltiples? {#multi-licensing}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2595,12 +2612,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If all the code within the file is licensed under either one license or "
-#| "another (for instance, all code is under GPL-2.0-only, but one function "
-#| "is under MIT), use separate tags `SPDX-License-Identifier: GPL-2.0-only` "
-#| "and `SPDX-License-Identifier: MIT`."
 msgid ""
 "If all the code within the file is licensed under either one license or "
 "another (for instance, all code is under GPL-2.0-only, but one function is "
@@ -2608,14 +2619,13 @@ msgid ""
 msgstr ""
 "Si todo el código dentro del archivo tiene una u otra licencia (por ejemplo, "
 "todo el código está bajo GPL-2.0 solamente, pero una función está bajo MIT), "
-"use etiquetas separadas `SPDX-License-Identifier: GPL-2.0 -solamente` y "
-"`SPDX-License-Identifier: MIT`."
+"use [snippets](#partial-license).."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<!-- TODO: bump SPDX spec -->\n"
-msgstr ""
+msgstr "<!-- TODO: bump SPDX spec -->\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
