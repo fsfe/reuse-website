@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-13 17:15+0000\n"
+"PO-Revision-Date: 2024-10-15 16:16+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -2691,6 +2691,11 @@ msgid ""
 "folder. You then embed the copyright notices of the upstream project into "
 "the corresponding source code files you reused, as usual."
 msgstr ""
+"La solución más pragmática es colocar el texto de la licencia sin modificar ("
+"es decir, la plantilla de texto de la licencia sin avisos de derechos de "
+"autor) en la carpeta ' LICENCIAS/`. A continuación, incrusta los avisos de "
+"derechos de autor del proyecto original en los archivos de código fuente "
+"correspondientes que reutilizó, como de costumbre."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -2701,6 +2706,11 @@ msgid ""
 "parties under these licenses, you may end up with a lot of these custom "
 "licenses."
 msgstr ""
+"La solución más exhaustiva y laboriosa es tratar cualquiera de estos textos "
+"de licencia con avisos de derechos de autor modificados como una [licencia "
+"personalizada usando LicenseRef] (#custom-license). Sin embargo, si "
+"reutiliza muchos códigos de terceros bajo estas licencias, puede terminar "
+"con muchas de estas licencias personalizadas."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2739,14 +2749,15 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Why REUSE"
-msgstr ""
+msgstr "Por qué REUSE"
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "<!-- ## Do I really need to include the license and copyright headers in all files? Why should I care? {#why-care}\n"
+#, no-wrap
 msgid "Do I really need to include the license and copyright headers in all files? Why should I care? {#why-care}"
-msgstr "<!-- ## ¿Realmente necesito incluir las cabeceras de licencia y copyright en todos los archivos? ¿Por qué debería preocuparme? {#why-care}\n"
+msgstr ""
+"¿Realmente necesito incluir las cabeceras de licencia y copyright en todos "
+"los archivos? ¿Por qué debería preocuparme? {#why-care}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2758,6 +2769,12 @@ msgid ""
 "are opined that it should be as close to the data as possible---as a header "
 "in each file."
 msgstr ""
+"Los grandes proyectos con derechos de autor y licencias complejas son los "
+"que más se benefician de la REUSE al ordenar el caos y eliminar la "
+"ambigüedad de las licencias poco claras.  Poner un encabezado en cada "
+"archivo es un mal necesario para obtener ese orden y claridad. Estos "
+"metadatos deben estar en algún lugar, y creemos que deben estar lo más cerca "
+"posible de los mismos, como un encabezado en cada archivo."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2769,6 +2786,13 @@ msgid ""
 "else people won't be able to use your software, and REUSE is a simple "
 "component in helping you with this."
 msgstr ""
+"Pero incluso los proyectos más pequeños o los proyectos con licencias "
+"simples se benefician de REUSE.  Para bien o para mal, la concesión de "
+"licencias es una piedra angular del movimiento del Software Libre.  Es lo "
+"que permite compartir, y en el caso del copyleft, nos permite mantener el "
+"software Libre. Obtener las licencias correctas es importante, de lo "
+"contrario, las personas no podrán usar su software, y REUSE es un componente "
+"simple para ayudar con esto."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2779,6 +2803,12 @@ msgid ""
 "license text. By implementing REUSE early, it is a lot easier to discern "
 "your code from third-party code and correctly keep track of these things."
 msgstr ""
+"Además, incluso si su proyecto es simple _ahora_, es posible que no siempre "
+"sea así. Si copia algún código de otro proyecto que tiene una licencia "
+"diferente, a menudo está obligado a atribuir correctamente y/o proporcionar "
+"el texto de la licencia que lo acompaña. Al implementar REUSE pronto, es "
+"mucho más fácil discernir su código del código de terceros y realizar un "
+"seguimiento correcto de estas cosas."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2790,12 +2820,21 @@ msgid ""
 "reuse that code. REUSE helps you help other developers in reusing your code, "
 "which is one of the great boons of Free Software."
 msgstr ""
+"Por último, implementar REUSE es un pequeño servicio para otros. Como "
+"ingeniero de software, puede resultar frustrante cuando encuentra un código "
+"diseñado específicamente para el problema que está tratando de resolver, "
+"pero no puede averiguar la licencia de ese código, lo que imposibilita "
+"efectivamente, bueno, reutilizar ese código. REUSE sirve para ayudar a otros "
+"desarrolladores a reutilizar tu código, que es una de las grandes ventajas "
+"del Software Libre."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "I'm used to doing things differently; can't I just keep doing what I have always been doing? {#tradition}"
 msgstr ""
+"Estoy acostumbrado a hacer las cosas de manera diferente; ¿no puedo seguir "
+"haciendo lo que siempre he hecho?{#tradition}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2882,10 +2921,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Why can't I just use version control to record copyright? {#vcs-copyright}"
+#, no-wrap
 msgid "Why doesn't REUSE use version control to record copyright? {#vcs-copyright}"
-msgstr "¿Por qué no puedo simplemente usar el control de versiones para registrar los derechos de autor? {#vcs-copyright}"
+msgstr ""
+"¿Por qué REUSE no usa el control de versiones para registrar los derechos de "
+"autor?{#vcs-copyright}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2920,28 +2960,23 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "A further issue with version control is that the `blame` command that is "
-#| "typically (mis)used to find authorship line-by-line shows only the author "
-#| "of the last commit in that line, even if it was just something as trivial "
-#| "as fixing a typo."
 msgid ""
 "A further issue with version control is that the `blame` command that is "
 "typically (mis)used to find authorship line-by-line shows only the author of "
 "the last commit in that line, even if it was just something as trivial as "
 "fixing a typo or moving a block of code to a different location."
 msgstr ""
-"Otro problema con el control de versiones es que el comando `blame` que "
-"normalmente se (mal)usa para encontrar la autoría línea por línea muestra "
-"solo el autor del último comentario en esa línea, incluso si se trata de "
-"algo tan trivial como corregir un error."
+"Otro problema con el control de versiones es que el comando 'blame' que "
+"normalmente se usa (incorrectamente)para encontrar la autoría línea por "
+"línea muestra solo al autor de la última confirmación en esa línea, incluso "
+"si fuera algo tan trivial como corregir un error tipográfico o mover un "
+"bloque de código a una ubicación diferente."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "What happened to `.reuse/dep5`? {#dep5-history}"
-msgstr ""
+msgstr "Qué pasó con `.reuse/dep5`? {#dep5-history}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2951,6 +2986,10 @@ msgid ""
 "almost-verbatim copy of [DEP5/`debian/copyright`](https://www.debian.org/doc/"
 "packaging-manuals/copyright-format/1.0/)."
 msgstr ""
+"REUSE actualmente usa [`REUSE.toml` para archivos de licencia masiva](#bulk-"
+"license). Pero antes de la versión 3.2 de la especificación, REUSE usaba `."
+"reuse/dep5`, una copia casi literal de [DEP5/`debian/copyright`](https://www."
+"debian.org/doc/packaging-manuals/copyright-format/1.0/)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2960,12 +2999,16 @@ msgid ""
 "automatically convert a `.reuse/dep5` file to a semantically equivalent "
 "`REUSE.toml` file."
 msgstr ""
+"En la versión 3.2, `.reuse/dep5` está obsoleta pero aún es compatible, "
+"aunque se excluyen mutuamente con `REUSE.toml`. Puedes usar `reuse convert-"
+"dep5` para convertir automáticamente un archivo `.reuse/dep5` a uno "
+"semánticamente equivalente `REUSE.toml`."
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid ""
 "`.reuse/dep5` was dropped in favour of `REUSE.toml` for various reasons:"
-msgstr ""
+msgstr "`.reuse/dep5`se descartó a favor de ' REUSE.toml ' por varias razones:"
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2974,6 +3017,9 @@ msgid ""
 "file to holistically declare the licensing of a package; REUSE uses it to "
 "fill the licensing gaps."
 msgstr ""
+"`debian/copyright` nunca fue una combinación intencional para REUSE. Debian "
+"usa este archivo para declarar integralmente la licencia de un paquete; "
+"REUSE lo usa para llenar los vacíos de licencias."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2984,6 +3030,11 @@ msgid ""
 "aggregated. Adding a new key to explicitly declare precedence would have "
 "been difficult, because..."
 msgstr ""
+"`.reuse/dep5` era ambiguo sobre la información de licencia de un archivo si "
+"su información se declaraba tanto en el propio archivo como en `.reuse/dep5`"
+". ¿Qué información se aplica? En la versión 3.2, esta información se agrega "
+"explícitamente. Agregar una nueva clave para declarar explícitamente la "
+"precedencia hubiera sido difícil, porque..."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2993,6 +3044,11 @@ msgid ""
 "is custom and inflexible. One of REUSE's core aims is to be machine-"
 "readable, and this custom format was not conducive to that end."
 msgstr ""
+"`.reuse/dep5`es difícil de analizar. Hay un módulo de Python en [python-"
+"debian] (https://salsa.debian.org/python-debian-team/python-debian), pero el "
+"formato es personalizado e inflexible. Uno de los objetivos principales de "
+"REUSE es ser legible por máquinas, y este formato personalizado no se adapta "
+"a dicho fin."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
