@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-15 16:16+0000\n"
+"PO-Revision-Date: 2024-10-17 11:37+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -3254,6 +3254,13 @@ msgid ""
 "data](https://github.com/spdx/license-list-data/tree/master/text)  "
 "repository."
 msgstr ""
+"Cree un directorio 'LICENSES/`' en la raíz de su proyecto que contendrá "
+"todas las licencias que usa en el proyecto. En su caso, esto significa crear "
+"un archivo ' GPL-3.0-o later.txt ' en este directorio, que contendrá el "
+"texto completo de la licencia. El nombre del archivo es un SPDX License "
+"Identifier. Puede encontrar el texto de la licencia de muchas licencias de "
+"software Libre en el repositorio  [license-list-data](https://github.com/"
+"spdx/license-list-data/tree/master/text)."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3413,6 +3420,8 @@ msgid ""
 "licensing information to each file, your project tree will now look like "
 "this:"
 msgstr ""
+"Habiendo agregado una licencia a su repositorio e información de derechos de "
+"autor y licencias a cada archivo, su árbol de proyectos ahora se verá así:"
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
@@ -3465,23 +3474,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "$ cd path/to/project/\n"
-#| "$ reuse lint\n"
-#| "# SUMMARY\n"
-#| "\n"
-#| "* Bad licenses:\n"
-#| "* Deprecated licenses:\n"
-#| "* Licenses without file extension:\n"
-#| "* Missing licenses:\n"
-#| "* Unused licenses:\n"
-#| "* Used licenses: CC-BY-4.0, CC0-1.0, GPL-3.0-or-later\n"
-#| "* Read errors: 0\n"
-#| "* Files with copyright information: 6 / 6\n"
-#| "* Files with license information: 6 / 6\n"
-#| "\n"
-#| "Congratulations! Your project is compliant with version 3.0 of the REUSE Specification :-)\n"
+#, no-wrap
 msgid ""
 "$ reuse lint\n"
 "\n"
@@ -3499,30 +3492,25 @@ msgid ""
 "\n"
 "Congratulations! Your project is compliant with version 3.2 of the REUSE Specification :-)\n"
 msgstr ""
-"$ cd path/to/project/\n"
 "$ reuse lint\n"
+"\n"
 "# SUMMARY\n"
 "\n"
-"* Malas licencias:\n"
-"* Licencias obsoletas:\n"
-"* Licencias sin extensión de archivo:\n"
-"* Falta de licencias:\n"
-"* Licencias no utilizadas:\n"
-"* Licencias usadas: CC-BY-4.0, CC0-1.0, GPL-3.0-o-posterior\n"
+"* Malas licencias:0\n"
+"* Licencias obsoletas:0\n"
+"* Licencias sin extensión de archivo:0\n"
+"* Falta de licencias:0\n"
+"* Licencias no utilizadas:0\n"
+"* Licencias usadas: GPL-3.0-o-posterior\n"
 "* Leer errores: 0\n"
-"* Archivos con información sobre derechos de autor: 6 / 6\n"
-"* Archivos con información sobre licencias: 6 / 6\n"
+"* Archivos con información sobre derechos de autor: 3 / 3\n"
+"* Archivos con información sobre licencias: 3 / 3\n"
 "\n"
-"¡Enhorabuena! Su proyecto cumple con la versión 3.0 de la especificación REUSE :-)\n"
+"¡Enhorabuena! Su proyecto cumple con la versión 3.2 de la especificación "
+"REUSE :-)\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "As you can see in the last line, the tool confirms that your project is "
-#| "compliant with REUSE now! To learn what the different sections mean, "
-#| "please have a look at the [documentation of the lint command](https://"
-#| "reuse.readthedocs.io/en/stable/usage.html#lint)."
 msgid ""
 "As you can see in the last line, the tool confirms that your project is "
 "compliant with REUSE now! To learn what the different criteria mean, please "
@@ -3530,16 +3518,15 @@ msgid ""
 "readthedocs.io/en/stable/man/reuse-lint.html)."
 msgstr ""
 "Como puede ver en la última línea, la herramienta confirma que su proyecto "
-"ya cumple con REUSE. Para saber qué significan las diferentes secciones, por "
+"ya cumple con REUSE. Para saber qué significan los diferentes criterios, por "
 "favor, eche un vistazo a la [documentación del comando lint](https://reuse."
-"readthedocs.io/en/stable/usage.html#lint)."
+"readthedocs.io/en/stable/man/reuse-lint.html)."
 
 #. type: Title ##
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid "Change licensing information"
+#, no-wrap
 msgid "More information"
-msgstr "Cambiar información de licencia"
+msgstr "Más información"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3553,11 +3540,22 @@ msgid ""
 "practical use-cases, see the ['How do I ...' section in the Frequently Asked\n"
 "Questions]({{< relref \"faq.md#howto\" >}}).\n"
 msgstr ""
+"Este tutorial fue una introducción rápida a REUSE. No todos los casos de uso "
+"se\n"
+"tocan aquí, especialmente [cómo anotar archivos no comentables] ({{<relref\n"
+"\"faq. md#uncommentable-file\">}}), [cómo anotar archivos de forma masiva] "
+"({{<relref\n"
+"\"faq. md # bulk-license\">}}), y [cómo usar una licencia que no está en la "
+"lista SPDX] ({{<\n"
+"relref \"faq.md#custom-license\">}}). Para aprender sobre estos y más\n"
+"casos de uso prácticos, ver el ['¿Cómo puedo hacerlo?..'sección en las "
+"Preguntas frecuentes\n"
+"Preguntas] ({{<rel ref \"faq. md # howto\" >}}).\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
 msgid "Other sources for more information:"
-msgstr ""
+msgstr "Otras fuentes para más información:"
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3575,16 +3573,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "- The full [REUSE specification](https://reuse.software/spec) formally "
-#| "describes REUSE and the methods to become compliant."
 msgid ""
 "The [REUSE Specification](https://reuse.software/spec) may aid you in "
 "gaining a full understanding of REUSE."
 msgstr ""
-"- [REUSE specification](https://reuse.software/spec) describe formalmente "
-"REUSE y los métodos para llegar."
+"- [REUSE Specification](https://reuse.software/spec) puede ayudarlo a "
+"comprender completamente REUSE."
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3617,16 +3611,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "opening an issue on [reuse-docs](https://github.com/fsfe/reuse-docs) for "
-#| "questions on the tutorial, FAQ or specification;"
 msgid ""
 "opening an issue on [reuse-website](https://github.com/fsfe/reuse-website) "
 "for questions on the tutorial, FAQ or specification;"
 msgstr ""
-"abriendo una consulta en [reuse-docs](https://github.com/fsfe/reuse-docs) "
-"para preguntas en el tutorial, FAQ o especificaciones;"
+"abriendo una consulta en [reuse-website](https://github.com/fsfe/reuse-"
+"website) para preguntas en el tutorial, FAQ o especificaciones;"
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3658,16 +3648,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-1.2.md
-#, fuzzy, no-wrap
-#| msgid "REUSE Specification – Version 3.0"
+#, no-wrap
 msgid "REUSE Practices – Version 1.2"
-msgstr "Especificación REUSE – Versión 3.0"
+msgstr "Prácticas REUSE-Versión 1.2"
 
 #. type: Title ##
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 #, no-wrap
 msgid "1. Provide the exact text of each license used"
-msgstr ""
+msgstr "1. Proporcione el texto exacto de cada licencia utilizada"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
