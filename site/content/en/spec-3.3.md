@@ -177,8 +177,9 @@ An example of a comment header:
 #### In-line Snippet comments
 
 Sometimes Licensing Information only applies to a certain Snippet instead of the
-whole Commentable File. For these cases, SPDX snippet tags MUST be used for that
-Snippet (as defined in [SPDX Specification, Annex
+whole Commentable File. You SHOULD use SPDX snippets to license these Snippets.
+When implementing SPDX snippets, you MUST use SPDX snippet tags (as defined in
+[SPDX Specification, Annex
 H](https://spdx.github.io/spdx-spec/v2.3/file-tags/#h3-snippet-tags-format)).
 This means that Copyright Notices inside of Snippets MUST be prefixed with
 `SPDX-SnippetCopyrightText`.
