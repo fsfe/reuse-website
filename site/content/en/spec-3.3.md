@@ -184,7 +184,7 @@ H](https://spdx.github.io/spdx-spec/v2.3/file-tags/#h3-snippet-tags-format)).
 This means that Copyright Notices inside of Snippets MUST be prefixed with
 `SPDX-SnippetCopyrightText`.
 
-Each Snippet that is opened MUST be closed with `SPDX-SnippetEnd`.
+Each SPDX snippet that is opened MUST be closed with `SPDX-SnippetEnd`.
 
 Like with comment headers, the SPDX snippet tags SHOULD be commented.
 
