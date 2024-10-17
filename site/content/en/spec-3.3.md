@@ -4,7 +4,7 @@
 
 # REUSE-IgnoreStart
 
-title: "REUSE Specification – Version 3.3 (UNRELEASED)"
+title: "REUSE Specification – Version 3.3"
 subtitle: "YYYY-MM-DD"
 ---
 

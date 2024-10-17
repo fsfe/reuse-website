@@ -43,7 +43,7 @@ refLinksErrorLevel = "warning"
     header_link_color="#777"
     header_link_hover_color="rgb(51, 51, 51)"
 
-    current_spec="spec-3.2"
+    current_spec="spec-3.3"
 
 [params.social]
   Github        = "search?q=topic%3Areuse+org%3Afsfe&type=Repositories"
