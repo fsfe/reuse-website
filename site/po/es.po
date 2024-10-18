@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-17 11:37+0000\n"
+"PO-Revision-Date: 2024-10-19 12:15+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -3740,10 +3740,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
-#, fuzzy, no-wrap
-#| msgid "Add copyright and license information to each file"
+#, no-wrap
 msgid "2. Include a copyright notice and license in each file"
-msgstr "Añada información de copyright y licencia a cada archivo"
+msgstr "2. Incluir un aviso de derechos de autor y una licencia en cada archivo"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3754,6 +3753,12 @@ msgid ""
 "consistent style to the header. It's important you do not remove information "
 "in existing headers, though."
 msgstr ""
+"Debe asegurarse de que todos los archivos de su proyecto tengan un "
+"encabezado de licencia y que todos los archivos de encabezados de licencia "
+"tengan el mismo formato. Incluso si su proyecto tiene un encabezado de "
+"licencia que se ve diferente de otros proyectos, es útil tener un estilo "
+"consistente en el encabezado. Sin embargo, es importante que no elimine la "
+"información de los encabezados existentes."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3763,6 +3768,10 @@ msgid ""
 "are separate from its origin. Each file should, therefore, have enough "
 "information in itself to convey copyright information."
 msgstr ""
+"Los archivos de código fuente a menudo se reutilizan en varios proyectos, se "
+"toman de su origen y se reutilizan, o terminan en repositorios donde están "
+"separados de su origen. Por lo tanto, cada archivo debe tener suficiente "
+"información en sí mismo para transmitir información de derechos de autor."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3771,6 +3780,9 @@ msgid ""
 "Identifier` following the SPDX standard, and a `License-Filename` tag "
 "following the REUSE practices."
 msgstr ""
+"El encabezado de su licencia debe contener avisos de derechos de autor, un "
+"`SPDX-License-Identifier` siguiendo el estándar SPDX y una etiqueta `License-"
+"Filename` siguiendo las prácticas de REUSE."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3779,6 +3791,10 @@ msgid ""
 "sorted by year. They should list the actual copyright holder, which may be "
 "an organisation rather than the author. For example:"
 msgstr ""
+"Los avisos de derechos de autor en el encabezado de una licencia deben tener "
+"un formato coherente y estar ordenados por año. Deben enumerar al titular "
+"real de los derechos de autor, que puede ser una organización en lugar del "
+"autor. Por ejemplo:"
 
 #. type: Fenced code block
 #: site/content/en/spec-1.2.md
@@ -3803,6 +3819,12 @@ msgid ""
 "referenced from the individual source file. The tag can be repeated if "
 "multiple license files are relevant."
 msgstr ""
+"La etiqueta `License-Filename` será una URL persistente o un nombre de "
+"archivo en el repositorio donde esté disponible el texto real de la "
+"licencia. Esto es más preciso que el identificador de licencia SPDX y "
+"garantiza que siempre se haga referencia al texto completo de la licencia "
+"desde el archivo fuente individual. La etiqueta se puede repetir si son "
+"relevantes varios archivos de licencia."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3810,6 +3832,8 @@ msgid ""
 "You should include information about your project's practices in the README "
 "or similar file."
 msgstr ""
+"Debe incluir información sobre las prácticas de su proyecto en el archivo "
+"LÉAME o similar."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3817,6 +3841,9 @@ msgid ""
 "If your project includes binaries or source code files in which comments can "
 "not be placed, you should provide them separately in one of two ways:"
 msgstr ""
+"Si su proyecto incluye archivos binarios o de código fuente en los que no se "
+"pueden colocar comentarios, debe proporcionarlos por separado de una de dos "
+"maneras:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3826,6 +3853,10 @@ msgid ""
 "which includes a copyright header according to the format you customarily "
 "use for headers."
 msgstr ""
+"Si tiene archivos con diferentes avisos de derechos de autor y licencias, "
+"debe incluir, para cada archivo llamado 'FILENAME' , el archivo de texto ' "
+"FILENAME.license ' que incluye un encabezado de derechos de autor de acuerdo "
+"con el formato que usa habitualmente para los encabezados."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3911,6 +3942,16 @@ msgid ""
 "  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  *Este archivo es parte del proyecto X. Tiene derechos de autor de los "
+"colaboradores\n"
+"  * registrados en el historial de control de versiones del archivo, "
+"disponible en\n"
+"  * su ubicación original http://git.example.com/X/filename.c\n"
+"  * \n"
+"  * SPDX-License-Identifier: BSD-2-Clause\n"
+"  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3925,6 +3966,18 @@ msgid ""
 "> * Make references to the license text and the SPDX identifier from each source code file.\n"
 "> * Include license and copyright information also for files which can not include a proper header, either in a separate .license file, or using the DEP-5/copyright specification.\n"
 msgstr ""
+"> ### Tenga en cuenta\n"
+"> \n"
+"> * Usar un estilo consistente en los encabezados a lo largo del proyecto.\n"
+"> * No eliminar los encabezados existentes, solo agregarlos.\n"
+"> * Considerar usar sistemas de control de versiones para mantener un "
+"registro de los titulares de derechos de autor.\n"
+"> * Mantener público el sistema de control de versiones si se usa.\n"
+"> * Hacer referencias al texto de la licencia y al identificador SPDX de "
+"cada archivo de código fuente.\n"
+"> * Incluir información de licencia y derechos de autor también para los "
+"archivos que no pueden incluir un encabezado adecuado, ya sea archivo "
+"separado .license, o utilizando la especificación DEP-5/copyright.\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3935,12 +3988,19 @@ msgid ""
 "archived freely and ensure project is archived by institutions dedicated to "
 "long-term preservation of software code, eg. Software Heritage."
 msgstr ""
+"[^3]: Establecer una gobernanza del proyecto comprometida con el acceso "
+"público, evaluar el material agregado al proyecto para protegerlo contra la "
+"vulnerabilidad al derribo, incluir solo material bajo una licencia libre y "
+"de código abierto para que pueda copiarse y archivarse libremente y "
+"garantizar que el proyecto sea archivado por instituciones dedicadas a la "
+"preservación a largo plazo del código de software, por ejemplo. Software "
+"Heritage."
 
 #. type: Title ##
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 #, no-wrap
 msgid "3. Provide an inventory for included software"
-msgstr ""
+msgstr "3. Proporcionar un inventario del software incluido"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3949,6 +4009,10 @@ msgid ""
 "copyright information, you may include a bill of material for your project, "
 "but you should only do so if this is generated automatically."
 msgstr ""
+"Aparte de los archivos de licencia incluidos en el proyecto y la información "
+"de derechos de autor a nivel de archivo, se puede incluir una lista de "
+"materiales para el proyecto, pero solo se debe hacer si se genera "
+"automáticamente."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3959,6 +4023,11 @@ msgid ""
 "best not to have a bill of material, but to rely only on the information "
 "coupled with the source code files."
 msgstr ""
+"Una lista de materiales puede ser muy complicada y prolongada, lo que "
+"dificulta su mantenimiento. Si no se genera de forma automática, es muy "
+"probable que alguien se olvide de actualizarlo al realizar cambios. En estos "
+"casos, es mejor no tener una lista de materiales, sino confiar solo en la "
+"información junto con los archivos del código fuente."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3970,6 +4039,12 @@ msgid ""
 "on files which include a standard header, or which includes the header in a "
 "separate license file."
 msgstr ""
+"Si se tiene una forma de crear automáticamente una lista de materiales, y se "
+"elige hacerlo, se debe generar automáticamente a partir de la información "
+"más confiable que se tenga sobre cada archivo del proyecto.  Esto incluye "
+"información de derechos de autor mantenida en sistemas de control de "
+"versiones y licencias en archivos que incluyen un encabezado estándar, o que "
+"incluyen el encabezado en un archivo de licencia separado."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3979,6 +4054,10 @@ msgid ""
 "bill of material, which license is relevant for the output files depending "
 "on the included source code."
 msgstr ""
+"También se puede optar por incluir en la lista de materiales los archivos de "
+"salida generados al compilar el proyecto, de modo que se pueda indicar a "
+"través de la lista de materiales qué licencia es relevante para los archivos "
+"de salida en función del código fuente incluido."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3987,6 +4066,9 @@ msgid ""
 "included in a file in the top level directory of your repository called "
 "`LICENSE.spdx`."
 msgstr ""
+"La lista de materiales debe cumplir con la especificación SPDX e incluirse "
+"en un archivo en el directorio de nivel superior del repositorio llamado "
+"`LICENSE.spdx`."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
