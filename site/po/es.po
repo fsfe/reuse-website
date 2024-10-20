@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-19 12:15+0000\n"
+"PO-Revision-Date: 2024-10-21 01:16+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -4166,6 +4166,9 @@ msgid ""
 "This is an example of an MIT license file, which conveys that all references "
 "to the SPDX identifier `MIT` should point to this license file."
 msgstr ""
+"Este es un ejemplo de un archivo de licencia MIT, que indica que todas las "
+"referencias al identificador SPDX ' MIT ' deben apuntar a este archivo de "
+"licencia."
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -4182,6 +4185,18 @@ msgid ""
 "copy of this software and associated documentation files (the \"Software\"),\n"
 " etc...\n"
 msgstr ""
+"Valid-License-Identifier: MIT\n"
+"License-Text:\n"
+"\n"
+"MIT License\n"
+"\n"
+"Copyright (c) <year> <copyright holders>\n"
+"\n"
+"Por la presente se otorga permiso, sin cargo, a cualquier persona que "
+"obtenga un\n"
+"copia de este software y archivos de documentación asociados (el \"Software\""
+"),\n"
+" etc...\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4190,6 +4205,9 @@ msgid ""
 "be noted that the license text itself may not necessarily be released under "
 "that license, nor does the tag claim that."
 msgstr ""
+"Si bien el identificador debe ser una licencia de la lista de licencias "
+"SPDX, debe tenerse en cuenta que el texto de la licencia en sí mismo no "
+"necesariamente puede publicarse bajo esa licencia, ni la etiqueta lo afirma."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4199,14 +4217,20 @@ msgid ""
 "`GPL-2.0+`, but please note that it is not mandatory to list `GPL-2.0+` "
 "separately."
 msgstr ""
+"El identificador de licencia puede repetirse si se usa el mismo archivo de "
+"licencia con varios identificadores de licencia.  El siguiente ejemplo es "
+"para ' GPL-2.0` y `GPL-2.0+`, pero tenga en cuenta que no es obligatorio "
+"enumerar `GPL-2.0+` por separado."
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Valid-License-Identifier: GPL-2.0\n"
 "Valid-License-Identifier: GPL-2.0+\n"
 msgstr ""
+"Valid-License-Identifier: GPL-2.0\n"
+"Valid-License-Identifier: GPL-2.0+\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4216,12 +4240,17 @@ msgid ""
 "modified version of a license included in that list, you should create a custom\n"
 "identifier for it in the form `LicenseRef-<unique_code>`.\n"
 msgstr ""
+"Si la licencia no está incluida en la lista de licencias SPDX, o si la "
+"licencia es una\n"
+"versión modificada de una licencia incluida en esa lista, debe crear un "
+"identificador\n"
+"personalizado para ella en la forma 'LicenseRef- <unique_code>`.\n"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Valid-License-Identifier: LicenseRef-MyLicense\n"
-msgstr ""
+msgstr "Valid-License-Identifier: LicenseRef-MyLicense\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4232,6 +4261,11 @@ msgid ""
 "same header style or the tags `SPDX-Exception-Identifier` and `Exception-"
 "Text` instead. This is an example of a valid exception:"
 msgstr ""
+"En el improbable caso de que su código fuente incluya excepciones, como la ["
+"excepción Classpath 2.0](https://spdx.org/licenses/Classpath-exception-2.0."
+"html), puede incluirlos en el mismo lugar que sus licencias, utilizando el "
+"mismo estilo de encabezado o las etiquetas 'SPDX-Exception-Identifier' y "
+"'Exception-Text' en su lugar` Este es un ejemplo de una excepción válida:"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -4244,6 +4278,14 @@ msgid ""
 " making a combined work based on this library. Thus, the terms and\n"
 " conditions of the GNU General Public License cover the whole combination. \n"
 msgstr ""
+"SPDX-Exception-Identifier: Classpath-exception-2.0\n"
+"Exception-Text:\n"
+"\n"
+"Vincular esta biblioteca estática o dinámicamente con otros módulos es\n"
+"hacer un trabajo combinado basado en esta biblioteca. Por lo tanto, los "
+"términos y\n"
+"las condiciones de la Licencia Pública General GNU cubren toda la "
+"combinación \n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4255,6 +4297,15 @@ msgid ""
 ">   the filename or by inserting a header, such that you can refer to the\n"
 ">   license from the source code files.\n"
 msgstr ""
+"> * No cambie ningún texto de licencia, use la forma literal del texto de la "
+"licencia.\n"
+"> * No elimine ningún texto de licencia, incluya los textos de licencia de "
+"todo el software.\n"
+"> * Incluya el identificador SPDX en cada archivo de licencia, ya sea "
+"incluyéndolo en\n"
+"> el nombre del archivo o insertando un encabezado, de modo que pueda "
+"consultar la\n"
+"> licencia de los archivos de código fuente.\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
