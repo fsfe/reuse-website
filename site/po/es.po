@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-21 01:16+0000\n"
+"PO-Revision-Date: 2024-10-22 15:16+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-rc\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -4387,6 +4387,10 @@ msgid ""
 "regular comment header with all the necessary information to convey the "
 "license information about the file called `FILENAME`."
 msgstr ""
+"Puede incluir un archivo de texto llamado `FILENAME.license` en el que "
+"almacena su encabezado de comentario habitual con toda la información "
+"necesaria para transmitir la información de la licencia sobre el archivo "
+"llamado `FILENAME`."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4396,6 +4400,10 @@ msgid ""
 "doc/packaging-manuals/copyright-format/1.0/)  file format, and place a "
 "single copyright notice documenting those files."
 msgstr ""
+"Si tiene muchos de estos archivos, pero cada uno tiene el mismo aviso de "
+"derechos de autor y licencia, puede usar el [DEP-5/copyright](https://www."
+"debian.org/doc/packaging-manuals/copyright-format/1.0/) formatee el archivo "
+"y coloque un solo aviso de derechos de autor que documente esos archivos."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4404,6 +4412,9 @@ msgid ""
 "in SPDX format (see practice 3), you may use this and do not need to "
 "separately include a `.license` file or DEP-5/copyright file."
 msgstr ""
+"Si tiene una forma de generar automática un inventario de archivos incluidos "
+"en formato SPDX (ver la práctica 3), puede usarlo y no necesita incluir por "
+"separado un archivo `.license` o un archivo DEP-5/copyright."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4412,6 +4423,9 @@ msgid ""
 "build artefact, you are encouraged but not obliged to include license "
 "information for these too."
 msgstr ""
+"Si su proyecto incluye documentación que no está incluida en el artefacto de "
+"compilación final, se recomienda, pero no es obligatorio, incluir "
+"información de licencia también para estos."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4423,6 +4437,13 @@ msgid ""
 "Corp, reference to `LicenseRef-BSD-2-Clause-Evil-Corp`, and include both "
 "those licenses separately in `LICENSES` (see practice 1)."
 msgstr ""
+"Si el código fuente está licenciado bajo una licencia como `BSD-2-Clause', "
+"donde los textos de la licencia pueden diferir para cada titular de derechos "
+"de autor diferente, debe hacer referencia a la licencia específica en cada "
+"ocasión. Por lo tanto, para los archivos escritos por Alice, haga referencia "
+"a `LicenseRef-BSD-2-Clause-Alice`, y para los archivos escritos por Evil "
+"Corp, haga referencia a 'LicenseRef-BSD-2-Clause-Evil-Corp`, e incluya ambas "
+"licencias por separado en 'LICESES' (ver la práctica 1)."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4430,6 +4451,8 @@ msgid ""
 "make sure the version control system is publicly accessible and take "
 "steps[^1] to ensure it will remain so,"
 msgstr ""
+"asegúrese de que el sistema de control de versiones sea de acceso público y "
+"tome medidas[^1] para asegurarse de que siga siéndolo.,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4440,6 +4463,12 @@ msgid ""
 "included, for example in the form of a bill of materials (see later), an "
 "automatically generated log file or similar,"
 msgstr ""
+"asegúrese de que si alguien copia el repositorio de origen sin metadatos del "
+"sistema de control de versiones (por ejemplo, si crea un archivo tar a "
+"partir de él), los metadatos del sistema de control de versiones relevantes "
+"para determinar los derechos de autor aún deben incluirse, por ejemplo, en "
+"forma de una lista de materiales (ver más adelante), un archivo de registro "
+"generado automáticamente o similar. ,"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -4453,6 +4482,15 @@ msgid ""
 "  * SPDX-License-Identifier: GPL-3.0\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  * Este archivo es parte del proyecto X. Tiene derechos de autor de los "
+"colaboradores\n"
+"  * registrados en el historial de control de versiones del archivo, "
+"disponible en\n"
+"  * su ubicación original http://git.example.com/X/filename.c\n"
+"  * \n"
+"  * SPDX-License-Identifier: GPL-3.0\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4470,6 +4508,22 @@ msgid ""
 ">   include a proper header, either in a separate .license file, or using the\n"
 ">   DEP-5/copyright specification.\n"
 msgstr ""
+"> ###Tener en cuenta\n"
+"> \n"
+"> * Usar un estilo congruente en los encabezados a lo largo del proyecto.\n"
+"> * No eliminar los encabezados existentes, solo agréguelos.\n"
+"> * Considere usar sistemas de control de versiones para mantener un "
+"registro de los titulares de derechos de autor.\n"
+"> * Mantener público el sistema de control de versiones si lo usa.\n"
+"> * Hacer referencias al identificador SPDX de cada archivo de código fuente."
+"\n"
+"> * Registrar la información de derechos de autor en cada archivo de código "
+"fuente.\n"
+"> * Incluir información sobre licencias y derechos de autor también para los "
+"archivos que no pueden\n"
+"> incluir un encabezado adecuado, ya sea por separado archivo .license, o "
+"usando la\n"
+"> especificación DEP-5/copyright.\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4480,6 +4534,13 @@ msgid ""
 "archived freely and ensure project is archived by institutions dedicated to "
 "long-term preservation of software code, eg. Software Heritage."
 msgstr ""
+"[^1]: Establ0cer una gobernanza del proyecto comprometida con el acceso "
+"público, evaluar el material agregado al proyecto para protegerlo contra la "
+"vulnerabilidad del pirateo, incluir solo material bajo una licencia libre y "
+"de código abierto para que pueda copiarse y archivarse libremente y "
+"garantice que el proyecto sea archivado por instituciones dedicadas a la "
+"preservación a largo plazo del código de software, por ejemplo Software "
+"Heritage.."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4488,6 +4549,10 @@ msgid ""
 "copyright information, you may include a bill of materials for your project, "
 "but you should only do so if this is generated automatically."
 msgstr ""
+"Aparte de los archivos de licencia incluidos en el proyecto y la información "
+"de derechos de autor a nivel de archivo, puede incluir una lista de "
+"materiales para su proyecto, pero solo debe hacerlo si se genera "
+"automáticamente."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
