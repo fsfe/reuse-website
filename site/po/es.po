@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-09-12 09:39+0000\n"
-"PO-Revision-Date: 2024-10-22 15:16+0000\n"
+"PO-Revision-Date: 2024-10-25 19:16+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/es/>\n"
@@ -4921,29 +4921,26 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "The comment header MUST contain one or more `SPDX-FileCopyrightText` "
-#| "tags, and one or more `SPDX-License-Identifier` tags. A tag is followed "
-#| "by a colon, followed by a text value, and terminated by a newline."
 msgid ""
 "The comment header MUST contain one or more `SPDX-FileCopyrightText` tags, "
 "and one or more `SPDX-License-Information` tags. A tag is followed by a "
 "colon, followed by a text value, and terminated by a newline."
 msgstr ""
 "La cabecera del comentario DEBE contener una o más etiquetas `SPDX-"
-"FileCopyrightText`, y una o más etiquetas `SPDX-License-Identifier`. Una "
+"FileCopyrightText`, y una o más etiquetas `SPDX-License-Information`. Una "
 "etiqueta va seguida de dos puntos, seguida de un valor de texto y terminada "
 "por una nueva línea."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
-#| msgid "The `SPDX-FileCopyrightText` tag MUST be followed by a copyright notice."
+#, no-wrap
 msgid ""
 "The `SPDX-FileCopyrightText` tag MUST be followed by a copyright notice as described\n"
 "in <!-- FIXME: Refer to an internal section -->.\n"
-msgstr "La etiqueta `SPDX-FileCopyrightText` DEBE ir seguida de un aviso de copyright."
+msgstr ""
+"La etiqueta `SPDX-FileCopyrightText` DEBE ir seguida de un aviso de "
+"copyright anotado como se describe\n"
+"en <!-- FIXME: Refer to an internal section -->.\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -5029,12 +5026,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
-#| msgid "The `Copyright` tag MUST be followed by a copyright notice."
+#, no-wrap
 msgid ""
 "The `Copyright` tag MUST be followed by a copyright notice as described in <!--\n"
 "FIXME: Refer to an internal section -->.\n"
-msgstr "La etiqueta `Copyright` DEBE ir seguida de un aviso de copyright."
+msgstr ""
+"La etiqueta `Copyright` DEBE ir seguida de un aviso de copyright anotado "
+"como se describe en <!--\n"
+"FIXME: Refer to an internal section -->.\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -5141,10 +5140,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "REUSE Specification – Version 3.0"
+#, no-wrap
 msgid "REUSE Specification – Version 3.2"
-msgstr "Especificación REUSE – Versión 3.0"
+msgstr "Especificación REUSE – Versión 3.2"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5174,17 +5172,12 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "For the revision history of this specification, please see [the change "
-#| "log](https://git.fsfe.org/reuse/docs/src/branch/master/CHANGELOG.md)."
 msgid ""
 "For the revision history of this specification, please see [the change log]"
 "(https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 msgstr ""
-"Para ver el historial de revisiones de esta especificación, consulte [el "
-"registro de cambios](https://git.fsfe.org/reuse/docs/src/branch/master/"
-"CHANGELOG.md)."
+"Para ver el historial de revisiones de esta especificación, ver [el registro "
+"de cambios](https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5201,29 +5194,23 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "- License File --- a file containing the text of a license."
 msgid ""
 "License File --- a file containing the text of a license, as defined in "
 "[License Files](#license-files)."
 msgstr ""
-"- Archivo de licencia --- un archivo que contiene el texto de una licencia."
+"- Archivo de licencia --- un archivo que contiene el texto de una licencia, "
+"como se define en [License Files](#license-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Copyright and Licensing Information --- the information that lists the "
-#| "copyright holders of a file or work, and describes under which licenses "
-#| "the file or work is made available."
 msgid ""
 "Licensing Information --- the information that lists the copyright holders "
 "of a file or work, and describes under which licenses the file or work is "
 "made available."
 msgstr ""
-"Información sobre derechos de autor y licencias --- la información que "
-"enumera los titulares de los derechos de autor de un archivo o trabajo, y "
-"describe bajo qué licencias está disponible el archivo o trabajo."
+"Información sobre licencias - - - la información que enumera a los titulares "
+"de los derechos de autor de un archivo o obra, y describe bajo qué licencias "
+"está disponible el archivo o la obra."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5232,6 +5219,9 @@ msgid ""
 "holder. Its format is defined in the [Format of Copyright Notices](#format-"
 "of-copyright-notices) section."
 msgstr ""
+"Aviso de derechos de autor - - - una línea de texto que transmite los "
+"derechos de autor de un titular de derechos de autor. Su formato se define "
+"en la sección [Format of Copyright Notices](#format-of-copyright-notices)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
