@@ -68,7 +68,7 @@ installed](https://pre-commit.com/#install), add this to the
 # SPDX-License-Identifier: CC0-1.0
 repos:
   - repo: https://github.com/fsfe/reuse-tool
-    rev: v5.0.0
+    rev: v5.0.2
     hooks:
       - id: reuse
 ```
