@@ -5,7 +5,7 @@
 # REUSE-IgnoreStart
 
 title: "REUSE Specification – Version 3.3"
-subtitle: "YYYY-MM-DD"
+subtitle: "2024-11-14"
 ---
 
 This specification defines a standardised method for declaring copyright and
