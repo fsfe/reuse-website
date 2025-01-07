@@ -1,1 +1,35 @@
-{}
+{
+    "table_of_contents": {
+        "other": "Innehållsförteckning"
+    },
+    "menu_resources": {
+        "other": "Resurser"
+    },
+    "menu_tutorial": {
+        "other": "Kom igång"
+    },
+    "index_initiative_by": {
+        "other": "Ett initiativ av"
+    },
+    "index_dev_head": {
+        "other": "För utvecklare"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "warning": {
+        "other": "Varning:"
+    },
+    "and": {
+        "other": "och"
+    },
+    "menu_dev": {
+        "other": "Utvecklare"
+    },
+    "menu_faq": {
+        "other": "FAQ"
+    },
+    "menu_spec": {
+        "other": "Specifikation"
+    }
+}
