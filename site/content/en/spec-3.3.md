@@ -253,6 +253,7 @@ to zero or more Covered Files. It has the following keys:
   - `*` matches everything except forward slashes (i.e. path separators).
   - `**` and `**/` match everything including forward slashes (i.e. path
     separators).
+  - Use `**/*` to match all files in a repository.
   - In order to escape an asterisk and include it verbatim, prefix it with `\\`.
     You cannot prefix it with `\` because that is invalid TOML. In order to
     include a backslash verbatim, use `\\\\`. `\\` followed by any other
