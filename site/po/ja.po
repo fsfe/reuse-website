@@ -6,14 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-11-14 09:36+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-23 17:01+0000\n"
+"Last-Translator: Shun Sakai <sorairolake@protonmail.ch>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -116,7 +120,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Help for developers"
-msgstr ""
+msgstr "開発者向けヘルプ"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -138,7 +142,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, markdown-text, no-wrap
 msgid "REUSE Tool {#tool}"
-msgstr ""
+msgstr "REUSEツール {#tool}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -207,7 +211,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, markdown-text, no-wrap
 msgid "API {#api}"
-msgstr ""
+msgstr "API {#api}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -340,7 +344,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, markdown-text, no-wrap
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -390,7 +394,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, markdown-text, no-wrap
 msgid "GitLab"
-msgstr ""
+msgstr "GitLab"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -458,7 +462,7 @@ msgstr ""
 #: site/content/en/resources.md
 #, no-wrap
 msgid "Resources"
-msgstr ""
+msgstr "リソース"
 
 #. type: Plain text
 #: site/content/en/resources.md
@@ -550,7 +554,7 @@ msgstr ""
 #: site/content/en/supporters.md
 #, no-wrap
 msgid "Supporters"
-msgstr ""
+msgstr "支援者"
 
 #. type: Plain text
 #: site/content/en/supporters.md
@@ -667,7 +671,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "よくある質問"
 
 #. type: Plain text
 #: site/content/en/faq.md site/content/en/tutorial.md
@@ -688,13 +692,13 @@ msgstr ""
 #: site/content/en/faq.md
 #, markdown-text, no-wrap
 msgid "{{< toc >}}\n"
-msgstr ""
+msgstr "{{< toc >}}\n"
 
 #. type: Title #
 #: site/content/en/faq.md
 #, markdown-text, no-wrap
 msgid "General {#general}"
-msgstr ""
+msgstr "全般 {#general}"
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -770,7 +774,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, markdown-text, no-wrap
 msgid "What is SPDX? {#what-is-spdx}"
-msgstr ""
+msgstr "SPDXとは何ですか？ {#what-is-spdx}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -795,7 +799,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, markdown-text, no-wrap
 msgid "What is copyright? {#what-is-copyright}"
-msgstr ""
+msgstr "著作権とは何ですか？ {#what-is-copyright}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1043,7 +1047,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, markdown-text, no-wrap
 msgid "What is a license? {#what-is-license}"
-msgstr ""
+msgstr "ライセンスとは何ですか？ {#what-is-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1108,7 +1112,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, markdown-text, no-wrap
 msgid "Which license should I choose? {#which-license}"
-msgstr ""
+msgstr "どのライセンスを選択すれば良いですか？ {#which-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2012,7 +2016,7 @@ msgstr ""
 #: site/content/en/faq.md site/content/en/spec-3.2.md
 #, markdown-text
 msgid "Example:"
-msgstr ""
+msgstr "例:"
 
 #. type: Fenced code block
 #: site/content/en/faq.md
@@ -3842,7 +3846,7 @@ msgstr ""
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
 #, markdown-text, no-wrap
 msgid "Definitions"
-msgstr ""
+msgstr "定義"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -4110,7 +4114,7 @@ msgstr ""
 #: site/content/en/spec-3.0.md
 #, markdown-text, no-wrap
 msgid "DEP5"
-msgstr ""
+msgstr "DEP5"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -4507,7 +4511,7 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 #, markdown-text, no-wrap
 msgid "REUSE.toml"
-msgstr ""
+msgstr "REUSE.toml"
 
 #. type: Title ###
 #: site/content/en/spec-3.2.md
