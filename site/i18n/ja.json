@@ -1,1 +1,74 @@
-{}
+{
+    "noscript_warning": {
+        "other": "一部の対話式機能はJavaScriptが無効な場合は機能しません。"
+    },
+    "table_of_contents": {
+        "other": "目次"
+    },
+    "toggle_navigation": {
+        "other": "ナビゲーションを切り替える"
+    },
+    "tool_instructions": {
+        "other": "この段階のツールの説明"
+    },
+    "warning": {
+        "other": "警告:"
+    },
+    "trans_inofficial": {
+        "other": "あなたが読んでいるのは[元のページ](%s)の非公式翻訳です。"
+    },
+    "trans_available": {
+        "other": "非公式翻訳は次の言語が利用できます:"
+    },
+    "and": {
+        "other": "と"
+    },
+    "menu_tutorial": {
+        "other": "始める"
+    },
+    "menu_faq": {
+        "other": "よくある質問"
+    },
+    "menu_dev": {
+        "other": "開発者"
+    },
+    "menu_spec": {
+        "other": "仕様"
+    },
+    "menu_resources": {
+        "other": "リソース"
+    },
+    "menu_supporters": {
+        "other": "支援者"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_initiative_by": {
+        "other": "次が主導しています"
+    },
+    "index_intro": {
+        "other": "私たちは人間と機械の両方がライセンスを簡単に扱えるようにします。私たちは自由ソフトウェアのライセンスが抱える根本的な問題、つまりファイルがどのライセンスに基づいて利用が許諾されているのか、誰が著作権を保持しているのかという問題を根本から解決します。**私たちの勧告を導入するのは以下のように簡単です**！"
+    },
+    "index_step1": {
+        "other": "ライセンスの選択と提供をする"
+    },
+    "index_step2": {
+        "other": "各ファイルに著作権とライセンスの情報を追加する"
+    },
+    "index_step3": {
+        "other": "REUSE準拠を確認する"
+    },
+    "index_dev_head": {
+        "other": "開発者向け"
+    },
+    "index_reuse_head": {
+        "other": "再利用を簡単に"
+    },
+    "index_legal_head": {
+        "other": "ライセンス準拠"
+    },
+    "all_specifications": {
+        "other": "仕様の全てのバージョンは<{{ .specifications }}>で参照できます。"
+    }
+}
