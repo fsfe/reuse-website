@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-11-14 09:36+0000\n"
-"PO-Revision-Date: 2022-01-08 21:56+0000\n"
-"Last-Translator: Gabriel Gian <gabrielgian@live.com>\n"
+"PO-Revision-Date: 2025-04-25 22:02+0000\n"
+"Last-Translator: William Weber Berrutti <wwberrutti@protonmail.ch>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
-"reuse-docs/pt_BR/>\n"
+"reuse-website-markdown/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
 #, no-wrap
 msgid "Comparison of license compliance projects"
-msgstr ""
+msgstr "Comparação de projetos de conformidade de licenças"
 
 #. type: Plain text
 #: site/content/en/comparison.md
@@ -32,6 +32,9 @@ msgid ""
 "help with software license compliance. Provided below is a short and "
 "incomplete overview of some noteworthy projects."
 msgstr ""
+"É fácil se confundir pela infinidade de iniciativas e ferramentas que ajudam "
+"na conformidade da licença de software. Abaixo é fornecida uma visão geral "
+"breve e incompleta de alguns projetos notáveis."
 
 #. type: Plain text
 #: site/content/en/comparison.md
@@ -109,7 +112,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Help for developers"
-msgstr ""
+msgstr "Ajuda para desenvolvedores"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -117,6 +120,8 @@ msgid ""
 "Licensing should be easy for developers. We provide several tools and "
 "services to allow you to concentrate on coding."
 msgstr ""
+"Licenciamento deve ser fácil para os desenvolvedores. Nós fornecemos várias "
+"ferramentas e serviços para permitir que você se concentre em fazer código."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -154,7 +159,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Example repositories {#repos}"
-msgstr ""
+msgstr "Repositórios de exemplo {#repos}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -191,7 +196,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "API {#api}"
-msgstr ""
+msgstr "API {#api}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -230,9 +235,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Pre-commit hook {#pre-commit-hook}"
-msgstr ""
+msgstr "Gancho pré-commit {#gancho-pre-commit}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -268,7 +273,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Inclusion in CI/CD workflows {#ci}"
-msgstr ""
+msgstr "Inclusão nos fluxos de trabalho de CI/CD {#ci}"
 
 #. type: Plain text
 #: site/content/en/dev.md
