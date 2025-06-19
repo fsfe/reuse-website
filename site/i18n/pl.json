@@ -1,1 +1,86 @@
-{}
+{
+    "index_reuse_text": {
+        "other": "Wolne oprogramowanie umożliwia rozwijanie pracy wykonanej wczęsniej przez inne osoby, a tym samym szybkie wprowadzanie innowacji. Ale im więcej zewnętrznych komponentów używasz, tym trudniej jest zachować przejrzystość dotyczącą właścicieli praw autorskich i ich wyborów licencyjnych. Dzięki REUSE każdy plik zawiera niezbędne informacje, a repozytorium kodu źródłowego w przejrzysty sposób zawiera wszystkie używane licencje."
+    },
+    "index_intro": {
+        "other": "Ułatwiamy licencjonowanie zarówno ludziom, jak i maszynom. Rozwiązujemy fundamentalny problem licencjonowania wolnego oprogramowania u samego źródła: na jakiej licencji jest licencjonowany plik i kto jest właścicielem praw autorskich? **Wdrożenie naszych zaleceń jest banalnie proste**!"
+    },
+    "noscript_warning": {
+        "other": "Niektóre interaktywne funkcje nie będą działać z wyłączoną obsługą JavaScript."
+    },
+    "table_of_contents": {
+        "other": "Spis treści"
+    },
+    "toggle_navigation": {
+        "other": "Przełącz nawigację"
+    },
+    "warning": {
+        "other": "Ostrzeżenie:"
+    },
+    "trans_inofficial": {
+        "other": "Właśnie czytasz nieoficjalne tłumaczenie [oryginalnej strony](%s)."
+    },
+    "trans_available": {
+        "other": "Nieoficjalne tłumaczenia są dostępne po:"
+    },
+    "and": {
+        "other": "i"
+    },
+    "menu_tutorial": {
+        "other": "Jak rozpocząć"
+    },
+    "menu_faq": {
+        "other": "Najczęściej zadawane pytania"
+    },
+    "tool_instructions": {
+        "other": "Instrukcje dla tego kroku"
+    },
+    "menu_dev": {
+        "other": "Twórcy oprogramowania"
+    },
+    "menu_spec": {
+        "other": "Specyfikacja"
+    },
+    "menu_resources": {
+        "other": "Zasoby"
+    },
+    "menu_supporters": {
+        "other": "Osoby wspierające"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_initiative_by": {
+        "other": "Inicjatywa"
+    },
+    "index_step3": {
+        "other": "Potwierdź zgodność z REUSE"
+    },
+    "index_step1": {
+        "other": "Wybierz i zastosuj licencję"
+    },
+    "index_step2": {
+        "other": "Dodaj prawa autorskie i informacje licencyjne dla każdego pliku"
+    },
+    "index_dev_head": {
+        "other": "Dla twórców oprogramowania"
+    },
+    "index_reuse_head": {
+        "other": "Ponowne użycie jest prote"
+    },
+    "index_legal_text": {
+        "other": "Istnieje wiele narzędzi, które pomagają w zapewnieniu zgodności licencyjnej oprogramowania, wiele z nich wykorzystuje bazy danych i heurystykę rozmytą. Projekt zgodny z REUSE znacznie ułatwia pracę ekspertom prawnym i specjalistom do spraw zgodności. Tworzenie listy użytych materiałów można wykonać za pomocą jednego prostego polecenia. REUSE [nie zastępuje innych narzędzi](porównanie/), jest dla nich długo oczekiwanym dodatkiem."
+    },
+    "all_specifications": {
+        "other": "Wszystkie wersje specyfikacji można znaleźć w <{.specifications }}>."
+    },
+    "index_legal_head": {
+        "other": "Zgodność licencji"
+    },
+    "index_rationale": {
+        "other": "Kwestie praw autorskich i licencjonowania są trudne, zwłaszcza w przypadku ponownego wykorzystywania oprogramowania z różnych projektów, które są wydawane na różnych licencjach. REUSE zostało zainicjowane przez [Free Software Foundation Europe](https://fsfe.org) (FSFE) w celu dostarczenia zestawu zaleceń, aby licencjonowanie projektów wolnego oprogramowania było **łatwe, kompleksowe i jednoznaczne**."
+    },
+    "index_dev_text": {
+        "other": "Licencja określa warunki, na jakich inni mogą ponownie wykorzystywać oprogramowanie. Dlatego należy upewnić się, że dla wszystkich jest jasne, które części oprogramowania są objęte daną licencją. REUSE zabezpiecza twoje intencje i pomaga ci w tym procesie. Zapoznaj się z naszą sekcją [dla twórców oprogramowania](dev/), aby dowiedzieć się więcej o naszym narzędziu, włączeniu do procesów CI/CD i nie tylko."
+    }
+}
