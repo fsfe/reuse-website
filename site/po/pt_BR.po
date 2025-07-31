@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-11-14 09:36+0000\n"
-"PO-Revision-Date: 2025-04-25 22:02+0000\n"
+"PO-Revision-Date: 2025-08-01 02:02+0000\n"
 "Last-Translator: William Weber Berrutti <wwberrutti@protonmail.ch>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -132,10 +132,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid "The tool {#tool}"
+#, no-wrap
 msgid "REUSE Tool {#tool}"
-msgstr "A ferramenta {#tool}"
+msgstr "Ferramenta REUSE {#tool}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -191,6 +190,8 @@ msgid ""
 "Consider registering your project with the [REUSE API](#api) to include a "
 "dynamic compliance badge."
 msgstr ""
+"Considere registrar seu projeto com a [API REUSE](#api) para incluir um "
+"marcador de conformidade dinâmico."
 
 #. type: Title ##
 #: site/content/en/dev.md
