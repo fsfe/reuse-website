@@ -32,7 +32,7 @@ well as their users and re-users.
 
 Our REUSE Booster team is actively approaching projects to guide them 
 in the journey of making their projects REUSE compliant. With 
-individual assesments and direct assistance, we aim to boost the 
+individual assessments and direct assistance, we aim to boost the 
 displaying of unambiguous and perfectly human- and machine-readable 
 licensing and copyright information.
 
