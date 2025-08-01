@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-11-14 09:36+0000\n"
-"PO-Revision-Date: 2025-08-01 02:02+0000\n"
+"PO-Revision-Date: 2025-08-02 17:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
@@ -1658,12 +1658,18 @@ msgid ""
 "it.  Otherwise, it is usually a good idea to leave copyright notices and "
 "license disclaimers intact. But there is no one-size-fits-all answer here."
 msgstr ""
+"Se você descobrir que alguma informação está incorreta, sinta-se à vontade "
+"para ajustá-la. Caso contrário, geralmente é uma boa ideia manter os avisos "
+"de direitos autorais e as isenções de responsabilidade de licença intactos. "
+"Mas não há uma solução única para todos aqui."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Can I remove the license and copyright information from minified code (e.g., JavaScript)? {#minified}"
 msgstr ""
+"Posso remover as informações de licença e direitos autorais do código "
+"minimizado (por exemplo, JavaScript)? {#minified}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1673,6 +1679,10 @@ msgid ""
 "should use it, especially if you use a license that mandates that you "
 "include a license disclaimer."
 msgstr ""
+"Você pode, mas provavelmente não deveria. Muitos minificadores têm uma opção "
+"que permite manter o comentário do cabeçalho. Se essa opção estiver "
+"disponível, você deve usá-la, especialmente se usar uma licença que exija a "
+"inclusão de um aviso de isenção de responsabilidade."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1707,6 +1717,8 @@ msgstr ""
 #, no-wrap
 msgid "If I use exclusively LGPL-3.0-or-later, should I also include the GPL-3.0-or-later text? {#lgpl-only}"
 msgstr ""
+"Se eu usar exclusivamente LGPL-3.0-or-later, devo incluir também o texto da "
+"GPL-3.0-or-later? {#lgpl-only}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1719,12 +1731,21 @@ msgid ""
 "license. To solve that, pick one file to be licensed under `LGPL-3.0-or-"
 "later OR GPL-3.0-or-later`."
 msgstr ""
+"O texto da licença LGPL é um adendo ao texto da licença GPL. Se você "
+"fornecer _apenas_ o texto da licença LGPL para o seu downstream, você "
+"efetivamente não estará fornecendo a licença completa. Por esse motivo, você "
+"também deve fornecer a licença GPL 3.0 ou posterior no seu diretório `"
+"LICENSES/`. O linter do REUSE pode reclamar que nenhum dos seus arquivos "
+"utiliza a licença GPL-3.0-or-later. Para resolver isso, escolha um arquivo "
+"para ser licenciado sob `LGPL-3.0-or-later OR GPL-3.0-or-later`."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Does REUSE help me with the licenses of my dependencies? {#dependencies-licenses}"
 msgstr ""
+"O REUSE me ajuda com as licenças das minhas dependências? {#dependencies-"
+"licenses}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1736,19 +1757,26 @@ msgid ""
 "tools and processes. Some tools listed on the [comparison page]({{< ref\n"
 "\"/comparison.md\" >}}) may help you.\n"
 msgstr ""
+"Não, isso está fora do escopo do REUSE. Se você precisa verificar se o seu "
+"projeto\n"
+"respeita as licenças de todas as suas dependências, ou se você não\n"
+"inadvertidamente adicionou uma dependência com uma licença indesejada, "
+"precisa de\n"
+"ferramentas e processos diferentes. Algumas ferramentas listadas na "
+"[página de comparação]({{< ref\n"
+"\"/comparison.md\" >}}) podem ajudar.\n"
 
 #. type: Title #
 #: site/content/en/faq.md
 #, no-wrap
 msgid "How do I ... {#howto}"
-msgstr ""
+msgstr "Como eu faço para ... {#howto}"
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I install and use the REUSE tool? {#install-tool}"
+#, no-wrap
 msgid "... install the REUSE tool? {#install-tool}"
-msgstr "Como instalo e uso a ferramenta REUSE? {# install-tool}"
+msgstr "... instalar a ferramenta REUSE? {#install-tool}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1757,6 +1785,8 @@ msgid ""
 "<https://reuse.readthedocs.io/en/stable/readme.html#install>. The short of "
 "it is:"
 msgstr ""
+"Consulte as instruções de instalação e a documentação da ferramenta em "
+"<https://reuse.readthedocs.io/en/stable/readme.html#install>. Resumidamente:"
 
 #. type: Fenced code block
 #: site/content/en/faq.md
@@ -1766,12 +1796,15 @@ msgid ""
 "$ pipx ensurepath\n"
 "$ reuse --help\n"
 msgstr ""
+"$ pipx install reuse\n"
+"$ pipx ensurepath\n"
+"$ reuse --help\n"
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... create a software bill of materials {#bill-of-materials}"
-msgstr ""
+msgstr "... criar uma lista de materiais do software {#bill-of-materials}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1780,13 +1813,17 @@ msgid ""
 "root to create an [SPDX document](https://spdx.org/spdx-specification-21-web-"
 "version)."
 msgstr ""
+"Instale a ferramenta reuse e execute `reuse spdx -o reuse.spdx` na raiz do "
+"projeto para criar um [documento SPDX](https://spdx.org/spdx-specification-21"
+"-web-version)."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "2. Add copyright and licensing information to each file {#step-2}"
+#, no-wrap
 msgid "... add copyright and licensing information to an uncommentable file? {#uncommentable-file}"
-msgstr "2. Adicionar informações sobre direitos autorais e licenciamento a cada arquivo {#step-2}"
+msgstr ""
+"... adicionar informações sobre direitos autorais e licenciamento para um "
+"arquivo não comentável {#uncommentable-file}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1795,6 +1832,9 @@ msgid ""
 "cannot be commented with a REUSE header, but they should still have "
 "copyright and licensing information."
 msgstr ""
+"Arquivos binários, como imagens ou vídeos, ou certos arquivos de texto, como "
+"JSON, não podem ser comentados com um cabeçalho REUSE, mas ainda devem ter "
+"informações de direitos autorais e licenciamento."
 
 #. type: Plain text
 #: site/content/en/faq.md
