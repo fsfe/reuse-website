@@ -1,6 +1,6 @@
 {
     "trans_inofficial": {
-        "other": "Şu anda [orijinal sayfa](%s)'nin resmi olmayan bir çevirisini okumaktasınız."
+        "other": "Şu anda [orijinal sayfa](%s)nın resmi olmayan bir çevirisini okumaktasınız."
     },
     "and": {
         "other": "ve"
@@ -9,7 +9,7 @@
         "other": "REUSE uygunluğunu onaylayın"
     },
     "index_rationale": {
-        "other": "Telif hakkı ve lisanslama, özellikle çeşitli farklı lisanslar altında yayınlanan farklı projelerden yazılımı yeniden kullanırken zordur. REUSE, [Free Software Foundation Europe] (https://fsfe.org) (FSFE) tarafından Özgür Yazılım projelerinizin lisanslanmasını kolaylaştırmak için bir dizi öneri sağlamak amacıyla başlatılmıştır. Bu öneriler yalnızca çalışmalarınızın hangi lisanslar altında yayınlandığını beyan etmenizi kolaylaştırmakla kalmaz, aynı zamanda bir bilgisayarın projenizin nasıl lisanslandığını anlamasını da kolaylaştırır."
+        "other": "Telif hakkı ve lisanslama, özellikle farklı lisanslar altında yayınlanan farklı projelerden yazılımları yeniden kullanırken zor olabilir. REUSE, [Free Software Foundation Europe](https://fsfe.org) (FSFE) tarafından, Özgür Yazılım projelerinizin lisanslamasını **kolay, kapsamlı, açık ve makine tarafından okunabilir** hale getirmek için bir dizi öneri sunmak amacıyla başlatılmıştır."
     },
     "index_dev_text": {
         "other": "Projenizin lisansı, başkalarının yazılımınızı hangi şartlar altında yeniden kullanabileceğini belirler. Bu nedenle, yazılımınızın hangi bölümlerinin hangi lisans altında olduğunun herkes için açık olduğundan emin olmalısınız. REUSE niyetinizi korur ve bu süreçte size yardımcı olur. Araç, CI/CD süreçlerine dahil etme ve daha fazlası hakkında bilgi edinmek için [araçlar bölümümüze](dev/) bir göz atın."
@@ -75,6 +75,12 @@
         "other": "Lisanslamayı hem insanlar hem de makineler için kolaylaştırıyoruz. Özgür Yazılım lisanslamasının en temel sorununu kaynağında çözüyoruz: bir dosya hangi lisans altında lisanslanmıştır ve telif hakkı kime aittir? **Önerilerimizi benimsemek bir-iki-üç** kadar kolay!"
     },
     "trans_available": {
-        "other": "Resmi olmayan çeviriler şurada mevcuttur:"
+        "other": "Resmi olmayan çeviriler şuradadır:"
+    },
+    "index_initiative_by": {
+        "other": "Girişim"
+    },
+    "all_specifications": {
+        "other": "Belirtimlerin tüm sürümleri <{{ .specifications }}> adresinde bulunabilir."
     }
 }
