@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-11-14 09:36+0000\n"
-"PO-Revision-Date: 2025-08-02 17:02+0000\n"
+"PO-Revision-Date: 2025-08-24 02:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.13\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -1839,7 +1839,7 @@ msgstr ""
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "There are two ways of associating information with such a file:"
-msgstr ""
+msgstr "Há duas maneiras de associar informações a esse arquivo:"
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -1849,6 +1849,10 @@ msgid ""
 "contents of the original file are subsequently ignored, which may be handy "
 "in some cases."
 msgstr ""
+"Adicione um arquivo ao lado com o sufixo `.license` (por exemplo, "
+"`cat.jpg.license` para um arquivo chamado `cat.jpg`) e escreva o cabeçalho "
+"do comentário nesse arquivo. O conteúdo do arquivo original será ignorado "
+"posteriormente, o que pode ser útil em alguns casos."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -1856,12 +1860,14 @@ msgid ""
 "License the file via [`REUSE.toml`](#bulk-license), a REUSE configuration "
 "file."
 msgstr ""
+"Licencie o arquivo por meio de [`REUSE.toml`](#bulk-license), um arquivo de "
+"configuração do REUSE."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... bulk-license whole directories? {#bulk-license}"
-msgstr ""
+msgstr "... licenciar em massa todos os diretórios? {#bulk-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1870,6 +1876,10 @@ msgid ""
 "are some scenarios where it is undesirable or impossible to add a REUSE "
 "header to every single file in a directory. For example:"
 msgstr ""
+"Sempre que possível, você deve adicionar cabeçalhos REUSE a todos os "
+"arquivos. No entanto, existem alguns cenários em que é indesejável ou "
+"impossível adicionar um cabeçalho REUSE a todos os arquivos de um diretório. "
+"Por exemplo:"
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -1877,6 +1887,8 @@ msgid ""
 "You are not allowed to edit the files (because they are test files, or come "
 "from a third party)."
 msgstr ""
+"Você não tem permissão para editar os arquivos (porque eles são arquivos de "
+"teste ou vêm de terceiros)."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -1884,6 +1896,8 @@ msgid ""
 "Adding `.license` files would break the build system, especially for images "
 "and video."
 msgstr ""
+"Adicionar arquivos `.license` quebraria o sistema de compilação, "
+"especialmente para imagens e vídeos."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1892,6 +1906,9 @@ msgid ""
 "in the root of your project, but it can be placed anywhere relative to the "
 "files.  An example of the file follows:"
 msgstr ""
+"Você pode licenciar arquivos globalmente usando o arquivo `REUSE.toml`, "
+"tipicamente colocado na raiz do seu projeto, mas pode ser colocado em "
+"qualquer lugar em relação aos arquivos. Um exemplo do arquivo seria:"
 
 #. type: Fenced code block (toml)
 #: site/content/en/faq.md
@@ -1931,6 +1948,40 @@ msgid ""
 "SPDX-FileCopyrightText = \"NONE\"\n"
 "SPDX-License-Identifier = \"CC0-1.0\"\n"
 msgstr ""
+"version = 1\n"
+"\n"
+"# Um glob simples de todos os arquivos em resources/img/\n"
+"[[annotations]]\n"
+"path = \"resources/img/*\"\n"
+"SPDX-FileCopyrightText = \"2024 Jane Doe <jane@example.com>\"\n"
+"SPDX-License-Identifier = \"CC0-1.0\"\n"
+"\n"
+"# Todos os arquivos em resources/vid/, com vários detentores de direitos "
+"autorais\n"
+"[[annotations]]\n"
+"path = \"resources/vid/*\"\n"
+"SPDX-FileCopyrightText = [\n"
+"    \"2024 Jane Doe <jane@example.com>\",\n"
+"    \"2024 John Doe <john@example.com>\"\n"
+"]\n"
+"SPDX-License-Identifier = \"CC-BY-4.0\"\n"
+"\n"
+"# Um glob recursivo de todos os arquivos e diretórios em tests/resources/,\n"
+"# e as informações do REUSE desses arquivos são substituídas.\n"
+"[[annotations]]\n"
+"path = \"tests/resources/**\"\n"
+"precedence = \"override\"\n"
+"SPDX-FileCopyrightText = \"2024 Jane Doe <jane@example.com>\"\n"
+"SPDX-License-Identifier = \"CC0-1.0\"\n"
+"\n"
+"# Dois arquivos gerados por computador.\n"
+"[[annotations]]\n"
+"path = [\n"
+"    \"poetry.lock\",\n"
+"    \"requirements.txt\"\n"
+"]\n"
+"SPDX-FileCopyrightText = \"NONE\"\n"
+"SPDX-License-Identifier = \"CC0-1.0\"\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1938,12 +1989,14 @@ msgid ""
 "The [REUSE Specification](/spec) documents more thoroughly how `REUSE.toml` "
 "can be used."
 msgstr ""
+"A [Especificação REUSE](/spec) documenta de forma mais detalhada como "
+"`REUSE.toml` pode ser usado."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... override erroneous REUSE information? {#override-info}"
-msgstr ""
+msgstr "... sobrepor informações erradas do REUSE? (#override-info)"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1953,6 +2006,11 @@ msgid ""
 "these files.  You have a few options to instruct REUSE to ignore the "
 "erroneous information and to use correct information instead."
 msgstr ""
+"Você pode ter um arquivo que contenha tags de direitos autorais ou "
+"licenciamento que estejam erradas. Isso pode estar de propósito, ou talvez "
+"você tenha boas razões para não editar esses arquivos. Você tem algumas "
+"opções para instruir REUSE para ignorar as informações erradas e usar "
+"informações corretas em vez disso."
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -1960,6 +2018,8 @@ msgid ""
 "Use [the `REUSE-IgnoreStart` and `REUSE-IgnoreEnd` tags](#exclude-lines)  "
 "inside of the file."
 msgstr ""
+"Use [as tags `REUSE-IgnoreStart` e `REUSE-IgnoreEnd`] (#exclude-lines) "
+"dentro do arquivo."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -1967,6 +2027,8 @@ msgid ""
 "Use [a `.license` file to override the contents of the file](#uncommentable-"
 "file)."
 msgstr ""
+"Use [um arquivo `.license` para substituir o conteúdo do arquivo]"
+"(#uncommentable-file)."
 
 #. type: Bullet: '3. '
 #: site/content/en/faq.md
@@ -1974,6 +2036,8 @@ msgid ""
 "Use [a `REUSE.toml` file](#bulk-license) with the `precedence = "
 "\"override\"` key-value."
 msgstr ""
+"Use [um arquivo `REUSE.toml`](#bulk-license) com o valor-chave `precedence = "
+"\"override\"`."
 
 #. type: Title ##
 #: site/content/en/faq.md
