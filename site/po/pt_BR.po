@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2024-11-14 09:36+0000\n"
-"PO-Revision-Date: 2025-08-24 02:02+0000\n"
+"PO-Revision-Date: 2025-09-09 03:02+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -996,8 +996,8 @@ msgstr ""
 "O direito autoral é uma construção legal que concede a alguém direitos "
 "exclusivos sobre uma obra criativa. O direito exclusivo mais importante está "
 "no nome: O direito de produzir cópias. Somente o detentor dos direitos "
-"autorais está autorizado a dar novas cópias de seu trabalho às pessoas. Você "
-"não precisa fazer nada para obter direitos autorais. Assim que cria uma obra "
+"autorais está autorizado a dar novas cópias de sua obra às pessoas. Você não "
+"precisa fazer nada para obter direitos autorais. Assim que cria uma obra "
 "criativa, você obtém direitos autorais sobre ela instantaneamente."
 
 #. type: Plain text
@@ -1175,10 +1175,10 @@ msgid ""
 "keyboard, then that person holds copyright over the output. Common examples "
 "are source code, documentation, audio, and video."
 msgstr ""
-"Todos os arquivos que são trabalhos originais com autoria podem ter "
-"copyright. Em essência, se alguém sentasse digitando seus próprios "
-"pensamentos originais em um teclado, esta pessoa teria o copyright do seu "
-"produto. Exemplos comuns são os códigos-fonte, documentações, áudio e vídeo."
+"Todos os arquivos que são obras originais com autoria podem ter direito "
+"autoral. Em essência, se alguém sentasse digitando seus próprios pensamentos "
+"originais em um teclado, esta pessoa teria o copyright do seu produto. "
+"Exemplos comuns são os códigos-fonte, documentações, áudio e vídeo."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1460,9 +1460,8 @@ msgid ""
 "must effectively respect the terms of the least permissive license."
 msgstr ""
 "Algumas licenças são [menos permissivas que outras](#copyleft-permissive-"
-"license), o que significa que um trabalho combinado contendo código sob "
-"ambas as licenças deve efetivamente respeitar os termos da licença menos "
-"permissiva."
+"license), o que significa que um obra combinada contendo código sob ambas as "
+"licenças deve efetivamente respeitar os termos da licença menos permissiva."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1493,9 +1492,8 @@ msgid ""
 "mean having to respect license terms which you do not want to respect."
 msgstr ""
 "Exatamente quais licenças são compatíveis é uma questão complexa, e também "
-"depende do que você deseja. Integrar trabalho licenciado de forma diferente "
-"pode significar ter que respeitar termos de licença que você não deseja "
-"respeitar."
+"depende do que você deseja. Integrar obra licenciada de forma diferente pode "
+"significar ter que respeitar termos de licença que você não deseja respeitar."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2044,6 +2042,8 @@ msgstr ""
 #, no-wrap
 msgid "... add additional REUSE information to a file without editing the header? {#aggregate-info}"
 msgstr ""
+"... adicionar informações adicionais de REUSE a um arquivo sem editar o "
+"cabeçalho? {#aggregate-info}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2056,6 +2056,13 @@ msgid ""
 "copyright and licensing information, depending on the translator's "
 "translation software and settings."
 msgstr ""
+"Há um caso específico em que um arquivo pode conter informações válidas de "
+"REUSE (geralmente detentores de direitos autorais), mas não é desejável que "
+"você edite o cabeçalho de comentário desse arquivo manualmente, mesmo que "
+"haja mais informações que se apliquem a ele. Um bom exemplo desse caso "
+"específico são os arquivos `.po` fornecidos por tradutores. Eles podem ou "
+"não conter informações de direitos autorais e licenciamento, dependendo do "
+"software de tradução e das configurações do tradutor."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2064,6 +2071,9 @@ msgid ""
 "key-value in your [`REUSE.toml` file](#bulk-license). An example looks like "
 "this:"
 msgstr ""
+"Você pode adicionar informações adicionais usando o valor-chave `precedence "
+"= \"aggregate\"` no seu arquivo [`REUSE.toml`](#bulk-license). Um exemplo é "
+"assim:"
 
 #. type: Fenced code block (toml)
 #: site/content/en/faq.md
@@ -2075,6 +2085,11 @@ msgid ""
 "SPDX-FileCopyrightText = \"Contributors to My Project\"\n"
 "SPDX-License-Identifier = \"GPL-3.0-or-later\"\n"
 msgstr ""
+"[[annotations]]\n"
+"path = \"po/*.po\"\n"
+"precedence = \"aggregate\"\n"
+"SPDX-FileCopyrightText = \"Colaboradores do meu projeto\"\n"
+"SPDX-License-Identifier = \"GPL-3.0-or-later\"\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2083,13 +2098,15 @@ msgid ""
 "copyright holders (if any), and 'GPL-3.0-or-later' is added to the file's "
 "licenses (if any)."
 msgstr ""
+"No exemplo acima, \"Colaboradores do meu projeto\" é adicionado aos "
+"detentores de direitos autorais do arquivo (se houver) e \"GPL-3.0-or-later\""
+" é adicionado às licenças do arquivo (se houver)."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I copy someone else's work? {#copy-work}"
+#, no-wrap
 msgid "... copy someone else's work? {#copy-work}"
-msgstr "Como copio o trabalho de outra pessoa? {#copy-work}"
+msgstr "... copiar a obra de outra pessoa? {#copy-work}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2100,28 +2117,29 @@ msgid ""
 "for the copyright holder(s) and an `SPDX-License-Identifier` tag for the "
 "license(s) under which the work was made available."
 msgstr ""
+"Se outra pessoa disponibilizou sua obra para você usar e copiar, você pode "
+"incorporá-la ao seu projeto. Ao inserir a obra em um dos arquivos do seu "
+"projeto, você deve adicionar uma tag `SPDX-FileCopyrightText` para o(s) "
+"detentor(es) dos direitos autorais e uma tag `SPDX-License-Identifier` para "
+"a(s) licença(s) sob a qual a obra foi disponibilizada."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If the work was licensed differently from your project, you should verify "
-#| "whether the licenses are compatible, and add the new licenses to your "
-#| "project."
 msgid ""
 "If the work was licensed differently from your project, you should [verify "
 "whether the licenses are compatible](#license-compatibility), and add the "
 "new licenses to your project."
 msgstr ""
-"Se o trabalho foi licenciado de forma diferente do seu projeto, você deve "
-"verificar se as licenças são compatíveis e adicionar as novas licenças ao "
-"seu projeto."
+"Se a obra foi licenciada de forma diferente do seu projeto, você deve "
+"[verificar se as licenças são compatíveis](#license-compatibility) e "
+"adicionar as novas licenças ao seu projeto."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... copy a work published under a pseudonym or nickname? {#copy-pseudonym}"
 msgstr ""
+"... copiar uma obra publicada sob um pseudônimo ou apelido? {#copy-pseudonym}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2129,13 +2147,16 @@ msgid ""
 "You can list the pseudonym as the copyright holder. Some projects do not "
 "allow pseudonymous contributions."
 msgstr ""
+"Você pode listar o pseudônimo como detentor dos direitos autorais. Alguns "
+"projetos não permitem contribuições pseudônimas."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Can I copy a work that has no copyright notice or license? {#no-copyright-license}"
+#, no-wrap
 msgid "... copy a work that has no copyright notice or license? {#no-copyright-license}"
-msgstr "Posso copiar um trabalho que não tenha aviso de direitos autorais ou licença? {#no-copyright-license}"
+msgstr ""
+"... copiar uma obra que não tenha aviso de direitos autorais ou licença? "
+"{#no-copyright-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2157,6 +2178,11 @@ msgid ""
 "(#copyright-holder-author) for more information on the distinction.  When in "
 "doubt, contact the author for clarification."
 msgstr ""
+"Se não encontrar nenhum aviso de direitos autorais, você pode tentar "
+"adicioná-lo você mesmo, diferenciando o detentor dos direitos autorais do "
+"autor. Veja [esta pergunta](#copyright-holder-author) para mais informações "
+"sobre a distinção. Em caso de dúvida, entre em contato com o autor para "
+"obter esclarecimentos."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2165,6 +2191,10 @@ msgid ""
 "You can write [`NONE` or `NOASSERTION` as the copyright holder](https://spdx."
 "github.io/spdx-spec/v2.3/file-information/#88-copyright-text-field)."
 msgstr ""
+"Pode ser que o autor queira permanecer anônimo, o que é um direito dele. "
+"Você pode escrever "
+"[`NONE` ou `NOASSERTION` como detentor dos direitos autorais](https://"
+"spdx.github.io/spdx-spec/v2.3/file-information/#88-copyright-text-field)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2175,11 +2205,11 @@ msgid ""
 "and ask them to license their work. Feel free to refer them to <https://"
 "reuse.software>."
 msgstr ""
-"Se o trabalho não tiver licença, isso significa que você não tem o direito "
-"de copiá-lo. Se você acredita que isso foi um equívoco e o autor claramente "
-"quis que você copiasse este trabalho, você deve entrar em contato com o "
-"autor e pedir-lhe que licencie seu trabalho. Sinta-se à vontade para "
-"encaminhá-los para <https://reuse.software>."
+"Se a obra não tiver licença, isso significa que você não tem o direito de "
+"copiá-la. Se você acredita que isso foi um equívoco e o autor claramente "
+"quis que você copiasse esta obra, você deve entrar em contato com o autor e "
+"pedir-lhe que licencie sua obra. Sinta-se à vontade para encaminhar esta "
+"questão para <https://reuse.software>."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2259,6 +2289,10 @@ msgid ""
 "may falsely be detected as copyright or license statements, you can wrap it "
 "within the two comments `REUSE-IgnoreStart` and `REUSE-IgnoreEnd`."
 msgstr ""
+"Para fazer com que a ferramenta ignore uma seção específica contendo "
+"sequências de caracteres que podem ser falsamente detectadas como "
+"declarações de direitos autorais ou de licença, você pode envolvê-la entre "
+"os dois comentários `REUSE-IgnoreStart` e `REUSE-IgnoreEnd`."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2268,6 +2302,10 @@ msgid ""
 "only be used for marking blocks that may trigger false-positive detections "
 "and errors."
 msgstr ""
+"Observe que isso não deve ser usado para ignorar informações válidas de "
+"direitos autorais e licenciamento, seja por você ou por terceiros. Os blocos "
+"de ignorar devem ser usados apenas para marcar blocos que possam desencadear "
+"detecções de falsos positivos e erros."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2275,6 +2313,8 @@ msgid ""
 "An example for a file that contains commands or documentation that confuse "
 "the REUSE tool:"
 msgstr ""
+"Um exemplo de um arquivo que contém comandos ou documentação que confundem a "
+"ferramenta REUSE:"
 
 #. type: Fenced code block (bash)
 #: site/content/en/faq.md
@@ -2287,11 +2327,17 @@ msgid ""
 "echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
 "echo \"SPDX-License-Identifier: MIT\" >> file.txt\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2021 Jane Doe\n"
+"#\n"
+"# SPDX-License-Identifier: GPL-3.0-or-later\n"
+"\n"
+"echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
+"echo \"SPDX-License-Identifier: MIT\" >> file.txt\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "This is how the section can be ignored:"
-msgstr ""
+msgstr "É assim que a seção pode ser ignorada:"
 
 #. type: Fenced code block (bash)
 #: site/content/en/faq.md
@@ -2306,13 +2352,20 @@ msgid ""
 "echo \"SPDX-License-Identifier: MIT\" >> file.txt\n"
 "# REUSE-IgnoreEnd\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2021 Jane Doe\n"
+"#\n"
+"# SPDX-License-Identifier: GPL-3.0-or-later\n"
+"\n"
+"# REUSE-IgnoreStart\n"
+"echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
+"echo \"SPDX-License-Identifier: MIT\" >> file.txt\n"
+"# REUSE-IgnoreEnd\n"
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "What to do with uncopyrightable files? {#uncopyrightable}"
+#, no-wrap
 msgid "... deal with uncopyrightable files? {#uncopyrightable}"
-msgstr "O que fazer com arquivos sem direitos autorais? {#uncopyrightable}"
+msgstr "... lidar com arquivos sem direitos autorais? {#uncopyrightable}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2323,11 +2376,17 @@ msgid ""
 "Because we [do not allow excluding files](#exclude-file), some information "
 "must be recorded for such files."
 msgstr ""
+"Alguns arquivos, como aqueles gerados por código ou arquivos de configuração "
+"que não contêm expressão criativa, podem não ser protegidos por direitos "
+"autorais. No entanto, o REUSE exige informações de licenciamento para cada "
+"arquivo, portanto, há um conflito aqui. Como "
+"[não permitimos a exclusão de arquivos](#exclude-file), algumas informações "
+"devem ser registradas para esses arquivos."
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "You have two options:"
-msgstr ""
+msgstr "Você tem duas opções:"
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -2336,19 +2395,20 @@ msgid ""
 "nothing that stops you from \"claiming\" copyright over your own works, even "
 "if a court might hypothetically find such files uncopyrightable."
 msgstr ""
+"Basta usar seus direitos autorais e licença regulares para este arquivo. Não "
+"há nada que o impeça de \"reivindicar\" direitos autorais sobre suas "
+"próprias obras, mesmo que um tribunal possa, hipoteticamente, considerar "
+"tais arquivos como não passíveis de direitos autorais."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "The alternative is to waive your copyright by using the [CC0-1.0](https://"
-#| "creativecommons.org/publicdomain/zero/1.0/) license."
 msgid ""
 "Waive your copyright using the [CC0-1.0](https://creativecommons.org/"
 "publicdomain/zero/1.0/) license or another similar public domain dedication."
 msgstr ""
-"A alternativa é renunciar aos seus direitos autorais usando a licença "
-"[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/)."
+"Renunciar aos seus direitos autorais usando a licença [CC0-1.0](https://"
+"creativecommons.org/publicdomain/zero/1.0/) ou outra dedicação de domínio "
+"público semelhante."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2356,6 +2416,9 @@ msgid ""
 "You may choose to use a copyright tag such as `SPDX-FileCopyrightText: NONE` "
 "to assert that there is no copyright holder."
 msgstr ""
+"Você pode optar por usar uma tag de direitos autorais como `SPDX-"
+"FileCopyrightText: NONE` para afirmar que não há detentor de direitos "
+"autorais."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2366,23 +2429,25 @@ msgid ""
 "may disagree and believe that the file in question falls under copyright, "
 "effectively disallowing them from using it if there is no license."
 msgstr ""
+"A razão pela qual esses arquivos _devem_ ser licenciados é porque mentes "
+"razoáveis podem divergir quanto ao limite de originalidade. Você pode "
+"considerar um arquivo tão insignificante que não merece informações sobre "
+"licenciamento, mas outros podem discordar e acreditar que o arquivo em "
+"questão está protegido por direitos autorais, efetivamente impedindo-os de "
+"usá-lo sem licença."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "It is important to note that you can only do this for your own works. If "
-#| "the file was authored by someone else, you must declare their copyright "
-#| "and license in the header."
 msgid ""
 "It is important to note that you can only apply licenses to your own works. "
 "If the file was authored by someone else, you should declare their copyright "
 "and license in the header. If there is no such information, you should "
 "contact the author."
 msgstr ""
-"É importante observar que você só pode fazer isso para seus próprios "
-"trabalhos. Se o arquivo foi criado por outra pessoa, você deve declarar seus "
-"direitos autorais e licença no cabeçalho."
+"É importante observar que você só pode aplicar licenças às suas próprias "
+"obras. Se o arquivo foi criado por outra pessoa, você deve declarar os "
+"direitos autorais e a licença dela no cabeçalho. Caso não haja essas "
+"informações, entre em contato com o autor."
 
 #. type: Title ##
 #: site/content/en/faq.md
