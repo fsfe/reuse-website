@@ -34,10 +34,9 @@ similar! You will find this and more developer tools
 
 ## Contribute
 
-We welcome your pull requests and issue reports. Please be aware that
-this repository does not contain the specification, tutorial, and FAQ,
-so please direct your inquiry to [reuse
-docs](https://github.com/fsfe/reuse-docs).
+We welcome your pull requests and issue reports. This repository does
+contain the website, and also the specification, tutorial and FAQ 
+documents.
 
 Generally, we invite you to contact and join the [REUSE mailing
 list](https://lists.fsfe.org/mailman/listinfo/reuse).
