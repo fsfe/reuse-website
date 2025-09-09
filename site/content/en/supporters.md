@@ -15,7 +15,7 @@ constantly evolve and improve.
 
 A project that follows the REUSE best practices makes its licensing and
 copyright situation transparent, ensures that third-party code is attributed
-correctly, and makes it easily re-usable for other developers. Because REUSE
+correctly, and makes it easily reusable for other developers. Because REUSE
 does not require a registration and can even be used offline, we don't have
 precise user statistics. Below you can find some we know of.
 
