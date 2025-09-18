@@ -309,6 +309,10 @@ SPDX-FileCopyrightText = "2019 Jane Doe"
 SPDX-License-Identifier = "CC0-1.0"
 ```
 
+A JSON schema of version 1 of `REUSE.toml` is provided at
+<https://reuse.software/reuse-toml-v1.schema.json>. This Specification remains
+authoritative.
+
 ### DEP5 (deprecated)
 
 Licensing Information MAY be associated with a file through a DEP5 file, but you
