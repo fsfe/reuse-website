@@ -6,7 +6,6 @@
   "description": "A configuration file which declares the copyright and licensing of files in a directory tree",
   "type": "object",
   "required": ["version"],
-  "additionalProperties": true,
   "properties": {
     "version": {
       "description": "The schema version of the REUSE.toml file",
@@ -21,7 +20,6 @@
         "description": "Annotation object",
         "type": "object",
         "required": ["path"],
-        "additionalProperties": true,
         "properties": {
           "path": {
             "description": "Relative path(s) to files, with optional globbing",
