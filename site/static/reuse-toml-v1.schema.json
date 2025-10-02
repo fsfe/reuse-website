@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reuse.software/reuse-toml-v1.schema.json",
+  "$comment": "See https://reuse.software/ for details",
+  "title": "REUSE.toml global licensing file, version 1",
+  "description": "A configuration file which declares the copyright and licensing of files in a directory tree",
+  "type": "object",
+  "required": ["version"],
+  "properties": {
+    "version": {
+      "description": "The schema version of the REUSE.toml file",
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "examples": [1]
+    },
+    "annotations": {
+      "description": "Annotation object array",
+      "type": "array",
+      "items": {
+        "description": "Annotation object",
+        "type": "object",
+        "required": ["path"],
+        "properties": {
+          "path": {
+            "description": "Relative path(s) to files, with optional globbing",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ],
+            "examples": [["po/*.po", "po/*.pot"], "tests/resources/**"]
+          },
+          "precedence": {
+            "description": "The order of precedence for Licensing Information between this REUSE.toml file and the files covered by path",
+            "enum": ["closest", "aggregate", "override"],
+            "default": "closest",
+            "examples": ["closest"]
+          },
+          "SPDX-FileCopyrightText": {
+            "description": "Copyright notice(s)",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ],
+            "examples": [
+              "2019 Jane Doe <jane@example.com>",
+              "© 2019 John Doe <john@example.com>",
+              "Contributors to Example Project <https://project.example.com>",
+              "(C) Example Cooperative <info@coop.example.com>",
+              "Copyright 2016, 2018-2019 Joe Anybody"
+            ]
+          },
+          "SPDX-License-Identifier": {
+            "description": "License identifier(s)",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ],
+            "examples": ["GPL-3.0-or-later", "GPL-3.0-or-later OR Apache-2.0"]
+          }
+        }
+      }
+    }
+  }
+}

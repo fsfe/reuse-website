@@ -416,7 +416,8 @@ SPDX-License-Identifier = "CC0-1.0"
 ```
 
 The [REUSE Specification](/spec) documents more thoroughly how `REUSE.toml` can
-be used.
+be used. You can find a JSON schema for `REUSE.toml` at
+<https://reuse.software/reuse-toml-v1.schema.json>.
 
 ## ... override erroneous REUSE information? {#override-info}
 
