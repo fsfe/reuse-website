@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://reuse.software/reuse-toml-v1.schema.json",
-  "$comment": "See https://reuse.software/spec-3.2/ for details",
+  "$comment": "See https://reuse.software/ for details",
   "title": "REUSE.toml global licensing file, version 1",
   "description": "A configuration file which declares the copyright and licensing of files in a directory tree",
   "type": "object",

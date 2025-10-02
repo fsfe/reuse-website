@@ -318,8 +318,7 @@ SPDX-License-Identifier = "CC0-1.0"
 ```
 
 A JSON schema of version 1 of `REUSE.toml` is provided at
-<https://reuse.software/reuse-toml-v1.schema.json>. This Specification remains
-authoritative.
+<https://reuse.software/reuse-toml-v1.schema.json> for your convenience.
 
 ### DEP5 (deprecated)
 
