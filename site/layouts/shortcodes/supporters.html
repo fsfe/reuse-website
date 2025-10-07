@@ -2,7 +2,9 @@
   SPDX-License-Identifier: MIT
   SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V. <https://fsfe.org>
 -->
-{{ $orgs := where (getJSON "data/organisations.json") "sponsor" true }}
+{{ $data := readFile "data/organisations.json" }}
+{{ $unmarshaled := $data | unmarshal }}
+{{ $orgs := where $unmarshaled "sponsor" true }}
 <div class="table-responsive">
   <table class="table table-striped supporters">
     <tbody>
