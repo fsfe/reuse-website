@@ -13,7 +13,7 @@ steps:
   - name: po4a
     image: alpine:3.19
     commands:
-      - apk add perl-yaml-tiny po4a diffutils
+      - apk add --no-cache perl-yaml-tiny po4a diffutils
       - po4a po4a.conf
 
   # Create .status file for important i18n translation strings
