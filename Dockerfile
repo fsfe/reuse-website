@@ -13,10 +13,11 @@ COPY vhost.conf /usr/local/apache2/conf/
 RUN echo "Include conf/vhost.conf" >> /usr/local/apache2/conf/httpd.conf
 
 ## Enable mod_expires module
-# Listen on our custom port & enable expires module
+# Listen on our custom port & enable expires & rewrite modules
 RUN sed -i \
   -e 's/Listen 80/Listen 8080/' \
   -e 's/#LoadModule expires_module/LoadModule expires_module/' \
+  -e 's/#LoadModule rewrite_module/LoadModule rewrite_module/' \
   /usr/local/apache2/conf/httpd.conf
 
 
