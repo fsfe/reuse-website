@@ -9,7 +9,7 @@
 FROM httpd:alpine AS webserver-prep
 
 # Copy our vhost config & tell Apache to use it
-COPY reuse.software.conf /usr/local/apache2/conf/vhost.conf
+COPY vhost.conf /usr/local/apache2/conf/
 RUN echo "Include conf/vhost.conf" >> /usr/local/apache2/conf/httpd.conf
 
 ## Enable mod_expires module
