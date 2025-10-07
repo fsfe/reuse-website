@@ -6,11 +6,8 @@ kind: pipeline
 name: default
 
 steps:
-  # Check for REUSE compliance
   - name: reuse
-    image: fsfe/reuse:latest
-    commands:
-      - reuse lint
+    image: fsfe/reuse
 
   # Create translations for markdown via PO files
   - name: po4a
