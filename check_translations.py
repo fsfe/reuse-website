@@ -16,11 +16,12 @@ with open(f"{basedir}/en.json", encoding="UTF-8") as jsonfile:
     en = json.load(jsonfile)
 
 # Clear status file
-with open(f"{basedir}/.status", 'w'): pass
+with open(f"{basedir}/.status", "w"):
+    pass
 
 # load all index strings
 indexes = []
-for k,v in en.items():
+for k, v in en.items():
     if k.startswith("index_"):
         indexes.append(k)
 
@@ -53,4 +54,4 @@ for trans in i18nfiles:
             with open(f"{basedir}/.status", "a") as statusfile:
                 statusfile.write(f"{lang}\n")
         else:
-            print(f"[WARN] Important keys for \"{lang}\" not complete!")
+            print(f'[WARN] Important keys for "{lang}" not complete!')
