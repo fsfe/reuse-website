@@ -30,7 +30,7 @@ i18nfiles = glob.glob(f"{basedir}/*.json")
 
 # Interate through translation files and check their completeness
 for trans in i18nfiles:
-    lang = os.path.splitext(os.path.basename(trans))[0]
+    lang: str = os.path.splitext(os.path.basename(trans))[0]
 
     # skip English
     if lang == "en":
@@ -38,7 +38,7 @@ for trans in i18nfiles:
 
     else:
         # initialise key counter
-        transstrings = 0
+        transstrings: int = 0
 
         # Load JSON file
         with open(trans, encoding="UTF-8") as jsonfile:
