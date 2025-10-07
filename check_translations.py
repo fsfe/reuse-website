@@ -36,21 +36,22 @@ for trans in i18nfiles:
     if lang == "en":
         continue
 
-    # initialise key counter
-    transstrings: int = 0
-
-    # Load JSON file
-    with open(trans, encoding="UTF-8") as jsonfile:
-        trans = json.load(jsonfile)
-
-    # Check for all important strings whether they exist in translation
-    for key in indexes:
-        if key in trans:
-            transstrings += 1
-
-    # Check if same amount of strings available
-    if transstrings == len(indexes):
-        with open(f"{basedir}/.status", "a") as statusfile:
-            statusfile.write(f"{lang}\n")
     else:
-        print(f'[WARN] Important keys for "{lang}" not complete!')
+        # initialise key counter
+        transstrings: int = 0
+
+        # Load JSON file
+        with open(trans, encoding="UTF-8") as jsonfile:
+            trans = json.load(jsonfile)
+
+        # Check for all important strings whether they exist in translation
+        for key in indexes:
+            if key in trans:
+                transstrings += 1
+
+        # Check if same amount of strings available
+        if transstrings == len(indexes):
+            with open(f"{basedir}/.status", "a") as statusfile:
+                statusfile.write(f"{lang}\n")
+        else:
+            print(f'[WARN] Important keys for "{lang}" not complete!')
