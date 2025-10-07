@@ -11,9 +11,9 @@ steps:
 
   # Create translations for markdown via PO files
   - name: po4a
-    image: alpine:3.19
+    image: alpine
     commands:
-      - apk add --no-cache perl-yaml-tiny po4a diffutils
+      - apk add --no-cache diffutils perl-yaml-tiny po4a
       - po4a po4a.conf
 
   # Create .status file for important i18n translation strings
