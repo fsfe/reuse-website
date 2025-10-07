@@ -348,7 +348,7 @@ $ reuse --help
 
 Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project root
 to create an [SPDX
-document](https://spdx.org/spdx-specification-21-web-version).
+document](https://spdx.dev/use/specifications/).
 
 ## ... add copyright and licensing information to an uncommentable file? {#uncommentable-file}
 
