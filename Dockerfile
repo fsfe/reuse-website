@@ -6,14 +6,19 @@
 # Configure webserver
 # =============================================================================
 
-# TODO: Switch back to 2.4. <https://github.com/bitnami/containers/issues/71316>
-# currently makes 2.4.62 unviable.
-FROM bitnami/apache:2.4.61 as webserver-prep
+FROM httpd:alpine as webserver-prep
 
-COPY reuse.software.conf /vhosts/
+# Copy our vhost config & tell Apache to use it
+COPY reuse.software.conf /usr/local/apache2/conf/vhost.conf
+RUN echo "Include conf/vhost.conf" >> /usr/local/apache2/conf/httpd.conf
 
 ## Enable mod_expires module
-RUN sed -i -r 's/#LoadModule expires_module/LoadModule expires_module/' /opt/bitnami/apache/conf/httpd.conf
+# Listen on our custom port & enable expires module
+RUN sed -i \
+  -e 's/Listen 80/Listen 8080/' \
+  -e 's/#LoadModule expires_module/LoadModule expires_module/' \
+  /usr/local/apache2/conf/httpd.conf
+
 
 
 # =============================================================================
