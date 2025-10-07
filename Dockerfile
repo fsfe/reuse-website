@@ -6,7 +6,7 @@
 # Configure webserver
 # =============================================================================
 
-FROM httpd:alpine as webserver-prep
+FROM httpd:alpine AS webserver-prep
 
 # Copy our vhost config & tell Apache to use it
 COPY reuse.software.conf /usr/local/apache2/conf/vhost.conf
@@ -25,7 +25,7 @@ RUN sed -i \
 # Development Preparation: run po4a and hugo
 # =============================================================================
 
-FROM alpine:3.20 as dev-prep
+FROM alpine:3.20 AS dev-prep
 
 # Dependencies
 RUN apk --no-cache add bash perl-yaml-tiny po4a hugo python3 diffutils
@@ -48,7 +48,7 @@ RUN hugo -s site
 # Development (use the site built in dev-prep)
 # =============================================================================
 
-FROM webserver-prep as development
+FROM webserver-prep AS development
 
 COPY --from=dev-prep /app/site/public/ /app/
 
@@ -57,6 +57,6 @@ COPY --from=dev-prep /app/site/public/ /app/
 # Production (use the site built in hugo step in .drone.yml)
 # =============================================================================
 
-FROM webserver-prep as production
+FROM webserver-prep AS production
 
 COPY site/public/ /app/
