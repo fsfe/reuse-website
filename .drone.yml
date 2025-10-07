@@ -8,8 +8,8 @@ type: docker
 name: default
 
 steps:
-  # - name: reuse
-  #   image: fsfe/reuse
+  - name: reuse
+    image: fsfe/reuse
 
   # Create translations for markdown via PO files
   - name: po4a
