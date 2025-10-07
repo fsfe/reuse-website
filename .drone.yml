@@ -34,6 +34,7 @@ steps:
   - name: deploy
     image: docker/compose:1.29.2
     environment:
+      # Environment variables necessary for rootless Docker
       XDG_RUNTIME_DIR: "/run/user/1001"
       DOCKER_HOST: "unix:///run/user/1001/docker.sock"
       # Use BuildKit to skip "development" step in Dockerfiles
