@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2025-10-07 06:44+0000\n"
+"POT-Creation-Date: 2025-10-07 12:31+0000\n"
 "PO-Revision-Date: 2024-11-21 03:42+0000\n"
 "Last-Translator: Hotripak <hotr1pak@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/fsfe/reuse-"
@@ -1790,10 +1790,14 @@ msgstr "... створити специфікацію програмного з�
 
 #. type: Plain text
 #: site/content/en/faq.md
+#, fuzzy
+#| msgid ""
+#| "Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project "
+#| "root to create an [SPDX document](https://spdx.org/spdx-specification-21-"
+#| "web-version)."
 msgid ""
 "Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project "
-"root to create an [SPDX document](https://spdx.org/spdx-specification-21-web-"
-"version)."
+"root to create an [SPDX document](https://spdx.dev/use/specifications/)."
 msgstr ""
 "Установіть засіб reuse та запустіть `reuse spdx -o reuse.spdx` у кореневому "
 "каталозі проєкту, щоб створити [документ SPDX](https://spdx.org/spdx-"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-10-07 06:44+0000\n"
+"POT-Creation-Date: 2025-10-07 12:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1488,8 +1488,7 @@ msgstr ""
 #, markdown-text
 msgid ""
 "Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project "
-"root to create an [SPDX "
-"document](https://spdx.org/spdx-specification-21-web-version)."
+"root to create an [SPDX document](https://spdx.dev/use/specifications/)."
 msgstr ""
 
 #. type: Title ##

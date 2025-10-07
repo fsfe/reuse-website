@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2025-10-07 06:44+0000\n"
+"POT-Creation-Date: 2025-10-07 12:31+0000\n"
 "PO-Revision-Date: 2022-01-11 09:55+0000\n"
 "Last-Translator: Imre Kristoffer Eilertsen <imreeil42@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/fsfe/"
@@ -1355,8 +1355,7 @@ msgstr ""
 #: site/content/en/faq.md
 msgid ""
 "Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project "
-"root to create an [SPDX document](https://spdx.org/spdx-specification-21-web-"
-"version)."
+"root to create an [SPDX document](https://spdx.dev/use/specifications/)."
 msgstr ""
 
 #. type: Title ##
