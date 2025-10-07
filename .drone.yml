@@ -18,7 +18,7 @@ steps:
 
   # Create .status file for important i18n translation strings
   - name: check_translations
-    image: python:3.10-alpine
+    image: python:alpine
     commands:
       - python3 check_translations.py site/i18n
 
