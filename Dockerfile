@@ -26,7 +26,7 @@ RUN sed -i \
 # Development Preparation: run po4a and hugo
 # =============================================================================
 
-FROM alpine:3.20 AS dev-prep
+FROM alpine AS dev-prep
 
 # Dependencies
 RUN apk --no-cache add bash perl-yaml-tiny po4a hugo python3 diffutils
