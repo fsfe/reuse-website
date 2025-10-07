@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2024-11-14 09:36+0000\n"
+"POT-Creation-Date: 2025-10-07 06:44+0000\n"
 "PO-Revision-Date: 2022-01-11 09:55+0000\n"
 "Last-Translator: Imre Kristoffer Eilertsen <imreeil42@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/fsfe/"
@@ -251,7 +251,7 @@ msgid ""
 "# SPDX-License-Identifier: CC0-1.0\n"
 "repos:\n"
 "  - repo: https://github.com/fsfe/reuse-tool\n"
-"    rev: v5.0.2\n"
+"    rev: v6.0.0\n"
 "    hooks:\n"
 "      - id: reuse\n"
 msgstr ""
@@ -340,7 +340,7 @@ msgid ""
 "    steps:\n"
 "      - uses: actions/checkout@v4\n"
 "      - name: REUSE Compliance Check\n"
-"        uses: fsfe/reuse-action@v4\n"
+"        uses: fsfe/reuse-action@v6\n"
 msgstr ""
 
 #. type: Plain text
@@ -1473,7 +1473,8 @@ msgstr ""
 #: site/content/en/faq.md
 msgid ""
 "The [REUSE Specification](/spec) documents more thoroughly how `REUSE.toml` "
-"can be used."
+"can be used. You can find a JSON schema for `REUSE.toml` at <https://reuse."
+"software/reuse-toml-v1.schema.json>."
 msgstr ""
 
 #. type: Title ##
@@ -3465,10 +3466,10 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: site/content/en/spec-3.0.md
+#: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
 msgid ""
 "For the revision history of this specification, please see [the change log]"
-"(https://git.fsfe.org/reuse/docs/src/branch/master/CHANGELOG.md)."
+"(https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 msgstr ""
 
 #. type: Title ##
@@ -3841,13 +3842,6 @@ msgid ""
 "licensing information for each individual file in a project. Ideally this "
 "information is embedded into every file, so that the information is "
 "preserved when the file is copied and reused by third parties."
-msgstr ""
-
-#. type: Plain text
-#: site/content/en/spec-3.2.md
-msgid ""
-"For the revision history of this specification, please see [the change log]"
-"(https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md)."
 msgstr ""
 
 #. type: Bullet: '- '
@@ -4408,6 +4402,13 @@ msgid ""
 "precedence = \"override\"\n"
 "SPDX-FileCopyrightText = \"2019 Jane Doe\"\n"
 "SPDX-License-Identifier = \"CC0-1.0\"\n"
+msgstr ""
+
+#. type: Plain text
+#: site/content/en/spec-3.2.md
+msgid ""
+"A JSON schema of version 1 of `REUSE.toml` is provided at <https://reuse."
+"software/reuse-toml-v1.schema.json> for your convenience."
 msgstr ""
 
 #. type: Plain text
