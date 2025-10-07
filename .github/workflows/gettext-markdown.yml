@@ -17,6 +17,12 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          # The main branch is protected. fsfe-system has been granted an
+          # exception to the branch protection, so we'll use that account's
+          # token to push to the main branch.
+          token: ${{ secrets.FSFE_SYSTEM_TOKEN }}
       - name: Install gettext, po4a and wlc
         run: sudo apt-get install -y gettext po4a wlc
       - name: Lock Weblate
