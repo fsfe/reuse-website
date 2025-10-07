@@ -58,6 +58,7 @@ node:
   cont2: noris
 
 volumes:
+  # Define Docker socket of rootless docker user
   - name: dockersock
     host:
       path: /run/user/1001/docker.sock
