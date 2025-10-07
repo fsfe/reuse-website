@@ -34,18 +34,21 @@ steps:
 
   # Build and deploy Docker
   - name: deploy
-    image: docker/compose:1.29.2
+    image: docker:28
     environment:
       # Environment variables necessary for rootless Docker
       XDG_RUNTIME_DIR: "/run/user/1001"
       DOCKER_HOST: "unix:///run/user/1001/docker.sock"
       # Use BuildKit to skip "development" step in Dockerfiles
       DOCKER_BUILDKIT: 1
-    commands:
-      - docker-compose -p reuse-website up --build -d
     volumes:
       - name: dockersock
         path: /run/user/1001/docker.sock
+    commands:
+      - docker ps && echo "tampered with"
+      - docker compose down
+      - docker compose pull --ignore-buildable --include-deps
+      - docker compose -p reuse-website up --build -d
     when:
       branch:
         - main
