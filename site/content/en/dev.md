@@ -115,7 +115,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: REUSE Compliance Check
-        uses: fsfe/reuse-action@v4
+        uses: fsfe/reuse-action@v6
 ```
 
 Visit the [action's marketplace
