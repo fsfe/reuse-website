@@ -21,4 +21,4 @@ services:
       proxy.host_alias: "www.reuse.software"
       proxy.port: "6140"
     ports:
-      - "6140:8080"
+      - "6140:80"
