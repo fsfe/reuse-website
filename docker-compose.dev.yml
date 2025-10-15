@@ -6,7 +6,6 @@
 # sync docs, translate, and build hugo in Docker container
 # =============================================================================
 
-version: "3"
 services:
   reuse-web:
     container_name: reuse-web
