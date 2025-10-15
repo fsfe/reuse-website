@@ -2,10 +2,6 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-# =============================================================================
-# sync docs, translate, and build hugo in Docker container
-# =============================================================================
-
 services:
   reuse-web:
     container_name: reuse-web
