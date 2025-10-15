@@ -5,11 +5,11 @@
 services:
   reuse-web:
     container_name: reuse-web
+    image: reuse-web
+    restart: always
     build:
       context: .
       target: production
-    image: reuse-web
-    restart: always
     logging:
       driver: json-file
       options:
