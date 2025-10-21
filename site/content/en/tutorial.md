@@ -187,7 +187,7 @@ by:
   questions on the tutorial, FAQ or specification;
 - opening an issue on [reuse-tool](https://github.com/fsfe/reuse-tool) for
   questions on the REUSE tool;
-- or [sending an email to the FSFE](https://fsfe.org/contact). Please note that
+- or [sending an email to the FSFE](https://fsfe.org/about/contact.html). Please note that
   we would prefer issues because they are publicly searchable for other people.
 
 Thank you for your valuable contribution towards making software reusable!
