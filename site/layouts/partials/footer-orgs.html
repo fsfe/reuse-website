@@ -2,7 +2,9 @@
   SPDX-License-Identifier: MIT
   SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V. <https://fsfe.org>
 -->
-{{ $orgs := where (getJSON "data/organisations.json") "footer" true }}
+{{ $data := readFile "data/organisations.json" }}
+{{ $unmarshaled := $data | unmarshal }}
+{{ $orgs := where $unmarshaled "footer" true }}
 {{ $img := "" }}
 <div class="orgs">
   <p class="text-muted">Selected supporters and adopters:</p>

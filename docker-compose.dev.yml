@@ -9,11 +9,11 @@
 services:
   reuse-web:
     container_name: reuse-web
+    image: reuse-web
+    restart: always
     build:
       context: .
       target: development
-    image: reuse-web
-    restart: always
     logging:
       driver: json-file
       options:
@@ -25,4 +25,4 @@ services:
       proxy.host_alias: "www.reuse.software"
       proxy.port: "6140"
     ports:
-      - "6140:8080"
+      - "6140:80"

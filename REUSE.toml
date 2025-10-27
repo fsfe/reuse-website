@@ -50,6 +50,6 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
 path = "site/po/**.po**"
-precedence = "aggregate"
-SPDX-FileCopyrightText = "2020 Free Software Foundation Europe e.V."
+precedence = "override"
+SPDX-FileCopyrightText = "REUSE contributors"
 SPDX-License-Identifier = "CC-BY-SA-4.0"

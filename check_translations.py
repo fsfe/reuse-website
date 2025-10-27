@@ -16,11 +16,12 @@ with open(f"{basedir}/en.json", encoding="UTF-8") as jsonfile:
     en = json.load(jsonfile)
 
 # Clear status file
-with open(f"{basedir}/.status", 'w'): pass
+with open(f"{basedir}/.status", "w"):
+    pass
 
 # load all index strings
 indexes = []
-for k,v in en.items():
+for k, v in en.items():
     if k.startswith("index_"):
         indexes.append(k)
 
@@ -29,28 +30,27 @@ i18nfiles = glob.glob(f"{basedir}/*.json")
 
 # Interate through translation files and check their completeness
 for trans in i18nfiles:
-    lang = os.path.splitext(os.path.basename(trans))[0]
+    lang: str = os.path.splitext(os.path.basename(trans))[0]
 
     # skip English
     if lang == "en":
         continue
 
+    # initialise key counter
+    transstrings: int = 0
+
+    # Load JSON file
+    with open(trans, encoding="UTF-8") as jsonfile:
+        trans = json.load(jsonfile)
+
+    # Check for all important strings whether they exist in translation
+    for key in indexes:
+        if key in trans:
+            transstrings += 1
+
+    # Check if same amount of strings available
+    if transstrings == len(indexes):
+        with open(f"{basedir}/.status", "a") as statusfile:
+            statusfile.write(f"{lang}\n")
     else:
-        # initialise key counter
-        transstrings = 0
-
-        # Load JSON file
-        with open(trans, encoding="UTF-8") as jsonfile:
-            trans = json.load(jsonfile)
-
-        # Check for all important strings whether they exist in translation
-        for key in indexes:
-            if key in trans:
-                transstrings += 1
-
-        # Check if same amount of strings available
-        if transstrings == len(indexes):
-            with open(f"{basedir}/.status", "a") as statusfile:
-                statusfile.write(f"{lang}\n")
-        else:
-            print(f"[WARN] Important keys for \"{lang}\" not complete!")
+        print(f'[WARN] Important keys for "{lang}" not complete!')
