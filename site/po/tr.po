@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-10-27 15:27+0000\n"
-"PO-Revision-Date: 2022-06-20 07:21+0000\n"
-"Last-Translator: metezd <itoldyouthat@protonmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/fsfe/reuse-docs/"
-"tr/>\n"
+"PO-Revision-Date: 2025-10-29 02:05+0000\n"
+"Last-Translator: slick-daddy <129640104+slick-daddy@users.noreply.github.com>"
+"\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -154,7 +155,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Example repositories {#repos}"
-msgstr ""
+msgstr "Örnek depolar {#repos}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -189,9 +190,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "API {#api}"
-msgstr ""
+msgstr "API {#api}"
 
 #. type: Plain text
 #: site/content/en/dev.md
