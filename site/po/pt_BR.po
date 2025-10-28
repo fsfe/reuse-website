@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-10-27 15:27+0000\n"
-"PO-Revision-Date: 2025-09-09 03:02+0000\n"
+"PO-Revision-Date: 2025-10-29 02:05+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -331,15 +331,7 @@ msgstr ""
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
-#| "# SPDX-License-Identifier: CC0-1.0\n"
-#| "repos:\n"
-#| "  - repo: https://github.com/fsfe/reuse-tool\n"
-#| "    rev: v5.0.2\n"
-#| "    hooks:\n"
-#| "      - id: reuse\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
@@ -353,7 +345,7 @@ msgstr ""
 "# SPDX-License-Identifier: CC0-1.0\n"
 "repos:\n"
 "  - repo: https://github.com/fsfe/reuse-tool\n"
-"    rev: v5.0.2\n"
+"    rev: v6.2.0\n"
 "    hooks:\n"
 "      - id: reuse\n"
 
@@ -442,21 +434,7 @@ msgstr ""
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
-#| "# SPDX-License-Identifier: CC0-1.0\n"
-#| "name: REUSE Compliance Check\n"
-#| "\n"
-#| "on: [push, pull_request]\n"
-#| "\n"
-#| "jobs:\n"
-#| "  test:\n"
-#| "    runs-on: ubuntu-latest\n"
-#| "    steps:\n"
-#| "      - uses: actions/checkout@v4\n"
-#| "      - name: REUSE Compliance Check\n"
-#| "        uses: fsfe/reuse-action@v4\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
@@ -484,7 +462,7 @@ msgstr ""
 "    steps:\n"
 "      - uses: actions/checkout@v4\n"
 "      - name: REUSE Compliance Check\n"
-"        uses: fsfe/reuse-action@v4\n"
+"        uses: fsfe/reuse-action@v6\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -1768,18 +1746,12 @@ msgstr "... criar uma lista de materiais do software {#bill-of-materials}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project "
-#| "root to create an [SPDX document](https://spdx.org/spdx-specification-21-"
-#| "web-version)."
 msgid ""
 "Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project "
 "root to create an [SPDX document](https://spdx.dev/use/specifications/)."
 msgstr ""
 "Instale a ferramenta reuse e execute `reuse spdx -o reuse.spdx` na raiz do "
-"projeto para criar um [documento SPDX](https://spdx.org/spdx-"
-"specification-21-web-version)."
+"projeto para criar um [documento SPDX](https://spdx.dev/use/specifications/)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1946,17 +1918,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "The [REUSE Specification](/spec) documents more thoroughly how `REUSE."
-#| "toml` can be used."
 msgid ""
 "The [REUSE Specification](/spec) documents more thoroughly how `REUSE.toml` "
 "can be used. You can find a JSON schema for `REUSE.toml` at <https://reuse."
 "software/reuse-toml-v1.schema.json>."
 msgstr ""
-"A [Especificação REUSE](/spec) documenta de forma mais detalhada como `REUSE."
-"toml` pode ser usado."
+"A [Especificação REUSE](/spec) documenta de forma mais detalhada como "
+"`REUSE.toml` pode ser usado. Você pode encontrar um esquema JSON para "
+"`REUSE.toml` em <https://reuse.software/reuse-toml-v1.schema.json>."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2176,24 +2145,20 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I exclude a file from REUSE compliance testing? {#exclude-file}"
+#, no-wrap
 msgid "... exclude a file from REUSE compliance testing? {#exclude-file}"
-msgstr "Como excluo um arquivo do teste de conformidade REUSE? {#exclude-file}"
+msgstr "... excluo um arquivo do teste de conformidade REUSE? {#exclude-file}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If the file is a build artifact and you use Git, simply make sure that "
-#| "the file is covered by your `.gitignore` file."
 msgid ""
 "If the file is a build artifact and you use Git, simply make sure that the "
 "file is covered by your `.gitignore` file. The same goes for other VCS "
 "ignore mechanisms."
 msgstr ""
 "Se o arquivo for um artefato de compilação e você usar o Git, simplesmente "
-"certifique-se de que o arquivo seja coberto pelo seu arquivo ` .gitignore `."
+"certifique-se de que o arquivo seja coberto pelo seu arquivo ` .gitignore `. "
+"O mesmo ocorre para os mecanismos de VCS para ignorar."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2208,42 +2173,33 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If you really want to exclude a file, consider using the [CC0](https://"
-#| "creativecommons.org/publicdomain/zero/1.0/) license for this file. By "
-#| "doing this, you put the file in the public domain, or your country's "
-#| "equivalent."
 msgid ""
 "If you really want to exclude a file, consider using the [CC0-1.0](https://"
 "creativecommons.org/publicdomain/zero/1.0/) license for this file. By doing "
 "this, you put the file in the [public domain, or your country's equivalent]"
 "(https://fsfe.org/freesoftware/legal/faq.html#public-domain)."
 msgstr ""
-"Se você realmente deseja excluir um arquivo, considere usar a licença [CC0]"
-"(https://creativecommons.org/publicdomain/zero/1.0/) para este arquivo. Ao "
-"fazer isso, você coloca o arquivo em domínio público ou equivalente em seu "
-"país."
+"Se você realmente deseja excluir um arquivo, considere usar a licença "
+"[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) para este "
+"arquivo. Ao fazer isso, você coloca o arquivo em "
+"[domínio público ou equivalente em seu país]"
+"(https://fsfe.org/freesoftware/legal/faq.html#public-domain)."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If you have an entire directory that you want to \"exclude\" from REUSE "
-#| "compliance testing, you can [use a DEP5 file](#bulk-license)."
 msgid ""
 "If you have an entire directory that you want to \"exclude\" from REUSE "
 "compliance testing, you can [use `REUSE.toml`](#bulk-license)."
 msgstr ""
 "Se você tiver um diretório inteiro que deseja \"excluir\" do teste de "
-"conformidade REUSE, você pode [usar um arquivo DEP5](#bulk-license)."
+"conformidade REUSE, você pode [usar `REUSE.toml`](#bulk-license)."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I exclude a file from REUSE compliance testing? {#exclude-file}"
+#, no-wrap
 msgid "... exclude certain lines from REUSE compliance testing? {#exclude-lines}"
-msgstr "Como excluo um arquivo do teste de conformidade REUSE? {#exclude-file}"
+msgstr ""
+"... excluo certas linhas do teste de conformidade REUSE? {#exclude-lines}"
 
 #. type: Plain text
 #: site/content/en/faq.md
