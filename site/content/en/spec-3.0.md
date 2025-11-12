@@ -54,7 +54,7 @@ These are the definitions for some of the terms used in this specification:
   and `License` tags.
 
 - REUSE Tool --- helper tool for compliance with this Specification; available
-  at <https://github.com/fsfe/reuse-tool>.
+  at <https://codeberg.org/fsfe/reuse-tool>.
 
 ## License files
 

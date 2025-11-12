@@ -13,7 +13,7 @@ Contents: [Helper tool](#tool), [example repositories](#repos), [REUSE API](#api
 
 ## REUSE Tool {#tool}
 
-The [REUSE tool](https://github.com/fsfe/reuse-tool) assists with achieving and
+The [REUSE tool](https://codeberg.org/fsfe/reuse-tool) assists with achieving and
 confirming REUSE compliance. It downloads the full license texts, adds copyright
 and license information to file headers, and contains a linter to identify
 problems. Eventually, you can generate a software bill of materials.
@@ -29,7 +29,7 @@ What does a REUSE-compliant project look like? The following repositories are ba
 - [reuse-tutorial-example](https://codeberg.org/fsfe/reuse-tutorial-example) - a
   REUSE-compliant repository that matches the example in [the tutorial]({{<
   relref "tutorial.md" >}}). Includes a non-compliant branch for testing.
-- [reuse-tool](https://github.com/fsfe/reuse-tool) - the helper tool itself is
+- [reuse-tool](https://codeberg.org/fsfe/reuse-tool) - the helper tool itself is
   compliant, just like [all other REUSE
   repositories](https://git.fsfe.org/reuse/).
 
@@ -67,7 +67,7 @@ installed](https://pre-commit.com/#install), add this to the
 # SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC0-1.0
 repos:
-  - repo: https://github.com/fsfe/reuse-tool
+  - repo: https://codeberg.org/fsfe/reuse-tool
     rev: v6.2.0
     hooks:
       - id: reuse

@@ -42,7 +42,7 @@ Then, for all files, edit the header to contain the following:
 
 ### 3. Confirm REUSE compliance {#step-3}
 
-Use the [REUSE tool](https://github.com/fsfe/reuse-tool) to automate some of
+Use the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) to automate some of
 these steps, and to check whether you did everything correctly.
 
 ## What is SPDX? {#what-is-spdx}
@@ -259,7 +259,7 @@ information, or simply redirect the reader to your `LICENSES/` directory.
 
 Additionally, many package hosting sites expect that you declare the licensing
 information of your package. For instance, the [pyproject.toml file of the REUSE
-tool](https://github.com/fsfe/reuse-tool/blob/main/pyproject.toml) declares
+tool](https://codeberg.org/fsfe/reuse-tool/src/branch/main/pyproject.toml) declares
 all the licenses that it uses in the format expected by the Python packaging
 infrastructure.
 
