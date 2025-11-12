@@ -34,7 +34,7 @@ repository](https://codeberg.org/fsfe/reuse-tutorial-example). The branch
 successful result of this tutorial.
 
 For each of these steps, you will first learn how to achieve them manually.
-However, the [REUSE tool](https://github.com/fsfe/reuse-tool) supports
+However, the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) supports
 you with most tasks, and the necessary commands will be listed as well in the
 collapsible boxes. We recommend to first understand the basic principle before
 just executing the tool's commands.
@@ -185,7 +185,7 @@ by:
 
 - opening an issue on [reuse-website](https://github.com/fsfe/reuse-website) for
   questions on the tutorial, FAQ or specification;
-- opening an issue on [reuse-tool](https://github.com/fsfe/reuse-tool) for
+- opening an issue on [reuse-tool](https://codeberg.org/fsfe/reuse-tool) for
   questions on the REUSE tool;
 - or [sending an email to the FSFE](https://fsfe.org/contact). Please note that
   we would prefer issues because they are publicly searchable for other people.
