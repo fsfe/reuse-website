@@ -2671,7 +2671,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
 msgid ""
-"or [sending an email to the FSFE](https://fsfe.org/contact). Please note "
+"or [sending an email to the FSFE](https://fsfe.org/about/contact.html). Please note "
 "that we would prefer issues because they are publicly searchable for other "
 "people."
 msgstr ""
