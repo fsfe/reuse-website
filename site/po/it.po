@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2020-08-19 12:43+0200\n"
-"PO-Revision-Date: 2022-07-18 14:14+0000\n"
-"Last-Translator: Alfonso Scarpino <alfonso.scarpino@gmail.com>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/fsfe/reuse-docs/"
-"it/>\n"
+"PO-Revision-Date: 2025-11-13 17:51+0000\n"
+"Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/fsfe/"
+"reuse-website-markdown/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. type: YAML Front Matter: title
 #: faq.md
 #, no-wrap
 msgid "Frequently Asked Questions"
-msgstr "Domande Frequenti"
+msgstr "Domande ricorrenti"
 
 #. type: Plain text
 #: faq.md
@@ -487,42 +487,64 @@ msgstr ""
 #, markdown-text
 msgid "Members of the GPL family are listed separately in the SPDX License List as -only and -or-later, even though the license texts are identical. If you have code under only one of these licenses, we recommend that you only include that one license."
 msgstr ""
+"I membri della famiglia GPL sono elencati separatamente nell'elenco delle "
+"licenze SPDX come -only e -or-later, sebbene i testi delle licenze siano "
+"identici. Se si dispone di codice rilasciato sotto una sola di queste "
+"licenze, si consiglia di includere solo quella."
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "If you have code under both an -only license and an -or-later license, we recommend that you include both licenses separately."
 msgstr ""
+"Se si dispone di codice con licenza sia -only che -or-later, consigliamo di "
+"includere entrambe le licenze separatamente."
 
 #. type: Title ##
 #: faq.md
 #, markdown-text, no-wrap
 msgid "What are license exceptions and what do I do with them? {#license-exceptions}"
 msgstr ""
+"Cosa sono le eccezioni di licenza e cosa posso farne? {#license-exceptions}"
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "License exceptions are additions or alterations to a license that often work to permit a certain use of the code that wouldn't be allowed under the original license. It is often used by compilers, where a portion of compiler code may end up in the resulting binary. The exception may waive rights over portions of code that end up in binaries."
 msgstr ""
+"Le eccezioni di licenza sono aggiunte o modifiche a una licenza che spesso "
+"consentono un determinato utilizzo del codice che non sarebbe consentito "
+"dalla licenza originale. Sono spesso utilizzate dai compilatori, dove una "
+"porzione di codice del compilatore può finire nel codice binario risultante. "
+"L'eccezione può far rinunciare ai diritti su porzioni di codice che "
+"finiranno nei codici binari."
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "Exceptions are treated almost identically to licenses. In order to combine a license with an exception, you mark a file with the following tag: `SPDX-License-Identifier: GPL-3.0-or-later WITH GCC-exception-3.1`."
 msgstr ""
+"Le eccezioni sono trattate in modo quasi identico alle licenze. Per "
+"combinare una licenza con un'eccezione, è necessario contrassegnare un file "
+"con la seguente marcatura: `SPDX-License-Identifier: GPL-3.0-or-later WITH "
+"GCC-exception-3.1`."
 
 #. type: Title ##
 #: faq.md
 #, markdown-text, no-wrap
 msgid "Which files are copyrightable? {#what-is-copyrightable}"
 msgstr ""
+"Quali file possono essere protetti da copyright? {#what-is-copyrightable}"
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "All files that are original works of authorship are copyrightable. In essence, if someone sat down typing their own original thoughts on a keyboard, then that person holds copyright over the output. Common examples are source code, documentation, audio, and video."
 msgstr ""
+"Tutti i file che costituiscono opere originali sono protetti da copyright. "
+"In sostanza, se qualcuno si siede a digitare i propri pensieri originali su "
+"una tastiera, quella persona detiene il copyright sul risultato. Esempi "
+"comuni sono codice sorgente, documentazione, audio e video."
 
 #. type: Plain text
 #: faq.md
@@ -565,6 +587,12 @@ msgstr ""
 #, markdown-text
 msgid "If someone else has made their work available for you to use and copy, you can incorporate their work into your project. When you put the work in one of the files in your project, you should add an `SPDX-FileCopyrightText` tag for the copyright holder(s) and an `SPDX-License-Identifier` tag for the license(s) under which the work was made available."
 msgstr ""
+"Se qualcun altro ha reso disponibile il proprio lavoro per l'utilizzo e la "
+"copia, si può incorporarli nel proprio progetto. Quando si inserisce il "
+"lavoro in uno dei file del proprio progetto, bisognerebbe aggiungere una "
+"marcatura `SPDX-FileCopyrightText` per il/i titolare/i del copyright e una "
+"marcatura `SPDX-License-Identifier` per la/le licenza/e con cui il lavoro è "
+"stato reso disponibile."
 
 #. type: Plain text
 #: faq.md
@@ -583,6 +611,9 @@ msgstr ""
 #, markdown-text
 msgid "Before you proceed, always first make sure that you can find the copyright and licensing information elsewhere. Some projects only include this information in the root directory or in their README file."
 msgstr ""
+"Prima di procedere, assicurarsi sempre di poter trovare le informazioni su "
+"copyright e licenza da qualche parte. Alcuni progetti includono queste "
+"informazioni solo nella cartella principale o nel file README."
 
 #. type: Plain text
 #: faq.md
@@ -595,12 +626,19 @@ msgstr ""
 #, markdown-text
 msgid "If the work has no license, then that means that you do not have the right to copy it. If you believe that this is a mistake and the author clearly meant for you to be able to copy this work, you should contact the author and ask them to license their work. Feel free to refer them to <https://reuse.software>."
 msgstr ""
+"Se l'opera non ha licenza, significa che non si ha il diritto di copiarla. "
+"Se si ritiene che si tratti di un errore e che l'autore intendesse "
+"chiaramente concedere la possibilità di copiare quest'opera, contattare "
+"l'autore e chiedigli di concedere la licenza per la sua opera. Sentitevi "
+"liberi di indirizzarlo a <https://reuse.software>."
 
 #. type: Title ##
 #: faq.md
 #, markdown-text, no-wrap
 msgid "Where else do I put my license information? {#where-else}"
 msgstr ""
+"Dove altro si può inserire le informazioni sulla propria licenza? {#where-"
+"else}"
 
 #. type: Plain text
 #: faq.md
