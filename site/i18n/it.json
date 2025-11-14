@@ -1,1 +1,17 @@
-{}
+{
+    "noscript_warning": {
+        "other": "Alcune funzionalità interattive non funzioneranno se JavaScript è disabilitato."
+    },
+    "table_of_contents": {
+        "other": "Sommario"
+    },
+    "tool_instructions": {
+        "other": "Istruzioni sugli strumenti per questo passaggio"
+    },
+    "warning": {
+        "other": "Avvertenza:"
+    },
+    "trans_inofficial": {
+        "other": "Stai leggendo una traduzione non ufficiale della [pagina originale](%s)."
+    }
+}
