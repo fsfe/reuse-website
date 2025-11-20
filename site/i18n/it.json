@@ -13,5 +13,74 @@
     },
     "trans_inofficial": {
         "other": "Stai leggendo una traduzione non ufficiale della [pagina originale](%s)."
+    },
+    "toggle_navigation": {
+        "other": "Commuta navigazione"
+    },
+    "trans_available": {
+        "other": "Sono disponibili traduzioni non ufficiali in:"
+    },
+    "and": {
+        "other": "e"
+    },
+    "menu_tutorial": {
+        "other": "Per iniziare"
+    },
+    "menu_dev": {
+        "other": "Sviluppatori"
+    },
+    "menu_resources": {
+        "other": "Risorse"
+    },
+    "menu_spec": {
+        "other": "Specifiche"
+    },
+    "menu_supporters": {
+        "other": "Sostenitori"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_initiative_by": {
+        "other": "Un'iniziativa di"
+    },
+    "menu_faq": {
+        "other": "FAQ"
+    },
+    "index_intro": {
+        "other": "Semplifichiamo la gestione delle licenze sia per gli esseri umani che per le macchine. Risolviamo un problema fondamentale che le licenze del Software Libero pongono alla radice: con quale licenza viene rilasciato un file e chi ne detiene il copyright? **Adottare i nostri consigli è facilissimo**!"
+    },
+    "index_step1": {
+        "other": "Scegliere e fornire le licenze"
+    },
+    "index_step2": {
+        "other": "Aggiungere informazioni sul copyright e sulla licenza a ciascun file"
+    },
+    "index_step3": {
+        "other": "Confermare la conformità a REUSE"
+    },
+    "index_rationale": {
+        "other": "Il copyright e la gestione delle licenze sono difficili, soprattutto quando si riutilizza software proveniente da progetti diversi e rilasciato con licenze diverse. REUSE è stato avviato dalla [Free Software Foundation Europe](https://fsfe.org) (FSFE) per fornire una serie di raccomandazioni per rendere la gestione delle licenze dei progetti di Software Libero **semplice, completa, univoca e leggibile dalle macchine**."
+    },
+    "index_dev_head": {
+        "other": "Per sviluppatori"
+    },
+    "index_dev_text": {
+        "other": "La licenza del progetto stabilisce i termini in base ai quali altri possono riutilizzare il software. Per questo motivo, è necessario assicurarsi che sia chiaro a tutti quali parti del software siano coperte da quale licenza. REUSE tutela le proprie intenzioni e ci assiste in questo processo. Controllare la [sezione strumenti](dev/) per saperne di più sullo strumento, sull'inclusione nei processi di CI/CD e altro ancora."
+    },
+    "index_reuse_head": {
+        "other": "Il riutilizzo reso semplice"
+    },
+    "index_reuse_text": {
+        "other": "Il Software Libero consente di basarsi sul lavoro altrui e quindi di innovare rapidamente. Ma più componenti esterni si utilizzano, più difficile sarà mantenere una panoramica dei titolari dei diritti d'autore e delle loro scelte di licenza. Con REUSE, ogni file contiene le informazioni necessarie e il repository contiene in modo trasparente tutte le licenze utilizzate."
+    },
+    "index_legal_head": {
+        "other": "Conformità di licenza"
+    },
+    "index_legal_text": {
+        "other": "Esistono molti strumenti che aiutano a garantire la conformità delle licenze software, molti dei quali utilizzano database e logiche euristiche. Un progetto conforme a REUSE semplifica notevolmente il lavoro di esperti legali e responsabili della conformità. La creazione di una distinta base può essere eseguita con un solo semplice comando. REUSE [non sostituisce altri strumenti](comparison/), è un'aggiunta di cui a lungo se ne sentiva la mancanza."
+    },
+    "all_specifications": {
+        "other": "Tutte le versioni delle specifiche sono disponibili all'indirizzo <{{ .specifications }}>."
     }
 }
