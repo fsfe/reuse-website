@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2025-10-27 15:27+0000\n"
+"POT-Creation-Date: 2025-11-24 15:24+0000\n"
 "PO-Revision-Date: 2025-10-29 02:05+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
@@ -183,11 +183,19 @@ msgstr "Ferramenta REUSE {#tool}"
 
 #. type: Plain text
 #: site/content/en/dev.md
+#, fuzzy
+#| msgid ""
+#| "The [REUSE tool](https://github.com/fsfe/reuse-tool) assists with "
+#| "achieving and confirming REUSE compliance. It downloads the full license "
+#| "texts, adds copyright and license information to file headers, and "
+#| "contains a linter to identify problems. Eventually, you can generate a "
+#| "software bill of materials."
 msgid ""
-"The [REUSE tool](https://github.com/fsfe/reuse-tool) assists with achieving "
-"and confirming REUSE compliance. It downloads the full license texts, adds "
-"copyright and license information to file headers, and contains a linter to "
-"identify problems. Eventually, you can generate a software bill of materials."
+"The [REUSE tool](https://codeberg.org/fsfe/reuse-tool) assists with "
+"achieving and confirming REUSE compliance. It downloads the full license "
+"texts, adds copyright and license information to file headers, and contains "
+"a linter to identify problems. Eventually, you can generate a software bill "
+"of materials."
 msgstr ""
 "A [ferramenta REUSE](https://github.com/fsfe/reuse-tool) auxilia na obtenção "
 "e confirmação da conformidade com a REUSE. Ela baixa os textos completos da "
@@ -235,9 +243,14 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/dev.md
+#, fuzzy
+#| msgid ""
+#| "[reuse-tool](https://github.com/fsfe/reuse-tool) - the helper tool itself "
+#| "is compliant, just like [all other REUSE repositories](https://git.fsfe."
+#| "org/reuse/)."
 msgid ""
-"[reuse-tool](https://github.com/fsfe/reuse-tool) - the helper tool itself is "
-"compliant, just like [all other REUSE repositories](https://git.fsfe.org/"
+"[reuse-tool](https://codeberg.org/fsfe/reuse-tool) - the helper tool itself "
+"is compliant, just like [all other REUSE repositories](https://git.fsfe.org/"
 "reuse/)."
 msgstr ""
 "[reuse-tool](https://github.com/fsfe/reuse-tool) - a ferramenta auxiliar em "
@@ -331,12 +344,20 @@ msgstr ""
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+#| "# SPDX-License-Identifier: CC0-1.0\n"
+#| "repos:\n"
+#| "  - repo: https://github.com/fsfe/reuse-tool\n"
+#| "    rev: v6.2.0\n"
+#| "    hooks:\n"
+#| "      - id: reuse\n"
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
 "repos:\n"
-"  - repo: https://github.com/fsfe/reuse-tool\n"
+"  - repo: https://codeberg.org/fsfe/reuse-tool\n"
 "    rev: v6.2.0\n"
 "    hooks:\n"
 "      - id: reuse\n"
@@ -906,9 +927,13 @@ msgstr "3. Confirmar a conformidade REUSE {#step-3}"
 
 #. type: Plain text
 #: site/content/en/faq.md
+#, fuzzy
+#| msgid ""
+#| "Use the [REUSE tool](https://github.com/fsfe/reuse-tool) to automate some "
+#| "of these steps, and to check whether you did everything correctly."
 msgid ""
-"Use the [REUSE tool](https://github.com/fsfe/reuse-tool) to automate some of "
-"these steps, and to check whether you did everything correctly."
+"Use the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) to automate some "
+"of these steps, and to check whether you did everything correctly."
 msgstr ""
 "Use a ferramenta [REUSE](https://github.com/fsfe/reuse-tool) para "
 "automatizar algumas destas etapas, e para verificar se você fez tudo "
@@ -1500,10 +1525,17 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
+#, fuzzy
+#| msgid ""
+#| "Additionally, many package hosting sites expect that you declare the "
+#| "licensing information of your package. For instance, the [pyproject.toml "
+#| "file of the REUSE tool](https://github.com/fsfe/reuse-tool/blob/main/"
+#| "pyproject.toml) declares all the licenses that it uses in the format "
+#| "expected by the Python packaging infrastructure."
 msgid ""
 "Additionally, many package hosting sites expect that you declare the "
 "licensing information of your package. For instance, the [pyproject.toml "
-"file of the REUSE tool](https://github.com/fsfe/reuse-tool/blob/main/"
+"file of the REUSE tool](https://codeberg.org/fsfe/reuse-tool/src/branch/main/"
 "pyproject.toml) declares all the licenses that it uses in the format "
 "expected by the Python packaging infrastructure."
 msgstr ""
@@ -1923,9 +1955,9 @@ msgid ""
 "can be used. You can find a JSON schema for `REUSE.toml` at <https://reuse."
 "software/reuse-toml-v1.schema.json>."
 msgstr ""
-"A [Especificação REUSE](/spec) documenta de forma mais detalhada como "
-"`REUSE.toml` pode ser usado. Você pode encontrar um esquema JSON para "
-"`REUSE.toml` em <https://reuse.software/reuse-toml-v1.schema.json>."
+"A [Especificação REUSE](/spec) documenta de forma mais detalhada como `REUSE."
+"toml` pode ser usado. Você pode encontrar um esquema JSON para `REUSE.toml` "
+"em <https://reuse.software/reuse-toml-v1.schema.json>."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2181,9 +2213,9 @@ msgid ""
 msgstr ""
 "Se você realmente deseja excluir um arquivo, considere usar a licença "
 "[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) para este "
-"arquivo. Ao fazer isso, você coloca o arquivo em "
-"[domínio público ou equivalente em seu país]"
-"(https://fsfe.org/freesoftware/legal/faq.html#public-domain)."
+"arquivo. Ao fazer isso, você coloca o arquivo em [domínio público ou "
+"equivalente em seu país](https://fsfe.org/freesoftware/legal/faq.html#public-"
+"domain)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2198,8 +2230,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... exclude certain lines from REUSE compliance testing? {#exclude-lines}"
-msgstr ""
-"... excluo certas linhas do teste de conformidade REUSE? {#exclude-lines}"
+msgstr "... excluo certas linhas do teste de conformidade REUSE? {#exclude-lines}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2980,7 +3011,7 @@ msgstr ""
 #: site/content/en/tutorial.md
 msgid ""
 "For each of these steps, you will first learn how to achieve them manually.  "
-"However, the [REUSE tool](https://github.com/fsfe/reuse-tool) supports you "
+"However, the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) supports you "
 "with most tasks, and the necessary commands will be listed as well in the "
 "collapsible boxes. We recommend to first understand the basic principle "
 "before just executing the tool's commands."
@@ -3236,7 +3267,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
 msgid ""
-"opening an issue on [reuse-tool](https://github.com/fsfe/reuse-tool) for "
+"opening an issue on [reuse-tool](https://codeberg.org/fsfe/reuse-tool) for "
 "questions on the REUSE tool;"
 msgstr ""
 
@@ -4117,7 +4148,7 @@ msgstr ""
 #: site/content/en/spec-3.0.md
 msgid ""
 "REUSE Tool --- helper tool for compliance with this Specification; available "
-"at <https://github.com/fsfe/reuse-tool>."
+"at <https://codeberg.org/fsfe/reuse-tool>."
 msgstr ""
 
 #. type: Title ##
@@ -4423,7 +4454,7 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 msgid ""
 "REUSE Tool --- helper tool for compliance with this specification; available "
-"at <https://github.com/fsfe/reuse-tool>."
+"at <https://codeberg.org/fsfe/reuse-tool>."
 msgstr ""
 
 #. type: Bullet: '- '

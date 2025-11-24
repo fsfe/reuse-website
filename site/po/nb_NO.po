@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2025-10-27 15:27+0000\n"
+"POT-Creation-Date: 2025-11-24 15:24+0000\n"
 "PO-Revision-Date: 2022-01-11 09:55+0000\n"
 "Last-Translator: Imre Kristoffer Eilertsen <imreeil42@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/fsfe/"
@@ -135,10 +135,11 @@ msgstr "Verktøyet {#tool}"
 #. type: Plain text
 #: site/content/en/dev.md
 msgid ""
-"The [REUSE tool](https://github.com/fsfe/reuse-tool) assists with achieving "
-"and confirming REUSE compliance. It downloads the full license texts, adds "
-"copyright and license information to file headers, and contains a linter to "
-"identify problems. Eventually, you can generate a software bill of materials."
+"The [REUSE tool](https://codeberg.org/fsfe/reuse-tool) assists with "
+"achieving and confirming REUSE compliance. It downloads the full license "
+"texts, adds copyright and license information to file headers, and contains "
+"a linter to identify problems. Eventually, you can generate a software bill "
+"of materials."
 msgstr ""
 
 #. type: Plain text
@@ -175,8 +176,8 @@ msgstr ""
 #. type: Bullet: '- '
 #: site/content/en/dev.md
 msgid ""
-"[reuse-tool](https://github.com/fsfe/reuse-tool) - the helper tool itself is "
-"compliant, just like [all other REUSE repositories](https://git.fsfe.org/"
+"[reuse-tool](https://codeberg.org/fsfe/reuse-tool) - the helper tool itself "
+"is compliant, just like [all other REUSE repositories](https://git.fsfe.org/"
 "reuse/)."
 msgstr ""
 
@@ -250,7 +251,7 @@ msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
 "repos:\n"
-"  - repo: https://github.com/fsfe/reuse-tool\n"
+"  - repo: https://codeberg.org/fsfe/reuse-tool\n"
 "    rev: v6.2.0\n"
 "    hooks:\n"
 "      - id: reuse\n"
@@ -714,8 +715,8 @@ msgstr ""
 #. type: Plain text
 #: site/content/en/faq.md
 msgid ""
-"Use the [REUSE tool](https://github.com/fsfe/reuse-tool) to automate some of "
-"these steps, and to check whether you did everything correctly."
+"Use the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) to automate some "
+"of these steps, and to check whether you did everything correctly."
 msgstr ""
 
 #. type: Title ##
@@ -1162,7 +1163,7 @@ msgstr ""
 msgid ""
 "Additionally, many package hosting sites expect that you declare the "
 "licensing information of your package. For instance, the [pyproject.toml "
-"file of the REUSE tool](https://github.com/fsfe/reuse-tool/blob/main/"
+"file of the REUSE tool](https://codeberg.org/fsfe/reuse-tool/src/branch/main/"
 "pyproject.toml) declares all the licenses that it uses in the format "
 "expected by the Python packaging infrastructure."
 msgstr ""
@@ -2408,7 +2409,7 @@ msgstr ""
 #: site/content/en/tutorial.md
 msgid ""
 "For each of these steps, you will first learn how to achieve them manually.  "
-"However, the [REUSE tool](https://github.com/fsfe/reuse-tool) supports you "
+"However, the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) supports you "
 "with most tasks, and the necessary commands will be listed as well in the "
 "collapsible boxes. We recommend to first understand the basic principle "
 "before just executing the tool's commands."
@@ -2664,7 +2665,7 @@ msgstr ""
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
 msgid ""
-"opening an issue on [reuse-tool](https://github.com/fsfe/reuse-tool) for "
+"opening an issue on [reuse-tool](https://codeberg.org/fsfe/reuse-tool) for "
 "questions on the REUSE tool;"
 msgstr ""
 
@@ -3544,7 +3545,7 @@ msgstr ""
 #: site/content/en/spec-3.0.md
 msgid ""
 "REUSE Tool --- helper tool for compliance with this Specification; available "
-"at <https://github.com/fsfe/reuse-tool>."
+"at <https://codeberg.org/fsfe/reuse-tool>."
 msgstr ""
 
 #. type: Title ##
@@ -3847,7 +3848,7 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 msgid ""
 "REUSE Tool --- helper tool for compliance with this specification; available "
-"at <https://github.com/fsfe/reuse-tool>."
+"at <https://codeberg.org/fsfe/reuse-tool>."
 msgstr ""
 
 #. type: Bullet: '- '
