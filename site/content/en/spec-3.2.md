@@ -26,7 +26,7 @@ log](https://github.com/fsfe/reuse-website/blob/main/CHANGELOG.md).
 These are the definitions for some of the terms used in this specification:
 
 - REUSE Tool --- helper tool for compliance with this specification; available
-  at <https://github.com/fsfe/reuse-tool>.
+  at <https://codeberg.org/fsfe/reuse-tool>.
 - Project --- any unit of content that can be associated with a distribution of
   software. Typically, a Project is composed of one or more files. Also
   sometimes called a package.
