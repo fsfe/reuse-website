@@ -97,6 +97,32 @@ steps:
 
 More information about Drone on [drone.io](https://drone.io).
 
+### Forgejo Actions
+
+Include the following snippet in your `.forgejo/workflows/reuse.yaml` file:
+
+```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
+name: REUSE compliance check
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: <a tag for your runner>
+    container: fsfe/reuse:latest
+    steps:
+      - run: |
+          apk add nodejs
+      - uses: actions/checkout@v5
+      - name: Verify REUSE compliance
+        run: |
+          reuse lint
+```
+
+More information about Forgejo Actions at
+[forgejo.org](https://forgejo.org/docs/latest/user/actions/).
+
 ### GitHub
 
 GitHub users can integrate the REUSE action in their workflow. Include the
