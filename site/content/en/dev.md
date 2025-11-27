@@ -138,7 +138,7 @@ jobs:
     steps:
       - run: |
           apt-get update
-          apt-get install pipx
+          apt-get install -y pipx
       - uses: actions/checkout@v5
       - name: Verify REUSE compliance
         run: |
