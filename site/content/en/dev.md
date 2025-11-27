@@ -123,6 +123,28 @@ jobs:
           reuse lint
 ```
 
+If your runner is not capable of running Docker containers, consider the
+following snippet:
+
+```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
+name: REUSE compliance check
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: <a tag for your runner>
+    steps:
+      - run: |
+          apt-get update
+          apt-get install pipx
+      - uses: actions/checkout@v5
+      - name: Verify REUSE compliance
+        run: |
+          pipx run reuse lint
+```
+
 More information about Forgejo Actions at
 [forgejo.org](https://forgejo.org/docs/latest/user/actions/).
 
