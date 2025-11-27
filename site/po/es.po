@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
-"POT-Creation-Date: 2025-11-24 15:24+0000\n"
+"POT-Creation-Date: 2025-11-27 15:59+0000\n"
 "PO-Revision-Date: 2025-01-04 20:01+0000\n"
 "Last-Translator: Kiko Fernández <kikofernandezreyes@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
@@ -417,12 +417,16 @@ msgstr ""
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
-msgid "Drone"
-msgstr "Teledirigido"
+msgid "Drone/Woodpecker CI"
+msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
-msgid "Include the following snippet in your `.drone.yml` file:"
+#, fuzzy
+#| msgid "Include the following snippet in your `.drone.yml` file:"
+msgid ""
+"Include the following snippet in your `.drone.yml` file or `.woodpecker/"
+"reuse.yaml` file:"
 msgstr "Incluya el siguiente snippet en su archivo `.drone.yml`:"
 
 #. type: Fenced code block (yaml)
@@ -443,13 +447,121 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
-msgid "More information about Drone on [drone.io](https://drone.io)."
-msgstr "Más información sobre Drone en [drone.io](https://drone.io)."
+msgid ""
+"More information about Drone at [docs.drone.io](https://docs.drone.io), and "
+"more information about Woodpecker CI at [woodpecker-ci.org](https://"
+"woodpecker-ci.org)."
+msgstr ""
 
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
-msgid "GitHub"
+msgid "Forgejo Actions"
+msgstr ""
+
+#. type: Plain text
+#: site/content/en/dev.md
+#, fuzzy
+#| msgid "Include the following snippet in your `.drone.yml` file:"
+msgid ""
+"Include the following snippet in your `.forgejo/workflows/reuse.yaml` file:"
+msgstr "Incluya el siguiente snippet en su archivo `.drone.yml`:"
+
+#. type: Fenced code block (yaml)
+#: site/content/en/dev.md
+#, fuzzy, no-wrap
+msgid ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE compliance check\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: <a tag for your runner>\n"
+"    container: fsfe/reuse:latest\n"
+"    steps:\n"
+"      - run: |\n"
+"          apk add nodejs\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          reuse lint\n"
+msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE Compliance Check\n"
+"\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: ubuntu-latest\n"
+"    steps:\n"
+"      - uses: actions/checkout@v4\n"
+"      - name: REUSE Compliance Check\n"
+"        uses: fsfe/reuse-action@v4\n"
+
+#. type: Plain text
+#: site/content/en/dev.md
+msgid ""
+"If your runner is not capable of running Docker containers, consider the "
+"following snippet:"
+msgstr ""
+
+#. type: Fenced code block (yaml)
+#: site/content/en/dev.md
+#, fuzzy, no-wrap
+msgid ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE compliance check\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: <a tag for your runner>\n"
+"    steps:\n"
+"      - run: |\n"
+"          apt-get update\n"
+"          apt-get install pipx\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          pipx run reuse lint\n"
+msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE Compliance Check\n"
+"\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: ubuntu-latest\n"
+"    steps:\n"
+"      - uses: actions/checkout@v4\n"
+"      - name: REUSE Compliance Check\n"
+"        uses: fsfe/reuse-action@v4\n"
+
+#. type: Plain text
+#: site/content/en/dev.md
+#, fuzzy
+#| msgid ""
+#| "More information about GitHub Actions on [docs.github.com](https://docs."
+#| "github.com/en/actions/)."
+msgid ""
+"More information about Forgejo Actions at [forgejo.org](https://forgejo.org/"
+"docs/latest/user/actions/)."
+msgstr ""
+"Más información sobre las acciones de GitHub en [docs.github.com](https://"
+"docs.github.com/en/actions/)."
+
+#. type: Title ###
+#: site/content/en/dev.md
+#, fuzzy, no-wrap
+#| msgid "GitHub"
+msgid "GitHub Actions"
 msgstr "GitHub"
 
 #. type: Plain text
@@ -467,15 +579,14 @@ msgstr ""
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
-"name: REUSE Compliance Check\n"
-"\n"
+"name: REUSE compliance check\n"
 "on: [push, pull_request]\n"
 "\n"
 "jobs:\n"
 "  test:\n"
 "    runs-on: ubuntu-latest\n"
 "    steps:\n"
-"      - uses: actions/checkout@v4\n"
+"      - uses: actions/checkout@v5\n"
 "      - name: REUSE Compliance Check\n"
 "        uses: fsfe/reuse-action@v6\n"
 msgstr ""
@@ -504,8 +615,12 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
+#, fuzzy
+#| msgid ""
+#| "More information about GitHub Actions on [docs.github.com](https://docs."
+#| "github.com/en/actions/)."
 msgid ""
-"More information about GitHub Actions on [docs.github.com](https://docs."
+"More information about GitHub Actions at [docs.github.com](https://docs."
 "github.com/en/actions/)."
 msgstr ""
 "Más información sobre las acciones de GitHub en [docs.github.com](https://"
@@ -513,8 +628,9 @@ msgstr ""
 
 #. type: Title ###
 #: site/content/en/dev.md
-#, no-wrap
-msgid "GitLab"
+#, fuzzy, no-wrap
+#| msgid "GitLab"
+msgid "GitLab CI/CD"
 msgstr "GitLab"
 
 #. type: Plain text
@@ -546,9 +662,13 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
+#, fuzzy
+#| msgid ""
+#| "More information about GitLab's CI on [docs.gitlab.com](https://docs."
+#| "gitlab.com/ce/ci/)."
 msgid ""
-"More information about GitLab's CI on [docs.gitlab.com](https://docs.gitlab."
-"com/ce/ci/)."
+"More information about GitLab's CI at [docs.gitlab.com](https://docs.gitlab."
+"com/ci/)."
 msgstr ""
 "Más información sobre el CI de GitLab en [docs.gitlab.com](https://docs."
 "gitlab.com/ce/ci/)."
@@ -599,8 +719,11 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
+#, fuzzy
+#| msgid ""
+#| "More information on Travis CI on [travis-ci.com](https://travis-ci.com)."
 msgid ""
-"More information on Travis CI on [travis-ci.com](https://travis-ci.com)."
+"More information on Travis CI at [travis-ci.com](https://travis-ci.com)."
 msgstr ""
 "Más información sobre Travis CI en [travis-ci.com](https://travis-ci.com)."
 
@@ -6067,6 +6190,13 @@ msgstr ""
 #| msgid "Examples of valid copyright notices:"
 msgid "Examples of valid Copyright Notices:"
 msgstr "Ejemplos de anuncios válidos de copyright:"
+
+#, no-wrap
+#~ msgid "Drone"
+#~ msgstr "Teledirigido"
+
+#~ msgid "More information about Drone on [drone.io](https://drone.io)."
+#~ msgstr "Más información sobre Drone en [drone.io](https://drone.io)."
 
 #~ msgid ""
 #~ "For the revision history of this specification, please see [the change "
