@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2025-10-29 02:05+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2025-11-28 20:00+0000\n"
+"Last-Translator: Mateus Liberale Gomes <sergiogomes209403@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -183,13 +183,6 @@ msgstr "Ferramenta REUSE {#tool}"
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid ""
-#| "The [REUSE tool](https://github.com/fsfe/reuse-tool) assists with "
-#| "achieving and confirming REUSE compliance. It downloads the full license "
-#| "texts, adds copyright and license information to file headers, and "
-#| "contains a linter to identify problems. Eventually, you can generate a "
-#| "software bill of materials."
 msgid ""
 "The [REUSE tool](https://codeberg.org/fsfe/reuse-tool) assists with "
 "achieving and confirming REUSE compliance. It downloads the full license "
@@ -197,8 +190,8 @@ msgid ""
 "a linter to identify problems. Eventually, you can generate a software bill "
 "of materials."
 msgstr ""
-"A [ferramenta REUSE](https://github.com/fsfe/reuse-tool) auxilia na obtenção "
-"e confirmação da conformidade com a REUSE. Ela baixa os textos completos da "
+"A [REUSE tool](https://github.com/fsfe/reuse-tool) auxilia na obtenção e "
+"confirmação da conformidade com a REUSE. Ela baixa os textos completos da "
 "licença, adiciona informações de direitos autorais e licença aos cabeçalhos "
 "dos arquivos e contém um linter para identificar problemas. Eventualmente, "
 "você pode gerar uma lista de materiais do software."
@@ -344,15 +337,7 @@ msgstr ""
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
-#| "# SPDX-License-Identifier: CC0-1.0\n"
-#| "repos:\n"
-#| "  - repo: https://github.com/fsfe/reuse-tool\n"
-#| "    rev: v6.2.0\n"
-#| "    hooks:\n"
-#| "      - id: reuse\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
@@ -410,16 +395,16 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Drone/Woodpecker CI"
-msgstr ""
+msgstr "Drone/Pica-pau CI"
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid "Include the following snippet in your `.drone.yml` file:"
 msgid ""
 "Include the following snippet in your `.drone.yml` file or `.woodpecker/"
 "reuse.yaml` file:"
-msgstr "Inclua o seguinte snippet no seu arquivo `.drone.yml`:"
+msgstr ""
+"Inclua o seguinte trecho de código no seu arquivo `.drone.yml` ou `"
+".woodpecker/reuse.yaml`:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -444,38 +429,27 @@ msgid ""
 "more information about Woodpecker CI at [woodpecker-ci.org](https://"
 "woodpecker-ci.org)."
 msgstr ""
+"Mais informações sobre o Drone em [docs.drone.io](https://docs.drone.io) e "
+"mais informações sobre o Pica-pau CI em [woodpecker-ci.org]"
+"(https://woodpecker-ci.org)."
 
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Forgejo Actions"
-msgstr ""
+msgstr "Ações da Forja"
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid "Include the following snippet in your `.drone.yml` file:"
 msgid ""
 "Include the following snippet in your `.forgejo/workflows/reuse.yaml` file:"
-msgstr "Inclua o seguinte snippet no seu arquivo `.drone.yml`:"
+msgstr ""
+"Inclua o seguinte trecho de código no seu arquivo `.forgejo/workflows/"
+"reuse.yaml`:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
-#| "# SPDX-License-Identifier: CC0-1.0\n"
-#| "name: REUSE Compliance Check\n"
-#| "\n"
-#| "on: [push, pull_request]\n"
-#| "\n"
-#| "jobs:\n"
-#| "  test:\n"
-#| "    runs-on: ubuntu-latest\n"
-#| "    steps:\n"
-#| "      - uses: actions/checkout@v4\n"
-#| "      - name: REUSE Compliance Check\n"
-#| "        uses: fsfe/reuse-action@v6\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
@@ -496,17 +470,19 @@ msgid ""
 msgstr ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
-"name: REUSE Compliance Check\n"
-"\n"
+"name: Verificação de conformidade com REUSE\n"
 "on: [push, pull_request]\n"
-"\n"
 "jobs:\n"
-"  test:\n"
-"    runs-on: ubuntu-latest\n"
-"    steps:\n"
-"      - uses: actions/checkout@v4\n"
-"      - name: REUSE Compliance Check\n"
-"        uses: fsfe/reuse-action@v6\n"
+"test:\n"
+"runs-on: <uma tag para seu executor>\n"
+"container: fsfe/reuse:latest\n"
+"steps:\n"
+"- run: |\n"
+"apk add nodejs\n"
+"- uses: actions/checkout@v5\n"
+"- name: Verificar conformidade com REUSE\n"
+"run: |\n"
+"reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -514,6 +490,8 @@ msgid ""
 "If your runner is not capable of running Docker containers, consider the "
 "following snippet:"
 msgstr ""
+"Se o seu executor não for capaz de executar contêineres Docker, considere o "
+"seguinte trecho de código:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -552,17 +530,20 @@ msgid ""
 msgstr ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
-"name: REUSE Compliance Check\n"
-"\n"
+"name: REUSE compliance check\n"
 "on: [push, pull_request]\n"
 "\n"
 "jobs:\n"
 "  test:\n"
-"    runs-on: ubuntu-latest\n"
+"    runs-on: <uma etiqueta para o seu corredor>\n"
 "    steps:\n"
-"      - uses: actions/checkout@v4\n"
-"      - name: REUSE Compliance Check\n"
-"        uses: fsfe/reuse-action@v6\n"
+"      - run: |\n"
+"          apt-get update\n"
+"          apt-get install -y pipx\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          pipx run reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
