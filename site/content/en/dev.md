@@ -83,9 +83,10 @@ REUSE can be easily integrated into your existing CI/CD processes to continuousl
 
 The FSFE offers a Docker image which can be used in numerous CI solutions. Find a few examples below:
 
-### Drone
+### Drone/Woodpecker CI
 
-Include the following snippet in your `.drone.yml` file:
+Include the following snippet in your `.drone.yml` file or
+`.woodpecker/reuse.yaml` file:
 
 ```yaml
 # SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
@@ -95,9 +96,59 @@ steps:
     image: fsfe/reuse:latest
 ```
 
-More information about Drone on [drone.io](https://drone.io).
+More information about Drone at [docs.drone.io](https://docs.drone.io), and more
+information about Woodpecker CI at
+[woodpecker-ci.org](https://woodpecker-ci.org).
 
-### GitHub
+### Forgejo Actions
+
+Include the following snippet in your `.forgejo/workflows/reuse.yaml` file:
+
+```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
+name: REUSE compliance check
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: <a tag for your runner>
+    container: fsfe/reuse:latest
+    steps:
+      - run: |
+          apk add nodejs
+      - uses: actions/checkout@v5
+      - name: Verify REUSE compliance
+        run: |
+          reuse lint
+```
+
+If your runner is not capable of running Docker containers, consider the
+following snippet:
+
+```yaml
+# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-License-Identifier: CC0-1.0
+name: REUSE compliance check
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: <a tag for your runner>
+    steps:
+      - run: |
+          apt-get update
+          apt-get install pipx
+      - uses: actions/checkout@v5
+      - name: Verify REUSE compliance
+        run: |
+          pipx run reuse lint
+```
+
+More information about Forgejo Actions at
+[forgejo.org](https://forgejo.org/docs/latest/user/actions/).
+
+### GitHub Actions
 
 GitHub users can integrate the REUSE action in their workflow. Include the
 following file as `.github/workflows/reuse.yaml`:
@@ -105,15 +156,14 @@ following file as `.github/workflows/reuse.yaml`:
 ```yaml
 # SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
 # SPDX-License-Identifier: CC0-1.0
-name: REUSE Compliance Check
-
+name: REUSE compliance check
 on: [push, pull_request]
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: REUSE Compliance Check
         uses: fsfe/reuse-action@v6
 ```
@@ -122,10 +172,10 @@ Visit the [action's marketplace
 page](https://github.com/marketplace/actions/reuse-compliance-check) for more
 usage instructions.
 
-More information about GitHub Actions on
+More information about GitHub Actions at
 [docs.github.com](https://docs.github.com/en/actions/).
 
-### GitLab
+### GitLab CI/CD
 
 Include the following snippet in your `.gitlab-ci.yml` file:
 
@@ -140,8 +190,8 @@ reuse:
     - reuse lint
 ```
 
-More information about GitLab's CI on
-[docs.gitlab.com](https://docs.gitlab.com/ce/ci/).
+More information about GitLab's CI at
+[docs.gitlab.com](https://docs.gitlab.com/ci/).
 
 ### Travis CI
 
@@ -160,4 +210,4 @@ before_install:
   - docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint
 ```
 
-More information on Travis CI on [travis-ci.com](https://travis-ci.com).
+More information on Travis CI at [travis-ci.com](https://travis-ci.com).
