@@ -31,5 +31,56 @@
     },
     "menu_spec": {
         "other": "Specifikation"
+    },
+    "noscript_warning": {
+        "other": "Vissa interaktiva funktioner fungerar inte om JavaScript är inaktiverat."
+    },
+    "toggle_navigation": {
+        "other": "Växla navigering"
+    },
+    "tool_instructions": {
+        "other": "Verktygsinstruktioner för detta steg"
+    },
+    "trans_inofficial": {
+        "other": "Du läser en inofficiell översättning av [ursprunglig sida](%s)."
+    },
+    "trans_available": {
+        "other": "Inofficiella översättningar finns tillgängliga på:"
+    },
+    "menu_supporters": {
+        "other": "Anhängare"
+    },
+    "index_intro": {
+        "other": "Vi gör licensiering enkelt för både människor och maskiner. Vi löser ett grundläggande problem som licensiering av Fri Programvara har redan vid källan: vilken licens licensieras en fil under, och vem äger upphovsrätten? **Att anta våra rekommendationer är lika enkelt som ett-två-tre**!"
+    },
+    "index_step1": {
+        "other": "Välj och tillhandahåll licenser"
+    },
+    "index_step2": {
+        "other": "Lägg till information om upphovsrätt och licens till varje fil"
+    },
+    "index_step3": {
+        "other": "Bekräfta REUSE-efterlevnad"
+    },
+    "index_rationale": {
+        "other": "Upphovsrätt och licensiering är svårt, särskilt när man återanvänder programvara från olika projekt som släppts under olika licenser. REUSE startades av [Free Software Foundation Europe](https://fsfe.org) (FSFE) för att tillhandahålla en uppsättning rekommendationer för att göra licensiering av dina projekt med Fri Programvara **enkel, omfattande, entydig och maskinläsbar**."
+    },
+    "index_dev_text": {
+        "other": "Licensen för ditt projekt anger villkoren för hur andra kan återanvända din programvara. Därför bör du se till att det är tydligt för alla vilka delar av din programvara som omfattas av vilken licens. REUSE skyddar dina avsikter och hjälper dig i den här processen. Ta en titt på vår [verktygssektion](dev/) för att lära dig mer om verktyget, inkludering i CI/CD-processer och mer."
+    },
+    "index_reuse_head": {
+        "other": "Återanvändning gjort enkelt"
+    },
+    "index_reuse_text": {
+        "other": "Fri programvara gör det möjligt att bygga vidare på andras arbete och därmed innovera snabbt. Men ju fler externa komponenter du använder, desto svårare är det att ha en överblick över upphovsrättsinnehavare och deras licensval. Med REUSE innehåller varje fil nödvändig information, och ditt arkiv innehåller transparent alla använda licenser."
+    },
+    "index_legal_head": {
+        "other": "Licensefterlevnad"
+    },
+    "index_legal_text": {
+        "other": "Det finns många verktyg som hjälper dig med licensefterlevnad för programvara, många använder databaser och fuzzy heuristik. Ett REUSE-kompatibelt projekt gör jobbet mycket enklare för juridiska experter och compliance officers. Att skapa en materialförteckning kan åstadkommas med bara ett enkelt kommando. REUSE [ersätter inte andra verktyg](comparison/), det är ett länge efterlängtat tillägg."
+    },
+    "all_specifications": {
+        "other": "Alla versioner av specifikationen finns på <{{ .specifications }}>."
     }
 }
