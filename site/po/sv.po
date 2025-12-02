@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2025-12-01 21:00+0000\n"
+"PO-Revision-Date: 2025-12-03 06:00+0000\n"
 "Last-Translator: Stefan Bjornelund the Gnome "
 "<stefan.bjornelund.gnome@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/fsfe/reuse-"
@@ -386,7 +386,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Drone/Woodpecker CI"
-msgstr ""
+msgstr "Drone/Woodpecker CI"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -1307,16 +1307,21 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "What is a copyleft license? A permissive license? {#copyleft-permissive-license}"
 msgstr ""
+"Vad är en copyleft-licens? En permissiv licens? {#copyleft-permissive-"
+"license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
+#, fuzzy
 msgid ""
 "There are two broad categories of Free Software licenses; copyleft and "
 "permissive licenses."
 msgstr ""
+"Det finns två breda kategorier av licenser för fri programvara; copyright-"
+"licenser och permissiva licenser."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1328,6 +1333,12 @@ msgid ""
 "copyleft license is the [GNU General Public License version 3](https://www."
 "gnu.org/licenses/gpl-3.0.html)."
 msgstr ""
+"En upphovsrättslicens ger dig rätten att använda, studera, dela och "
+"förbättra en programvara under ett strikt villkor. Om du gör några ändringar "
+"i programmet och delar din version av programmet med någon annan måste du "
+"dela dina ändringar under samma licens som originalet. En välkänd "
+"upphovsrättslicens är [GNU General Public License version 3](https://"
+"www.gnu.org/licenses/gpl-3.0.html)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1338,6 +1349,11 @@ msgid ""
 "proprietary. A well-known permissive license is the [Apache License, version "
 "2](https://www.apache.org/licenses/LICENSE-2.0.html)."
 msgstr ""
+"En permissiv licens ger dig samma rättigheter till Fri Programvara, men "
+"inkluderar inte detta villkor. Det är möjligt för någon att ta en permissivt "
+"licensierad programvara, göra ändringar i den och behålla den ändrade "
+"versionen proprietär. En välkänd permissiv licens är [Apache-licensen, "
+"version 2](https://www.apache.org/licenses/LICENSE-2.0.html)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1359,6 +1375,15 @@ msgid ""
 "that these resources each emphasise a different value, and come with their "
 "own biases."
 msgstr ""
+"Välj alltid en Fri Programvarulicens, d.v.s. en licens som ger mottagaren "
+"friheten att använda, studera, dela och förbättra programvaran. Utöver det "
+"är det upp till dig vilken licens du väljer. Om du bidrar till ett "
+"befintligt projekt bör du släppa dina ändringar under samma licens som "
+"projektet. Annars har [Free Software Foundation](https://www.gnu.org/"
+"licenses/license-recommendations.html), [choosealicense.com](https://"
+"choosealicense.com/) och [joinup.eu](https://joinup.ec.europa.eu/collection/"
+"eupl/joinup-licensing-assistant-jla) några bra rekommendationer. Observera "
+"att dessa resurser betonar olika värden och har sina egna partiskheter."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1366,6 +1391,9 @@ msgid ""
 "Above all, if you value freedom, you should choose a license that makes your "
 "software [Free Software](https://fsfe.org/about/basics/freesoftware.en.html)."
 msgstr ""
+"Framför allt, om du värdesätter frihet, bör du välja en licens som gör din "
+"programvara [Fri programvara](https://fsfe.org/about/basics/"
+"freesoftware.en.html)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1382,6 +1410,11 @@ msgid ""
 "code may end up in the resulting binary. The exception may waive rights over "
 "portions of code that end up in binaries."
 msgstr ""
+"Licensundantag är tillägg eller ändringar i en licens som ofta tillåter en "
+"viss användning av koden som inte skulle vara tillåten enligt den "
+"ursprungliga licensen. Det används ofta av kompilatorer, där en del av "
+"kompilatorkoden kan hamna i den resulterande binärfilen. Undantaget kan "
+"avstå från rättigheter över delar av kod som hamnar i binärfiler."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1390,6 +1423,9 @@ msgid ""
 "license with an exception, you mark a file with the following tag: `SPDX-"
 "License-Identifier: GPL-3.0-or-later WITH GCC-exception-3.1`."
 msgstr ""
+"Undantag behandlas nästan identiskt med licenser. För att kombinera en "
+"licens med ett undantag markerar du en fil med följande tagg: `SPDX-License-"
+"Identifier: GPL-3.0-or-later WITH GCC-exception-3.1`."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1397,12 +1433,14 @@ msgid ""
 "You can find a list of common exceptions at [SPDX License Exceptions]"
 "(https://spdx.org/licenses/exceptions-index.html)."
 msgstr ""
+"Du hittar en lista över vanliga undantag på [SPDX License Exceptions]"
+"(https://spdx.org/licenses/exceptions-index.html)."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "How does license compatibility work? {#license-compatibility}"
-msgstr ""
+msgstr "Hur fungerar licenskompatibilitet? {#license-compatibility}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1413,6 +1451,11 @@ msgid ""
 "project and still be able to respect the terms of each license "
 "simultaneously."
 msgstr ""
+"Fria programvarulicenser skiljer sig ofta åt i detalj, men ger dig alltid "
+"rätt att använda, studera, dela och förbättra programvaran. Många licenser "
+"är kompatibla, vilket innebär att du kan använda kod från flera licenser i "
+"samma projekt och fortfarande kunna respektera villkoren för varje licens "
+"samtidigt."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1421,6 +1464,10 @@ msgid ""
 "license), meaning that a combined work containing code under both licenses "
 "must effectively respect the terms of the least permissive license."
 msgstr ""
+"Vissa licenser är [mindre tillåtande än andra](#copyleft-permissive-license)"
+", vilket innebär att ett kombinerat verk som innehåller kod under båda "
+"licenserna effektivt måste respektera villkoren i den minst tillåtande "
+"licensen."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1434,6 +1481,14 @@ msgid ""
 "purposes, these two licenses cannot be respected simultaneously, and they "
 "are considered incompatible."
 msgstr ""
+"Vissa licenser har ömsesidigt uteslutande krav. Till exempel har [CC-BY-NC-"
+"4.0](https://creativecommons.org/licenses/by-nc/4.0/)-licensen en klausul "
+"som förbjuder att ett verk används för kommersiella ändamål, och [GPL-3.0-"
+"eller-senare](https://www.gnu.org/licenses/gpl-3.0.html) har en klausul som "
+"säger att man inte får införa ytterligare begränsningar som inte finns i GPL-"
+"licensen. Eftersom GPL-licensen inte har någon klausul om kommersiella "
+"ändamål kan dessa två licenser inte respekteras samtidigt, och de anses vara "
+"inkompatibla."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1442,6 +1497,9 @@ msgid ""
 "depends on what you want. Integrating work that is licensed differently may "
 "mean having to respect license terms which you do not want to respect."
 msgstr ""
+"Exakt vilka licenser som är kompatibla är en svår fråga, och det beror också "
+"på vad man vill. Att integrera verk som är licensierade på olika sätt kan "
+"innebära att man måste respektera licensvillkor som man inte vill respektera."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1450,6 +1508,9 @@ msgid ""
 "org/licenses/license-compatibility.html) and [GNU's license list](https://"
 "www.gnu.org/licenses/license-list.html) may help you work out compatibility."
 msgstr ""
+"Specifikt vad gäller GNU GPL kan [denna GNU-artikel](https://www.gnu.org/"
+"licenses/license-compatibility.html) och [GNU:s licenslista](https://"
+"www.gnu.org/licenses/license-list.html) hjälpa dig att utreda kompatibilitet."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1459,12 +1520,16 @@ msgid ""
 "licensing metadata, not to check whether that metadata is correct or valid. "
 "You need different tools and processes for that."
 msgstr ""
+"Det är viktigt att notera att REUSE inte hjälper dig att lösa "
+"licenskompatibilitet. REUSE:s mål är att hjälpa dig att uttömmande deklarera "
+"dina licensmetadata, inte att kontrollera om dessa metadata är korrekta "
+"eller giltiga. För det behöver du andra verktyg och processer."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Where else do I put my license information? {#where-else}"
-msgstr ""
+msgstr "Var annars lägger jag min licensinformation? {#where-else}"
 
 #. type: Plain text
 #: site/content/en/faq.md
