@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2020-08-19 12:43+0200\n"
-"PO-Revision-Date: 2025-11-13 17:51+0000\n"
+"PO-Revision-Date: 2025-12-11 18:00+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/fsfe/"
-"reuse-website-markdown/it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/fsfe/reuse-"
+"website-markdown/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -645,6 +645,12 @@ msgstr ""
 #, markdown-text
 msgid "Marking all individual files with `SPDX-License-Identifier` tags goes a long way towards unambiguously communicating the license information of your project, but it helps to communicate the license information in natural language as well. In the README of your project, feel free to provide a summary of the licensing information, or simply redirect the reader to your `LICENSES/` directory."
 msgstr ""
+"Contrassegnare tutti i singoli file con i tag `SPDX-License-Identifier` "
+"contribuisce notevolmente a comunicare in modo univoco le informazioni sulla "
+"licenza del progetto, ma aiuta anche a comunicarle in linguaggio naturale. "
+"Nel file README del progetto, sentitevi liberi di fornire un riepilogo delle "
+"informazioni sulla licenza o semplicemente reindirizzare il lettore alla "
+"cartella `LICENSES/`."
 
 #. type: Plain text
 #: faq.md
@@ -657,12 +663,18 @@ msgstr ""
 #, markdown-text, no-wrap
 msgid "What is a copyright holder, and what is an author? {#copyright-holder-author}"
 msgstr ""
+"Cos'è un detentore del copyright e cos'è un autore? {#copyright-holder-"
+"author}"
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "In these resources, we maintain a distinction between the copyright holder and the author. The author (also known as creator) is the person who sat down and created a work. Think of the author as a programmer, writer, or artist."
 msgstr ""
+"In queste risorse, manteniamo una distinzione tra il detentore del copyright "
+"e l'autore. L'autore (noto anche come creatore) è la persona che si è seduta "
+"e ha creato un'opera. Pensate all'autore come a un programmatore, uno "
+"scrittore o un artista."
 
 #. type: Plain text
 #: faq.md
