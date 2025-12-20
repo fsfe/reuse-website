@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2025-12-03 06:00+0000\n"
+"PO-Revision-Date: 2025-12-21 20:00+0000\n"
 "Last-Translator: Stefan Bjornelund the Gnome "
 "<stefan.bjornelund.gnome@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/fsfe/reuse-"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -317,9 +317,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Pre-commit hook {#pre-commit-hook}"
-msgstr ""
+msgstr "Pre-commit hook {#pre-commit-hook}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -346,6 +346,13 @@ msgid ""
 "    hooks:\n"
 "      - id: reuse\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"repos:\n"
+"  - repo: https://codeberg.org/fsfe/reuse-tool\n"
+"    rev: v6.2.0\n"
+"    hooks:\n"
+"      - id: reuse\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -407,6 +414,11 @@ msgid ""
 "  - name: reuse\n"
 "    image: fsfe/reuse:latest\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"steps:\n"
+"  - name: reuse\n"
+"    image: fsfe/reuse:latest\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -453,6 +465,22 @@ msgid ""
 "        run: |\n"
 "          reuse lint\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE compliance check\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: <a tag for your runner>\n"
+"    container: fsfe/reuse:latest\n"
+"    steps:\n"
+"      - run: |\n"
+"          apk add nodejs\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -2333,12 +2361,14 @@ msgid ""
 "Please note: It is strongly advised to [use established and approved "
 "licenses](#which-license)."
 msgstr ""
+"Observera: Det rekommenderas starkt att [använda etablerade och godkända "
+"licenser](#which-license)."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... use a custom license exception? {#custom-exception}"
-msgstr ""
+msgstr "... använda ett anpassat licensundantag? {#custom-exception}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2346,17 +2376,19 @@ msgid ""
 "It is not possible to create a custom exception. Instead, you may [create a "
 "custom license](#custom-license) that embeds the exception."
 msgstr ""
+"Det går inte att skapa ett anpassat undantag. Istället kan du [skapa en "
+"anpassad licens](#custom-license) som bäddar in undantaget."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... properly declare multi-licensing? {#multi-licensing}"
-msgstr ""
+msgstr "... korrekt deklarera multilicensering? {#multi-licensing}"
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "You should always include all licenses in the `LICENSES/` directory."
-msgstr ""
+msgstr "Du bör alltid inkludera alla licenser i katalogen `LICENSES/`."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2367,6 +2399,11 @@ msgid ""
 "License-Identifier: MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later`, as "
 "parts of Firefox do."
 msgstr ""
+"Vilket SPDX-licensuttryck som gäller för filen beror på avsikten. Om all kod "
+"i filen är licensierad under flera licenser, och licenstagaren kan välja "
+"under vilken licens de konsumerar verket, använd `SPDX-License-Identifier: "
+"MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later`, precis som delar av "
+"Firefox gör."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2376,6 +2413,9 @@ msgid ""
 "Identifier: LGPL-2.0-or-later AND AML`, as can be found in Simple "
 "DirectMedia Layer (SDL)."
 msgstr ""
+"Om all kod i filen är licensierad under flera licenser, och användaren måste "
+"följa alla licenser samtidigt, använd `SPDX-License-Identifier: LGPL-2.0-or-"
+"later AND AML`, som finns i Simple DirectMedia Layer (SDL)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2384,12 +2424,15 @@ msgid ""
 "another (for instance, all code is under GPL-2.0-only, but one function is "
 "under MIT), use [snippets](#partial-license)."
 msgstr ""
+"Om all kod i filen är licensierad under antingen en eller annan licens (till "
+"exempel all kod är endast under GPL-2.0, men en funktion är under MIT), "
+"använd [snippets](#partial-license)."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<!-- TODO: bump SPDX spec -->\n"
-msgstr ""
+msgstr "<!-- TODO: bump SPDX spec -->\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2397,12 +2440,16 @@ msgid ""
 "You can read more about SPDX expressions [in the specification](https://spdx."
 "github.io/spdx-spec/v2.3/SPDX-license-expressions/)."
 msgstr ""
+"Du kan läsa mer om SPDX-uttryck [i specifikationen](https://spdx.github.io/"
+"spdx-spec/v2.3/SPDX-license-expressions/)."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... deal with license texts which include copyright statements, like MIT/BSD? {#license-templates}"
 msgstr ""
+"... hantera licenstexter som innehåller upphovsrättsmeddelanden, som MIT/"
+"BSD? {#license-templates}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2410,6 +2457,8 @@ msgid ""
 "Some license texts, such as MIT or the BSD family of licenses, can be "
 "modified to contain custom copyright notices."
 msgstr ""
+"Vissa licenstexter, såsom MIT- eller BSD-licensfamiljen, kan modifieras för "
+"att innehålla anpassade upphovsrättsmeddelanden."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2421,6 +2470,12 @@ msgid ""
 "into the license text itself, you add copyright statements to your project's "
 "files following the normal REUSE best practices."
 msgstr ""
+"Om du släpper kod under en sådan licens rekommenderar vi att du lägger till "
+"licenstexten i projektet utan några som helst ändringar. Ett bra sätt att få "
+"tag på den omodifierade licenstexten är att använda hjälpverktyget REUSE "
+"(t.ex. `reuse download MIT`). Istället för att infoga din "
+"upphovsrättsmeddelande i själva licenstexten lägger du till "
+"upphovsrättsmeddelanden i dina projektfiler enligt normal praxis för REUSE."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2434,11 +2489,20 @@ msgid ""
 "them. If you want to reuse code from both of these projects, you might not "
 "be sure where to put your copies of those projects' license files."
 msgstr ""
+"När du återanvänder kod från flera källor som använder en MIT/BSD-licens "
+"stöter du snabbt på problem. Både MIT-licensen och BSD-licensfamiljen "
+"innehåller en klausul som kräver att omfördelaren (det vill säga du) "
+"reproducerar upphovsrättsmeddelandet och licenstexten. Till exempel kan "
+"Projekt A och Projekt B båda använda en MIT-licens, men de faktiska "
+"licensfilerna kommer att skilja sig åt eftersom de har olika "
+"upphovsrättsmeddelanden inbäddade i sig. Om du vill återanvända kod från "
+"båda dessa projekt kanske du inte är säker på var du ska placera dina kopior "
+"av dessa projekts licensfiler."
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "We recommend two options:"
-msgstr ""
+msgstr "Vi rekommenderar två alternativ:"
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -2448,6 +2512,10 @@ msgid ""
 "folder. You then embed the copyright notices of the upstream project into "
 "the corresponding source code files you reused, as usual."
 msgstr ""
+"Den mest pragmatiska lösningen är att lägga den omodifierade licenstexten "
+"(dvs. licenstextmallen utan några upphovsrättsmeddelanden) i din `LICENSES/`-"
+"mapp. Du bäddar sedan in uppströmsprojektets upphovsrättsmeddelanden i "
+"motsvarande källkodsfiler som du återanvände, som vanligt."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -2458,12 +2526,19 @@ msgid ""
 "parties under these licenses, you may end up with a lot of these custom "
 "licenses."
 msgstr ""
+"Den mer grundliga och arbetskrävande lösningen är att behandla alla dessa "
+"licenstexter med modifierade upphovsrättsmeddelanden som en [anpassad licens "
+"med LicenseRef](#custom-license). Men om du återanvänder kod från många "
+"tredje parter under dessa licenser kan du få många av dessa anpassade "
+"licenser."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... deal with a file that has been edited by many people? {#many-copyright-statements}"
 msgstr ""
+"... hantera en fil som har redigerats av många personer? {#many-copyright-"
+"statements}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2472,6 +2547,9 @@ msgid ""
 "of copyright holders in the header. This may be aesthetically unpleasing, "
 "but is not incorrect."
 msgstr ""
+"Vissa filer redigeras av många personer och har en extremt lång lista över "
+"upphovsrättsinnehavare i rubriken. Detta kan vara estetiskt otilltalande, "
+"men är inte felaktigt."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2482,6 +2560,11 @@ msgid ""
 "this, but then you should keep a list of copyright holders and authors in a "
 "separate file in your project."
 msgstr ""
+"Om du hellre inte vill ha så många upphovsrättsmeddelanden kringgår vissa "
+"projekt, som Chromium, detta problem genom att använda \"Copyright (c) 2013 "
+"The Chromium Authors\" som sin upphovsrättstagg. Du kan överväga att göra "
+"detta, men då bör du ha en lista över upphovsrättsinnehavare och författare "
+"i en separat fil i ditt projekt."
 
 #. type: Title #
 #: site/content/en/faq.md
@@ -2494,6 +2577,8 @@ msgstr "Varför REUSE"
 #, no-wrap
 msgid "Do I really need to include the license and copyright headers in all files? Why should I care? {#why-care}"
 msgstr ""
+"Behöver jag verkligen inkludera licens- och upphovsrättsrubrikerna i alla "
+"filer? Varför skulle jag bry mig? {#why-care}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2505,6 +2590,12 @@ msgid ""
 "are opined that it should be as close to the data as possible---as a header "
 "in each file."
 msgstr ""
+"Stora projekt med komplexa upphovsrätts- och licensieringsproblem har mest "
+"att vinna från REUSE genom att skapa ordning i kaos och reda ut oklara "
+"licensieringsproblem. Att ha en huvudet i varje fil är ett nödvändigt ont "
+"för att uppnå den ordningen och tydligheten. Denna metadata måste finnas "
+"någonstans, och vi anser att den bör vara så nära data som möjligt – som en "
+"huvudert i varje fil."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2516,6 +2607,12 @@ msgid ""
 "else people won't be able to use your software, and REUSE is a simple "
 "component in helping you with this."
 msgstr ""
+"Men även mindre projekt eller projekt med enkel licensiering gynnas av "
+"REUSE. På gott och ont är licensiering en hörnsten i rörelsen för Fri "
+"Programvara. Det är det som möjliggör delning, och i fallet med upphovsrätt "
+"gör det möjligt för oss att hålla programvara Fri. Att få rätt licensiering "
+"är viktigt, annars kommer folk inte att kunna använda din programvara, och "
+"REUSE är en enkel komponent för att hjälpa dig med detta."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2526,6 +2623,11 @@ msgid ""
 "license text. By implementing REUSE early, it is a lot easier to discern "
 "your code from third-party code and correctly keep track of these things."
 msgstr ""
+"Dessutom, även om ditt projekt är enkelt _nu_, är det inte alltid så. Om du "
+"kopierar kod från ett annat projekt som har en annan licens, är du ofta "
+"tvungen att tillskriva korrekt och/eller tillhandahålla den medföljande "
+"licenstexten. Genom att implementera REUSE tidigt är det mycket lättare att "
+"skilja din kod från tredjepartskod och hålla reda på dessa saker korrekt."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2537,12 +2639,20 @@ msgid ""
 "reuse that code. REUSE helps you help other developers in reusing your code, "
 "which is one of the great boons of Free Software."
 msgstr ""
+"Slutligen är implementeringen av REUSE en liten tjänst för andra. Som "
+"mjukvaruingenjör kan det vara frustrerande när man hittar kod som är "
+"specialbyggd för det problem man försöker lösa, men inte kan lista ut "
+"licensen för den koden, vilket i praktiken gör det omöjligt att, ja, "
+"återanvända den koden. REUSE hjälper dig att hjälpa andra utvecklare att "
+"återanvända din kod, vilket är en av de stora fördelarna med Fri Programvara."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "I'm used to doing things differently; can't I just keep doing what I have always been doing? {#tradition}"
 msgstr ""
+"Jag är van vid att göra saker annorlunda; kan jag inte bara fortsätta göra "
+"det jag alltid har gjort? {#tradition}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2554,6 +2664,12 @@ msgid ""
 "find it very strange that even insignificant non-code files get licensing "
 "headers. The different-ness of REUSE can seem peculiar in that way."
 msgstr ""
+"Vissa personer. när de först stöter på REUSE. noterar ett par saker som "
+"skiljer sig mycket från vad de är vana vid. De saknar de långa juridiska "
+"texterna högst upp i filer, missar `COPYING`/`LICENSE`-filen i roten av "
+"arkivet, tycker att `.license`-filer belamrar katalogen eller tycker att det "
+"är väldigt konstigt att även obetydliga filer som inte är kodfiler får "
+"licens huvuden. REUSEs annorlunda karaktär kan verka märklig på det sättet."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2564,6 +2680,11 @@ msgid ""
 "simpler, more comprehensive, and more unambiguous than it would have been if "
 "we tried to maintain compatibility with traditions of old."
 msgstr ""
+"Ett av REUSEs huvudmål är att vara så kompatibelt som möjligt med befintliga "
+"bästa praxis. Det bryter dock uttryckligen med vissa gamla traditioner. Vi "
+"anser att REUSE är bättre för det. Genom att bryta ny mark är REUSE enklare, "
+"mer omfattande och mer entydigt än det skulle ha varit om vi försökt "
+"bibehålla kompatibilitet med gamla traditioner."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2577,12 +2698,22 @@ msgid ""
 "and we hope that these eccentricities will soon become commonplace, such "
 "that they would no longer seem so peculiar anymore."
 msgstr ""
+"Ingenting hindrar dig från att lägga till långa juridiska texter i dina "
+"rubriker eller lägga en `COPYING`-fil i roten av din katalog _hur som "
+"helst_. Dessa saker kan göras som du vill. Vissa andra aspekter av REUSE är "
+"dock oundvikliga. REUSE hävdar att _varje enskild fil ska innehålla "
+"licensinformation_, så att även de minsta filer har licensmetadata. Dessa "
+"saker är helt enkelt inneboende i målet med REUSE, och vi hoppas att dessa "
+"egenheter snart kommer att bli vanliga, så att de inte längre kommer att "
+"verka så märkliga."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Why doesn't REUSE use the metadata fields in pictures, SVG, text documents etc.? {#metadata}"
 msgstr ""
+"Varför använder inte REUSE metadatafälten i bilder, SVG, textdokument etc.? "
+"{#metadata}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2591,6 +2722,9 @@ msgid ""
 "file itself, and some even contain fields for copyright and license. "
 "However, we do not support these in REUSE for practical reasons:"
 msgstr ""
+"Flera filformat stöder lagring av metadatainformation i själva filen, och "
+"vissa innehåller till och med fält för upphovsrätt och licens. Vi stöder "
+"dock inte dessa i REUSE av praktiska skäl:"
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -2599,6 +2733,9 @@ msgid ""
 "information. REUSE intends to make it simple to find licensing and copyright "
 "information."
 msgstr ""
+"För både människor och maskiner är det inte alltid lätt att hitta denna "
+"information. REUSE avser att göra det enkelt att hitta licens- och "
+"upphovsrättsinformation."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -2607,6 +2744,10 @@ msgid ""
 "remove potentially sensible personal information. This could also wipe your "
 "or someone else's copyright information, and detecting this mistake is hard."
 msgstr ""
+"Vissa verktyg redigerar metadatafält, till exempel för att göra filer mindre "
+"eller ta bort potentiellt känslig personlig information. Detta kan också "
+"radera din eller någon annans upphovsrättsinformation, och det är svårt att "
+"upptäcka detta misstag."
 
 #. type: Bullet: '3. '
 #: site/content/en/faq.md
@@ -2614,6 +2755,8 @@ msgid ""
 "With some file types, there are competing and unstandardised methods to "
 "store metadata."
 msgstr ""
+"Med vissa filtyper finns det konkurrerande och ostandardiserade metoder för "
+"att lagra metadata."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2621,21 +2764,30 @@ msgid ""
 "This question is also related to [why we cannot use version control to "
 "record copyright](#vcs-copyright)."
 msgstr ""
+"Denna fråga är också relaterad till [varför vi inte kan använda "
+"versionshantering för att registrera upphovsrätt](#vcs-copyright)."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Why doesn't REUSE use version control to record copyright? {#vcs-copyright}"
 msgstr ""
+"Varför använder inte REUSE versionskontroll för att registrera upphovsrätt? "
+"{#vcs-copyright}"
 
 #. type: Plain text
 #: site/content/en/faq.md
+#, fuzzy
 msgid ""
 "In [a different question](#copyright-holder-author), we distinguish between "
 "copyright holders and authors, which are not always the same. Version "
 "control typically only records authorship, which makes it unsuitable for the "
 "task of recording copyright."
 msgstr ""
+"I [en annan fråga)(#copyright-holder-author) skiljer vi mellan "
+"upphovsrättsinnehavare och författare, vilka inte alltid är desamma. "
+"Versionshantering registrerar vanligtvis bara författarskap, vilket gör den "
+"olämplig för uppgiften att registrera upphovsrätt."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2644,6 +2796,9 @@ msgid ""
 "fixing such an error would require rewriting the history, causing all "
 "contributors to have to re-download the new trunk."
 msgstr ""
+"Ett annat hinder är att versionshanteringshistoriken kan innehålla fel, och "
+"att åtgärda ett sådant fel skulle kräva att historiken skrivs om, vilket "
+"skulle göra att alla bidragsgivare måste ladda ner den nya stammen igen."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2653,12 +2808,17 @@ msgid ""
 "the last commit in that line, even if it was just something as trivial as "
 "fixing a typo or moving a block of code to a different location."
 msgstr ""
+"Ett ytterligare problem med versionshantering är att `blame`-kommandot "
+"(klandra), som vanligtvis (fel)används för att hitta författarskap rad för "
+"rad, bara visar författaren till den senaste incheckningen på den raden, "
+"även om det bara var något så trivialt som att rätta ett stavfel eller "
+"flytta ett kodblock till en annan plats."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "What happened to `.reuse/dep5`? {#dep5-history}"
-msgstr ""
+msgstr "Vad hände med `.reuse/dep5`? {#dep5-history}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2668,6 +2828,10 @@ msgid ""
 "almost-verbatim copy of [DEP5/`debian/copyright`](https://www.debian.org/doc/"
 "packaging-manuals/copyright-format/1.0/)."
 msgstr ""
+"REUSE använder för närvarande [`REUSE.toml` för att masslicensiera filer]"
+"(#bulk-license). Men före version 3.2 av specifikationen använde REUSE "
+"`.reuse/dep5`, en nästan ordagrann kopia av [DEP5/`debian/copyright`]"
+"(https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2677,12 +2841,17 @@ msgid ""
 "automatically convert a `.reuse/dep5` file to a semantically equivalent "
 "`REUSE.toml` file."
 msgstr ""
+"I version 3.2 är `.reuse/dep5` föråldrat men stöds fortfarande, även om det "
+"utesluter varandra med `REUSE.toml`. Du kan använda `reuse convert-dep5` för "
+"att automatiskt konvertera en `.reuse/dep5`-fil till en semantiskt "
+"ekvivalent `REUSE.toml`-fil."
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid ""
 "`.reuse/dep5` was dropped in favour of `REUSE.toml` for various reasons:"
 msgstr ""
+"`.reuse/dep5` togs bort till förmån för `REUSE.toml` av olika anledningar:"
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2691,6 +2860,9 @@ msgid ""
 "file to holistically declare the licensing of a package; REUSE uses it to "
 "fill the licensing gaps."
 msgstr ""
+"`debian/copyright` var aldrig en avsiktlig matchning för REUSE. Debian "
+"använder den här filen för att holistiskt deklarera licensen för ett paket; "
+"REUSE använder den för att fylla licensluckorna."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2701,6 +2873,11 @@ msgid ""
 "aggregated. Adding a new key to explicitly declare precedence would have "
 "been difficult, because..."
 msgstr ""
+"`.reuse/dep5` var tvetydig gällande licensinformationen för en fil om dess "
+"information deklarerades både i själva filen och i `.reuse/dep5`. Vilken "
+"information tillämpas? I version 3.2 aggregeras denna information explicit. "
+"Att lägga till en ny nyckel för att explicit deklarera prioritet skulle ha "
+"varit svårt, eftersom..."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2710,6 +2887,10 @@ msgid ""
 "is custom and inflexible. One of REUSE's core aims is to be machine-"
 "readable, and this custom format was not conducive to that end."
 msgstr ""
+"`.reuse/dep5` är svår att tolka. Det finns en Python-modul i [python-debian]"
+"(https://salsa.debian.org/python-debian-team/python-debian), men formatet är "
+"anpassat och oflexibelt. Ett av REUSEs huvudmål är att vara maskinläsbart, "
+"och detta anpassade format var inte gynnsamt för det ändamålet."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2717,6 +2898,8 @@ msgid ""
 "TOML is more flexible. You can write any key-value that you want, which may "
 "be helpful for custom workflows."
 msgstr ""
+"TOML är mer flexibelt. Du kan skriva vilken nyckel-värde som helst, vilket "
+"kan vara användbart för anpassade arbetsflöden."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2724,6 +2907,8 @@ msgid ""
 "TOML is much easier to write. Developers already know how to write TOML, and "
 "don't need to accustom themselves to a custom format."
 msgstr ""
+"TOML är mycket enklare att skriva. Utvecklare vet redan hur man skriver TOML "
+"och behöver inte vänja sig vid ett anpassat format."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2731,6 +2916,9 @@ msgid ""
 "`REUSE.toml` can be placed anywhere relative to the files, and can nest. "
 "This is a big help for monorepos or monorepo-like projects."
 msgstr ""
+"`REUSE.toml` kan placeras var som helst i förhållande till filerna och kan "
+"kapslas. Detta är till stor hjälp för monorepos eller monorepo-liknande "
+"projekt."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2738,18 +2926,20 @@ msgid ""
 "For compatibility, `.reuse/dep5` will remain supported in spite of its "
 "deprecation for a considerable length of time; at least until 2029."
 msgstr ""
+"För kompatibilitet kommer `.reuse/dep5` att fortsätta stödjas trots att det "
+"har föråldrats under en avsevärd tid; åtminstone fram till 2029."
 
 #. type: Plain text
 #: site/content/en/faq.md site/content/en/tutorial.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<!-- REUSE-IgnoreEnd -->\n"
-msgstr ""
+msgstr "<!-- REUSE-IgnoreEnd -->\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/tutorial.md
 #, no-wrap
 msgid "Tutorial: How to become REUSE-compliant"
-msgstr ""
+msgstr "Handledning: Hur man blir REUS-kompatibel"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -2760,21 +2950,26 @@ msgid ""
 "By the end of this tutorial, you will understand the three fundamental steps "
 "of REUSE:"
 msgstr ""
+"Den här handledningen förklarar grunderna i att göra ett programvaruprojekt "
+"REUSE-kompatibelt. Målet är att **enkelt, omfattande och otvetydigt** "
+"deklarera din upphovsrätt och licens på ett sätt som är **maskinläsbart**. I "
+"slutet av den här handledningen kommer du att förstå de tre grundläggande "
+"stegen i REUSE:"
 
 #. type: Bullet: '1. '
 #: site/content/en/tutorial.md
 msgid "Choose and provide licenses"
-msgstr ""
+msgstr "Välj och tillhandahålla licenser"
 
 #. type: Bullet: '2. '
 #: site/content/en/tutorial.md
 msgid "Add copyright and license information to each file"
-msgstr ""
+msgstr "Lägg till information om upphovsrätt och licens till varje fil"
 
 #. type: Bullet: '3. '
 #: site/content/en/tutorial.md
 msgid "Confirm REUSE compliance"
-msgstr ""
+msgstr "Bekräfta REUSE efterlevnad"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -2782,10 +2977,12 @@ msgid ""
 "For the purpose of this tutorial, we will assume that the directory of your "
 "project looks like this:"
 msgstr ""
+"I den här handledningen antar vi att katalogen för ditt projekt ser ut så "
+"här:"
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "project/\n"
 "├── src/\n"
@@ -2793,6 +2990,11 @@ msgid ""
 "├── Makefile\n"
 "└── README.md\n"
 msgstr ""
+"project/\n"
+"├── src/\n"
+"│   └── main.c\n"
+"├── Makefile\n"
+"└── README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -2803,6 +3005,10 @@ msgid ""
 "above, while the `compliant` branch is the successful result of this "
 "tutorial."
 msgstr ""
+"Om du vill återskapa stegen i den här handledningen på din egen dator kan du "
+"klona [exempelförrådet](https://codeberg.org/fsfe/reuse-tutorial-example). "
+"Grenen `non-compliant` matchar strukturen ovan, medan grenen `compliant` är "
+"det lyckade resultatet av den här handledningen."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -2813,6 +3019,11 @@ msgid ""
 "collapsible boxes. We recommend to first understand the basic principle "
 "before just executing the tool's commands."
 msgstr ""
+"För vart och ett av dessa steg kommer du först att lära dig hur du utför dem "
+"manuellt. [REUSE-verktyget](https://codeberg.org/fsfe/reuse-tool) stöder dig "
+"dock med de flesta uppgifter, och de nödvändiga kommandona kommer också att "
+"listas i de hopfällbara rutorna. Vi rekommenderar att du först förstår "
+"grundprincipen innan du bara kör verktygets kommandon."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
