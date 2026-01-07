@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2020-08-19 12:43+0200\n"
-"PO-Revision-Date: 2025-12-11 18:00+0000\n"
+"PO-Revision-Date: 2026-01-08 10:01+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #. type: YAML Front Matter: title
 #: faq.md
@@ -681,24 +681,40 @@ msgstr ""
 #, markdown-text
 msgid "The copyright holder is the person who has the exclusive rights over that work.  Often the author and the copyright holder are the same. However, if the author is being paid by their employer to create a work, the employer is often the copyright holder."
 msgstr ""
+"Il titolare del copyright è la persona che detiene i diritti esclusivi su "
+"quell'opera.  Spesso l'autore e il titolare del copyright coincidono. "
+"Tuttavia, se l'autore viene pagato dal proprio datore di lavoro per creare "
+"un'opera, allora solitamente sarà il datore di lavoro il titolare del "
+"copyright."
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "Keep in mind that in some jurisdictions, the word \"author\" is often used as a synonym for \"copyright holder\". In other jurisdictions, authors maintain some rights over their work even if they are not the copyright holder."
 msgstr ""
+"È bene tenere presente che in alcune giurisdizioni il termine \"autore\" è "
+"spesso utilizzato come sinonimo di \"titolare del copyright\". In altre "
+"giurisdizioni, gli autori mantengono alcuni diritti sulla propria opera "
+"anche se non ne sono i titolari."
 
 #. type: Title ##
 #: faq.md
 #, markdown-text, no-wrap
 msgid "I changed a single line of code. Should I add an SPDX-FileCopyrightText tag with my name? {#when-copyright}"
 msgstr ""
+"Ho modificato una sola riga di codice. Dovrei aggiungere un tag SPDX-"
+"FileCopyrightText con il mio nome? {#when-copyright}"
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "The core question here is: At what point should I consider myself a copyright holder over a file? This is up to your discretion. It might help to be consistent and add the tag to every file you touch, but it is perhaps more valuable to reach a consensus about this within your project."
 msgstr ""
+"La domanda fondamentale è: a che punto dovrei considerarmi titolare del "
+"copyright di un file? La decisione spetta a voi. Potrebbe essere utile "
+"essere coerenti e aggiungere il tag a ogni file che gestite, ma forse è più "
+"utile raggiungere un consenso su questo aspetto all'interno del vostro "
+"progetto."
 
 #. type: Title ##
 #: faq.md
@@ -711,12 +727,22 @@ msgstr ""
 #, markdown-text
 msgid "Some files are edited by many people and would have an extremely long list of copyright holders in the header. This may be aesthetically unpleasing, but is not incorrect."
 msgstr ""
+"Alcuni file sono modificati da molte persone e potrebbero contenere un "
+"elenco estremamente lungo dei titolari dei diritti d'autore "
+"nell'intestazione. Questo potrebbe essere esteticamente sgradevole, ma non è "
+"sbagliato."
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "If you would rather not deal with having so many copyright notices, some projects such as Chromium circumvent this problem by using \"Copyright (c) 2013 The Chromium Authors\" as their copyright tag. You may consider doing this, but then you should keep a list of copyright holders and authors in a separate file in your project."
 msgstr ""
+"Se si preferisce non dover gestire così tante note di copyright, alcuni "
+"progetti come Chromium aggirano questo problema utilizzando \"Copyright (c) "
+"2013 The Chromium Authors\" come tag di copyright. Si potrebbe prendere in "
+"considerazione questa modalità, ma in tal caso bisogna conservare un elenco "
+"dei titolari del copyright e degli autori in un file separato nel proprio "
+"progetto."
 
 #. type: Title ##
 #: faq.md
@@ -735,6 +761,10 @@ msgstr ""
 #, markdown-text
 msgid "Another obstacle is that version control history may contain errors, and fixing such an error would require rewriting the history, causing all contributors to have to re-download the new trunk."
 msgstr ""
+"Un altro ostacolo è che la cronologia del controllo delle versioni potrebbe "
+"contenere errori e per correggere un errore del genere sarebbe necessario "
+"riscrivere la cronologia, costringendo tutti i collaboratori a scaricare "
+"nuovamente il nuovo trunk."
 
 #. type: Plain text
 #: faq.md
@@ -813,7 +843,7 @@ msgstr ""
 #: faq.md
 #, markdown-text
 msgid "You should always include all licenses in the `LICENSES/` directory."
-msgstr ""
+msgstr "Dovresti sempre includere tutte le licenze nella cartella `LICENSES/`."
 
 #. type: Plain text
 #: faq.md
