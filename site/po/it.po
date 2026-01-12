@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2020-08-19 12:43+0200\n"
-"PO-Revision-Date: 2026-01-08 10:01+0000\n"
+"PO-Revision-Date: 2026-01-13 01:01+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.15.2-dev\n"
 
 #. type: YAML Front Matter: title
 #: faq.md
@@ -850,12 +850,21 @@ msgstr "Dovresti sempre includere tutte le licenze nella cartella `LICENSES/`."
 #, markdown-text
 msgid "The correct SPDX license expression that applies to the file depends on the intent. If all the code within is licensed under multiple licenses, and the licensee can choose under which license they consume the work, use `SPDX-License-Identifier: MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later`, as parts of Firefox do."
 msgstr ""
+"L'espressione corretta della licenza SPDX da applicare al file dipende "
+"dall'intento. Se tutto il codice al suo interno è concesso in licenza con "
+"più di una licenza e il licenziatario può scegliere con quale licenza "
+"utilizzare l'opera, utilizzare `SPDX-License-Identifier: MPL-1.1 O GPL-2.0-"
+"or-later O LGPL-2.1-or-later`, come avviene in alcune parti di Firefox."
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "If all the code within the file is licensed under multiple licenses, and the user must comply with all licenses simultaneously, use `SPDX-License-Identifier: LGPL-2.0-or-later AND AML`, as can be found in Simple DirectMedia Layer (SDL)."
 msgstr ""
+"Se tutto il codice all'interno del file è concesso in licenza con più di una "
+"licenza e l'utente deve rispettare tutte le licenze contemporaneamente, "
+"utilizzare `SPDX-License-Identifier: LGPL-2.0-o-later E AML`, come riportato "
+"in Simple DirectMedia Layer (SDL)."
 
 #. type: Plain text
 #: faq.md
@@ -886,24 +895,34 @@ msgstr ""
 #, markdown-text, no-wrap
 msgid "I only have a single license file. Should I still create a LICENSES directory? {#single-license}"
 msgstr ""
+"Ho un solo file di licenza. Devo comunque creare una cartella LICENSES? "
+"{#single-license}"
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "Yes. This may seem extraneous, but it prevents future confusion when differently licensed code is adopted. By keeping all licenses in a single directory, it is easy for a user of your program to find all the licenses they need to comply with in the blink of an eye."
 msgstr ""
+"Sì. Questo può sembrare superfluo, ma evita futuri problemi quando si adotta "
+"codice con licenze diverse. Conservando tutte le licenze in un'unica "
+"cartella, è facile per un utente del programma trovare tutte le licenze di "
+"cui ha bisogno per conformarsi in un batter d'occhio."
 
 #. type: Title ##
 #: faq.md
 #, markdown-text, no-wrap
 msgid "Should I put comment headers in my license files? {#header-in-license}"
 msgstr ""
+"Dovrei inserire le intestazioni dei commenti nei miei file di licenza? "
+"{#header-in-license}"
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "You should not edit license files. Please see [this question](#edit-license)."
 msgstr ""
+"Non si dovrebbe modificare i file di licenza. Consulta [questa domanda]"
+"(#edit-license)."
 
 #. type: Title ##
 #: faq.md
@@ -934,18 +953,23 @@ msgstr ""
 #, markdown-text
 msgid "It is not possible to create a custom exception. Instead, you may [create a custom license](#custom-license) that embeds the exception."
 msgstr ""
+"Non è possibile creare un'eccezione personalizzata. In alternativa, è "
+"possibile [creare una licenza personalizzata](#custom-license) che incorpori "
+"l'eccezione."
 
 #. type: Title ##
 #: faq.md
 #, markdown-text, no-wrap
 msgid "Should I edit my license files? {#edit-license}"
-msgstr ""
+msgstr "Dovrei modificare i miei file di licenza? {#edit-license}"
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "You should never edit license files. When you use an existing license, you should always copy it verbatim."
 msgstr ""
+"Non modificare mai i file di licenza. Quando si utilizza una licenza "
+"esistente, è sempre consigliabile copiarla alla lettera."
 
 #. type: Plain text
 #: faq.md
@@ -969,6 +993,8 @@ msgstr ""
 #, markdown-text, no-wrap
 msgid "Can I edit copyright notices and license disclaimers? {#edit-copyright-and-licensing}"
 msgstr ""
+"Posso modificare le note sul copyright e le esclusioni di responsabilità "
+"sulle licenze? {#edit-copyright-and-licensing}"
 
 #. type: Plain text
 #: faq.md
