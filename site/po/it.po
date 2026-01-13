@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2020-08-19 12:43+0200\n"
-"PO-Revision-Date: 2026-01-13 01:01+0000\n"
+"PO-Revision-Date: 2026-01-13 19:24+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/it/>\n"
@@ -1001,18 +1001,28 @@ msgstr ""
 #, markdown-text
 msgid "If you find out that some information is incorrect, you are free to adjust it.  Otherwise, it is usually a good idea to leave copyright notices and license disclaimers intact. But there is no one-size-fits-all answer here."
 msgstr ""
+"Se scopri che alcune informazioni sono errate, sei libero di correggerle.  "
+"Altrimenti, di solito è una buona idea lasciare intatte le note sul "
+"copyright e le esclusioni di responsabilità sulla licenza. Ma non esiste una "
+"soluzione universale."
 
 #. type: Title ##
 #: faq.md
 #, markdown-text, no-wrap
 msgid "Can I remove the license and copyright information from minified code (e.g., JavaScript)? {#minified}"
 msgstr ""
+"Posso rimuovere le informazioni sulla licenza e sul copyright dal codice "
+"minimizzato (ad esempio, JavaScript)? {#minified}"
 
 #. type: Plain text
 #: faq.md
 #, markdown-text
 msgid "You can, but you probably should not. Many minifiers have an option that allows you to retain the header comment. If this option is present, you should use it, especially if you use a license that mandates that you include a license disclaimer."
 msgstr ""
+"Puoi, ma probabilmente non dovresti. Molti minificatori offrono un'opzione "
+"che consente di mantenere il commento di intestazione. Se questa opzione è "
+"presente, bisognerebbe usarla, soprattutto se si usa una licenza che "
+"richiede l'inclusione di un disclaimer di licenza."
 
 #. type: Title #
 #: faq.md
@@ -1036,19 +1046,29 @@ msgstr ""
 #: spec.md
 #, no-wrap
 msgid "REUSE Specification – Version 3.0"
-msgstr ""
+msgstr "Specifica REUSE – Versione 3.0"
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "This specification defines a standardized method for declaring copyright and licensing for software projects. The goal of the specification is to have unambiguous, human- and machine-readable copyright and licensing information for each individual file in a project. Ideally this information is embedded into every file, so that the information is preserved when the file is copied and reused by third parties."
 msgstr ""
+"Questa specifica definisce un metodo standardizzato per la dichiarazione di "
+"copyright e licenze per progetti software. L'obiettivo della specifica è "
+"quello di disporre di informazioni univoche, leggibili sia da esseri umani "
+"che da macchine, su copyright e licenze per ogni singolo file di un "
+"progetto. Idealmente, queste informazioni sono integrate in ogni file, in "
+"modo che vengano preservate quando il file viene copiato e riutilizzato da "
+"terze parti."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "This specification implements [IETF RFC 2119: Key words for use in RFCs to Indicate Requirement Levels](https://tools.ietf.org/html/rfc2119)."
 msgstr ""
+"Questa specifica implementa l'[IETF RFC 2119: Parole chiave da utilizzare "
+"nelle RFC per indicare i livelli di requisito](https://tools.ietf.org/html/"
+"rfc2119)."
 
 #. type: Plain text
 #: spec.md
@@ -1060,19 +1080,24 @@ msgstr ""
 #: spec.md
 #, markdown-text, no-wrap
 msgid "Definitions"
-msgstr ""
+msgstr "Definizioni"
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "These are the definitions for some of the terms used in this specification:"
 msgstr ""
+"Di seguito sono riportate le definizioni di alcuni dei termini utilizzati "
+"nella presente specifica:"
 
 #. type: Bullet: '- '
 #: spec.md
 #, markdown-text
 msgid "Project --- any unit of content that can be associated with a distribution of software. Typically, a Project is composed of one or more files. Also sometimes called a package."
 msgstr ""
+"Progetto: qualsiasi unità di contenuto che può essere associata a una "
+"distribuzione di software. In genere, un progetto è composto da uno o più "
+"file. A volte è anche chiamato pacchetto."
 
 #. type: Plain text
 #: spec.md
@@ -1085,18 +1110,26 @@ msgstr ""
 #, markdown-text
 msgid "Copyright and Licensing Information --- the information that lists the copyright holders of a file or work, and describes under which licenses the file or work is made available."
 msgstr ""
+"Informazioni su copyright e licenze: informazioni che elencano i titolari "
+"del copyright di un file o di un'opera e descrivono con quali licenze il "
+"file o l'opera vengono resi disponibili."
 
 #. type: Bullet: '- '
 #: spec.md
 #, markdown-text
 msgid "SPDX Specification --- SPDX specification, version 2.1; as available on <https://spdx.org/specifications>."
 msgstr ""
+"Specifica SPDX --- Specifica SPDX, versione 2.1; disponibile su <https://"
+"spdx.org/specifications>."
 
 #. type: Bullet: '- '
 #: spec.md
 #, markdown-text
 msgid "SPDX License Identifier --- SPDX short-form identifier, as defined in SPDX Specification. See also <https://spdx.org/ids> for a short introduction and examples."
 msgstr ""
+"Identificativo di licenza SPDX --- Identificativo abbreviato SPDX, come "
+"definito nella specifica SPDX. Vedere anche <https://spdx.org/ids> per una "
+"breve introduzione ed esempi."
 
 #. type: Plain text
 #: spec.md
@@ -1109,12 +1142,19 @@ msgstr ""
 #, markdown-text
 msgid "SPDX License List --- a list of commonly found licenses and exceptions; as available on <https://spdx.org/licenses/>."
 msgstr ""
+"Elenco delle licenze SPDX --- un elenco delle licenze e delle eccezioni più "
+"comuni; disponibile su <https://spdx.org/licenses/>."
 
 #. type: Bullet: '- '
 #: spec.md
 #, markdown-text
 msgid "DEP5 --- [Machine-readable `debian/copyright` file, Version 1.0](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/).  Where the REUSE Specification and DEP5 state different things, the REUSE Specification takes precedence. Specifically in the case of the `Copyright` and `License` tags."
 msgstr ""
+"DEP5 --- [File `debian/copyright` leggibile dalla macchina, versione 1.0]"
+"(https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/). "
+"Laddove la Specifica REUSE e DEP5 stabiliscano cose diverse, la Specifica "
+"REUSE ha la precedenza. In particolare nel caso dei tag `Copyright` e "
+"`License`."
 
 #. type: Bullet: '- '
 #: spec.md
@@ -1126,19 +1166,26 @@ msgstr ""
 #: spec.md
 #, markdown-text, no-wrap
 msgid "License files"
-msgstr ""
+msgstr "File di licenza"
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "A Project MUST include a License File for every license under which files in the Project are licensed."
 msgstr ""
+"Un progetto DEVE includere un file di licenza per ogni licenza in base alla "
+"quale sono concessi in licenza i file nel progetto."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "Each License File MUST be placed in the `LICENSES/` directory in the root of the Project. The name of the License File MUST be the SPDX License Identifier of the license followed by an appropriate file extension (example: `LICENSES/GPL-3.0-or-later.txt`). The License File MUST be in plain text format."
 msgstr ""
+"Ogni file di licenza DEVE essere inserito nella cartella `LICENSES/` nella "
+"cartella principale del progetto. Il nome del file di licenza DEVE essere "
+"l'identificativo di licenza SPDX seguito da un'estensione appropriata (ad "
+"esempio: `LICENSES/GPL-3.0-or-later.txt`). Il file di licenza DEVE essere in "
+"formato testo semplice."
 
 #. type: Plain text
 #: spec.md
@@ -1151,24 +1198,31 @@ msgstr ""
 #, markdown-text
 msgid "A Project MUST NOT include License Files for licenses under which none of the files in the Project are licensed."
 msgstr ""
+"Un progetto NON DEVE includere file di licenza per licenze in base alle "
+"quali nessuno dei file nel progetto è concesso in licenza."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "Everything that applies to licenses in this section also applies to license exceptions, with the exception that it is NOT possible to have a license exception that does not exist in the SPDX License List."
 msgstr ""
+"Tutto ciò che si applica alle licenze in questa sezione si applica anche "
+"alle eccezioni di licenza, con l'eccezione che NON è possibile avere "
+"un'eccezione di licenza che non esista nell'elenco delle licenze SPDX."
 
 #. type: Title ##
 #: spec.md
 #, markdown-text, no-wrap
 msgid "Copyright and Licensing Information"
-msgstr ""
+msgstr "Informazioni su copyright e licenze"
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "Each file in the Project MUST have Copyright and Licensing Information associated with it, except the following files:"
 msgstr ""
+"Ogni file nel Progetto DEVE avere informazioni sul copyright e sulla licenza "
+"associate, a eccezione dei seguenti file:"
 
 #. type: Plain text
 #: spec.md
@@ -1181,42 +1235,60 @@ msgstr ""
 #, markdown-text
 msgid "The files belonging to the Project's version control system (example: `.git/`)."
 msgstr ""
+"I file appartenenti al sistema di controllo delle versioni del progetto "
+"(esempio: `.git/`)."
 
 #. type: Bullet: '- '
 #: spec.md
 #, markdown-text
 msgid "The files ignored by the version control system (example: Files listed in `.gitignore`)."
 msgstr ""
+"I file ignorati dal sistema di controllo delle versioni (esempio: file "
+"elencati in `.gitignore`)."
 
 #. type: Bullet: '- '
 #: spec.md
 #, markdown-text
 msgid "The files in the `.reuse/` directory in the root of the Project. This directory MUST contain only files relevant for the operation of the REUSE Tool."
 msgstr ""
+"I file nella cartella `.reuse/` nella radice del progetto. Questa cartella "
+"DEVE contenere solo file rilevanti per il funzionamento dello strumento "
+"REUSE."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "There are two ways to associate Copyright and Licensing Information with a file."
 msgstr ""
+"Esistono due modi per associare le informazioni sul copyright e sulla "
+"licenza a un file."
 
 #. type: Title ###
 #: spec.md
 #, markdown-text, no-wrap
 msgid "Comment headers"
-msgstr ""
+msgstr "Intestazioni dei commenti"
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "To implement this method, each plain text file that can contain comments MUST contain comments at the top of the file (comment header) that declare that file's Copyright and Licensing Information."
 msgstr ""
+"Per implementare questo metodo, ogni file di testo normale che può contenere "
+"commenti DEVE contenere commenti nella parte superiore del file "
+"(intestazione del commento) che dichiarano le informazioni sul copyright e "
+"sulla licenza di quel file."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "If a file is not a plain text file or does not permit the inclusion of comments, the comment header that declares the file's Copyright and Licensing Information SHOULD be in an adjacent file of the same name with the additional extension `.license` (example: `cat.jpg.license` if the original file is `cat.jpg`)."
 msgstr ""
+"Se un file non è un file di testo semplice o non consente l'inclusione di "
+"commenti, l'intestazione del commento che dichiara le informazioni sul "
+"copyright e sulla licenza del file DOVREBBE trovarsi in un file adiacente "
+"con lo stesso nome e l'estensione aggiuntiva `.license` (esempio: "
+"`cat.jpg.license` se il file originale è `cat.jpg`)."
 
 #. type: Plain text
 #: spec.md
@@ -1235,18 +1307,25 @@ msgstr ""
 #, markdown-text
 msgid "Instead of the `SPDX-FileCopyrightText` tag, the symbol `©`, or the word `Copyright` MAY be used, in which case a colon is not needed."
 msgstr ""
+"Al posto del tag `SPDX-FileCopyrightText`, PUÒ essere utilizzato il simbolo "
+"`©` o la parola `Copyright`, nel qual caso i due punti non sono necessari."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "The `SPDX-License-Identifier` tag MUST be followed by a valid SPDX License Expression describing the licensing of the file (example: `SPDX-License-Identifier: GPL-3.0-or-later OR Apache-2.0`). If separate sections of the file are licensed differently, a different `SPDX-License-Identifier` tag MUST be included for each section."
 msgstr ""
+"Il tag `SPDX-License-Identifier` DEVE essere seguito da un'espressione di "
+"licenza SPDX valida che descriva la licenza del file (ad esempio: `SPDX-"
+"License-Identifier: GPL-3.0-or-later O Apache-2.0`). Se sezioni separate del "
+"file hanno licenze diverse, DEVE essere incluso un tag `SPDX-License-"
+"Identifier` diverso per ciascuna sezione."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "An example of a comment header:"
-msgstr ""
+msgstr "Un esempio di intestazione di commento:"
 
 #. type: Fenced code block
 #: spec.md
@@ -1257,24 +1336,36 @@ msgid ""
 "#\n"
 "# SPDX-License-Identifier: GPL-3.0-or-later\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2016, 2018-2019 Pinco Pallo "
+"<pinco@aziendaesempio.com>\n"
+"# SPDX-FileCopyrightText: 2019 Azienda Esempio\n"
+"#\n"
+"# SPDX-License-Identifier: GPL-3.0-or-later\n"
 
 #. type: Title ###
 #: spec.md
 #, markdown-text, no-wrap
 msgid "DEP5"
-msgstr ""
+msgstr "DEP5"
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "Alternatively, Copyright and Licensing Information MAY be associated with a file through a DEP5 file. The intended use case of this method is large directories where including a comment header in each file (or in `.license` companion files) is impossible or undesirable."
 msgstr ""
+"In alternativa, le informazioni su copyright e licenza POSSONO essere "
+"associate a un file tramite un file DEP5. Il caso d'uso previsto di questo "
+"metodo sono le cartelle di grandi dimensioni in cui l'inclusione di "
+"un'intestazione di commento in ogni file (o nei file di accompagnamento "
+"`.license`) è impossibile o indesiderabile."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "The DEP5 file MUST be named `dep5` and stored in the `.reuse/` directory in the root of the Project (i.e. `.reuse/dep5`)."
 msgstr ""
+"Il file DEP5 DEVE essere denominato `dep5` e memorizzato nella cartella "
+"`.reuse/` nella radice del progetto (ad esempio `.reuse/dep5`)."
 
 #. type: Plain text
 #: spec.md
