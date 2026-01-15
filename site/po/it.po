@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2020-08-19 12:43+0200\n"
-"PO-Revision-Date: 2026-01-13 19:24+0000\n"
+"PO-Revision-Date: 2026-01-17 00:01+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.2-dev\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. type: YAML Front Matter: title
 #: faq.md
@@ -1372,6 +1372,8 @@ msgstr ""
 #, markdown-text
 msgid "The `License` tag MUST be followed by a valid SPDX License Expression describing the licensing of the associated files."
 msgstr ""
+"Il tag `License` DEVE essere seguito da un'espressione di licenza SPDX "
+"valida che descriva la licenza dei file associati."
 
 #. type: Plain text
 #: spec.md
@@ -1383,7 +1385,7 @@ msgstr ""
 #: spec.md
 #, markdown-text
 msgid "An example of a DEP5 file:"
-msgstr ""
+msgstr "Un esempio di file DEP5:"
 
 #. type: Fenced code block
 #: spec.md
@@ -1398,54 +1400,75 @@ msgid ""
 "Copyright: 2019 Translation Company\n"
 "License: GPL-3.0-or-later\n"
 msgstr ""
+"Formato: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
+"Nome dell'Upstream: Progetto\n"
+"Contatto dell'Upstream: Gianna Rossi <gianna@esempio.com>\n"
+"Fonte: https://esempio.com/gianna/progetto\n"
+"\n"
+"File: po/*\n"
+"Copyright: 2019 Azienda Traduzioni\n"
+"Licenza: GPL-3.0 o successiva\n"
 
 #. type: Title ##
 #: spec.md
 #, markdown-text, no-wrap
 msgid "Format of copyright notices"
-msgstr ""
+msgstr "Formato delle note sul copyright"
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "A copyright notice MUST be prefixed by a tag, symbol or word denoting a copyright notice as described in this specification."
 msgstr ""
+"Un avviso di copyright DEVE essere preceduto da un tag, un simbolo o una "
+"parola che indichi una nota di copyright come descritto in questa specifica."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "The copyright notice MUST contain the name of the copyright holder. The copyright notice SHOULD contain the year of publication and the contact address of the copyright holder. The order of these items SHOULD be: year, name, contact address."
 msgstr ""
+"La nota di copyright DEVE contenere il nome del titolare del copyright. La "
+"nota di copyright DOVREBBE contenere l'anno di pubblicazione e l'indirizzo "
+"di contatto del titolare del copyright. L'ordine di questi elementi DOVREBBE "
+"essere: anno, nome, indirizzo di contatto."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "The year of publication MAY be a single year, multiple years, or a span of years."
 msgstr ""
+"L'anno di pubblicazione PUÒ essere un singolo anno, più anni o un intervallo "
+"di anni."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "The copyright holder MAY be an individual, list of individuals, group, legal entity, or any other descriptor by which one can easily identify the copyright holder(s)."
 msgstr ""
+"Il titolare del copyright PUÒ essere un individuo, un elenco di individui, "
+"un gruppo, un'entità giuridica o qualsiasi altro descrittore con cui sia "
+"possibile identificare facilmente il/i titolare/i del copyright."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "Any contact address SHOULD be in between angle brackets."
 msgstr ""
+"Ogni indirizzo di contatto DOVREBBE essere racchiuso tra parentesi angolari "
+"(<>)."
 
 #. type: Plain text
 #: spec.md
 #, markdown-text
 msgid "Examples of valid copyright notices:"
-msgstr ""
+msgstr "Esempi di note di copyright valide:"
 
 #. type: YAML Front Matter: title
 #: tutorial.md
 #, no-wrap
 msgid "Tutorial: How to become REUSE-compliant"
-msgstr ""
+msgstr "Tutorial: come diventare conformi al REUSE"
 
 #. type: Plain text
 #: tutorial.md
@@ -1463,25 +1486,27 @@ msgstr ""
 #: tutorial.md
 #, markdown-text
 msgid "Choose and provide licenses"
-msgstr ""
+msgstr "Scegliere e fornire le licenze"
 
 #. type: Bullet: '2. '
 #: tutorial.md
 #, markdown-text
 msgid "Add copyright and license information to each file"
-msgstr ""
+msgstr "Aggiungere informazioni sul copyright e sulla licenza a ciascun file"
 
 #. type: Bullet: '3. '
 #: tutorial.md
 #, markdown-text
 msgid "Confirm REUSE compliance"
-msgstr ""
+msgstr "Confermare la conformità REUSE"
 
 #. type: Plain text
 #: tutorial.md
 #, markdown-text
 msgid "For the purpose of this tutorial, we will assume that the directory of your project looks like this:"
 msgstr ""
+"Ai fini di questo tutorial, daremo per scontato che la cartella del progetto "
+"abbia questo aspetto:"
 
 #. type: Fenced code block
 #: tutorial.md
@@ -1519,6 +1544,12 @@ msgid ""
 "General Public License (GPL) v3.0 or any later version. More than simply\n"
 "choosing a license, you need to put the license in your project directory.\n"
 msgstr ""
+"La prima cosa che bisogna fare è [scegliere una licenza]({{< relref\n"
+"\"faq.md#which-license\" >}}). Per questo tutorial, si suppone si abbia "
+"scelto\n"
+"la GNU General Public License (GPL) v3.0 o una versione successiva. Oltre \n"
+"a scegliere una licenza, bisogna anche inserirla nella cartella del "
+"progetto.\n"
 
 #. type: Plain text
 #: tutorial.md
@@ -1536,7 +1567,7 @@ msgstr ""
 #: tutorial.md
 #, markdown-text, no-wrap
 msgid "{{< box-tool >}}\n"
-msgstr ""
+msgstr "{{< box-tool >}}\n"
 
 #. type: Plain text
 #: tutorial.md
@@ -1554,7 +1585,7 @@ msgstr ""
 #: tutorial.md
 #, markdown-text, no-wrap
 msgid "{{< /box-tool >}}\n"
-msgstr ""
+msgstr "{{< /box-tool >}}\n"
 
 #. type: Plain text
 #: tutorial.md
@@ -1588,6 +1619,9 @@ msgstr ""
 #, markdown-text
 msgid "The `SPDX-License-Identifier` tag is followed by a [valid SPDX License Expression](https://spdx.org/specifications), typically just the SPDX License Identifier of the license."
 msgstr ""
+"Il tag `SPDX-License-Identifier` è seguito da una [espressione di licenza "
+"SPDX valida](https://spdx.org/specifications), in genere solo "
+"l'identificatore di licenza SPDX della licenza."
 
 #. type: Plain text
 #: tutorial.md
@@ -1600,6 +1634,9 @@ msgstr ""
 #, markdown-text
 msgid "In the example project, you also edit `Makefile` and `README.md` using this header information, but of course with corresponding comment syntax."
 msgstr ""
+"Nel progetto di esempio, si modificano anche `Makefile` e `README.md` "
+"utilizzando queste informazioni di intestazione, ma ovviamente con la "
+"sintassi dei commenti corrispondente."
 
 #. type: Plain text
 #: tutorial.md
@@ -1869,18 +1906,25 @@ msgstr ""
 #, markdown-text
 msgid "The [REUSE tool documentation](https://reuse.readthedocs.io/) describes installation and usage of the REUSE tool."
 msgstr ""
+"La [documentazione dello strumento REUSE](https://reuse.readthedocs.io/) "
+"descrive l'installazione e l'utilizzo dello strumento REUSE."
 
 #. type: Bullet: '- '
 #: tutorial.md
 #, markdown-text
 msgid "Our [help for developers](https://reuse.software/dev/) lists various resources for programmers like the tool, the API, or how to include checks in CI/CD workflows."
 msgstr ""
+"La [guida per gli sviluppatori](https://reuse.software/dev/) elenca varie "
+"risorse per i programmatori, come lo strumento, le API o come includere "
+"controlli nei flussi di lavoro CI/CD."
 
 #. type: Plain text
 #: tutorial.md
 #, markdown-text
 msgid "If none of the links above were able to answer your question, please contact us by:"
 msgstr ""
+"Se nessuno dei collegamenti sopra riportati è riuscito a risolvere una "
+"domanda, contattateci tramite:"
 
 #. type: Bullet: '- '
 #: tutorial.md
@@ -1899,9 +1943,13 @@ msgstr ""
 #, markdown-text
 msgid "or [sending an email to the FSFE](https://fsfe.org/contact). Please note that we would prefer issues because they are publicly searchable for other people."
 msgstr ""
+"oppure [inviando un'e-mail alla FSFE](https://fsfe.org/contact). Si prega "
+"notare che preferiremmo le segnalazioni perché sono ricercabili "
+"pubblicamente da altre persone."
 
 #. type: Plain text
 #: tutorial.md
 #, markdown-text
 msgid "Thank you for your valuable contribution towards making software reusable!"
 msgstr ""
+"Grazie per il prezioso contributo nel rendere il software riutilizzabile!"
