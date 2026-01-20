@@ -28,7 +28,7 @@ for k, v in en.items():
 # get all i18n string files
 i18nfiles = glob.glob(f"{basedir}/*.json")
 
-# Interate through translation files and check their completeness
+# Iterate through translation files and check their completeness
 for trans in i18nfiles:
     lang: str = os.path.splitext(os.path.basename(trans))[0]
 
