@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2025-01-04 20:01+0000\n"
-"Last-Translator: Kiko Fernández <kikofernandezreyes@gmail.com>\n"
+"PO-Revision-Date: 2026-03-17 17:09+0000\n"
+"Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
 "Language: es\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -251,17 +251,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid ""
-#| "[reuse-tool](https://github.com/fsfe/reuse-tool) - the helper tool itself "
-#| "is compliant, just like [all other REUSE repositories](https://git.fsfe."
-#| "org/reuse/)."
 msgid ""
 "[reuse-tool](https://codeberg.org/fsfe/reuse-tool) - the helper tool itself "
 "is compliant, just like [all other REUSE repositories](https://git.fsfe.org/"
 "reuse/)."
 msgstr ""
-"[reuse-tool](https://github.com/fsfe/reuse-tool) - la misma herramienta "
+"[reuse-tool](https://codeberg.org/fsfe/reuse-tool) - la misma herramienta "
 "auxiliar es compatible, al igual que [todos los demás repositorios de REUSE]"
 "(https://git.fsfe.org/reuse/)."
 
@@ -373,8 +368,8 @@ msgstr ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
 "repos:\n"
-"  - repo: https://github.com/fsfe/reuse-tool\n"
-"    rev: v4.0.3\n"
+"  - repo: https://codeberg.org/fsfe/reuse-tool\n"
+"    rev: v6.2.0\n"
 "    hooks:\n"
 "      - id: reuse\n"
 
@@ -416,18 +411,18 @@ msgstr ""
 
 #. type: Title ###
 #: site/content/en/dev.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Drone/Woodpecker CI"
-msgstr ""
+msgstr "Drone/Woodpecker CI"
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid "Include the following snippet in your `.drone.yml` file:"
 msgid ""
 "Include the following snippet in your `.drone.yml` file or `.woodpecker/"
 "reuse.yaml` file:"
-msgstr "Incluya el siguiente snippet en su archivo `.drone.yml`:"
+msgstr ""
+"Incluya el siguiente snippet en su archivo `.drone.yml` o archivo "
+"`.woodpecker/reuse.yaml`:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -452,6 +447,9 @@ msgid ""
 "more information about Woodpecker CI at [woodpecker-ci.org](https://"
 "woodpecker-ci.org)."
 msgstr ""
+"Más información sobre Drones en [docs.drone.io](https://docs.drone.io), y "
+"más información sobre Woodpecker CI en [woodpecker-ci.org](https://"
+"woodpecker-ci.org)."
 
 #. type: Title ###
 #: site/content/en/dev.md
@@ -559,10 +557,9 @@ msgstr ""
 
 #. type: Title ###
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid "GitHub"
+#, no-wrap
 msgid "GitHub Actions"
-msgstr "GitHub"
+msgstr "Acciones de GitHub"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -592,17 +589,16 @@ msgid ""
 msgstr ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
-"name: REUSE Compliance Check\n"
-"\n"
+"name: REUSE compliance check\n"
 "on: [push, pull_request]\n"
 "\n"
 "jobs:\n"
 "  test:\n"
 "    runs-on: ubuntu-latest\n"
 "    steps:\n"
-"      - uses: actions/checkout@v4\n"
+"      - uses: actions/checkout@v5\n"
 "      - name: REUSE Compliance Check\n"
-"        uses: fsfe/reuse-action@v4\n"
+"        uses: fsfe/reuse-action@v6\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -631,7 +627,7 @@ msgstr ""
 #, fuzzy, no-wrap
 #| msgid "GitLab"
 msgid "GitLab CI/CD"
-msgstr "GitLab"
+msgstr "GitLab CI/CD"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -686,16 +682,7 @@ msgstr "Incluya el siguiente snippet en su archivo `.travis.yml`:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "language: minimal\n"
-#| "\n"
-#| "services:\n"
-#| "  - docker\n"
-#| "\n"
-#| "before_install:\n"
-#| "- docker pull fsfe/reuse:latest\n"
-#| "- docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
@@ -708,6 +695,8 @@ msgid ""
 "  - docker pull fsfe/reuse:latest\n"
 "  - docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
 "idioma: mínimo\n"
 "\n"
 "servicios:\n"
@@ -906,6 +895,8 @@ msgid ""
 "Many projects of the [EU-funded Next Generation Internet project](https://"
 "fsfe.org/activities/ngi/) we help to become REUSE compliant from the start."
 msgstr ""
+"Ayudamos a cumplir con REUSE muchos proyectos de [EU-funded Next Generation "
+"Internet project](https://fsfe.org/activities/ngi/) desde el principio."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
