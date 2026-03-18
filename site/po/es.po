@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-03-17 17:09+0000\n"
+"PO-Revision-Date: 2026-03-19 14:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -921,20 +921,16 @@ msgstr ""
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
 msgid "[You?](/tutorial/)"
-msgstr ""
+msgstr "[¿Tú?](/tutorial/)"
 
 #. type: Plain text
 #: site/content/en/supporters.md
-#, fuzzy
-#| msgid ""
-#| "If your company is interested in becoming a REUSE sponsor, [please "
-#| "approach us](/resources/#contact)."
 msgid ""
 "If your community or company has implemented REUSE but is not listed, feel "
 "free to [contact us](/resources/#contact)."
 msgstr ""
-"Si su empresa está interesada en convertirse en patrocinador de REUSE, [por "
-"favor visítenos](/resources/#contact)."
+"Si su comunidad o empresa ha implementado REUSE pero no figura en la lista, "
+"no dude en [contactarnos](/resources/#contact)."
 
 #. type: Title ##
 #: site/content/en/supporters.md
@@ -979,9 +975,9 @@ msgstr "Preguntas frecuentes"
 
 #. type: Plain text
 #: site/content/en/faq.md site/content/en/tutorial.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<!-- REUSE-IgnoreStart -->\n"
-msgstr ""
+msgstr "<!-- REUSE-IgnoreStart -->\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -990,6 +986,9 @@ msgid ""
 "licensing and copyright, and with the adoption of REUSE specifically. Please "
 "note that nothing here is legal advice."
 msgstr ""
+"Esta página enumera preguntas comunes y sus respuestas cuando se trata de "
+"licencias y derechos de autor, y específicamente con la adopción de REUSE. "
+"Tenga en cuenta que nada aquí es asesoramiento legal."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1090,13 +1089,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "What is SPDX? {#what-is-spdx}"
-msgstr ""
-"#-#-#-#-#  reuse-docs.es.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"¿Qué es SPDX? {#what-is-spdx}\n"
-"#-#-#-#-#  reuse-website.es.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"¿Que es SPDX? {#what-is-spdx}"
+msgstr "¿Qué es SPDX? {#what-is-spdx}"
 
 #. type: Plain text
 #: site/content/en/faq.md
