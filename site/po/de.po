@@ -3,26 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2022-08-30 10:18+0000\n"
-"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
+"PO-Revision-Date: 2026-03-19 14:09+0000\n"
+"Last-Translator: Henning Rumpf <henning.rumpf@gmx.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  reuse-docs.de.po (PACKAGE VERSION)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
-"#-#-#-#-#  reuse-website.de.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -235,26 +230,15 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid ""
-#| "- [reuse-example](https://git.fsfe.org/reuse/example) - a REUSE compliant "
-#| "repository showing a few methods to add copyright and licensing "
-#| "information. Includes a non-compliant branch for testing. This project is "
-#| "the basis for [our tutorial](/tutorial).  - [reuse-tool](https://git.fsfe."
-#| "org/reuse/tool) - the helper tool itself is compliant, just like [all "
-#| "other REUSE repositories](https://git.fsfe.org/reuse/)."
 msgid ""
 "[reuse-tutorial-example](https://codeberg.org/fsfe/reuse-tutorial-example) - "
 "a REUSE-compliant repository that matches the example in [the tutorial]({{< "
 "relref \"tutorial.md\" >}}). Includes a non-compliant branch for testing."
 msgstr ""
-"- [reuse-example](https://git.fsfe.org/reuse/example) - ein REUSE-konformes "
-"Repository, das einige Methoden zum Hinzufügen von Urheberrechts- und "
-"Lizenzierungsinformationen zeigt. Enthält einen unkonformen Branch zum "
-"Testen. Dieses Projekt ist die Grundlage für [unser Tutorial](/tutorial).  - "
-"[reuse-tool](https://git.fsfe.org/reuse/tool) - das Hilfswerkzeug selbst ist "
-"REUSE-konform, genau wie [alle anderen REUSE-Repositories](https://git.fsfe."
-"org/reuse/)."
+"[reuse-tutorial-example](https://codeberg.org/fsfe/reuse-tutorial-example) - "
+"ein REUSE-konformes Repository, das dem Beispiel in [the tutorial]({{< "
+"relref \"tutorial.md\" >}}) entspricht. Enthält einen nicht-konformes Branch "
+"zum Testen."
 
 #. type: Bullet: '- '
 #: site/content/en/dev.md
@@ -270,6 +254,8 @@ msgid ""
 "Consider registering your project with the [REUSE API](#api) to include a "
 "dynamic compliance badge."
 msgstr ""
+"Erwäge dein Projekt bei der [REUSE API](#api) zu registrieren um ein "
+"dynamisches Konformitätsabzeichen einzubinden."
 
 #. type: Title ##
 #: site/content/en/dev.md
@@ -285,6 +271,10 @@ msgid ""
 "indicating the live status in your README file, and parse the output using "
 "the generated JSON file."
 msgstr ""
+"Die [REUSE API](https://api.reuse.software) hilft dir dabei die Konformität "
+"mit den REUSE-Richtlinien kontinuierlich zu prüfen und anzuzeigen . Du "
+"kannst ein Abzeichen das den gegenwärtigen Status anzeigt in deine README "
+"einbinden und diesen mithilfe der erzeugten JSON-Datei parsen."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -294,6 +284,10 @@ msgid ""
 "reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/"
 "info/git.fsfe.org/reuse/api)"
 msgstr ""
+"So sieht das Abzeichen für ein REUSE-konformes Projekt aus. Du kannst auf "
+"das Abzeichen klicken um mehr Informationen zu erhalten: [![REUSE status]"
+"(https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://"
+"api.reuse.software/info/git.fsfe.org/reuse/api)"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -304,6 +298,12 @@ msgid ""
 "status, and offers a simple alternative for people who do not want to "
 "install the [REUSE tool](#tool)  for a first quick check."
 msgstr ""
+"Die API ist das perfekte Werkzeug für alle die zeigen wollen, dass ihr "
+"Repository sich an die anerkannten Verfahren für die Bereitstellung von "
+"Lizenzierung - und Urheberrechtsinformationen hält. Sie ermöglicht Diensten "
+"Dritter die Einbindung des gegenwärtigen REUSE Status und bietet jedem der "
+"das [REUSE tool](#tool) nicht installieren möchte eine einfache Möglichkeit "
+"für eine erste schnelle Überprüfung."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -4963,21 +4963,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-#| "Upstream-Name: my-project\n"
-#| "Upstream-Contact: Jane Doe <jane@example.com>\n"
-#| "Source: https://git.example.com/jane/my-project\n"
-#| "\n"
-#| "Files: resources/img/*\n"
-#| "Copyright: 2017 Jane Doe <jane@example.com>\n"
-#| "License: CC-BY-4.0\n"
-#| "\n"
-#| "Files: resources/vid/*\n"
-#| "Copyright: 2017 Jane Doe <jane@example.com>\n"
-#| "           2017 John Doe <john@example.com>\n"
-#| "License: CC0-1.0\n"
+#, no-wrap
 msgid ""
 "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
 "\n"
@@ -4990,17 +4976,13 @@ msgid ""
 "License: CC0-1.0\n"
 msgstr ""
 "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-"Upstream-Name: Mein-Projekt\n"
-"Upstream-Contact: Erika Mustermann <erika@example.com>\n"
-"Source: https://git.example.com/erika/mein-projekt\n"
 "\n"
-"Files: resources/img/*\n"
-"Copyright: 2017 Erika Mustermann <erika@example.com>\n"
-"License: CC-BY-4.0\n"
+"Files: po/*.po po/*.pot\n"
+"Copyright: 2019 Übersetzungsgesellschaft\n"
+"License: GPL-3.0-or-later\n"
 "\n"
-"Files: resources/vid/*\n"
-"Copyright: 2017 Erika Mustermann <erika@example.com>\n"
-"           2017 Max Mustermann <max@example.com>\n"
+"Files: tests/resources/*\n"
+"Copyright: 2019 Erika Mustermann\n"
 "License: CC0-1.0\n"
 
 #. type: Title ##
