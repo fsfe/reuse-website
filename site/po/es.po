@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-03-19 14:09+0000\n"
+"PO-Revision-Date: 2026-03-20 16:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -1453,6 +1453,8 @@ msgstr ""
 #, no-wrap
 msgid "What is a copyleft license? A permissive license? {#copyleft-permissive-license}"
 msgstr ""
+"¿Qué es una licencia copyleft? ¿Una licencia permisiva? {#copyleft-"
+"permissive-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1460,6 +1462,8 @@ msgid ""
 "There are two broad categories of Free Software licenses; copyleft and "
 "permissive licenses."
 msgstr ""
+"Existen dos categorías amplias de licencias de Software Libre; licencias "
+"copyleft y licencias permisivas."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1501,18 +1505,6 @@ msgstr "¿Qué licencia debo elegir? {#which-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Always choose a Free Software license, i.e., a license that gives the "
-#| "recipient the freedom to use, study, share, and improve the software. "
-#| "Aside from that, the license you choose is up to you.  If you are "
-#| "contributing to an existing project, you should release your changes "
-#| "under the same license as the project. Otherwise, the [Free Software "
-#| "Foundation](https://www.gnu.org/licenses/license-recommendations.html), "
-#| "[choosealicense.com](https://choosealicense.com/), and [joinup.eu]"
-#| "(https://joinup.ec.europa.eu/collection/eupl/joinup-licensing-assistant-"
-#| "jla)  have some good recommendations. Note that these resources each "
-#| "emphasise a different value, and come with their own biases."
 msgid ""
 "Always choose a Free Software license, i.e. a license that gives the "
 "recipient the freedom to use, study, share, and improve the software. Aside "
@@ -1527,9 +1519,9 @@ msgid ""
 msgstr ""
 "Elija siempre una licencia de Software Libre, esto es, una licencia que de "
 "al destinatario la libertad de utilizar, estudiar, compartir y mejorar el "
-"software. Aparte de eso, la licencia que elijas depende de ti.  Si estás "
+"software. Aparte de eso, la licencia que elijas depende de ti. Si estás "
 "contribuyendo a un proyecto existente, deberías publicar tus cambios bajo la "
-"misma licencia que el proyecto. De lo contrario, la [Free Software "
+"misma licencia que el proyecto.  De lo contrario, la [Free Software "
 "Foundation](https://www.gnu.org/licenses/license-recommendations.html), "
 "[choosealicense.com](https://choosealicense.com/), y [joinup.eu](https://"
 "joinup.ec.europa.eu/collection/eupl/joinup-licensing-assistant-jla)  tienen "
@@ -1751,6 +1743,8 @@ msgid ""
 "However, in addition to that, you can keep your `LICENSE`/`COPYING` file if "
 "you want. See [this question](#tradition)."
 msgstr ""
+"Sin embargo, además de eso, puede conservar su archivo de `LICENSE`/"
+"`COPYING` si lo desea. Ver [esta pregunta](#tradition)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1783,27 +1777,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "<!-- TODO: the linked section still needs to be written.\n"
-#| "Some licenses, such as MIT and the BSD family of licenses, have a line "
-#| "that says\n"
-#| "\"Copyright (c) [year] [copyright holder]\". Please see [this question]"
-#| "(#mit-bsd)\n"
-#| "about how to deal with those licenses.\n"
-#| "-->\n"
 msgid ""
 "Some licenses, such as MIT and the BSD family of licenses, have a line that "
 "says \"Copyright (c) [year] [copyright holder]\". Please see [this question]"
 "(#license-templates) about how to deal with those licenses."
 msgstr ""
-"<!-- TODO: la sección vinculada aún debe escribirse.\n"
 "Algunas licencias, como MIT y la familia de licencias BSD, tienen una línea "
-"que dice\n"
-"\"Copyright (c) [year] [copyright holder]\". Consulte [esta pregunta](#mit-"
-"bsd)\n"
-"sobre cómo usar esas licencias.\n"
-"-->\n"
+"que dice \"Copyright (c) [year] [copyright holder]\". Consulte [esta "
+"pregunta](#license-templates) sobre cómo usar esas licencias."
 
 #. type: Plain text
 #: site/content/en/faq.md
