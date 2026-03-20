@@ -69,7 +69,7 @@
         "other": "REUSE-Konformität bestätigen"
     },
     "index_rationale": {
-        "other": "Urheberrecht und Lizenzierung sind schwierig, besonders wenn man Software aus verschiedenen Projekten wiederverwendet, die unter verschiedenen Lizenzen veröffentlicht wurden. REUSE wurde von der [Free Software Foundation Europe](https://fsfe.org) (FSFE) ins Leben gerufen, um eine Reihe von Empfehlungen zu geben, die die Lizenzierung von Freie-Software-Projekten **einfach, umfassend, eindeutig und maschinenlesbar** machen."
+        "other": "Urheberrecht und Lizenzierung sind schwierig, besonders wenn man Software aus verschiedenen Projekten wiederverwendet, die unter verschiedenen Lizenzen veröffentlicht wurden. REUSE wurde von der [Free Software Foundation Europe](https://fsfe.org) (FSFE) ins Leben gerufen, um eine Reihe von Empfehlungen zu geben, welche die Lizenzierung von Freie-Software-Projekten **einfach, umfassend, eindeutig und maschinenlesbar** machen."
     },
     "index_reuse_head": {
         "other": "Wiederverwendung leicht gemacht"
