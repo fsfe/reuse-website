@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-03-20 16:09+0000\n"
+"PO-Revision-Date: 2026-03-21 17:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -1910,10 +1910,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I install and use the REUSE tool? {#install-tool}"
+#, no-wrap
 msgid "... install the REUSE tool? {#install-tool}"
-msgstr "¿Cómo instalo y utilizo la herramienta REUSE? {#install-tool}"
+msgstr "¿... instalar la herramienta REUSE? {#install-tool}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1938,8 +1937,8 @@ msgid ""
 "$ pipx ensurepath\n"
 "$ reuse --help\n"
 msgstr ""
-"$ pip3 install --user fsfe-reuse \n"
-"$ export PATH=~/.local/bin:$PATH \n"
+"$ pipx install reuse\n"
+"$ pipx ensurepath\n"
 "$ reuse --help\n"
 
 #. type: Title ##
@@ -2030,6 +2029,8 @@ msgid ""
 "You are not allowed to edit the files (because they are test files, or come "
 "from a third party)."
 msgstr ""
+"No tiene permitido editar los archivos (porque son archivos de prueba o "
+"provienen de un tercero)."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -2037,6 +2038,8 @@ msgid ""
 "Adding `.license` files would break the build system, especially for images "
 "and video."
 msgstr ""
+"Añadiendo los archivos `.license` romperían el sistema de compilación, "
+"especialmente para imágenes y videos."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2045,10 +2048,14 @@ msgid ""
 "in the root of your project, but it can be placed anywhere relative to the "
 "files.  An example of the file follows:"
 msgstr ""
+"Puede licenciar archivos globalmente utilizando el archivo `REUSE.toml`, "
+"generalmente se coloca en la raíz de su proyecto, pero se puede colocar en "
+"cualquier lugar en relación con los archivos.  A continuación se muestra un "
+"ejemplo del archivo:"
 
 #. type: Fenced code block (toml)
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "version = 1\n"
 "\n"
@@ -2084,6 +2091,39 @@ msgid ""
 "SPDX-FileCopyrightText = \"NONE\"\n"
 "SPDX-License-Identifier = \"CC0-1.0\"\n"
 msgstr ""
+"version = 1\n"
+"\n"
+"# A simple glob of all files in resources/img/\n"
+"[[annotations]]\n"
+"path = \"resources/img/*\"\n"
+"SPDX-FileCopyrightText = \"2024 Jane Doe <jane@example.com>\"\n"
+"SPDX-License-Identifier = \"CC0-1.0\"\n"
+"\n"
+"# All files in resources/vid/, with multiple copyright holders\n"
+"[[annotations]]\n"
+"path = \"resources/vid/*\"\n"
+"SPDX-FileCopyrightText = [\n"
+"    \"2024 Jane Doe <jane@example.com>\",\n"
+"    \"2024 John Doe <john@example.com>\"\n"
+"]\n"
+"SPDX-License-Identifier = \"CC-BY-4.0\"\n"
+"\n"
+"# A recursive glob of all files and directories in tests/resources/,\n"
+"# and the REUSE information of these files is overridden.\n"
+"[[annotations]]\n"
+"path = \"tests/resources/**\"\n"
+"precedence = \"override\"\n"
+"SPDX-FileCopyrightText = \"2024 Jane Doe <jane@example.com>\"\n"
+"SPDX-License-Identifier = \"CC0-1.0\"\n"
+"\n"
+"# Two computer-generated files.\n"
+"[[annotations]]\n"
+"path = [\n"
+"    \"poetry.lock\",\n"
+"    \"requirements.txt\"\n"
+"]\n"
+"SPDX-FileCopyrightText = \"NONE\"\n"
+"SPDX-License-Identifier = \"CC0-1.0\"\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2092,12 +2132,15 @@ msgid ""
 "can be used. You can find a JSON schema for `REUSE.toml` at <https://reuse."
 "software/reuse-toml-v1.schema.json>."
 msgstr ""
+"[REUSE Specification](/spec) documenta más a fondo cómo se puede usar "
+"`REUSE.toml` . Puede encontrar un esquema JSON para `REUSE.toml` en <https://"
+"reuse.software/reuse-toml-v1.schema.json>."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... override erroneous REUSE information? {#override-info}"
-msgstr ""
+msgstr "¿... anula la información errónea de REUSE? {#override-info}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2134,6 +2177,8 @@ msgstr ""
 #, no-wrap
 msgid "... add additional REUSE information to a file without editing the header? {#aggregate-info}"
 msgstr ""
+"... ¿agregar información de REUSE adicional a un archivo sin editar el "
+"encabezado? {#aggregate-info}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2146,6 +2191,14 @@ msgid ""
 "copyright and licensing information, depending on the translator's "
 "translation software and settings."
 msgstr ""
+"Hay un caso de esquina específico en el que un archivo puede contener "
+"información válida de REUSE (generalmente titulares de derechos de autor), "
+"pero no es deseable que edite el encabezado de comentario de este archivo a "
+"mano, aunque hay más información que debería aplicarse a este archivo. Un "
+"buen ejemplo de este caso de esquina son los archivos `.po` proporcionados "
+"por traductores. Estos pueden contener o no información sobre derechos de "
+"autor y licencias, según el software de traducción y la configuración del "
+"traductor."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2154,10 +2207,13 @@ msgid ""
 "key-value in your [`REUSE.toml` file](#bulk-license). An example looks like "
 "this:"
 msgstr ""
+"Puede agregar información adicional usando la clave-valor `precedence = "
+"\"aggregate\"` en su [archivo `REUSE.toml`](#bulk-license). Un ejemplo se ve "
+"así:"
 
 #. type: Fenced code block (toml)
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "[[annotations]]\n"
 "path = \"po/*.po\"\n"
@@ -2165,6 +2221,11 @@ msgid ""
 "SPDX-FileCopyrightText = \"Contributors to My Project\"\n"
 "SPDX-License-Identifier = \"GPL-3.0-or-later\"\n"
 msgstr ""
+"[[annotations]]\n"
+"path = \"po/*.po\"\n"
+"precedence = \"aggregate\"\n"
+"SPDX-FileCopyrightText = \"Contributors to My Project\"\n"
+"SPDX-License-Identifier = \"GPL-3.0-or-later\"\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2173,13 +2234,15 @@ msgid ""
 "copyright holders (if any), and 'GPL-3.0-or-later' is added to the file's "
 "licenses (if any)."
 msgstr ""
+"En el ejemplo anterior, se agrega 'Contributors to My Project' a los "
+"titulares de derechos de autor del archivo (si corresponde), y se agrega "
+"'GPL-3.0-o posterior' a las licencias del archivo(si corresponde)."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I copy someone else's work? {#copy-work}"
+#, no-wrap
 msgid "... copy someone else's work? {#copy-work}"
-msgstr "¿Cómo copio el trabajo de otra persona? {#copy-work}"
+msgstr "... ¿Cómo copio el trabajo de otra persona? {#copy-work}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2199,19 +2262,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If the work was licensed differently from your project, you should verify "
-#| "whether the licenses are compatible, and add the new licenses to your "
-#| "project."
 msgid ""
 "If the work was licensed differently from your project, you should [verify "
 "whether the licenses are compatible](#license-compatibility), and add the "
 "new licenses to your project."
 msgstr ""
-"Si la licencia del trabajo es diferente de la tu proyecto, debes verificar "
-"si las licencias son compatibles, y añadir las nuevas licencias a tu "
-"proyecto."
+"Si la licencia del trabajo es diferente de la de tu proyecto, debes "
+"[verificar si las licencias son compatibles](#license-compatibility), y "
+"añadir las nuevas licencias a tu proyecto."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2230,10 +2288,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Can I copy a work that has no copyright notice or license? {#no-copyright-license}"
+#, no-wrap
 msgid "... copy a work that has no copyright notice or license? {#no-copyright-license}"
-msgstr "¿Puedo copiar un trabajo que no tiene ningún aviso de copyright o licencia? {#no-copyright-license}"
+msgstr ""
+"...¿Puedo copiar un trabajo que no tiene ningún aviso de copyright o "
+"licencia? {#no-copyright-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
