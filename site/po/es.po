@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-03-21 17:09+0000\n"
+"PO-Revision-Date: 2026-03-24 18:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -2436,7 +2436,7 @@ msgstr ""
 
 #. type: Fenced code block (bash)
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2021 Jane Doe\n"
 "#\n"
@@ -2445,11 +2445,17 @@ msgid ""
 "echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
 "echo \"SPDX-License-Identifier: MIT\" >> file.txt\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2021 Jane Doe\n"
+"#\n"
+"# SPDX-License-Identifier: GPL-3.0-or-later\n"
+"\n"
+"echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
+"echo \"SPDX-License-Identifier: MIT\" >> file.txt\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "This is how the section can be ignored:"
-msgstr ""
+msgstr "Así es como se puede ignorar la sección:"
 
 #. type: Fenced code block (bash)
 #: site/content/en/faq.md
@@ -2475,10 +2481,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "What to do with uncopyrightable files? {#uncopyrightable}"
+#, no-wrap
 msgid "... deal with uncopyrightable files? {#uncopyrightable}"
-msgstr "¿Qué hacer con archivos incopiables? {#uncopyrightable}"
+msgstr "... ¿Qué hacer con archivos incopiables? {#uncopyrightable}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2575,6 +2580,10 @@ msgid ""
 "can add the copyright and licensing to the file's header, or you can add in-"
 "line snippet comments around this new block of code."
 msgstr ""
+"Puede suceder que copie algún código de terceros en un archivo más grande. "
+"Puede agregar los derechos de autor y las licencias al encabezado del "
+"archivo, o puede agregar comentarios de fragmentos en línea sobre este nuevo "
+"bloque de código."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2582,6 +2591,9 @@ msgid ""
 "Such an annotated snippet block must start with `SPDX-SnippetBegin` to mark "
 "its beginning and end with `SPDX-SnippetEnd` to mark the snippet's end."
 msgstr ""
+"Dicho bloque de fragmento anotado debe comenzar con `SPDX-SnippetBegin` para "
+"marcar su comienzo y finalizar con `SPDX-SnippetEnd` para marcar el final "
+"del fragmento."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2590,15 +2602,19 @@ msgid ""
 "meaning that the (only) correct copyright notice in a snippet is `SPDX-"
 "SnippetCopyrightText`. `SPDX-License-Identifier` is an exception."
 msgstr ""
+"Tener en cuenta que las etiquetas SPDX deben comenzar con `SPDX-Snippet` "
+"dentro de los fragmentos, lo que significa que el (único) aviso de copyright "
+"correcto en un fragmento es `SPDX-SnippetCopyrightText`. `SPDX-License-"
+"Identifier` es una excepción."
 
 #. type: Plain text
 #: site/content/en/faq.md site/content/en/spec-3.2.md
 msgid "Example:"
-msgstr ""
+msgstr "Ejemplo:"
 
 #. type: Fenced code block
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# SPDX-SnippetBegin\n"
 "# SPDX-License-Identifier: MIT\n"
@@ -2608,6 +2624,13 @@ msgid ""
 "\n"
 "# SPDX-SnippetEnd\n"
 msgstr ""
+"# SPDX-SnippetBegin\n"
+"# SPDX-License-Identifier: MIT\n"
+"# SPDX-SnippetCopyrightText: 2023 Jane Doe <jane@example.com>\n"
+"\n"
+"{$snippet_code_goes_here}\n"
+"\n"
+"# SPDX-SnippetEnd\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2617,10 +2640,15 @@ msgid ""
 "in mathematical expressions. In the case of nested snippets, the SPDX file "
 "tags are considered to apply to the inner-most snippet. Example:"
 msgstr ""
+"Los fragmentos pueden anidarse, y esto se denota al tener pares `SPDX-"
+"SnippetBegin`/`SPDX-SnippetEnd` dentro de otros pares, de la misma manera "
+"que los paréntesis anidan en expresiones matemáticas. En el caso de "
+"fragmentos anidados, se considera que las etiquetas de archivo SPDX se "
+"aplican al fragmento más interno. Ejemplo:"
 
 #. type: Fenced code block
 #: site/content/en/faq.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# SPDX-SnippetBegin\n"
 "# SPDX-License-Identifier: MIT\n"
@@ -2640,6 +2668,23 @@ msgid ""
 "\n"
 "# SPDX-SnippetEnd\n"
 msgstr ""
+"# SPDX-SnippetBegin\n"
+"# SPDX-License-Identifier: MIT\n"
+"# SPDX-SnippetCopyrightText: 2023 Jane Doe <jane@example.com>\n"
+"\n"
+"{$snippet_code_under_MIT}\n"
+"\n"
+"# SPDX-SnippetBegin\n"
+"# SPDX-License-Identifier: BSD-2-Clause\n"
+"# SPDX-SnippetCopyrightText: Copyright Example Company\n"
+"\n"
+"{$snippet_code_under_BSD-2-Clause}\n"
+"\n"
+"# SPDX-SnippetEnd\n"
+"\n"
+"{$more_snippet_code_under_MIT}\n"
+"\n"
+"# SPDX-SnippetEnd\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2812,10 +2857,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "<!-- ## How to deal with MIT/BSD licenses which include copyright information themselves? {#mit-bsd}\n"
+#, no-wrap
 msgid "... deal with license texts which include copyright statements, like MIT/BSD? {#license-templates}"
-msgstr "<!-- ## ¿Cómo lidiar con las licencias MIT/BSD que incluyen información de derechos de autor? {#mit-bsd}\n"
+msgstr ""
+"¿.... lidiar con textos de licencia que incluyen declaraciones de derechos "
+"de autor, como MIT/BSD? {#license-templates}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2823,6 +2869,8 @@ msgid ""
 "Some license texts, such as MIT or the BSD family of licenses, can be "
 "modified to contain custom copyright notices."
 msgstr ""
+"Algunos textos de licencias, como MIT o la familia de licencias BSD, se "
+"pueden modificar para contener avisos de derechos de autor personalizados."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2834,6 +2882,13 @@ msgid ""
 "into the license text itself, you add copyright statements to your project's "
 "files following the normal REUSE best practices."
 msgstr ""
+"Si está publicando código bajo dicha licencia, le recomendamos que agregue "
+"el texto de la licencia al proyecto sin ninguna modificación. Una buena "
+"forma de obtener el texto de la licencia sin modificar es utilizando la "
+"herramienta auxiliar REUSE (e.g., `reuse download MIT`). En lugar de "
+"insertar su aviso de derechos de autor en el texto de la licencia, agregue "
+"declaraciones de derechos de autor a los archivos de su proyecto siguiendo "
+"las mejores prácticas normales de REUSE."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2847,11 +2902,20 @@ msgid ""
 "them. If you want to reuse code from both of these projects, you might not "
 "be sure where to put your copies of those projects' license files."
 msgstr ""
+"Cuando reutiliza código de varias fuentes que usan una licencia MIT/BSD, "
+"rápidamente se encuentra con un problema. Tanto la licencia MIT como la "
+"familia de licencias BSD incluyen una cláusula que requiere que el "
+"redistribuidor (ese eres tú) reproduzca el aviso de derechos de autor y el "
+"texto de la licencia. Por ejemplo, el Proyecto A y el Proyecto B pueden usar "
+"una licencia MIT, pero los archivos de licencia reales diferirán porque "
+"tienen diferentes avisos de derechos de autor incrustados en ellos. Si desea "
+"reutilizar el código de estos dos proyectos, es posible que no esté seguro "
+"de dónde colocar las copias de los archivos de licencia de esos proyectos."
 
 #. type: Plain text
 #: site/content/en/faq.md
 msgid "We recommend two options:"
-msgstr ""
+msgstr "Recomendamos dos opciones:"
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -2884,10 +2948,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I deal with a file that has been edited by many people? {#many-copyright-statements}"
+#, no-wrap
 msgid "... deal with a file that has been edited by many people? {#many-copyright-statements}"
-msgstr "¿Qué hago con un archivo que ha sido editado por muchas personas? {#many-copyright-statements}"
+msgstr ""
+"¿.... Qué hago con un archivo que ha sido editado por muchas personas? "
+"{#many-copyright-statements}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3012,6 +3077,14 @@ msgid ""
 "find it very strange that even insignificant non-code files get licensing "
 "headers. The different-ness of REUSE can seem peculiar in that way."
 msgstr ""
+"Algunas personas, cuando se encuentran por primera vez con REUSE, se "
+"encuentran con un par de cosas muy diferentes a las que están acostumbradas. "
+"Extrañan los largos anuncios legales en la parte superior de los archivos, "
+"extrañan el archivo `COPYING`/`LICENSE` en la raíz del repositorio, piensen "
+"que los archivos de `.license` saturan el directorio, o les resulta muy "
+"extraño que incluso los archivos insignificantes que no son de código "
+"obtengan encabezados de licencia. La diferencia de REUSE puede parecer "
+"peculiar de esa manera."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3022,6 +3095,12 @@ msgid ""
 "simpler, more comprehensive, and more unambiguous than it would have been if "
 "we tried to maintain compatibility with traditions of old."
 msgstr ""
+"Uno de los principales objetivos de REUSE es ser lo más compatible posible "
+"con las mejores prácticas existentes. Sin embargo, rompe explícitamente con "
+"algunas viejas tradiciones. Creemos que REUSE es mejor para ti. Al abrir "
+"nuevos caminos, la REUSE es más simple, más completo y más inequívoco de lo "
+"que hubiera sido si tratáramos de mantener la compatibilidad con las "
+"tradiciones de antaño."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3035,12 +3114,23 @@ msgid ""
 "and we hope that these eccentricities will soon become commonplace, such "
 "that they would no longer seem so peculiar anymore."
 msgstr ""
+"Sin embargo, nada le impide agregar anuncios publicitarios legales largos a "
+"sus encabezados o colocar un archivo de `COPYING` en la raíz de su "
+"directorio _anyway_ . en la raíz de su directorio. Estas cosas se pueden "
+"hacer a tu gusto. Sin embargo, algunos otros aspectos de la REUSE son "
+"inevitables. REUSE sostiene que _cada archivo individual debe contener "
+"información sobre licencias_, de modo que incluso los archivos más pequeños "
+"tengan metadatos de licencias. Estas cosas son simplemente inherentes al "
+"objetivo de la REUSE, y esperamos que estas excentricidades pronto se "
+"conviertan en algo común, de modo que ya no parezcan tan peculiares."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Why doesn't REUSE use the metadata fields in pictures, SVG, text documents etc.? {#metadata}"
 msgstr ""
+"¿Por qué no usa REUSE los campos de metadatos en imágenes, SVG, documentos "
+"de texto, etc.??{#metadata}"
 
 #. type: Plain text
 #: site/content/en/faq.md
