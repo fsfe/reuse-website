@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-03-24 18:09+0000\n"
+"PO-Revision-Date: 2026-03-27 18:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -3334,9 +3334,9 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md site/content/en/tutorial.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<!-- REUSE-IgnoreEnd -->\n"
-msgstr ""
+msgstr "<!-- REUSE-IgnoreEnd -->\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/tutorial.md
@@ -3346,12 +3346,6 @@ msgstr "Tutorial: Cómo llegar a ser REUSE compatible"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "This tutorial explains the basic methods of how to make a software "
-#| "project REUSE-compliant. By the end of this document, all your files will "
-#| "clearly have their copyright and licensing marked, and you will be able "
-#| "to verify this using the REUSE helper tool."
 msgid ""
 "This tutorial explains the basics of making a software project REUSE-"
 "compliant.  The goal is to **easily, comprehensively, and unambiguously** "
@@ -3360,9 +3354,10 @@ msgid ""
 "of REUSE:"
 msgstr ""
 "Este tutorial explica los métodos básicos de cómo hacer un proyecto de "
-"software REUSE compatible. Al terminar este documento, todos sus archivos "
-"tendrán claramente marcados sus derechos de autor y licencias, y podrá "
-"verificarlo utilizando la herramienta de ayuda REUSE."
+"software REUSE compatible.   El objetivo es declarar **de manera fácil, "
+"exhaustiva e inequívoca** sus derechos de autor y licencias de una manera "
+"que sea **legible-por-máquina**. Al final de este tutorial, comprenderá los "
+"tres pasos fundamentales de la REUSE:"
 
 #. type: Bullet: '1. '
 #: site/content/en/tutorial.md
@@ -3408,24 +3403,14 @@ msgid ""
 "├── Makefile\n"
 "└── README.md\n"
 msgstr ""
-"proyecto/ \n"
-"├── img/ \n"
-"│   ├── gato.jpg \n"
-"│   └── perro.jpg \n"
-"├── origen/ \n"
-"│   └── principal.c \n"
-"├── .gitignore \n"
-"├── Makefile \n"
-"└── LÉAME.md\n"
+"project/\n"
+"├── src/\n"
+"│   └── main.c\n"
+"├── Makefile\n"
+"└── README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "If you would like to reproduce the steps in this tutorial on your own "
-#| "computer, you can clone the [example repository](https://github.com/fsfe/"
-#| "reuse-example). The branch `noncompliant` matches the structure above, "
-#| "while the `master` branch is the successful result of this repository."
 msgid ""
 "If you would like to reproduce the steps in this tutorial on your own "
 "computer, you can clone the [example repository](https://codeberg.org/fsfe/"
@@ -3434,19 +3419,13 @@ msgid ""
 "tutorial."
 msgstr ""
 "Si quieres reproducir los pasos de este tutorial en tu propio ordenador, "
-"puedes clonar el [repositorio de ejemplo](https://github.com/fsfe/reuse-"
-"example). La rama `noncompliant` coincide con la estructura anterior, "
-"mientras que la rama `master` es el resultado bueno de este repositorio."
+"puedes clonar el [repositorio de ejemplo](https://codeberg.org/fsfe/reuse-"
+"tutorial-example). La rama `non-compliant` coincide con la estructura "
+"anterior, mientras que la rama `compliant` es el resultado exitoso de este "
+"tutorial."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "For each of these steps, you will first learn how to achieve them "
-#| "manually. However, the [REUSE helper tool](https://github.com/fsfe/reuse-"
-#| "tool) supports you with most tasks, and the necessary commands will be "
-#| "listed as well in the collapsible boxes. We recommend to first understand "
-#| "the basic principle before just executing the tool's commands."
 msgid ""
 "For each of these steps, you will first learn how to achieve them manually.  "
 "However, the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) supports you "
@@ -3454,11 +3433,12 @@ msgid ""
 "collapsible boxes. We recommend to first understand the basic principle "
 "before just executing the tool's commands."
 msgstr ""
-"Para cada uno de estos pasos, primero aprenderá cómo lograrlos manualmente. "
-"Sin embargo, la [herramienta de ayuda REUSE] (https://github.com/fsfe/reuse-"
-"tool) lo ayuda con la mayoría de las tareas, y los comandos necesarios "
-"también se enumerarán en los menúes desplegables. Recomendamos comprender "
-"primero el principio básico antes de ejecutar los comandos de la herramienta."
+"Para cada uno de estos pasos, primero aprenderá cómo lograrlos "
+"manualmente.   Sin embargo, la [herramienta de ayuda REUSE](https://"
+"codeberg.org/fsfe/reuse-tool) ayuda con la mayoría de las tareas, y los "
+"comandos necesarios también se enumerarán en los menúes desplegables. "
+"Recomendamos comprender primero el principio básico antes de ejecutar los "
+"comandos de la herramienta."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3476,13 +3456,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "You find your license in the [SPDX License List](https://spdx.org/"
-#| "licenses/).  SPDX is an open standard for communicating license and "
-#| "copyright information.  Each license is uniquely identified by a "
-#| "shortform [SPDX License Identifier](https://spdx.org/licenses). The SPDX "
-#| "License Identifier for your chosen license is GPL-3.0-or-later."
 msgid ""
 "Find your license in the [SPDX License List](https://spdx.org/licenses/). "
 "SPDX is an open standard for communicating license and copyright "
@@ -3491,11 +3464,10 @@ msgid ""
 "or-later`."
 msgstr ""
 "Encontrará su licencia en la [Lista de licencias SPDX](https://spdx.org/"
-"licenses/).  SPDX es un estándar abierto para dar información sobre "
-"licencias y derechos de autor.  Cada licencia se identifica de forma única "
-"mediante una forma abreviada [Identificador de licencia SPDX](https://spdx."
-"org/licenses). El identificador de licencia SPDX para su licencia elegida es "
-"GPL-3.0 o posterior."
+"licenses/). SPDX es un estándar abierto para dar información sobre licencias "
+"y derechos de autor. Cada licencia se identifica de forma única mediante un "
+"Identificador de licencia SPDX abreviado. El Identificador de licencia SPDX "
+"para la licencia elegida es `GPL-3.0-o-posterior`."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3524,13 +3496,6 @@ msgstr "{{< caja-herramienta >}}\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "The `reuse download` command enables you to download a specific license. "
-#| "`reuse download GPL-3.0-or-later` would fulfil the task described in the "
-#| "manual instructions above. Running `reuse download --all` automatically "
-#| "downloads all licenses which the REUSE helper tool detects as being used "
-#| "in your project."
 msgid ""
 "[The `reuse download` command](https://reuse.readthedocs.io/en/stable/man/"
 "reuse-download.html) enables you to download a specific license. `reuse "
@@ -3538,11 +3503,12 @@ msgid ""
 "instructions above. Running `reuse download --all` automatically downloads "
 "all licenses which the REUSE tool detects as being used in your project."
 msgstr ""
-"El comando `reuse download` le permite descargar una licencia específica. "
-"`reuse download GPL-3.0-or-later` cumpliría la tarea descrita en las "
-"instrucciones del manual anterior. Ejecutar `reuse download --all` descarga "
-"automáticamente todas las licencias que la herramienta de ayuda REUSE "
-"detecta como utilizadas en su proyecto."
+"[The `reuse download` command](https://reuse.readthedocs.io/en/stable/man/"
+"reuse-download.html)permite descargar una licencia específica..`reuse "
+"download GPL-3.0-o-posterior` cumpliría la tarea descrita en las "
+"instrucciones del manual anterior. Al ejecutar `reuse download --all` se "
+"descargan automáticamente todas las licencias que la herramienta REUSE "
+"detecta que se están utilizando en su proyecto."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3583,9 +3549,9 @@ msgid ""
 " */\n"
 msgstr ""
 "/*\n"
-" * SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
+" * SPDX-FileCopyrightText: 2024 Jane Doe <jane@example.com>\n"
 " *\n"
-" * SPDX-License-Identifier: GPL-3.0-o-posterior\n"
+" * SPDX-License-Identifier: GPL-3.0-or-later\n"
 " */\n"
 
 #. type: Plain text
@@ -3620,19 +3586,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "Each file must always contain these two tags in the header. You are "
-#| "allowed to use the tags multiple times if you have multiple copyright "
-#| "holders or licenses."
 msgid ""
 "Each file must always contain these two tags in the header. You are allowed "
 "to use the `SPDX-FileCopyrightText` tag multiple times if you have multiple "
 "copyright holders."
 msgstr ""
 "Cada archivo debe contener siempre estas dos etiquetas en la cabecera. Puede "
-"utilizar las etiquetas varias veces si tiene varios titulares de derechos de "
-"autor o licencias."
+"utilizar las etiquetas `SPDX-FileCopyrightText` varias veces si tiene "
+"distintos titulares de derechos de autor o licencias."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3920,6 +3881,12 @@ msgid ""
 "which may be under a different license, and it's important you do not change "
 "the license text on other software you include."
 msgstr ""
+"Las licencias de software libre y de código abierto están estandarizadas y "
+"tienen textos estándar. Independientemente de la licencia que utilice, debe "
+"incluir el texto de la licencia en su proyecto. También debe incluir el "
+"texto de la licencia de cualquier código que pueda estar bajo una licencia "
+"diferente, y es importante que no cambie el texto de la licencia en otro "
+"software que incluya."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3930,6 +3897,11 @@ msgid ""
 "attach some suffix to the filename as well, such as `LICENSE.md`, if "
 "relevant)."
 msgstr ""
+"Si su proyecto solo incluye código con licencia bajo una sola licencia, "
+"puede proporcionar el texto de esta licencia en un archivo en el directorio "
+"de nivel superior de su repositorio con el nombre `LICENSE`, `LICENCE` o "
+"`COPYING` (también puede adjuntar algún sufijo al nombre del archivo, como "
+"`LICENSE.md`, si procede)."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3939,6 +3911,10 @@ msgid ""
 "create a directory at the top level called `LICENSES` within which you "
 "include the license text of each license used."
 msgstr ""
+"Dado que muchos proyectos incluyen código bajo diferentes licencias, a "
+"menudo no es factible incluir todas las licencias en el nivel superior, en "
+"cuyo caso debe crear un directorio en el nivel superior llamado `LICENSES` "
+"dentro del cual incluya el texto de cada licencia utilizada."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3947,6 +3923,9 @@ msgid ""
 "never change any license texts even if they are very similar to existing "
 "ones."
 msgstr ""
+"Debe incluir todas las licencias que se utilizan en su proyecto, y nunca "
+"debe cambiar ningún texto de licencia, incluso si son muy similares a los "
+"existentes."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3957,14 +3936,23 @@ msgid ""
 "parts may be written by Alice and others by Bob, resulting in two different "
 "license files, even if the only difference is the copyright holder."
 msgstr ""
+"Algunas licencias, como la licencia de la cláusula BSD 2, deben adaptarse "
+"para incluir el nombre del titular de los derechos de autor en el texto de "
+"la licencia. Su proyecto puede terminar incluyendo varias versiones de la "
+"misma licencia de cláusula BSD 2 porque algunas partes pueden ser escritas "
+"por Alice y otras por Bob, lo que da como resultado dos archivos de licencia "
+"diferentes, incluso si la única diferencia es el titular de los derechos de "
+"autor."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "> ### Keep in mind\n"
 ">  \n"
 msgstr ""
+"> ### Keep in mind\n"
+">  \n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3975,21 +3963,33 @@ msgid ""
 "> * Keep the filename of the licenses consistent, so you can refer to it\n"
 ">   from the source code files.\n"
 msgstr ""
+"> * No cambiar ningún texto de licencia, usar la forma literal del texto de "
+"la licencia.\n"
+"> * No eliminar ningún texto de licencia, incluir los textos de licencia de "
+"todo el software.\n"
+"> * No eliminar ningún texto de licencia, incluir los textos de licencia de "
+"todo el software\n"
+"       de los archivos de código fuente.\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
+#, fuzzy
 msgid ""
 "[^1]: https://spdx.org/licenses/ [^2]: https://github.com/spdx/license-list"
 msgstr ""
+"[^1]: https://spdx.org/licenses/ [^2]: https://github.com/spdx/license-list"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<br />\n"
 "<br />\n"
 "<br />\n"
 msgstr ""
+"<br />\n"
+"<br />\n"
+"<br />\n"
 
 #. type: Title ##
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
