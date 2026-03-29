@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-03-27 18:09+0000\n"
+"PO-Revision-Date: 2026-03-30 16:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -4156,6 +4156,8 @@ msgstr ""
 msgid ""
 "provide a link back to the original file in version control from each header,"
 msgstr ""
+"proporcione un enlace al archivo original en control de versiones desde cada "
+"encabezado,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -4166,6 +4168,12 @@ msgid ""
 "included, for example in the form of a bill of material (see later), an "
 "automatically generated log file or similar,"
 msgstr ""
+"asegúrese de que si alguien copia el repositorio fuente sin metadatos del "
+"sistema de control de versiones (por ejemplo, si crea un archivo tar a "
+"partir de él), los metadatos del sistema de control de versiones relevantes "
+"para determinar los derechos de autor aún deben incluirse, por ejemplo, en "
+"forma de una lista de materiales (ver más adelante), un archivo de registro "
+"generado automáticamente o similar,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -4176,11 +4184,17 @@ msgid ""
 "the one pushing code to version control, or where the copyright is held by "
 "an organisation rather than the author.)"
 msgstr ""
+"asegúrese de que los metadatos de confirmación reflejen los derechos de "
+"autor reales (esto es particularmente importante si un proyecto acepta "
+"código contribuido a través de listas de correo, rastreadores de errores o "
+"similares, donde el titular original de los derechos de autor no es quien "
+"envía el código al control de versiones, o donde los derechos de autor son "
+"propiedad de una organización en lugar del autor.)"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 msgid "An appropriate header in this case would be:"
-msgstr ""
+msgstr "Un encabezado apropiado en este caso sería:"
 
 #. type: Fenced code block
 #: site/content/en/spec-1.2.md
@@ -4328,13 +4342,20 @@ msgid ""
 "> * Make your bill of material conformant to the SPDX specification.\n"
 "> * It doesn't hurt to run your project through ScanCode or FOSSology, to make sure these tools can parse and understand your project's licensing.\n"
 msgstr ""
+"> ### Tener en cuenta\n"
+">\n"
+"> * No cree una lista de materiales si no puede generarla automáticamente.\n"
+"> * Si genera uno automáticamente, es útil incluirlo.\n"
+"> * Haga que su lista de materiales se ajuste a la especificación SPDX.\n"
+"> * No está de más ejecutar su proyecto a través de ScanCode o FOSSology, "
+"para asegurarse de que estas herramientas puedan analizar y comprender las "
+"licencias de su proyecto.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-2.0.md
-#, fuzzy, no-wrap
-#| msgid "REUSE Specification – Version 3.0"
+#, no-wrap
 msgid "REUSE Practices – Version 2.0"
-msgstr "Especificación REUSE – Versión 3.0"
+msgstr "Especificación REUSE – Versión 2.0"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4343,6 +4364,9 @@ msgid ""
 "texts. Regardless of which license you use, you should include the license "
 "text in your project."
 msgstr ""
+"Las licencias de software libre y de código abierto están estandarizadas y "
+"tienen textos estándar. Independientemente de la licencia que utilice, debe "
+"incluir el texto de la licencia en su proyecto."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4355,6 +4379,14 @@ msgid ""
 "uniquely reference each license.  For instance, the GNU GPL version 3 has "
 "`GPL-3.0` as shorthand identifier."
 msgstr ""
+"La forma más sencilla de asegurarse de proporcionar una licencia sin cambios "
+"es copiándola literalmente de [este repositorio de licencias](https://"
+"github.com/spdx/license-list) mantenido por el Grupo de Trabajo SPDX.  El "
+"Grupo de trabajo SPDX mantiene una [lista de licencias de uso común][spdx-"
+"licenses].  Cada licencia tiene un nombre abreviado (denominado "
+"identificador SPDX) que se puede utilizar para hacer referencia única a cada "
+"licencia.  Por ejemplo, la versión 3 de la GPL de GNU tiene `GPL-3.0` como "
+"identificador abreviado."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4364,6 +4396,11 @@ msgid ""
 "your repository with the name `LICENSE`, `LICENCE`, `COPYING` or `COPYRIGHT` "
 "(you may attach some suffix to the filename as well, such as `LICENSE.txt`)."
 msgstr ""
+"Si su proyecto solo incluye código licenciado bajo una sola licencia, puede "
+"proporcionar el texto de esta licencia en un archivo en el directorio de "
+"nivel superior de su repositorio con el nombre `LICENSE`, `LICENCE`, "
+"`COPYING` o `COPYRIGHT`(también puede adjuntar algún sufijo al nombre del "
+"archivo, como `LICENSE.txt`)."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4374,6 +4411,12 @@ msgid ""
 "license because some parts may be written by Alice and others by Bob, "
 "resulting in two different license files."
 msgstr ""
+"Algunas licencias, como la licencia de cláusula BSD 2, existen en muchas "
+"variaciones donde la única diferencia es el nombre del titular de los "
+"derechos de autor en el texto de la licencia. Su proyecto puede terminar "
+"incluyendo varias versiones de la misma licencia de cláusula BSD 2 porque "
+"algunas partes pueden ser escritas por Alice y otras por Bob, lo que da como "
+"resultado dos archivos de licencia diferentes."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
