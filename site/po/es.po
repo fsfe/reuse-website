@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-03-30 16:09+0000\n"
+"PO-Revision-Date: 2026-03-31 17:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -4631,7 +4631,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /*\n"
 "  * Copyright (c) 2017 Alice Commit <alice@example.com>\n"
@@ -4641,6 +4641,13 @@ msgid ""
 "  * SPDX-License-Identifier: GPL-2.0\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  * Copyright (c) 2017 Alice Commit <alice@example.com>\n"
+"  * Copyright (c) 2009-2016 Bob Denver <bob@example.com>\n"
+"  * Copyright (c) 2007 Company Example <charlie@example.com>\n"
+"  * \n"
+"  * SPDX-License-Identifier: GPL-2.0\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4648,6 +4655,8 @@ msgid ""
 "You should include information about your project's practices in the README "
 "or similar file.  This could be as simple as linking to these practices."
 msgstr ""
+"Debe incluir información sobre las prácticas de su proyecto en el archivo "
+"LÉAME o similar.  Esto podría ser tan simple como vincular a estas prácticas."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4659,6 +4668,12 @@ msgid ""
 "format does not support comments, you must provide the information "
 "separately in one of three ways:"
 msgstr ""
+"Todos los archivos fuente que se incluyen en la compilación final de su "
+"proyecto (textualmente, modificados, parcialmente o en forma compilada) "
+"deben contener información de derechos de autor y licencia.  Si no es "
+"posible agregar un encabezado al archivo, ya sea porque el archivo es "
+"binario o porque el formato no admite comentarios, debe proporcionar la "
+"información por separado de una de estas tres maneras:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-2.0.md
@@ -4836,6 +4851,11 @@ msgid ""
 "best not to have a bill of materials, but to rely only on the information "
 "coupled with the source code files."
 msgstr ""
+"Una lista de materiales puede ser muy complicada y larga, lo que dificulta "
+"su mantenimiento. Si no lo generas automáticamente, es muy probable que "
+"alguien se olvide de actualizarlo al realizar cambios. En estos casos, es "
+"mejor no tener una lista de materiales, sino confiar solo en la información "
+"junto con los archivos del código fuente."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4847,6 +4867,12 @@ msgid ""
 "on files which include a standard header, or which includes the header in a "
 "separate license file."
 msgstr ""
+"Si tiene forma de crear automáticamente una lista de materiales, y elige "
+"hacerlo, debe generarla automáticamente a partir de la información más "
+"confiable que tenga sobre cada archivo de su proyecto.  Esto incluye "
+"información de derechos de autor mantenida en sistemas de control de "
+"versiones y licencias en archivos que incluyen un encabezado estándar, o que "
+"incluyen el encabezado en un archivo de licencia separado."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4856,6 +4882,10 @@ msgid ""
 "bill of materials, which license is relevant for the output files depending "
 "on the included source code."
 msgstr ""
+"También puede optar por incluir en la lista de materiales los archivos de "
+"salida generados al compilar el proyecto, de modo que pueda indicar a través "
+"de la lista de materiales qué licencia es relevante para los archivos de "
+"salida en función del código fuente incluido."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4864,6 +4894,9 @@ msgid ""
 "included in a file in the top level directory of your repository called "
 "`LICENSE.spdx`."
 msgstr ""
+"La lista de materiales debe cumplir con la especificación SPDX e incluirse "
+"en un archivo en el directorio de nivel superior de su repositorio llamado "
+"`LICENSE.spdx`."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4876,6 +4909,15 @@ msgid ""
 "> * Make your bill of materials conformant to the SPDX specification.\n"
 "> * It doesn't hurt to run your project through ScanCode or FOSSology, to make sure these tools can parse and understand your project's licensing.\n"
 msgstr ""
+"> # # # Tener en cuenta\n"
+">\n"
+"> * No crear una lista de materiales si no se puede generar "
+"automáticamente.\n"
+"> * Si genera uno automáticamente, es útil incluirlo.\n"
+"> * Hacer que la lista de materiales se ajuste a la especificación SPDX.\n"
+"> * No está de más ejecutar el proyecto a través de ScanCode o FOSSology, "
+"para asegurarse de que estas herramientas puedan analizar y comprender las "
+"licencias del proyecto.\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-3.0.md
@@ -4974,19 +5016,14 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "SPDX License Identifier --- SPDX short-form identifier, as defined in "
-#| "SPDX Specification. See also <https://spdx.org/ids> for a short "
-#| "introduction and examples."
 msgid ""
 "SPDX Identifier --- SPDX short-form identifier, as defined in SPDX "
 "Specification. See also <https://spdx.org/ids> for a short introduction and "
 "examples."
 msgstr ""
 "Identificador de licencia SPDX --- Identificador abreviado de SPDX, tal como "
-"se define en SPDX Specification. Véase también <https://spdx.org/ids> para "
-"una breve introducción y ejemplos."
+"se define en SPDX Specification. Ver también <https://spdx.org/ids> para una "
+"breve introducción y ejemplos."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
@@ -5494,11 +5531,16 @@ msgid ""
 "Covered File --- a file which must contain Licensing Information, as defined "
 "in [Covered and ignored Files](#covered-and-ignored-files)."
 msgstr ""
+"Archivo cubierto - - - un archivo que debe contener Información sobre "
+"licencias, como se define en [Archivos cubiertos e ignorados](#covered-and-"
+"ignored-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "Commentable File --- a plain text file that can contain comments."
 msgstr ""
+"Archivo comentable - - - un archivo de texto sin formato que puede contener "
+"comentarios."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5506,6 +5548,8 @@ msgid ""
 "Snippet --- a portion of text in a Commentable File to which different "
 "Licensing Information applies."
 msgstr ""
+"Fragmento - - - una porción de texto en un archivo comentable al que se "
+"aplica Información de licencia diferente."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5513,6 +5557,8 @@ msgid ""
 "Uncommentable File --- either a plain text file that cannot contain comments "
 "or a file that is not a plain text file."
 msgstr ""
+"Archivo no comentable --- un archivo de texto sin formato que no puede "
+"contener comentarios o un archivo que no es un archivo de texto sin formato."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5554,13 +5600,6 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "DEP5 --- [Machine-readable `debian/copyright` file, Version 1.0](https://"
-#| "www.debian.org/doc/packaging-manuals/copyright-format/1.0/).  Where the "
-#| "REUSE Specification and DEP5 state different things, the REUSE "
-#| "Specification takes precedence. Specifically in the case of the "
-#| "`Copyright` and `License` tags."
 msgid ""
 "DEP5 --- Machine-readable `debian/copyright` file, Version 1.0; as available "
 "at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/> and "
@@ -5568,11 +5607,11 @@ msgid ""
 "Specification and DEP5 state different things, the REUSE Specification takes "
 "precedence."
 msgstr ""
-"DEP5 --- [Machine-readable `debian/copyright` file, Version 1.0](https://www."
-"debian.org/doc/packaging-manuals/copyright-format/1.0/).  Cuando la "
-"Especificación REUSE y la DEP5 establecen cosas diferentes, la "
-"Especificación REUSE tiene prioridad. En concreto, en el caso de las "
-"etiquetas `Copyright` y `License`.."
+"DEP5 --- [Machine-readable `debian/copyright` file, Version 1.0](https://"
+"www.debian.org/doc/packaging-manuals/copyright-format/1.0/)y se define más a "
+"fondo en [DEP5 (deprecated)](#dep5-deprecated). Cuando la Especificación de "
+"REUSE y DEP5 establecen cosas diferentes, es prioritaria la Especificación "
+"de REUSE."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5580,12 +5619,14 @@ msgid ""
 "TOML --- A configuration file format as available at <https://toml.io/en/"
 "v1.0.0>."
 msgstr ""
+"TOML --- Un formato de archivo de configuración disponible en <https://"
+"toml.io/en/v1.0.0>."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Covered and ignored Files"
-msgstr ""
+msgstr "Archivos cubiertos e ignorados"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5593,6 +5634,9 @@ msgid ""
 "Covered Files are any file which must contain Licensing Information. This is "
 "equal to all files in a project, with the exception of:"
 msgstr ""
+"Los Archivos cubiertos son cualquier archivo que debe contener Información "
+"sobre Licencias. Esto es igual a todos los archivos de un proyecto, con la "
+"excepción de:"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
