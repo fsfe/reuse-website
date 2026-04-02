@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-03-31 17:09+0000\n"
+"PO-Revision-Date: 2026-04-02 18:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -5720,12 +5720,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "If a license does not exist in the SPDX License List, its SPDX License "
-#| "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
-#| "Specification, Section 6 available at <https://spdx.org/spdx-"
-#| "specification-21-web-version#h.1v1yuxt>."
 msgid ""
 "If a license does not exist in the SPDX License List, its SPDX License "
 "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
@@ -5734,22 +5728,19 @@ msgid ""
 msgstr ""
 "Si no aparece una licencia en la Lista de licencias SPDX, su Identificador "
 "de licencia SPDX DEBE ser `LicenseRef-[idstring]` tal como se define en la "
-"Especificación SPDX, Sección 6 disponible en <https://spdx.org/spdx-"
-"specification-21-web-version#h.1v1yuxt>."
+"Especificación SPDX, Cláusula 10 disponible en <https://spdx.github.io/spdx-"
+"spec/v2.3/other-licensing-information-detected/>."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "A Project MUST NOT include License Files for licenses under which none of "
-#| "the files in the Project are licensed."
 msgid ""
 "A Project MUST NOT include License Files for licenses under which none of "
 "the files in the Project are licensed. The `LICENSES/` directory MUST NOT "
 "include any other files."
 msgstr ""
 "Un Proyecto NO DEBE incluir Archivos de Licencia para licencias bajo las "
-"cuales ninguno de los archivos del Proyecto tiene licencia."
+"cuales ninguno de los archivos del Proyecto tiene licencia. El directorio "
+"`LICENSES/` NO DEBE incluir ningún otro archivo."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5759,6 +5750,10 @@ msgid ""
 "Information associated with any Covered File, there MUST exist a License "
 "File as defined in this section."
 msgstr ""
+"Para evitar dudas, en la práctica, esto significa que para cada licencia y "
+"excepción que forme parte de cualquier Expresión de Licencia SPDX en "
+"cualquier Información de Licencia asociada con cualquier Archivo Cubierto, "
+"DEBE existir un Archivo de licencia como se define en esta sección."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5769,38 +5764,38 @@ msgid ""
 "a summary of your licensing, or anything else. These files are ignored by "
 "the REUSE Tool."
 msgstr ""
+"PUEDE incluir un archivo de `COPYING` o `LICENSE` (con o sin extensiones de "
+"archivo)  en su proyecto para cumplir con otros estándares, convenciones o "
+"herramientas.  Estos archivos PUEDEN contener una copia del texto de la "
+"licencia, un resumen de su licencia o cualquier otra cosa. La herramienta "
+"REUSE ignora estos archivos."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid "Change licensing information"
+#, no-wrap
 msgid "Licensing Information"
-msgstr "Cambiar información de licencia"
+msgstr "Información sobre Licencias"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Each file in the Project MUST have Copyright and Licensing Information "
-#| "associated with it, except the following files:"
 msgid ""
 "Each Covered File MUST have Licensing Information associated with it. You "
 "can associate Licensing Information with a file in the following ways:"
 msgstr ""
-"Cada archivo del proyecto DEBE tener asociado Información de Licencia y "
-"Derechos de autor, excepto los siguientes archivos:"
+"Cada Archivo Cubierto DEBE tener Información de licencia asociada. Puede "
+"asociar información de licencias con un archivo de las siguientes maneras:"
 
 #. type: Title ###
 #: site/content/en/spec-3.2.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "REUSE.toml"
-msgstr ""
+msgstr "REUSE.toml"
 
 #. type: Title ###
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "DEP5 (deprecated)"
-msgstr ""
+msgstr "DEP5 (obsoleto)"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5808,11 +5803,13 @@ msgid ""
 "REUSE.toml and DEP5 are mutually exclusive. You MUST NOT use both "
 "simultaneously."
 msgstr ""
+"REUSE.toml y DEP5 se excluyen mutuamente. NO se DEBEN usar ambos al mismo "
+"tiempo."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "Comment headers are the RECOMMENDED method."
-msgstr ""
+msgstr "Los encabezados de comentarios es el método RECOMENDADO."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5945,11 +5942,20 @@ msgid ""
 "that Copyright Notices inside of Snippets MUST be prefixed with `SPDX-"
 "SnippetCopyrightText`."
 msgstr ""
+"A veces, la Información de licencia solo se aplica a un Fragmento "
+"determinado en lugar de a todo el Archivo comentable. Para estos casos, SE "
+"DEBEN usar etiquetas de fragmento SPDX para ese Fragmento (como se define en "
+"[SPDX Specification, Annex H](https://spdx.github.io/spdx-spec/v2.3/file-"
+"tags/#h3-snippet-tags-format)). Esto significa que los Avisos de derechos de "
+"autor dentro de los Fragmentos DEBEN tener el prefijo `SPDX-"
+"SnippetCopyrightText`."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "Like with comment headers, the SPDX snippet tags SHOULD be commented."
 msgstr ""
+"Al igual que con los encabezados de comentarios, las etiquetas de fragmentos "
+"SPDX DEBEN comentarse."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5957,14 +5963,12 @@ msgid ""
 "A Snippet SHOULD contain both a Copyright Notice and an SPDX License "
 "Expression."
 msgstr ""
+"Un Fragmento DEBE contener tanto un Aviso de derechos de autor como una "
+"Expresión de Licencia SPDX."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-#| "#\n"
-#| "# SPDX-License-Identifier: CC0-1.0\n"
+#, no-wrap
 msgid ""
 "# SPDX-SnippetBegin\n"
 "# SPDX-SnippetCopyrightText: 2022 Jane Doe <jane@example.com>\n"
@@ -5974,15 +5978,19 @@ msgid ""
 "\n"
 "# SPDX-SnippetEnd\n"
 msgstr ""
-"# SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-"# \n"
-"# SPDX-License-Identifier: CC0-1.0\n"
+"# SPDX-SnippetBegin\n"
+"# SPDX-SnippetCopyrightText: 2022 Jane Doe <juana@example.com>\n"
+"# SPDX-License-Identifier: MIT\n"
+"\n"
+"print(\"¡Hola, mundo!\")\n"
+"\n"
+"# SPDX-SnippetEnd\n"
 
 #. type: Title ####
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Ignore block"
-msgstr ""
+msgstr "Ignorar bloque"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5994,17 +6002,22 @@ msgid ""
 "ignores all Licensing Information between these comments. This technique "
 "MUST NOT be used to ignore valid Licensing Information."
 msgstr ""
+"Si la Información de licencia se declara en un archivo sin describir la "
+"licencia o los derechos de autor reales del archivo o Fragmento (por "
+"ejemplo: como parte de un comando de salida o documentación), estas "
+"ocurrencias DEBEN colocarse entre dos comentarios `REUSE-IgnoreStart` y "
+"`REUSE-IgnoreEnd`. La Herramienta de REUSE ignora toda la Información de "
+"licencias entre estos comentarios. Esta técnica NO DEBE usarse para ignorar "
+"Información válida sobre licencias."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "An example of a DEP5 file:"
 msgid "An example for an ignored block:"
-msgstr "Un ejemplo de archivo DEP5:"
+msgstr "Un ejemplo de un bloque ignorado:"
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2021 Jane Doe\n"
 "#\n"
@@ -6015,26 +6028,28 @@ msgid ""
 "echo \"SPDX-License-Identifier: MIT\" > file.txt\n"
 "# REUSE-IgnoreEnd\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2021 Jane Doe\n"
+"#\n"
+"# SPDX-License-Identifier: GPL-3.0-or-later\n"
+"\n"
+"# REUSE-IgnoreStart\n"
+"echo \"SPDX-FileCopyrightText: $(date +'%Y') John Doe\" > file.txt\n"
+"echo \"SPDX-License-Identifier: MIT\" > file.txt\n"
+"# REUSE-IgnoreEnd\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "Alternatively, Copyright and Licensing Information MAY be associated with "
-#| "a file through a DEP5 file. The intended use case of this method is large "
-#| "directories where including a comment header in each file (or in `."
-#| "license` companion files) is impossible or undesirable."
 msgid ""
 "Licensing Information MAY be associated with a file through a `REUSE.toml` "
 "file, which MUST be a valid TOML file. The intended use case of this method "
 "is large directories where including a comment header in each file (or in `."
 "license` companion files) is impossible or undesirable."
 msgstr ""
-"Alternativamente, la información sobre Derechos de Autor y Licencias PUEDE "
-"estar asociada a un archivo a través de un archivo DEP5. El caso de uso "
-"previsto de este método son los directorios grandes en los que la inclusión "
-"de un comment header en cada archivo (o en los archivos complementarios `."
-"license`) es imposible o no deseable."
+"La información de licencia PUEDE asociarse con un archivo a través de un "
+"archivo `REUSE.toml`, que DEBE ser un archivo TOML válido. El caso de uso "
+"previsto de este método son los directorios grandes donde se incluye un "
+"encabezado de comentario en cada archivo (o en archivos complementarios "
+"`.license`) es imposible o indeseable."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6043,6 +6058,9 @@ msgid ""
 "that are within its directory or deeper. You MAY have multiple `REUSE.toml` "
 "files in different directories."
 msgstr ""
+"Un archivo `REUSE.toml` PUEDE ubicarse en cualquier directorio y puede "
+"abarcar archivos que se encuentran dentro de su directorio o más profundos. "
+"PUEDE tener múltiples archivos `REUSE.toml` en diferentes directorios."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
