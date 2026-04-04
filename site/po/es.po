@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-02 18:09+0000\n"
+"PO-Revision-Date: 2026-04-04 16:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -6150,6 +6150,11 @@ msgid ""
 "Licensing Information that is closer to the Files. The table in the `REUSE."
 "toml` that is the closest to the root of the Project is authoritative."
 msgstr ""
+"`override`. Esta es una instrucción para asociar la Información de Licencias "
+"definida en la tabla con los Archivos Cubiertos de la tabla e ignorar "
+"cualquier otra Información de Licencias que esté más cerca de los Archivos. "
+"La tabla en `REUSE.toml` que está más cerca de la raíz del proyecto está "
+"autorizada."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -6158,20 +6163,21 @@ msgid ""
 "string MUST be a Copyright Notice to be associated with the table's Covered "
 "Files.  The prefix of the Copyright Notice MAY be omitted."
 msgstr ""
+"`SPDX-FileCopyrightText` (OPTIONAL), una cadena o lista de cuerdas. Cada "
+"cadena DEBE ser un Aviso de copyright para estar asociado con los archivos "
+"cubiertos de la tabla.   Se puede omitir el prefijo del Aviso de Derechos de "
+"Autor."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The `License` tag MUST be followed by a valid SPDX License Expression "
-#| "describing the licensing of the associated files."
 msgid ""
 "`SPDX-License-Identifier` (OPTIONAL), a string or list of strings. Each "
 "string MUST be a valid SPDX License Expression describing the licensing of "
 "the table's Covered Files."
 msgstr ""
-"La etiqueta `License` DEBE ir seguida de una Expresión de Licencia SPDX "
-"válida que describa la licencia de los archivos asociados."
+"`SPDX-License-Identifier` (OPCIONAL), una cadena o lista de cuerdas. Cada "
+"cadena DEBE ser una Expresión de Licencia SPDX válida que describa la "
+"licencia de los archivos cubiertos de la tabla."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6183,6 +6189,12 @@ msgid ""
 "add context to what you're doing, or `SPDX-FileContributor` to credit "
 "additional contributors."
 msgstr ""
+"Puede incluir otras teclas y tablas para transmitir información adicional. "
+"Su semántica no está definida por esta especificación. Si desea incluir "
+"otras teclas, se RECOMIENDA utilizar las etiquetas SPDX existentes. Por "
+"ejemplo, podría utilizar `SPDX-FileComment` en una tabla `[[annotations]]` "
+"para añadir contexto a lo que está haciendo, o `SPDX-FileContributor` para "
+"acreditar a los contribuyentes adicionales."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6191,6 +6203,9 @@ msgid ""
 "are OPTIONAL, the complete Licensing Information MUST still be associated "
 "with the File in some fashion."
 msgstr ""
+"Aunque las claves para asociar Información sobre Licencias con el Archivo "
+"Cubierto son OPCIONALES, la información completa sobre Licencias DEBE estar "
+"todavía asociada con el Archivo de alguna manera."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6199,17 +6214,18 @@ msgid ""
 "same `REUSE.toml` file, then exclusively the last matching table in the file "
 "is used for that Covered File."
 msgstr ""
+"Si un archivo cubierto está cubierto por múltiples tablas `[[annotations]]` "
+"en el mismo archivo `REUSE.toml` entonces exclusivamente la última tabla en "
+"juego en el archivo se utiliza para ese archivo cubierto.."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "An example of a DEP5 file:"
 msgid "An example of a `REUSE.toml` file:"
-msgstr "Un ejemplo de archivo DEP5:"
+msgstr "Un ejemplo de un archivo `REUSE.toml`:"
 
 #. type: Fenced code block (toml)
 #: site/content/en/spec-3.2.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "version = 1\n"
 "\n"
@@ -6225,6 +6241,19 @@ msgid ""
 "SPDX-FileCopyrightText = \"2019 Jane Doe\"\n"
 "SPDX-License-Identifier = \"CC0-1.0\"\n"
 msgstr ""
+"version = 1\n"
+"\n"
+"[[annotations]]\n"
+"path = [\"po/*.po\", \"po/*.pot\"]\n"
+"precedence = \"aggregate\"\n"
+"SPDX-FileCopyrightText = \"2019 Translation Company\"\n"
+"SPDX-License-Identifier = \"GPL-3.0-or-later\"\n"
+"\n"
+"[[annotations]]\n"
+"path = \"tests/resources/**\"\n"
+"precedence = \"override\"\n"
+"SPDX-FileCopyrightText = \"2019 Jane Doe\"\n"
+"SPDX-License-Identifier = \"CC0-1.0\"\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6232,6 +6261,8 @@ msgid ""
 "A JSON schema of version 1 of `REUSE.toml` is provided at <https://reuse."
 "software/reuse-toml-v1.schema.json> for your convenience."
 msgstr ""
+"Para su comodidad se proporciona un esquema JSON de la versión 1 de "
+"`REUSE.toml` en <https://reuse.software/reuse-toml-v1.schema.json>."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6241,6 +6272,10 @@ msgid ""
 "meaning that it is expected to disappear from a future iteration of this "
 "specification."
 msgstr ""
+"La información de licencias PUEDE asociarse con un archivo a través de un "
+"archivo DEP5, pero DEBE crear un archivo `REUSE.toml` en su lugar. El "
+"archivo DEP5 está obsoleto, lo que significa que se espera que desaparezca "
+"de una futura iteración de esta especificación."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6340,17 +6375,19 @@ msgstr ""
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "`SPDX-FileCopyrightText` (or `SPDX-SnippetCopyrightText` in Snippets)"
-msgstr ""
+msgstr "`SPDX-FileCopyrightText` (o `SPDX-SnippetCopyrightText` en Snippets)"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
+#, fuzzy
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
+#, fuzzy
 msgid "©"
-msgstr ""
+msgstr "©"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6358,11 +6395,15 @@ msgid ""
 "It is RECOMMENDED to use the `SPDX-FileCopyrightText` tag. You MAY add "
 "'(C)', '(c)' or '©' after the prefix."
 msgstr ""
+"Se RECOMIENDA utilizar la etiqueta `SPDX-FileCopyrightText`. PUEDE agregar '"
+"(C)', '(c)' o '©' después del prefijo."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "In Commentable Files, a Copyright Notice is terminated by a newline."
 msgstr ""
+"En los Archivos comentables, un Aviso de Derechos de autor finaliza con un "
+"salto de línea."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6403,7 +6444,7 @@ msgstr ""
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "You MAY add any further information to the Copyright Notice."
-msgstr ""
+msgstr "PUEDE agregar más información al Aviso de derechos de autor."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
