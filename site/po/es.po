@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-04 16:09+0000\n"
+"PO-Revision-Date: 2026-04-10 18:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -455,15 +455,14 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Forgejo Actions"
-msgstr ""
+msgstr "Acciones de Forgejo"
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid "Include the following snippet in your `.drone.yml` file:"
 msgid ""
 "Include the following snippet in your `.forgejo/workflows/reuse.yaml` file:"
-msgstr "Incluya el siguiente snippet en su archivo `.drone.yml`:"
+msgstr ""
+"Incluir el siguiente snippet en su archivo `.forgejo/workflows/reuse.yaml`:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -488,17 +487,20 @@ msgid ""
 msgstr ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
-"name: REUSE Compliance Check\n"
-"\n"
+"name: REUSE compliance check\n"
 "on: [push, pull_request]\n"
 "\n"
 "jobs:\n"
 "  test:\n"
-"    runs-on: ubuntu-latest\n"
+"    runs-on: <a tag for your runner>\n"
+"    container: fsfe/reuse:latest\n"
 "    steps:\n"
-"      - uses: actions/checkout@v4\n"
-"      - name: REUSE Compliance Check\n"
-"        uses: fsfe/reuse-action@v4\n"
+"      - run: |\n"
+"          apk add nodejs\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -506,6 +508,8 @@ msgid ""
 "If your runner is not capable of running Docker containers, consider the "
 "following snippet:"
 msgstr ""
+"Si su corredor no es capaz de ejecutar contenedores Docker, considere el "
+"siguiente fragmento:"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -530,17 +534,20 @@ msgid ""
 msgstr ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
-"name: REUSE Compliance Check\n"
-"\n"
+"name: REUSE compliance check\n"
 "on: [push, pull_request]\n"
 "\n"
 "jobs:\n"
 "  test:\n"
-"    runs-on: ubuntu-latest\n"
+"    runs-on: <a tag for your runner>\n"
 "    steps:\n"
-"      - uses: actions/checkout@v4\n"
-"      - name: REUSE Compliance Check\n"
-"        uses: fsfe/reuse-action@v4\n"
+"      - run: |\n"
+"          apt-get update\n"
+"          apt-get install -y pipx\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          pipx run reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -658,16 +665,12 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid ""
-#| "More information about GitLab's CI on [docs.gitlab.com](https://docs."
-#| "gitlab.com/ce/ci/)."
 msgid ""
 "More information about GitLab's CI at [docs.gitlab.com](https://docs.gitlab."
 "com/ci/)."
 msgstr ""
-"Más información sobre el CI de GitLab en [docs.gitlab.com](https://docs."
-"gitlab.com/ce/ci/)."
+"Más información sobre el CI de GitLab en [docs.gitlab.com](https://"
+"docs.gitlab.com/ci/)."
 
 #. type: Title ###
 #: site/content/en/dev.md
@@ -906,17 +909,23 @@ msgid ""
 "[this interview](https://fsfe.org/news/2020/news-20201215-01.html)  about "
 "their rationale and path."
 msgstr ""
+"La comunidad KDE ha hecho de REUSE el estándar de su [licensing policy]"
+"(https://community.kde.org/Policies/Licensing_Policy#License_Statements).  "
+"Lee también [esta entrevista](https://fsfe.org/news/2020/news-20201215-"
+"01.html)  sobre su justificación y trayectoria."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
 msgid ""
 "Corporate licensing policies of Siemens, SAP, Huawei, Liferay and many more."
 msgstr ""
+"Políticas de licencias corporativas de Siemens, SAP, Huawei, Liferay y "
+"muchas más."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
 msgid "Large parts of the Linux Kernel with ~70% by now."
-msgstr ""
+msgstr "Grandes partes del kernel de Linux con ~70% por ahora."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
@@ -1075,15 +1084,11 @@ msgstr "3. Confirmar el cumplimiento de REUSE {#step-3}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Use the [REUSE tool](https://github.com/fsfe/reuse-tool) to automate some "
-#| "of these steps, and to check whether you did everything correctly."
 msgid ""
 "Use the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) to automate some "
 "of these steps, and to check whether you did everything correctly."
 msgstr ""
-"Utilice la [herramienta REUSE](https://github.com/fsfe/reuse-tool) para "
+"Usar la [herramienta REUSE](https://github.com/fsfe/reuse-tool) para "
 "automatizar algunos de estos pasos y comprobar si lo ha hecho todo "
 "correctamente."
 
