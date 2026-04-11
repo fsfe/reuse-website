@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-10 18:09+0000\n"
+"PO-Revision-Date: 2026-04-12 15:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -1703,13 +1703,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Additionally, many package hosting sites expect that you declare the "
-#| "licensing information of your package. For instance, the [setup.py file "
-#| "of the REUSE tool](https://github.com/fsfe/reuse-tool/blob/master/setup."
-#| "py) declares all the licenses that it uses in the format expected by the "
-#| "Python packaging infrastructure."
 msgid ""
 "Additionally, many package hosting sites expect that you declare the "
 "licensing information of your package. For instance, the [pyproject.toml "
@@ -1718,10 +1711,10 @@ msgid ""
 "expected by the Python packaging infrastructure."
 msgstr ""
 "Además, muchos sitios de alojamiento de paquetes esperan que declares la "
-"información de la licencia de tu paquete. Por ejemplo, el [archivo setup.py "
-"de la herramienta REUSE](https://github.com/fsfe/reuse-tool/blob/master/"
-"setup.py) declara todas las licencias que utiliza en el formato esperado "
-"para la infraestructura de empaquetado de Python."
+"información de la licencia de tu paquete. Por ejemplo, el [archivo "
+"pyproject.toml de la herramienta REUSE](https://codeberg.org/fsfe/reuse-tool/"
+"src/branch/main/pyproject.toml) declara todas las licencias que utiliza en "
+"el formato esperado para la infraestructura de empaquetado de Python."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1793,11 +1786,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "There are many reasons for why you should not alter license texts, but if "
-#| "you do alter the texts, you should use a different SPDX identifier for "
-#| "this license.  See [the previous question](#custom-license)."
 msgid ""
 "There are many reasons for why you should not alter license texts, but if "
 "you do alter the texts, you should use a different SPDX identifier for this "
@@ -1805,7 +1793,7 @@ msgid ""
 msgstr ""
 "Hay muchas razones por las que no debe modificar los textos de las "
 "licencias, pero si modifica los textos, debe utilizar un identificador SPDX "
-"diferente para esta licencia.  Ver [la pregunta anterior](#custom-license)."
+"diferente para esta licencia.  Ver [esta pregunta](#custom-license)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1877,6 +1865,8 @@ msgstr ""
 #, no-wrap
 msgid "If I use exclusively LGPL-3.0-or-later, should I also include the GPL-3.0-or-later text? {#lgpl-only}"
 msgstr ""
+"Si uso exclusivamente LGPL-3.0-o-posterior, ¿debería incluir también el "
+"texto GPL-3.0-o-posterior? {#lgpl-only}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1889,12 +1879,21 @@ msgid ""
 "license. To solve that, pick one file to be licensed under `LGPL-3.0-or-"
 "later OR GPL-3.0-or-later`."
 msgstr ""
+"El texto de licencia LGPL es una adición al texto de licencia GPL. Si usted "
+"proporciona _solo_ el texto de licencia LGPL a su flujo inferior, usted no "
+"está efectivamente proporcionarles la licencia completa. Por esa razón, "
+"también debe proporcionar la licencia GPL-3.0 o-posterior en su directorio "
+"`LICENSES/`. El interfaz REUSE puede quejarse de que ninguno de sus archivos "
+"utiliza la licencia GPL-3.0 o posterior. Para solucionarlo, elija un archivo "
+"para ser licenciado bajo `LGPL-3.0-o-posterior O GPL-3.0-o-posterior`."
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Does REUSE help me with the licenses of my dependencies? {#dependencies-licenses}"
 msgstr ""
+"¿Me ayuda REUSE con las licencias de mis dependencias?{#dependencies-"
+"licenses}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1906,6 +1905,14 @@ msgid ""
 "tools and processes. Some tools listed on the [comparison page]({{< ref\n"
 "\"/comparison.md\" >}}) may help you.\n"
 msgstr ""
+"No, eso está fuera de alcance para REUSE. Si necesita comprobar si su "
+"proyecto\n"
+"respeta las licencias de todas sus dependencias, o si no inadvertidamente "
+"tire\n"
+"en una dependencia con una licencia no deseada, usted necesita diferentes\n"
+"herramientas y procesos. Algunas herramientas enumeradas en la [página de "
+"comparación]\n"
+"({{< ref\"/comparison.md\" >}}) pueden ayudarle.\n"
 
 #. type: Title #
 #: site/content/en/faq.md
