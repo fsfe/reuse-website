@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-12 15:09+0000\n"
+"PO-Revision-Date: 2026-04-14 16:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -2162,6 +2162,11 @@ msgid ""
 "these files.  You have a few options to instruct REUSE to ignore the "
 "erroneous information and to use correct information instead."
 msgstr ""
+"Puede tener un archivo que contiene derechos de autor o etiquetas de "
+"licencias que están mal.   Esto puede ser a propósito, o tal vez tenga "
+"buenas razones para no editar estos archivos.   Hay algunas opciones para "
+"instruir REUSE para que ignore la información errónea y utilice la "
+"información correcta en su lugar."
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -2169,6 +2174,8 @@ msgid ""
 "Use [the `REUSE-IgnoreStart` and `REUSE-IgnoreEnd` tags](#exclude-lines)  "
 "inside of the file."
 msgstr ""
+"Usar [las etiquetas `REUSE-IgnoreStart` y `REUSE-IgnoreEnd`](#exclude-lines)"
+"  en el archivo."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -2176,6 +2183,8 @@ msgid ""
 "Use [a `.license` file to override the contents of the file](#uncommentable-"
 "file)."
 msgstr ""
+"Usar [un archivo `.license` para anular el contenido del archivo]"
+"(#uncommentable-file)."
 
 #. type: Bullet: '3. '
 #: site/content/en/faq.md
@@ -2183,6 +2192,8 @@ msgid ""
 "Use [a `REUSE.toml` file](#bulk-license) with the `precedence = "
 "\"override\"` key-value."
 msgstr ""
+"Usar [un archivo `REUSE.toml`](#bulk-license)con la clave de "
+"valor`precedence = \"override\"`."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2360,10 +2371,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I exclude a file from REUSE compliance testing? {#exclude-file}"
+#, no-wrap
 msgid "... exclude a file from REUSE compliance testing? {#exclude-file}"
-msgstr "¿Cómo puedo excluir un archivo de las pruebas de conformidad de REUSE? {#exclude-file}"
+msgstr ""
+"¿... excluir un archivo de las pruebas de conformidad de REUSE? {#exclude-"
+"file}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2404,16 +2416,12 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If you have an entire directory that you want to \"exclude\" from REUSE "
-#| "compliance testing, you can [use a DEP5 file](#bulk-license)."
 msgid ""
 "If you have an entire directory that you want to \"exclude\" from REUSE "
 "compliance testing, you can [use `REUSE.toml`](#bulk-license)."
 msgstr ""
 "Si tienes un directorio completo que deseas \"excluir\" de las pruebas de "
-"conformidad de REUSE, puedes [usar un archivo DEP5] (#bulk-license)."
+"conformidad de REUSE, puedes [usar `REUSE.toml`](#bulk-license)."
 
 #. type: Title ##
 #: site/content/en/faq.md
