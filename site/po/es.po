@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-14 16:09+0000\n"
+"PO-Revision-Date: 2026-04-16 15:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -2713,6 +2713,9 @@ msgid ""
 "snippet, for instance by a comment like \"The class Foo is copied from "
 "project Bar\"."
 msgstr ""
+"También se considera una buena práctica especificar más el origen del "
+"fragmento, por ejemplo, mediante un comentario como \"La clase Foo se copia "
+"del proyecto Bar\"."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2729,19 +2732,14 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I use a license that is not on the SPDX License List? {#custom-license}"
+#, no-wrap
 msgid "... use a license that is not on the SPDX License List? {#custom-license}"
-msgstr "¿Cómo uso una licencia que no está en la lista de licencias de SPDX? {#custom-license}"
+msgstr ""
+"¿... uso una licencia que no está en la lista de licencias de SPDX? {#custom-"
+"license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If you have a custom or modified license that does not appear in the SPDX "
-#| "License List, place your license in the file `LICENSES/LicenseRef-"
-#| "MyLicense.txt`. By naming your license as such, tools that speak SPDX "
-#| "will still be able to recognise your license."
 msgid ""
 "If you have a custom or modified license that does not appear in the SPDX "
 "License List, place your license in the file `LICENSES/LicenseRef-MyLicense."
@@ -2750,8 +2748,8 @@ msgid ""
 msgstr ""
 "Si tiene una licencia personalizada o modificada que no aparece en la Lista "
 "de licencias de SPDX, coloque su licencia en el archivo `LICENSES/LicenseRef-"
-"MyLicense.txt`. Al nombrar su licencia como tal, las herramientas que leen "
-"SPDX aún podrán reconocer su licencia."
+"MyLicense.txt`. Al nombrar su licencia con el prefijo `LicenseRef-`, las "
+"herramientas que leen SPDX aún podrán reconocer su licencia."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2864,16 +2862,12 @@ msgstr "<!-- TODO: bump SPDX spec -->\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "You can read more about SPDX expressions [on the SPDX wiki](https://wiki."
-#| "spdx.org/view/LicenseExpressionFAQ)."
 msgid ""
 "You can read more about SPDX expressions [in the specification](https://spdx."
 "github.io/spdx-spec/v2.3/SPDX-license-expressions/)."
 msgstr ""
-"Puede leer más sobre las expresiones SPDX [en la wiki de SPDX] (https://wiki."
-"spdx.org/view/LicenseExpressionFAQ)."
+"Puede leer más sobre las expresiones SPDX [en la especificación](https://"
+"spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/)."
 
 #. type: Title ##
 #: site/content/en/faq.md
