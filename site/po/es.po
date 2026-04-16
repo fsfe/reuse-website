@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-16 15:09+0000\n"
+"PO-Revision-Date: 2026-04-17 09:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -3197,19 +3197,13 @@ msgstr "¿Por qué REUSE no usa el control de versiones para registrar los derec
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "In [a previous question](#copyright-holder-author), we distinguished "
-#| "between copyright holders and authors, which are not always the same. "
-#| "Version control typically only records authorship, which makes it "
-#| "unsuitable for the task of recording copyright."
 msgid ""
 "In [a different question](#copyright-holder-author), we distinguish between "
 "copyright holders and authors, which are not always the same. Version "
 "control typically only records authorship, which makes it unsuitable for the "
 "task of recording copyright."
 msgstr ""
-"En [una pregunta anterior](#copyright-holder-author), distinguimos entre "
+"En [una pregunta diferente](#copyright-holder-author), distinguimos entre "
 "titulares de derechos de autor y autores, que no siempre son los mismos. El "
 "control de versiones generalmente solo registra la autoría, lo que lo hace "
 "inadecuado para la tarea de registrar los derechos de autor."
@@ -3324,6 +3318,8 @@ msgid ""
 "TOML is more flexible. You can write any key-value that you want, which may "
 "be helpful for custom workflows."
 msgstr ""
+"TOML es más flexible. Puedes escribir cualquier valor clave que desees, que "
+"pueda ser útil para los flujos de trabajo personalizados."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -3331,6 +3327,8 @@ msgid ""
 "TOML is much easier to write. Developers already know how to write TOML, and "
 "don't need to accustom themselves to a custom format."
 msgstr ""
+"TOML es mucho más fácil de escribir. Los desarrolladores ya saben cómo "
+"escribir TOML, y no necesitan acostumbrarse a un formato personalizado."
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -3338,6 +3336,8 @@ msgid ""
 "`REUSE.toml` can be placed anywhere relative to the files, and can nest. "
 "This is a big help for monorepos or monorepo-like projects."
 msgstr ""
+"`REUSE.toml` se puede colocar en cualquier lugar relativo a los archivos, y "
+"puede anidar. Esta es una gran ayuda para los proyectos monorepos o monorepo."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3345,6 +3345,8 @@ msgid ""
 "For compatibility, `.reuse/dep5` will remain supported in spite of its "
 "deprecation for a considerable length of time; at least until 2029."
 msgstr ""
+"Por compatibilidad, `.reuse/dep5` permanecerá apoyado a pesar de su "
+"deprecación por un tiempo considerable; al menos hasta 2029."
 
 #. type: Plain text
 #: site/content/en/faq.md site/content/en/tutorial.md
@@ -3532,18 +3534,13 @@ msgstr "{{< /box-tool >}}\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "Now that you have a license, you need to indicate in the relevant files "
-#| "that these files fall under that license. You edit the comment header of "
-#| "`src/main.c` as such:"
 msgid ""
 "Now that you have a license, you need to indicate in the relevant files that "
 "these files fall under that license. Edit the comment header of `src/main.c` "
 "as such:"
 msgstr ""
-"Ahora que ya tiene una licencia, debe indicar en los archivos relevantes que "
-"estos archivos se encuentran bajo esa licencia. Edite el encabezado del "
+"Ahora que ya tienes una licencia, debes indicar en los archivos relevantes "
+"que estos archivos se encuentran bajo esa licencia. Edita el encabezado del "
 "comentario de `src/main.c` así:"
 
 #. type: Fenced code block
