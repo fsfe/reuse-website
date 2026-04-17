@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-17 09:09+0000\n"
+"PO-Revision-Date: 2026-04-18 16:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -4062,7 +4062,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/spec-1.2.md
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /*\n"
 "  * Copyright (c) 2017 Alice Commit <alice@example.com>\n"
@@ -4073,6 +4073,14 @@ msgid ""
 "  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  * Copyright (c) 2017 Alice Commit <alice@example.com>\n"
+"  * Copyright (c) 2009-2016 Bob Denver <bob@example.com>\n"
+"  * Copyright (c) 2007 Company Example <charlie@example.com>\n"
+"  * \n"
+"  * SPDX-License-Identifier: BSD-2-Clause\n"
+"  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -4130,6 +4138,11 @@ msgid ""
 "doc/packaging-manuals/copyright-format/1.0/) file format, and place a single "
 "copyright file documenting those files."
 msgstr ""
+"Si tiene muchos de estos archivos, pero cada uno tiene el mismo aviso de "
+"derechos de autor y licencia, puede usar el formato de archivo [DEP-5/"
+"copyright](https://www.debian.org/doc/packaging-manuals/copyright-format/"
+"1.0/), y coloque un solo archivo de derechos de autor que documente esos "
+"archivos."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -4138,6 +4151,9 @@ msgid ""
 "not exist in the repository but which will be created at build time, you may "
 "include a `.license` file without the corresponding binary file."
 msgstr ""
+"Si desea ser explícito sobre la licencia de un archivo de salida, que no "
+"existe en el repositorio pero que se creará en el momento de la compilación, "
+"puede incluir un archivo `.license` sin el archivo binario correspondiente."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -4147,6 +4163,10 @@ msgid ""
 "do. Keep in mind version control systems typically record authorship, not "
 "copyright."
 msgstr ""
+"Puede registrar información sobre derechos de autor confiando en el sistema "
+"de control de versiones subyacente que está utilizando, pero se debe tener "
+"especial cuidado si lo hace. Tenga en cuenta que los sistemas de control de "
+"versiones suelen registrar la autoría, no los derechos de autor."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -4154,6 +4174,8 @@ msgid ""
 "For a project using the version control system to convey information about "
 "copyright, you must:"
 msgstr ""
+"Para un proyecto que utilice el sistema de control de versiones para "
+"transmitir información sobre derechos de autor, debe:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -4161,6 +4183,8 @@ msgid ""
 "make sure the version control system is publicly accessible and take "
 "steps[^3] to ensure it will remain so,"
 msgstr ""
+"asegúrese de que el sistema de control de versiones sea de acceso público y "
+"tome medidas[^3] para asegurarse de que siga siéndolo.,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
