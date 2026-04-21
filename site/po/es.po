@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-18 16:09+0000\n"
+"PO-Revision-Date: 2026-04-21 18:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -4624,8 +4624,9 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
+#, fuzzy
 msgid "[spdx-licenses]: https://spdx.org/licenses/"
-msgstr ""
+msgstr "[spdx-licenses]: https://spdx.org/licenses/"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4637,6 +4638,13 @@ msgid ""
 "license information: Who are the copyright holders and under which "
 "license(s) do they release the file?"
 msgstr ""
+"Los archivos de código fuente a menudo se reutilizan en varios proyectos, se "
+"toman de su origen y se reutilizan, o terminan en repositorios donde están "
+"separados de su origen. Por lo tanto, debe asegurarse de que todos los "
+"archivos de su proyecto tengan un encabezado de comentario que transmita la "
+"información de derechos de autor y licencia de ese archivo: ¿Quiénes son los "
+"titulares de los derechos de autor y bajo qué licencia(s) publican el "
+"archivo?"
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4646,6 +4654,10 @@ msgid ""
 "remove any information from headers in files of which you are not the sole "
 "author."
 msgstr ""
+"Se recomienda encarecidamente que mantenga el formato de estos encabezados "
+"consistente en todos sus archivos.  Sin embargo, es importante que no "
+"elimine ninguna información de los encabezados de los archivos de los que no "
+"sea el único autor."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4655,6 +4667,10 @@ msgid ""
 "an `SPDX-License-Identifier` tag followed by an SPDX expression defined by "
 "the SPDX specifications."
 msgstr ""
+"Debe transmitir la información de licencia de su archivo de código fuente de "
+"manera estandarizada, para que las computadoras puedan interpretarla.  Puede "
+"hacer esto con una etiqueta `SPDX-License-Identifier` seguida de una "
+"expresión SPDX definida por las especificaciones SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4663,6 +4679,10 @@ msgid ""
 "sorted by year. They should list the actual copyright holder, which may be "
 "an organisation rather than the author. For example:"
 msgstr ""
+"Los avisos de derechos de autor en el encabezado de un comentario deben "
+"tener un formato coherente y estar ordenados por año. Deben enumerar al "
+"titular real de los derechos de autor, que puede ser una organización en "
+"lugar del autor. Por ejemplo:"
 
 #. type: Fenced code block
 #: site/content/en/spec-2.0.md
@@ -5023,11 +5043,9 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid "- License File --- a file containing the text of a license."
 msgid "License File --- a file containing the text of a license."
 msgstr ""
-"- Archivo de licencia --- un archivo que contiene el texto de una licencia."
+"Archivo de licencia --- un archivo que contiene el texto de una licencia."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
@@ -5064,6 +5082,7 @@ msgstr ""
 #: site/content/en/spec-3.0.md
 msgid "SPDX License Expression --- as defined in SPDX Specification."
 msgstr ""
+"Expresión de licencia SPDX --- como se define en la especificación SPDX."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -5090,16 +5109,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "REUSE Tool --- helper tool for compliance with this Specification; "
-#| "available at <https://github.com/fsfe/reuse-tool>."
 msgid ""
 "REUSE Tool --- helper tool for compliance with this Specification; available "
 "at <https://codeberg.org/fsfe/reuse-tool>."
 msgstr ""
 "REUSE Tool --- herramienta de ayuda para el cumplimiento de esta "
-"Especificación; disponible en <https://github.com/fsfe/reuse-tool>."
+"Especificación; disponible en <https://codeberg.org/fsfe/reuse-tool>."
 
 #. type: Title ##
 #: site/content/en/spec-3.0.md
@@ -5139,20 +5154,13 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "If a license does not exist in the SPDX License List, its SPDX License "
-#| "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
-#| "Specification, Section 6 available at <https://spdx.org/spdx-"
-#| "specification-21-web-version#h.1v1yuxt>."
 msgid ""
 "If a license does not exist in the SPDX License List, its SPDX Identifier "
 "MUST be `LicenseRef-[idstring]` as defined by the SPDX Specification."
 msgstr ""
 "Si no aparece una licencia en la Lista de licencias SPDX, su Identificador "
 "de licencia SPDX DEBE ser `LicenseRef-[idstring]` tal como se define en la "
-"Especificación SPDX, Sección 6 disponible en <https://spdx.org/spdx-"
-"specification-21-web-version#h.1v1yuxt>."
+"Especificación SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -5704,11 +5712,14 @@ msgid ""
 "Submodules of the Project's version control system and Meson subprojects. "
 "Each submodule and Meson subproject is understood as a separate Project."
 msgstr ""
+"Submódulos del sistema de control de versiones del Proyecto y subproyectos "
+"Meson. Cada submódulo y subproyecto de Meson se entiende como un Proyecto "
+"separado."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "Symlinks and files with no data (zero-byte)."
-msgstr ""
+msgstr "Enlaces simbólicos y archivos sin datos (cero bytes)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5717,6 +5728,9 @@ msgid ""
 "Specification, Clause 4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/"
 "#44-standard-data-format-requirements)  (example: `sbom.spdx.json`)."
 msgstr ""
+"Documentos SPDX en sus diversos formatos, tal como se definen en la [SPDX "
+"Specification, Clause 4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/"
+"#44-standard-data-format-requirements)  (ejemplo: `sbom.spdx.json`)."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
@@ -5848,16 +5862,12 @@ msgstr "Los encabezados de comentarios es el método RECOMENDADO."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "There are two ways to associate Copyright and Licensing Information with "
-#| "a file."
 msgid ""
 "Additionally, you can associate Licensing Information with Snippets inside "
 "of files."
 msgstr ""
-"Hay dos formas de asociar la información de Derechos de Autor y Licencias "
-"con un archivo."
+"Además, puede asociar Información de licencias con Fragmentos dentro de los "
+"archivos."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5867,6 +5877,10 @@ msgid ""
 "more explicit and their associated Licensing Information is more resistant "
 "to being moved or copied."
 msgstr ""
+"Siempre que sea posible, DEBE intentar utilizar encabezados de comentarios "
+"para transmitir la Información de licencia de un archivo. En comparación con "
+"otros métodos, los encabezados de los comentarios son más explícitos y su "
+"Información de licencia asociada es más resistente a ser movida o copiada."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5876,6 +5890,11 @@ msgid ""
 "be as close to the top of the top of the file as possible in a comment "
 "header. The Commentable File SHOULD use UTF-8 encoding."
 msgstr ""
+"Para implementar este método, un archivo comentado DEBE declarar la "
+"Información de licencia del archivo en un encabezado de comentario. La "
+"Información de licencia DEBE estar lo más cerca posible de la parte superior "
+"del archivo en el encabezado de un comentario. El archivo comentado DEBE "
+"usar codificación UTF - 8."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
