@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-23 17:09+0000\n"
+"PO-Revision-Date: 2026-04-27 16:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -551,16 +551,12 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/dev.md
-#, fuzzy
-#| msgid ""
-#| "More information about GitHub Actions on [docs.github.com](https://docs."
-#| "github.com/en/actions/)."
 msgid ""
 "More information about Forgejo Actions at [forgejo.org](https://forgejo.org/"
 "docs/latest/user/actions/)."
 msgstr ""
-"Más información sobre las acciones de GitHub en [docs.github.com](https://"
-"docs.github.com/en/actions/)."
+"Más información sobre las Acciones de Forgejo en [forgejo.org](https://"
+"forgejo.org/docs/latest/user/actions/)."
 
 #. type: Title ###
 #: site/content/en/dev.md
