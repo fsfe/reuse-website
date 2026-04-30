@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-04-29 16:09+0000\n"
+"PO-Revision-Date: 2026-05-01 18:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -2441,6 +2441,10 @@ msgid ""
 "only be used for marking blocks that may trigger false-positive detections "
 "and errors."
 msgstr ""
+"Tenga en cuenta que esto no debe usarse para ignorar la información válida "
+"de derechos de autor y licencias por usted o un tercero. Los bloques ignorar "
+"solo deben usarse para marcar bloques que puedan desencadenar detecciones y "
+"errores falsos positivos."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2448,6 +2452,8 @@ msgid ""
 "An example for a file that contains commands or documentation that confuse "
 "the REUSE tool:"
 msgstr ""
+"Un ejemplo de un archivo que contiene comandos o documentación que confunde "
+"la herramienta REUSE:"
 
 #. type: Fenced code block (bash)
 #: site/content/en/faq.md
