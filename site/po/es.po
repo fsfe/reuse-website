@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-01 18:09+0000\n"
+"PO-Revision-Date: 2026-05-03 16:09+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -3170,6 +3170,10 @@ msgid ""
 "remove potentially sensible personal information. This could also wipe your "
 "or someone else's copyright information, and detecting this mistake is hard."
 msgstr ""
+"Algunas herramientas redactan los campos de metadatos, por ejemplo, para "
+"reducir el tamaño de los archivos o eliminar información personal "
+"potencialmente sensible. Esto también podría borrar su información de "
+"derechos de autor o la de otra persona, y detectar este error es difícil."
 
 #. type: Bullet: '3. '
 #: site/content/en/faq.md
@@ -3177,6 +3181,8 @@ msgid ""
 "With some file types, there are competing and unstandardised methods to "
 "store metadata."
 msgstr ""
+"Con algunos tipos de archivos, existen métodos competitivos y no "
+"estandarizados para almacenar metadatos."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3619,19 +3625,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "The `reuse addheader` command helps with adding licensing and copyright "
-#| "information to your files. For the task above, the following command "
-#| "would do the job:"
 msgid ""
 "[The `reuse annotate` command](https://reuse.readthedocs.io/en/stable/man/"
 "reuse-annotate.html) helps with adding licensing and copyright information "
 "to your files. For the task above, the following command will do the job:"
 msgstr ""
-"La orden `reuse addheader` ayuda a agregar información de licencia y "
-"derechos de autor a sus archivos. Para la tarea anterior, haría el trabajo "
-"la siguiente orden:"
+"[La orden `reuse annotate`](https://reuse.readthedocs.io/en/stable/man/reuse-"
+"annotate.html)ayuda a agregar información de licencia y derechos de autor a "
+"sus archivos. Para la tarea anterior, haría el trabajo la siguiente orden:"
 
 #. type: Fenced code block (bash)
 #: site/content/en/tutorial.md
