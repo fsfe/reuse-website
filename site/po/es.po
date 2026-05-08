@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-03 16:09+0000\n"
+"PO-Revision-Date: 2026-05-09 16:11+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1\n"
+"X-Generator: Weblate 2026.5-dev\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -1417,10 +1417,9 @@ msgstr ""
 
 #. type: Title #
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Licensing and compliance {#licensing}"
+#, no-wrap
 msgid "Licensing {#licensing}"
-msgstr "Licencias y cumplimiento {#licensing}"
+msgstr "Licencias {#licensing}"
 
 #. type: Title ##
 #: site/content/en/faq.md
