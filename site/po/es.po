@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-09 16:11+0000\n"
+"PO-Revision-Date: 2026-05-10 18:11+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -2419,10 +2419,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I exclude a file from REUSE compliance testing? {#exclude-file}"
+#, no-wrap
 msgid "... exclude certain lines from REUSE compliance testing? {#exclude-lines}"
-msgstr "¿Cómo puedo excluir un archivo de las pruebas de conformidad de REUSE? {#exclude-file}"
+msgstr ""
+"¿...Cómo puedo excluir un archivo de las pruebas de conformidad de REUSE? "
+"{#exclude-file}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2431,6 +2432,10 @@ msgid ""
 "may falsely be detected as copyright or license statements, you can wrap it "
 "within the two comments `REUSE-IgnoreStart` and `REUSE-IgnoreEnd`."
 msgstr ""
+"Para que la herramienta ignore una sección específica que contenga cadenas "
+"que puedan detectarse falsamente como declaraciones de derechos de autor o "
+"licencia, puede ajustarlas dentro de los dos comentarios `REUSE-IgnoreStart` "
+"y `REUSE-IgnoreEnd`."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3153,6 +3158,10 @@ msgid ""
 "file itself, and some even contain fields for copyright and license. "
 "However, we do not support these in REUSE for practical reasons:"
 msgstr ""
+"Varios formatos de archivo compatible con el almacenamiento de la "
+"información de metadatos dentro del propio archivo, y algunos incluso "
+"contienen campos para el derecho de autor y de licencia. Sin embargo, no "
+"apoyamos estos en REUSE por razones prácticas:"
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -3161,6 +3170,9 @@ msgid ""
 "information. REUSE intends to make it simple to find licensing and copyright "
 "information."
 msgstr ""
+"Tanto para humanos como para máquinas, no siempre es trivial detectar esta "
+"información. REUSE tiene la intención de simplificar la búsqueda de "
+"información sobre licencias y derechos de autor."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -3185,15 +3197,12 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Why can't I just use version control to record copyright? {#vcs-copyright}"
 msgid ""
 "This question is also related to [why we cannot use version control to "
 "record copyright](#vcs-copyright)."
 msgstr ""
-"¿Por qué no puedo simplemente usar el control de versiones para registrar "
-"los derechos de autor? {#vcs-copyright}"
+"Esta pregunta también está relacionada con [por qué no podemos usar el "
+"control de versiones para registrar los derechos de autor](#vcs-copyright)."
 
 #. type: Title ##
 #: site/content/en/faq.md
