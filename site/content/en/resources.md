@@ -44,7 +44,7 @@ spread the word!
 {{< /component >}}
 
 {{< component fa="far fa-comments" headline="Spread the word">}}
-  The more projects understand and adopt REUSE, the easier use and re-use of
+  The more projects understand and adopt REUSE, the easier use and reuse of
   software is for everyone. Please feel free to use ready material to spread
   the word. The [REUSE graphics](https://git.fsfe.org/reuse/reuse-ci/) can be
   used under a Creative Commons license. Different versions and file formats of
