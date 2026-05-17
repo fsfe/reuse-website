@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-10 18:11+0000\n"
+"PO-Revision-Date: 2026-05-17 18:11+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.5-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -2724,16 +2724,12 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "A possible way to circumvent the problem is to extract the segment from "
-#| "the file, and to keep it in its own file."
 msgid ""
 "A possible alternative to using snippets is to extract the code block from "
 "the file, and to keep it in its own file."
 msgstr ""
-"Una forma posible de eludir el problema es extraer el segmento del archivo y "
-"ponerlo en su propio archivo."
+"Una posible alternativa al uso de fragmentos es extraer el bloque de código "
+"del archivo y mantenerlo en su propio archivo."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -3681,15 +3677,13 @@ msgid ""
 "├── Makefile\n"
 "└── README.md\n"
 msgstr ""
-"proyecto/ \n"
-"├── img/ \n"
-"│   ├── gato.jpg \n"
-"│   └── perro.jpg \n"
-"├── origen/ \n"
-"│   └── principal.c \n"
-"├── .gitignore \n"
-"├── Makefile \n"
-"└── LÉAME.md\n"
+"project/\n"
+"├── LICENSES/\n"
+"│   └── GPL-3.0-or-later.txt\n"
+"├── src/\n"
+"│   └── main.c\n"
+"├── Makefile\n"
+"└── README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3851,15 +3845,11 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "opening an issue on [reuse-tool](https://github.com/fsfe/reuse-tool) for "
-#| "questions on the REUSE tool;"
 msgid ""
 "opening an issue on [reuse-tool](https://codeberg.org/fsfe/reuse-tool) for "
 "questions on the REUSE tool;"
 msgstr ""
-"abriendo una consulta en [reuse-tool](https://github.com/fsfe/reuse-tool) "
+"abriendo una consulta en [reuse-tool](https://codeberg.org/fsfe/reuse-tool) "
 "para preguntas sobre la herramienta REUSE;"
 
 #. type: Bullet: '- '
@@ -4471,6 +4461,11 @@ msgid ""
 "the common places to find licenses.  If you place your license elsewhere, it "
 "is possible that humans and computers alike may overlook it."
 msgstr ""
+"Cuando haya agregado todos sus archivos de licencia, todos deberían "
+"coincidir con el globo `{LICENSE*, LICENCE*, COPYING*, COPYRIGHT*, LICENSES/"
+"**}`.  Estos son los lugares comunes para encontrar licencias.  Si coloca su "
+"licencia en otro lugar, es posible que tanto los humanos como las "
+"computadoras la pasen por alto."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4481,6 +4476,12 @@ msgid ""
 "simply include the name of the license into the filename: The license file "
 "for `GPL-3.0` becomes `LICENSES/GPL-3.0.txt`."
 msgstr ""
+"Con el fin de ser capaz de hacer referencia al archivo de licencia a partir "
+"de su código fuente, deberá incorporar la SPDX identificador(eje., `GPL-"
+"3.0`, `MIT`) de cada licencia en el correspondiente archivo de licencia.  La "
+"forma más sencilla de hacerlo es simplemente incluir el nombre de la "
+"licencia en el nombre del archivo: El archivo de licencia para `GPL-3.0` se "
+"convierte en `LICENSES/GPL-3.0.txt`."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
@@ -4494,6 +4495,15 @@ msgid ""
 "with the `License-Text` tag to signal the start of your license.  The header "
 "may include other tags."
 msgstr ""
+"Si no es posible cambiar el nombre de su archivo (por ejemplo, si desea que "
+"el texto de la licencia esté en `COPYING`), debe agregar un encabezado al "
+"archivo en formato de valor de etiqueta.  Puede agregar este encabezado al "
+"propio archivo de licencia o en un archivo con el mismo nombre de archivo "
+"con el sufijo `.license`.  El encabezado debe incluir una etiqueta `Valid-"
+"License-Identifier` , cuyo valor debe ser el identificador SPDX de su "
+"licencia.  El encabezado debe terminar con la etiqueta `License-Text` para "
+"indicar el inicio de su licencia.  El encabezado puede incluir otras "
+"etiquetas."
 
 #. type: Plain text
 #: site/content/en/spec-2.0.md
