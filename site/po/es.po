@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-17 18:11+0000\n"
+"PO-Revision-Date: 2026-05-19 15:11+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -5546,16 +5546,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "REUSE Tool --- helper tool for compliance with this Specification; "
-#| "available at <https://github.com/fsfe/reuse-tool>."
 msgid ""
 "REUSE Tool --- helper tool for compliance with this specification; available "
 "at <https://codeberg.org/fsfe/reuse-tool>."
 msgstr ""
 "REUSE Tool --- herramienta de ayuda para el cumplimiento de esta "
-"Especificación; disponible en <https://github.com/fsfe/reuse-tool>."
+"especificación; disponible en <https://codeberg.org/fsfe/reuse-tool>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5649,17 +5645,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "- SPDX License Expression --- as defined in SPDX Specification, Appendix "
-#| "IV, at <https://spdx.org/spdx-specification-21-web-version#h."
-#| "jxpfx0ykyb60>."
 msgid ""
 "SPDX License Expression --- as defined in SPDX Specification, Annex D, at "
 "<https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/>."
 msgstr ""
-"- SPDX License Expression --- como se define en SPDX Specification, Appendix "
-"IV, en <https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60>."
+"- SPDX License Expression --- como se define en SPDX Specification, Annex D, "
+"en <https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5703,15 +5694,13 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "You should always include all licenses in the `LICENSES/` directory."
 msgid "The License Files stored in the `LICENSES/` directory."
-msgstr "Siempre debe incluir todas las licencias en el directorio `LICENSES/`."
+msgstr "Los Archivos de licencia almacenados en el directorio `LICENSES/`."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
 msgid "`COPYING` and `LICENSE`, with or without file extensions."
-msgstr ""
+msgstr "`COPYING` y `LICENSE`, con o sin extensiones de archivo."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5761,16 +5750,12 @@ msgstr "Archivos de licencia"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "A Project MUST include a License File for every license under which files "
-#| "in the Project are licensed."
 msgid ""
 "A Project MUST include a License File for every license under which Covered "
 "Files are licensed."
 msgstr ""
-"Un Proyecto DEBE incluir un Archivo de Licencia para cada licencia bajo la "
-"cual los archivos del Proyecto están licenciados."
+"Un Proyecto DEBE incluir un Archivo de Licencia para cada tipo de licencia "
+"bajo la que Cubrió los Archivos de licencia."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6004,7 +5989,7 @@ msgstr ""
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "In-line Snippet comments"
-msgstr ""
+msgstr "Comentarios de fragmentos en línea"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6396,15 +6381,17 @@ msgid ""
 "The `Files` tag MUST be followed by one or more paths to which the "
 "paragraph's Licensing Information is applied."
 msgstr ""
+"La etiqueta `Files` DEBE ir seguida de una o más rutas a las que se aplica "
+"la Información de licencias del párrafo."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "The `Copyright` tag MUST be followed by a copyright notice."
 msgid ""
 "The `Copyright` tag MUST be followed by one or more Copyright Notices. The "
 "prefixes of the Copyright Notices MAY be omitted."
-msgstr "La etiqueta `Copyright` DEBE ir seguida de un aviso de copyright."
+msgstr ""
+"La etiqueta `Copyright` DEBE ir seguida de un aviso de copyright. Los "
+"prefijos de los Avisos de derechos de autor PUEDEN omitirse."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
@@ -6430,19 +6417,20 @@ msgid ""
 "License: CC0-1.0\n"
 msgstr ""
 "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-"Upstream-Name: Proyecto\n"
-"Upstream-Contact: Jane Doe <jane@example.com>\n"
-"Source: https://example.com/jane/proyecto\n"
 "\n"
-"Files: po/*\n"
+"Files: po/*.po po/*.pot\n"
 "Copyright: 2019 Translation Company\n"
-"Licencia: GPL-3.0-o-posterior\n"
+"License: GPL-3.0-or-later\n"
+"\n"
+"Files: tests/resources/*\n"
+"Copyright: 2019 Jane Doe\n"
+"License: CC0-1.0\n"
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
 #, no-wrap
 msgid "Order of precedence"
-msgstr ""
+msgstr "Orden de precedencia"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6453,6 +6441,11 @@ msgid ""
 "ignored. For all intents and purposes, this counts as the `.license` file's "
 "Licensing Information being inside the Commentable File."
 msgstr ""
+"Si un Commentable File contiene Información de Licencia pero también tiene "
+"un archivo `.license`, luego la Información de licencia definida en el "
+"archivo `license` tiene prioridad y se ignora el contenido del File "
+"Commentable. A todos los efectos y propósitos, esto cuenta como la "
+"información de `.license` que está dentro del Commentable File."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -6463,6 +6456,12 @@ msgid ""
 "section for that file in `.reuse/dep5` do not agree with each other, then "
 "both SPDX License Expressions will apply to the file."
 msgstr ""
+"La información de concesión de licencias definida en `.reuse/dep5` se agrega "
+"con la información de concesión de licencias que se encuentra en los "
+"archivos cubiertos. Para la claridad, esto significa que si las Expresiones "
+"de Licencia SPDX en el encabezado de comentarios de un archivo y en la "
+"sección para ese archivo en `.reuse/dep5` no están de acuerdo entre sí, "
+"entonces ambas License Expressions SPDX se aplicarán al archivo."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
