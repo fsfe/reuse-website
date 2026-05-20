@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-20 17:11+0000\n"
+"PO-Revision-Date: 2026-05-21 18:11+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
@@ -3856,6 +3856,8 @@ msgstr ""
 msgid ""
 "[^1]: https://spdx.org/licenses/ [^2]: https://github.com/spdx/license-list"
 msgstr ""
+"[^1]: https://spdx.org/licenses/\n"
+"[^2]: https://github.com/spdx/license-list"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3865,13 +3867,15 @@ msgid ""
 "<br />\n"
 "<br />\n"
 msgstr ""
+"<br />\n"
+"<br />\n"
+"<br />\n"
 
 #. type: Title ##
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
-#, fuzzy, no-wrap
-#| msgid "2. Add copyright and licensing information to each file {#step-2}"
+#, no-wrap
 msgid "2. Include a copyright notice and license in each file"
-msgstr "2. Adicionar informações sobre direitos autorais e licenciamento a cada arquivo {#step-2}"
+msgstr "2. Inclua um aviso de direitos autorais e uma licença em cada arquivo"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3882,6 +3886,11 @@ msgid ""
 "consistent style to the header. It's important you do not remove information "
 "in existing headers, though."
 msgstr ""
+"Você deve garantir que todos os arquivos do seu projeto tenham um cabeçalho "
+"de licença e que todos os cabeçalhos de licença tenham o mesmo formato. "
+"Mesmo que o cabeçalho de licença do seu projeto seja diferente dos demais, é "
+"importante manter um estilo consistente. No entanto, é fundamental não "
+"remover informações dos cabeçalhos existentes."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3891,6 +3900,10 @@ msgid ""
 "are separate from its origin. Each file should, therefore, have enough "
 "information in itself to convey copyright information."
 msgstr ""
+"Arquivos de código-fonte são frequentemente reutilizados em vários projetos, "
+"retirados de sua origem e reaproveitados, ou acabam em repositórios "
+"separados. Portanto, cada arquivo deve conter informações suficientes para "
+"transmitir os direitos autorais."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3899,6 +3912,9 @@ msgid ""
 "Identifier` following the SPDX standard, and a `License-Filename` tag "
 "following the REUSE practices."
 msgstr ""
+"O cabeçalho de licença deve conter avisos de direitos autorais, um `SPDX-"
+"License-Identifier` seguindo o padrão SPDX e uma tag `License-Filename` "
+"seguindo as práticas do REUSE."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3907,6 +3923,9 @@ msgid ""
 "sorted by year. They should list the actual copyright holder, which may be "
 "an organisation rather than the author. For example:"
 msgstr ""
+"Os avisos de direitos autorais no cabeçalho de licença devem ter um formato "
+"consistente e ser ordenados por ano. Devem listar o detentor dos direitos "
+"autorais, que pode ser uma organização em vez do autor. Por exemplo:"
 
 #. type: Fenced code block
 #: site/content/en/spec-1.2.md
@@ -3921,6 +3940,14 @@ msgid ""
 "  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
 "  */\n"
 msgstr ""
+" /*\n"
+"  * Copyright (c) 2017 Alice Commit <alice@example.com>\n"
+"  * Copyright (c) 2009-2016 Bob Denver <bob@example.com>\n"
+"  * Copyright (c) 2007 Exemplo de Empresa <charlie@example.com>\n"
+"  * \n"
+"  * SPDX-License-Identifier: BSD-2-Clause\n"
+"  * License-Filename: LICENSES/BSD-2-Clause_Charlie.txt\n"
+"  */\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3931,6 +3958,11 @@ msgid ""
 "referenced from the individual source file. The tag can be repeated if "
 "multiple license files are relevant."
 msgstr ""
+"A tag `License-Filename` deve ser uma URL permanente ou o nome de um arquivo "
+"no repositório onde o texto da licença está disponível. Isso é mais preciso "
+"do que o identificador de licença SPDX e garante que o texto completo da "
+"licença seja sempre referenciado a partir do arquivo fonte individual. A tag "
+"pode ser repetida se vários arquivos de licença forem relevantes."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3938,6 +3970,8 @@ msgid ""
 "You should include information about your project's practices in the README "
 "or similar file."
 msgstr ""
+"Você deve incluir informações sobre as práticas do seu projeto no arquivo "
+"README ou similar."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3945,6 +3979,9 @@ msgid ""
 "If your project includes binaries or source code files in which comments can "
 "not be placed, you should provide them separately in one of two ways:"
 msgstr ""
+"Se o seu projeto incluir arquivos binários ou de código-fonte nos quais não "
+"seja possível inserir comentários, você deve fornecê-los separadamente de "
+"uma das duas maneiras a seguir:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3954,6 +3991,11 @@ msgid ""
 "which includes a copyright header according to the format you customarily "
 "use for headers."
 msgstr ""
+"Se você tiver arquivos com diferentes avisos de direitos autorais e "
+"licenças, você deve, para cada arquivo chamado `NOME-DE-ARQUIVO`, incluir o "
+"arquivo de texto `NOME-DE-ARQUIVO.license` que contém um cabeçalho de "
+"direitos autorais de acordo com o formato que você normalmente usa para "
+"cabeçalhos."
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3963,6 +4005,11 @@ msgid ""
 "doc/packaging-manuals/copyright-format/1.0/) file format, and place a single "
 "copyright file documenting those files."
 msgstr ""
+"Se você tiver muitos arquivos desse tipo, mas todos tiverem o mesmo aviso de "
+"direitos autorais e licença, você pode usar o formato de arquivo [DEP-5/"
+"copyright](https://www.debian.org/doc/packaging-manuals/copyright-format/"
+"1.0/) e colocar um único arquivo de direitos autorais documentando esses "
+"arquivos."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3971,6 +4018,9 @@ msgid ""
 "not exist in the repository but which will be created at build time, you may "
 "include a `.license` file without the corresponding binary file."
 msgstr ""
+"Se você quiser ser explícito sobre a licença de um arquivo de saída, que não "
+"existe no repositório, mas que será criado durante a compilação, você pode "
+"incluir um arquivo `.license` sem o arquivo binário correspondente."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3980,6 +4030,10 @@ msgid ""
 "do. Keep in mind version control systems typically record authorship, not "
 "copyright."
 msgstr ""
+"Você pode registrar informações sobre direitos autorais utilizando o sistema "
+"de controle de versão subjacente, mas deve ter cuidado especial ao fazer "
+"isso. Lembre-se de que os sistemas de controle de versão normalmente "
+"registram a autoria, não os direitos autorais."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3987,6 +4041,8 @@ msgid ""
 "For a project using the version control system to convey information about "
 "copyright, you must:"
 msgstr ""
+"Para um projeto que utiliza o sistema de controle de versão para transmitir "
+"informações sobre direitos autorais, você deve:"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -3994,12 +4050,16 @@ msgid ""
 "make sure the version control system is publicly accessible and take "
 "steps[^3] to ensure it will remain so,"
 msgstr ""
+"garantir que o sistema de controle de versão seja publicamente acessível e "
+"tomar medidas[^3] para assegurar que ele permaneça assim,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 msgid ""
 "provide a link back to the original file in version control from each header,"
 msgstr ""
+"fornecer um link de retorno para o arquivo original no controle de versão a "
+"partir de cada cabeçalho,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md
@@ -4010,6 +4070,12 @@ msgid ""
 "included, for example in the form of a bill of material (see later), an "
 "automatically generated log file or similar,"
 msgstr ""
+"garantir que, se alguém copiar o repositório de origem sem os metadados do "
+"sistema de controle de versão (como, por exemplo, ao criar um arquivo tar), "
+"os metadados do sistema de controle de versão relevantes para a determinação "
+"dos direitos autorais ainda sejam incluídos, por exemplo, na forma de uma "
+"lista de materiais (veja adiante), um arquivo de log gerado automaticamente "
+"ou similar,"
 
 #. type: Bullet: ' * '
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -4020,11 +4086,17 @@ msgid ""
 "the one pushing code to version control, or where the copyright is held by "
 "an organisation rather than the author.)"
 msgstr ""
+"garantir que os metadados do commit reflitam os direitos autorais reais "
+"(isso é particularmente importante se um projeto aceita código contribuído "
+"por meio de listas de discussão, rastreadores de bugs ou similares, onde o "
+"detentor original dos direitos autorais não é quem envia o código para o "
+"controle de versão, ou onde os direitos autorais são detidos por uma "
+"organização em vez do autor)."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 msgid "An appropriate header in this case would be:"
-msgstr ""
+msgstr "Um cabeçalho adequado neste caso seria:"
 
 #. type: Fenced code block
 #: site/content/en/spec-1.2.md
