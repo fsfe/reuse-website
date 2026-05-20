@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-19 15:11+0000\n"
+"PO-Revision-Date: 2026-05-20 17:11+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
@@ -390,7 +390,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Drone/Woodpecker CI"
-msgstr "Drone/Pica-pau CI"
+msgstr "Drone/Woodpecker CI"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -425,14 +425,14 @@ msgid ""
 "woodpecker-ci.org)."
 msgstr ""
 "Mais informações sobre o Drone em [docs.drone.io](https://docs.drone.io) e "
-"mais informações sobre o Pica-pau CI em [woodpecker-ci.org]"
-"(https://woodpecker-ci.org)."
+"mais informações sobre o Woodpecker CI em [woodpecker-ci.org](https://"
+"woodpecker-ci.org)."
 
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Forgejo Actions"
-msgstr "Ações da Forja"
+msgstr "Forgejo Actions"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -3177,7 +3177,7 @@ msgstr ""
 #: site/content/en/faq.md
 msgid ""
 "`.reuse/dep5` was dropped in favour of `REUSE.toml` for various reasons:"
-msgstr ""
+msgstr "`.reuse/dep5` foi substituído por `REUSE.toml` por vários motivos:"
 
 #. type: Bullet: '- '
 #: site/content/en/faq.md
@@ -3292,11 +3292,12 @@ msgstr "Escolher e fornecer licenças"
 #: site/content/en/tutorial.md
 msgid "Add copyright and license information to each file"
 msgstr ""
+"Adicione informações de direitos autorais e licenciamento a cada arquivo"
 
 #. type: Bullet: '3. '
 #: site/content/en/tutorial.md
 msgid "Confirm REUSE compliance"
-msgstr ""
+msgstr "Confirme a conformidade com REUSE"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3304,6 +3305,8 @@ msgid ""
 "For the purpose of this tutorial, we will assume that the directory of your "
 "project looks like this:"
 msgstr ""
+"Para os fins deste tutorial, vamos presumir que o diretório do seu projeto "
+"tem a seguinte aparência:"
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
@@ -3315,6 +3318,11 @@ msgid ""
 "├── Makefile\n"
 "└── README.md\n"
 msgstr ""
+"project/\n"
+"├── src/\n"
+"│   └── main.c\n"
+"├── Makefile\n"
+"└── README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3325,6 +3333,10 @@ msgid ""
 "above, while the `compliant` branch is the successful result of this "
 "tutorial."
 msgstr ""
+"Se você quiser reproduzir os passos deste tutorial no seu próprio "
+"computador, pode clonar o [repositório de exemplo](https://codeberg.org/fsfe/"
+"reuse-tutorial-example). O branch `non-compliant` corresponde à estrutura "
+"acima, enquanto a `compliant` é o resultado bem-sucedido deste tutorial."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3335,6 +3347,12 @@ msgid ""
 "collapsible boxes. We recommend to first understand the basic principle "
 "before just executing the tool's commands."
 msgstr ""
+"Para cada um destes passos, você primeiro aprenderá como realizá-los "
+"manualmente. No entanto, a [ferramenta REUSE](https://codeberg.org/fsfe/"
+"reuse-tool) auxilia na maioria das tarefas, e os comandos necessários também "
+"serão listados nas caixas expansíveis. Recomendamos que você primeiro "
+"entenda o princípio básico antes de simplesmente executar os comandos da "
+"ferramenta."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3345,6 +3363,12 @@ msgid ""
 "General Public License (GPL) v3.0 or any later version. More than simply\n"
 "choosing a license, you need to put the license in your project directory.\n"
 msgstr ""
+"A primeira coisa que você precisa fazer é [escolher uma licença]({{< relref\n"
+"\"faq.md#which-license\" >}}). Para este tutorial, assumimos que você "
+"escolheu a Licença\n"
+"Pública Geral GNU (GPL) v3.0 ou qualquer versão posterior. Mais do que "
+"simplesmente\n"
+"escolher uma licença, você precisa colocá-la no diretório do seu projeto.\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3355,6 +3379,11 @@ msgid ""
 "Identifier. The SPDX License Identifier for your chosen license is `GPL-3.0-"
 "or-later`."
 msgstr ""
+"Encontre sua licença na [Lista de Licenças SPDX](https://spdx.org/licenses/)"
+". SPDX é um padrão aberto para comunicação de informações sobre licenças e "
+"direitos autorais. Cada licença é identificada exclusivamente por um "
+"Identificador de Licença SPDX abreviado. O Identificador de Licença SPDX "
+"para a licença escolhida é `GPL-3.0-or-later`."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3367,12 +3396,19 @@ msgid ""
 "data](https://github.com/spdx/license-list-data/tree/master/text)  "
 "repository."
 msgstr ""
+"Crie um diretório `LICENSES/` na raiz do seu projeto, que conterá todas as "
+"licenças que você usa no seu projeto. No seu caso, isso significa criar um "
+"arquivo `GPL-3.0-or-later.txt` neste diretório, que conterá o texto completo "
+"da licença. O nome do arquivo é um Identificador de Licença SPDX. Você pode "
+"encontrar o texto da licença para muitas licenças de Software Livre no "
+"repositório [license-list-data](https://github.com/spdx/license-list-data/"
+"tree/master/text)."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
 #, no-wrap
 msgid "{{< box-tool >}}\n"
-msgstr ""
+msgstr "{{< box-tool >}}\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3383,12 +3419,17 @@ msgid ""
 "instructions above. Running `reuse download --all` automatically downloads "
 "all licenses which the REUSE tool detects as being used in your project."
 msgstr ""
+"[O comando `reuse download`](https://reuse.readthedocs.io/en/stable/man/"
+"reuse-download.html) permite baixar uma licença específica. `reuse download "
+"GPL-3.0-or-later` executaria a tarefa descrita nas instruções do manual "
+"acima. Executar `reuse download --all` baixa automaticamente todas as "
+"licenças que a ferramenta REUSE detecta como sendo usadas em seu projeto."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
 #, no-wrap
 msgid "{{< /box-tool >}}\n"
-msgstr ""
+msgstr "{{< /box-tool >}}\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3397,6 +3438,9 @@ msgid ""
 "these files fall under that license. Edit the comment header of `src/main.c` "
 "as such:"
 msgstr ""
+"Agora que você tem uma licença, precisa indicar nos arquivos relevantes que "
+"esses arquivos estão sujeitos a essa licença. Edite o cabeçalho de "
+"comentário de `src/main.c` da seguinte forma:"
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
@@ -3408,6 +3452,11 @@ msgid ""
 " * SPDX-License-Identifier: GPL-3.0-or-later\n"
 " */\n"
 msgstr ""
+"/*\n"
+" * SPDX-FileCopyrightText: 2024 Joana da Silva <joana@example.com>\n"
+" *\n"
+" * SPDX-License-Identifier: GPL-3.0-or-later\n"
+" */\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3418,6 +3467,15 @@ msgid ""
 "years to use]({{< relref \"faq.md#years-copyright\" >}}) and [what copyright\n"
 "holders are]({{< relref \"faq.md#copyright-holder-author\" >}}) in the FAQ.\n"
 msgstr ""
+"A tag `SPDX-FileCopyrightText` registra os anos de publicação e o detentor "
+"dos\n"
+"direitos autorais do conteúdo do arquivo. Você pode ler mais sobre [quais "
+"anos\n"
+"de publicação usar]({{< relref \"faq.md#years-copyright\" >}}) e [quais são "
+"os\n"
+"detentores dos direitos autorais]({{< relref \"faq.md#copyright-holder-"
+"author\" >}})\n"
+"nas Perguntas Frequentes (FAQ).\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3426,6 +3484,9 @@ msgid ""
 "Expression](https://spdx.org/specifications), typically just the SPDX "
 "License Identifier of the license."
 msgstr ""
+"A tag `SPDX-License-Identifier` é seguida por uma [Expressão de Licença SPDX "
+"válida](https://spdx.org/specifications), geralmente apenas o Identificador "
+"de Licença SPDX da licença."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3434,6 +3495,9 @@ msgid ""
 "to use the `SPDX-FileCopyrightText` tag multiple times if you have multiple "
 "copyright holders."
 msgstr ""
+"Cada arquivo deve sempre conter essas duas tags no cabeçalho. Você pode usar "
+"a tag `SPDX-FileCopyrightText` várias vezes se houver vários detentores de "
+"direitos autorais."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3441,6 +3505,9 @@ msgid ""
 "In the example project, you also edit `Makefile` and `README.md` using this "
 "header information, but of course with corresponding comment syntax."
 msgstr ""
+"No projeto de exemplo, você também edita o `Makefile` e o `README.md` usando "
+"essas informações de cabeçalho, mas, é claro, com a sintaxe de comentário "
+"correspondente."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3449,12 +3516,18 @@ msgid ""
 "reuse-annotate.html) helps with adding licensing and copyright information "
 "to your files. For the task above, the following command will do the job:"
 msgstr ""
+"[O comando `reuse annotate`](https://reuse.readthedocs.io/en/stable/man/"
+"reuse-annotate.html) ajuda a adicionar informações de licença e direitos "
+"autorais aos seus arquivos. Para a tarefa acima, o seguinte comando será "
+"suficiente:"
 
 #. type: Fenced code block (bash)
 #: site/content/en/tutorial.md
 #, no-wrap
 msgid "reuse annotate --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
 msgstr ""
+"reuse annotate --copyright=\"Joana da Silva <joana@example.com>\" --"
+"license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3463,6 +3536,8 @@ msgid ""
 "licensing information to each file, your project tree will now look like "
 "this:"
 msgstr ""
+"Após adicionar uma licença ao seu repositório e informações de direitos "
+"autorais e licença a cada arquivo, a estrutura do seu projeto ficará assim:"
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
@@ -3476,6 +3551,13 @@ msgid ""
 "├── Makefile\n"
 "└── README.md\n"
 msgstr ""
+"project/\n"
+"├── LICENSES/\n"
+"│   └── GPL-3.0-or-later.txt\n"
+"├── src/\n"
+"│   └── main.c\n"
+"├── Makefile\n"
+"└── README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3485,6 +3567,11 @@ msgid ""
 "(https://reuse.readthedocs.io/en/latest/readme.html#install)  available for "
 "multiple platforms, then go to the project directory and run the linter."
 msgstr ""
+"Para garantir que você não perdeu nada, confirme a conformidade com o "
+"princípio REUSE usando a ferramenta REUSE. Siga as [instruções de instalação]"
+"(https://reuse.readthedocs.io/en/latest/readme.html#install) disponíveis "
+"para várias plataformas, depois acesse o diretório do projeto e execute o "
+"linter."
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
@@ -3506,6 +3593,22 @@ msgid ""
 "\n"
 "Congratulations! Your project is compliant with version 3.2 of the REUSE Specification :-)\n"
 msgstr ""
+"$ reuse lint\n"
+"\n"
+"# RESUMO\n"
+"\n"
+"* Licenças inválidas: 0\n"
+"* Licenças descontinuadas: 0\n"
+"* Licenças sem extensão de arquivo: 0\n"
+"* Licenças em falta: 0\n"
+"* Licenças não utilizadas: 0\n"
+"* Licenças utilizadas: GPL-3.0-or-later\n"
+"* Erros de leitura: 0\n"
+"* Arquivos com informações de direitos autorais: 3 / 3\n"
+"* Arquivos com informações de licença: 3 / 3\n"
+"\n"
+"Parabéns! Seu projeto está em conformidade com a versão 3.2 da Especificação "
+"REUSE :-)\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3515,12 +3618,16 @@ msgid ""
 "have a look at the [documentation of the lint command](https://reuse."
 "readthedocs.io/en/stable/man/reuse-lint.html)."
 msgstr ""
+"Como você pode ver na última linha, a ferramenta confirma que seu projeto "
+"agora está em conformidade com o REUSE! Para saber o significado dos "
+"diferentes critérios, consulte a [documentação do comando lint](https://"
+"reuse.readthedocs.io/en/stable/man/reuse-lint.html)."
 
 #. type: Title ##
 #: site/content/en/tutorial.md
 #, no-wrap
 msgid "More information"
-msgstr ""
+msgstr "Mais informações"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3534,11 +3641,23 @@ msgid ""
 "practical use-cases, see the ['How do I ...' section in the Frequently Asked\n"
 "Questions]({{< relref \"faq.md#howto\" >}}).\n"
 msgstr ""
+"Este tutorial foi uma introdução relâmpago ao REUSE. Nem todos os casos de "
+"uso são\n"
+"abordados aqui, especialmente [como anotar arquivos não comentáveis]({{< "
+"relref\n"
+"\"faq.md#uncommentable-file\" >}}), [como anotar arquivos em massa]({{< "
+"relref\n"
+"\"faq.md#bulk-license\" >}}) e [como usar uma licença que não está na lista "
+"do SPDX]({{<\n"
+"relref \"faq.md#custom-license\" >}}). Para aprender sobre esses e outros "
+"casos de uso mais\n"
+"práticos, consulte a seção ['Como faço para...' nas Perguntas\n"
+"Frequentes]({{< relref \"faq.md#howto\" >}}).\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
 msgid "Other sources for more information:"
-msgstr ""
+msgstr "Outras fontes para mais informações:"
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3546,6 +3665,9 @@ msgid ""
 "Our [Frequently Asked Questions](https://reuse.software/faq) covers common "
 "questions as well as extraordinary cases and will constantly be updated."
 msgstr ""
+"Nossa seção de [Perguntas Frequentes](https://reuse.software/faq) aborda "
+"dúvidas comuns, bem como casos extraordinários, e será constantemente "
+"atualizada."
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3553,6 +3675,8 @@ msgid ""
 "The [REUSE Specification](https://reuse.software/spec) may aid you in "
 "gaining a full understanding of REUSE."
 msgstr ""
+"A [Especificação REUSE](https://reuse.software/spec) pode ajudá-lo(a) a "
+"obter uma compreensão completa do REUSE."
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3560,6 +3684,8 @@ msgid ""
 "The [REUSE tool documentation](https://reuse.readthedocs.io/) describes "
 "installation and usage of the REUSE tool."
 msgstr ""
+"A [documentação da ferramenta REUSE](https://reuse.readthedocs.io/) descreve "
+"a instalação e o uso da ferramenta REUSE."
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3568,6 +3694,9 @@ msgid ""
 "resources for programmers like the tool, the API, or how to include checks "
 "in CI/CD workflows."
 msgstr ""
+"Nossa [ajuda para desenvolvedores](https://reuse.software/dev/) lista vários "
+"recursos para programadores, como a ferramenta, a API ou como incluir "
+"verificações em fluxos de trabalho de CI/CD."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3575,6 +3704,7 @@ msgid ""
 "If none of the links above were able to answer your question, please contact "
 "us by:"
 msgstr ""
+"Se nenhum dos links acima respondeu à sua pergunta, entre em contato conosco:"
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3582,6 +3712,8 @@ msgid ""
 "opening an issue on [reuse-website](https://github.com/fsfe/reuse-website) "
 "for questions on the tutorial, FAQ or specification;"
 msgstr ""
+"abrindo uma issue em [reuse-website](https://github.com/fsfe/reuse-website) "
+"para perguntas sobre o tutorial, as perguntas frequentes ou a especificação;"
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3589,6 +3721,8 @@ msgid ""
 "opening an issue on [reuse-tool](https://codeberg.org/fsfe/reuse-tool) for "
 "questions on the REUSE tool;"
 msgstr ""
+"abrindo uma issue em [reuse-tool](https://codeberg.org/fsfe/reuse-tool) para "
+"perguntas sobre a ferramenta REUSE;"
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
@@ -3597,24 +3731,28 @@ msgid ""
 "that we would prefer issues because they are publicly searchable for other "
 "people."
 msgstr ""
+"ou [enviando um e-mail para o FSFE](https://fsfe.org/contact). Observe que "
+"damos preferência a relatórios de problemas, pois eles podem ser pesquisados "
+"publicamente por outras pessoas."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
 msgid ""
 "Thank you for your valuable contribution towards making software reusable!"
 msgstr ""
+"Agradecemos sua valiosa contribuição para tornar o software reutilizável!"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/spec-1.2.md
 #, no-wrap
 msgid "REUSE Practices – Version 1.2"
-msgstr ""
+msgstr "Práticas de REUSE – Versão 1.2"
 
 #. type: Title ##
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
 #, no-wrap
 msgid "1. Provide the exact text of each license used"
-msgstr ""
+msgstr "1. Forneça o texto exato de cada licença utilizada"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3625,6 +3763,11 @@ msgid ""
 "which may be under a different license, and it's important you do not change "
 "the license text on other software you include."
 msgstr ""
+"As licenças de software livre e de código aberto são padronizadas e possuem "
+"textos padrão. Independentemente da licença utilizada, você deve incluir o "
+"texto da licença em seu projeto. Você também deve incluir o texto da licença "
+"de qualquer código que possa estar sob uma licença diferente, e é importante "
+"que você não altere o texto da licença em outros softwares que você incluir."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3635,6 +3778,11 @@ msgid ""
 "attach some suffix to the filename as well, such as `LICENSE.md`, if "
 "relevant)."
 msgstr ""
+"Se o seu projeto incluir apenas código licenciado sob uma única licença, "
+"você pode fornecer o texto dessa licença em um arquivo no diretório raiz do "
+"seu repositório com o nome `LICENSE`, `LICENCE` ou `COPYING` (você também "
+"pode adicionar um sufixo ao nome do arquivo, como `LICENSE.md`, se relevante)"
+"."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3644,6 +3792,10 @@ msgid ""
 "create a directory at the top level called `LICENSES` within which you "
 "include the license text of each license used."
 msgstr ""
+"Como muitos projetos incluem código sob diferentes licenças, muitas vezes "
+"não é viável incluir todas as licenças no diretório raiz. Nesse caso, você "
+"deve criar um diretório na raiz chamado `LICENSES` dentro do qual você "
+"inclua o texto da licença de cada licença utilizada."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3652,6 +3804,9 @@ msgid ""
 "never change any license texts even if they are very similar to existing "
 "ones."
 msgstr ""
+"Você deve incluir todas as licenças utilizadas em seu projeto e nunca "
+"alterar os textos das licenças, mesmo que sejam muito semelhantes aos "
+"existentes."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3662,6 +3817,12 @@ msgid ""
 "parts may be written by Alice and others by Bob, resulting in two different "
 "license files, even if the only difference is the copyright holder."
 msgstr ""
+"Algumas licenças, como a licença BSD de 2 cláusulas, precisam ser adaptadas "
+"para incluir o nome do detentor dos direitos autorais no texto da licença. "
+"Seu projeto pode acabar incluindo várias versões da mesma licença BSD de 2 "
+"cláusulas, porque algumas partes podem ter sido escritas por Alice e outras "
+"por Bob, resultando em dois arquivos de licença diferentes, mesmo que a "
+"única diferença seja o detentor dos direitos autorais."
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md site/content/en/spec-2.0.md
@@ -3670,6 +3831,8 @@ msgid ""
 "> ### Keep in mind\n"
 ">  \n"
 msgstr ""
+"> ### Tenha em mente\n"
+">  \n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
@@ -3680,6 +3843,13 @@ msgid ""
 "> * Keep the filename of the licenses consistent, so you can refer to it\n"
 ">   from the source code files.\n"
 msgstr ""
+"> * Não altere os textos das licenças; use a forma literal do texto da "
+"licença.\n"
+"> * Não remova nenhum texto das licenças; inclua os textos das licenças de "
+"todos os softwares.\n"
+"> * Mantenha a nomenclatura dos arquivos de licença consistente, para que "
+"você possa referenciá-los\n"
+">   nos arquivos de código-fonte.\n"
 
 #. type: Plain text
 #: site/content/en/spec-1.2.md
