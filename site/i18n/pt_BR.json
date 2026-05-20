@@ -1,1 +1,86 @@
-{}
+{
+    "noscript_warning": {
+        "other": "Alguns recursos interativos não vão funcionar com JavaScript desativado."
+    },
+    "table_of_contents": {
+        "other": "Índice"
+    },
+    "toggle_navigation": {
+        "other": "Alternar a navegação"
+    },
+    "tool_instructions": {
+        "other": "Instruções da ferramenta para este passo"
+    },
+    "warning": {
+        "other": "Aviso:"
+    },
+    "trans_inofficial": {
+        "other": "Você está lendo uma tradução não oficial da [página original](%s)."
+    },
+    "trans_available": {
+        "other": "Tradução não oficiais estão disponíveis em:"
+    },
+    "and": {
+        "other": "e"
+    },
+    "menu_tutorial": {
+        "other": "Início"
+    },
+    "menu_faq": {
+        "other": "FAQ"
+    },
+    "menu_dev": {
+        "other": "Desenvolvedores"
+    },
+    "menu_spec": {
+        "other": "Especificação"
+    },
+    "menu_resources": {
+        "other": "Recursos"
+    },
+    "menu_supporters": {
+        "other": "Apoiadores"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_initiative_by": {
+        "other": "Uma iniciativa de"
+    },
+    "index_intro": {
+        "other": "Simplificamos o licenciamento tanto para humanos quanto para máquinas. Resolvemos um problema fundamental do licenciamento de Software Livre logo na sua origem: sob qual licença um arquivo é licenciado e quem detém os direitos autorais? **Adotar nossas recomendações é muito fácil**!"
+    },
+    "index_step1": {
+        "other": "Escolha e forneça licenças"
+    },
+    "index_step2": {
+        "other": "Adicione informações de direitos autorais e licenciamento a cada arquivo"
+    },
+    "index_step3": {
+        "other": "Confirme a conformidade com REUSE"
+    },
+    "index_rationale": {
+        "other": "Direitos autorais e licenciamento são complexos, especialmente ao reutilizar software de diferentes projetos lançados sob diversas licenças. O REUSE foi criado pela [Free Software Foundation Europe](https://fsfe.org) (FSFE) para fornecer um conjunto de recomendações que tornem o licenciamento de seus projetos de Software Livre **fácil, abrangente, inequívoco e legível por máquina**."
+    },
+    "index_dev_head": {
+        "other": "Para desenvolvedores"
+    },
+    "index_dev_text": {
+        "other": "A licença do seu projeto define os termos sob os quais outros podem reutilizar seu software. Por isso, você deve garantir que fique claro para todos quais partes do seu software estão sob qual licença. O REUSE protege suas intenções e auxilia nesse processo. Confira nossa [seção de ferramentas](dev/) para saber mais sobre a ferramenta, inclusão em processos de CI/CD e muito mais."
+    },
+    "index_reuse_head": {
+        "other": "Reutilização simplificada"
+    },
+    "index_reuse_text": {
+        "other": "O Software Livre permite que você construa sobre o trabalho de outros e, portanto, inove rapidamente. Mas quanto mais componentes externos você usa, mais difícil fica manter uma visão geral dos detentores de direitos autorais e suas escolhas de licenciamento. Com o REUSE, cada arquivo contém as informações necessárias e seu repositório exibe de forma transparente todas as licenças utilizadas."
+    },
+    "index_legal_text": {
+        "other": "Existem muitas ferramentas que auxiliam na conformidade com as licenças de software, muitas delas utilizando bancos de dados e heurísticas difusas. Um projeto em conformidade com o REUSE facilita muito o trabalho de especialistas jurídicos e responsáveis pela conformidade. Criar uma lista de materiais pode ser feito com um único comando simples. O REUSE [não substitui outras ferramentas](comparison/), mas é uma adição muito aguardada."
+    },
+    "index_legal_head": {
+        "other": "Conformidade com licenças"
+    },
+    "all_specifications": {
+        "other": "Todas as versões da especificação podem ser encontradas em <{{ .specifications }}>."
+    }
+}
