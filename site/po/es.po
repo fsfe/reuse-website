@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-19 15:11+0000\n"
+"PO-Revision-Date: 2026-05-23 20:11+0000\n"
 "Last-Translator: eulalio <eulalio@disroot.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/es/>\n"
@@ -6469,6 +6469,8 @@ msgid ""
 "The order of precedence for `REUSE.toml` files is described in the "
 "respective section, and is managed using the `precedence` key."
 msgstr ""
+"El orden de precedencia para los archivos `REUSE.toml` se describe en la "
+"sección respectiva, y se administra utilizando la tecla `precedence`."
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
