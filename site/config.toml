@@ -71,6 +71,9 @@ defaultContentLanguageInSubdir = true
 [languages.fr]
   languageName = "Français"
   contentDir = "content/fr"
+[languages.it]
+  languageName = "Italiano"
+  contentDir = "content/it"
 [languages.uk]
   languageName = "Українська"
   contentDir = "content/uk"
