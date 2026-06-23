@@ -63,7 +63,7 @@
         "other": "Ressources"
     },
     "index_rationale": {
-        "other": "Les droits d'auteur et les licences sont difficiles, surtout lorsqu'il s'agit de réutiliser des logiciels provenant de différents projets et publiés sous différentes licences. REUSE a été lancé par la [Free Software Foundation Europe] (https://fsfe.org) (FSFE) pour fournir un ensemble de recommandations visant à faciliter l'octroi de licences pour vos projets de logiciels libres. Non seulement ces recommandations vous permettent de déclarer plus facilement les licences sous lesquelles vos travaux sont publiés, mais elles permettent également à un ordinateur de comprendre plus facilement comment votre projet est licencié."
+        "other": "Les droits d'auteur et les licences sont difficiles, surtout lorsqu'il s'agit de réutiliser des logiciels provenant de différents projets et publiés sous différentes licences. REUSE a été lancé par la [Free Software Foundation Europe] (https://fsfe.org) (FSFE) pour fournir une série de recommandations visant à rendre la mise sous licence de vos projets de logiciels libres **simple, exhaustive, sans ambiguïté et lisible par machine**."
     },
     "index_legal_head": {
         "other": "Conformité des licences"
