@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2024-07-08 06:09+0000\n"
-"Last-Translator: Anthony Loiseau <anthony@loiseau.fr>\n"
+"PO-Revision-Date: 2026-06-24 17:01+0000\n"
+"Last-Translator: Tino Tempesta <foxort@fsfe.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/fr/>\n"
 "Language: fr\n"
@@ -17,17 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Comparison of license compliance projects"
 msgstr "Comparaison des projets de vérification de licence"
 
 #. type: Plain text
 #: site/content/en/comparison.md
-#, fuzzy
 msgid ""
 "It is easy to get confused by the multitude of initiatives and tools that "
 "help with software license compliance. Provided below is a short and "
@@ -39,7 +38,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/comparison.md
-#, fuzzy
 msgid ""
 "REUSE does not intend to replace, but rather complement them. We try to "
 "solve unclear and missing license and copyright information at the very "
@@ -47,20 +45,19 @@ msgid ""
 "their project."
 msgstr ""
 "REUSE n'a pas pour vocation de les remplacer, mais plutôt d'être "
-"complémentaire. Nous essayons de solutionner les informations de licences et "
-"de droits d'auteur manquantes ou non claires. Nous donnons plus de moyens "
-"aux développeurs pour assurer une gestion de licence propre et exhaustive de "
-"leurs projets."
+"complémentaire. Nous essayons de clarifier, dès la source, les informations "
+"ambiguës ou manquantes liées aux licences et aux droits d'auteur. Nous "
+"donnons aux développeurs les moyens de garantir une mise sous licence "
+"correcte et exhaustive leurs projets."
 
 #. type: Bullet: '- '
 #: site/content/en/comparison.md
-#, fuzzy
 msgid ""
 "[**SPDX**](https://spdx.org) is the rock upon which REUSE is built. SPDX "
 "defines a standardized way to share copyright and licensing information "
 "between projects and people. Read more in [our FAQ](/faq/#what-is-spdx)."
 msgstr ""
-"[**SPDX**](https://spdx.org) est le rocher sur lequel REUSE est bâtit. SPDX "
+"[**SPDX**](https://spdx.org) est le pilier sur lequel repose REUSE. SPDX "
 "définie un standard pour échanger les informations de droits d'auteur et de "
 "licence entre les projets et les personnes. Plus d'information dans [notre "
 "FAQ](/faq/#what-is-spdx)."
@@ -75,6 +72,13 @@ msgid ""
 "comparison concentrates on fixing the problem at the file level for "
 "individual projects, which in turn will ease ClearlyDefined's efforts."
 msgstr ""
+"[**ClearlyDefined**](https://clearlydefined.io) receuille et affiche les "
+"métadonnées et les informations de sécurité d'un grand nombre de projets "
+"distribué sur différent registres de packet. Il ecourage aussi les "
+"développeurs et gestionnaires à enrichir les données relatives aux licences "
+"et droits d'auteur d'un projet. REUSE, quant à lui, ce concentre sur la "
+"résolution de problème au niveau des fichiers pour des projets individuels, "
+"ce qui facilitera en retour le travail de ClearlyDefined."
 
 #. type: Bullet: '- '
 #: site/content/en/comparison.md
