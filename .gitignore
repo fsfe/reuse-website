@@ -12,3 +12,6 @@ site/content/*/*
 
 # Translation status file created by check_translations.py
 site/i18n/.status
+
+# nix shell created Drone token file
+drone_token.txt

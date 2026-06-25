@@ -24,10 +24,10 @@ RUN sed -i \
 # Development Preparation: run po4a and hugo
 # =============================================================================
 
-FROM alpine AS dev-prep
+FROM git.fsfe.org/fsfe-system-hackers/hugo-container:0.152.0 AS dev-prep
 
 # Dependencies
-RUN apk --no-cache add bash perl-yaml-tiny po4a hugo python3 diffutils
+RUN apk --no-cache add bash perl-yaml-tiny po4a python3 diffutils
 
 COPY . /app
 
