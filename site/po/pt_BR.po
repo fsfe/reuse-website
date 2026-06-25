@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-05-21 18:11+0000\n"
+"PO-Revision-Date: 2026-06-25 01:56+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/fsfe/"
 "reuse-website-markdown/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -570,7 +570,6 @@ msgstr ""
 "# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
 "# SPDX-License-Identifier: CC0-1.0\n"
 "name: REUSE compliance check\n"
-"\n"
 "on: [push, pull_request]\n"
 "\n"
 "jobs:\n"
@@ -2076,8 +2075,8 @@ msgid ""
 "Use [the `REUSE-IgnoreStart` and `REUSE-IgnoreEnd` tags](#exclude-lines)  "
 "inside of the file."
 msgstr ""
-"Use [as tags `REUSE-IgnoreStart` e `REUSE-IgnoreEnd`] (#exclude-lines) "
-"dentro do arquivo."
+"Use [as tags `REUSE-IgnoreStart` e `REUSE-IgnoreEnd`](#exclude-lines) dentro "
+"do arquivo."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
@@ -4980,7 +4979,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
 "SPDX-FileCopyrightText: © 2019 John Doe <joe@example.com>\n"
