@@ -2231,9 +2231,9 @@ msgstr ""
 #. type: Bullet: '- '
 #: tutorial.md
 #, markdown-text
-msgid "or [sending an email to the FSFE](https://fsfe.org/contact). Please note that we would prefer issues because they are publicly searchable for other people."
+msgid "or [sending an email to the FSFE](https://fsfe.org/about/contact.html). Please note that we would prefer issues because they are publicly searchable for other people."
 msgstr ""
-"или [отправить письмо в FSFE](https://fsfe.org/contact). Пожалуйста, "
+"или [отправить письмо в FSFE](https://fsfe.org/about/contact.html). Пожалуйста, "
 "обратите внимание, что мы предпочитаем выпуски, поскольку они доступны для "
 "публичного поиска другим людям."
 
