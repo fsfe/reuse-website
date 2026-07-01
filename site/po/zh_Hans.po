@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2022-08-26 07:15+0000\n"
-"Last-Translator: Hugel <qihu@nfschina.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"fsfe/reuse-docs/zh_Hans/>\n"
+"PO-Revision-Date: 2026-07-01 14:01+0000\n"
+"Last-Translator: Lee Flower <d9920713549@163.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/fsfe/reuse-website-markdown/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
 #, no-wrap
 msgid "Comparison of license compliance projects"
-msgstr ""
+msgstr "许可证合规性项目对比"
 
 #. type: Plain text
 #: site/content/en/comparison.md
@@ -32,6 +32,8 @@ msgid ""
 "help with software license compliance. Provided below is a short and "
 "incomplete overview of some noteworthy projects."
 msgstr ""
+"与软件许可证合规性相关的各种倡议和工具常常令人困惑。因此，以下对一些值得注意"
+"的项目作了简短但不完整的概述。"
 
 #. type: Plain text
 #: site/content/en/comparison.md
@@ -41,6 +43,8 @@ msgid ""
 "source. We empower developers to ensure proper and exhaustive licensing of "
 "their project."
 msgstr ""
+"REUSE 的目的在于完善这些工具，而非取代它们。我们尝试从源头解决许可证和版权信"
+"息缺失或模糊的问题，帮助开发者确保其项目拥有适当且详尽的许可证信息。"
 
 #. type: Bullet: '- '
 #: site/content/en/comparison.md
@@ -49,6 +53,9 @@ msgid ""
 "defines a standardized way to share copyright and licensing information "
 "between projects and people. Read more in [our FAQ](/faq/#what-is-spdx)."
 msgstr ""
+"REUSE 基于 [**SPDX**](https://spdx.org) 构建，后者定义了一套标准化格式，用于"
+"在项目和开发者之间共享版权与许可证信息。详情见[常见问题解答](/faq/#what-is-"
+"spdx)。"
 
 #. type: Bullet: '- '
 #: site/content/en/comparison.md
@@ -60,6 +67,10 @@ msgid ""
 "comparison concentrates on fixing the problem at the file level for "
 "individual projects, which in turn will ease ClearlyDefined's efforts."
 msgstr ""
+"[**ClearlyDefined**](https://clearlydefined.io) 收集并展示了多个发布在不同软"
+"件包仓库的项目的元信息和安全信息，并且鼓励开发者和负责人补充其项目的许可证和"
+"版权状况的数据。 相比之下，REUSE 着眼于为个人项目解决源文件层面的问题，这反过"
+"来有助于 ClearlyDefined 更好地开展工作。"
 
 #. type: Bullet: '- '
 #: site/content/en/comparison.md
@@ -70,6 +81,10 @@ msgid ""
 "recommends REUSE as one component to increase clarity of the licensing and "
 "copyright situation, but has higher requirements to achieve full conformance."
 msgstr ""
+"[**OpenChain**](https://www. openchainproject.org) 致力于让自由软件许可证的合"
+"规性对软件供应链的参与者而言更加透明、可预期且易于理解。该项目建议将 REUSE 作"
+"为提升许可证与版权状况清晰度的一种手段，但若要达到完全合规的状态，则需满足更"
+"高的要求。"
 
 #. type: Bullet: '- '
 #: site/content/en/comparison.md
@@ -124,6 +139,8 @@ msgid ""
 "Contents: [Helper tool](#tool), [example repositories](#repos), [REUSE API]"
 "(#api), [CI/CD workflows](#ci)"
 msgstr ""
+"内容：[辅助工具](#tool)、 [示例仓库](#repos)、[REUSE API](#api)、[CI/CD 工作"
+"流](#ci)"
 
 #. type: Title ##
 #: site/content/en/dev.md
@@ -155,7 +172,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Example repositories {#repos}"
-msgstr ""
+msgstr "示例仓库 {#repos}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -192,7 +209,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "API {#api}"
-msgstr ""
+msgstr "API {#api}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -296,7 +313,7 @@ msgstr ""
 msgid ""
 "Include the following snippet in your `.drone.yml` file or `.woodpecker/"
 "reuse.yaml` file:"
-msgstr ""
+msgstr "将以下代码片段添加进你的 `.drone.yml` 或 `.woodpecker/reuse.yaml` 文件中："
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -308,6 +325,11 @@ msgid ""
 "  - name: reuse\n"
 "    image: fsfe/reuse:latest\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"steps:\n"
+"  - name: reuse\n"
+"    image: fsfe/reuse:latest\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -350,13 +372,29 @@ msgid ""
 "        run: |\n"
 "          reuse lint\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE compliance check\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: <a tag for your runner>\n"
+"    container: fsfe/reuse:latest\n"
+"    steps:\n"
+"      - run: |\n"
+"          apk add nodejs\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
 msgid ""
 "If your runner is not capable of running Docker containers, consider the "
 "following snippet:"
-msgstr ""
+msgstr "若你的运行器不支持 Docker 容器，可考虑以下代码片段："
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -386,6 +424,8 @@ msgid ""
 "More information about Forgejo Actions at [forgejo.org](https://forgejo.org/"
 "docs/latest/user/actions/)."
 msgstr ""
+"关于 Forgejo Actions 的更多信息，请见 [forgejo.org](https://forgejo.org/docs/"
+"latest/user/actions/)。"
 
 #. type: Title ###
 #: site/content/en/dev.md
@@ -417,6 +457,18 @@ msgid ""
 "      - name: REUSE Compliance Check\n"
 "        uses: fsfe/reuse-action@v6\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE compliance check\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: ubuntu-latest\n"
+"    steps:\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: REUSE Compliance Check\n"
+"        uses: fsfe/reuse-action@v6\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -648,7 +700,7 @@ msgstr ""
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
 msgid "[You?](/tutorial/)"
-msgstr ""
+msgstr "[你呢？](/tutorial/)"
 
 #. type: Plain text
 #: site/content/en/supporters.md
@@ -656,12 +708,14 @@ msgid ""
 "If your community or company has implemented REUSE but is not listed, feel "
 "free to [contact us](/resources/#contact)."
 msgstr ""
+"若贵社区或公司已采用 REUSE 但未列其中，欢迎[联系我们](/resources/#contact)添"
+"加。"
 
 #. type: Title ##
 #: site/content/en/supporters.md
 #, no-wrap
 msgid "Corporate Sponsors"
-msgstr ""
+msgstr "企业赞助商"
 
 #. type: Plain text
 #: site/content/en/supporters.md
@@ -726,16 +780,13 @@ msgstr "我的时间很紧。你能给我一个最快速的总结吗？{#quick-s
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "We want to improve the way that people license their software projects. "
-#| "We propose three steps to achieve this:"
 msgid ""
 "We want to improve the way that people license their software projects such "
 "that it is **easy, comprehensive, unambiguous, and machine-readable**. We "
 "propose three steps to achieve this:"
 msgstr ""
-"我们希望改善人们对其软件项目的授权方式。我们提出了三个步骤来实现这一目标："
+"我们希望人们以一种**简单、全面、明确且机器可读**的方式为其软件项目标注许可证"
+"信息。我们提出了三个步骤来实现这一目标："
 
 #. type: Title ##
 #: site/content/en/faq.md site/content/en/tutorial.md
@@ -4604,7 +4655,7 @@ msgstr ""
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "In Commentable Files, a Copyright Notice is terminated by a newline."
-msgstr ""
+msgstr "在可注释的文件中，版权声明以换行符结尾。"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4614,6 +4665,8 @@ msgid ""
 "address of the copyright holder. The order of these items SHOULD be: year, "
 "name, contact address."
 msgstr ""
+"版权声明必须包含版权所有者的名称，应当包含发布年份及版权所有者的联系地址，且"
+"顺序应为“年份、名称、联系地址”。"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -4622,16 +4675,18 @@ msgid ""
 "legal entity, or any other descriptor by which one can easily identify the "
 "copyright holder(s)."
 msgstr ""
+"版权所有者应当为个人、多人署名、群组、法律实体，或任意可以轻松确认版权所有者"
+"的文字描述。"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "You MAY add any further information to the Copyright Notice."
-msgstr ""
+msgstr "你亦可在版权声明中补充更多信息。"
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
 msgid "Examples of valid Copyright Notices:"
-msgstr ""
+msgstr "以下为版权声明的样例："
 
 #, fuzzy, no-wrap
 #~| msgid "The tool {#tool}"
