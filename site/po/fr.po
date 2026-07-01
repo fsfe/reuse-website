@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-06-30 04:01+0000\n"
+"PO-Revision-Date: 2026-07-01 14:01+0000\n"
 "Last-Translator: Tino Tempesta <foxort@fsfe.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/fr/>\n"
@@ -345,6 +345,13 @@ msgid ""
 "    hooks:\n"
 "      - id: reuse\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"repos:\n"
+"  - repo: https://codeberg.org/fsfe/reuse-tool\n"
+"    rev: v6.2.0\n"
+"    hooks:\n"
+"      - id: reuse\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -358,7 +365,7 @@ msgstr ""
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Inclusion in CI/CD workflows {#ci}"
-msgstr ""
+msgstr "Intégration dans les processus CI/CD {#ci}"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -366,6 +373,8 @@ msgid ""
 "REUSE can be easily integrated into your existing CI/CD processes to "
 "continuously test your repository and its changes for REUSE compliance."
 msgstr ""
+"REUSE s'intègre facilement à vos processus CI/CD existants afin de vérifier "
+"en continu la conformité à REUSE de votre dépôt et de ses modifications."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -373,12 +382,14 @@ msgid ""
 "The FSFE offers a Docker image which can be used in numerous CI solutions. "
 "Find a few examples below:"
 msgstr ""
+"La FSFE propose une image Docker pouvant être utilisée dans de nombreuses "
+"solutions CI. Voici quelques exemples ci-dessous :"
 
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Drone/Woodpecker CI"
-msgstr ""
+msgstr "Drone/Woodpecker CI"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -386,6 +397,8 @@ msgid ""
 "Include the following snippet in your `.drone.yml` file or `.woodpecker/"
 "reuse.yaml` file:"
 msgstr ""
+"Ajoutez le fragment de code suivant dans votre fichier `.drone.yml` ou "
+"`.woodpecker/reuse.yaml` :"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -397,6 +410,11 @@ msgid ""
 "  - name: reuse\n"
 "    image: fsfe/reuse:latest\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"steps:\n"
+"  - name: reuse\n"
+"    image: fsfe/reuse:latest\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -405,18 +423,23 @@ msgid ""
 "more information about Woodpecker CI at [woodpecker-ci.org](https://"
 "woodpecker-ci.org)."
 msgstr ""
+"Pour plus d'informations sur Drone, rendez-vous sur [docs.drone.io](https://"
+"docs.drone.io) et pour en savoir plus sur Woodpecker CI, consultez "
+"[woodpecker-ci.org](https://woodpecker-ci.org)."
 
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Forgejo Actions"
-msgstr ""
+msgstr "Actions Forgejo"
 
 #. type: Plain text
 #: site/content/en/dev.md
 msgid ""
 "Include the following snippet in your `.forgejo/workflows/reuse.yaml` file:"
 msgstr ""
+"Ajoutez le fragment de code suivant dans votre fichier `.forgejo/workflows/"
+"reuse.yaml` :"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -439,6 +462,22 @@ msgid ""
 "        run: |\n"
 "          reuse lint\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE compliance check\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: <a tag for your runner>\n"
+"    container: fsfe/reuse:latest\n"
+"    steps:\n"
+"      - run: |\n"
+"          apk add nodejs\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -446,6 +485,8 @@ msgid ""
 "If your runner is not capable of running Docker containers, consider the "
 "following snippet:"
 msgstr ""
+"Si votre exécuteur n'est pas capable de gérer des conteneurs Docker, "
+"envisagez le code suivant :"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -468,6 +509,22 @@ msgid ""
 "        run: |\n"
 "          pipx run reuse lint\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE compliance check\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: <a tag for your runner>\n"
+"    steps:\n"
+"      - run: |\n"
+"          apt-get update\n"
+"          apt-get install -y pipx\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: Verify REUSE compliance\n"
+"        run: |\n"
+"          pipx run reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -475,12 +532,14 @@ msgid ""
 "More information about Forgejo Actions at [forgejo.org](https://forgejo.org/"
 "docs/latest/user/actions/)."
 msgstr ""
+"Plus d'informations sur les actions de Forgejo disponibles sur [forgejo.org]"
+"(https://forgejo.org/docs/latest/user/actions/)."
 
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
 msgid "GitHub Actions"
-msgstr ""
+msgstr "Actions GitHub"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -488,6 +547,9 @@ msgid ""
 "GitHub users can integrate the REUSE action in their workflow. Include the "
 "following file as `.github/workflows/reuse.yaml`:"
 msgstr ""
+"Les utilisateurs de GitHub peuvent intégrer l'action REUSE dans leur "
+"*workflow*. Ajoutez-y le fichier suivant sous le nom `.github/workflows/"
+"reuse.yaml` :"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -506,6 +568,18 @@ msgid ""
 "      - name: REUSE Compliance Check\n"
 "        uses: fsfe/reuse-action@v6\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"name: REUSE compliance check\n"
+"on: [push, pull_request]\n"
+"\n"
+"jobs:\n"
+"  test:\n"
+"    runs-on: ubuntu-latest\n"
+"    steps:\n"
+"      - uses: actions/checkout@v5\n"
+"      - name: REUSE Compliance Check\n"
+"        uses: fsfe/reuse-action@v6\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -513,6 +587,9 @@ msgid ""
 "Visit the [action's marketplace page](https://github.com/marketplace/actions/"
 "reuse-compliance-check) for more usage instructions."
 msgstr ""
+"Rendez-vous sur la [page *marketplace* de l'action](https://github.com/"
+"marketplace/actions/reuse-compliance-check) pour obtenir davantage "
+"d'instructions d'utilisation."
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -520,17 +597,19 @@ msgid ""
 "More information about GitHub Actions at [docs.github.com](https://docs."
 "github.com/en/actions/)."
 msgstr ""
+"Vous trouverez plus d'informations sur les GitHub Actions sur "
+"[docs.github.com](https://docs.github.com/en/actions/)."
 
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
 msgid "GitLab CI/CD"
-msgstr ""
+msgstr "GitLab CI/CD"
 
 #. type: Plain text
 #: site/content/en/dev.md
 msgid "Include the following snippet in your `.gitlab-ci.yml` file:"
-msgstr ""
+msgstr "Ajoutez ce fragment de code dans votre fichier `.gitlab-ci.yml` :"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -545,6 +624,14 @@ msgid ""
 "  script:\n"
 "    - reuse lint\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"reuse:\n"
+"  image:\n"
+"    name: fsfe/reuse:latest\n"
+"    entrypoint: [\"\"]\n"
+"  script:\n"
+"    - reuse lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
@@ -552,17 +639,19 @@ msgid ""
 "More information about GitLab's CI at [docs.gitlab.com](https://docs.gitlab."
 "com/ci/)."
 msgstr ""
+"Vous trouverez plus d'informations sur les CI de GitLab sur [docs.gitlab.com]"
+"(https://docs.gitlab.com/ci/)."
 
 #. type: Title ###
 #: site/content/en/dev.md
 #, no-wrap
 msgid "Travis CI"
-msgstr ""
+msgstr "Travis CI"
 
 #. type: Plain text
 #: site/content/en/dev.md
 msgid "Include the following snippet in your `.travis.yml` file:"
-msgstr ""
+msgstr "Ajoutez l'extrait de code suivant dans votre fichier `.travis.yml` :"
 
 #. type: Fenced code block (yaml)
 #: site/content/en/dev.md
@@ -579,18 +668,30 @@ msgid ""
 "  - docker pull fsfe/reuse:latest\n"
 "  - docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 msgstr ""
+"# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.\n"
+"# SPDX-License-Identifier: CC0-1.0\n"
+"language: minimal\n"
+"\n"
+"services:\n"
+"  - docker\n"
+"\n"
+"before_install:\n"
+"  - docker pull fsfe/reuse:latest\n"
+"  - docker run -v ${TRAVIS_BUILD_DIR}:/data fsfe/reuse:latest lint\n"
 
 #. type: Plain text
 #: site/content/en/dev.md
 msgid ""
 "More information on Travis CI at [travis-ci.com](https://travis-ci.com)."
 msgstr ""
+"Pour plus d'informations sur Travis CI, rendez-vous sur [travis-ci.com]"
+"(https://travis-ci.com)."
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/resources.md
 #, no-wrap
 msgid "Resources"
-msgstr ""
+msgstr "Ressources"
 
 #. type: Plain text
 #: site/content/en/resources.md
@@ -599,6 +700,9 @@ msgid ""
 "one step further? Read more background, get in touch with the community and "
 "help us spread the word!"
 msgstr ""
+"Vous avez déjà découvert certains aspect de l'univers REUSE et souhaitez "
+"aller plus loin ? Découvrez-en d'avantage, entrez en contact avec la "
+"communauté et aidez-nous à faire passer le message !"
 
 #. type: Plain text
 #: site/content/en/resources.md
@@ -613,6 +717,17 @@ msgid ""
 " our mailing list.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-users\" headline=\"Prenons contact\" "
+"id=\"contact\" >}}\n"
+" Tout comme les logiciels libres, le projet REUSE repose sur sa communauté\n"
+" et sur les personnes qui le soutiennent et l'adoptent. Rejoignez-nous en \n"
+" vous inscrivant à la [liste de diffusion](https://lists.fsfe.org/mailman/"
+"listinfo/reuse)\n"
+" pour faire connaissance avec d'autres utilisateurs et contribuer à façonner "
+"l'évolution de REUSE.\n"
+" Vous pouvez également contacter directement les coordinateurs\n"
+" de REUSE via notre liste de diffusion.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: site/content/en/resources.md
@@ -628,6 +743,19 @@ msgid ""
 " licensing and copyright information. \n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-rocket\" headline=\"REUSE Booster\">}}\n"
+" Afin d’aider davantage de projets à adopter les bonnes pratiques REUSE, "
+"nous avons \n"
+" lancé [REUSE Booster](/booster/) : un programme qui offre aux projets de \n"
+" logiciel libre la possibilité de nous contacter et de bénéficier de l’aide "
+"\n"
+" des experts en licences de la FSFE. Notre équipe REUSE Booster prend "
+"également \n"
+" activement contact avec certains projets. Grâce à des évaluations "
+"individuelles et à \n"
+" une assistance technique directe, nous favorisons la diffusion des \n"
+" informations relatives aux licences et au droit d’auteur. \n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: site/content/en/resources.md
@@ -641,6 +769,15 @@ msgid ""
 "  the most important discussions.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-info-circle\" headline=\"Les actualités\">}}\n"
+"  REUSE évolue rapidement grâce à sa communauté très active. Jetez un œil "
+"aux\n"
+"  [dernières nouvelles officielles](https://fsfe.org/tags/tagged-reuse.html)"
+". N'oubliez pas non plus de\n"
+"  vous inscrire à la [liste de diffusion\n"
+"  ](https://lists.fsfe.org/mailman/listinfo/reuse) pour rester informé des\n"
+"  discussions les plus importantes.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: site/content/en/resources.md
@@ -653,6 +790,17 @@ msgid ""
 "  projects](/comparison) we collaborate with and their specifics.\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"fas fa-exchange-alt\" headline=\"Initiatives "
+"similaires\">}}\n"
+"  Il existe de nombreuses initiatives consacrées aux licences de logiciels "
+"libres et au respect de ces licences.\n"
+"  REUSE contribue à cet effort, mais ne remplace pas les outils et les "
+"bonnes\n"
+"  pratiques mis en œuvre par d'autres maillons de la chaîne. Découvrez les "
+"[autres\n"
+"  projets](/comparison) avec lesquels nous collaborons et leurs "
+"spécificités.\n"
+"{{< /component >}}\n"
 
 #. type: Plain text
 #: site/content/en/resources.md
@@ -667,12 +815,25 @@ msgid ""
 "  server](https://download.fsfe.org/videos/reuse/).\n"
 "{{< /component >}}\n"
 msgstr ""
+"{{< component fa=\"far fa-comments\" headline=\"Parlez-en\">}}\n"
+"  Plus nombreux seront les projets qui comprendront et adopteront REUSE, "
+"plus l'utilisation et la réutilisation des\n"
+"  logiciels seront faciles pour tout le monde. N'hésitez pas à utiliser les "
+"supports prêts à l'emploi pour faire passer\n"
+"  le message. Les [visuels REUSE](https://git.fsfe.org/reuse/reuse-ci/) "
+"peuvent être\n"
+"  utilisés sous licence Creative Commons. Différentes versions et formats de "
+"fichier de\n"
+"  la vidéo REUSE sont directement [disponibles sur notre serveur de "
+"téléchargement\n"
+"  ](https://download.fsfe.org/videos/reuse/).\n"
+"{{< /component >}}\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/supporters.md
 #, no-wrap
 msgid "Supporters"
-msgstr ""
+msgstr "Soutiens"
 
 #. type: Plain text
 #: site/content/en/supporters.md
@@ -683,12 +844,18 @@ msgid ""
 "projects, as well as corporate sponsors, REUSE can constantly evolve and "
 "improve."
 msgstr ""
+"Nous sommes reconnaissants envers toutes les personnes qui soutiennent "
+"REUSE. L'écosystème en constante expansion composé des spécifications, de la "
+"documentation, d'outils d'aide, d'API et de bien plus encore demande du "
+"temps et de l'argent. Grâce aux bénévoles, aux organisations et projets "
+"partenaires, ainsi qu'aux entreprises sponsors, REUSE peut évoluer et "
+"s'améliorer en permanence."
 
 #. type: Title ##
 #: site/content/en/supporters.md
 #, no-wrap
 msgid "Users and adopters"
-msgstr ""
+msgstr "Utilisateurs"
 
 #. type: Plain text
 #: site/content/en/supporters.md
@@ -699,6 +866,12 @@ msgid ""
 "does not require a registration and can even be used offline, we don't have "
 "precise user statistics. Below you can find some we know of."
 msgstr ""
+"Un projet qui respecte les bonnes pratiques REUSE assure la transparence de "
+"ses licences et droits d'auteur, garantit que le code fourni par des tiers "
+"et correctement crédité et facilite sa réutilisation par d'autres "
+"développeurs. Comme REUSE ne nécessite pas d'inscription et peut même être "
+"utilisé hors ligne, nous ne disposons pas de statistiques d'utilisation "
+"précises. Vous trouverez ci-dessous celles dont nous avons connaissance."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
@@ -706,6 +879,8 @@ msgid ""
 "All 1000+ [compliant projects](https://api.reuse.software/projects) of the "
 "REUSE API"
 msgstr ""
+"Les plus de 1 000 [projets conformes](https://api.reuse.software/projects) "
+"de l'API REUSE"
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
@@ -713,6 +888,9 @@ msgid ""
 "Many projects of the [EU-funded Next Generation Internet project](https://"
 "fsfe.org/activities/ngi/) we help to become REUSE compliant from the start."
 msgstr ""
+"De nombreux travaux liés au [projet \"Next Generation Internet\"](https://"
+"fsfe.org/activities/ngi/) financé par l'UE que nous aidons à devenir "
+"conforme à la norme REUSE dès leur conception."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
@@ -722,22 +900,29 @@ msgid ""
 "[this interview](https://fsfe.org/news/2020/news-20201215-01.html)  about "
 "their rationale and path."
 msgstr ""
+"La communauté KDE a fait de REUSE la norme de sa [politique de mise sous "
+"licence](https://community.kde.org/Policies/"
+"Licensing_Policy#License_Statements). Lisez également [cet entretien]"
+"(https://fsfe.org/news/2020/news-20201215-01.html) à propos de leurs "
+"motivations et de leur parcours."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
 msgid ""
 "Corporate licensing policies of Siemens, SAP, Huawei, Liferay and many more."
 msgstr ""
+"Les politiques de mise sous licences d'entreprises comme Siemens, SAP, "
+"Huawei, Liferay et bien d'autres encore."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
 msgid "Large parts of the Linux Kernel with ~70% by now."
-msgstr ""
+msgstr "Une grande partie du noyau Linux, environ 70 % à l'heure actuelle."
 
 #. type: Bullet: '* '
 #: site/content/en/supporters.md
 msgid "[You?](/tutorial/)"
-msgstr ""
+msgstr "[Vous ?](/tutorial/)"
 
 #. type: Plain text
 #: site/content/en/supporters.md
@@ -745,12 +930,14 @@ msgid ""
 "If your community or company has implemented REUSE but is not listed, feel "
 "free to [contact us](/resources/#contact)."
 msgstr ""
+"Si votre communauté ou votre entreprise a mis en place REUSE mais ne figure "
+"pas dans la liste, n'hésitez pas à [nous contacter](/resources/#contact)."
 
 #. type: Title ##
 #: site/content/en/supporters.md
 #, no-wrap
 msgid "Corporate Sponsors"
-msgstr ""
+msgstr "Entreprises Sponsors"
 
 #. type: Plain text
 #: site/content/en/supporters.md
@@ -760,6 +947,12 @@ msgid ""
 "largely improve internal compliance processes, we are happy if corporate "
 "actors contribute back to REUSE."
 msgstr ""
+"Nous invitons chaleureusement les entreprises à adopter et à soutenir REUSE. "
+"Étant donné que de bonnes pratiques normalisées et simples pour déclarer les "
+"informations liées aux droits d'auteur et aux licences améliorent "
+"considérablement les processus internes de respect des contraintes, nous "
+"nous réjouissons lorsque les acteurs professionnels contribuent à leur tour "
+"à REUSE."
 
 #. type: Plain text
 #: site/content/en/supporters.md
@@ -767,12 +960,14 @@ msgid ""
 "If your company is interested in becoming a REUSE sponsor, [please approach "
 "us](/resources/#contact)."
 msgstr ""
+"Si votre entreprise souhaite devenir sponsor de REUSE, [veuillez nous "
+"contacter](/resources/#contact)."
 
 #. type: Plain text
 #: site/content/en/supporters.md
 #, no-wrap
 msgid "{{< supporters >}}\n"
-msgstr ""
+msgstr "{{< supporters >}}\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/faq.md
@@ -784,7 +979,7 @@ msgstr "Foire Aux Questions"
 #: site/content/en/faq.md site/content/en/tutorial.md
 #, no-wrap
 msgid "<!-- REUSE-IgnoreStart -->\n"
-msgstr ""
+msgstr "<!-- REUSE-IgnoreStart -->\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -814,17 +1009,15 @@ msgstr "Je manque de temps. Pouvez-vous me donner le résumé le plus rapide pos
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "We want to improve the way that people license their software projects. "
-#| "We propose three steps to achieve this:"
 msgid ""
 "We want to improve the way that people license their software projects such "
 "that it is **easy, comprehensive, unambiguous, and machine-readable**. We "
 "propose three steps to achieve this:"
 msgstr ""
-"Nous voulons améliorer la façon dont les gens obtiennent des licences pour "
-"leurs projets logiciels. Nous proposons trois étapes pour y parvenir :"
+"Nous voulons améliorer la manière dont les gens mettent leurs projets "
+"logiciels sous licence, afin que ce processus soit **simple, complet, sans "
+"ambiguïté et lisible par machine**. Nous proposons trois étapes pour y "
+"parvenir :"
 
 #. type: Title ##
 #: site/content/en/faq.md site/content/en/tutorial.md
@@ -882,15 +1075,11 @@ msgstr "3. Confirmer la conformité REUSE {#step-3}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Use the [REUSE tool](https://github.com/fsfe/reuse-tool) to automate some "
-#| "of these steps, and to check whether you did everything correctly."
 msgid ""
 "Use the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) to automate some "
 "of these steps, and to check whether you did everything correctly."
 msgstr ""
-"Utilisez l'[outil REUSE](https://github.com/fsfe/reuse-tool) pour "
+"Utilisez l'[outil REUSE](https://codeberg.org/fsfe/reuse-tool) pour "
 "automatiser certaines de ces étapes et pour vérifier si vous avez tout fait "
 "correctement."
 
@@ -902,15 +1091,6 @@ msgstr "Qu'est-ce que SPDX ? {#what-is-spdx}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "SPDX stands for [Software Package Data Exchange](https://spdx.org/). It "
-#| "is a project by the [Linux Foundation](https://www.linuxfoundation.org/) "
-#| "and the rock upon which REUSE is built. SPDX defines a standardized way "
-#| "to share copyright and licensing information between projects and people. "
-#| "Most importantly for REUSE, SPDX maintains the [SPDX License List]"
-#| "(https://spdx.org/licenses/), which defines standardized identifiers for "
-#| "a lot of licenses."
 msgid ""
 "SPDX stands for [Software Package Data Exchange](https://spdx.org/). It is a "
 "project by the [Linux Foundation](https://www.linuxfoundation.org/) and the "
@@ -929,10 +1109,9 @@ msgstr ""
 
 #. type: Title #
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "What is copyright? {#what-is-copyright}"
+#, no-wrap
 msgid "Copyright {#copyright}"
-msgstr "Qu'est-ce que le droit d'auteur ? {#what-is-copyright}"
+msgstr "Copyright {#copyright}"
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -942,12 +1121,6 @@ msgstr "Qu'est-ce que le droit d'auteur ? {#what-is-copyright}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Copyright is a legal construct that grants someone exclusive rights over "
-#| "a creative work. The most important exclusive right is in the name: The "
-#| "right to produce copies. Only the copyright holder is allowed to give new "
-#| "copies of their work to people."
 msgid ""
 "Copyright is a legal construct that grants someone exclusive rights over a "
 "creative work. The most important exclusive right is in the name: The right "
@@ -959,7 +1132,9 @@ msgstr ""
 "des droits exclusifs sur une œuvre de création. Le droit exclusif le plus "
 "important est dans le nom : Le droit de produire des copies. Seul le "
 "titulaire du droit d'auteur est autorisé à donner de nouvelles copies de son "
-"travail aux gens."
+"travail aux gens.Vous n'avez rien à faire pour bénéficier du droit d'auteur. "
+"Dès que vous créez une œuvre, vous en détenez automatiquement le droit "
+"d'auteur."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -994,20 +1169,20 @@ msgstr "Existe-t-il un format standard pour déclarer les droits d'auteur ? {#s
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Generally, we recommend that you use `SPDX-FileCopyrightText: [year] [copyright holder]\n"
-#| "<[contact address]>`. You may choose to drop items except the copyright holder,\n"
-#| "which must always be included. We recommend that you include all items, however.\n"
+#, no-wrap
 msgid ""
 "Generally, we recommend that you use `SPDX-FileCopyrightText: [year] [copyright\n"
 "holder] <[contact address]>`. You may choose to drop items except the copyright\n"
 "holder, which must always be included. We recommend that you include all items,\n"
 "however.\n"
 msgstr ""
-"De manière générale, nous vous recommandons d'utiliser `SPDX-FileCopyrightText : [year] [copyright holder]\n"
-"<[contact address]>`. Vous pouvez supprimer certains éléments si vous le souhaitez, sauf le détenteur des droits d'auteur,\n"
-"qui doit toujours être inclus. Nous vous conseillons cependant d'inclure tous les éléments.\n"
+"Generally, we recommend that you use `SPDX-FileCopyrightText: [année] "
+"[détenteur\n"
+"de droits d'auteur] <[adresse de contact]>`.. Vous pouvez supprimer certains "
+"éléments si vous le souhaitez, sauf le détenteur\n"
+"des droits d'auteur, qui doit toujours être inclus. Nous vous conseillons "
+"cependant\n"
+"d'inclure tous les éléments.\n"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1130,22 +1305,17 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "There are some edge cases, however. For instance, the program "
-#| "`print(\"Hello, REUSE!\")` probably does not meet the threshold of "
-#| "originality. Similarly, data files and configuration files may not meet "
-#| "that threshold either."
 msgid ""
 "There are some edge cases, however. For instance, the program "
 "`print(\"Hello, REUSE!\")` probably does not meet the threshold of "
 "originality. Similarly, data files and configuration files may not meet that "
 "threshold either. For these files, see [this question](#uncopyrightable)."
 msgstr ""
-"Il existe cependant des cas extrêmes. Par exemple, le programme "
-"`print(\"Hello, REUSE!\")` Ne répond probablement pas au seuil "
-"d'originalité. De même, les fichiers de données et les fichiers de "
-"configuration peuvent ne pas atteindre ce seuil non plus."
+"Il existe cependant des cas extrêmes. Par exemple, le programme `print"
+"(\"Hello, REUSE!\")` ne répond probablement pas au seuil d'originalité. De "
+"même, les fichiers de données et les fichiers de configuration peuvent ne "
+"pas atteindre ce seuil non plus. Pour ces fichiers, consultez [cette "
+"question](#uncopyrightable)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1214,10 +1384,9 @@ msgstr ""
 
 #. type: Title #
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Licensing and compliance {#licensing}"
+#, no-wrap
 msgid "Licensing {#licensing}"
-msgstr "Licences et conformité {#licensing}"
+msgstr "Licences {#licensing}"
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1292,18 +1461,6 @@ msgstr "Quelle licence dois-je choisir ? {#which-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Always choose a Free Software license, i.e., a license that gives the "
-#| "recipient the freedom to use, study, share, and improve the software. "
-#| "Aside from that, the license you choose is up to you.  If you are "
-#| "contributing to an existing project, you should release your changes "
-#| "under the same license as the project. Otherwise, the [Free Software "
-#| "Foundation](https://www.gnu.org/licenses/license-recommendations.html), "
-#| "[choosealicense.com](https://choosealicense.com/), and [joinup.eu]"
-#| "(https://joinup.ec.europa.eu/collection/eupl/joinup-licensing-assistant-"
-#| "jla)  have some good recommendations. Note that these resources each "
-#| "emphasise a different value, and come with their own biases."
 msgid ""
 "Always choose a Free Software license, i.e. a license that gives the "
 "recipient the freedom to use, study, share, and improve the software. Aside "
@@ -1321,11 +1478,12 @@ msgstr ""
 "d'améliorer le logiciel. En dehors de cela, la licence que vous choisissez "
 "dépend de vous. Si vous contribuez à un projet existant, vous devez publier "
 "vos modifications sous la même licence que le projet. Sinon, la [Free "
-"Software Foundation](https://www.gnu.org/licenses/license-recommendations."
-"html), [choosealicense.com](https://choosealicense.com/) et [joinup.eu]"
-"(https://joinup.ec.europa.eu/collection/eupl/joinup-licensing-assistant-jla) "
-"ont quelques bonnes recommandations. Notez que ces ressources mettent "
-"chacune l'accent sur une valeur différente et ont leurs propres préjugés."
+"Software Foundation](https://www.gnu.org/licenses/license-"
+"recommendations.html), [choosealicense.com](https://choosealicense.com/) et "
+"[joinup.eu](https://joinup.ec.europa.eu/collection/eupl/joinup-licensing-"
+"assistant-jla) ont quelques bonnes recommandations. Notez que ces ressources "
+"mettent chacune l'accent sur une valeur différente et ont leurs propres "
+"préjugés."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1465,13 +1623,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Additionally, many package hosting sites expect that you declare the "
-#| "licensing information of your package. For instance, the [setup.py file "
-#| "of the REUSE tool](https://github.com/fsfe/reuse-tool/blob/master/setup."
-#| "py) declares all the licenses that it uses in the format expected by the "
-#| "Python packaging infrastructure."
 msgid ""
 "Additionally, many package hosting sites expect that you declare the "
 "licensing information of your package. For instance, the [pyproject.toml "
@@ -1481,9 +1632,10 @@ msgid ""
 msgstr ""
 "De plus, de nombreux sites d'hébergement de packages s'attendent à ce que "
 "vous déclariez les informations de licence de votre package. Par exemple, le "
-"[fichier setup.py de l'outil REUSE](https://github.com/fsfe/reuse-tool/blob/"
-"master/setup.py) déclare toutes les licences qu'il utilise au format attendu "
-"par le Infrastructure d'empaquetage Python."
+"[fichier pyproject.toml de l'outil REUSE](https://github.comcodeberg.org/"
+"fsfe/reuse-tool/blob/master/setup.pysrc/branch/main/pyproject.toml) déclare "
+"toutes les licences qu'il utilise au format attendu par le Infrastructure "
+"d'empaquetage Python."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1543,24 +1695,18 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
 msgid ""
 "Some licenses, such as MIT and the BSD family of licenses, have a line that "
 "says \"Copyright (c) [year] [copyright holder]\". Please see [this question]"
 "(#license-templates) about how to deal with those licenses."
 msgstr ""
 "Certaines licences, tel que la famille de licences MIT et BSD, ont une ligne "
-"indiquant \"Copyright (c) [année] [détenteur du droit d'auteur]\". Veuillez "
+"indiquant \"Copyright (c) [année] [détenteur de droit d'auteur]\". Veuillez "
 "regarder [cette question](#license-templates) liée à la gestion de ces "
 "licences."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "There are many reasons for why you should not alter license texts, but if "
-#| "you do alter the texts, you should use a different SPDX identifier for "
-#| "this license.  See [the previous question](#custom-license)."
 msgid ""
 "There are many reasons for why you should not alter license texts, but if "
 "you do alter the texts, you should use a different SPDX identifier for this "
@@ -1568,8 +1714,8 @@ msgid ""
 msgstr ""
 "Il existe de nombreuses raisons pour lesquelles vous ne devez pas modifier "
 "les textes de licence, mais si vous modifiez les textes, vous devez utiliser "
-"un identifiant SPDX différent pour cette licence. Voir [la question "
-"précédente](#custom-license)."
+"un identifiant SPDX différent pour cette licence. Consultez [cette question]"
+"(#custom-license)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1680,10 +1826,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I install and use the REUSE tool? {#install-tool}"
+#, no-wrap
 msgid "... install the REUSE tool? {#install-tool}"
-msgstr "Comment installer et utiliser l'outil REUSE ? {#install-tool}"
+msgstr "... installer l'outil REUSE ? {#install-tool}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1695,48 +1840,39 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "$ pip3 install --user fsfe-reuse \n"
-#| "$ export PATH=~/.local/bin:$PATH\n"
-#| "$ reuse --help\n"
+#, no-wrap
 msgid ""
 "$ pipx install reuse\n"
 "$ pipx ensurepath\n"
 "$ reuse --help\n"
 msgstr ""
-"$ pip3 install --user fsfe-reuse\n"
-"$ export PATH=~/.local/bin:$PATH\n"
+"$ pipx install reuse\n"
+"$ pipx ensurepath\n"
 "$ reuse --help\n"
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "I am a lawyer and want a bill of materials {#bill-of-materials}"
+#, no-wrap
 msgid "... create a software bill of materials {#bill-of-materials}"
-msgstr "Je suis avocat et je veux une nomenclature {#bill-of-materials}"
+msgstr "... créer une nomenclature logicielle {#bill-of-materials}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project "
-#| "root to create an [SPDX document](https://spdx.org/spdx-specification-21-"
-#| "web-version)."
 msgid ""
 "Install the reuse tool and run `reuse spdx -o reuse.spdx` in the project "
 "root to create an [SPDX document](https://spdx.dev/use/specifications/)."
 msgstr ""
 "Installez l'outil reuse et exécutez `reuse spdx -o reuse.spdx` à la racine "
-"du projet pour créer un [document SPDX](https://spdx.org/spdx-"
-"specification-21-web-version)."
+"du projet pour créer un [document SPDX](https://spdx.dev/use/specifications/)"
+"."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "2. Add copyright and licensing information to each file {#step-2}"
+#, no-wrap
 msgid "... add copyright and licensing information to an uncommentable file? {#uncommentable-file}"
-msgstr "2. Ajouter des informations sur les droits d'auteur et les licences à chaque fichier {#step-2}"
+msgstr ""
+"... ajouter des informations sur les droits d'auteur et les licences à un "
+"fichier impossible à annoter {#uncommentable-file}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1748,14 +1884,8 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "There are two ways to associate Copyright and Licensing Information with "
-#| "a file."
 msgid "There are two ways of associating information with such a file:"
-msgstr ""
-"Il existe deux façons d'associer des informations de droit d'auteur et de "
-"licence à un fichier."
+msgstr "Il existe deux façons d'associer des informations à un tel fichier :"
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
@@ -1775,10 +1905,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Can I bulk-license whole directories? {#bulk-license}"
+#, no-wrap
 msgid "... bulk-license whole directories? {#bulk-license}"
-msgstr "Puis-je utiliser une licence en bloc pour des répertoires entiers ? {#bulk-license}"
+msgstr ""
+"... utiliser une licence en bloc pour des répertoires entiers ? {#bulk-"
+"license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1940,10 +2071,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I copy someone else's work? {#copy-work}"
+#, no-wrap
 msgid "... copy someone else's work? {#copy-work}"
-msgstr "Comment copier le travail de quelqu'un d'autre ? {#copy-work}"
+msgstr "... copier le travail de quelqu'un d'autre ? {#copy-work}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1963,19 +2093,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If the work was licensed differently from your project, you should verify "
-#| "whether the licenses are compatible, and add the new licenses to your "
-#| "project."
 msgid ""
 "If the work was licensed differently from your project, you should [verify "
 "whether the licenses are compatible](#license-compatibility), and add the "
 "new licenses to your project."
 msgstr ""
 "Si l'œuvre a reçu une licence différente de celle de votre projet, vous "
-"devez vérifier si les licences sont compatibles et ajouter les nouvelles "
-"licences à votre projet."
+"devez [vérifier si les licences sont compatibles](#license-compatibility) et "
+"ajouter les nouvelles licences à votre projet."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1992,10 +2117,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Can I copy a work that has no copyright notice or license? {#no-copyright-license}"
+#, no-wrap
 msgid "... copy a work that has no copyright notice or license? {#no-copyright-license}"
-msgstr "Puis-je copier une œuvre sans avis de droit d'auteur ni licence ? {#no-copyright-license}"
+msgstr ""
+"... copier une œuvre sans avis de droit d'auteur ni licence ? {#no-copyright-"
+"license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2043,25 +2169,20 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I exclude a file from REUSE compliance testing? {#exclude-file}"
+#, no-wrap
 msgid "... exclude a file from REUSE compliance testing? {#exclude-file}"
-msgstr "Comment exclure un fichier des tests de conformité REUSE ? {#exclude-file}"
+msgstr "... exclure un fichier des tests de conformité REUSE ? {#exclude-file}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If the file is a build artifact and you use Git, simply make sure that "
-#| "the file is covered by your `.gitignore` file."
 msgid ""
 "If the file is a build artifact and you use Git, simply make sure that the "
 "file is covered by your `.gitignore` file. The same goes for other VCS "
 "ignore mechanisms."
 msgstr ""
 "Si le fichier est un artefact de construction et que vous utilisez Git, "
-"assurez-vous simplement que le fichier est couvert par votre fichier `."
-"gitignore`."
+"assurez-vous simplement que le fichier est couvert par votre fichier "
+"`.gitignore`. Il en va de même pour les mécanismes d'ignorance d'autres VCS."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2076,12 +2197,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If you really want to exclude a file, consider using the [CC0](https://"
-#| "creativecommons.org/publicdomain/zero/1.0/) license for this file. By "
-#| "doing this, you put the file in the public domain, or your country's "
-#| "equivalent."
 msgid ""
 "If you really want to exclude a file, consider using the [CC0-1.0](https://"
 "creativecommons.org/publicdomain/zero/1.0/) license for this file. By doing "
@@ -2089,29 +2204,27 @@ msgid ""
 "(https://fsfe.org/freesoftware/legal/faq.html#public-domain)."
 msgstr ""
 "Si vous voulez vraiment exclure un fichier, envisagez d'utiliser la licence "
-"[CC0](https://creativecommons.org/publicdomain/zero/1.0/) pour ce fichier. "
-"En faisant cela, vous placez le fichier dans le domaine public, ou "
-"l'équivalent de votre pays."
+"[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) pour ce "
+"fichier. En faisant cela, vous placez le fichier dans le [domaine public, ou "
+"l'équivalent de votre pays](https://fsfe.org/freesoftware/legal/"
+"faq.html#public-domain).."
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If you have an entire directory that you want to \"exclude\" from REUSE "
-#| "compliance testing, you can [use a DEP5 file](#bulk-license)."
 msgid ""
 "If you have an entire directory that you want to \"exclude\" from REUSE "
 "compliance testing, you can [use `REUSE.toml`](#bulk-license)."
 msgstr ""
 "Si vous avez un répertoire entier que vous souhaitez «exclure» des tests de "
-"conformité REUSE, vous pouvez [utiliser un fichier DEP5](#bulk-license)."
+"conformité REUSE, vous pouvez [utiliser un fichier `REUSE.toml`](#bulk-"
+"license)."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I exclude a file from REUSE compliance testing? {#exclude-file}"
+#, no-wrap
 msgid "... exclude certain lines from REUSE compliance testing? {#exclude-lines}"
-msgstr "Comment exclure un fichier des tests de conformité REUSE ? {#exclude-file}"
+msgstr ""
+"... exclure certaines lignes des tests de conformité REUSE ? {#exclude-lines}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2170,10 +2283,10 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "What to do with uncopyrightable files? {#uncopyrightable}"
+#, no-wrap
 msgid "... deal with uncopyrightable files? {#uncopyrightable}"
-msgstr "Que faire des fichiers non protégés par le droit d'auteur ? {#uncopyrightable}"
+msgstr ""
+"... gérer les fichiers non soumis au droit d'auteur ? {#uncopyrightable}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2192,38 +2305,25 @@ msgstr ""
 
 #. type: Bullet: '1. '
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "There are two things that you can do with such a file to make sure that "
-#| "its copyright and licensing is recorded. The first option is to simply "
-#| "use your regular copyright and license header for this file. There is "
-#| "nothing that stops you from claiming copyright over your own works. "
-#| "However, a court would still likely find such files uncopyrightable."
 msgid ""
 "Simply use your regular copyright and license for this file. There is "
 "nothing that stops you from \"claiming\" copyright over your own works, even "
 "if a court might hypothetically find such files uncopyrightable."
 msgstr ""
-"Il y a deux choses que vous pouvez faire avec un tel fichier pour vous "
-"assurer que ses droits d'auteur et ses licences sont enregistrés. La "
-"première option consiste simplement à utiliser votre droit d'auteur et votre "
-"en-tête de licence habituels pour ce fichier. Rien ne vous empêche de "
-"revendiquer des droits d'auteur sur vos propres œuvres. Cependant, un "
-"tribunal jugerait toujours que ces fichiers ne sont pas protégés par le "
-"droit d'auteur."
+"Il vous suffit d'utiliser votre droit d'auteur et licence habituels pour ce "
+"fichier. Rien ne vous empêche de \"revendiquer\" des droits d'auteur sur vos "
+"propres œuvres, même dans l'hypothèse où un tribunal estimerait que de tels "
+"fichiers échappent au droit d'auteur."
 
 #. type: Bullet: '2. '
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "The alternative is to waive your copyright by using the [CC0-1.0](https://"
-#| "creativecommons.org/publicdomain/zero/1.0/) license."
 msgid ""
 "Waive your copyright using the [CC0-1.0](https://creativecommons.org/"
 "publicdomain/zero/1.0/) license or another similar public domain dedication."
 msgstr ""
-"L'alternative est de renoncer à vos droits d'auteur en utilisant la licence "
-"[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/)."
+"Renoncez à vos droits d'auteur en utilisant la licence [CC0-1.0](https://"
+"creativecommons.org/publicdomain/zero/1.0/) ou toute autre mise dans le "
+"domaine public similaire."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2244,20 +2344,16 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "It is important to note that you can only do this for your own works. If "
-#| "the file was authored by someone else, you must declare their copyright "
-#| "and license in the header."
 msgid ""
 "It is important to note that you can only apply licenses to your own works. "
 "If the file was authored by someone else, you should declare their copyright "
 "and license in the header. If there is no such information, you should "
 "contact the author."
 msgstr ""
-"Il est important de noter que vous ne pouvez le faire que pour vos propres "
-"œuvres. Si le fichier a été créé par quelqu'un d'autre, vous devez déclarer "
-"ses droits d'auteur et sa licence dans l'en-tête."
+"Il est important de noter que vous ne pouvez appliquer des licences qu'à "
+"propres œuvres. Si le fichier a été créé par quelqu'un d'autre, vous devriez "
+"déclarer ses droits d'auteur et sa licence dans l'en-tête. Si cette "
+"information n'est pas disponible, vous devriez contacter l'auteur."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2348,32 +2444,24 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "A possible way to circumvent the problem is to extract the segment from "
-#| "the file, and to keep it in its own file."
 msgid ""
 "A possible alternative to using snippets is to extract the code block from "
 "the file, and to keep it in its own file."
 msgstr ""
-"Une manière possible de contourner le problème consiste à extraire le "
-"segment du fichier et à le conserver dans son propre fichier."
+"Une alternative possible à l'utilisation de fragments de code consiste à "
+"extraire le bloc de code du fichier et à le conserver dans un fichier "
+"distinct."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I use a license that is not on the SPDX License List? {#custom-license}"
+#, no-wrap
 msgid "... use a license that is not on the SPDX License List? {#custom-license}"
-msgstr "Comment utiliser une licence qui ne figure pas dans la liste des licences SPDX ? {#custom-license}"
+msgstr ""
+"... utiliser une licence qui ne figure pas dans la liste des licences SPDX ? "
+"{#custom-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If you have a custom or modified license that does not appear in the SPDX "
-#| "License List, place your license in the file `LICENSES/LicenseRef-"
-#| "MyLicense.txt`. By naming your license as such, tools that speak SPDX "
-#| "will still be able to recognise your license."
 msgid ""
 "If you have a custom or modified license that does not appear in the SPDX "
 "License List, place your license in the file `LICENSES/LicenseRef-MyLicense."
@@ -2382,9 +2470,9 @@ msgid ""
 msgstr ""
 "Si vous disposez d'une licence personnalisée ou modifiée qui n'apparaît pas "
 "dans la liste des licences SPDX, placez votre licence dans le fichier "
-"`LICENSES/LicenseRef-MyLicense.txt`. En nommant votre licence en tant que "
-"telle, les outils qui parlent SPDX pourront toujours reconnaître votre "
-"licence."
+"`LICENSES/LicenseRef-MyLicense.txt`. En nommant votre licence avec le préfix "
+"`LicenseRef-`, les outils qui parlent SPDX pourront toujours reconnaître "
+"votre licence."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2417,10 +2505,10 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I use a custom exception? {#custom-exception}"
+#, no-wrap
 msgid "... use a custom license exception? {#custom-exception}"
-msgstr "Comment utiliser une exception personnalisée ? {#custom-exception}"
+msgstr ""
+"... utiliser une exception de licence personnalisée ? {#custom-exception}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2434,10 +2522,9 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I properly declare multi-licensing? {#multi-licensing}"
+#, no-wrap
 msgid "... properly declare multi-licensing? {#multi-licensing}"
-msgstr "Comment déclarer correctement les licences multiples ? {#multi-licensing}"
+msgstr "... déclarer correctement les licences multiples ? {#multi-licensing}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2476,12 +2563,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "If all the code within the file is licensed under either one license or "
-#| "another (for instance, all code is under GPL-2.0-only, but one function "
-#| "is under MIT), use separate tags `SPDX-License-Identifier: GPL-2.0-only` "
-#| "and `SPDX-License-Identifier: MIT`."
 msgid ""
 "If all the code within the file is licensed under either one license or "
 "another (for instance, all code is under GPL-2.0-only, but one function is "
@@ -2499,23 +2580,20 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "You can read more about SPDX expressions [on the SPDX wiki](https://wiki."
-#| "spdx.org/view/LicenseExpressionFAQ)."
 msgid ""
 "You can read more about SPDX expressions [in the specification](https://spdx."
 "github.io/spdx-spec/v2.3/SPDX-license-expressions/)."
 msgstr ""
-"Vous pouvez en savoir plus sur les expressions SPDX [sur le wiki SPDX]"
-"(https://wiki.spdx.org/view/LicenseExpressionFAQ)."
+"Pour en savoir plus sur les expressions SPDX, consultez [les spécifications]"
+"(https://spdx.github.io/spdx-spec/v2.3/SPDX-license-expressions/)."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "<!-- ## How to deal with MIT/BSD licenses which include copyright information themselves? {#mit-bsd}\n"
+#, no-wrap
 msgid "... deal with license texts which include copyright statements, like MIT/BSD? {#license-templates}"
-msgstr "<!-- ## Comment gérer les licences MIT/BSD qui incluent elles-mêmes des informations de droit d'auteur ? {#mit-bsd}\n"
+msgstr ""
+"... gérer les textes de licence qui contiennent des mentions de droits "
+"d'auteur, comme les licences MIT ou BSD ? {#license-templates}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2574,10 +2652,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "How do I deal with a file that has been edited by many people? {#many-copyright-statements}"
+#, no-wrap
 msgid "... deal with a file that has been edited by many people? {#many-copyright-statements}"
-msgstr "Comment gérer un fichier qui a été modifié par de nombreuses personnes ? {#many-copyright-statements}"
+msgstr ""
+"... gérer un fichier qui a été modifié par de nombreuses personnes ? {#many-"
+"copyright-statements}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2614,10 +2693,11 @@ msgstr ""
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "<!-- ## Do I really need to include the license and copyright headers in all files? Why should I care? {#why-care}\n"
+#, no-wrap
 msgid "Do I really need to include the license and copyright headers in all files? Why should I care? {#why-care}"
-msgstr "<!-- ## Dois-je vraiment inclure les en-têtes de licence et de droits d'auteur dans tous les fichiers ? Pourquoi devrais-je m'en soucier ? {#why-care}\n"
+msgstr ""
+"Dois-je vraiment inclure les en-têtes de licence et de droits d'auteur dans "
+"tous les fichiers ? Pourquoi devrais-je m'en soucier ? {#why-care}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2741,40 +2821,33 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "Why can't I just use version control to record copyright? {#vcs-copyright}"
 msgid ""
 "This question is also related to [why we cannot use version control to "
 "record copyright](#vcs-copyright)."
 msgstr ""
-"Pourquoi ne puis-je pas simplement utiliser le contrôle de version pour "
-"enregistrer les droits d'auteur ? {#vcs-copyright}"
+"Cette question est également liée à [la raison pour laquelle nous ne pouvons "
+"pas utiliser un système de contrôle de version pour enregistrer les droits "
+"d'auteur](#vcs-copyright)."
 
 #. type: Title ##
 #: site/content/en/faq.md
-#, fuzzy, no-wrap
-#| msgid "Why can't I just use version control to record copyright? {#vcs-copyright}"
+#, no-wrap
 msgid "Why doesn't REUSE use version control to record copyright? {#vcs-copyright}"
-msgstr "Pourquoi ne puis-je pas simplement utiliser le contrôle de version pour enregistrer les droits d'auteur ? {#vcs-copyright}"
+msgstr ""
+"Pourquoi REUSE n'utilise pas de contrôle de version pour enregistrer les "
+"droits d'auteur ? {#vcs-copyright}"
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "In [a previous question](#copyright-holder-author), we distinguished "
-#| "between copyright holders and authors, which are not always the same. "
-#| "Version control typically only records authorship, which makes it "
-#| "unsuitable for the task of recording copyright."
 msgid ""
 "In [a different question](#copyright-holder-author), we distinguish between "
 "copyright holders and authors, which are not always the same. Version "
 "control typically only records authorship, which makes it unsuitable for the "
 "task of recording copyright."
 msgstr ""
-"Dans [une question précédente](#copyright-holder-author), nous avons fait "
-"une distinction entre les détenteurs de droits d'auteur et les auteurs, qui "
-"ne sont pas toujours les mêmes. Le contrôle de version n'enregistre "
+"Dans [une autre question](#copyright-holder-author), nous faisons la "
+"distinction entre les détenteurs de droits d'auteur et les auteurs, qui ne "
+"sont pas toujours les mêmes. Le contrôle de version n'enregistre "
 "généralement que l'auteur, ce qui le rend impropre à la tâche "
 "d'enregistrement des droits d'auteur."
 
@@ -2792,12 +2865,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/faq.md
-#, fuzzy
-#| msgid ""
-#| "A further issue with version control is that the `blame` command that is "
-#| "typically (mis)used to find authorship line-by-line shows only the author "
-#| "of the last commit in that line, even if it was just something as trivial "
-#| "as fixing a typo."
 msgid ""
 "A further issue with version control is that the `blame` command that is "
 "typically (mis)used to find authorship line-by-line shows only the author of "
@@ -2808,7 +2875,7 @@ msgstr ""
 "qui est généralement (mal) utilisée pour trouver l'auteur ligne par ligne "
 "montre uniquement l'auteur du dernier commit dans cette ligne, même si "
 "c'était juste quelque chose d'aussi trivial que de réparer une faute de "
-"frappe."
+"frappe, ou déplacer un bloc de code à un autre endroit."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2909,12 +2976,6 @@ msgstr "Tutoriel : Comment devenir conforme à REUSE"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "This tutorial explains the basic methods of how to make a software "
-#| "project REUSE-compliant. By the end of this document, all your files will "
-#| "clearly have their copyright and licensing marked, and you will be able "
-#| "to verify this using the REUSE helper tool."
 msgid ""
 "This tutorial explains the basics of making a software project REUSE-"
 "compliant.  The goal is to **easily, comprehensively, and unambiguously** "
@@ -2922,10 +2983,11 @@ msgid ""
 "By the end of this tutorial, you will understand the three fundamental steps "
 "of REUSE:"
 msgstr ""
-"Ce tutoriel explique les méthodes de base permettant de rendre un projet "
-"logiciel conforme à REUSE. À la fin de ce document, tous vos fichiers auront "
-"clairement leurs droits d'auteur et licences marqués, et vous pourrez le "
-"vérifier à l'aide de l'outil d'assistance REUSE."
+"Ce tutoriel explique les bases permettant de rendre un projet logiciel "
+"conforme à REUSE. L'objectif est de déclarer **de manière simple, exhaustive "
+"et sans ambiguïté** vos droits d'auteur et votre licence, dans un format "
+"**lisible par machine**. À l'issue de ce tutoriel, vous maîtriserez les "
+"trois étapes fondamentales de la norme REUSE :"
 
 #. type: Bullet: '1. '
 #: site/content/en/tutorial.md
@@ -2954,17 +3016,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "project/\n"
-#| "├── img/\n"
-#| "│   ├── cat.jpg\n"
-#| "│   └── dog.jpg\n"
-#| "├── src/\n"
-#| "│   └── main.c\n"
-#| "├── .gitignore\n"
-#| "├── Makefile\n"
-#| "└── README.md\n"
+#, no-wrap
 msgid ""
 "project/\n"
 "├── src/\n"
@@ -2973,23 +3025,13 @@ msgid ""
 "└── README.md\n"
 msgstr ""
 "project/\n"
-"├── img/\n"
-"│   ├── cat.jpg\n"
-"│   └── dog.jpg\n"
 "├── src/\n"
 "│   └── main.c\n"
-"├── .gitignore\n"
 "├── Makefile\n"
 "└── README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "If you would like to reproduce the steps in this tutorial on your own "
-#| "computer, you can clone the [example repository](https://github.com/fsfe/"
-#| "reuse-example). The branch `noncompliant` matches the structure above, "
-#| "while the `master` branch is the successful result of this repository."
 msgid ""
 "If you would like to reproduce the steps in this tutorial on your own "
 "computer, you can clone the [example repository](https://codeberg.org/fsfe/"
@@ -2998,20 +3040,13 @@ msgid ""
 "tutorial."
 msgstr ""
 "Si vous souhaitez reproduire les étapes de ce tutoriel sur votre propre "
-"ordinateur, vous pouvez cloner le [répertoire d'exemple](https://github.com/"
-"fsfe/reuse-example). La branche `noncompliant` correspond à la structure ci-"
-"dessus, tandis que la branche `master` est le résultat réussi de ce "
-"répertoire."
+"ordinateur, vous pouvez cloner le [répertoire d'exemple](https://"
+"codeberg.org/fsfe/reuse-tutorial-example). La branche `non-compliant` "
+"correspond à la structure ci-dessus, tandis que la branche `compliant` est "
+"le résultat réussi de ce tutoriel."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "For each of these steps, you will first learn how to achieve them "
-#| "manually. However, the [REUSE helper tool](https://github.com/fsfe/reuse-"
-#| "tool) supports you with most tasks, and the necessary commands will be "
-#| "listed as well in the collapsible boxes. We recommend to first understand "
-#| "the basic principle before just executing the tool's commands."
 msgid ""
 "For each of these steps, you will first learn how to achieve them manually.  "
 "However, the [REUSE tool](https://codeberg.org/fsfe/reuse-tool) supports you "
@@ -3020,10 +3055,10 @@ msgid ""
 "before just executing the tool's commands."
 msgstr ""
 "Pour chacune de ces étapes, vous apprendrez d'abord à les réaliser "
-"manuellement. Cependant, l'[utilitaire REUSE](https://github.com/fsfe/reuse-"
-"tool) vous assiste dans la plupart des tâches, et les commandes nécessaires "
-"seront également répertoriées dans les cases réductibles. Nous vous "
-"recommandons de comprendre d'abord le principe de base avant d'exécuter "
+"manuellement. Cependant, l'[utilitaire REUSE](https://codeberg.org/fsfe/"
+"reuse-tool) vous assiste dans la plupart des tâches, et les commandes "
+"nécessaires seront également répertoriées dans les cases réductibles. Nous "
+"vous recommandons de comprendre d'abord le principe de base avant d'exécuter "
 "simplement les commandes de l'outil."
 
 #. type: Plain text
@@ -3042,13 +3077,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "You find your license in the [SPDX License List](https://spdx.org/"
-#| "licenses/).  SPDX is an open standard for communicating license and "
-#| "copyright information.  Each license is uniquely identified by a "
-#| "shortform [SPDX License Identifier](https://spdx.org/licenses). The SPDX "
-#| "License Identifier for your chosen license is GPL-3.0-or-later."
 msgid ""
 "Find your license in the [SPDX License List](https://spdx.org/licenses/). "
 "SPDX is an open standard for communicating license and copyright "
@@ -3056,12 +3084,12 @@ msgid ""
 "Identifier. The SPDX License Identifier for your chosen license is `GPL-3.0-"
 "or-later`."
 msgstr ""
-"Vous trouvez votre licence dans la [Liste des licences SPDX](https://spdx."
-"org/licenses/). SPDX est une norme ouverte pour la communication des "
+"Trouvez votre licence dans la [Liste des licences SPDX](https://spdx.org/"
+"licenses/). SPDX est une norme ouverte pour la communication des "
 "informations de licence et de droit d'auteur. Chaque licence est identifiée "
-"de manière unique par un raccourci [Identificateur de licence SPDX](https://"
-"spdx.org/licenses). L'identifiant de licence SPDX pour la licence choisie "
-"est GPL-3.0-or-later."
+"de manière unique par un raccourci identificateur de licence SPDX. "
+"L'identifiant de licence SPDX de la licence que vous avez choisie est `GPL-"
+"3.0-or-later`."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3083,13 +3111,6 @@ msgstr "{{< box-tool >}}\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "The `reuse download` command enables you to download a specific license. "
-#| "`reuse download GPL-3.0-or-later` would fulfil the task described in the "
-#| "manual instructions above. Running `reuse download --all` automatically "
-#| "downloads all licenses which the REUSE helper tool detects as being used "
-#| "in your project."
 msgid ""
 "[The `reuse download` command](https://reuse.readthedocs.io/en/stable/man/"
 "reuse-download.html) enables you to download a specific license. `reuse "
@@ -3097,11 +3118,12 @@ msgid ""
 "instructions above. Running `reuse download --all` automatically downloads "
 "all licenses which the REUSE tool detects as being used in your project."
 msgstr ""
-"La commande `reuse download` vous permet de télécharger une licence "
-"spécifique. `reuse download GPL-3.0-or-later` remplirait la tâche décrite "
-"dans les instructions du manuel ci-dessus. L'exécution de `reuse download --"
-"all` télécharge automatiquement toutes les licences que l'outil d'assistance "
-"REUSE détecte comme étant utilisées dans votre projet."
+"[La commande `reuse download`](https://reuse.readthedocs.io/en/stable/man/"
+"reuse-download.html) vous permet de télécharger une licence spécifique. "
+"`reuse download GPL-3.0-or-later` remplirait la tâche décrite dans les "
+"instructions du manuel ci-dessus. L'exécution de `reuse download --all` "
+"télécharge automatiquement toutes les licences que l'outil REUSE détecte "
+"comme étant utilisées dans votre projet."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3111,29 +3133,18 @@ msgstr "{{< /box-tool >}}\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "Now that you have a license, you need to indicate in the relevant files "
-#| "that these files fall under that license. You edit the comment header of "
-#| "`src/main.c` as such:"
 msgid ""
 "Now that you have a license, you need to indicate in the relevant files that "
 "these files fall under that license. Edit the comment header of `src/main.c` "
 "as such:"
 msgstr ""
 "Maintenant que vous disposez d'une licence, vous devez indiquer dans les "
-"fichiers correspondants que ces fichiers relèvent de cette licence. Vous "
-"modifiez l'en-tête de commentaire de `src/main.c` comme tel :"
+"fichiers correspondants que ces fichiers relèvent de cette licence. Modifiez "
+"l'en-tête de commentaire de `src/main.c` comme tel :"
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "/*\n"
-#| " * SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-#| " *\n"
-#| " * SPDX-License-Identifier: GPL-3.0-or-later\n"
-#| " */\n"
+#, no-wrap
 msgid ""
 "/*\n"
 " * SPDX-FileCopyrightText: 2024 Jane Doe <jane@example.com>\n"
@@ -3142,28 +3153,26 @@ msgid ""
 " */\n"
 msgstr ""
 "/*\n"
-" * SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
+" * SPDX-FileCopyrightText: 2024 Jane Doe <jane@example.com>\n"
 " *\n"
 " * SPDX-License-Identifier: GPL-3.0-or-later\n"
 " */\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "The `SPDX-FileCopyrightText` tag records the publication years and copyright holder of\n"
-#| "the contents of the file. You can read more about [which publication years to\n"
-#| "use]({{< relref \"faq.md#years-copyright\" >}}) and [what copyright holders\n"
-#| "are]({{< relref \"faq.md#copyright-holder-author\" >}}) in the FAQ.\n"
+#, no-wrap
 msgid ""
 "The `SPDX-FileCopyrightText` tag records the publication years and copyright\n"
 "holder of the contents of the file. You can read more about [which publication\n"
 "years to use]({{< relref \"faq.md#years-copyright\" >}}) and [what copyright\n"
 "holders are]({{< relref \"faq.md#copyright-holder-author\" >}}) in the FAQ.\n"
 msgstr ""
-"La balise `SPDX-FileCopyrightText` enregistre les années de publication et le titulaire du droit d'auteur du\n"
-"contenu du fichier. Vous pouvez en savoir plus sur [les années de publication à\n"
-"utiliser]({{< relref \"faq.md#years-copyright\" >}}) et [quels sont les titulaires de droits \n"
+"La balise `SPDX-FileCopyrightText` enregistre les années de publication et "
+"le titulaire du droit d'auteur du\n"
+"contenu du fichier. Vous pouvez en savoir plus sur [les années de "
+"publication à\n"
+"utiliser]({{< relref \"faq.md#years-copyright\" >}}) et [quels sont les "
+"titulaires de droits \n"
 "d'auteur]({{< relref \"faq.md#copyright-holder-author\" >}}) dans la FAQ.\n"
 
 #. type: Plain text
@@ -3179,19 +3188,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "Each file must always contain these two tags in the header. You are "
-#| "allowed to use the tags multiple times if you have multiple copyright "
-#| "holders or licenses."
 msgid ""
 "Each file must always contain these two tags in the header. You are allowed "
 "to use the `SPDX-FileCopyrightText` tag multiple times if you have multiple "
 "copyright holders."
 msgstr ""
 "Chaque fichier doit toujours contenir ces deux balises dans l'en-tête. Vous "
-"êtes autorisé à utiliser les balises plusieurs fois si vous avez plusieurs "
-"détenteurs de droits d'auteur ou licences."
+"êtes autorisé à utiliser la balise `SPDX-FileCopyrightText` plusieurs fois "
+"si vous avez plusieurs détenteurs de droits d'auteur."
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3205,26 +3209,23 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/tutorial.md
-#, fuzzy
-#| msgid ""
-#| "The `reuse addheader` command helps with adding licensing and copyright "
-#| "information to your files. For the task above, the following command "
-#| "would do the job:"
 msgid ""
 "[The `reuse annotate` command](https://reuse.readthedocs.io/en/stable/man/"
 "reuse-annotate.html) helps with adding licensing and copyright information "
 "to your files. For the task above, the following command will do the job:"
 msgstr ""
-"La commande `reuse addheader` aide à ajouter des informations de licence et "
-"de droit d'auteur à vos fichiers. Pour la tâche ci-dessus, la commande "
-"suivante ferait le travail :"
+"[La commande `reuse annotate`](https://reuse.readthedocs.io/en/stable/man/"
+"reuse-annotate.html) aide à ajouter des informations de licence et de droit "
+"d'auteur à vos fichiers. Pour la tâche ci-dessus, la commande suivante fera "
+"le travail :"
 
 #. type: Fenced code block (bash)
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid "reuse addheader --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
+#, no-wrap
 msgid "reuse annotate --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
-msgstr "reuse addheader --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-3.0-or-later\" src/main.c Makefile README.md\n"
+msgstr ""
+"reuse annotate --copyright=\"Jane Doe <jane@example.com>\" --license=\"GPL-"
+"3.0-or-later\" src/main.c Makefile README.md\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -3236,17 +3237,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "project/\n"
-#| "├── img/\n"
-#| "│   ├── cat.jpg\n"
-#| "│   └── dog.jpg\n"
-#| "├── src/\n"
-#| "│   └── main.c\n"
-#| "├── .gitignore\n"
-#| "├── Makefile\n"
-#| "└── README.md\n"
+#, no-wrap
 msgid ""
 "project/\n"
 "├── LICENSES/\n"
@@ -3257,12 +3248,10 @@ msgid ""
 "└── README.md\n"
 msgstr ""
 "project/\n"
-"├── img/\n"
-"│   ├── cat.jpg\n"
-"│   └── dog.jpg\n"
+"├── LICENSES/\n"
+"│   └── GPL-3.0-or-later.txt\n"
 "├── src/\n"
 "│   └── main.c\n"
-"├── .gitignore\n"
 "├── Makefile\n"
 "└── README.md\n"
 
@@ -3285,23 +3274,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/tutorial.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "$ cd path/to/project/\n"
-#| "$ reuse lint\n"
-#| "# SUMMARY\n"
-#| "\n"
-#| "* Bad licenses:\n"
-#| "* Deprecated licenses:\n"
-#| "* Licenses without file extension:\n"
-#| "* Missing licenses:\n"
-#| "* Unused licenses:\n"
-#| "* Used licenses: CC-BY-4.0, CC0-1.0, GPL-3.0-or-later\n"
-#| "* Read errors: 0\n"
-#| "* Files with copyright information: 6 / 6\n"
-#| "* Files with license information: 6 / 6\n"
-#| "\n"
-#| "Congratulations! Your project is compliant with version 3.0 of the REUSE Specification :-)\n"
+#, no-wrap
 msgid ""
 "$ reuse lint\n"
 "\n"
@@ -3319,22 +3292,22 @@ msgid ""
 "\n"
 "Congratulations! Your project is compliant with version 3.2 of the REUSE Specification :-)\n"
 msgstr ""
-"$ cd chemin/vers/le/projet/\n"
 "$ reuse lint\n"
-"# SUMMARY\n"
 "\n"
-"* Bad licenses:\n"
-"* Deprecated licenses:\n"
-"* Licenses without file extension:\n"
-"* Missing licenses:\n"
-"* Unused licenses:\n"
-"* Used licenses: CC-BY-4.0, CC0-1.0, GPL-3.0-or-later\n"
-"* Read errors: 0\n"
-"* Files with copyright information: 6 / 6\n"
-"* Files with license information: 6 / 6\n"
+"# RÉSUMÉ\n"
 "\n"
+"* Licences invalides : 0\n"
+"* Licences obsolètes : 0\n"
+"* Licences sans extension de fichier : 0\n"
+"* Licences manquantes : 0\n"
+"* Licences inutilisées : 0\n"
+"* Licences utilisées : GPL-3.0-or-later\n"
+"* Erreurs de lecture : 0\n"
+"* Fichiers contenant des informations de droits d'auteur : 3 / 3\n"
+"* Fichiers contenant des informations de licence : 3 / 3\n"
 "\n"
-"Congratulations! Your project is compliant with version 3.0 of the REUSE Specification :-)\n"
+"Félicitations ! Votre projet est conforme à la version 3.2 de la "
+"spécification REUSE :-)\n"
 
 #. type: Plain text
 #: site/content/en/tutorial.md
@@ -4371,7 +4344,7 @@ msgid ""
 "available on <https://spdx.org/licenses/>."
 msgstr ""
 "Liste des licences SPDX --- une liste des licences et exceptions les plus "
-"courantes; disponible sur <https://spdx.org/licenses/>."
+"courantes ; disponible sur <https://spdx.org/licenses/>."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.0.md
@@ -4438,20 +4411,13 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy
-#| msgid ""
-#| "If a license does not exist in the SPDX License List, its SPDX License "
-#| "Identifier MUST be `LicenseRef-[idstring]` as defined by the SPDX "
-#| "Specification, Section 6 available at <https://spdx.org/spdx-"
-#| "specification-21-web-version#h.1v1yuxt>."
 msgid ""
 "If a license does not exist in the SPDX License List, its SPDX Identifier "
 "MUST be `LicenseRef-[idstring]` as defined by the SPDX Specification."
 msgstr ""
 "Si une licence n'existe pas dans la liste des licences SPDX, son identifiant "
-"de licence SPDX DOIT être `LicenseRef-[idstring]` tel que défini par la "
-"spécification SPDX, section 6 disponible sur <https://spdx.org/spdx-"
-"specification-21-web-version#h.1v1yuxt>."
+"SPDX DOIT être `LicenseRef-[idstring]` tel que défini par la spécification "
+"SPDX."
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -4585,12 +4551,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
-#| msgid "The `SPDX-FileCopyrightText` tag MUST be followed by a copyright notice."
+#, no-wrap
 msgid ""
 "The `SPDX-FileCopyrightText` tag MUST be followed by a copyright notice as described\n"
 "in <!-- FIXME: Refer to an internal section -->.\n"
-msgstr "La balise `SPDX-FileCopyrightText` DOIT être suivie d'une notice de droit d'auteur."
+msgstr ""
+"La balise `SPDX-FileCopyrightText` DOIT être suivie d'une déclaration de "
+"droit d'auteur comme décrit\n"
+"dans <!-- FIXME : se reporter à une section interne -->.\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
@@ -4676,12 +4644,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md
-#, fuzzy, no-wrap
-#| msgid "The `Copyright` tag MUST be followed by a copyright notice."
+#, no-wrap
 msgid ""
 "The `Copyright` tag MUST be followed by a copyright notice as described in <!--\n"
 "FIXME: Refer to an internal section -->.\n"
-msgstr "La balise `Copyright` DOIT être suivie d'un avis de droit d'auteur."
+msgstr ""
+"La balise `Copyright` DOIT être suivie d'un avis de droit d'auteur comme "
+"décrit dans <!--\n"
+"FIXME: Refer to an internal section -->..\n"
 
 #. type: Plain text
 #: site/content/en/spec-3.0.md site/content/en/spec-3.2.md
@@ -4833,12 +4803,12 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "- License File --- a file containing the text of a license."
 msgid ""
 "License File --- a file containing the text of a license, as defined in "
 "[License Files](#license-files)."
-msgstr "- Fichier de licence --- un fichier contenant le texte d'une licence."
+msgstr ""
+"Fichier de licence --- un fichier contenant le texte d'une licence, comme "
+"défini dans [Fichiers de licence](#license-files)."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -4932,13 +4902,6 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "DEP5 --- [Machine-readable `debian/copyright` file, Version 1.0](https://"
-#| "www.debian.org/doc/packaging-manuals/copyright-format/1.0/).  Where the "
-#| "REUSE Specification and DEP5 state different things, the REUSE "
-#| "Specification takes precedence. Specifically in the case of the "
-#| "`Copyright` and `License` tags."
 msgid ""
 "DEP5 --- Machine-readable `debian/copyright` file, Version 1.0; as available "
 "at <https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/> and "
@@ -4946,11 +4909,11 @@ msgid ""
 "Specification and DEP5 state different things, the REUSE Specification takes "
 "precedence."
 msgstr ""
-"DEP5 --- [fichier `debian/copyright` lisible par machine, version 1.0]"
-"(https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/). "
-"Lorsque la spécification REUSE et DEP5 indiquent des choses différentes, la "
-"spécification REUSE a la priorité. Plus précisément dans le cas des balises "
-"`Copyright` et `License`."
+"DEP5 --- fichier `debian/copyright` lisible par machine, version 1.0 ; "
+"disponible à l'adresse <https://www.debian.org/doc/packaging-manuals/"
+"copyright-format/1.0/> et défini plus en détail dans [DEP5 (obsolète)](#dep5-"
+"deprecated). Lorsque la spécification REUSE et DEP5 indiquent des choses "
+"différentes, la spécification REUSE a la priorité."
 
 #. type: Bullet: '- '
 #: site/content/en/spec-3.2.md
@@ -5075,17 +5038,14 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "A Project MUST NOT include License Files for licenses under which none of "
-#| "the files in the Project are licensed."
 msgid ""
 "A Project MUST NOT include License Files for licenses under which none of "
 "the files in the Project are licensed. The `LICENSES/` directory MUST NOT "
 "include any other files."
 msgstr ""
 "Un projet NE DOIT PAS inclure de fichiers de licence pour les licences sous "
-"lesquelles aucun des fichiers du projet n'est concédé."
+"lesquelles aucun des fichiers du projet n'est concédé. Le dossier `LICENSES/"
+"` NE DOIT PAS contenir d'autres fichiers."
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
@@ -5228,13 +5188,6 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid ""
-#| "The `SPDX-License-Identifier` tag MUST be followed by a valid SPDX "
-#| "License Expression describing the licensing of the file (example: `SPDX-"
-#| "License-Identifier: GPL-3.0-or-later OR Apache-2.0`). If separate "
-#| "sections of the file are licensed differently, a different `SPDX-License-"
-#| "Identifier` tag MUST be included for each section."
 msgid ""
 "The `SPDX-License-Identifier` tag MUST be followed by a valid SPDX License "
 "Expression describing the licensing of the file (example: `SPDX-License-"
@@ -5242,18 +5195,11 @@ msgid ""
 msgstr ""
 "La balise `SPDX-License-Identifier` DOIT être suivie d'une expression de "
 "licence SPDX valide décrivant la licence du fichier (exemple :` SPDX-License-"
-"Identifier: GPL-3.0-or-later OU Apache-2.0`). Si des sections distinctes du "
-"fichier ont une licence différente, une étiquette `SPDX-License-Identifier` "
-"différente DOIT être incluse pour chaque section."
+"Identifier: GPL-3.0-or-later OU Apache-2.0`)."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2016, 2018-2019 Jane Doe <jane@example.com>\n"
-#| "# SPDX-FileCopyrightText: 2019 Example Company\n"
-#| "#\n"
-#| "# SPDX-License-Identifier: GPL-3.0-or-later\n"
+#, no-wrap
 msgid ""
 "# SPDX-FileCopyrightText: 2016, 2018-2019 Jane Doe <jane@example.com>\n"
 "# SPDX-FileCopyrightText: 2019 Example Organisation\n"
@@ -5261,7 +5207,7 @@ msgid ""
 "# SPDX-License-Identifier: GPL-3.0-or-later\n"
 msgstr ""
 "# SPDX-FileCopyrightText: 2016, 2018-2019 Jane Doe <jane@example.com>\n"
-"# SPDX-FileCopyrightText: 2019 Example Company\n"
+"# SPDX-FileCopyrightText: 2019 Example Organisation\n"
 "#\n"
 "# SPDX-License-Identifier: GPL-3.0-or-later\n"
 
@@ -5296,11 +5242,7 @@ msgstr ""
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-#| "#\n"
-#| "# SPDX-License-Identifier: CC0-1.0\n"
+#, no-wrap
 msgid ""
 "# SPDX-SnippetBegin\n"
 "# SPDX-SnippetCopyrightText: 2022 Jane Doe <jane@example.com>\n"
@@ -5310,9 +5252,13 @@ msgid ""
 "\n"
 "# SPDX-SnippetEnd\n"
 msgstr ""
-"# SPDX-FileCopyrightText: 2019 Jane Doe <jane@example.com>\n"
-"#\n"
-"# SPDX-License-Identifier: CC0-1.0\n"
+"# SPDX-SnippetBegin\n"
+"# SPDX-SnippetCopyrightText: 2022 Jane Doe <jane@example.com>\n"
+"# SPDX-License-Identifier: MIT\n"
+"\n"
+"print(\"Hello, world!\")\n"
+"\n"
+"# SPDX-SnippetEnd\n"
 
 #. type: Title ####
 #: site/content/en/spec-3.2.md
@@ -5333,10 +5279,8 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "An example of a DEP5 file:"
 msgid "An example for an ignored block:"
-msgstr "Un exemple de fichier DEP5 :"
+msgstr "Exemple de bloc ignoré :"
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
@@ -5520,10 +5464,8 @@ msgstr ""
 
 #. type: Plain text
 #: site/content/en/spec-3.2.md
-#, fuzzy
-#| msgid "An example of a DEP5 file:"
 msgid "An example of a `REUSE.toml` file:"
-msgstr "Un exemple de fichier DEP5 :"
+msgstr "Un exemple d'un fichier `REUSE.toml` :"
 
 #. type: Fenced code block (toml)
 #: site/content/en/spec-3.2.md
@@ -5578,16 +5520,7 @@ msgstr "La balise `Copyright` DOIT être suivie d'un avis de droit d'auteur."
 
 #. type: Fenced code block
 #: site/content/en/spec-3.2.md
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-#| "Upstream-Name: Project\n"
-#| "Upstream-Contact: Jane Doe <jane@example.com>\n"
-#| "Source: https://example.com/jane/project\n"
-#| "\n"
-#| "Files: po/*\n"
-#| "Copyright: 2019 Translation Company\n"
-#| "License: GPL-3.0-or-later\n"
+#, no-wrap
 msgid ""
 "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
 "\n"
@@ -5600,13 +5533,14 @@ msgid ""
 "License: CC0-1.0\n"
 msgstr ""
 "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n"
-"Upstream-Name: Project\n"
-"Upstream-Contact: Jane Doe <jane@example.com>\n"
-"Source: https://example.com/jane/project\n"
 "\n"
-"Files: po/*\n"
+"Files: po/*.po po/*.pot\n"
 "Copyright: 2019 Translation Company\n"
 "License: GPL-3.0-or-later\n"
+"\n"
+"Files: tests/resources/*\n"
+"Copyright: 2019 Jane Doe\n"
+"License: CC0-1.0\n"
 
 #. type: Title ##
 #: site/content/en/spec-3.2.md
