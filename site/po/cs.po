@@ -3675,11 +3675,11 @@ msgstr ""
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
 msgid ""
-"or [sending an email to the FSFE](https://fsfe.org/contact). Please note "
+"or [sending an email to the FSFE](https://fsfe.org/about/contact.html). Please note "
 "that we would prefer issues because they are publicly searchable for other "
 "people."
 msgstr ""
-"nebo [zasláním e-mailu na adresu FSFE](https://fsfe.org/contact). Vezměte "
+"nebo [zasláním e-mailu na adresu FSFE](https://fsfe.org/about/contact.html). Vezměte "
 "prosím na vědomí, že bychom upřednostňovali vydání, protože jsou veřejně "
 "vyhledatelná pro další osoby."
 
