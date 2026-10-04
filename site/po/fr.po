@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: translators@lists.fsfe.org\n"
 "POT-Creation-Date: 2025-11-27 19:03+0000\n"
-"PO-Revision-Date: 2026-08-11 00:51+0000\n"
+"PO-Revision-Date: 2026-10-04 12:52+0000\n"
 "Last-Translator: Tino Tempesta <foxort@fsfe.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/fsfe/reuse-"
 "website-markdown/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: site/content/en/comparison.md
@@ -1702,6 +1702,8 @@ msgid ""
 "However, in addition to that, you can keep your `LICENSE`/`COPYING` file if "
 "you want. See [this question](#tradition)."
 msgstr ""
+"Cela dit, vous pouvez tout de même conserver votre fichier `LICENSE`/"
+"`COPYING` si vous le souhaitez. Voir [cette question](#tradition)."
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -1861,13 +1863,13 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "How do I ... {#howto}"
-msgstr ""
+msgstr "Comment… {#howto}"
 
 #. type: Title ##
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... install the REUSE tool? {#install-tool}"
-msgstr "... installer l'outil REUSE ? {#install-tool}"
+msgstr "… installer l'outil REUSE ? {#install-tool}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1893,7 +1895,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... create a software bill of materials {#bill-of-materials}"
-msgstr "... créer une nomenclature logicielle {#bill-of-materials}"
+msgstr "… créer une nomenclature logicielle ? {#bill-of-materials}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1910,8 +1912,8 @@ msgstr ""
 #, no-wrap
 msgid "... add copyright and licensing information to an uncommentable file? {#uncommentable-file}"
 msgstr ""
-"... ajouter des informations sur les droits d'auteur et les licences à un "
-"fichier impossible à annoter {#uncommentable-file}"
+"… ajouter des informations sur les droits d'auteur et les licences à un "
+"fichier impossible à annoter ? {#uncommentable-file}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -1947,8 +1949,7 @@ msgstr ""
 #, no-wrap
 msgid "... bulk-license whole directories? {#bulk-license}"
 msgstr ""
-"... utiliser une licence en bloc pour des répertoires entiers ? {#bulk-"
-"license}"
+"… utiliser une licence en bloc pour des répertoires entiers ? {#bulk-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2031,7 +2032,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... override erroneous REUSE information? {#override-info}"
-msgstr ""
+msgstr "… remplacer des informations REUSE erronées ? {#override-info}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2068,6 +2069,8 @@ msgstr ""
 #, no-wrap
 msgid "... add additional REUSE information to a file without editing the header? {#aggregate-info}"
 msgstr ""
+"… ajouter davantage d'informations REUSE à un fichier sans modifier l'en-"
+"tête ? {#aggregate-info}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2112,7 +2115,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... copy someone else's work? {#copy-work}"
-msgstr "... copier le travail de quelqu'un d'autre ? {#copy-work}"
+msgstr "… copier le travail de quelqu'un d'autre ? {#copy-work}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2159,7 +2162,7 @@ msgstr ""
 #, no-wrap
 msgid "... copy a work that has no copyright notice or license? {#no-copyright-license}"
 msgstr ""
-"... copier une œuvre sans avis de droit d'auteur ni licence ? {#no-copyright-"
+"… copier une œuvre sans avis de droit d'auteur ni licence ? {#no-copyright-"
 "license}"
 
 #. type: Plain text
@@ -2210,7 +2213,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... exclude a file from REUSE compliance testing? {#exclude-file}"
-msgstr "... exclure un fichier des tests de conformité REUSE ? {#exclude-file}"
+msgstr "… exclure un fichier des tests de conformité REUSE ? {#exclude-file}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2263,7 +2266,7 @@ msgstr ""
 #, no-wrap
 msgid "... exclude certain lines from REUSE compliance testing? {#exclude-lines}"
 msgstr ""
-"... exclure certaines lignes des tests de conformité REUSE ? {#exclude-lines}"
+"… exclure certaines lignes des tests de conformité REUSE ? {#exclude-lines}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2324,8 +2327,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... deal with uncopyrightable files? {#uncopyrightable}"
-msgstr ""
-"... gérer les fichiers non soumis au droit d'auteur ? {#uncopyrightable}"
+msgstr "… gérer les fichiers non soumis au droit d'auteur ? {#uncopyrightable}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2399,6 +2401,8 @@ msgstr ""
 #, no-wrap
 msgid "... separately declare the copyright and license of a part of a file? {#partial-license}"
 msgstr ""
+"… déclarer séparément les droits d’auteur et la licence d’une partie d’un "
+"fichier ? {#partial-license}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2496,7 +2500,7 @@ msgstr ""
 #, no-wrap
 msgid "... use a license that is not on the SPDX License List? {#custom-license}"
 msgstr ""
-"... utiliser une licence qui ne figure pas dans la liste des licences SPDX ? "
+"… utiliser une licence qui ne figure pas dans la liste des licences SPDX ? "
 "{#custom-license}"
 
 #. type: Plain text
@@ -2546,8 +2550,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... use a custom license exception? {#custom-exception}"
-msgstr ""
-"... utiliser une exception de licence personnalisée ? {#custom-exception}"
+msgstr "… utiliser une exception de licence personnalisée ? {#custom-exception}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2563,7 +2566,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "... properly declare multi-licensing? {#multi-licensing}"
-msgstr "... déclarer correctement les licences multiples ? {#multi-licensing}"
+msgstr "… déclarer correctement les licences multiples ? {#multi-licensing}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2631,7 +2634,7 @@ msgstr ""
 #, no-wrap
 msgid "... deal with license texts which include copyright statements, like MIT/BSD? {#license-templates}"
 msgstr ""
-"... gérer les textes de licence qui contiennent des mentions de droits "
+"… gérer les textes de licence qui contiennent des mentions de droits "
 "d'auteur, comme les licences MIT ou BSD ? {#license-templates}"
 
 #. type: Plain text
@@ -2728,7 +2731,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "Why REUSE"
-msgstr ""
+msgstr "Pourquoi REUSE"
 
 #. type: Title ##
 #: site/content/en/faq.md
@@ -2920,7 +2923,7 @@ msgstr ""
 #: site/content/en/faq.md
 #, no-wrap
 msgid "What happened to `.reuse/dep5`? {#dep5-history}"
-msgstr ""
+msgstr "Qu’est-il advenu de `.reuse/dep5` ? {#dep5-history}"
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2930,6 +2933,11 @@ msgid ""
 "almost-verbatim copy of [DEP5/`debian/copyright`](https://www.debian.org/doc/"
 "packaging-manuals/copyright-format/1.0/)."
 msgstr ""
+"REUSE utilise actuellement[`REUSE.toml` pour attribuer les licences aux "
+"fichiers en masse](#bulk-license). Mais avant la version 3.2 de la "
+"spécification, REUSE utilisait `.reuse/dep5`, une copie quasi parfaite de "
+"[DEP5/`debian/copyright`](https://www.debian.org/doc/packaging-manuals/"
+"copyright-format/1.0/)."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -2939,6 +2947,10 @@ msgid ""
 "automatically convert a `.reuse/dep5` file to a semantically equivalent "
 "`REUSE.toml` file."
 msgstr ""
+"Dans la version 3.2, `.reuse/dep5` est obsolète mais reste pris en charge, "
+"bien qu’incompatible avec `REUSE.toml`. Vous pouvez utiliser `reuse convert-"
+"dep5` pour convertir automatiquement un fichier`.reuse/dep5` en un fichier "
+"`REUSE.toml` sémantiquement équivalent."
 
 #. type: Plain text
 #: site/content/en/faq.md
@@ -3380,7 +3392,7 @@ msgstr ""
 #. type: Plain text
 #: site/content/en/tutorial.md
 msgid "Other sources for more information:"
-msgstr ""
+msgstr "D'autres références complémentaires :"
 
 #. type: Bullet: '- '
 #: site/content/en/tutorial.md
