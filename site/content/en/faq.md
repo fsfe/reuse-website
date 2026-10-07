@@ -801,7 +801,7 @@ not support these in REUSE for practical reasons:
    information. REUSE intends to make it simple to find licensing and copyright
    information.
 2. Some tools redact metadata fields, for example to make files smaller or
-   remove potentially sensible personal information. This could also wipe your
+   remove potentially sensitive personal information. This could also wipe your
    or someone else's copyright information, and detecting this mistake is hard.
 3. With some file types, there are competing and unstandardised methods to store
    metadata.
