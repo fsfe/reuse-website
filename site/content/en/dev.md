@@ -1,5 +1,5 @@
 ---
-# SPDX-FileCopyrightText: 2020 Free Software Foundation Europe e.V.
+# SPDX-FileCopyrightText: 2020, 2026 Free Software Foundation Europe e.V.
 # SPDX-FileCopyrightText: © 2020 Liferay, Inc. <https://liferay.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0 AND CC0-1.0
 
@@ -68,7 +68,7 @@ installed](https://pre-commit.com/#install), add this to the
 # SPDX-License-Identifier: CC0-1.0
 repos:
   - repo: https://codeberg.org/fsfe/reuse-tool
-    rev: v6.2.0
+    rev: v6.3.0
     hooks:
       - id: reuse
 ```
