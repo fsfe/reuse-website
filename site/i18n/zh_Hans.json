@@ -1,1 +1,86 @@
-{}
+{
+    "noscript_warning": {
+        "other": "禁用 JavaScript 后，部分交互功能将无法正常使用。"
+    },
+    "table_of_contents": {
+        "other": "目录"
+    },
+    "toggle_navigation": {
+        "other": "切换导航"
+    },
+    "tool_instructions": {
+        "other": "此步骤的工具说明"
+    },
+    "warning": {
+        "other": "警告："
+    },
+    "trans_inofficial": {
+        "other": "您正在阅读[原始页面](%s)的非官方翻译。"
+    },
+    "trans_available": {
+        "other": "目前提供以下非官方翻译版本："
+    },
+    "and": {
+        "other": "和"
+    },
+    "menu_tutorial": {
+        "other": "快速入门"
+    },
+    "menu_faq": {
+        "other": "常见问题"
+    },
+    "menu_dev": {
+        "other": "开发者"
+    },
+    "menu_spec": {
+        "other": "资源"
+    },
+    "menu_resources": {
+        "other": "资源"
+    },
+    "menu_supporters": {
+        "other": "支持者"
+    },
+    "menu_api": {
+        "other": "API"
+    },
+    "index_initiative_by": {
+        "other": "发起方："
+    },
+    "index_intro": {
+        "other": "我们让软件许可证对人类和机器都同样清晰易懂。我们从源头上解决自由软件许可中的一个根本问题：某个文件遵循什么许可证，以及谁拥有它的版权？**采用我们的建议，只需简单三步**！"
+    },
+    "index_step1": {
+        "other": "选择并提供许可证"
+    },
+    "index_step2": {
+        "other": "为每个文件添加版权和许可证信息"
+    },
+    "index_step3": {
+        "other": "确认符合 REUSE 规范"
+    },
+    "index_rationale": {
+        "other": "版权与许可证管理并非易事，尤其是当你需要复用来自不同项目、且采用各类不同许可证的软件时。REUSE 由[欧洲自由软件基金会](https://fsfe.org)（FSFE）发起，旨在提供一套建议方案，让您的自由软件项目在许可证声明上做到**简单、全面、无歧义且机器可读**。"
+    },
+    "index_dev_head": {
+        "other": "面向开发者"
+    },
+    "index_dev_text": {
+        "other": "项目的许可证规定了他人复用您软件的条件。因此，您应当确保所有人都能清楚了解软件的各个部分分别遵循哪种许可证。REUSE 能够捍卫您的许可意愿，并在这一过程中为您提供协助。欢迎查看我们的[工具专区](dev/)，了解相关工具、CI/CD 流程集成等更多内容。"
+    },
+    "index_reuse_head": {
+        "other": "让代码复用变得简单"
+    },
+    "index_reuse_text": {
+        "other": "自由软件让您能够站在前人的成果之上快速创新。但使用的外部组件越多，就越难以全面掌握各方的版权归属与许可证选择。借助 REUSE，每个文件都自带必要的声明信息，您的代码仓库也能透明地包含所有用到的许可证文本。"
+    },
+    "index_legal_head": {
+        "other": "许可证合规性"
+    },
+    "index_legal_text": {
+        "other": "市面上有许多辅助软件许可证合规的工具，其中不少依赖数据库和模糊启发式算法。符合 REUSE 规范的项目能大幅减轻法务专家和合规人员的工作负担，只需一条简单命令即可生成物料清单（BOM）。REUSE [并非要取代其他工具](comparison/)，而是一项备受期待的有力补充。"
+    },
+    "all_specifications": {
+        "other": "所有版本的规范均可在 <{{ .specifications }}> 查阅。"
+    }
+}
