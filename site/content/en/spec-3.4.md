@@ -82,7 +82,8 @@ equal to all files in a project, with the exception of:
 - The files in the `.reuse/` directory in the root of the Project. This
   directory MUST contain only files relevant for the operation of the REUSE
   Tool.
-- Symlinks and files with no data (zero-byte).
+- Symlinks that point at covered files.
+- Files with no data (zero-byte).
 - SPDX documents in their various formats as defined in the [SPDX Specification,
   Clause
   4.4](https://spdx.github.io/spdx-spec/v2.3/conformance/#44-standard-data-format-requirements)
